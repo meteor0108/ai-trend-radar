@@ -9,7 +9,7 @@ Instructions for the scheduled Claude Code routine that fills this site. It runs
 
 ## 1. Collect
 
-Use the WebFetch tool for every source; plain curl/bash egress is blocked in this environment. If a source fails, skip it and add its key to `failed`.
+Use the WebFetch tool for every source. If a source fails, skip it and add its key to `failed`.
 
 | key | source | what to take |
 |---|---|---|
@@ -38,7 +38,7 @@ Use the WebFetch tool for every source; plain curl/bash egress is blocked in thi
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
 
 - Paper: read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
-- News: read the article (or the GeekNews topic page) enough to summarize accurately.
+- News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page or the HN thread instead, using only facts quoted there.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
 - Day `keywords`: 3–5 themes recurring across today's items, each with a one-sentence Korean `note`.
 

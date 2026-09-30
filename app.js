@@ -81,7 +81,7 @@
     const c = meta.counts || {};
     const kws = arr((day && day.keywords.length ? day.keywords : meta.keywords));
     const failed = arr(day ? day.failed : meta.failed).filter((s) => SRC_LABEL[s]);
-    host.replaceChildren(
+    host.replaceChildren(...[
       el("div", { class: "head" },
         el("h2", { text: fmtDate(S.date) + " 오늘의 키워드" }),
         el("div", { class: "counts" }, el("span", null, el("b", { text: c.paper ?? "–" }), "논문"), el("span", null, el("b", { text: c.news ?? "–" }), "뉴스"))),
@@ -90,7 +90,8 @@
             el("button", { class: "term" + (S.kw === str(k.term) ? " on" : ""), onclick: () => setKw(str(k.term)), text: str(k.term) }),
             el("span", { class: "note", text: str(k.note) }))))
         : el("p", { class: "notice", text: "이 날짜의 키워드 요약이 없어요." }),
-      failed.length ? el("p", { class: "failed", text: "수집 실패: " + failed.map((s) => SRC_LABEL[s]).join(", ") }) : null);
+      failed.length ? el("p", { class: "failed", text: "수집 실패: " + failed.map((s) => SRC_LABEL[s]).join(", ") }) : null,
+    ].filter(Boolean));
   }
 
   // Rows
