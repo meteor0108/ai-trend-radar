@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="alphaXiv · HF Papers · 로보틱스 학회 · GeekNews · Hacker News · Meta/NVIDIA/Google 블로그의 AI 소식을 매일 한국어로 요약">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1419" media="(prefers-color-scheme: dark)">
+<title>AI 트렌드 레이더</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232446c7'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="alternate" type="application/rss+xml" title="AI 트렌드 레이더" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <h1><a href="./">AI 트렌드 레이더</a></h1>
+      <p class="sub">논문 5편 · 뉴스 10건을 매일 오전 8시(KST)에 골라 한국어로 요약</p>
+    </div>
+    <nav class="datebar" aria-label="날짜">
+      <button class="iconbtn" id="prevDay" aria-label="이전 날짜">‹</button>
+      <select id="dateSel" aria-label="날짜 선택"></select>
+      <button class="iconbtn" id="nextDay" aria-label="다음 날짜">›</button>
+    </nav>
+  </header>
+
+  <section class="today" id="today" aria-label="오늘의 키워드"></section>
+
+  <div class="toolbar" role="toolbar" aria-label="필터">
+    <div class="seg" id="kindSeg">
+      <button data-k="all" aria-pressed="true">전체</button>
+      <button data-k="paper" aria-pressed="false">논문</button>
+      <button data-k="news" aria-pressed="false">뉴스</button>
+    </div>
+    <button class="toggle" id="starOnly" aria-pressed="false">★ 별표</button>
+    <button class="toggle" id="unreadOnly" aria-pressed="false">안 읽음</button>
+    <button class="kwfilter" id="kwFilter" hidden></button>
+    <label class="search"><input id="q" type="search" placeholder="전체 기간 검색" aria-label="전체 기간 검색"></label>
+  </div>
+
+  <main id="feed"></main>
+
+  <section class="trend" aria-labelledby="trendHead">
+    <h2 id="trendHead">키워드 추이 · 최근 14일</h2>
+    <div class="heat-scroll"><div class="heat" id="heat"></div></div>
+    <div class="heat-legend" aria-hidden="true">적음 <i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i><i style="background:var(--heat-4)"></i> 많음</div>
+  </section>
+
+  <footer class="foot">
+    <span id="status"></span>
+    <span>소스: alphaXiv · HF Daily Papers · arXiv cs.RO (CoRL/RSS/ICRA/IROS) · GeekNews · Hacker News · Meta AI · NVIDIA · Google Research</span>
+    <a href="feed.xml">RSS</a>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
