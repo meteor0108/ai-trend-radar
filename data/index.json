@@ -1,32 +1,32 @@
 {
-  "updated": "2026-09-30T19:39:41+09:00",
+  "updated": "2026-10-01T00:01:20+09:00",
   "days": [
     {
       "date": "2026-09-30",
       "counts": {
-        "paper": 5,
-        "news": 10
+        "paper": 20,
+        "news": 29
       },
       "keywords": [
         {
           "term": "Agent Harness",
-          "note": "Raven·MaLiang-Harness처럼 모델을 감싸는 하네스를 자동 구성·조합하는 연구가 트렌딩 상위를 차지"
+          "note": "Raven·Omni-IO Skills·Harness Learning·Context LM처럼 모델을 감싸는 하네스·컨텍스트 관리를 자동화·학습하는 연구가 논문 상위권을 장악"
+        },
+        {
+          "term": "World Action Model",
+          "note": "Simple-WAM·ReWAM·AD-E2E-JEPA 등 로봇·자율주행에서 미래 예측 표현을 정책 학습에 쓰는 월드 모델 연구가 이어짐"
         },
         {
           "term": "Always-on Agents",
-          "note": "OpenAI Dots, Pi.dev MCP 지원 등 상시 작동·도구 연결형 에이전트 제품화가 가속"
+          "note": "OpenAI Dots와 GPT-6.1 Sol, Pi.dev의 MCP 지원 등 상시 작동·도구 연결형 에이전트 제품화가 가속"
         },
         {
           "term": "Agent Safety",
-          "note": "NVIDIA Open Agent Safety Platform·OpenShell처럼 에이전트 권한과 행동을 런타임·하드웨어 수준에서 통제하려는 흐름"
-        },
-        {
-          "term": "VLA",
-          "note": "CoRL 2026 논문들이 VLA의 강건성과 인간 영상 기반 데이터 확장을 다룸"
+          "note": "NVIDIA OpenShell·Open Agent Safety Platform, AI 채팅 서비스 추적 분석 등 에이전트 권한과 데이터 흐름 통제가 화두"
         },
         {
           "term": "Classification API",
-          "note": "Jev와 OpenAI Decision API 등 LLM 기반 범용 분류·의사결정 API 경쟁이 부상"
+          "note": "Jev를 둘러싸고 OpenAI Decision API, Jeeves·Jeff 등 오픈 대안과 Arrow 연동까지 LLM 기반 의사결정 API 생태계가 확장"
         }
       ],
       "failed": []
