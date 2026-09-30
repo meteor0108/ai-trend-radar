@@ -3,6 +3,10 @@
   "generatedAt": "2026-10-01T08:04:55+09:00",
   "keywords": [
     {
+      "term": "LLM",
+      "note": "Gemini 4 Argon(1M 토큰 출력, DeepSWE 77.9%)과 GPT-6.1 Sol(Astra 1/5 가격) 등 프런티어 모델 발표가 같은 주에 몰림"
+    },
+    {
       "term": "Distillation",
       "note": "same-family OPD 스케일링 법칙, block diffusion용 d-OPD, 원스텝 SoL-Refiner 등 증류로 능력을 옮기고 추론을 줄이는 연구가 논문 상위권에 다수"
     },
@@ -11,12 +15,8 @@
       "note": "Meta Muse의 권한 무시 논란, 공개 모델 GLM-5.3의 익스플로잇 능력, ‘통제 벗어난 에이전트’ 담론 비판 등 에이전트 권한·책임이 화두"
     },
     {
-      "term": "Memory",
-      "note": "엔티티 biography 기반 장기 영상 메모리, 다자 음성 대화 메모리, 엔티티 중심 CorpusMap 등 엔티티·상호작용 단위로 기억을 조직하는 흐름"
-    },
-    {
-      "term": "AI Industry",
-      "note": "Anthropic IPO 투자설명서의 5,180억 달러 지출 의무와 Bain의 연 6조 달러 매출 필요 추산 등 AI 투자 규모와 수익성 논쟁"
+      "term": "Coding Agents",
+      "note": "GitHub Trending 상위를 OpenShell·openrig·ponytail·codegraph 등 코딩 에이전트용 런타임·하네스·skill·컨텍스트 도구가 차지하고, OpenAI도 GPT-6.1 Sol로 코딩·computer use를 겨냥"
     },
     {
       "term": "KV Cache",
@@ -917,36 +917,65 @@
       "addedAt": "2026-10-01T08:04:55+09:00"
     },
     {
-      "id": "hn-49913571",
+      "id": "deepmind-gemini-4-argon-our-next-era-of-frontier-intelligence",
       "kind": "news",
-      "source": "hn",
+      "source": "deepmind",
       "sources": [
+        "deepmind",
         "hn",
         "geeknews"
       ],
       "rank": 1,
       "ranks": {
+        "deepmind": 1,
         "hn": 1,
         "geeknews": 10
       },
-      "published": "2026-10-01T05:04:37+09:00",
-      "title": "Gemini 4 Argon",
+      "published": "2026-10-01T05:01:45+09:00",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
       "discussUrl": "https://news.ycombinator.com/item?id=49913571",
       "score": 782,
       "scoreLabel": "782P",
-      "oneLine": "Google이 장시간 소프트웨어 개발·기업 지식 업무·사이버 방어용 Gemini 4 Argon을 발표하고 Fairwind Program으로 사이버 방어 담당자에게 먼저 제공",
+      "oneLine": "Google DeepMind가 1M 토큰 출력 한도를 갖춘 프런티어 모델 Gemini 4 Argon을 공개",
       "bullets": [
         {
           "label": "",
-          "text": "출력 토큰 한도를 64K에서 100만으로 늘렸고 DeepSWE v1.1 77.9%로 최고 기록; 유료 API 고객과 Google AI Ultra 구독자부터 확대 예정(GeekNews 요약 기준)"
+          "text": "DeepSWE v1.1 77.9%, AutomationBench 51.3%, LVBench 91.7%, CWE-bench v1 68%(공동 1위)를 기록했고, 도입가는 입력 100만 토큰당 $2·출력 $10(캐시 입력 95% 할인)이며 우선 Fairwind Program의 사이버 방어자들에게 배포된다."
         }
       ],
       "keywords": [
-        "LLM Release",
+        "LLM",
         "Agent Safety"
       ],
-      "addedAt": "2026-10-01T08:04:55+09:00"
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-introducing-gpt-6-1-sol",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 2,
+      "ranks": {
+        "openai": 3
+      },
+      "published": "2026-09-29T19:00:00+09:00",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "oneLine": "OpenAI가 Astra에 가까운 성능을 1/5 가격에 제공하는 GPT-6.1 Sol 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "코딩·computer use·전문 업무에서 near-Astra 수준 지능을 GPT-6 Astra 표준 API 입출력 토큰 가격의 1/5로 제공한다고 밝혔다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
     },
     {
       "id": "gn-34569",
@@ -955,7 +984,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 2,
+      "rank": 3,
       "ranks": {
         "geeknews": 8
       },
@@ -983,7 +1012,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 3,
+      "rank": 4,
       "ranks": {
         "geeknews": 14
       },
@@ -1011,7 +1040,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 4,
+      "rank": 5,
       "ranks": {
         "geeknews": 11
       },
@@ -1033,13 +1062,68 @@
       "addedAt": "2026-10-01T08:04:55+09:00"
     },
     {
+      "id": "openai-disrupting-a-coordinated-model-distillation-campaign",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 6,
+      "ranks": {
+        "openai": 1
+      },
+      "published": "2026-09-30T19:30:00+09:00",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "oneLine": "OpenAI가 보호된 모델 reasoning을 추출하려던 조직적 distillation 캠페인을 차단",
+      "bullets": [
+        {
+          "label": "",
+          "text": "적대적 distillation에 대한 방어를 강화하고 있다고 밝힌 보안 공지로, 프런티어 모델의 추론 과정 유출이 새로운 위협으로 부상했음을 보여준다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "Distillation",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-nvidia-openshell",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 7,
+      "ranks": {
+        "github": 1
+      },
+      "title": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "score": 1280,
+      "scoreLabel": "★12.6k · +1,280 today",
+      "oneLine": "커널 수준 sandboxing과 정책으로 자율 에이전트를 안전하게 실행하는 NVIDIA의 런타임",
+      "bullets": [
+        {
+          "label": "",
+          "text": "보안 정책을 커널 수준 sandboxing과 formal verification으로 강제하고, Python·TypeScript·Go·Rust SDK로 앱을 OpenShell gateway에 연결한다."
+        }
+      ],
+      "keywords": [
+        "Agent Safety",
+        "Agent Harness"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
       "id": "hn-49911995",
       "kind": "news",
       "source": "hn",
       "sources": [
         "hn"
       ],
-      "rank": 5,
+      "rank": 8,
       "ranks": {
         "hn": 2
       },
@@ -1063,13 +1147,67 @@
       "addedAt": "2026-10-01T08:04:55+09:00"
     },
     {
+      "id": "openai-towards-safety-cases-for-frontier-ai-training",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 9,
+      "ranks": {
+        "openai": 7
+      },
+      "published": "2026-09-29T04:00:00+09:00",
+      "title": "Towards safety cases for frontier AI training",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "oneLine": "프런티어 AI 학습 단계의 safety case 작성을 위한 OpenAI의 초기 가이드라인",
+      "bullets": [
+        {
+          "label": "",
+          "text": "기술적 safeguard, 운영 관행, misalignment 사고 조사를 다루는 학습 단계 safety case 지침을 제시했다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "Agent Safety",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-debpalash-voicestudio",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 10,
+      "ranks": {
+        "github": 2
+      },
+      "title": "debpalash/VoiceStudio: fully-local open-source ElevenLabs alternative",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "score": 3481,
+      "scoreLabel": "★50.4k · +3,481 today",
+      "oneLine": "보이스 클로닝·더빙·전사를 646개 언어로 로컬에서 수행하는 오픈소스 ElevenLabs 대안",
+      "bullets": [
+        {
+          "label": "",
+          "text": "voice cloning, voice design, 영상 더빙, 받아쓰기, 전사, 오디오북 제작을 모두 자체 하드웨어에서 실행하며 AGPL-3.0 라이선스다."
+        }
+      ],
+      "keywords": [
+        "Audio LLM"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
       "id": "hn-49903713",
       "kind": "news",
       "source": "hn",
       "sources": [
         "hn"
       ],
-      "rank": 6,
+      "rank": 11,
       "ranks": {
         "hn": 5
       },
@@ -1097,7 +1235,7 @@
       "sources": [
         "hn"
       ],
-      "rank": 7,
+      "rank": 12,
       "ranks": {
         "hn": 3
       },
@@ -1124,7 +1262,7 @@
       "sources": [
         "nvidia"
       ],
-      "rank": 8,
+      "rank": 13,
       "ranks": {
         "nvidia": 3
       },
@@ -1145,13 +1283,149 @@
       "addedAt": "2026-10-01T08:04:55+09:00"
     },
     {
+      "id": "deepmind-introducing-synthid-bio",
+      "kind": "news",
+      "source": "deepmind",
+      "sources": [
+        "deepmind"
+      ],
+      "rank": 14,
+      "ranks": {
+        "deepmind": 2
+      },
+      "published": "2026-10-01T00:03:07+09:00",
+      "title": "Introducing SynthID Bio",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "oneLine": "AI가 설계한 단백질·유전체 서열에 생물학적 기능을 해치지 않는 워터마크를 심는 SynthID Bio 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "서열은 아미노산 선택 유도, 3D 구조는 원자 좌표 조정, AlphaFold 3는 diffusion 가중치에 워터마크를 넣으며, VEGF-A 등 3개 타깃에서 결합체의 hit rate·결합력이 비워터마크와 동등했고 코드·가중치·in vitro 데이터를 공개한다."
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "Watermark"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-mvschwarz-openrig",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 15,
+      "ranks": {
+        "github": 3
+      },
+      "title": "mvschwarz/openrig: multi-agent harness running Claude Code and Codex together",
+      "url": "https://github.com/mvschwarz/openrig",
+      "score": 622,
+      "scoreLabel": "★3.0k · +622 today",
+      "oneLine": "Claude Code와 Codex를 하나의 시스템으로 묶어 돌리는 멀티 에이전트 하네스",
+      "bullets": [
+        {
+          "label": "",
+          "text": "YAML로 에이전트 토폴로지를 정의해 한 명령으로 실행하고, TUI와 대시보드로 작업을 지켜볼 수 있다."
+        }
+      ],
+      "keywords": [
+        "Multi-Agent",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-introducing-dots",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 16,
+      "ranks": {
+        "openai": 5
+      },
+      "published": "2026-09-29T09:00:00+09:00",
+      "title": "Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "oneLine": "복잡한 프로젝트와 일상 업무를 계속 이어서 처리하는 OpenAI의 proactive 어시스턴트 dots 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "사용자가 통제권을 유지하면서 작업이 계속 진행되도록 돕는 능동형 어시스턴트라고 소개했다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "LLM Agents",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-devday-2026-recap",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 17,
+      "ranks": {
+        "openai": 4
+      },
+      "published": "2026-09-29T19:00:00+09:00",
+      "title": "DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "oneLine": "GPT-6 Astra, ChatGPT, Codex, API 등 20여 개 발표를 정리한 OpenAI DevDay 2026 요약",
+      "bullets": [
+        {
+          "label": "",
+          "text": "GPT-6 Astra, ChatGPT, Codex, API, 보안, 빌더용 신규 도구 등 20개 이상의 발표를 한데 모았다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "AI Coding"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-vectifyai-pageindex",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 18,
+      "ranks": {
+        "github": 6
+      },
+      "title": "VectifyAI/PageIndex: document index for vectorless, reasoning-based RAG",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "score": 1095,
+      "scoreLabel": "★38.1k · +1,095 today",
+      "oneLine": "벡터 DB 대신 계층형 트리 인덱스로 LLM이 문서를 추론하며 탐색하는 vectorless RAG",
+      "bullets": [
+        {
+          "label": "",
+          "text": "FinanceBench 98.7% 정확도와 페이지당 약 $0.001 인덱싱 비용을 주장하며, 쿼리 비용이 문서 길이에 비례해 늘지 않는다고 한다."
+        }
+      ],
+      "keywords": [
+        "RAG"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
       "id": "gn-34395",
       "kind": "news",
       "source": "geeknews",
       "sources": [
         "geeknews"
       ],
-      "rank": 9,
+      "rank": 19,
       "ranks": {
         "geeknews": 3
       },
@@ -1179,7 +1453,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 10,
+      "rank": 20,
       "ranks": {
         "geeknews": 12
       },
@@ -1207,7 +1481,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 11,
+      "rank": 21,
       "ranks": {
         "geeknews": 2
       },
@@ -1235,7 +1509,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 12,
+      "rank": 22,
       "ranks": {
         "geeknews": 6
       },
@@ -1262,7 +1536,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 13,
+      "rank": 23,
       "ranks": {
         "geeknews": 7
       },
@@ -1290,7 +1564,7 @@
       "sources": [
         "hn"
       ],
-      "rank": 14,
+      "rank": 24,
       "ranks": {
         "hn": 6
       },
@@ -1317,7 +1591,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 15,
+      "rank": 25,
       "ranks": {
         "geeknews": 4
       },
@@ -1345,7 +1619,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 16,
+      "rank": 26,
       "ranks": {
         "geeknews": 5
       },
@@ -1372,7 +1646,7 @@
       "sources": [
         "hn"
       ],
-      "rank": 17,
+      "rank": 27,
       "ranks": {
         "hn": 7
       },
@@ -1400,7 +1674,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 18,
+      "rank": 28,
       "ranks": {
         "geeknews": 9
       },
@@ -1427,7 +1701,7 @@
       "sources": [
         "nvidia"
       ],
-      "rank": 19,
+      "rank": 29,
       "ranks": {
         "nvidia": 1
       },
@@ -1454,7 +1728,7 @@
       "sources": [
         "nvidia"
       ],
-      "rank": 20,
+      "rank": 30,
       "ranks": {
         "nvidia": 2
       },
@@ -1481,7 +1755,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 21,
+      "rank": 31,
       "ranks": {
         "geeknews": 13
       },
@@ -1508,7 +1782,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 22,
+      "rank": 32,
       "ranks": {
         "geeknews": 15
       },
@@ -1536,7 +1810,7 @@
       "sources": [
         "geeknews"
       ],
-      "rank": 23,
+      "rank": 33,
       "ranks": {
         "geeknews": 1
       },
@@ -1563,7 +1837,7 @@
       "sources": [
         "hn"
       ],
-      "rank": 24,
+      "rank": 34,
       "ranks": {
         "hn": 4
       },
@@ -1582,6 +1856,360 @@
         "AI Education"
       ],
       "addedAt": "2026-10-01T08:04:55+09:00"
+    },
+    {
+      "id": "openai-how-we-will-do-better-for-australia",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 35,
+      "ranks": {
+        "openai": 6
+      },
+      "published": "2026-09-29T04:00:00+09:00",
+      "title": "How we will do better for Australia",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "oneLine": "OpenAI가 호주 정부 웹사이트 관련 사고에 사과하고 safeguard 강화를 약속",
+      "bullets": [
+        {
+          "label": "",
+          "text": "호주 정부 웹사이트와 관련된 사고에 대해 사과하고, 더 강한 safeguard와 호주 사이버 방어 지원책을 제시했다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "Agent Safety",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-helping-small-businesses-put-ai-to-work",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 36,
+      "ranks": {
+        "openai": 2
+      },
+      "published": "2026-09-30T19:00:00+09:00",
+      "title": "Helping small businesses put AI to work",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "oneLine": "OpenAI가 America’s SBDC와 손잡고 소상공인 대상 AI 교육·지원을 확대",
+      "bullets": [
+        {
+          "label": "",
+          "text": "현장 AI 교육과 지역 지원을 넓히고, 소규모 팀의 AI 활용 방식을 담은 보고서도 함께 냈다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-lenfest-ai-collaborative-expansion",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 37,
+      "ranks": {
+        "openai": 8
+      },
+      "published": "2026-09-28T16:00:00+09:00",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "oneLine": "OpenAI가 Lenfest AI Collaborative·Fellowship 프로그램에 500만 달러와 크레딧 지원 확대",
+      "bullets": [
+        {
+          "label": "",
+          "text": "500만 달러 자금과 최대 500만 달러 규모의 소프트웨어 크레딧·엔지니어링 지원으로 언론사 AI 프로그램을 확장한다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "openai-basis-tax-workbook-with-astra",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 38,
+      "ranks": {
+        "openai": 9
+      },
+      "published": "2026-09-28T09:00:00+09:00",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "oneLine": "Basis가 GPT-6 Astra로 50탭 세무 워크북을 GPT-5.6 Sol 대비 2배 빠르게 완성",
+      "bullets": [
+        {
+          "label": "",
+          "text": "사용자 의도 이해가 좋아져 실제 업무 적용에 대한 신뢰가 높아졌다는 고객 사례다(RSS 요약 기준)."
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-dietrichgebert-ponytail",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 39,
+      "ranks": {
+        "github": 4
+      },
+      "title": "DietrichGebert/ponytail: agent skill that makes AI agents write less code",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "score": 865,
+      "scoreLabel": "★149.1k · +865 today",
+      "oneLine": "에이전트가 불필요한 코드를 쓰지 않고 기존 해법·플랫폼 기능을 먼저 쓰게 하는 skill",
+      "bullets": [
+        {
+          "label": "",
+          "text": "실제 Claude Code 세션 벤치마크에서 코드량 약 54% 감소(과설계 시 최대 94%), 비용 20%·시간 27% 절감을 주장한다."
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-mattpocock-skills",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 40,
+      "ranks": {
+        "github": 5
+      },
+      "title": "mattpocock/skills: Skills for Real Engineers",
+      "url": "https://github.com/mattpocock/skills",
+      "score": 908,
+      "scoreLabel": "★273.0k · +908 today",
+      "oneLine": "TDD·코드 리뷰 등 AI 코딩의 흔한 실패를 줄이는 재사용 agent skill 모음",
+      "bullets": [
+        {
+          "label": "",
+          "text": "engineering·productivity skill로 구성되며 Claude Code, Codex 등 여러 에이전트에서 쓸 수 있다."
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-harry0703-moneyprinterturbo",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 41,
+      "ranks": {
+        "github": 7
+      },
+      "title": "harry0703/MoneyPrinterTurbo: generate HD short videos from a topic with an AI workflow",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "score": 464,
+      "scoreLabel": "★127.5k · +464 today",
+      "oneLine": "주제·키워드만으로 대본·영상 소스·자막·BGM을 자동 조합해 숏폼을 만드는 AI 도구",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI Agent·WebUI·API·CLI 인터페이스와 9:16·16:9·1:1 비율을 지원하고 TikTok·Instagram·YouTube Shorts로 게시할 수 있다."
+        }
+      ],
+      "keywords": [
+        "Video Generation"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-heygen-com-hyperframes",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 42,
+      "ranks": {
+        "github": 8
+      },
+      "title": "heygen-com/hyperframes: write HTML, render video, built for agents",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "score": 352,
+      "scoreLabel": "★54.7k · +352 today",
+      "oneLine": "HTML·CSS·애니메이션을 결정적 MP4 영상으로 렌더링하는 에이전트용 프레임워크",
+      "bullets": [
+        {
+          "label": "",
+          "text": "CLI, AI 코딩 에이전트 skill(21개 제공), 호스팅 워크플로의 렌더 코어로 쓸 수 있고 GSAP·Lottie·Three.js를 지원한다."
+        }
+      ],
+      "keywords": [
+        "Video Generation",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-colbymchenry-codegraph",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 43,
+      "ranks": {
+        "github": 9
+      },
+      "title": "colbymchenry/codegraph: pre-indexed local code knowledge graph for coding agents",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "score": 159,
+      "scoreLabel": "★72.6k · +159 today",
+      "oneLine": "20+ 언어 코드베이스를 미리 인덱싱해 MCP로 코딩 에이전트에 제공하는 코드 지식 그래프",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Rust 코어와 파일 감시로 자동 동기화되며, 7개 실제 코드베이스에서 파일 직접 읽기 대비 토큰 62%·도구 호출 88% 절감을 주장한다."
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "Context Management"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-openclaw-openclaw",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 44,
+      "ranks": {
+        "github": 10
+      },
+      "title": "openclaw/openclaw: the AI that really does things",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 136,
+      "scoreLabel": "★391.0k · +136 today",
+      "oneLine": "내 컴퓨터에서 돌아가며 20개 이상 메신저와 연결되는 오픈소스 AI 어시스턴트",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Discord·Slack·WhatsApp 등과 연동되고 macOS·iOS·Android·Windows·Linux 네이티브 앱을 제공한다."
+        }
+      ],
+      "keywords": [
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-composiohq-awesome-claude-skills",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 45,
+      "ranks": {
+        "github": 11
+      },
+      "title": "ComposioHQ/awesome-claude-skills: curated list of Claude Skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "score": 118,
+      "scoreLabel": "★76.1k · +118 today",
+      "oneLine": "1,000개 이상의 Claude Skills와 관련 도구를 모은 큐레이션 목록",
+      "bullets": [
+        {
+          "label": "",
+          "text": "문서 처리·개발 도구·데이터 분석·업무 자동화 카테고리와 Composio를 통한 78개 이상 SaaS 연동을 담았다."
+        }
+      ],
+      "keywords": [
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-mksglu-context-mode",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 46,
+      "ranks": {
+        "github": 12
+      },
+      "title": "mksglu/context-mode: context window optimization for AI coding agents",
+      "url": "https://github.com/mksglu/context-mode",
+      "score": 88,
+      "scoreLabel": "★24.5k · +88 today",
+      "oneLine": "도구 출력을 sandbox로 격리해 코딩 에이전트의 컨텍스트 사용을 줄이는 MCP 서버",
+      "bullets": [
+        {
+          "label": "",
+          "text": "도구 출력 98% 감축을 주장하고, 세션 메모리를 SQLite에 유지하며 17개 플랫폼에서 MCP·hook으로 라우팅을 강제한다."
+        }
+      ],
+      "keywords": [
+        "Context Management",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
+    },
+    {
+      "id": "gh-modelcontextprotocol-servers",
+      "kind": "news",
+      "source": "github",
+      "sources": [
+        "github"
+      ],
+      "rank": 47,
+      "ranks": {
+        "github": 13
+      },
+      "title": "modelcontextprotocol/servers: Model Context Protocol reference servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "score": 48,
+      "scoreLabel": "★90.8k · +48 today",
+      "oneLine": "LLM에 도구·데이터 접근을 제공하는 MCP 서버 레퍼런스 구현 모음",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Everything, Fetch, Filesystem, Git, Memory, Sequential Thinking, Time 등 7개 활성 레퍼런스 서버와 12개 보관 서버를 담고 있다."
+        }
+      ],
+      "keywords": [
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-01T08:37:43+09:00"
     }
   ]
 }
