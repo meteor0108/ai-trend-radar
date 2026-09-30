@@ -5,5 +5,111 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
+<lastBuildDate>Wed, 30 Sep 2026 19:39:41 +0900</lastBuildDate>
+<item>
+<title>[논문] Raven: The Harness of Harnesses for Composable Agentic Intelligence</title>
+<link>https://arxiv.org/abs/2609.33439</link>
+<guid isPermaLink="false">p-2609.33439</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>모델·도메인별 하네스를 자동으로 만들고 진화시켜 조합 가능한 지능 단위로 오케스트레이션하는 오픈소스 멀티에이전트 생태계</description>
+</item>
+<item>
+<title>[논문] MaLiang-Harness: A Programmable Path to Image and Video Generation</title>
+<link>https://arxiv.org/abs/2609.34309</link>
+<guid isPermaLink="false">p-2609.34309</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>코드는 실행되지만 요청한 시각 사양과 어긋나는 'Program-to-Visual gap'을 줄이는 MLLM 기반 프로그래머블 이미지·영상 생성 하네스</description>
+</item>
+<item>
+<title>[논문] Agent Priors-guided Policy Learning</title>
+<link>https://arxiv.org/abs/2609.35690</link>
+<guid isPermaLink="false">p-2609.35690</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>각 스킬 정책의 구조적 prior를 스킬 조합의 인터페이스로 사용해 스킬 일반화와 조합 일반화를 함께 끌어올리는 APPL</description>
+</item>
+<item>
+<title>[논문] Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation</title>
+<link>https://arxiv.org/abs/2609.38172</link>
+<guid isPermaLink="false">p-2609.38172</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>소수의 실제 영상을 V2V 생성으로 수백 개 '반사실' 영상으로 증폭해 휴머노이드 loco-manipulation 정책을 학습하는 real-to-sim-to-real 프레임워크 PRISM</description>
+</item>
+<item>
+<title>[논문] Disentangling Spurious Correlations in Vision-Language-Action Models via Predicting Domain-Invariant Latent Lookahead</title>
+<link>https://arxiv.org/abs/2609.37165</link>
+<guid isPermaLink="false">p-2609.37165</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>도메인 불변 미래 latent를 예측하도록 VLA 정책을 감독해 시각 분포 변화에 대한 shortcut 학습을 줄이는 DILL</description>
+</item>
+<item>
+<title>[뉴스] GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price</title>
+<link>https://openai.com/index/introducing-gpt-6-1-sol/</link>
+<guid isPermaLink="false">hn-49896586</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 GPT-6 Astra에 근접한 성능을 5분의 1 가격에 제공한다는 GPT 6.1 Sol 공개</description>
+</item>
+<item>
+<title>[뉴스] Dots: Always-on agents</title>
+<link>https://openai.com/index/introducing-dots/</link>
+<guid isPermaLink="false">hn-49896604</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 자체 클라우드 컴퓨터에서 상시 작동하며 여러 프로젝트를 관리하는 GPT-6 Astra 기반 에이전트 Dots 공개</description>
+</item>
+<item>
+<title>[뉴스] NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring</title>
+<link>https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring/</link>
+<guid isPermaLink="false">nvidia-nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>OpenShell 샌드박스 런타임과 BlueField-4 DPU 위 NVIDIA Sentry를 결합해 자율 에이전트를 지속 감시·통제하는 레퍼런스 플랫폼</description>
+</item>
+<item>
+<title>[뉴스] Livenerf: Has Opus 5.5 been nerfed yet?</title>
+<link>https://github.com/ninjahawk/livenerf</link>
+<guid isPermaLink="false">hn-49901736</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>출시 후 Claude Opus 5.5 성능이 몰래 떨어지는지 매일 측정하는 오픈소스 벤치마크</description>
+</item>
+<item>
+<title>[뉴스] OpenAI, Jev와 경쟁할 Luna 기반 Decision API 공개</title>
+<link>https://thenewstack.io/openai-decision-api-luna</link>
+<guid isPermaLink="false">gn-34528</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>질문·답 후보·맥락을 넣으면 선택지별 confidence를 돌려주는 소형 모델 Luna 기반 분류·의사결정 API</description>
+</item>
+<item>
+<title>[뉴스] Language models for text classification: From bag-of-words to Jev</title>
+<link>https://magazine.sebastianraschka.com/p/classifier-history-and-jev</link>
+<guid isPermaLink="false">hn-49891203</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>Sebastian Raschka가 bag-of-words부터 RNN·Transformer를 거쳐 범용 분류 모델 Jev까지 텍스트 분류의 역사를 정리</description>
+</item>
+<item>
+<title>[뉴스] How Diffusion Controller unifies and simplifies AI image generation</title>
+<link>https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/</link>
+<guid isPermaLink="false">google-how-diffusion-controller-unifies-and-simplifies-ai-image-generation</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>기반 모델을 수정하지 않고 디노이징 궤적을 실시간 보정해 사용자 선호로 이미지 생성을 유도하는 경량 애드온</description>
+</item>
+<item>
+<title>[뉴스] cf - Cloudflare 전체 API를 다루는 에이전트용 CLI</title>
+<link>https://blog.cloudflare.com/cloudflare-cf-cli-launch/</link>
+<guid isPermaLink="false">gn-34473</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>Cloudflare가 3,000개 이상 API 작업을 단일 CLI로 다루는 에이전트 친화형 cf를 public beta로 공개</description>
+</item>
+<item>
+<title>[뉴스] 문제는 AI 코드가 아니라, 이제 아무도 아무것도 모른다는 것이다</title>
+<link>https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/</link>
+<guid isPermaLink="false">gn-34439</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>AI 생성 코드의 품질보다 팀이 시스템을 이해하지 못하게 되는 것이 더 큰 문제라는 주장</description>
+</item>
+<item>
+<title>[뉴스] Pi.dev: You Said No MCP</title>
+<link>https://earendil.com/posts/you-said-no-mcp/</link>
+<guid isPermaLink="false">hn-49906637</guid>
+<pubDate>Wed, 30 Sep 2026 08:00:00 +0900</pubDate>
+<description>MCP를 지원하지 않겠다던 에이전트 플랫폼 Pi.dev가 입장을 바꿔 MCP를 코어에 통합</description>
+</item>
 </channel>
 </rss>

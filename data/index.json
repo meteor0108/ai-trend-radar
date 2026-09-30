@@ -1,4 +1,35 @@
 {
-  "updated": null,
-  "days": []
+  "updated": "2026-09-30T19:39:41+09:00",
+  "days": [
+    {
+      "date": "2026-09-30",
+      "counts": {
+        "paper": 5,
+        "news": 10
+      },
+      "keywords": [
+        {
+          "term": "Agent Harness",
+          "note": "Raven·MaLiang-Harness처럼 모델을 감싸는 하네스를 자동 구성·조합하는 연구가 트렌딩 상위를 차지"
+        },
+        {
+          "term": "Always-on Agents",
+          "note": "OpenAI Dots, Pi.dev MCP 지원 등 상시 작동·도구 연결형 에이전트 제품화가 가속"
+        },
+        {
+          "term": "Agent Safety",
+          "note": "NVIDIA Open Agent Safety Platform·OpenShell처럼 에이전트 권한과 행동을 런타임·하드웨어 수준에서 통제하려는 흐름"
+        },
+        {
+          "term": "VLA",
+          "note": "CoRL 2026 논문들이 VLA의 강건성과 인간 영상 기반 데이터 확장을 다룸"
+        },
+        {
+          "term": "Classification API",
+          "note": "Jev와 OpenAI Decision API 등 LLM 기반 범용 분류·의사결정 API 경쟁이 부상"
+        }
+      ],
+      "failed": []
+    }
+  ]
 }
