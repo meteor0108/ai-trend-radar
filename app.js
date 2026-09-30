@@ -9,7 +9,7 @@
 
   const S = {
     index: [], updated: null, days: new Map(), date: null, loaded: false,
-    kind: "all", star: false, unread: false, q: "", kw: null,
+    kind: "all", star: false, q: "", kw: null,
     open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
     conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
   };
@@ -211,7 +211,6 @@
       if (S.kind === "paper" && i.kind !== "paper") return false;
       if (S.kind === "news" && i.kind === "paper") return false;
       if (S.star && !S.marks.star[i.id]) return false;
-      if (S.unread && S.marks.read[i.id]) return false;
       if (S.kw && !arr(i.keywords).includes(S.kw)) return false;
       if (q) {
         const hay = [i.title, i.oneLine, i.venue, ...arr(i.keywords), ...arr(i.bullets).map((b) => b && b.text)].map(str).join(" ").toLowerCase();
@@ -283,7 +282,6 @@
       if (C.year !== "all" && p.year !== C.year) return false;
       if (C.winners && !arr(p.awards).some((a) => a && a.status === "winner")) return false;
       if (S.star && !S.marks.star[p.id]) return false;
-      if (S.unread && S.marks.read[p.id]) return false;
       if (S.kw && !arr(p.keywords).includes(S.kw)) return false;
       if (q) {
         const hay = [p.title, p.oneLine, p.authors, ...arr(p.keywords), ...arr(p.awards).map((a) => a && a.name), ...arr(p.bullets).map((b) => b && b.text)].map(str).join(" ").toLowerCase();
@@ -366,7 +364,6 @@
   function renderToolbar() {
     document.querySelectorAll("#kindSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === S.kind)));
     $("starOnly").setAttribute("aria-pressed", String(S.star));
-    $("unreadOnly").setAttribute("aria-pressed", String(S.unread));
     const kf = $("kwFilter"); kf.hidden = !S.kw; kf.textContent = S.kw ? "#" + S.kw + "  ✕" : "";
   }
 
@@ -397,7 +394,6 @@
   $("nextDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i > 0) goDate(d[i - 1]); });
   $("kindSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.kind = b.dataset.k; S.kw = null; try { localStorage.setItem("tr.kind", S.kind); } catch (x) {} ensureCrossDay(); });
   $("starOnly").addEventListener("click", () => { S.star = !S.star; ensureCrossDay(); });
-  $("unreadOnly").addEventListener("click", () => { S.unread = !S.unread; render(); });
   $("kwFilter").addEventListener("click", () => { S.kw = null; render(); });
   let qt; $("q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => { S.q = e.target.value; ensureCrossDay(); }, 200); });
   window.addEventListener("hashchange", () => { const d = location.hash.slice(1); if (isDate(d) && d !== S.date) goDate(d); });
