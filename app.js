@@ -11,10 +11,12 @@
     index: [], updated: null, days: new Map(), date: null, loaded: false,
     kind: "all", star: false, unread: false, q: "", kw: null,
     open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
+    conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
   };
   const $ = (id) => document.getElementById(id);
+  const CONF_ORDER = ["icra", "iros", "rss", "corl"];
 
-  try { const k = localStorage.getItem("tr.kind"); if (k === "all" || k === "paper" || k === "news") S.kind = k; } catch (e) {}
+  try { const k = localStorage.getItem("tr.kind"); if (["all", "paper", "news", "conf"].includes(k)) S.kind = k; } catch (e) {}
   try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {}, star: m.star || {} }; } catch (e) {}
   function saveMarks() { try { localStorage.setItem("tr.marks", JSON.stringify(S.marks)); } catch (e) {} }
 
@@ -119,8 +121,15 @@
     box.focus();
   }
 
+  function awardBadges(i) {
+    const aw = arr(i.awards).filter((a) => a && typeof a.name === "string");
+    aw.sort((a, b) => (b.status === "winner") - (a.status === "winner"));
+    return aw.map((a) => el("span", { class: "award" + (a.status === "winner" ? " win" : ""), text: (a.status === "winner" ? "🏆 " : "후보 · ") + a.name }));
+  }
+
   function row(i) {
-    const isPaper = i.kind === "paper";
+    const isConf = i.kind === "conf";
+    const isPaper = i.kind === "paper" || isConf;
     const url = safeUrl(i.url);
     const read = !!S.marks.read[i.id], star = !!S.marks.star[i.id], open = S.open.has(i.id);
     const srcs = arr(i.sources).length ? arr(i.sources) : [i.source];
@@ -129,11 +138,14 @@
     const title = el("h3", { class: "title" },
       url ? el("a", { href: url, target: "_blank", rel: "noopener", text: str(i.title), onclick: () => { markRead(i.id); setTimeout(renderFeed, 0); } }) : str(i.title),
       !isPaper && url ? el("span", { class: "domain", text: hostOf(url) }) : null);
-    const meta = el("div", { class: "meta" },
-      i.venue ? el("span", { class: "venue", text: str(i.venue) }) : null,
-      srcs.filter((s) => SRC_LABEL[s]).map((s) => el("span", { class: "src " + s, text: SRC_LABEL[s] })),
-      i.scoreLabel ? el("span", { class: "score", text: str(i.scoreLabel) }) : null,
-      arr(i.keywords).slice(0, 3).map((k) => (typeof k === "string" ? el("button", { class: "kw", onclick: () => setKw(k), text: "#" + k }) : null)));
+    const kws = arr(i.keywords).slice(0, 3).map((k) => (typeof k === "string" ? el("button", { class: "kw", onclick: () => setKw(k), text: "#" + k }) : null));
+    const meta = isConf
+      ? el("div", { class: "meta" }, awardBadges(i), i.authors ? el("span", { class: "authors", text: str(i.authors) }) : null, kws)
+      : el("div", { class: "meta" },
+        i.venue ? el("span", { class: "venue", text: str(i.venue) }) : null,
+        srcs.filter((s) => SRC_LABEL[s]).map((s) => el("span", { class: "src " + s, text: SRC_LABEL[s] })),
+        i.scoreLabel ? el("span", { class: "score", text: str(i.scoreLabel) }) : null,
+        kws);
 
     const side = el("div", { class: "side" },
       img ? el("button", { class: "thumb", "aria-label": "그림 크게 보기", onclick: () => lightbox(img, str(i.title)) },
@@ -144,7 +156,7 @@
 
     const li = el("li", { class: "row" + (read ? " read" : "") },
       el("div", { class: "row-main" },
-        el("span", { class: "rank", text: i.rank ?? "" }),
+        el("span", { class: "rank", text: isConf ? (arr(i.awards).some((a) => a && a.status === "winner") ? "🏆" : "") : (i.rank ?? "") }),
         el("div", { class: "row-body" }, title, i.oneLine ? el("p", { class: "oneline", text: str(i.oneLine) }) : null, meta),
         side));
     if (open) li.append(detail(i, img));
@@ -152,7 +164,8 @@
   }
 
   function detail(i, img) {
-    const isPaper = i.kind === "paper";
+    const isConf = i.kind === "conf";
+    const isPaper = i.kind === "paper" || isConf;
     const url = safeUrl(i.url);
     const bullets = arr(i.bullets).filter((b) => b && typeof b.text === "string");
     const list = bullets.length ? el("ul", { class: "details" }, bullets.map((b) => b.label
@@ -160,7 +173,14 @@
       : el("li", { class: "plain" }, el("span", { class: "k", text: "·" }), el("span", { text: b.text })))) : null;
 
     const links = [];
-    if (isPaper) {
+    if (isConf) {
+      const aid = typeof i.arxiv === "string" && /^\d{4}\.\d{4,5}$/.test(i.arxiv) ? i.arxiv : null;
+      if (aid) links.push(el("a", { class: "btn primary", href: `https://arxiv.org/html/${aid}`, target: "_blank", rel: "noopener", text: "원문 Figure 전체" }));
+      if (aid) links.push(el("a", { class: "btn", href: `https://www.alphaxiv.org/abs/${aid}`, target: "_blank", rel: "noopener", text: "alphaXiv" }));
+      if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: aid ? "arXiv" : "원문" }));
+      const src = safeUrl(i.awardSource);
+      if (src) links.push(el("a", { class: "btn", href: src, target: "_blank", rel: "noopener", text: "수상 출처" }));
+    } else if (isPaper) {
       const fig = safeUrl(i.figureUrl), alt = safeUrl(i.altUrl);
       if (fig) links.push(el("a", { class: "btn primary", href: fig, target: "_blank", rel: "noopener", text: "원문 Figure 전체" }));
       if (alt) links.push(el("a", { class: "btn", href: alt, target: "_blank", rel: "noopener", text: "alphaXiv" }));
@@ -179,7 +199,8 @@
             el("figcaption", { text: safeUrl(i.image) ? "논문 본문의 대표 Figure" : "Hugging Face 썸네일" }))
         : flowFigure(i.flow);
     }
-    return el("div", { class: "detail" }, visual, list, links.length ? el("div", { class: "links" }, links) : null);
+    const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 원문 링크에서 확인해 주세요." }) : null;
+    return el("div", { class: "detail" }, visual, list, note, links.length ? el("div", { class: "links" }, links) : null);
   }
 
   // Feed
@@ -215,7 +236,83 @@
     return el("section", { class: "section" }, head, out);
   }
 
+  // Conference tab: award winners and finalists, loaded once from data/conferences/
+  async function loadConf() {
+    const C = S.conf;
+    C.loading = true;
+    try {
+      const idx = await getJSON("conferences/index.json");
+      C.confs = arr(idx.confs).filter((c) => c && typeof c.key === "string");
+      C.notes = idx.notes && typeof idx.notes === "object" ? idx.notes : {};
+      const files = await Promise.all(C.confs.map((c) => getJSON("conferences/" + c.key + ".json").catch(() => ({ papers: [] }))));
+      C.papers = files.flatMap((f, n) => arr(f.papers).filter((p) => p && typeof p.id === "string" && typeof p.title === "string")
+        .map((p) => ({ ...p, kind: "conf", conf: C.confs[n].key, date: "" })));
+    } catch (e) {
+      C.error = true;
+    }
+    // Open on the most recent year; the full list is one click away and much heavier to render
+    if (C.year === null) C.year = Math.max(...C.papers.map((p) => p.year).filter(Number.isInteger), 0) || "all";
+    C.loaded = true; C.loading = false;
+    renderFeed();
+  }
+
+  function renderConf() {
+    const feed = $("feed"), C = S.conf;
+    if (!C.loaded) {
+      if (!C.loading) loadConf();
+      feed.replaceChildren(el("div", { class: "empty" }, el("span", { text: "불러오는 중…" })));
+      return;
+    }
+    if (C.error || !C.papers.length) {
+      feed.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "학회 수상 논문을 불러오지 못했어요" }), el("span", { text: "잠시 후 새로고침해 주세요." })));
+      return;
+    }
+    const name = (k) => (C.confs.find((c) => c.key === k) || {}).name || k.toUpperCase();
+    const years = [...new Set(C.papers.map((p) => p.year))].filter(Number.isInteger).sort((a, b) => b - a);
+    const chip = (on, label, fn) => el("button", { class: "chip", "aria-pressed": String(on), onclick: fn, text: label });
+    const bar = el("div", { class: "confbar" },
+      el("div", { class: "chips" }, chip(C.pick === "all", "전체 학회", () => { C.pick = "all"; renderFeed(); }),
+        CONF_ORDER.filter((k) => C.confs.some((c) => c.key === k)).map((k) => chip(C.pick === k, name(k), () => { C.pick = k; renderFeed(); }))),
+      el("div", { class: "chips" }, chip(C.year === "all", "전체 연도", () => { C.year = "all"; renderFeed(); }),
+        years.map((y) => chip(C.year === y, String(y), () => { C.year = y; renderFeed(); })),
+        el("button", { class: "toggle", "aria-pressed": String(C.winners), onclick: () => { C.winners = !C.winners; renderFeed(); }, text: "🏆 수상작만" })));
+
+    const q = S.q.trim().toLowerCase();
+    const list = C.papers.filter((p) => {
+      if (C.pick !== "all" && p.conf !== C.pick) return false;
+      if (C.year !== "all" && p.year !== C.year) return false;
+      if (C.winners && !arr(p.awards).some((a) => a && a.status === "winner")) return false;
+      if (S.star && !S.marks.star[p.id]) return false;
+      if (S.unread && S.marks.read[p.id]) return false;
+      if (S.kw && !arr(p.keywords).includes(S.kw)) return false;
+      if (q) {
+        const hay = [p.title, p.oneLine, p.authors, ...arr(p.keywords), ...arr(p.awards).map((a) => a && a.name), ...arr(p.bullets).map((b) => b && b.text)].map(str).join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+    const wins = (p) => arr(p.awards).some((a) => a && a.status === "winner");
+    const groups = new Map();
+    CONF_ORDER.forEach((k) => years.forEach((y) => groups.set(k + "-" + y, [])));
+    list.forEach((p) => { const g = p.conf + "-" + p.year; if (!groups.has(g)) groups.set(g, []); groups.get(g).push(p); });
+    const out = [bar];
+    const byYear = [...groups.entries()].filter(([, ps]) => ps.length).sort((a, b) => Number(b[0].split("-")[1]) - Number(a[0].split("-")[1]) || CONF_ORDER.indexOf(a[0].split("-")[0]) - CONF_ORDER.indexOf(b[0].split("-")[0]));
+    byYear.forEach(([g, ps]) => {
+      const [k, y] = g.split("-");
+      ps.sort((a, b) => wins(b) - wins(a) || str((arr(a.awards)[0] || {}).name).localeCompare(str((arr(b.awards)[0] || {}).name)) || a.title.localeCompare(b.title));
+      const w = ps.filter(wins).length;
+      const note = C.notes[g];
+      out.push(el("section", { class: "section" },
+        el("h2", { class: "section-head" }, el("span", { text: name(k) + " " + y }), el("span", { text: `수상 ${w} · 후보 ${ps.length - w}` })),
+        note ? el("p", { class: "confnote", text: note }) : null,
+        el("ol", { class: "list" }, ps.map(row))));
+    });
+    if (out.length === 1) out.push(el("div", { class: "empty" }, el("span", { text: "조건에 맞는 논문이 없어요." })));
+    feed.replaceChildren(...out);
+  }
+
   function renderFeed() {
+    if (S.kind === "conf") return renderConf();
     const feed = $("feed");
     if (!S.loaded) { feed.replaceChildren(el("div", { class: "empty" }, el("span", { text: "불러오는 중…" }))); return; }
     if (!S.index.length) {
@@ -279,7 +376,10 @@
     $("status").textContent = isNaN(t) ? "" : "마지막 업데이트 " + t.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
   }
 
-  function render() { renderDates(); renderToday(); renderToolbar(); renderFeed(); renderHeat(); renderStatus(); }
+  function render() {
+    document.body.classList.toggle("conf-mode", S.kind === "conf");
+    renderDates(); renderToday(); renderToolbar(); renderFeed(); renderHeat(); renderStatus();
+  }
 
   // Navigation and filters
   async function goDate(d) {
@@ -289,13 +389,13 @@
     await loadDay(d);
     render();
   }
-  async function ensureCrossDay() { if (crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
+  async function ensureCrossDay() { if (S.kind !== "conf" && crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
   function setKw(k) { S.kw = S.kw === k ? null : k; ensureCrossDay(); }
 
   $("dateSel").addEventListener("change", (e) => goDate(e.target.value));
   $("prevDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i < d.length - 1) goDate(d[i + 1]); });
   $("nextDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i > 0) goDate(d[i - 1]); });
-  $("kindSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.kind = b.dataset.k; try { localStorage.setItem("tr.kind", S.kind); } catch (x) {} render(); });
+  $("kindSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.kind = b.dataset.k; S.kw = null; try { localStorage.setItem("tr.kind", S.kind); } catch (x) {} ensureCrossDay(); });
   $("starOnly").addEventListener("click", () => { S.star = !S.star; ensureCrossDay(); });
   $("unreadOnly").addEventListener("click", () => { S.unread = !S.unread; render(); });
   $("kwFilter").addEventListener("click", () => { S.kw = null; render(); });

@@ -17,6 +17,8 @@
   --src-meta: #0a5bd6;
   --src-nvidia: #4d7a00;
   --src-google: #4f5b66;
+  --award: #8a5a00;
+  --award-soft: #fbf0d9;
   --heat-0: #e8ecf0;
   --heat-1: #c3cff3;
   --heat-2: #8ea4e8;
@@ -33,6 +35,7 @@
     --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
     --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
     --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
+    --award: #f0c05a; --award-soft: #2e2613;
     --heat-0: #1f2831; --heat-1: #243463; --heat-2: #344d9a; --heat-3: #5a78d8; --heat-4: #8aa2ff;
     color-scheme: dark;
   }
@@ -42,7 +45,8 @@
   --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
   --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
   --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
-  --heat-0: #1f2831; --heat-1: #243463; --heat-2: #344d9a; --heat-3: #5a78d8; --heat-4: #8aa2ff;
+  --award: #f0c05a; --award-soft: #2e2613;
+    --heat-0: #1f2831; --heat-1: #243463; --heat-2: #344d9a; --heat-3: #5a78d8; --heat-4: #8aa2ff;
   color-scheme: dark;
 }
 
@@ -152,6 +156,17 @@ img { max-width: 100%; }
 .arrow { flex: 0 0 22px; display: grid; place-items: center; color: var(--muted); }
 .arrow svg { width: 14px; height: 14px; }
 .fig figcaption { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* Conference tab */
+.conf-mode #today, .conf-mode .trend, .conf-mode .datebar { display: none !important; }
+.confbar { display: grid; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip { font-size: 13px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); padding: 5px 12px; border-radius: 999px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.award { font-size: 11.5px; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.award.win { border-color: var(--award); color: var(--award); background: var(--award-soft); font-weight: 600; }
+.authors { font-size: 12px; color: var(--muted); }
+.confnote { margin: -2px 2px 0; font-size: 12px; color: var(--muted); }
 
 .empty { padding: 28px 20px; text-align: center; color: var(--muted); display: grid; gap: 6px; justify-items: center; background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); }
 .empty strong { color: var(--fg); font-size: 15px; }

@@ -15,7 +15,6 @@ Use the WebFetch tool for every source. If a source fails, skip it and add its k
 |---|---|---|
 | `alphaxiv` | https://www.alphaxiv.org/ | top ~10 trending papers |
 | `hf` | https://huggingface.co/papers | top ~10 by upvotes |
-| `arxiv` | https://export.arxiv.org/api/query?search_query=cat:cs.RO+AND+(co:CoRL+OR+co:RSS+OR+co:ICRA+OR+co:IROS)&sortBy=submittedDate&sortOrder=descending&max_results=40 | robotics papers submitted in the last 7 days whose comment says accepted at / to appear in CoRL, RSS, ICRA or IROS (ignore "submitted to", "under review") |
 | `geeknews` | https://news.hada.io/ (fallback https://news.hada.io/rss/news) | front-page items |
 | `hn` | https://news.ycombinator.com/ | top ~30 stories with points |
 | `google` | https://research.google/blog/rss/ | posts from the last 3 days |
@@ -25,9 +24,8 @@ Use the WebFetch tool for every source. If a source fails, skip it and add its k
 ## 2. Select (skip every id in `seen`)
 
 **Papers — exactly 5 when possible**
-- Robotics lane (`"lane": "robotics"`): 2 papers if there are two strong conference-accepted candidates, otherwise 1. Set `venue` like `"CoRL 2026"`. If there is no conference-accepted paper, pick 1 robotics paper (cs.RO or clearly about robots) from the alphaXiv/HF lists instead, with no `venue`.
-- Trending lane (`"lane": "trending"`): fill the rest from alphaXiv + HF merged, deduped by arXiv id. Prefer papers on both lists, then HF upvotes / alphaXiv rank.
-- Ranks: trending papers first (1, 2, 3…), then robotics.
+- Pick from alphaXiv + HF merged, deduped by arXiv id. Prefer papers on both lists, then HF upvotes / alphaXiv rank. Set `"lane": "trending"`.
+- Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
 
 **News — up to 10**
 - AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/tools, major AI industry news.
@@ -55,11 +53,10 @@ Replace the file if it already exists. Shape:
     {
       "id": "p-2609.38172",
       "kind": "paper",
-      "source": "arxiv",
-      "sources": ["arxiv"],
-      "lane": "robotics",
-      "venue": "CoRL 2026",
-      "rank": 4,
+      "source": "hf",
+      "sources": ["hf", "alphaxiv"],
+      "lane": "trending",
+      "rank": 1,
       "title": "Original English title",
       "url": "https://arxiv.org/abs/2609.38172",
       "image": "https://arxiv.org/html/2609.38172v1/x1.png",
@@ -92,7 +89,7 @@ Replace the file if it already exists. Shape:
 ```
 
 - ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, blogs `meta-<slug>` / `nvidia-<slug>` / `google-<slug>` (lowercase URL slug).
-- Paper `source` is the main list it came from (`alphaxiv`, `hf` or `arxiv`); `sources` lists every list it appeared on.
+- Paper `source` is the main list it came from (`alphaxiv` or `hf`); `sources` lists every list it appeared on.
 - Paper `flow`: 3–5 short steps summarizing the method from the abstract, last step = the outcome.
 - News `bullets`: 1–2 items with an empty `label`.
 - All URLs must be https.
