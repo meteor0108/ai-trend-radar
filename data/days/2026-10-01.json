@@ -1099,6 +1099,7 @@
       "ranks": {
         "github": 1
       },
+      "published": "2026-02-25T07:52:22+09:00",
       "title": "NVIDIA/OpenShell: safe, private runtime for autonomous AI agents",
       "url": "https://github.com/NVIDIA/OpenShell",
       "score": 1280,
@@ -1184,6 +1185,7 @@
       "ranks": {
         "github": 2
       },
+      "published": "2026-04-10T06:40:26+09:00",
       "title": "debpalash/VoiceStudio: fully-local open-source ElevenLabs alternative",
       "url": "https://github.com/debpalash/VoiceStudio",
       "score": 3481,
@@ -1320,6 +1322,7 @@
       "ranks": {
         "github": 3
       },
+      "published": "2026-04-01T15:22:40+09:00",
       "title": "mvschwarz/openrig: multi-agent harness running Claude Code and Codex together",
       "url": "https://github.com/mvschwarz/openrig",
       "score": 622,
@@ -1402,6 +1405,7 @@
       "ranks": {
         "github": 6
       },
+      "published": "2025-04-01T19:53:54+09:00",
       "title": "VectifyAI/PageIndex: document index for vectorless, reasoning-based RAG",
       "url": "https://github.com/VectifyAI/PageIndex",
       "score": 1095,
@@ -1974,6 +1978,7 @@
       "ranks": {
         "github": 4
       },
+      "published": "2026-06-12T09:52:37+09:00",
       "title": "DietrichGebert/ponytail: agent skill that makes AI agents write less code",
       "url": "https://github.com/DietrichGebert/ponytail",
       "score": 865,
@@ -2002,6 +2007,7 @@
       "ranks": {
         "github": 5
       },
+      "published": "2026-02-03T20:15:53+09:00",
       "title": "mattpocock/skills: Skills for Real Engineers",
       "url": "https://github.com/mattpocock/skills",
       "score": 908,
@@ -2030,6 +2036,7 @@
       "ranks": {
         "github": 7
       },
+      "published": "2024-03-11T11:57:34+09:00",
       "title": "harry0703/MoneyPrinterTurbo: generate HD short videos from a topic with an AI workflow",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "score": 464,
@@ -2057,6 +2064,7 @@
       "ranks": {
         "github": 8
       },
+      "published": "2026-03-10T10:51:06+09:00",
       "title": "heygen-com/hyperframes: write HTML, render video, built for agents",
       "url": "https://github.com/heygen-com/hyperframes",
       "score": 352,
@@ -2085,6 +2093,7 @@
       "ranks": {
         "github": 9
       },
+      "published": "2026-01-19T06:45:37+09:00",
       "title": "colbymchenry/codegraph: pre-indexed local code knowledge graph for coding agents",
       "url": "https://github.com/colbymchenry/codegraph",
       "score": 159,
@@ -2113,6 +2122,7 @@
       "ranks": {
         "github": 10
       },
+      "published": "2025-11-24T19:16:47+09:00",
       "title": "openclaw/openclaw: the AI that really does things",
       "url": "https://github.com/openclaw/openclaw",
       "score": 136,
@@ -2140,6 +2150,7 @@
       "ranks": {
         "github": 11
       },
+      "published": "2025-10-17T16:15:01+09:00",
       "title": "ComposioHQ/awesome-claude-skills: curated list of Claude Skills",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "score": 118,
@@ -2167,6 +2178,7 @@
       "ranks": {
         "github": 12
       },
+      "published": "2026-02-23T14:56:28+09:00",
       "title": "mksglu/context-mode: context window optimization for AI coding agents",
       "url": "https://github.com/mksglu/context-mode",
       "score": 88,
@@ -2195,6 +2207,7 @@
       "ranks": {
         "github": 13
       },
+      "published": "2024-11-19T10:10:17+09:00",
       "title": "modelcontextprotocol/servers: Model Context Protocol reference servers",
       "url": "https://github.com/modelcontextprotocol/servers",
       "score": 48,

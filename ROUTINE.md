@@ -19,7 +19,7 @@ Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, 
 | `hf` | https://huggingface.co/papers | top 10 by upvotes |
 | `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
 | `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
-| `github` | https://github.com/trending?since=daily | up to 15 AI/ML repositories (models, agents, LLM tooling, ML libraries), in trending order |
+| `github` | https://github.com/trending?since=daily (WebFetch; curl to github.com returns 403 here) | up to 15 AI/ML repositories (models, agents, LLM tooling, ML libraries), in trending order |
 | `openai` | https://openai.com/news/rss.xml (the HTML pages return 403; use the RSS item text) | posts from the last 3 days (up to 15) |
 | `anthropic` | https://www.anthropic.com/news (no RSS; dates are printed on the page) | posts from the last 3 days (up to 15) |
 | `deepmind` | https://deepmind.google/blog/rss.xml | posts from the last 3 days (up to 15) |
@@ -56,7 +56,7 @@ Every collected item gets a summary, not only the top ones.
 | paper | arXiv v1 submission: `<published>` from the arXiv API above, or the `[v1]` line of "Submission history" on the abs page |
 | `hn` | `curl -s https://hacker-news.firebaseio.com/v0/item/<id>.json` → `time` (Unix seconds, UTC) |
 | `geeknews` | the topic's timestamp in https://news.hada.io/rss/news; if it is not in the feed, the topic page's relative time ("3시간전") counted back from when you fetched it |
-| `github` | repository creation: `curl -s https://api.github.com/repos/<owner>/<repo>` → `created_at` (the page labels it "저장소 생성 기준") |
+| `github` | repository creation: `curl -s https://ungh.cc/repos/<owner>/<repo>` → `repo.createdAt` (api.github.com is blocked in this environment; the page labels it "저장소 생성 기준") |
 | blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`, e.g. Anthropic) |
 
 For a story on both GeekNews and HN, use the time of the platform in `source`.
