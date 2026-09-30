@@ -7,7 +7,7 @@
 
   python3 scripts/publish_day.py publish data/days/YYYY-MM-DD.json
       Validate and normalize the day file, drop items published on other days,
-      renumber ranks, then rebuild data/index.json and feed.xml.
+      renumber overall and per-platform ranks, then rebuild data/index.json and feed.xml.
       Prints a JSON summary (counts, dropped ids, headlines) for the Slack notice.
 """
 import argparse
@@ -32,8 +32,11 @@ NEWS_SOURCES = {"geeknews", "hn", "meta", "nvidia", "google"}
 ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES
 ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-MAX_PAPERS, MAX_NEWS = 5, 10
+SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
+PER_SOURCE = {"paper": 10, "news": 15}  # items to collect per platform
+MAX_TOTAL = {"paper": 20, "news": 60}
 FEED_ITEMS = 60
+WHEN_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2}(?::\d{2})?)(?:\.\d+)?(Z|[+-]\d{2}:?\d{2})$")
 
 
 def https(v):
@@ -42,6 +45,33 @@ def https(v):
 
 def text(v, limit=600):
     return v.strip()[:limit] if isinstance(v, str) and v.strip() else None
+
+
+def when(v):
+    """Normalize a source timestamp to KST ISO seconds, or keep a bare YYYY-MM-DD. None if unusable."""
+    if not isinstance(v, str):
+        return None
+    v = v.strip()
+    if DATE_RE.match(v):
+        try:
+            datetime.strptime(v, "%Y-%m-%d")
+        except ValueError:
+            return None
+        return v
+    m = WHEN_RE.match(v)
+    if not m:
+        return None
+    hms = m.group(2) if m.group(2).count(":") == 2 else m.group(2) + ":00"
+    tz = "+00:00" if m.group(3) == "Z" else m.group(3)
+    if ":" not in tz:
+        tz = tz[:3] + ":" + tz[3:]
+    try:
+        t = datetime.fromisoformat(f"{m.group(1)}T{hms}{tz}")
+    except ValueError:
+        return None
+    if t > datetime.now(timezone.utc) + timedelta(hours=1):
+        return None
+    return t.astimezone(KST).isoformat(timespec="seconds")
 
 
 def day_files():
@@ -91,7 +121,16 @@ def clean_item(raw, warnings):
         venue = text(raw.get("venue"), 40)
         if venue:
             item["venue"] = venue
-    item["rank"] = raw.get("rank") if isinstance(raw.get("rank"), int) else 99
+    item["rank"] = raw.get("rank") if isinstance(raw.get("rank"), int) else 999
+    ranks = raw.get("ranks") if isinstance(raw.get("ranks"), dict) else {}
+    item["ranks"] = {s: ranks[s] for s in item["sources"] if isinstance(ranks.get(s), int)}
+    published = when(raw.get("published"))
+    if published:
+        item["published"] = published
+    elif raw.get("published") is not None:
+        warnings.append(f"{iid}: unusable published {raw.get('published')!r} (dropped the field)")
+    else:
+        warnings.append(f"{iid}: missing published")
     item["title"] = title
     item["url"] = url
     for key in ("image", "figureUrl", "altUrl", "discussUrl"):
@@ -157,10 +196,11 @@ def cmd_publish(args):
         except (OSError, ValueError):
             pass
 
-    warnings, dropped, seen, papers, news = [], [], set(), [], []
+    warnings, dropped, seen, papers, news, invalid = [], [], set(), [], [], 0
     for r in raw.get("items") or []:
         item = clean_item(r, warnings)
         if not item:
+            invalid += 1
             continue
         if item["id"] in earlier or item["id"] in seen:
             dropped.append(item["id"])
@@ -168,12 +208,9 @@ def cmd_publish(args):
         seen.add(item["id"])
         (papers if item["kind"] == "paper" else news).append(item)
 
-    papers.sort(key=lambda i: i["rank"])
-    news.sort(key=lambda i: i["rank"])
-    papers, news = papers[:MAX_PAPERS], news[:MAX_NEWS]
-    for group in (papers, news):
-        for n, item in enumerate(group, 1):
-            item["rank"] = n
+    per_source = {}
+    papers = rerank(papers, "paper", per_source, warnings)
+    news = rerank(news, "news", per_source, warnings)
     if not papers and not news:
         for w in warnings:
             print("warning:", w, file=sys.stderr)
@@ -201,12 +238,29 @@ def cmd_publish(args):
         "date": date,
         "papers": len(papers),
         "news": len(news),
+        "perSource": per_source,
         "dropped": dropped,
-        "invalid": len(warnings),
+        "invalid": invalid,
+        "warnings": len(warnings),
         "failed": day["failed"],
         "headlines": [{"title": i["title"], "oneLine": i["oneLine"]} for i in top],
         "url": f"{SITE_URL}#{date}",
     }, ensure_ascii=False, indent=1))
+
+
+def rerank(group, kind, per_source, warnings):
+    """Order by overall rank (1 = headline), then number each platform's items by their rank on that platform."""
+    group = sorted(group, key=lambda i: i["rank"])[:MAX_TOTAL[kind]]
+    for n, item in enumerate(group, 1):
+        item["rank"] = n
+    for s in sorted({s for i in group for s in i["sources"]}):
+        members = sorted((i for i in group if s in i["sources"]), key=lambda i: (i["ranks"].get(s, 10**6), i["rank"]))
+        for n, item in enumerate(members, 1):
+            item["ranks"][s] = n
+        per_source[s] = len(members)
+        if len(members) > PER_SOURCE[kind]:
+            warnings.append(f"{s}: {len(members)} items, more than the {PER_SOURCE[kind]} per platform")
+    return group
 
 
 def rebuild_index():
@@ -236,7 +290,9 @@ def rebuild_feed():
             continue
         pub = datetime.strptime(p.stem, "%Y-%m-%d").replace(hour=8, tzinfo=KST)
         for i in d.get("items") or []:
-            entries.append((pub, i))
+            # the feed carries only the headline picks shown before "더보기"
+            if isinstance(i, dict) and isinstance(i.get("rank"), int) and i["rank"] <= SHOW.get(i.get("kind"), 0):
+                entries.append((pub, i))
         if len(entries) >= FEED_ITEMS:
             break
     out = [

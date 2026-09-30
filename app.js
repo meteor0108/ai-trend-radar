@@ -6,10 +6,14 @@
   const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research" };
   const HEAT_DAYS = 14;
   const MAX_DAYS = 180;
+  // Per section: platforms in chip order, and how many rows show before "더보기"
+  const PLATS = { paper: ["alphaxiv", "hf", "arxiv"], news: ["geeknews", "hn", "google", "meta", "nvidia"] };
+  const SHOW = { paper: 5, news: 10 };
 
   const S = {
     index: [], updated: null, days: new Map(), date: null, loaded: false,
     kind: "all", star: false, q: "", kw: null,
+    plat: { paper: "all", news: "all" }, more: { paper: false, news: false },
     open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
     conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
   };
@@ -40,6 +44,37 @@
   const fmtDate = (d) => { const [, m, dd] = d.split("-"); const wd = "일월화수목금토"[new Date(d + "T00:00:00").getDay()]; return `${m}.${dd} (${wd})`; };
   const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } };
   const arxivId = (i) => (typeof i.id === "string" && i.id.startsWith("p-") ? i.id.slice(2) : null);
+
+  // Source timestamps: full ISO with offset, or a bare YYYY-MM-DD when the source gives only a date
+  const kstDay = (t) => t.toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" });
+  function postedAt(i) {
+    const p = str(i.published);
+    if (isDate(p)) return { dateOnly: true, day: p };
+    const t = new Date(p);
+    return p && !isNaN(t) ? { dateOnly: false, t } : null;
+  }
+  function ago(i) {
+    const p = postedAt(i);
+    if (!p) return null;
+    if (p.dateOnly) {
+      const days = Math.round((new Date(kstDay(new Date()) + "T00:00:00Z") - new Date(p.day + "T00:00:00Z")) / 864e5);
+      return days <= 0 ? "오늘" : days + "일 전";
+    }
+    const min = Math.floor((Date.now() - p.t) / 6e4);
+    if (min < 1) return "방금";
+    if (min < 60) return min + "분 전";
+    if (min < 60 * 24) return Math.floor(min / 60) + "시간 전";
+    return Math.floor(min / 1440) + "일 전";
+  }
+  // "2026년 9월 30일 (수) 23:10 KST", or without the time for date-only sources
+  function postedText(i) {
+    const p = postedAt(i);
+    if (!p) return "";
+    const k = new Date(p.dateOnly ? p.day + "T00:00:00Z" : p.t.getTime() + 9 * 36e5);
+    const pad = (n) => String(n).padStart(2, "0");
+    const day = `${k.getUTCFullYear()}년 ${k.getUTCMonth() + 1}월 ${k.getUTCDate()}일 (${"일월화수목금토"[k.getUTCDay()]})`;
+    return p.dateOnly ? day : `${day} ${pad(k.getUTCHours())}:${pad(k.getUTCMinutes())} KST`;
+  }
 
   function imageOf(i) {
     if (S.broken.has(i.id)) return null;
@@ -127,7 +162,7 @@
     return aw.map((a) => el("span", { class: "award" + (a.status === "winner" ? " win" : ""), text: (a.status === "winner" ? "🏆 " : "후보 · ") + a.name }));
   }
 
-  function row(i) {
+  function row(i, rank) {
     const isConf = i.kind === "conf";
     const isPaper = i.kind === "paper" || isConf;
     const url = safeUrl(i.url);
@@ -145,6 +180,7 @@
         i.venue ? el("span", { class: "venue", text: str(i.venue) }) : null,
         srcs.filter((s) => SRC_LABEL[s]).map((s) => el("span", { class: "src " + s, text: SRC_LABEL[s] })),
         i.scoreLabel ? el("span", { class: "score", text: str(i.scoreLabel) }) : null,
+        ago(i) ? el("span", { class: "ago", title: postedText(i), text: ago(i) }) : null,
         kws);
 
     const side = el("div", { class: "side" },
@@ -156,7 +192,7 @@
 
     const li = el("li", { class: "row" + (read ? " read" : "") },
       el("div", { class: "row-main" },
-        el("span", { class: "rank", text: isConf ? (arr(i.awards).some((a) => a && a.status === "winner") ? "🏆" : "") : (i.rank ?? "") }),
+        el("span", { class: "rank", text: isConf ? (arr(i.awards).some((a) => a && a.status === "winner") ? "🏆" : "") : (rank ?? i.rank ?? "") }),
         el("div", { class: "row-body" }, title, i.oneLine ? el("p", { class: "oneline", text: str(i.oneLine) }) : null, meta),
         side));
     if (open) li.append(detail(i, img));
@@ -200,7 +236,10 @@
         : flowFigure(i.flow);
     }
     const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 원문 링크에서 확인해 주세요." }) : null;
-    return el("div", { class: "detail" }, visual, list, note, links.length ? el("div", { class: "links" }, links) : null);
+    const when = !isConf && postedText(i)
+      ? el("p", { class: "posted" }, el("span", { class: "k", text: "게시" }), postedText(i), el("span", { class: "basis", text: isPaper ? "arXiv 제출 기준" : (SRC_LABEL[i.source] || "원문") + " 기준" }))
+      : null;
+    return el("div", { class: "detail" }, visual, list, note, when, links.length ? el("div", { class: "links" }, links) : null);
   }
 
   // Feed
@@ -220,19 +259,48 @@
     }).sort((a, b) => b.date.localeCompare(a.date) || (a.rank || 99) - (b.rank || 99));
   }
 
-  function section(label, unit, list, emptyText) {
+  const srcsOf = (i) => (arr(i.sources).length ? arr(i.sources) : [i.source]);
+  // Position of an item on one platform (or overall); older days without per-platform ranks fall back to the overall rank
+  function rankIn(i, plat) {
+    if (plat === "all") return i.rank || 999;
+    const r = i.ranks && i.ranks[plat];
+    return Number.isInteger(r) ? r : 1000 + (i.rank || 999);
+  }
+
+  function section(kind, label, unit, all, emptyText) {
+    const plat = S.plat[kind];
+    const present = PLATS[kind].filter((p) => p === plat || all.some((i) => srcsOf(i).includes(p)));
+    const count = (p) => all.filter((i) => srcsOf(i).includes(p)).length;
+    const pick = (p) => { S.plat[kind] = p; S.more[kind] = false; renderFeed(); };
+    const chips = present.length ? el("div", { class: "chips platbar", role: "group", "aria-label": label + " 플랫폼" },
+      el("button", { class: "chip", "aria-pressed": String(plat === "all"), onclick: () => pick("all") }, "전체", el("span", { class: "cnt", text: all.length })),
+      present.map((p) => el("button", { class: "chip", "aria-pressed": String(plat === p), onclick: () => pick(p) }, SRC_LABEL[p] || p, el("span", { class: "cnt", text: count(p) })))) : null;
+
+    const list = (plat === "all" ? all : all.filter((i) => srcsOf(i).includes(plat)))
+      .slice().sort((a, b) => b.date.localeCompare(a.date) || rankIn(a, plat) - rankIn(b, plat));
     const head = el("h2", { class: "section-head" }, el("span", { text: label }), el("span", { text: list.length ? list.length + unit : "" }));
-    if (!list.length) return el("section", { class: "section" }, head, el("div", { class: "empty" }, el("span", { text: emptyText })));
+    if (!list.length) return el("section", { class: "section" }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${SRC_LABEL[plat] || plat} 항목이 없어요.` })));
+
+    // Single day: show the top SHOW rows, the rest behind "더보기". Search/keyword/star views list every match by date.
+    if (!crossDay()) {
+      const cap = SHOW[kind], open = S.more[kind];
+      const shown = open ? list : list.slice(0, cap);
+      const more = list.length > cap
+        ? el("button", { class: "more", "aria-expanded": String(open), onclick: () => { S.more[kind] = !open; renderFeed(); } },
+            open ? "접기 ▴" : `더보기 · ${list.length - cap}${unit} 더 ▾`)
+        : null;
+      return el("section", { class: "section" }, head, chips, el("ol", { class: "list" }, shown.map((i, n) => row(i, n + 1))), more);
+    }
     const multiDay = new Set(list.map((i) => i.date)).size > 1;
-    const out = []; let ul = null, last = null;
+    const out = []; let ul = null, last = null, n = 0;
     list.forEach((i) => {
       if (!ul || (multiDay && i.date !== last)) {
         if (multiDay) out.push(el("div", { class: "daylabel", text: fmtDate(i.date) }));
-        ul = el("ol", { class: "list" }); out.push(ul); last = i.date;
+        ul = el("ol", { class: "list" }); out.push(ul); last = i.date; n = 0;
       }
-      ul.append(row(i));
+      ul.append(row(i, ++n));
     });
-    return el("section", { class: "section" }, head, out);
+    return el("section", { class: "section" }, head, chips, out);
   }
 
   // Conference tab: award winners and finalists, loaded once from data/conferences/
@@ -320,8 +388,8 @@
     const list = filtered();
     const papers = list.filter((i) => i.kind === "paper"), news = list.filter((i) => i.kind !== "paper");
     const out = [];
-    if (S.kind !== "news") out.push(section("논문", "편", papers, "조건에 맞는 논문이 없어요."));
-    if (S.kind !== "paper") out.push(section("뉴스", "건", news, "조건에 맞는 뉴스가 없어요."));
+    if (S.kind !== "news") out.push(section("paper", "논문", "편", papers, "조건에 맞는 논문이 없어요."));
+    if (S.kind !== "paper") out.push(section("news", "뉴스", "건", news, "조건에 맞는 뉴스가 없어요."));
     feed.replaceChildren(...out);
   }
 
@@ -382,6 +450,7 @@
   async function goDate(d) {
     if (!dates().includes(d)) return;
     S.date = d; S.kw = null; S.q = ""; S.star = false; $("q").value = "";
+    S.more = { paper: false, news: false };
     if (location.hash !== "#" + d) history.replaceState(null, "", "#" + d);
     await loadDay(d);
     render();

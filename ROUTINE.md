@@ -9,36 +9,50 @@ Instructions for the scheduled Claude Code routine that fills this site. It runs
 
 ## 1. Collect
 
-Use the WebFetch tool for every source. If a source fails, skip it and add its key to `failed`.
+The site shows each platform on its own tab: the top 5 papers / top 10 news per platform, with the rest behind "더보기". So collect **per platform**, walking down each list and skipping every id in `seen` until you have the target number of new items (or the list runs out).
 
-| key | source | what to take |
+Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, skip it and add its key to `failed`.
+
+| key | source | take (new items only) |
 |---|---|---|
-| `alphaxiv` | https://www.alphaxiv.org/ | top ~10 trending papers |
-| `hf` | https://huggingface.co/papers | top ~10 by upvotes |
-| `geeknews` | https://news.hada.io/ (fallback https://news.hada.io/rss/news) | front-page items |
-| `hn` | https://news.ycombinator.com/ | top ~30 stories with points |
-| `google` | https://research.google/blog/rss/ | posts from the last 3 days |
-| `nvidia` | https://blogs.nvidia.com/feed/ and https://developer.nvidia.com/blog/feed/ | posts from the last 3 days |
-| `meta` | https://ai.meta.com/blog/ | posts from the last 3 days |
+| `alphaxiv` | https://www.alphaxiv.org/ | top 10 trending papers |
+| `hf` | https://huggingface.co/papers | top 10 by upvotes |
+| `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
+| `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
+| `google` | https://research.google/blog/rss/ | AI/ML posts from the last 3 days (up to 15) |
+| `nvidia` | https://blogs.nvidia.com/feed/ and https://developer.nvidia.com/blog/feed/ | AI/ML research or technical posts from the last 3 days (up to 15); skip marketing, gaming, partner promos and event recaps |
+| `meta` | https://ai.meta.com/blog/ | AI/ML posts from the last 3 days (up to 15) |
 
-## 2. Select (skip every id in `seen`)
+News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/tools, major AI industry news.
 
-**Papers — exactly 5 when possible**
-- Pick from alphaXiv + HF merged, deduped by arXiv id. Prefer papers on both lists, then HF upvotes / alphaXiv rank. Set `"lane": "trending"`.
+## 2. Rank
+
+- One item per paper (dedupe by arXiv id) and per story. A paper on both alphaXiv and HF, or a story on both GeekNews and HN, is **one** item whose `sources` lists both platforms; put the other platform's link in `altUrl` (papers) or `discussUrl` (news).
+- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
+- `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
+  - Papers: prefer papers on both lists, then HF upvotes / alphaXiv rank. Set `"lane": "trending"`.
+  - News: at most 3 company-blog posts in the top 10; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
-
-**News — up to 10**
-- AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/tools, major AI industry news.
-- Company blogs: at most 3 blog posts in total, prefer research/technical posts. Skip NVIDIA marketing, gaming, partner promos and event recaps.
-- Fill the rest from GeekNews and Hacker News by relevance and points. If the same story appears on both, keep one and put the other link in `discussUrl`.
-- Order by importance (rank 1 = most important).
 
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
 
-- Paper: read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
+Every collected item gets a summary, not only the top ones.
+
+- Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
 - News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page or the HN thread instead, using only facts quoted there.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
 - Day `keywords`: 3–5 themes recurring across today's items, each with a one-sentence Korean `note`.
+
+**`published`: when the item was originally posted** (the site shows "N시간 전 / N일 전" and the full date). ISO 8601 with a timezone offset, or `YYYY-MM-DD` when the source gives only a date. Never guess a time you did not read.
+
+| item | where the time comes from |
+|---|---|
+| paper | arXiv v1 submission: `<published>` from the arXiv API above, or the `[v1]` line of "Submission history" on the abs page |
+| `hn` | `curl -s https://hacker-news.firebaseio.com/v0/item/<id>.json` → `time` (Unix seconds, UTC) |
+| `geeknews` | the topic's timestamp in https://news.hada.io/rss/news; if it is not in the feed, the topic page's relative time ("3시간전") counted back from when you fetched it |
+| blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`) |
+
+For a story on both GeekNews and HN, use the time of the platform in `source`.
 
 ## 4. Write `data/days/$TODAY.json`
 
@@ -55,8 +69,10 @@ Replace the file if it already exists. Shape:
       "kind": "paper",
       "source": "hf",
       "sources": ["hf", "alphaxiv"],
+      "ranks": {"hf": 1, "alphaxiv": 3},
       "lane": "trending",
       "rank": 1,
+      "published": "2026-09-28T17:59:59Z",
       "title": "Original English title",
       "url": "https://arxiv.org/abs/2609.38172",
       "image": "https://arxiv.org/html/2609.38172v1/x1.png",
@@ -74,7 +90,9 @@ Replace the file if it already exists. Shape:
       "kind": "news",
       "source": "hn",
       "sources": ["hn"],
+      "ranks": {"hn": 4},
       "rank": 1,
+      "published": "2026-09-29T21:14:03Z",
       "title": "Story title as posted",
       "url": "https://original-article.example/…",
       "discussUrl": "https://news.ycombinator.com/item?id=41234567",
@@ -96,7 +114,7 @@ Replace the file if it already exists. Shape:
 
 ## 5. Publish
 
-1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, caps to 5 papers / 10 news, renumbers ranks, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again. Keep its JSON output for step 6.
+1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 20 papers / 60 news, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
 2. `git add data feed.xml && git commit -m "digest: $TODAY"` and push to `main`. If the push is rejected, pull with rebase and push again once.
 
 ## 6. Notify on Slack
@@ -116,4 +134,4 @@ Add a line `⚠️ 수집 실패: …` if `failed` is not empty. If the Slack to
 
 ## 7. Finish
 
-Final response: one line with paper/news counts, dropped duplicates, failed sources, and whether push and Slack succeeded.
+Final response: one line with paper/news counts, per-platform counts (`perSource`), dropped duplicates, failed sources, and whether push and Slack succeeded.
