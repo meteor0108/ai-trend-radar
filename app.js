@@ -3,11 +3,11 @@
 
   // ?data=samples loads the local preview fixtures instead of the real data folder
   const BASE = new URLSearchParams(location.search).get("data") === "samples" ? "samples/" : "data/";
-  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research" };
+  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research", openai: "OpenAI", anthropic: "Anthropic", deepmind: "DeepMind", github: "GitHub Trending" };
   const HEAT_DAYS = 14;
   const MAX_DAYS = 180;
   // Per section: platforms in chip order, and how many rows show before "더보기"
-  const PLATS = { paper: ["alphaxiv", "hf", "arxiv"], news: ["geeknews", "hn", "google", "meta", "nvidia"] };
+  const PLATS = { paper: ["alphaxiv", "hf", "arxiv"], news: ["geeknews", "hn", "github", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
   const SHOW = { paper: 5, news: 10 };
 
   const S = {
@@ -222,9 +222,9 @@
       if (alt) links.push(el("a", { class: "btn", href: alt, target: "_blank", rel: "noopener", text: "alphaXiv" }));
       if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: "arXiv" }));
     } else {
-      if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: "원문" }));
+      if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: i.source === "github" ? "GitHub 저장소" : "원문" }));
       const d = safeUrl(i.discussUrl);
-      if (d) links.push(el("a", { class: "btn", href: d, target: "_blank", rel: "noopener", text: i.source === "hn" ? "HN 토론" : i.source === "geeknews" ? "GeekNews 글" : "토론" }));
+      if (d) links.push(el("a", { class: "btn", href: d, target: "_blank", rel: "noopener", text: hostOf(d) === "news.ycombinator.com" ? "HN 토론" : hostOf(d) === "news.hada.io" ? "GeekNews 글" : "토론" }));
     }
 
     let visual = null;
@@ -237,7 +237,7 @@
     }
     const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 원문 링크에서 확인해 주세요." }) : null;
     const when = !isConf && postedText(i)
-      ? el("p", { class: "posted" }, el("span", { class: "k", text: "게시" }), postedText(i), el("span", { class: "basis", text: isPaper ? "arXiv 제출 기준" : (SRC_LABEL[i.source] || "원문") + " 기준" }))
+      ? el("p", { class: "posted" }, el("span", { class: "k", text: "게시" }), postedText(i), el("span", { class: "basis", text: isPaper ? "arXiv 제출 기준" : i.source === "github" ? "GitHub 저장소 생성 기준" : (SRC_LABEL[i.source] || "원문") + " 기준" }))
       : null;
     return el("div", { class: "detail" }, visual, list, note, when, links.length ? el("div", { class: "links" }, links) : null);
   }

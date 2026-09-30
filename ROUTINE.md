@@ -19,6 +19,10 @@ Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, 
 | `hf` | https://huggingface.co/papers | top 10 by upvotes |
 | `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
 | `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
+| `github` | https://github.com/trending?since=daily | up to 15 AI/ML repositories (models, agents, LLM tooling, ML libraries), in trending order |
+| `openai` | https://openai.com/news/rss.xml (the HTML pages return 403; use the RSS item text) | posts from the last 3 days (up to 15) |
+| `anthropic` | https://www.anthropic.com/news (no RSS; dates are printed on the page) | posts from the last 3 days (up to 15) |
+| `deepmind` | https://deepmind.google/blog/rss.xml | posts from the last 3 days (up to 15) |
 | `google` | https://research.google/blog/rss/ | AI/ML posts from the last 3 days (up to 15) |
 | `nvidia` | https://blogs.nvidia.com/feed/ and https://developer.nvidia.com/blog/feed/ | AI/ML research or technical posts from the last 3 days (up to 15); skip marketing, gaming, partner promos and event recaps |
 | `meta` | https://ai.meta.com/blog/ | AI/ML posts from the last 3 days (up to 15) |
@@ -28,10 +32,11 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 ## 2. Rank
 
 - One item per paper (dedupe by arXiv id) and per story. A paper on both alphaXiv and HF, or a story on both GeekNews and HN, is **one** item whose `sources` lists both platforms; put the other platform's link in `altUrl` (papers) or `discussUrl` (news).
-- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
+- A company-blog post that is also on GeekNews or HN is one item too: `sources` lists the blog and the site(s), `url` is the blog post, `discussUrl` the discussion page.
+- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/GitHub by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
 - `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
   - Papers: prefer papers on both lists, then HF upvotes / alphaXiv rank. Set `"lane": "trending"`.
-  - News: at most 3 company-blog posts in the top 10; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
+  - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements) and at most 2 GitHub repositories; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
 
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
@@ -39,7 +44,8 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 Every collected item gets a summary, not only the top ones.
 
 - Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
-- News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page or the HN thread instead, using only facts quoted there.
+- News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page, the HN thread or the RSS item text instead, using only facts quoted there.
+- GitHub repo: read the README (`https://github.com/<owner>/<repo>`) and summarize what it is and does. `title` = `owner/repo: <short description>`, `url` = the repo, `score` = stars gained today, `scoreLabel` like `★12.3k · +1,280 today`.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
 - Day `keywords`: 3–5 themes recurring across today's items, each with a one-sentence Korean `note`.
 
@@ -50,7 +56,8 @@ Every collected item gets a summary, not only the top ones.
 | paper | arXiv v1 submission: `<published>` from the arXiv API above, or the `[v1]` line of "Submission history" on the abs page |
 | `hn` | `curl -s https://hacker-news.firebaseio.com/v0/item/<id>.json` → `time` (Unix seconds, UTC) |
 | `geeknews` | the topic's timestamp in https://news.hada.io/rss/news; if it is not in the feed, the topic page's relative time ("3시간전") counted back from when you fetched it |
-| blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`) |
+| `github` | repository creation: `curl -s https://api.github.com/repos/<owner>/<repo>` → `created_at` (the page labels it "저장소 생성 기준") |
+| blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`, e.g. Anthropic) |
 
 For a story on both GeekNews and HN, use the time of the platform in `source`.
 
@@ -106,7 +113,8 @@ Replace the file if it already exists. Shape:
 }
 ```
 
-- ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, blogs `meta-<slug>` / `nvidia-<slug>` / `google-<slug>` (lowercase URL slug).
+- ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, GitHub `gh-<owner>-<repo>` (lowercase, every character other than a–z/0–9 becomes `-`), blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
+- A repository that was already published on an earlier day (its `gh-` id is in `seen`) is skipped, so GitHub Trending shows repos that are new to the site.
 - Paper `source` is the main list it came from (`alphaxiv` or `hf`); `sources` lists every list it appeared on.
 - Paper `flow`: 3–5 short steps summarizing the method from the abstract, last step = the outcome.
 - News `bullets`: 1–2 items with an empty `label`.
@@ -114,7 +122,7 @@ Replace the file if it already exists. Shape:
 
 ## 5. Publish
 
-1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 20 papers / 60 news, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
+1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 20 papers / 80 news, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
 2. `git add data feed.xml && git commit -m "digest: $TODAY"` and push to `main`. If the push is rejected, pull with rebase and push again once.
 
 ## 6. Notify on Slack

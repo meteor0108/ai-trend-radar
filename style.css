@@ -17,6 +17,10 @@
   --src-meta: #0a5bd6;
   --src-nvidia: #4d7a00;
   --src-google: #4f5b66;
+  --src-openai: #3b4bb0;
+  --src-anthropic: #b85c38;
+  --src-deepmind: #1a73e8;
+  --src-github: #24292f;
   --award: #8a5a00;
   --award-soft: #fbf0d9;
   --heat-0: #e8ecf0;
@@ -35,6 +39,7 @@
     --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
     --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
     --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
+    --src-openai: #a5b0ff; --src-anthropic: #e8956f; --src-deepmind: #8ab4f8; --src-github: #d0d7de;
     --award: #f0c05a; --award-soft: #2e2613;
     --heat-0: #1f2831; --heat-1: #243463; --heat-2: #344d9a; --heat-3: #5a78d8; --heat-4: #8aa2ff;
     color-scheme: dark;
@@ -45,6 +50,7 @@
   --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
   --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
   --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
+  --src-openai: #a5b0ff; --src-anthropic: #e8956f; --src-deepmind: #8ab4f8; --src-github: #d0d7de;
   --award: #f0c05a; --award-soft: #2e2613;
     --heat-0: #1f2831; --heat-1: #243463; --heat-2: #344d9a; --heat-3: #5a78d8; --heat-4: #8aa2ff;
   color-scheme: dark;
@@ -117,6 +123,7 @@ img { max-width: 100%; }
 .src.alphaxiv { color: var(--src-alphaxiv); } .src.hf { color: var(--src-hf); } .src.arxiv { color: var(--src-arxiv); }
 .src.geeknews { color: var(--src-geeknews); } .src.hn { color: var(--src-hn); }
 .src.meta { color: var(--src-meta); } .src.nvidia { color: var(--src-nvidia); } .src.google { color: var(--src-google); }
+.src.openai { color: var(--src-openai); } .src.anthropic { color: var(--src-anthropic); } .src.deepmind { color: var(--src-deepmind); } .src.github { color: var(--src-github); }
 .venue { font: 600 11px var(--font-mono); padding: 1px 6px; border-radius: 4px; background: var(--src-arxiv); color: var(--surface); }
 .score { font: 500 12px var(--font-mono); font-variant-numeric: tabular-nums; }
 .kw { font-size: 12px; color: var(--muted); background: var(--sunken); border: 0; border-radius: 999px; padding: 0 8px; cursor: pointer; }

@@ -16,7 +16,7 @@ import re
 import sys
 from collections import Counter
 from datetime import datetime, timedelta, timezone
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -28,13 +28,13 @@ SITE_URL = "https://meteor0108.github.io/ai-trend-radar/"
 KST = timezone(timedelta(hours=9))
 
 PAPER_SOURCES = {"alphaxiv", "hf", "arxiv"}
-NEWS_SOURCES = {"geeknews", "hn", "meta", "nvidia", "google"}
+NEWS_SOURCES = {"geeknews", "hn", "github", "openai", "anthropic", "deepmind", "meta", "nvidia", "google"}
 ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES
-ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
+ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(gh|openai|anthropic|deepmind|meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
 PER_SOURCE = {"paper": 10, "news": 15}  # items to collect per platform
-MAX_TOTAL = {"paper": 20, "news": 60}
+MAX_TOTAL = {"paper": 20, "news": 80}
 FEED_ITEMS = 60
 WHEN_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2}(?::\d{2})?)(?:\.\d+)?(Z|[+-]\d{2}:?\d{2})$")
 
@@ -60,7 +60,14 @@ def when(v):
         return v
     m = WHEN_RE.match(v)
     if not m:
-        return None
+        # RSS pubDate, e.g. "Wed, 30 Sep 2026 10:30:00 GMT"
+        try:
+            t = parsedate_to_datetime(v)
+        except (TypeError, ValueError):
+            return None
+        if t is None or t.tzinfo is None or t > datetime.now(timezone.utc) + timedelta(hours=1):
+            return None
+        return t.astimezone(KST).isoformat(timespec="seconds")
     hms = m.group(2) if m.group(2).count(":") == 2 else m.group(2) + ":00"
     tz = "+00:00" if m.group(3) == "Z" else m.group(3)
     if ":" not in tz:
