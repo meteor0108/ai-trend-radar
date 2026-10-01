@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 01 Oct 2026 15:01:34 +0900</lastBuildDate>
+<lastBuildDate>Fri, 02 Oct 2026 03:41:09 +0900</lastBuildDate>
+<item>
+<title>[논문] False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents</title>
+<link>https://arxiv.org/abs/2609.39102</link>
+<guid isPermaLink="false">p-2609.39102</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>자기진화 search agent에서 proposer와 solver가 같은 오류에 합의하는 co-cheating을 진단하고 CrossFit으로 완화</description>
+</item>
+<item>
+<title>[논문] Looped Diffusion Transformer</title>
+<link>https://arxiv.org/abs/2609.40305</link>
+<guid isPermaLink="false">p-2609.40305</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>파라미터는 그대로 두고 denoising step 안에서 Transformer 블록을 반복 실행해 계산을 늘리는 Looped Diffusion Transformer</description>
+</item>
+<item>
+<title>[논문] GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</title>
+<link>https://arxiv.org/abs/2609.39601</link>
+<guid isPermaLink="false">p-2609.39601</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>VLA·world action model의 지각 백본으로 쓰기 위한 4B grounding foundation model GroundingPI</description>
+</item>
+<item>
+<title>[논문] RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
+<link>https://arxiv.org/abs/2609.39045</link>
+<guid isPermaLink="false">p-2609.39045</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>로컬·글로벌 루프로 생성한 게임을 스스로 탐색·진단·수정하는 재귀적 자기개선 게임 개발 에이전트 RSIGame</description>
+</item>
+<item>
+<title>[논문] DrivingBench: Can Vision-Language Models Drive a Toyota Corolla?</title>
+<link>https://arxiv.org/abs/2609.38948</link>
+<guid isPermaLink="false">p-2609.38948</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>범용 VLM이 실제 Toyota Corolla를 직접 조향해 콘 코스를 주행하는 최초의 벤치마크 DrivingBench</description>
+</item>
+<item>
+<title>[뉴스] GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design</title>
+<link>https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design</link>
+<guid isPermaLink="false">hn-49919910</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI와 Synopsys가 다년 전략 제휴를 맺고 EDA 도구 사용에 특화된 칩 설계 모델 GPT-Synopsys를 공동 개발</description>
+</item>
+<item>
+<title>[뉴스] FTC is investigating OpenAI, Anthropic and other AI companies over product risks</title>
+<link>https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html</link>
+<guid isPermaLink="false">hn-49921050</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>미국 FTC가 OpenAI, Anthropic 등 AI 기업 제품의 잠재적 위험에 대한 조사에 착수</description>
+</item>
+<item>
+<title>[뉴스] Clef: Open-source decision models, and new RL fine-tuning platform</title>
+<link>https://blog.cloudflare.com/clef-decision-models/</link>
+<guid isPermaLink="false">hn-49923692</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>Cloudflare가 Workers AI에 오픈소스 decision model Clef·Clef-flash와 RL fine-tuning 제품을 공개</description>
+</item>
+<item>
+<title>[뉴스] Barclays scales Claude to upgrade operations and improve client experience</title>
+<link>https://www.anthropic.com/news/barclays-scales-claude</link>
+<guid isPermaLink="false">anthropic-barclays-scales-claude</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>Barclays가 Anthropic과의 협력을 확대해 Claude를 은행 전반의 소프트웨어 개발·레거시 현대화·운영에 도입</description>
+</item>
+<item>
+<title>[뉴스] RIP, vector database</title>
+<link>https://turbopuffer.com/blog/rip-vector-database</link>
+<guid isPermaLink="false">hn-49923466</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>turbopuffer가 v3에서 벡터 중심 저장 구조를 버리고 ANN을 여러 보조 인덱스 중 하나로 격하</description>
+</item>
+<item>
+<title>[뉴스] Figma restricts MCP access to whitelisted clients, excluding Pi</title>
+<link>https://twitter.com/GayaniFigma/status/2105295629941350454</link>
+<guid isPermaLink="false">hn-49922729</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>Figma가 원격 MCP 서버를 허용 목록 클라이언트로만 제한해 Pi 등 다른 에이전트가 배제됨</description>
+</item>
+<item>
+<title>[뉴스] OpenDLSS: A Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering Network</title>
+<link>https://github.com/maanHimself/OpenDLSS-NR</link>
+<guid isPermaLink="false">hn-49906100</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA DLSS 5의 71블록 생성형 신경 렌더링 네트워크를 Vulkan으로 바이트 단위까지 일치하게 재구현</description>
+</item>
+<item>
+<title>[뉴스] Micron CEO Says Memory Supply Will Be Much Tighter in 2027 and 2028 Than in 2026</title>
+<link>https://www.techpowerup.com/353296/micron-ceo-says-memory-supply-will-be-much-tighter-in-2027-and-2028-than-in-2026</link>
+<guid isPermaLink="false">hn-49920932</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>Micron CEO가 2027~2028년 메모리 공급이 2026년보다 훨씬 더 빠듯해질 것으로 전망</description>
+</item>
+<item>
+<title>[뉴스] Meta가 AI 데이터센터를 활용해 수십억 달러의 세금을 회피하는 방법</title>
+<link>https://www.nytimes.com/2026/09/30/technology/meta-ai-data-centers-taxes.html</link>
+<guid isPermaLink="false">gn-34609</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta가 AI 데이터센터를 실험용으로 분류해 Nvidia 칩 구매에 연구·실험 세액공제를 적용하고 있다는 보도</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Open-source model routing for coding agents at Astra-level performance</title>
+<link>https://github.com/weave-os/router</link>
+<guid isPermaLink="false">hn-49911500</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트의 매 턴마다 LLM을 골라 쓰는 오픈소스 Weave Router 2.0 공개</description>
+</item>
 <item>
 <title>[논문] Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering</title>
 <link>https://arxiv.org/abs/2609.38177</link>
