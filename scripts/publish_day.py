@@ -9,6 +9,10 @@
       Validate and normalize the day file, drop items published on other days,
       renumber overall and per-platform ranks, then rebuild data/index.json and feed.xml.
       Prints a JSON summary (counts, dropped ids, headlines) for the Slack notice.
+
+  python3 scripts/publish_day.py github data/github/trending.json
+      Validate and normalize the GitHub Trending dashboard (a snapshot replaced every day):
+      one entry per repository, ranked 1..15 within the daily, weekly and monthly lists.
 """
 import argparse
 import json
@@ -28,9 +32,12 @@ SITE_URL = "https://meteor0108.github.io/ai-trend-radar/"
 KST = timezone(timedelta(hours=9))
 
 PAPER_SOURCES = {"alphaxiv", "hf", "hftrend", "arxiv"}
-NEWS_SOURCES = {"geeknews", "hn", "github", "openai", "anthropic", "deepmind", "meta", "nvidia", "google"}
-ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES
-ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(gh|openai|anthropic|deepmind|meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
+NEWS_SOURCES = {"geeknews", "hn", "openai", "anthropic", "deepmind", "meta", "nvidia", "google"}
+ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES | {"github"}  # "github" only as a failed-source key; repos live in data/github/
+REPO_RE = re.compile(r"^[\w.-]+/[\w.-]+$")
+PERIODS = ("daily", "weekly", "monthly")
+MAX_REPOS = 15
+ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(openai|anthropic|deepmind|meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 CODE_RE = re.compile(r"^https://(github|gitlab)\.com/[\w.-]+/[\w.-]+/?$")
 SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
@@ -346,6 +353,76 @@ def rebuild_feed():
         f.write("\n".join(out))
 
 
+def cmd_github(args):
+    """Normalize the GitHub Trending dashboard file: one entry per repository, ranked per period."""
+    path = Path(args.file).resolve()
+    try:
+        raw = read_json(path)
+    except (OSError, ValueError) as e:
+        sys.exit(f"error: cannot parse {path}: {e}")
+    warnings, repos, seen = [], [], set()
+    for r in raw.get("repos") or []:
+        name = r.get("repo") if isinstance(r, dict) else None
+        if not isinstance(name, str) or not REPO_RE.match(name):
+            warnings.append(f"bad repo: {name!r}")
+            continue
+        if name.lower() in seen:
+            warnings.append(f"{name}: listed twice (kept the first)")
+            continue
+        one = text(r.get("oneLine"), 300)
+        if not one:
+            warnings.append(f"{name}: oneLine is required")
+            continue
+        periods = {}
+        for p in PERIODS:
+            v = (r.get("periods") or {}).get(p)
+            if isinstance(v, dict) and isinstance(v.get("rank"), int):
+                periods[p] = {"rank": v["rank"]}
+                if isinstance(v.get("gained"), int) and v["gained"] >= 0:
+                    periods[p]["gained"] = v["gained"]
+        if not periods:
+            warnings.append(f"{name}: needs a rank in at least one of {PERIODS}")
+            continue
+        seen.add(name.lower())
+        item = {"id": "gh-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"), "repo": name, "url": f"https://github.com/{name}"}
+        if text(r.get("description"), 300):
+            item["description"] = text(r["description"], 300)
+        if text(r.get("language"), 30):
+            item["language"] = text(r["language"], 30)
+        if isinstance(r.get("stars"), int) and r["stars"] >= 0:
+            item["stars"] = r["stars"]
+        item["periods"] = periods
+        created = when(r.get("created"))
+        if created:
+            item["created"] = created
+        else:
+            warnings.append(f"{name}: missing or unusable created")
+        item["oneLine"] = one
+        item["bullets"] = [text(b) for b in r.get("bullets") or [] if text(b)][:3]
+        item["keywords"] = list(dict.fromkeys(k.strip() for k in r.get("keywords") or [] if isinstance(k, str) and k.strip()))[:4]
+        repos.append(item)
+
+    counts = {}
+    for p in PERIODS:
+        members = sorted((i for i in repos if p in i["periods"]), key=lambda i: i["periods"][p]["rank"])
+        for n, item in enumerate(members, 1):
+            if n > MAX_REPOS:
+                del item["periods"][p]
+            else:
+                item["periods"][p]["rank"] = n
+        counts[p] = min(len(members), MAX_REPOS)
+    repos = [i for i in repos if i["periods"]]
+    if not repos:
+        for w in warnings:
+            print("warning:", w, file=sys.stderr)
+        sys.exit("error: no valid repositories left to publish")
+    repos.sort(key=lambda i: tuple(i["periods"].get(p, {}).get("rank", 999) for p in PERIODS))
+    write_json(path, {"updated": datetime.now(KST).isoformat(timespec="seconds"), "repos": repos})
+    for w in warnings:
+        print("warning:", w, file=sys.stderr)
+    print(json.dumps({"repos": len(repos), "perPeriod": counts, "warnings": len(warnings)}, ensure_ascii=False, indent=1))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -356,6 +433,9 @@ def main():
     p = sub.add_parser("publish")
     p.add_argument("file")
     p.set_defaults(fn=cmd_publish)
+    g = sub.add_parser("github")
+    g.add_argument("file")
+    g.set_defaults(fn=cmd_github)
     args = ap.parse_args()
     args.fn(args)
 

@@ -21,7 +21,6 @@ Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, 
 | `arxiv` | https://arxiv.org/list/cs.RO/new | robotics fill only, see "Robotics lane" in section 2 |
 | `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
 | `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
-| `github` | https://github.com/trending?since=daily (WebFetch; curl to github.com returns 403 here) | up to 15 AI/ML repositories (models, agents, LLM tooling, ML libraries), in trending order |
 | `openai` | https://openai.com/news/rss.xml (the HTML pages return 403; use the RSS item text) | posts from the last 3 days (up to 15) |
 | `anthropic` | https://www.anthropic.com/news (no RSS; dates are printed on the page) | posts from the last 3 days (up to 15) |
 | `deepmind` | https://deepmind.google/blog/rss.xml | posts from the last 3 days (up to 15) |
@@ -36,10 +35,10 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 - One item per paper (dedupe by arXiv id) and per story. A paper on both alphaXiv and HF, or a story on both GeekNews and HN, is **one** item whose `sources` lists both platforms; put the other platform's link in `altUrl` (papers) or `discussUrl` (news).
 - News on more than one platform also gets `sourceUrls`: the item's own page on each platform in `sources`, e.g. `{"hn": "https://news.ycombinator.com/item?id=41234567", "geeknews": "https://news.hada.io/topic?id=34500", "openai": "https://openai.com/index/…"}`. The site turns each platform name into a link with it. Papers and single-platform news do not need it (the links are derived from the id and `url`).
 - A company-blog post that is also on GeekNews or HN is one item too: `sources` lists the blog and the site(s), `url` is the blog post, `discussUrl` the discussion page.
-- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/HF Trending/GitHub by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
+- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/HF Trending by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
 - `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
   - Papers: prefer papers on more than one list, then HF upvotes / alphaXiv rank / HF Trending order. 1–2 of the top 5 are robotics-lane papers (the publish script moves the best-ranked robotics paper into the top 5 if you leave none there).
-  - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements) and at most 2 GitHub repositories; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
+  - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements); fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
 
 **Robotics lane** (the site shows these under a "로보틱스" chip, whichever list they came from)
@@ -56,7 +55,6 @@ Every collected item gets a summary, not only the top ones.
 - Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail, or shows no figure).
 - Paper code: when the paper's code is public, set `codeUrl` to the repository (`https://github.com/<owner>/<repo>`, GitHub or GitLab only) and `codeStars` to its star count if known. Take it from `curl -s https://huggingface.co/api/papers/<arxivId>` → `githubRepo` / `githubStars` (the HF list data carries the same fields), or from a repository URL written in the arXiv abstract or comments. Leave both out when no repository is stated; never guess a URL, and do not use project pages or "code coming soon" notes.
 - News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page, the HN thread or the RSS item text instead, using only facts quoted there.
-- GitHub repo: read the README (`https://github.com/<owner>/<repo>`) and summarize what it is and does. `title` = `owner/repo: <short description>`, `url` = the repo, `score` = stars gained today, `scoreLabel` like `★12.3k · +1,280 today`.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
 - Day `keywords`: write `[]`. The site no longer shows a daily keyword summary; its word cloud is built from the items' own `keywords`, so make those consistent (same spelling for the same theme).
 
@@ -67,7 +65,6 @@ Every collected item gets a summary, not only the top ones.
 | paper | arXiv v1 submission: `<published>` from the arXiv API above, or the `[v1]` line of "Submission history" on the abs page |
 | `hn` | `curl -s https://hacker-news.firebaseio.com/v0/item/<id>.json` → `time` (Unix seconds, UTC) |
 | `geeknews` | the topic's timestamp in https://news.hada.io/rss/news; if it is not in the feed, the topic page's relative time ("3시간전") counted back from when you fetched it |
-| `github` | repository creation: `curl -s https://ungh.cc/repos/<owner>/<repo>` → `repo.createdAt` (api.github.com is blocked in this environment; the page labels it "저장소 생성 기준") |
 | blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`, e.g. Anthropic) |
 
 For a story on both GeekNews and HN, use the time of the platform in `source`.
@@ -125,11 +122,41 @@ Replace the file if it already exists. Shape:
 }
 ```
 
-- ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, GitHub `gh-<owner>-<repo>` (lowercase, every character other than a–z/0–9 becomes `-`), blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
-- A repository that was already published on an earlier day (its `gh-` id is in `seen`) is skipped, so GitHub Trending shows repos that are new to the site.
+- ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
 - Paper `source` is the main list it came from (`alphaxiv`, `hf`, `hftrend`, or `arxiv` for a robotics fill); `sources` lists every list it appeared on.
 - News `bullets`: 1–2 items with an empty `label`.
 - All URLs must be https.
+
+## 4b. GitHub dashboard: `data/github/trending.json`
+
+The site's GitHub tab is a dashboard, not part of the daily digest: one file holding the **current** trending AI/ML repositories, replaced on every run. It is not checked against `seen`, so a repository that trends again simply shows up again, and repositories never go into the day file.
+
+1. WebFetch the three lists (curl to github.com returns 403 here): https://github.com/trending?since=daily, `?since=weekly`, `?since=monthly`. From each take, in page order, up to 15 AI/ML repositories (models, agents and agent tooling, LLM tools, ML libraries, AI learning material); skip everything else. Note each one's description, language, total stars and stars gained in that period.
+2. Read the existing `data/github/trending.json` first. For a repository already in it (same `owner/repo`, case-insensitive) reuse its `oneLine`, `bullets`, `keywords` and `created`, and only refresh the numbers. Read the README (`https://github.com/<owner>/<repo>`) only for repositories that are new to the file.
+3. For a new repository write `oneLine` (Korean, what it is), 1–2 `bullets` (Korean, plain strings, only facts from the README), 1–3 `keywords` (reuse `recentKeywords` spellings and the ones already in the file), and `created` from `curl -s https://ungh.cc/repos/<owner>/<repo>` → `repo.createdAt` (api.github.com is blocked here).
+4. Write the file with one entry per repository; `periods` holds each list it is on:
+
+```json
+{
+  "repos": [
+    {
+      "repo": "owner/name",
+      "description": "The repository's own description, as shown on GitHub",
+      "language": "Python",
+      "stars": 50649,
+      "periods": {"daily": {"rank": 2, "gained": 3483}, "weekly": {"rank": 4, "gained": 15186}},
+      "created": "2026-04-09T21:40:26Z",
+      "oneLine": "한 줄 요약",
+      "bullets": ["README에 적힌 사실 1", "README에 적힌 사실 2"],
+      "keywords": ["Coding Agents"]
+    }
+  ]
+}
+```
+
+5. `python3 scripts/publish_day.py github data/github/trending.json` — it validates, renumbers the ranks 1..15 per period and stamps `updated`. Fix what it reports and run it again.
+
+If the trending pages cannot be fetched, leave the existing file untouched and add `github` to the day file's `failed`.
 
 ## 5. Publish
 
@@ -153,4 +180,4 @@ Add a line `⚠️ 수집 실패: …` if `failed` is not empty. If the Slack to
 
 ## 7. Finish
 
-Final response: one line with paper/news counts, per-platform counts (`perSource`), dropped duplicates, failed sources, and whether push and Slack succeeded.
+Final response: one line with paper/news counts, per-platform counts (`perSource`), GitHub dashboard counts (`perPeriod`), dropped duplicates, failed sources, and whether push and Slack succeeded.

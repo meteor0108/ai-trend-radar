@@ -137,6 +137,7 @@ img { max-width: 100%; }
 .google { --c: var(--src-google); } .meta > .src.meta, .chip.meta { --c: var(--src-meta); } .nvidia { --c: var(--src-nvidia); }
 .venue { font-weight: 700; color: var(--fg); }
 .score, .ago { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.score.gain { color: var(--src-github); font-weight: 700; }
 a.src { text-decoration: none; white-space: nowrap; }
 a.src:hover { background: var(--hl); color: var(--fg); }
 .gitlab { --c: var(--src-hn); }

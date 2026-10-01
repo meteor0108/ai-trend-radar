@@ -3,12 +3,12 @@
 
   // ?data=samples loads the local preview fixtures instead of the real data folder
   const BASE = new URLSearchParams(location.search).get("data") === "samples" ? "samples/" : "data/";
-  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", hftrend: "HF Trending", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research", openai: "OpenAI", anthropic: "Anthropic", deepmind: "DeepMind", github: "GitHub Trending" };
+  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", hftrend: "HF Trending", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research", openai: "OpenAI", anthropic: "Anthropic", deepmind: "DeepMind", github: "GitHub" };
   const HEAT_DAYS = 14;
   const MAX_DAYS = 180;
   // Per section: platforms in chip order, and how many rows show before "더보기"
   // "robotics" is not a site: it collects every paper on the robotics lane, whichever list it came from
-  const PLATS = { paper: ["robotics", "alphaxiv", "hf", "hftrend", "arxiv"], news: ["geeknews", "hn", "github", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
+  const PLATS = { paper: ["robotics", "alphaxiv", "hf", "hftrend", "arxiv"], news: ["geeknews", "hn", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
   const SHOW = { paper: 5, news: 10 };
 
   const S = {
@@ -17,11 +17,13 @@
     plat: { paper: "all", news: "all" }, more: { paper: false, news: false },
     open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
     conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
+    gh: { loaded: false, loading: false, repos: [], updated: null, period: "daily" },
   };
   const $ = (id) => document.getElementById(id);
   const CONF_ORDER = ["icra", "iros", "rss", "corl"];
 
-  try { const k = localStorage.getItem("tr.kind"); if (["all", "paper", "news", "conf"].includes(k)) S.kind = k; } catch (e) {}  try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {}, star: m.star || {} }; } catch (e) {}
+  try { const k = localStorage.getItem("tr.kind"); if (["all", "paper", "news", "conf", "gh"].includes(k)) S.kind = k; } catch (e) {}
+  try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {}, star: m.star || {} }; } catch (e) {}
   function saveMarks() { try { localStorage.setItem("tr.marks", JSON.stringify(S.marks)); } catch (e) {} }
 
   // Helpers
@@ -198,9 +200,20 @@
     ];
   }
 
+  // Repository numbers for the period being viewed: total stars, then stars gained in that period
+  const num = (n) => (Number.isInteger(n) ? n.toLocaleString("en-US") : "");
+  function repoStats(i) {
+    const p = S.gh.period, g = (i.periods[p] || {}).gained, label = (PERIODS.find(([k]) => k === p) || [])[1];
+    return [
+      stars(i.stars) ? el("span", { class: "score", text: stars(i.stars).trim() }) : null,
+      Number.isInteger(g) ? el("span", { class: "score gain", text: `${label} +${num(g)}` }) : null,
+    ];
+  }
+
   function row(i, rank) {
     const isConf = i.kind === "conf";
     const isPaper = i.kind === "paper" || isConf;
+    const isRepo = i.kind === "repo";
     const url = safeUrl(i.url);
     const read = !!S.marks.read[i.id], star = !!S.marks.star[i.id], open = S.open.has(i.id);
     const srcs = arr(i.sources).length ? arr(i.sources) : [i.source];
@@ -208,7 +221,7 @@
 
     const title = el("h3", { class: "title" },
       url ? el("a", { href: url, target: "_blank", rel: "noopener", text: str(i.title), onclick: () => { markRead(i.id); setTimeout(renderFeed, 0); } }) : str(i.title),
-      !isPaper && url ? el("span", { class: "domain", text: hostOf(url) }) : null);
+      !isPaper && !isRepo && url ? el("span", { class: "domain", text: hostOf(url) }) : null);
     const kws = arr(i.keywords).slice(0, 3).map((k) => (typeof k === "string" ? el("button", { class: "kw", onclick: () => setKw(k), text: "#" + k }) : null));
     // Things of one kind sit together in a group; the divider is drawn only between groups
     const grp = (...kids) => { const k = kids.flat().filter(Boolean); return k.length ? el("span", { class: "grp" }, k) : null; };
@@ -219,7 +232,9 @@
       : el("div", { class: "meta" },
         grp(i.venue ? el("span", { class: "venue", text: str(i.venue) }) : null),
         grp(srcs.filter((s) => SRC_LABEL[s]).map((s) => srcMark(i, s)), isPaper ? codeMark(i) : null),
-        grp(ago(i) ? el("span", { class: "ago", title: postedText(i), text: ago(i) }) : null),
+        grp(isRepo ? repoStats(i) : null),
+        grp(isRepo && i.language ? el("span", { class: "lang", text: str(i.language) }) : null),
+        grp(ago(i) ? el("span", { class: "ago", title: postedText(i), text: ago(i) + (isRepo ? " 생성" : "") }) : null),
         grp(kws));
 
     const side = el("div", { class: "side" },
@@ -254,8 +269,10 @@
           el("figcaption", { text: (safeUrl(i.image) ? "논문 본문의 대표 Figure" : "Hugging Face 썸네일") + " · 누르면 크게 보여요" }))
       : null;
     const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 제목을 누르면 원문으로 가요." }) : null;
+    const isRepo = i.kind === "repo";
     const when = !isConf && postedText(i)
-      ? el("p", { class: "posted" }, el("span", { class: "k", text: "게시" }), postedText(i), el("span", { class: "basis", text: isPaper ? "arXiv 제출 기준" : i.source === "github" ? "GitHub 저장소 생성 기준" : (SRC_LABEL[i.source] || "원문") + " 기준" }))
+      ? el("p", { class: "posted" }, el("span", { class: "k", text: isRepo ? "생성" : "게시" }), postedText(i),
+          isRepo ? null : el("span", { class: "basis", text: isPaper ? "arXiv 제출 기준" : (SRC_LABEL[i.source] || "원문") + " 기준" }))
       : null;
     // Each figure in the reaction line links to the platform it was counted on
     const parts = str(i.scoreLabel).split(" · ").filter(Boolean).map((t) => {
@@ -265,6 +282,11 @@
         : /^[\d,.]+k?P$/.test(t) && board ? board : i.source;
       return { text: t, cls: s, url: isConf ? null : srcUrl(i, s) };
     });
+    if (isRepo) {
+      // stars gained over each period the repository is trending in, then the total
+      PERIODS.forEach(([p, label]) => { const g = (i.periods[p] || {}).gained; if (Number.isInteger(g)) parts.push({ text: `${label} +${num(g)}`, cls: "github", url: safeUrl(i.url) }); });
+      if (stars(i.stars)) parts.push({ text: "전체" + stars(i.stars), cls: "github", url: safeUrl(i.url) });
+    }
     if (isPaper && codeUrl(i) && stars(i.codeStars)) parts.push({ text: "GitHub" + stars(i.codeStars), cls: hostOf(codeUrl(i)) === "gitlab.com" ? "gitlab" : "github", url: codeUrl(i) });
     const score = parts.length ? el("p", { class: "posted" }, el("span", { class: "k", text: "반응" }),
       el("span", { class: "reacts" }, parts.map((p) => (p.url ? el("a", { class: "src " + p.cls, href: p.url, target: "_blank", rel: "noopener", text: p.text }) : el("span", { text: p.text }))))) : null;
@@ -408,8 +430,62 @@
     feed.replaceChildren(...out);
   }
 
+  // GitHub tab: a dashboard of the current trending AI/ML repositories (a snapshot replaced every day, not a daily archive)
+  const PERIODS = [["daily", "오늘"], ["weekly", "이번 주"], ["monthly", "이번 달"]];
+  async function loadGh() {
+    const G = S.gh;
+    G.loading = true;
+    try {
+      const d = await getJSON("github/trending.json");
+      G.updated = d.updated || null;
+      G.repos = arr(d.repos).filter((r) => r && typeof r.id === "string" && typeof r.repo === "string" && r.periods && typeof r.periods === "object")
+        .map((r) => ({ ...r, kind: "repo", source: "github", sources: ["github"], title: r.repo, published: r.created, date: "",
+          bullets: arr(r.bullets).filter((t) => typeof t === "string").map((t) => ({ label: "", text: t })) }));
+    } catch (e) {
+      G.error = true;
+    }
+    G.loaded = true; G.loading = false;
+    renderFeed();
+  }
+
+  function renderGh() {
+    const feed = $("feed"), G = S.gh;
+    if (!G.loaded) {
+      if (!G.loading) loadGh();
+      feed.replaceChildren(el("div", { class: "empty" }, el("span", { text: "불러오는 중…" })));
+      return;
+    }
+    if (G.error || !G.repos.length) {
+      feed.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "GitHub 트렌딩을 불러오지 못했어요" }), el("span", { text: "잠시 후 새로고침해 주세요." })));
+      return;
+    }
+    const inPeriod = (p) => G.repos.filter((r) => r.periods[p] && Number.isInteger(r.periods[p].rank));
+    const t = G.updated ? new Date(G.updated) : null;
+    const bar = el("div", { class: "confbar" },
+      el("div", { class: "chips" }, PERIODS.map(([p, label]) =>
+        el("button", { class: "chip", "aria-pressed": String(G.period === p), onclick: () => { G.period = p; renderFeed(); } }, label, el("span", { class: "cnt", text: inPeriod(p).length })))),
+      el("p", { class: "confnote", text: "github.com/trending 의 AI/ML 저장소를 매일 아침 새로 가져와요." + (t && !isNaN(t) ? " 마지막 갱신 " + t.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "") }));
+
+    const q = S.q.trim().toLowerCase();
+    const list = inPeriod(G.period).filter((r) => {
+      if (S.star && !S.marks.star[r.id]) return false;
+      if (S.kw && !arr(r.keywords).includes(S.kw)) return false;
+      if (q) {
+        const hay = [r.repo, r.description, r.oneLine, r.language, ...arr(r.keywords), ...r.bullets.map((b) => b.text)].map(str).join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    }).sort((a, b) => a.periods[G.period].rank - b.periods[G.period].rank);
+    const label = (PERIODS.find(([p]) => p === G.period) || [])[1];
+    feed.replaceChildren(bar, el("section", { class: "section" },
+      el("h2", { class: "section-head" }, el("span", { text: "GitHub " + label }), el("span", { text: list.length ? list.length + "개" : "" })),
+      list.length ? el("ol", { class: "list" }, list.map((r) => row(r, r.periods[G.period].rank)))
+        : el("div", { class: "empty" }, el("span", { text: "조건에 맞는 저장소가 없어요." }))));
+  }
+
   function renderFeed() {
     if (S.kind === "conf") return renderConf();
+    if (S.kind === "gh") return renderGh();
     const feed = $("feed");
     if (!S.loaded) { feed.replaceChildren(el("div", { class: "empty" }, el("span", { text: "불러오는 중…" }))); return; }
     if (!S.index.length) {
@@ -473,7 +549,7 @@
   }
 
   function render() {
-    document.body.classList.toggle("conf-mode", S.kind === "conf");
+    document.body.classList.toggle("conf-mode", S.kind === "conf" || S.kind === "gh"); // dashboards: no date bar, word cloud or heatmap
     renderDates(); renderToday(); renderToolbar(); renderFeed(); renderHeat(); renderStatus();
   }
 
@@ -486,7 +562,7 @@
     await loadDay(d);
     render();
   }
-  async function ensureCrossDay() { if (S.kind !== "conf" && crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
+  async function ensureCrossDay() { if (S.kind !== "conf" && S.kind !== "gh" && crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
   function setKw(k) { S.kw = S.kw === k ? null : k; ensureCrossDay(); }
 
   $("dateSel").addEventListener("change", (e) => goDate(e.target.value));
