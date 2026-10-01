@@ -4,7 +4,7 @@ alphaXiv · HF Daily Papers · GeekNews · Hacker News · Meta AI / NVIDIA / Goo
 매일 AI 논문과 뉴스를 플랫폼별로 모아(alphaXiv·HF Papers·HF Trending 논문 각 10편과 로보틱스 논문 5편(부족하면 arXiv cs.RO에서 보충), GeekNews·HN 각 최대 15건과 OpenAI·Anthropic·DeepMind·Google Research·Meta·NVIDIA 블로그 새 글) 한국어로 요약하고, 로보틱스 탑티어 학회 수상 논문을 모아 보여주는 정적 사이트. 화면에는 전체·플랫폼별로 논문 5편·뉴스 10건을 먼저 보여 주고 나머지는 "더보기"로 연다. GitHub 탭은 github.com/trending의 AI/ML 저장소(오늘·이번 주·이번 달)를 매일 새로 받아 보여 주는 대시보드다. GitHub Pages로 게시한다.
 
 - 사이트: https://meteor0108.github.io/ai-trend-radar/
-- 매일 07:58 KST에 Claude Code 예약 작업이 [ROUTINE.md](ROUTINE.md)를 따라 수집·요약하고 `data/`에 커밋한다. Slack에는 업데이트 알림만 보낸다.
+- 매일 03:30 KST 무렵 Claude Code 예약 작업이 [ROUTINE.md](ROUTINE.md)를 따라 수집·요약하고 `data/`에 커밋한다. Slack에는 업데이트 알림만 보낸다.
 
 ## 구조
 

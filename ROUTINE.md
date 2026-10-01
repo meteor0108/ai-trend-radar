@@ -1,6 +1,6 @@
 # Daily digest job
 
-Instructions for the scheduled Claude Code routine that fills this site. It runs unattended every day at 07:58 KST: do not ask questions, make reasonable choices and proceed. Never invent details you did not read.
+Instructions for the scheduled Claude Code routine that fills this site. It runs unattended every day at about 03:30 KST (inside the owner's overnight usage window, so it must finish well before 04:00 KST): do not ask questions, make reasonable choices and proceed. Never invent details you did not read.
 
 ## 0. Setup
 

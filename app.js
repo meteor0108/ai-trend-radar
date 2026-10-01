@@ -489,7 +489,7 @@
     const feed = $("feed");
     if (!S.loaded) { feed.replaceChildren(el("div", { class: "empty" }, el("span", { text: "불러오는 중…" }))); return; }
     if (!S.index.length) {
-      feed.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "아직 수집된 항목이 없어요" }), el("span", { text: "매일 오전 8시(KST)에 논문과 뉴스가 자동으로 채워져요." })));
+      feed.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "아직 수집된 항목이 없어요" }), el("span", { text: "매일 새벽(KST)에 논문과 뉴스가 자동으로 채워져요." })));
       return;
     }
     const list = filtered();
