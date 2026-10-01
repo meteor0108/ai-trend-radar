@@ -32,6 +32,7 @@ NEWS_SOURCES = {"geeknews", "hn", "github", "openai", "anthropic", "deepmind", "
 ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES
 ID_RE = re.compile(r"^(p-\d{4}\.\d{4,5}|gn-\d+|hn-\d+|(gh|openai|anthropic|deepmind|meta|nvidia|google)-[a-z0-9][a-z0-9-]{0,119})$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+CODE_RE = re.compile(r"^https://(github|gitlab)\.com/[\w.-]+/[\w.-]+/?$")
 SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
 PER_SOURCE = {"paper": 10, "news": 15}  # items to collect per platform
 MAX_TOTAL = {"paper": 35, "news": 80}
@@ -143,6 +144,12 @@ def clean_item(raw, warnings):
     for key in ("image", "figureUrl", "altUrl", "discussUrl"):
         if https(raw.get(key)):
             item[key] = raw[key]
+    if kind == "paper" and CODE_RE.match(str(raw.get("codeUrl") or "")):
+        item["codeUrl"] = raw["codeUrl"].rstrip("/")
+        if isinstance(raw.get("codeStars"), int) and raw["codeStars"] >= 0:
+            item["codeStars"] = raw["codeStars"]
+    elif raw.get("codeUrl"):
+        warnings.append(f"{iid}: codeUrl must be a github.com or gitlab.com repository URL (dropped the field)")
     if isinstance(raw.get("score"), (int, float)):
         item["score"] = raw["score"]
     if text(raw.get("scoreLabel"), 60):

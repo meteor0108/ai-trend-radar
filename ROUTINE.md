@@ -41,7 +41,7 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
   - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements) and at most 2 GitHub repositories; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
 
-**Robotics lane** (the site shows these under a "🤖 로보틱스" chip, whichever list they came from)
+**Robotics lane** (the site shows these under a "로보틱스" chip, whichever list they came from)
 
 - Every paper gets `"lane"`: `"robotics"` when its subject is robotics — arXiv primary category cs.RO, or robot learning, manipulation, locomotion, navigation, humanoids, VLA / embodied agents acting in the physical world, autonomous driving — otherwise `"trending"`. Decide from the abstract, not from the title alone.
 - Aim for **5 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 5, fill the gap from https://arxiv.org/list/cs.RO/new (new submissions only, not cross-lists or replacements; skip ids in `seen`).
@@ -53,10 +53,11 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 Every collected item gets a summary, not only the top ones.
 
 - Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
+- Paper code: when the paper's code is public, set `codeUrl` to the repository (`https://github.com/<owner>/<repo>`, GitHub or GitLab only) and `codeStars` to its star count if known. Take it from `curl -s https://huggingface.co/api/papers/<arxivId>` → `githubRepo` / `githubStars` (the HF list data carries the same fields), or from a repository URL written in the arXiv abstract or comments. Leave both out when no repository is stated; never guess a URL, and do not use project pages or "code coming soon" notes.
 - News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page, the HN thread or the RSS item text instead, using only facts quoted there.
 - GitHub repo: read the README (`https://github.com/<owner>/<repo>`) and summarize what it is and does. `title` = `owner/repo: <short description>`, `url` = the repo, `score` = stars gained today, `scoreLabel` like `★12.3k · +1,280 today`.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
-- Day `keywords`: 3–5 themes recurring across today's items, each with a one-sentence Korean `note`.
+- Day `keywords`: write `[]`. The site no longer shows a daily keyword summary; its word cloud is built from the items' own `keywords`, so make those consistent (same spelling for the same theme).
 
 **`published`: when the item was originally posted** (the site shows "N시간 전 / N일 전" and the full date). ISO 8601 with a timezone offset, or `YYYY-MM-DD` when the source gives only a date. Never guess a time you did not read.
 
@@ -77,7 +78,7 @@ Replace the file if it already exists. Shape:
 ```json
 {
   "date": "2026-09-30",
-  "keywords": [{"term": "World Model", "note": "로봇·영상 생성 모두 월드 모델을 학습 신호로 쓰는 흐름"}],
+  "keywords": [],
   "failed": [],
   "items": [
     {
@@ -94,6 +95,8 @@ Replace the file if it already exists. Shape:
       "image": "https://arxiv.org/html/2609.38172v1/x1.png",
       "figureUrl": "https://arxiv.org/html/2609.38172",
       "altUrl": "https://www.alphaxiv.org/abs/2609.38172",
+      "codeUrl": "https://github.com/owner/repo",
+      "codeStars": 1234,
       "score": 44,
       "scoreLabel": "HF 44▲ · alphaXiv #3",
       "oneLine": "한 줄 요약",

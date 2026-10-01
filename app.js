@@ -46,6 +46,11 @@
   const fmtDate = (d) => { const [, m, dd] = d.split("-"); const wd = "일월화수목금토"[new Date(d + "T00:00:00").getDay()]; return `${m}.${dd} (${wd})`; };
   const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } };
   const arxivId = (i) => (typeof i.id === "string" && i.id.startsWith("p-") ? i.id.slice(2) : null);
+  // Public code repository of a paper (GitHub/GitLab only), with a compact star count when known
+  const codeUrl = (i) => { const u = safeUrl(i.codeUrl); return u && /^(github|gitlab)\.com$/.test(hostOf(u)) ? u : null; };
+  const stars = (n) => (Number.isInteger(n) && n > 0 ? " ★" + (n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : n) : "");
+  const codeMark = (i) => (codeUrl(i) ? el("a", { class: "code", href: codeUrl(i), target: "_blank", rel: "noopener", title: "공개된 코드 저장소", text: "코드" + stars(i.codeStars) }) : null);
+  const codeBtn = (i) => (codeUrl(i) ? el("a", { class: "btn", href: codeUrl(i), target: "_blank", rel: "noopener", text: "GitHub 코드" + stars(i.codeStars) }) : null);
 
   // Source timestamps: full ISO with offset, or a bare YYYY-MM-DD when the source gives only a date
   const kstDay = (t) => t.toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" });
@@ -118,29 +123,21 @@
     const meta = S.index.find((d) => d.date === S.date) || {};
     const day = S.days.get(S.date);
     const c = meta.counts || {};
-    const kws = arr((day && day.keywords.length ? day.keywords : meta.keywords));
     const failed = arr(day ? day.failed : meta.failed).filter((s) => SRC_LABEL[s]);
-    const main = el("div", { class: "today-main" }, ...[
+    host.replaceChildren(...[
       el("div", { class: "head" },
-        el("h2", { text: fmtDate(S.date) + " 오늘의 키워드" }),
+        el("h2", { text: fmtDate(S.date) + " 오늘의 워드클라우드" }),
         el("div", { class: "counts" }, el("span", null, el("b", { text: c.paper ?? "–" }), "논문"), el("span", null, el("b", { text: c.news ?? "–" }), "뉴스"))),
-      kws.length
-        ? el("ul", { class: "kwlist" }, kws.slice(0, 5).map((k) => el("li", null,
-            el("button", { class: "term" + (S.kw === str(k.term) ? " on" : ""), onclick: () => setKw(str(k.term)), text: str(k.term) }),
-            el("span", { class: "note", text: str(k.note) }))))
-        : el("p", { class: "notice", text: "이 날짜의 키워드 요약이 없어요." }),
+      wordCloud(day ? day.items : []) || el("p", { class: "notice", text: "이 날짜에는 워드클라우드를 만들 키워드가 부족해요." }),
       failed.length ? el("p", { class: "failed", text: "수집 실패: " + failed.map((s) => SRC_LABEL[s]).join(", ") }) : null,
     ].filter(Boolean));
-    const cloud = wordCloud(day ? day.items : []);
-    host.classList.toggle("has-cloud", !!cloud);
-    host.replaceChildren(...[main, cloud].filter(Boolean));
   }
 
   // Word cloud of the day's item keywords: size and tone follow how many items carry the word
   function wordCloud(items) {
     const counts = new Map();
     items.forEach((i) => arr(i.keywords).forEach((k) => { if (typeof k === "string" && k) counts.set(k, (counts.get(k) || 0) + 1); }));
-    const top = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 28);
+    const top = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 40);
     if (top.length < 3) return null;
     const max = top[0][1], min = top[top.length - 1][1];
     // biggest words in the middle, smaller ones alternating outwards
@@ -149,10 +146,10 @@
     const words = order.map(([k, n]) => {
       const t = max === min ? 0.5 : (n - min) / (max - min);
       const b = el("button", { class: "word w" + Math.round(t * 3) + (S.kw === k ? " on" : ""), title: `${k} · ${n}건`, "aria-label": `${k} ${n}건`, onclick: () => setKw(k), text: k });
-      b.style.fontSize = (12 + t * 16).toFixed(1) + "px";
+      b.style.fontSize = (16 + t * 26).toFixed(1) + "px";
       return b;
     });
-    return el("div", { class: "today-cloud" }, el("h2", { text: "오늘의 워드클라우드" }), el("div", { class: "cloud" }, words));
+    return el("div", { class: "cloud" }, words);
   }
 
   // Rows
@@ -184,7 +181,7 @@
   function awardBadges(i) {
     const aw = arr(i.awards).filter((a) => a && typeof a.name === "string");
     aw.sort((a, b) => (b.status === "winner") - (a.status === "winner"));
-    return aw.map((a) => el("span", { class: "award" + (a.status === "winner" ? " win" : ""), text: (a.status === "winner" ? "🏆 " : "후보 · ") + a.name }));
+    return aw.map((a) => el("span", { class: "award" + (a.status === "winner" ? " win" : ""), text: (a.status === "winner" ? "수상 · " : "후보 · ") + a.name }));
   }
 
   function row(i, rank) {
@@ -200,12 +197,13 @@
       !isPaper && url ? el("span", { class: "domain", text: hostOf(url) }) : null);
     const kws = arr(i.keywords).slice(0, 3).map((k) => (typeof k === "string" ? el("button", { class: "kw", onclick: () => setKw(k), text: "#" + k }) : null));
     const meta = isConf
-      ? el("div", { class: "meta" }, awardBadges(i), i.authors ? el("span", { class: "authors", text: str(i.authors) }) : null, kws)
+      ? el("div", { class: "meta" }, awardBadges(i), i.authors ? el("span", { class: "authors", text: str(i.authors) }) : null, codeMark(i), kws)
       : el("div", { class: "meta" },
         i.venue ? el("span", { class: "venue", text: str(i.venue) }) : null,
         srcs.filter((s) => SRC_LABEL[s]).map((s) => el("span", { class: "src " + s, text: SRC_LABEL[s] })),
         i.scoreLabel ? el("span", { class: "score", text: str(i.scoreLabel) }) : null,
         ago(i) ? el("span", { class: "ago", title: postedText(i), text: ago(i) }) : null,
+        isPaper ? codeMark(i) : null,
         kws);
 
     const side = el("div", { class: "side" },
@@ -217,7 +215,7 @@
 
     const li = el("li", { class: "row" + (read ? " read" : "") },
       el("div", { class: "row-main" },
-        el("span", { class: "rank", text: isConf ? (arr(i.awards).some((a) => a && a.status === "winner") ? "🏆" : "") : (rank ?? i.rank ?? "") }),
+        el("span", { class: "rank", text: isConf ? "" : (rank ?? i.rank ?? "") }),
         el("div", { class: "row-body" }, title, i.oneLine ? el("p", { class: "oneline", text: str(i.oneLine) }) : null, meta),
         side));
     if (open) li.append(detail(i, img));
@@ -239,6 +237,7 @@
       if (aid) links.push(el("a", { class: "btn primary", href: `https://arxiv.org/html/${aid}`, target: "_blank", rel: "noopener", text: "원문 Figure 전체" }));
       if (aid) links.push(el("a", { class: "btn", href: `https://www.alphaxiv.org/abs/${aid}`, target: "_blank", rel: "noopener", text: "alphaXiv" }));
       if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: aid ? "arXiv" : "원문" }));
+      if (codeBtn(i)) links.push(codeBtn(i));
       const src = safeUrl(i.awardSource);
       if (src) links.push(el("a", { class: "btn", href: src, target: "_blank", rel: "noopener", text: "수상 출처" }));
     } else if (isPaper) {
@@ -246,6 +245,7 @@
       if (fig) links.push(el("a", { class: "btn primary", href: fig, target: "_blank", rel: "noopener", text: "원문 Figure 전체" }));
       if (alt) links.push(el("a", { class: "btn", href: alt, target: "_blank", rel: "noopener", text: "alphaXiv" }));
       if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: "arXiv" }));
+      if (codeBtn(i)) links.push(codeBtn(i));
     } else {
       if (url) links.push(el("a", { class: "btn", href: url, target: "_blank", rel: "noopener", text: i.source === "github" ? "GitHub 저장소" : "원문" }));
       const d = safeUrl(i.discussUrl);
@@ -263,7 +263,7 @@
       if (figure && sketch) {
         const mode = S.fig === "sketch" ? "sketch" : "fig";
         const tab = (m, label) => el("button", { class: "chip", "aria-pressed": String(mode === m), onclick: () => { S.fig = m; try { localStorage.setItem("tr.fig", m); } catch (x) {} renderFeed(); }, text: label });
-        visual = el("div", { class: "visual" }, el("div", { class: "chips figtabs", role: "group", "aria-label": "그림 보기" }, tab("fig", "원문 Figure"), tab("sketch", "✏️ 손그림 도식")), mode === "sketch" ? sketch : figure);
+        visual = el("div", { class: "visual" }, el("div", { class: "chips figtabs", role: "group", "aria-label": "그림 보기" }, tab("fig", "원문 Figure"), tab("sketch", "손그림 도식")), mode === "sketch" ? sketch : figure);
       } else visual = figure || sketch;
     }
     const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 원문 링크에서 확인해 주세요." }) : null;
@@ -293,7 +293,7 @@
   const srcsOf = (i) => (arr(i.sources).length ? arr(i.sources) : [i.source]);
   // Position of an item on one platform (or overall); older days without per-platform ranks fall back to the overall rank
   const inPlat = (i, p) => (p === "robotics" ? i.lane === "robotics" : srcsOf(i).includes(p));
-  const platLabel = (p) => (p === "robotics" ? "🤖 로보틱스" : SRC_LABEL[p] || p);
+  const platLabel = (p) => (p === "robotics" ? "로보틱스" : SRC_LABEL[p] || p);
   function rankIn(i, plat) {
     if (plat === "all" || plat === "robotics") return i.rank || 999;
     const r = i.ranks && i.ranks[plat];
@@ -375,7 +375,7 @@
         CONF_ORDER.filter((k) => C.confs.some((c) => c.key === k)).map((k) => chip(C.pick === k, name(k), () => { C.pick = k; renderFeed(); }))),
       el("div", { class: "chips" }, chip(C.year === "all", "전체 연도", () => { C.year = "all"; renderFeed(); }),
         years.map((y) => chip(C.year === y, String(y), () => { C.year = y; renderFeed(); })),
-        el("button", { class: "toggle", "aria-pressed": String(C.winners), onclick: () => { C.winners = !C.winners; renderFeed(); }, text: "🏆 수상작만" })));
+        el("button", { class: "toggle", "aria-pressed": String(C.winners), onclick: () => { C.winners = !C.winners; renderFeed(); }, text: "수상작만" })));
 
     const q = S.q.trim().toLowerCase();
     const list = C.papers.filter((p) => {
