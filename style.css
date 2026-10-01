@@ -11,6 +11,8 @@
   --grid: #dfe5ec;
   --src-alphaxiv: #a3243b;
   --src-hf: #a86f00;
+  --src-hftrend: #b0457a;
+  --hl: #fff1a8;
   --src-arxiv: #6b3fa0;
   --src-geeknews: #0b7a75;
   --src-hn: #c9480c;
@@ -37,7 +39,7 @@
   :root:not([data-theme="light"]) {
     --bg: #0f1419; --surface: #171e25; --sunken: #1f2831; --line: #2c3743;
     --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
-    --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
+    --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-hftrend: #f29ac4; --hl: #4a4420; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
     --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
     --src-openai: #a5b0ff; --src-anthropic: #e8956f; --src-deepmind: #8ab4f8; --src-github: #d0d7de;
     --award: #f0c05a; --award-soft: #2e2613;
@@ -48,7 +50,7 @@
 :root[data-theme="dark"] {
   --bg: #0f1419; --surface: #171e25; --sunken: #1f2831; --line: #2c3743;
   --fg: #e4eaf0; --muted: #93a1ae; --accent: #8aa2ff; --accent-soft: #1d2748; --grid: #26313c;
-  --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
+  --src-alphaxiv: #f07a8e; --src-hf: #f0b93c; --src-hftrend: #f29ac4; --hl: #4a4420; --src-arxiv: #c3a0f0; --src-geeknews: #4fd1c5; --src-hn: #ff8a4c;
   --src-meta: #7fb0ff; --src-nvidia: #9fd356; --src-google: #b4c0cc;
   --src-openai: #a5b0ff; --src-anthropic: #e8956f; --src-deepmind: #8ab4f8; --src-github: #d0d7de;
   --award: #f0c05a; --award-soft: #2e2613;
@@ -114,13 +116,13 @@ img { max-width: 100%; }
 .row-main { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 4px 12px; padding: 12px 14px; align-items: start; }
 .rank { font: 500 15px var(--font-mono); color: var(--muted); text-align: right; padding-top: 1px; font-variant-numeric: tabular-nums; }
 .row-body { display: grid; gap: 4px; min-width: 0; }
-.title { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.title { margin: 0; font-size: 19px; font-weight: 700; line-height: 1.35; }
 .title a { color: var(--fg); text-decoration: none; }
 .title a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
 .title .domain { font: 400 12px var(--font-mono); color: var(--muted); margin-left: 6px; white-space: nowrap; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; font-size: 12px; color: var(--muted); }
 .src { font: 500 11px var(--font-mono); padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; }
-.src.alphaxiv { color: var(--src-alphaxiv); } .src.hf { color: var(--src-hf); } .src.arxiv { color: var(--src-arxiv); }
+.src.alphaxiv { color: var(--src-alphaxiv); } .src.hf { color: var(--src-hf); } .src.hftrend { color: var(--src-hftrend); } .src.arxiv { color: var(--src-arxiv); }
 .src.geeknews { color: var(--src-geeknews); } .src.hn { color: var(--src-hn); }
 .src.meta { color: var(--src-meta); } .src.nvidia { color: var(--src-nvidia); } .src.google { color: var(--src-google); }
 .src.openai { color: var(--src-openai); } .src.anthropic { color: var(--src-anthropic); } .src.deepmind { color: var(--src-deepmind); } .src.github { color: var(--src-github); }
@@ -163,6 +165,32 @@ img { max-width: 100%; }
 .arrow { flex: 0 0 22px; display: grid; place-items: center; color: var(--muted); }
 .arrow svg { width: 14px; height: 14px; }
 .fig figcaption { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* Hand-sketched method diagram */
+.visual { display: grid; gap: 8px; }
+.figtabs .chip { padding: 3px 10px; font-size: 12px; }
+.fig.sketch { font-family: "Gaegu", var(--font-body); background-image: none; background-color: var(--sunken); padding: 16px 14px 10px; }
+.sketch .flow { align-items: center; gap: 2px; padding: 4px 2px 8px; }
+.sketch .step { word-break: keep-all; border: 2px solid var(--fg); border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; padding: 10px 14px; font-size: 17px; line-height: 1.25; transform: rotate(-.7deg); box-shadow: 2px 3px 0 var(--line); }
+.sketch .step:nth-child(4n + 3) { transform: rotate(.8deg); border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px; }
+.sketch .step .n { font: 700 16px "Gaegu", var(--font-body); color: var(--accent); }
+.sketch .step.last { border-color: var(--accent); background: var(--hl); }
+.sketch .arrow { flex-basis: 30px; color: var(--fg); }
+.sketch .arrow svg { width: 26px; height: 18px; }
+.fig.sketch figcaption { font-family: var(--font-body); }
+
+/* Today panel: keyword notes on the left, word cloud on the right */
+.today.has-cloud { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 18px; }
+.today-main { display: grid; gap: 10px; min-width: 0; align-content: start; }
+.today-cloud { display: grid; gap: 8px; min-width: 0; align-content: start; border-left: 1px solid var(--line); padding-left: 18px; }
+.cloud { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: center; justify-content: center; line-height: 1.15; padding-block: 4px; }
+.word { border: 0; background: none; padding: 0; cursor: pointer; font-weight: 600; color: var(--muted); }
+.word.w1 { color: var(--fg); } .word.w2 { color: var(--src-geeknews); } .word.w3 { color: var(--accent); font-weight: 700; }
+.word:hover, .word.on { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) {
+  .today.has-cloud { grid-template-columns: minmax(0, 1fr); }
+  .today-cloud { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 12px; }
+}
 
 /* Conference tab */
 .conf-mode #today, .conf-mode .trend, .conf-mode .datebar { display: none !important; }
@@ -217,6 +245,8 @@ img { max-width: 100%; }
   .arrow { flex-basis: 18px; transform: rotate(90deg); }
   .step { min-width: 0; }
   .kwlist li { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .title { font-size: 17.5px; }
+  .sketch .arrow { flex-basis: 22px; }
   .heat .hrow { grid-template-columns: 96px repeat(var(--cols), minmax(14px, 1fr)); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

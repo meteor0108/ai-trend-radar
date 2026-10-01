@@ -3,17 +3,18 @@
 
   // ?data=samples loads the local preview fixtures instead of the real data folder
   const BASE = new URLSearchParams(location.search).get("data") === "samples" ? "samples/" : "data/";
-  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research", openai: "OpenAI", anthropic: "Anthropic", deepmind: "DeepMind", github: "GitHub Trending" };
+  const SRC_LABEL = { alphaxiv: "alphaXiv", hf: "HF Papers", hftrend: "HF Trending", arxiv: "arXiv", geeknews: "GeekNews", hn: "Hacker News", meta: "Meta AI", nvidia: "NVIDIA", google: "Google Research", openai: "OpenAI", anthropic: "Anthropic", deepmind: "DeepMind", github: "GitHub Trending" };
   const HEAT_DAYS = 14;
   const MAX_DAYS = 180;
   // Per section: platforms in chip order, and how many rows show before "더보기"
-  const PLATS = { paper: ["alphaxiv", "hf", "arxiv"], news: ["geeknews", "hn", "github", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
+  // "robotics" is not a site: it collects every paper on the robotics lane, whichever list it came from
+  const PLATS = { paper: ["robotics", "alphaxiv", "hf", "hftrend", "arxiv"], news: ["geeknews", "hn", "github", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
   const SHOW = { paper: 5, news: 10 };
 
   const S = {
     index: [], updated: null, days: new Map(), date: null, loaded: false,
     kind: "all", star: false, q: "", kw: null,
-    plat: { paper: "all", news: "all" }, more: { paper: false, news: false },
+    plat: { paper: "all", news: "all" }, more: { paper: false, news: false }, fig: "fig",
     open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
     conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
   };
@@ -21,6 +22,7 @@
   const CONF_ORDER = ["icra", "iros", "rss", "corl"];
 
   try { const k = localStorage.getItem("tr.kind"); if (["all", "paper", "news", "conf"].includes(k)) S.kind = k; } catch (e) {}
+  try { if (localStorage.getItem("tr.fig") === "sketch") S.fig = "sketch"; } catch (e) {}
   try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {}, star: m.star || {} }; } catch (e) {}
   function saveMarks() { try { localStorage.setItem("tr.marks", JSON.stringify(S.marks)); } catch (e) {} }
 
@@ -81,7 +83,7 @@
     const img = safeUrl(i.image);
     if (img) return img;
     const aid = arxivId(i);
-    if (aid && arr(i.sources).includes("hf")) return `https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/${aid}.png`;
+    if (aid && arr(i.sources).some((s) => s === "hf" || s === "hftrend")) return `https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/${aid}.png`;
     return null;
   }
 
@@ -118,7 +120,7 @@
     const c = meta.counts || {};
     const kws = arr((day && day.keywords.length ? day.keywords : meta.keywords));
     const failed = arr(day ? day.failed : meta.failed).filter((s) => SRC_LABEL[s]);
-    host.replaceChildren(...[
+    const main = el("div", { class: "today-main" }, ...[
       el("div", { class: "head" },
         el("h2", { text: fmtDate(S.date) + " 오늘의 키워드" }),
         el("div", { class: "counts" }, el("span", null, el("b", { text: c.paper ?? "–" }), "논문"), el("span", null, el("b", { text: c.news ?? "–" }), "뉴스"))),
@@ -129,16 +131,39 @@
         : el("p", { class: "notice", text: "이 날짜의 키워드 요약이 없어요." }),
       failed.length ? el("p", { class: "failed", text: "수집 실패: " + failed.map((s) => SRC_LABEL[s]).join(", ") }) : null,
     ].filter(Boolean));
+    const cloud = wordCloud(day ? day.items : []);
+    host.classList.toggle("has-cloud", !!cloud);
+    host.replaceChildren(...[main, cloud].filter(Boolean));
+  }
+
+  // Word cloud of the day's item keywords: size and tone follow how many items carry the word
+  function wordCloud(items) {
+    const counts = new Map();
+    items.forEach((i) => arr(i.keywords).forEach((k) => { if (typeof k === "string" && k) counts.set(k, (counts.get(k) || 0) + 1); }));
+    const top = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 28);
+    if (top.length < 3) return null;
+    const max = top[0][1], min = top[top.length - 1][1];
+    // biggest words in the middle, smaller ones alternating outwards
+    const order = [];
+    top.forEach((w, n) => (n % 2 ? order.unshift(w) : order.push(w)));
+    const words = order.map(([k, n]) => {
+      const t = max === min ? 0.5 : (n - min) / (max - min);
+      const b = el("button", { class: "word w" + Math.round(t * 3) + (S.kw === k ? " on" : ""), title: `${k} · ${n}건`, "aria-label": `${k} ${n}건`, onclick: () => setKw(k), text: k });
+      b.style.fontSize = (12 + t * 16).toFixed(1) + "px";
+      return b;
+    });
+    return el("div", { class: "today-cloud" }, el("h2", { text: "오늘의 워드클라우드" }), el("div", { class: "cloud" }, words));
   }
 
   // Rows
+  // Method steps drawn as a hand-sketched diagram (wobbly boxes, pen arrows, handwriting font)
   function flowFigure(steps) {
     const s = arr(steps).filter((x) => typeof x === "string").slice(0, 5);
     if (s.length < 2) return null;
-    const arrow = () => { const a = el("span", { class: "arrow", "aria-hidden": "true" }); a.innerHTML = '<svg viewBox="0 0 14 14"><path d="M2 7h9M8 3.5 11.5 7 8 10.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'; return a; };
+    const arrow = () => { const a = el("span", { class: "arrow", "aria-hidden": "true" }); a.innerHTML = '<svg viewBox="0 0 24 16"><path d="M2 9c5-2 10-1 18-1M15 3.5c2 1.6 3.6 3 5.5 4.6-2 1.5-3.6 3-5 4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'; return a; };
     const flow = el("div", { class: "flow" });
-    s.forEach((t, i) => { if (i) flow.append(arrow()); flow.append(el("div", { class: "step" + (i === s.length - 1 ? " last" : "") }, el("span", { class: "n", text: i === s.length - 1 ? "OUTPUT" : "STEP " + (i + 1) }), t)); });
-    return el("figure", { class: "fig" }, flow, el("figcaption", { text: "방법 흐름 · 초록을 바탕으로 Claude가 정리한 도식" }));
+    s.forEach((t, i) => { if (i) flow.append(arrow()); flow.append(el("div", { class: "step" + (i === s.length - 1 ? " last" : "") }, el("span", { class: "n", text: i === s.length - 1 ? "결과!" : (i + 1) + "." }), t)); });
+    return el("figure", { class: "fig sketch" }, flow, el("figcaption", { text: "손그림 도식 · 초록을 바탕으로 Claude가 정리한 방법 흐름" }));
   }
 
   function brokenImage(id) { if (!S.broken.has(id)) { S.broken.add(id); renderFeed(); } }
@@ -229,11 +254,17 @@
 
     let visual = null;
     if (isPaper) {
-      visual = img
+      const figure = img
         ? el("figure", { class: "figure" },
             el("img", { src: img, alt: str(i.title) + " 대표 그림", loading: "lazy", referrerpolicy: "no-referrer", onerror: () => brokenImage(i.id) }),
             el("figcaption", { text: safeUrl(i.image) ? "논문 본문의 대표 Figure" : "Hugging Face 썸네일" }))
-        : flowFigure(i.flow);
+        : null;
+      const sketch = flowFigure(i.flow);
+      if (figure && sketch) {
+        const mode = S.fig === "sketch" ? "sketch" : "fig";
+        const tab = (m, label) => el("button", { class: "chip", "aria-pressed": String(mode === m), onclick: () => { S.fig = m; try { localStorage.setItem("tr.fig", m); } catch (x) {} renderFeed(); }, text: label });
+        visual = el("div", { class: "visual" }, el("div", { class: "chips figtabs", role: "group", "aria-label": "그림 보기" }, tab("fig", "원문 Figure"), tab("sketch", "✏️ 손그림 도식")), mode === "sketch" ? sketch : figure);
+      } else visual = figure || sketch;
     }
     const note = isConf && !bullets.length ? el("p", { class: "notice", text: "공개된 초록을 찾지 못해 제목만 정리했어요. 원문 링크에서 확인해 주세요." }) : null;
     const when = !isConf && postedText(i)
@@ -261,25 +292,27 @@
 
   const srcsOf = (i) => (arr(i.sources).length ? arr(i.sources) : [i.source]);
   // Position of an item on one platform (or overall); older days without per-platform ranks fall back to the overall rank
+  const inPlat = (i, p) => (p === "robotics" ? i.lane === "robotics" : srcsOf(i).includes(p));
+  const platLabel = (p) => (p === "robotics" ? "🤖 로보틱스" : SRC_LABEL[p] || p);
   function rankIn(i, plat) {
-    if (plat === "all") return i.rank || 999;
+    if (plat === "all" || plat === "robotics") return i.rank || 999;
     const r = i.ranks && i.ranks[plat];
     return Number.isInteger(r) ? r : 1000 + (i.rank || 999);
   }
 
   function section(kind, label, unit, all, emptyText) {
     const plat = S.plat[kind];
-    const present = PLATS[kind].filter((p) => p === plat || all.some((i) => srcsOf(i).includes(p)));
-    const count = (p) => all.filter((i) => srcsOf(i).includes(p)).length;
+    const present = PLATS[kind].filter((p) => p === plat || all.some((i) => inPlat(i, p)));
+    const count = (p) => all.filter((i) => inPlat(i, p)).length;
     const pick = (p) => { S.plat[kind] = p; S.more[kind] = false; renderFeed(); };
     const chips = present.length ? el("div", { class: "chips platbar", role: "group", "aria-label": label + " 플랫폼" },
       el("button", { class: "chip", "aria-pressed": String(plat === "all"), onclick: () => pick("all") }, "전체", el("span", { class: "cnt", text: all.length })),
-      present.map((p) => el("button", { class: "chip", "aria-pressed": String(plat === p), onclick: () => pick(p) }, SRC_LABEL[p] || p, el("span", { class: "cnt", text: count(p) })))) : null;
+      present.map((p) => el("button", { class: "chip" + (p === "robotics" ? " robo" : ""), "aria-pressed": String(plat === p), onclick: () => pick(p) }, platLabel(p), el("span", { class: "cnt", text: count(p) })))) : null;
 
-    const list = (plat === "all" ? all : all.filter((i) => srcsOf(i).includes(plat)))
+    const list = (plat === "all" ? all : all.filter((i) => inPlat(i, plat)))
       .slice().sort((a, b) => b.date.localeCompare(a.date) || rankIn(a, plat) - rankIn(b, plat));
     const head = el("h2", { class: "section-head" }, el("span", { text: label }), el("span", { text: list.length ? list.length + unit : "" }));
-    if (!list.length) return el("section", { class: "section" }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${SRC_LABEL[plat] || plat} 항목이 없어요.` })));
+    if (!list.length) return el("section", { class: "section" }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${platLabel(plat)} 항목이 없어요.` })));
 
     // Single day: show the top SHOW rows, the rest behind "더보기". Search/keyword/star views list every match by date.
     if (!crossDay()) {

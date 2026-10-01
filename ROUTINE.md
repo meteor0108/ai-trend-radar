@@ -17,6 +17,8 @@ Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, 
 |---|---|---|
 | `alphaxiv` | https://www.alphaxiv.org/ | top 10 trending papers |
 | `hf` | https://huggingface.co/papers | top 10 by upvotes |
+| `hftrend` | https://huggingface.co/papers/trending | top 10 in trending order (multi-day trend with GitHub stars; many overlap with `hf`/`alphaxiv`, which is fine) |
+| `arxiv` | https://arxiv.org/list/cs.RO/new | robotics fill only, see "Robotics lane" in section 2 |
 | `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
 | `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
 | `github` | https://github.com/trending?since=daily (WebFetch; curl to github.com returns 403 here) | up to 15 AI/ML repositories (models, agents, LLM tooling, ML libraries), in trending order |
@@ -33,11 +35,18 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 
 - One item per paper (dedupe by arXiv id) and per story. A paper on both alphaXiv and HF, or a story on both GeekNews and HN, is **one** item whose `sources` lists both platforms; put the other platform's link in `altUrl` (papers) or `discussUrl` (news).
 - A company-blog post that is also on GeekNews or HN is one item too: `sources` lists the blog and the site(s), `url` is the blog post, `discussUrl` the discussion page.
-- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/GitHub by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
+- `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/HF Trending/GitHub by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
 - `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
-  - Papers: prefer papers on both lists, then HF upvotes / alphaXiv rank. Set `"lane": "trending"`.
+  - Papers: prefer papers on more than one list, then HF upvotes / alphaXiv rank / HF Trending order. 1–2 of the top 5 are robotics-lane papers (the publish script moves the best-ranked robotics paper into the top 5 if you leave none there).
   - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements) and at most 2 GitHub repositories; fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
+
+**Robotics lane** (the site shows these under a "🤖 로보틱스" chip, whichever list they came from)
+
+- Every paper gets `"lane"`: `"robotics"` when its subject is robotics — arXiv primary category cs.RO, or robot learning, manipulation, locomotion, navigation, humanoids, VLA / embodied agents acting in the physical world, autonomous driving — otherwise `"trending"`. Decide from the abstract, not from the title alone.
+- Aim for **5 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 5, fill the gap from https://arxiv.org/list/cs.RO/new (new submissions only, not cross-lists or replacements; skip ids in `seen`).
+- The cs.RO list has no popularity signal, so pick by reading the abstracts: prefer real-robot experiments over simulation-only results, new datasets/benchmarks or open-sourced systems, and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the page.
+- A fill paper has `"source": "arxiv"`, `"sources": ["arxiv"]`, `"ranks": {"arxiv": n}` (your order of preference), `"scoreLabel": "arXiv cs.RO"` and no `score`.
 
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
 
@@ -115,14 +124,14 @@ Replace the file if it already exists. Shape:
 
 - ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, GitHub `gh-<owner>-<repo>` (lowercase, every character other than a–z/0–9 becomes `-`), blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
 - A repository that was already published on an earlier day (its `gh-` id is in `seen`) is skipped, so GitHub Trending shows repos that are new to the site.
-- Paper `source` is the main list it came from (`alphaxiv` or `hf`); `sources` lists every list it appeared on.
+- Paper `source` is the main list it came from (`alphaxiv`, `hf`, `hftrend`, or `arxiv` for a robotics fill); `sources` lists every list it appeared on.
 - Paper `flow`: 3–5 short steps summarizing the method from the abstract, last step = the outcome.
 - News `bullets`: 1–2 items with an empty `label`.
 - All URLs must be https.
 
 ## 5. Publish
 
-1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 20 papers / 80 news, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
+1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 35 papers / 80 news, makes sure a robotics paper is in the top 5, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
 2. `git add data feed.xml && git commit -m "digest: $TODAY"` and push to `main`. If the push is rejected, pull with rebase and push again once.
 
 ## 6. Notify on Slack
