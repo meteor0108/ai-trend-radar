@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T13:52:18+09:00",
+  "updated": "2026-10-01T14:44:57+09:00",
   "repos": [
     {
       "id": "gh-nvidia-openshell",
@@ -7,7 +7,7 @@
       "url": "https://github.com/NVIDIA/OpenShell",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars": 12991,
+      "stars": 13075,
       "periods": {
         "daily": {
           "rank": 1,
@@ -30,7 +30,7 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 50649,
+      "stars": 50693,
       "periods": {
         "daily": {
           "rank": 2,
@@ -56,7 +56,7 @@
       "url": "https://github.com/mvschwarz/openrig",
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "language": "TypeScript",
-      "stars": 3121,
+      "stars": 3157,
       "periods": {
         "daily": {
           "rank": 3,
@@ -79,7 +79,7 @@
       "url": "https://github.com/mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 24541,
+      "stars": 24549,
       "periods": {
         "daily": {
           "rank": 4,
@@ -106,7 +106,7 @@
       "url": "https://github.com/DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
-      "stars": 149359,
+      "stars": 149402,
       "periods": {
         "daily": {
           "rank": 5,
@@ -133,7 +133,7 @@
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 127639,
+      "stars": 127658,
       "periods": {
         "daily": {
           "rank": 6,
@@ -155,7 +155,7 @@
       "url": "https://github.com/openclaw/openclaw",
       "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "language": "TypeScript",
-      "stars": 391026,
+      "stars": 391040,
       "periods": {
         "daily": {
           "rank": 7,
@@ -177,7 +177,7 @@
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
       "language": "Python",
-      "stars": 76186,
+      "stars": 76201,
       "periods": {
         "daily": {
           "rank": 8,
@@ -199,7 +199,7 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 273128,
+      "stars": 273161,
       "periods": {
         "daily": {
           "rank": 9,
@@ -222,7 +222,7 @@
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 54833,
+      "stars": 54854,
       "periods": {
         "daily": {
           "rank": 10,
@@ -249,7 +249,7 @@
       "url": "https://github.com/modelcontextprotocol/servers",
       "description": "Model Context Protocol Servers",
       "language": "TypeScript",
-      "stars": 90850,
+      "stars": 90856,
       "periods": {
         "daily": {
           "rank": 11,
@@ -271,7 +271,7 @@
       "url": "https://github.com/colbymchenry/codegraph",
       "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
       "language": "C",
-      "stars": 72644,
+      "stars": 72656,
       "periods": {
         "daily": {
           "rank": 12,
@@ -294,7 +294,7 @@
       "url": "https://github.com/VectifyAI/PageIndex",
       "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
       "language": "Python",
-      "stars": 38210,
+      "stars": 38219,
       "periods": {
         "daily": {
           "rank": 13,
@@ -316,7 +316,7 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 95407,
+      "stars": 95416,
       "periods": {
         "weekly": {
           "rank": 1,
@@ -344,7 +344,7 @@
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 43997,
+      "stars": 44021,
       "periods": {
         "weekly": {
           "rank": 2,
@@ -371,7 +371,7 @@
       "repo": "anthropics/financial-services",
       "url": "https://github.com/anthropics/financial-services",
       "language": "Python",
-      "stars": 38387,
+      "stars": 38393,
       "periods": {
         "weekly": {
           "rank": 3,
@@ -399,7 +399,7 @@
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 62187,
+      "stars": 62195,
       "periods": {
         "weekly": {
           "rank": 5,
@@ -422,7 +422,7 @@
       "url": "https://github.com/HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 51140,
+      "stars": 51141,
       "periods": {
         "weekly": {
           "rank": 6,
@@ -445,7 +445,7 @@
       "url": "https://github.com/davila7/claude-code-templates",
       "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
-      "stars": 32247,
+      "stars": 32248,
       "periods": {
         "weekly": {
           "rank": 7,
@@ -469,7 +469,7 @@
       "url": "https://github.com/pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 103573,
+      "stars": 103576,
       "periods": {
         "weekly": {
           "rank": 8,
@@ -492,7 +492,7 @@
       "url": "https://github.com/pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
-      "stars": 73120,
+      "stars": 73140,
       "periods": {
         "weekly": {
           "rank": 9,
@@ -516,7 +516,7 @@
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 6126,
+      "stars": 6132,
       "periods": {
         "weekly": {
           "rank": 10,
@@ -540,7 +540,7 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 82501,
+      "stars": 82528,
       "periods": {
         "weekly": {
           "rank": 11,
@@ -564,7 +564,7 @@
       "url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 31539,
+      "stars": 31544,
       "periods": {
         "weekly": {
           "rank": 12,
@@ -592,7 +592,7 @@
       "url": "https://github.com/alirezarezvani/claude-skills",
       "description": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commerc",
       "language": "Python",
-      "stars": 27067,
+      "stars": 27072,
       "periods": {
         "weekly": {
           "rank": 13,
@@ -616,7 +616,7 @@
       "url": "https://github.com/dream-num/univer",
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "language": "TypeScript",
-      "stars": 22191,
+      "stars": 22193,
       "periods": {
         "weekly": {
           "rank": 14,
@@ -661,7 +661,7 @@
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 42980,
+      "stars": 42987,
       "periods": {
         "monthly": {
           "rank": 1,
@@ -685,7 +685,7 @@
       "url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 270283,
+      "stars": 270291,
       "periods": {
         "monthly": {
           "rank": 2,
@@ -709,7 +709,7 @@
       "url": "https://github.com/ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 52458,
+      "stars": 52472,
       "periods": {
         "monthly": {
           "rank": 3,
@@ -732,7 +732,7 @@
       "url": "https://github.com/tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 75343,
+      "stars": 75379,
       "periods": {
         "monthly": {
           "rank": 4,
@@ -779,7 +779,7 @@
       "url": "https://github.com/THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "stars": 39693,
+      "stars": 39694,
       "periods": {
         "monthly": {
           "rank": 13,
@@ -803,7 +803,7 @@
       "url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stars": 148750,
+      "stars": 148751,
       "periods": {
         "monthly": {
           "rank": 14,
@@ -826,7 +826,7 @@
       "url": "https://github.com/jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 62987,
+      "stars": 62989,
       "periods": {
         "monthly": {
           "rank": 15,

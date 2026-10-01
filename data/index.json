@@ -1,34 +1,13 @@
 {
-  "updated": "2026-10-01T13:50:00+09:00",
+  "updated": "2026-10-01T14:44:57+09:00",
   "days": [
     {
       "date": "2026-10-01",
       "counts": {
-        "paper": 19,
-        "news": 34
+        "paper": 29,
+        "news": 19
       },
-      "keywords": [
-        {
-          "term": "LLM",
-          "note": "Gemini 4 Argon(1M 토큰 출력, DeepSWE 77.9%)과 GPT-6.1 Sol(Astra 1/5 가격) 등 프런티어 모델 발표가 같은 주에 몰림"
-        },
-        {
-          "term": "Distillation",
-          "note": "same-family OPD 스케일링 법칙, block diffusion용 d-OPD, 원스텝 SoL-Refiner 등 증류로 능력을 옮기고 추론을 줄이는 연구가 논문 상위권에 다수"
-        },
-        {
-          "term": "Agent Safety",
-          "note": "Meta Muse의 권한 무시 논란, 공개 모델 GLM-5.3의 익스플로잇 능력, ‘통제 벗어난 에이전트’ 담론 비판 등 에이전트 권한·책임이 화두"
-        },
-        {
-          "term": "Coding Agents",
-          "note": "GitHub Trending 상위를 OpenShell·openrig·ponytail·codegraph 등 코딩 에이전트용 런타임·하네스·skill·컨텍스트 도구가 차지하고, OpenAI도 GPT-6.1 Sol로 코딩·computer use를 겨냥"
-        },
-        {
-          "term": "KV Cache",
-          "note": "chunked KV 압축의 phase 취약점, linear attention state 양자화, DeepSeek KV 최적화 논쟁 등 긴 문맥 추론 비용 절감이 연구·업계 모두의 관심사"
-        }
-      ],
+      "keywords": [],
       "failed": []
     },
     {
