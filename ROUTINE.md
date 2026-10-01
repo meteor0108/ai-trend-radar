@@ -165,7 +165,7 @@ If the trending pages cannot be fetched, leave the existing file untouched and a
 
 ## 6. Notify on Slack
 
-Send exactly one message with the Slack connector's `slack_send_message`, `channel_id` = `YOUR_SLACK_USER_ID` (the user's own DM). Do not send to any other channel or user. Markdown:
+Send exactly one message with the Slack connector's `slack_send_message`, `channel_id` = the Slack member ID given in the routine prompt (the owner's own DM). This file deliberately holds only the placeholder `YOUR_SLACK_USER_ID`: if you reuse this repository, put **your own** Slack member ID in your routine prompt. Never send to the literal placeholder, and if the prompt gives no ID, skip this step and say so. Do not send to any other channel or user. Markdown:
 
 ```
 📰 **AI 트렌드 레이더 업데이트** — MM.DD (요일)
