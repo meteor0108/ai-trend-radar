@@ -144,6 +144,10 @@ def clean_item(raw, warnings):
     for key in ("image", "figureUrl", "altUrl", "discussUrl"):
         if https(raw.get(key)):
             item[key] = raw[key]
+    urls = raw.get("sourceUrls") if isinstance(raw.get("sourceUrls"), dict) else {}
+    urls = {s: urls[s] for s in item["sources"] if https(urls.get(s))}
+    if urls:
+        item["sourceUrls"] = urls
     if kind == "paper" and CODE_RE.match(str(raw.get("codeUrl") or "")):
         item["codeUrl"] = raw["codeUrl"].rstrip("/")
         if isinstance(raw.get("codeStars"), int) and raw["codeStars"] >= 0:

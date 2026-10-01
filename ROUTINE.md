@@ -34,6 +34,7 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 ## 2. Rank
 
 - One item per paper (dedupe by arXiv id) and per story. A paper on both alphaXiv and HF, or a story on both GeekNews and HN, is **one** item whose `sources` lists both platforms; put the other platform's link in `altUrl` (papers) or `discussUrl` (news).
+- News on more than one platform also gets `sourceUrls`: the item's own page on each platform in `sources`, e.g. `{"hn": "https://news.ycombinator.com/item?id=41234567", "geeknews": "https://news.hada.io/topic?id=34500", "openai": "https://openai.com/index/…"}`. The site turns each platform name into a link with it. Papers and single-platform news do not need it (the links are derived from the id and `url`).
 - A company-blog post that is also on GeekNews or HN is one item too: `sources` lists the blog and the site(s), `url` is the blog post, `discussUrl` the discussion page.
 - `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/HF Trending/GitHub by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
 - `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
@@ -52,7 +53,7 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 
 Every collected item gets a summary, not only the top ones.
 
-- Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail or the flow diagram).
+- Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail, or shows no figure).
 - Paper code: when the paper's code is public, set `codeUrl` to the repository (`https://github.com/<owner>/<repo>`, GitHub or GitLab only) and `codeStars` to its star count if known. Take it from `curl -s https://huggingface.co/api/papers/<arxivId>` → `githubRepo` / `githubStars` (the HF list data carries the same fields), or from a repository URL written in the arXiv abstract or comments. Leave both out when no repository is stated; never guess a URL, and do not use project pages or "code coming soon" notes.
 - News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page, the HN thread or the RSS item text instead, using only facts quoted there.
 - GitHub repo: read the README (`https://github.com/<owner>/<repo>`) and summarize what it is and does. `title` = `owner/repo: <short description>`, `url` = the repo, `score` = stars gained today, `scoreLabel` like `★12.3k · +1,280 today`.
@@ -101,7 +102,6 @@ Replace the file if it already exists. Shape:
       "scoreLabel": "HF 44▲ · alphaXiv #3",
       "oneLine": "한 줄 요약",
       "bullets": [{"label": "문제", "text": "…"}, {"label": "방법", "text": "…"}, {"label": "결과", "text": "…"}],
-      "flow": ["입력/데이터", "핵심 단계", "학습/추론", "결과"],
       "keywords": ["Humanoid", "World Model"]
     },
     {
@@ -128,7 +128,6 @@ Replace the file if it already exists. Shape:
 - ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, GitHub `gh-<owner>-<repo>` (lowercase, every character other than a–z/0–9 becomes `-`), blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
 - A repository that was already published on an earlier day (its `gh-` id is in `seen`) is skipped, so GitHub Trending shows repos that are new to the site.
 - Paper `source` is the main list it came from (`alphaxiv`, `hf`, `hftrend`, or `arxiv` for a robotics fill); `sources` lists every list it appeared on.
-- Paper `flow`: 3–5 short steps summarizing the method from the abstract, last step = the outcome.
 - News `bullets`: 1–2 items with an empty `label`.
 - All URLs must be https.
 
