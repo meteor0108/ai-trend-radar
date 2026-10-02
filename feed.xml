@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 02 Oct 2026 03:41:09 +0900</lastBuildDate>
+<lastBuildDate>Sat, 03 Oct 2026 03:59:52 +0900</lastBuildDate>
+<item>
+<title>[논문] Sharpening Tax in Post-Training</title>
+<link>https://arxiv.org/abs/2610.01509</link>
+<guid isPermaLink="false">p-2610.01509</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>RL post-training이 agentic task에서 pass@1은 올리지만 pass@K 기반 해법 범위를 줄이는 'Sharpening Tax'를 정량화</description>
+</item>
+<item>
+<title>[논문] World Observer: Joint Actor-Observer Generation for Persistent World Modeling</title>
+<link>https://arxiv.org/abs/2610.02162</link>
+<guid isPermaLink="false">p-2610.02162</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>액터 시점 밖 영역을 panoramic observer가 계속 생성해 화면 밖 물체 상태를 유지하는 비디오 world model</description>
+</item>
+<item>
+<title>[논문] OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</title>
+<link>https://arxiv.org/abs/2610.01762</link>
+<guid isPermaLink="false">p-2610.01762</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>streaming video LLM이 지각·기억·능동 응답을 하나의 proactive 생성 과정으로 함께 학습하는 OneStreamer</description>
+</item>
+<item>
+<title>[논문] Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</title>
+<link>https://arxiv.org/abs/2610.02204</link>
+<guid isPermaLink="false">p-2610.02204</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>가중치 업데이트 없이 시뮬레이션 연습으로 skill library와 system prompt를 개선하는 로봇 자기개선 프레임워크 RPG</description>
+</item>
+<item>
+<title>[논문] Hierarchical Continuous Diffusion Language Models</title>
+<link>https://arxiv.org/abs/2610.02193</link>
+<guid isPermaLink="false">p-2610.02193</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>이산 토큰 생성과 연속 latent 궤적을 하나의 denoising 과정으로 묶은 Hierarchical Continuous Diffusion LM</description>
+</item>
+<item>
+<title>[뉴스] Pi 1.0</title>
+<link>https://earendil.com/posts/pi-1-0/</link>
+<guid isPermaLink="false">hn-49926069</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Earendil이 미니멀 터미널 코딩 agent harness Pi 1.0을 MIT 라이선스로 정식 출시</description>
+</item>
+<item>
+<title>[뉴스] DeepSeek Harness Desktop for macOS and Windows</title>
+<link>https://www.deepseek.com/en/harness/</link>
+<guid isPermaLink="false">hn-49929489</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek가 플러그인 기반 오픈소스 agent harness를 macOS·Windows 데스크톱 앱으로 공개</description>
+</item>
+<item>
+<title>[뉴스] FLUX 3 Image</title>
+<link>https://bfl.ai/models/flux-3-image</link>
+<guid isPermaLink="false">hn-49925974</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Black Forest Labs가 bounding box로 레이아웃을 계획한 뒤 생성하는 FLUX 3 Image 공개</description>
+</item>
+<item>
+<title>[뉴스] How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast</title>
+<link>https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/</link>
+<guid isPermaLink="false">nvidia-gpus-openai-gpt-6-astra-ultrafast</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA Blackwell에서 돌아가는 GPT-6 Astra Ultrafast가 OpenAI API와 ChatGPT Work·Codex에 제공, Standard 모드보다 최대 8배 빠른 토큰 생성</description>
+</item>
+<item>
+<title>[뉴스] Pi Durable</title>
+<link>https://earendil.com/posts/pi-durable/</link>
+<guid isPermaLink="false">hn-49925969</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Earendil이 프로세스가 종료돼도 중단 지점부터 재개하는 장시간 실행 agent harness Pi Durable 공개</description>
+</item>
+<item>
+<title>[뉴스] Anthropic invests $100 million to train Frontier Deployed Engineers: Claude Frontier Academy</title>
+<link>https://www.anthropic.com/news/claude-frontier-academy</link>
+<guid isPermaLink="false">anthropic-claude-frontier-academy</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 1억 달러를 들여 2027년 말까지 Frontier Deployed Engineer 1만 명을 양성하는 Claude Frontier Academy 출범</description>
+</item>
+<item>
+<title>[뉴스] Toward provably private learning from federated data</title>
+<link>https://research.google/blog/toward-provably-private-learning-from-federated-data/</link>
+<guid isPermaLink="false">google-toward-provably-private-learning-from-federated-data</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google Research가 서버 측 TEE와 공개 투명성 로그로 federated learning의 데이터 처리 방식을 외부에서 검증 가능하게 만든 시스템 소개</description>
+</item>
+<item>
+<title>[뉴스] Robot Hands for Modern AI and Real Work</title>
+<link>https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/</link>
+<guid isPermaLink="false">hn-49933288</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Boston Dynamics가 Atlas용 4손가락·13자유도 직접 구동 로봇 손의 설계 배경을 공개</description>
+</item>
+<item>
+<title>[뉴스] Using Opus 5.5 to discover a new eyewitness record of the dodo</title>
+<link>https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness</link>
+<guid isPermaLink="false">hn-49926917</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>Opus 5.5로 네덜란드 동인도회사 기록을 의미 검색해 학계가 놓친 도도새 목격 기록을 찾아낸 사례</description>
+</item>
+<item>
+<title>[뉴스] A model guide for the GPT-6 family</title>
+<link>https://openai.com/index/practical-guide-building-gpt-6</link>
+<guid isPermaLink="false">openai-practical-guide-building-gpt-6</guid>
+<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 스타트업을 위한 GPT-6 계열 모델 선택·활용 가이드를 공개</description>
+</item>
 <item>
 <title>[논문] False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents</title>
 <link>https://arxiv.org/abs/2609.39102</link>
