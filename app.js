@@ -565,10 +565,15 @@
   async function ensureCrossDay() { if (S.kind !== "conf" && S.kind !== "gh" && crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
   function setKw(k) { S.kw = S.kw === k ? null : k; ensureCrossDay(); }
 
-  // Theme: "system" follows the OS setting (no data-theme attribute); light/dark are explicit overrides
+  // Theme: one button cycles 자동 → 화이트 → 다크. "system" follows the OS setting (no data-theme attribute); light/dark are explicit overrides
+  const THEMES = { system: "◐ 자동", light: "☀ 화이트", dark: "☾ 다크" };
+  const NEXT_THEME = { system: "light", light: "dark", dark: "system" };
   function applyTheme(t) {
     if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
-    document.querySelectorAll("#themeSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
+    const btn = $("themeBtn");
+    btn.textContent = THEMES[t];
+    btn.setAttribute("aria-label", "화면 모드: " + THEMES[t].slice(2));
+    btn.title = t === "system" ? "컴퓨터 설정을 따라가는 중 · 눌러서 바꾸기" : "눌러서 바꾸기";
     document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
       const dark = m.media.includes("dark");
       if (t === "system") m.media = dark ? "(prefers-color-scheme: dark)" : "(prefers-color-scheme: light)";
@@ -578,7 +583,7 @@
   let theme = "system";
   try { const t = localStorage.getItem("tr.theme"); if (t === "light" || t === "dark") theme = t; } catch (e) {}
   applyTheme(theme);
-  $("themeSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; applyTheme(b.dataset.t); try { localStorage.setItem("tr.theme", b.dataset.t); } catch (x) {} });
+  $("themeBtn").addEventListener("click", () => { theme = NEXT_THEME[theme]; applyTheme(theme); try { localStorage.setItem("tr.theme", theme); } catch (x) {} });
 
   $("dateSel").addEventListener("change", (e) => goDate(e.target.value));
   $("prevDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i < d.length - 1) goDate(d[i + 1]); });
