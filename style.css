@@ -70,7 +70,10 @@ img { max-width: 100%; }
 .mast { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
 .mast h1 { margin: 0; font: 700 38px/1.1 var(--font-hand); }
 .mast h1 a { color: inherit; text-decoration: underline wavy var(--accent) 2px; text-underline-offset: 7px; }
-.mast .sub { margin: 10px 0 0; color: var(--muted); font-size: 13.5px; }
+.themeseg { display: inline-flex; gap: 4px; margin-top: 8px; }
+.themeseg button { border: 0; background: none; padding: 0 8px 1px; border-radius: var(--mark); cursor: pointer; font: 400 18px/1.3 var(--font-hand); letter-spacing: -0.045em; color: var(--muted); }
+.themeseg button:hover { color: var(--fg); }
+.themeseg button[aria-pressed="true"] { color: var(--fg); font-weight: 700; background: var(--hl); }
 .datebar { display: flex; align-items: center; gap: 2px; }
 .datebar select { font: 700 21px var(--font-hand); padding: 0 4px 2px; border: 0; border-bottom: 2px solid var(--fg); border-radius: 0; background: transparent; color: var(--fg); }
 .datebar select option { font-family: var(--font-body); font-size: 14px; letter-spacing: 0; background: var(--paper); color: var(--fg); }

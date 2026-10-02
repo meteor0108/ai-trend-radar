@@ -565,6 +565,21 @@
   async function ensureCrossDay() { if (S.kind !== "conf" && S.kind !== "gh" && crossDay()) { await loadDays(dates().slice(0, MAX_DAYS)); } render(); }
   function setKw(k) { S.kw = S.kw === k ? null : k; ensureCrossDay(); }
 
+  // Theme: "system" follows the OS setting (no data-theme attribute); light/dark are explicit overrides
+  function applyTheme(t) {
+    if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+    document.querySelectorAll("#themeSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.t === t)));
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+      const dark = m.media.includes("dark");
+      if (t === "system") m.media = dark ? "(prefers-color-scheme: dark)" : "(prefers-color-scheme: light)";
+      else m.media = (t === "dark") === dark ? "all" : "not all";
+    });
+  }
+  let theme = "system";
+  try { const t = localStorage.getItem("tr.theme"); if (t === "light" || t === "dark") theme = t; } catch (e) {}
+  applyTheme(theme);
+  $("themeSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; applyTheme(b.dataset.t); try { localStorage.setItem("tr.theme", b.dataset.t); } catch (x) {} });
+
   $("dateSel").addEventListener("change", (e) => goDate(e.target.value));
   $("prevDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i < d.length - 1) goDate(d[i + 1]); });
   $("nextDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i > 0) goDate(d[i - 1]); });
