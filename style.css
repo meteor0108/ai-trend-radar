@@ -95,7 +95,7 @@ img { max-width: 100%; }
 .word:hover, .word.on { color: var(--fg); background: var(--hl); }
 .failed { margin: 0; font-size: 13px; color: var(--accent); }
 
-/* Toolbar: handwritten tabs, star filter, search on a ruled line */
+/* Toolbar: handwritten tabs, search on a ruled line */
 .toolbar { position: sticky; top: 0; z-index: 5; background-color: var(--bg); padding-block: 6px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; border-bottom: 2px solid var(--fg); }
 .seg { display: inline-flex; gap: 8px; }
 .seg button { border: 0; background: none; padding: 0 8px 1px; border-radius: var(--mark); cursor: pointer; font: 400 23px/1.3 var(--font-hand); color: var(--muted); }
@@ -156,8 +156,6 @@ a.src:hover { background: var(--hl); color: var(--fg); }
 .tools { display: flex; gap: 10px; align-items: baseline; }
 .mini { border: 0; background: none; cursor: pointer; font: 400 19px var(--font-hand); color: var(--muted); padding: 0; white-space: nowrap; }
 .mini:hover { color: var(--accent); }
-.mini.star { font: 16px/1 var(--font-body); letter-spacing: 0; }
-.mini.star[aria-pressed="true"] { color: var(--accent); }
 
 /* Expanded detail: margin notes beside a highlighter stripe */
 .detail { margin: 0 0 18px 42px; padding-left: 14px; border-left: 4px solid var(--hl); display: grid; gap: 12px; }

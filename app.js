@@ -13,9 +13,9 @@
 
   const S = {
     index: [], updated: null, days: new Map(), date: null, loaded: false,
-    kind: "all", star: false, q: "", kw: null,
+    kind: "all", q: "", kw: null,
     plat: { paper: "all", news: "all" }, more: { paper: false, news: false },
-    open: new Set(), broken: new Set(), marks: { read: {}, star: {} },
+    open: new Set(), broken: new Set(), marks: { read: {} },
     conf: { loaded: false, loading: false, confs: [], notes: {}, papers: [], pick: "all", year: null, winners: false },
     gh: { loaded: false, loading: false, repos: [], updated: null, period: "daily" },
   };
@@ -23,7 +23,7 @@
   const CONF_ORDER = ["icra", "iros", "rss", "corl"];
 
   try { const k = localStorage.getItem("tr.kind"); if (["all", "paper", "news", "conf", "gh"].includes(k)) S.kind = k; } catch (e) {}
-  try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {}, star: m.star || {} }; } catch (e) {}
+  try { const m = JSON.parse(localStorage.getItem("tr.marks") || "null"); if (m && typeof m === "object") S.marks = { read: m.read || {} }; } catch (e) {}
   function saveMarks() { try { localStorage.setItem("tr.marks", JSON.stringify(S.marks)); } catch (e) {} }
 
   // Helpers
@@ -124,7 +124,7 @@
   }
   async function loadDays(dates) { await Promise.all(dates.map(loadDay)); }
   const dates = () => S.index.map((d) => d.date);
-  const crossDay = () => !!(S.q.trim() || S.kw || S.star);
+  const crossDay = () => !!(S.q.trim() || S.kw);
   function loadedItems() { return [...S.days.values()].flatMap((d) => d.items); }
 
   // Today panel
@@ -167,7 +167,6 @@
   // Rows
   function brokenImage(id) { if (!S.broken.has(id)) { S.broken.add(id); renderFeed(); } }
   function markRead(id) { if (!S.marks.read[id]) { S.marks.read[id] = 1; saveMarks(); } }
-  function toggleStar(id) { if (S.marks.star[id]) delete S.marks.star[id]; else S.marks.star[id] = 1; saveMarks(); renderFeed(); }
   function toggleOpen(id) { if (S.open.has(id)) S.open.delete(id); else S.open.add(id); renderFeed(); }
 
   function lightbox(src, alt) {
@@ -215,7 +214,7 @@
     const isPaper = i.kind === "paper" || isConf;
     const isRepo = i.kind === "repo";
     const url = safeUrl(i.url);
-    const read = !!S.marks.read[i.id], star = !!S.marks.star[i.id], open = S.open.has(i.id);
+    const read = !!S.marks.read[i.id], open = S.open.has(i.id);
     const srcs = arr(i.sources).length ? arr(i.sources) : [i.source];
     const img = isPaper ? imageOf(i) : null;
 
@@ -241,7 +240,6 @@
       img ? el("button", { class: "thumb", "aria-label": "그림 크게 보기", onclick: () => lightbox(img, str(i.title)) },
         el("img", { src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer", onerror: () => brokenImage(i.id) })) : null,
       el("div", { class: "tools" },
-        el("button", { class: "mini star", "aria-pressed": String(star), "aria-label": "별표", onclick: () => toggleStar(i.id), text: star ? "★" : "☆" }),
         el("button", { class: "mini", "aria-expanded": String(open), onclick: () => toggleOpen(i.id), text: open ? "접기 ▴" : "자세히 ▾" })));
 
     const li = el("li", { class: "row" + (read ? " read" : "") },
@@ -300,7 +298,6 @@
     return pool.filter((i) => {
       if (S.kind === "paper" && i.kind !== "paper") return false;
       if (S.kind === "news" && i.kind === "paper") return false;
-      if (S.star && !S.marks.star[i.id]) return false;
       if (S.kw && !arr(i.keywords).includes(S.kw)) return false;
       if (q) {
         const hay = [i.title, i.oneLine, i.venue, ...arr(i.keywords), ...arr(i.bullets).map((b) => b && b.text)].map(str).join(" ").toLowerCase();
@@ -334,7 +331,7 @@
     const head = el("h2", { class: "section-head" }, el("span", { text: label }), el("span", { text: list.length ? list.length + unit : "" }));
     if (!list.length) return el("section", { class: "section" }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${platLabel(plat)} 항목이 없어요.` })));
 
-    // Single day: show the top SHOW rows, the rest behind "더보기". Search/keyword/star views list every match by date.
+    // Single day: show the top SHOW rows, the rest behind "더보기". Search/keyword views list every match by date.
     if (!crossDay()) {
       const cap = SHOW[kind], open = S.more[kind];
       const shown = open ? list : list.slice(0, cap);
@@ -402,7 +399,6 @@
       if (C.pick !== "all" && p.conf !== C.pick) return false;
       if (C.year !== "all" && p.year !== C.year) return false;
       if (C.winners && !arr(p.awards).some((a) => a && a.status === "winner")) return false;
-      if (S.star && !S.marks.star[p.id]) return false;
       if (S.kw && !arr(p.keywords).includes(S.kw)) return false;
       if (q) {
         const hay = [p.title, p.oneLine, p.authors, ...arr(p.keywords), ...arr(p.awards).map((a) => a && a.name), ...arr(p.bullets).map((b) => b && b.text)].map(str).join(" ").toLowerCase();
@@ -468,7 +464,6 @@
 
     const q = S.q.trim().toLowerCase();
     const list = inPeriod(G.period).filter((r) => {
-      if (S.star && !S.marks.star[r.id]) return false;
       if (S.kw && !arr(r.keywords).includes(S.kw)) return false;
       if (q) {
         const hay = [r.repo, r.description, r.oneLine, r.language, ...arr(r.keywords), ...r.bullets.map((b) => b.text)].map(str).join(" ").toLowerCase();
@@ -538,7 +533,6 @@
 
   function renderToolbar() {
     document.querySelectorAll("#kindSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === S.kind)));
-    $("starOnly").setAttribute("aria-pressed", String(S.star));
     const kf = $("kwFilter"); kf.hidden = !S.kw; kf.textContent = S.kw ? "#" + S.kw + "  ✕" : "";
   }
 
@@ -556,7 +550,7 @@
   // Navigation and filters
   async function goDate(d) {
     if (!dates().includes(d)) return;
-    S.date = d; S.kw = null; S.q = ""; S.star = false; $("q").value = "";
+    S.date = d; S.kw = null; S.q = ""; $("q").value = "";
     S.more = { paper: false, news: false };
     if (location.hash !== "#" + d) history.replaceState(null, "", "#" + d);
     await loadDay(d);
@@ -589,7 +583,6 @@
   $("prevDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i < d.length - 1) goDate(d[i + 1]); });
   $("nextDay").addEventListener("click", () => { const d = dates(), i = d.indexOf(S.date); if (i > 0) goDate(d[i - 1]); });
   $("kindSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; S.kind = b.dataset.k; S.kw = null; try { localStorage.setItem("tr.kind", S.kind); } catch (x) {} ensureCrossDay(); });
-  $("starOnly").addEventListener("click", () => { S.star = !S.star; ensureCrossDay(); });
   $("kwFilter").addEventListener("click", () => { S.kw = null; render(); });
   let qt; $("q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => { S.q = e.target.value; ensureCrossDay(); }, 200); });
   window.addEventListener("hashchange", () => { const d = location.hash.slice(1); if (isDate(d) && d !== S.date) goDate(d); });
