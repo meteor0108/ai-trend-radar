@@ -70,7 +70,8 @@ img { max-width: 100%; }
 .mast { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
 .mast h1 { margin: 0; font: 700 38px/1.1 var(--font-hand); }
 .mast h1 a { color: inherit; text-decoration: underline wavy var(--accent) 2px; text-underline-offset: 7px; }
-.themebtn { display: inline-block; margin-top: 8px; padding: 0 12px 1px; border: 1.5px solid var(--fg); border-radius: var(--wobble); background: var(--paper); cursor: pointer;
+.mast-side { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.themebtn { padding: 0 12px 1px; border: 1.5px solid var(--fg); border-radius: var(--wobble); background: var(--paper); cursor: pointer;
   font: 700 18px/1.4 var(--font-hand); letter-spacing: -0.045em; color: var(--fg); }
 .themebtn:hover { background: var(--hl); }
 .datebar { display: flex; align-items: center; gap: 2px; }

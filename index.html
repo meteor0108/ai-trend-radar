@@ -14,20 +14,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div class="wrap">
   <header class="mast">
     <div>
       <h1><a href="./">AI 트렌드 레이더</a></h1>
-      <button class="themebtn" id="themeBtn" type="button" aria-label="화면 모드: 자동">◐ 자동</button>
     </div>
-    <nav class="datebar" aria-label="날짜">
-      <button class="iconbtn" id="prevDay" aria-label="이전 날짜">‹</button>
-      <select id="dateSel" aria-label="날짜 선택"></select>
-      <button class="iconbtn" id="nextDay" aria-label="다음 날짜">›</button>
-    </nav>
+    <div class="mast-side">
+      <button class="themebtn" id="themeBtn" type="button" aria-label="화면 모드: 자동">◐ 자동</button>
+      <nav class="datebar" aria-label="날짜">
+        <button class="iconbtn" id="prevDay" aria-label="이전 날짜">‹</button>
+        <select id="dateSel" aria-label="날짜 선택"></select>
+        <button class="iconbtn" id="nextDay" aria-label="다음 날짜">›</button>
+      </nav>
+    </div>
   </header>
 
   <section class="today" id="today" aria-label="오늘의 키워드"></section>
@@ -62,6 +64,6 @@
     <a href="feed.xml">RSS</a>
   </footer>
 </div>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
