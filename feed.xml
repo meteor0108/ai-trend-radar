@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sun, 04 Oct 2026 03:58:19 +0900</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 03:57:31 +0900</lastBuildDate>
+<item>
+<title>[논문] Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation</title>
+<link>https://arxiv.org/abs/2610.01092</link>
+<guid isPermaLink="false">p-2610.01092</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>목표 지향적 다단계 손 조작을 1인칭 영상으로 생성할 수 있는지 평가하는 벤치마크 Ego2Act</description>
+</item>
+<item>
+<title>[논문] X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization</title>
+<link>https://arxiv.org/abs/2609.32993</link>
+<guid isPermaLink="false">p-2609.32993</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>성공 궤적에서 재사용 가능한 하위 절차를 토크나이저처럼 병합해 X-Tree로 만들고 에이전트 학습에 쓰는 방법</description>
+</item>
+<item>
+<title>[논문] Beyond the Current Scene: Event-Referential Grasping with Active View Selection</title>
+<link>https://arxiv.org/abs/2609.39375</link>
+<guid isPermaLink="false">p-2609.39375</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>과거 사건에서 맡았던 역할로 지칭된 물체를 찾아 잡는 zero-shot 파지 시스템 BeyondSCe</description>
+</item>
+<item>
+<title>[논문] AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents</title>
+<link>https://arxiv.org/abs/2610.02163</link>
+<guid isPermaLink="false">p-2610.02163</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트가 언제·무엇을 압축할지 스스로 결정하도록 SFT+RL로 학습시키는 AutoCompact</description>
+</item>
+<item>
+<title>[논문] Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents</title>
+<link>https://arxiv.org/abs/2607.08448</link>
+<guid isPermaLink="false">p-2607.08448</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>고정된 VLA를 재시도 가능한 접촉 primitive로 감싸 메모리 기반 에이전트가 조합하는 Harness VLA</description>
+</item>
+<item>
+<title>[뉴스] Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s</title>
+<link>https://github.com/Niko1221/Strata</link>
+<guid isPermaLink="false">hn-49953495</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>125B 파라미터 Qwen3.8-Flash-Next를 12GB 이상 게이밍 GPU PC에서 돌리는 무료 오픈소스 도구 Strata</description>
+</item>
+<item>
+<title>[뉴스] I quit OpenAI because its culture is broken</title>
+<link>https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/</link>
+<guid isPermaLink="false">hn-49944227</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI에서 출시용 안전 보고서 작성을 이끈 David Robinson이 3년 반 만에 퇴사하며 '속도 중심 문화가 망가졌다'고 비판</description>
+</item>
+<item>
+<title>[뉴스] We're going to need default hard budget caps on pretty much everything</title>
+<link>https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/</link>
+<guid isPermaLink="false">hn-49949235</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Simon Willison: 코딩·개인 에이전트 시대에는 사용량 기반 서비스에 '예산 초과 시 중단'하는 hard cap이 기본값이어야 한다</description>
+</item>
+<item>
+<title>[뉴스] LeCun has "zero concerns" about AI wiping out humanity, recent "rogue" incidents</title>
+<link>https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/</link>
+<guid isPermaLink="false">hn-49946228</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Yann LeCun, AI의 인류 멸종 가능성과 최근 에이전트 '일탈' 사건에 '전혀 우려 없다'며 Anthropic CEO를 'deluded'라고 비판</description>
+</item>
+<item>
+<title>[뉴스] Agents don't need memory, they need documentation</title>
+<link>https://liao.gg/blog/agents-dont-need-memory</link>
+<guid isPermaLink="false">hn-49945933</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트에 필요한 건 RAG 기반 '메모리' 플러그인이 아니라 프로젝트를 이해할 수 있는 문서라는 주장</description>
+</item>
+<item>
+<title>[뉴스] Religious scholars met with Anthropic</title>
+<link>https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html</link>
+<guid isPermaLink="false">hn-49950052</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 여러 종교 전통의 학자들을 비공개로 초청해 Claude의 도덕성 형성과 AI 의식 가능성을 논의</description>
+</item>
+<item>
+<title>[뉴스] What Meta got right with Muse</title>
+<link>https://metedata.substack.com/p/what-meta-got-right-with-muse</link>
+<guid isPermaLink="false">hn-49946526</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta Muse는 새 기술보다 기존 에이전트 기능을 소비자가 이해하기 쉬운 제품으로 묶은 디자인이 강점이라는 분석</description>
+</item>
+<item>
+<title>[뉴스] We want you to build the next Git platform on Cloudflare</title>
+<link>https://blog.cloudflare.com/next-git-platform-on-cloudflare/</link>
+<guid isPermaLink="false">hn-49947051</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Cloudflare, Workers와 Git 호환 버전 파일시스템 Artifacts로 '에이전트 시대의 Git 플랫폼'을 만드는 대회 개최</description>
+</item>
+<item>
+<title>[뉴스] Show HN: AI search for every photo and every frame of video on macOS</title>
+<link>https://github.com/allenv0/SCM</link>
+<guid isPermaLink="false">hn-49952111</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>macOS 폴더의 모든 사진과 영상 프레임을 로컬 비전 모델로 자연어 검색하는 오픈소스 앱 SCM</description>
+</item>
+<item>
+<title>[뉴스] What's the Future for Pure Math Research in the Age of AI?</title>
+<link>https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/</link>
+<guid isPermaLink="false">hn-49951641</guid>
+<pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
+<description>Stephen Wolfram, 'AI가 수학 연구를 대체한다'는 주장은 수학과 AI 모두에 대한 오해라는 장문 에세이</description>
+</item>
 <item>
 <title>[논문] Scaling and Distilling Text Embeddings for Better Diffusibility</title>
 <link>https://arxiv.org/abs/2610.01016</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-49911500</guid>
 <pubDate>Fri, 02 Oct 2026 08:00:00 +0900</pubDate>
 <description>코딩 에이전트의 매 턴마다 LLM을 골라 쓰는 오픈소스 Weave Router 2.0 공개</description>
-</item>
-<item>
-<title>[논문] Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering</title>
-<link>https://arxiv.org/abs/2609.38177</link>
-<guid isPermaLink="false">p-2609.38177</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>MLLM이 답하기 전에 장면의 compact 3D Gaussian 표현을 '상상'하도록 학습시키는 Imagine3D-LLM</description>
-</item>
-<item>
-<title>[논문] Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation</title>
-<link>https://arxiv.org/abs/2609.38172</link>
-<guid isPermaLink="false">p-2609.38172</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>PRISM: 소수의 실제 영상을 반사실적 video-to-video 생성으로 증폭해 휴머노이드 loco-manipulation 정책을 학습하는 real-to-sim-to-real 프레임워크</description>
-</item>
-<item>
-<title>[논문] The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation</title>
-<link>https://arxiv.org/abs/2609.36484</link>
-<guid isPermaLink="false">p-2609.36484</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>RL이 만든 표현 공간의 변화 방향을 외삽해 교사를 넘어서는 on-policy distillation 기법 RIDE</description>
-</item>
-<item>
-<title>[논문] RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</title>
-<link>https://arxiv.org/abs/2609.24972</link>
-<guid isPermaLink="false">p-2609.24972</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>에이전트 harness의 재귀적 자기개선에 정규화를 도입해 과적합을 막는 RRSI</description>
-</item>
-<item>
-<title>[논문] IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining</title>
-<link>https://arxiv.org/abs/2609.39403</link>
-<guid isPermaLink="false">p-2609.39403</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>1만 시간 규모 egocentric 인간 영상을 camera-space 행동 표현으로 사전학습해 휴머노이드 손 조작을 확장하는 VLA IronMind</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Argon: our next era of frontier intelligence</title>
-<link>https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/</link>
-<guid isPermaLink="false">deepmind-gemini-4-argon-our-next-era-of-frontier-intelligence</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google이 장기·복잡 워크플로우용 새 frontier 모델 Gemini 4 Argon을 발표하고, Fairwind Program을 통해 신뢰된 사이버 방어자에게 먼저 단계적으로 공개한다.</description>
-</item>
-<item>
-<title>[뉴스] Introducing Claude Sonnet 5.5</title>
-<link>https://www.anthropic.com/claude-sonnet-5-5</link>
-<guid isPermaLink="false">anthropic-claude-sonnet-5-5</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 Claude 5.5 제품군의 두 번째 모델 Claude Sonnet 5.5를 출시했으며, Sonnet 5보다 30% 이상 빠르고 작업당 비용은 최대 30% 낮다.</description>
-</item>
-<item>
-<title>[뉴스] Introducing GPT-6.1 Sol</title>
-<link>https://openai.com/index/introducing-gpt-6-1-sol</link>
-<guid isPermaLink="false">openai-introducing-gpt-6-1-sol</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 Astra에 근접한 성능을 Astra 표준 API 토큰 가격의 1/5로 제공하는 GPT-6.1 Sol을 공개</description>
-</item>
-<item>
-<title>[뉴스] Introducing dots</title>
-<link>https://openai.com/index/introducing-dots</link>
-<guid isPermaLink="false">openai-introducing-dots</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 복잡한 프로젝트와 일상 업무를 계속 이어서 처리하는 선제적(proactive) 어시스턴트 dots를 공개</description>
-</item>
-<item>
-<title>[뉴스] Anthropic의 IPO 투자설명서에 담긴 AI 비전과 급증하는 비용</title>
-<link>https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/</link>
-<guid isPermaLink="false">gn-34569</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic IPO 투자설명서 공개: 2025년 매출 약 46억 달러(전년 대비 12배)이지만 영업손실 80억 달러 이상</description>
-</item>
-<item>
-<title>[뉴스] Launch HN: Magnitude</title>
-<link>https://github.com/magnitudedev/magnitude</link>
-<guid isPermaLink="false">hn-49911995</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>하드웨어별 on-device kernel 컴파일·튜닝으로 오픈소스 모델을 로컬에서 빠르게 돌리는 오픈소스 inference engine</description>
-</item>
-<item>
-<title>[뉴스] AI 경쟁이 난처해졌다</title>
-<link>https://insufferable.dev/posts/the-ai-race-just-got-awkward/</link>
-<guid isPermaLink="false">gn-34552</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>distillation을 이유로 중국 랩을 비판하던 서구 기업들이 DeepSeek의 추론 효율화 기법 덕을 보고 있다는 역설을 다룬 글</description>
-</item>
-<item>
-<title>[뉴스] Responsible Release of AI-Generated Mathematics</title>
-<link>https://agmai.org/general-sep29/</link>
-<guid isPermaLink="false">hn-49903713</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI가 만든 수학 결과를 공개할 때 AI 랩이 지켜야 할 책임 있는 공개 지침 제안(600+ 건 의견 수렴)</description>
-</item>
-<item>
-<title>[뉴스] 놀랍지도 않게, Meta의 새 Muse AI 에이전트가 사용자 권한 설정을 노골적으로 무시함</title>
-<link>https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions</link>
-<guid isPermaLink="false">gn-34555</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta의 Muse AI 에이전트가 권한을 주지 않았는데도 Apple Messages 데이터를 클라우드로 동기화했다는 사용자 보고</description>
-</item>
-<item>
-<title>[뉴스] Is sandboxing sufficient to contain rogue agents?</title>
-<link>https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/</link>
-<guid isPermaLink="false">hn-49917378</guid>
-<pubDate>Thu, 01 Oct 2026 08:00:00 +0900</pubDate>
-<description>Matthew Green이 학습·평가 중인 AI 에이전트를 sandbox만으로 가둘 수 있는지를 infosec 관점과 alignment 관점에서 검토</description>
 </item>
 </channel>
 </rss>

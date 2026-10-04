@@ -1,48 +1,21 @@
 {
-  "updated": "2026-10-04T03:55:23+09:00",
+  "updated": "2026-10-05T03:54:59+09:00",
   "repos": [
-    {
-      "id": "gh-dietrichgebert-ponytail",
-      "repo": "DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "language": "JavaScript",
-      "stars": 153030,
-      "periods": {
-        "daily": {
-          "rank": 1,
-          "gained": 1289
-        },
-        "monthly": {
-          "rank": 12,
-          "gained": 31213
-        }
-      },
-      "created": "2026-06-12T09:52:37+09:00",
-      "oneLine": "에이전트가 불필요한 코드를 쓰지 않고 기존 해법·플랫폼 기능을 먼저 쓰게 하는 skill",
-      "bullets": [
-        "실제 Claude Code 세션 벤치마크에서 코드량 약 54% 감소(과설계 시 최대 94%), 비용 20%·시간 27% 절감을 주장한다."
-      ],
-      "keywords": [
-        "Coding Agents",
-        "Agent Tools"
-      ]
-    },
     {
       "id": "gh-pbakaus-impeccable",
       "repo": "pbakaus/impeccable",
       "url": "https://github.com/pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
-      "stars": 75062,
+      "stars": 76112,
       "periods": {
         "daily": {
-          "rank": 2,
-          "gained": 705
+          "rank": 1,
+          "gained": 1170
         },
         "weekly": {
-          "rank": 4,
-          "gained": 3124
+          "rank": 3,
+          "gained": 3311
         }
       },
       "created": "2025-11-16T10:52:04+09:00",
@@ -57,55 +30,73 @@
       ]
     },
     {
-      "id": "gh-affaan-m-ecc",
-      "repo": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "id": "gh-coreyhaines31-marketingskills",
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
       "language": "JavaScript",
-      "stars": 272067,
+      "stars": 52953,
       "periods": {
         "daily": {
-          "rank": 3,
-          "gained": 954
-        },
-        "monthly": {
           "rank": 2,
-          "gained": 26490
+          "gained": 270
         }
       },
-      "created": "2026-01-18T09:51:51+09:00",
-      "oneLine": "코딩 에이전트에 계획·테스트 검증·자기 리뷰·기억·스킬화를 묶은 엔지니어링 시스템을 설치해 주는 harness 최적화 도구",
+      "created": "2026-01-16T04:45:23+09:00",
+      "oneLine": "CRO·카피라이팅·SEO·분석·그로스 등 마케팅 작업용 AI 에이전트 skill 모음",
       "bullets": [
-        "Claude Code 플러그인(`ecc@ecc`)으로 설치하며, MIT 라이선스이고 7개 harness를 지원한다고 밝힌다.",
-        "GitHub 저장소, npm 패키지, 프로젝트 사이트 등 공식 채널에서만 설치하라고 안내한다."
+        "Claude Code, OpenAI Codex, Cursor, Windsurf 등 Agent Skills 스펙을 지원하는 에이전트에서 동작한다.",
+        "기술 마케터와 창업자가 코딩 에이전트로 전환 최적화·카피·SEO·그로스 엔지니어링을 하도록 만든 컬렉션이다."
       ],
       "keywords": [
-        "Agent Harness",
-        "Coding Agents"
+        "Agent Skills"
       ]
     },
     {
-      "id": "gh-juliusbrussee-caveman",
-      "repo": "JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "description": "Why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens",
-      "language": "Go",
-      "stars": 109447,
+      "id": "gh-dietrichgebert-ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 154611,
       "periods": {
         "daily": {
-          "rank": 4,
-          "gained": 505
+          "rank": 3,
+          "gained": 1894
         }
       },
-      "created": "2026-04-04T19:03:00+09:00",
-      "oneLine": "coding agent가 말을 짧게 하도록 만드는 skill과 읽는 출력을 줄이는 proxy로 토큰을 아끼는 도구",
+      "created": "2026-06-12T09:52:37+09:00",
+      "oneLine": "에이전트가 불필요한 코드를 쓰지 않고 기존 해법·플랫폼 기능을 먼저 쓰게 하는 skill",
       "bullets": [
-        "skill은 30개 이상 agent에서 쓰는 규칙 파일로 답변 문장만 압축하고 코드·명령·오류 메시지는 그대로 둠",
-        "proxy는 로그·테스트 출력·JSON·diff를 로컬에서 압축하되 원본 백업을 남기며 Apache-2.0"
+        "실제 Claude Code 세션 벤치마크에서 코드량 약 54% 감소(과설계 시 최대 94%), 비용 20%·시간 27% 절감을 주장한다."
       ],
       "keywords": [
         "Coding Agents",
-        "Token Efficiency"
+        "Agent Tools"
+      ]
+    },
+    {
+      "id": "gh-earthtojake-text-to-cad",
+      "repo": "earthtojake/text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 16783,
+      "periods": {
+        "daily": {
+          "rank": 4,
+          "gained": 75
+        }
+      },
+      "created": "2026-04-22T10:09:45+09:00",
+      "oneLine": "에이전트가 CAD 모델과 로봇 기술 파일을 만들고 검사하게 해 주는 skill 라이브러리",
+      "bullets": [
+        "자연어나 이미지 요청으로 CAD 모델을 만들고 STEP을 기본 출력으로 STL·3MF·GLB 내보내기를 지원한다.",
+        "URDF·SRDF·SDF 등 로봇 구조·시뮬레이션 파일 작성, 기성 STEP 부품 검색, 도면·DXF 생성 skill을 포함한다."
+      ],
+      "keywords": [
+        "Agent Skills",
+        "CAD"
       ]
     },
     {
@@ -114,15 +105,15 @@
       "url": "https://github.com/Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu",
       "language": "Python",
-      "stars": 89629,
+      "stars": 90658,
       "periods": {
         "daily": {
           "rank": 5,
-          "gained": 1683
+          "gained": 979
         },
         "weekly": {
-          "rank": 8,
-          "gained": 3959
+          "rank": 7,
+          "gained": 3952
         }
       },
       "created": "2026-02-24T11:10:24+09:00",
@@ -137,51 +128,54 @@
       ]
     },
     {
-      "id": "gh-thedotmack-claude-mem",
-      "repo": "thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "language": "TypeScript",
-      "stars": 95455,
+      "id": "gh-calesthio-openmontage",
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars": 63055,
       "periods": {
         "daily": {
           "rank": 6,
-          "gained": 218
+          "gained": 361
         }
       },
-      "created": "2025-09-01T05:50:03+09:00",
-      "oneLine": "코딩 에이전트의 세션 기록을 자동으로 압축·저장해 다음 세션에 관련 컨텍스트를 다시 주입하는 영구 메모리 도구",
+      "created": "2026-03-30T00:23:22+09:00",
+      "oneLine": "자연어 지시로 리서치·대본·에셋 생성·편집·합성까지 처리하는 오픈소스 에이전트형 영상 제작 시스템",
       "bullets": [
-        "도구 사용 관찰을 자동으로 캡처해 의미 요약을 만들고 이후 세션에서 활용할 수 있게 함",
-        "`npx claude-mem install`로 설치하며, search·timeline·get_observations 등 MCP 도구로 프로젝트 이력을 단계적으로 조회해 토큰을 절약"
+        "12개 제작 파이프라인과 100개 이상의 도구, 700개 이상의 에이전트 skill·제작 지식 파일로 AI 코딩 어시스턴트를 영상 스튜디오로 바꾼다고 설명한다.",
+        "무료 스톡 영상·오픈 아카이브에서 실제 클립을 찾아 타임라인으로 편집하는 워크플로도 지원한다."
       ],
       "keywords": [
-        "Memory",
-        "Coding Agents"
+        "Video Generation",
+        "Agent Tools"
       ]
     },
     {
-      "id": "gh-cloudflare-cloudflare-os",
-      "repo": "cloudflare/cloudflare-os",
-      "url": "https://github.com/cloudflare/cloudflare-os",
-      "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+      "id": "gh-pingdotgg-t3code",
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
       "language": "TypeScript",
-      "stars": 10510,
+      "stars": 25064,
       "periods": {
         "daily": {
           "rank": 7,
-          "gained": 84
+          "gained": 492
+        },
+        "weekly": {
+          "rank": 9,
+          "gained": 975
         }
       },
-      "created": "2026-04-16T07:22:53+09:00",
-      "oneLine": "Cloudflare Workers 위에서 문서 작성·앱 빌드·에이전트 실행을 하는 회사용 에이전트 워크스페이스",
+      "created": "2026-02-09T08:46:22+09:00",
+      "oneLine": "여러 코딩 에이전트를 모바일·웹·데스크톱 앱에서 제어하는 'agent harness control surface'",
       "bullets": [
-        "사용자마다 슬라이드 등 애플리케이션의 개인 인스턴스를 만들어 실행하는 구조",
-        "외부 리소스 접근은 Gatekeeper 컴포넌트가 중개하며 비동기 사람 승인을 지원, 온라인 배포나 wrangler 기반 로컬 실행 가능"
+        "Claude Code, Codex, Cursor, Grok Build, OpenCode, Google Antigravity 구독을 그대로 사용해 로컬 에이전트를 제어한다.",
+        "iOS·Android 앱, 웹 앱, Electron 데스크톱 앱을 제공한다."
       ],
       "keywords": [
-        "Agent Tools",
-        "AI Infra"
+        "Coding Agents",
+        "Agent Tools"
       ]
     },
     {
@@ -190,11 +184,11 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 100783,
+      "stars": 101136,
       "periods": {
         "daily": {
           "rank": 8,
-          "gained": 305
+          "gained": 336
         }
       },
       "created": "2026-02-16T05:20:26+09:00",
@@ -209,174 +203,75 @@
       ]
     },
     {
-      "id": "gh-obra-superpowers",
-      "repo": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 294832,
+      "id": "gh-thedotmack-claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 96031,
       "periods": {
         "daily": {
           "rank": 9,
-          "gained": 578
+          "gained": 627
         }
       },
-      "created": "2025-10-10T04:45:18+09:00",
-      "oneLine": "조합 가능한 skill 위에 만든 코딩 에이전트용 소프트웨어 개발 방법론",
+      "created": "2025-09-01T05:50:03+09:00",
+      "oneLine": "코딩 에이전트의 세션 기록을 자동으로 압축·저장해 다음 세션에 관련 컨텍스트를 다시 주입하는 영구 메모리 도구",
       "bullets": [
-        "에이전트가 skill을 쓰도록 하는 초기 지침과 composable skill 세트로 구성",
-        "Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Pi 등 여러 코딩 에이전트 설치 방법 제공"
+        "도구 사용 관찰을 자동으로 캡처해 의미 요약을 만들고 이후 세션에서 활용할 수 있게 함",
+        "`npx claude-mem install`로 설치하며, search·timeline·get_observations 등 MCP 도구로 프로젝트 이력을 단계적으로 조회해 토큰을 절약"
       ],
       "keywords": [
-        "Agent Skills",
+        "Memory",
         "Coding Agents"
       ]
     },
     {
-      "id": "gh-mattpocock-skills",
-      "repo": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars": 275248,
+      "id": "gh-garrytan-gstack",
+      "repo": "garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "stars": 135099,
       "periods": {
         "daily": {
           "rank": 10,
-          "gained": 750
+          "gained": 121
         }
       },
-      "created": "2026-02-03T20:15:53+09:00",
-      "oneLine": "TDD·코드 리뷰 등 AI 코딩의 흔한 실패를 줄이는 재사용 agent skill 모음",
+      "created": "2026-03-12T06:22:45+09:00",
+      "oneLine": "Claude Code를 CEO·디자이너·엔지니어링 매니저·QA 등 역할을 가진 가상 엔지니어링 팀으로 만드는 Garry Tan의 설정 모음",
       "bullets": [
-        "engineering·productivity skill로 구성되며 Claude Code, Codex 등 여러 에이전트에서 쓸 수 있다."
+        "23개 전문가 역할과 8개 파워 툴을 모두 Markdown 슬래시 커맨드로 제공하며 MIT 라이선스다.",
+        "/office-hours, /plan-ceo-review 등으로 기획부터 리뷰·QA·릴리스까지 진행한다."
       ],
       "keywords": [
-        "Coding Agents",
-        "Agent Tools"
+        "Claude Code",
+        "Agent Skills"
       ]
     },
     {
-      "id": "gh-mksglu-context-mode",
-      "repo": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-      "language": "TypeScript",
-      "stars": 25212,
+      "id": "gh-antirez-ds4",
+      "repo": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+      "language": "C",
+      "stars": 23377,
       "periods": {
         "daily": {
           "rank": 11,
-          "gained": 256
-        },
-        "monthly": {
-          "rank": 5,
-          "gained": 4728
+          "gained": 211
         }
       },
-      "created": "2026-02-23T14:56:28+09:00",
-      "oneLine": "도구 출력을 sandbox로 격리해 코딩 에이전트의 컨텍스트 사용을 줄이는 MCP 서버",
+      "created": "2026-05-07T02:17:05+09:00",
+      "oneLine": "DeepSeek V4 Flash 등 소수의 대형 모델을 소비자 하드웨어에서 돌리는 네이티브 추론 엔진 DwarfStar",
       "bullets": [
-        "도구 출력 98% 감축을 주장하고, 세션 메모리를 SQLite에 유지하며 17개 플랫폼에서 MCP·hook으로 라우팅을 강제한다."
+        "DeepSeek V4/V4.1 Flash, V4 PRO, GLM 5.2·5.3, Qwen3.8 Flash Next를 Metal·CUDA·ROCm에서 지원한다.",
+        "범용 GGUF 러너가 아니라 프로젝트가 만든 GGUF만 쓰며, HTTP 서버·도구 호출·코딩 에이전트까지 통합 테스트한다."
       ],
       "keywords": [
-        "Context Management",
-        "Coding Agents"
-      ]
-    },
-    {
-      "id": "gh-earendil-works-pi",
-      "repo": "earendil-works/pi",
-      "url": "https://github.com/earendil-works/pi",
-      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-      "language": "TypeScript",
-      "stars": 112083,
-      "periods": {
-        "daily": {
-          "rank": 12,
-          "gained": 408
-        }
-      },
-      "created": "2025-08-09T23:03:50+09:00",
-      "oneLine": "통합 LLM API·에이전트 루프·TUI·코딩 에이전트 CLI를 묶은 미니멀 에이전트 툴킷 Pi",
-      "bullets": [
-        "pi-ai 패키지로 OpenAI·Anthropic·Google 등 여러 제공자를 하나의 API로 지원",
-        "확장·스킬·프롬프트 템플릿·테마를 패키지로 배포할 수 있고, 터미널 대화형·JSON 출력·RPC·TypeScript SDK로 사용 가능"
-      ],
-      "keywords": [
-        "Coding Agents",
-        "Agent Harness"
-      ]
-    },
-    {
-      "id": "gh-anthropics-claude-code",
-      "repo": "anthropics/claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "language": "TypeScript",
-      "stars": 149151,
-      "periods": {
-        "daily": {
-          "rank": 13,
-          "gained": 127
-        },
-        "monthly": {
-          "rank": 11,
-          "gained": 5832
-        }
-      },
-      "created": "2025-02-23T02:41:21+09:00",
-      "oneLine": "터미널에서 코드베이스를 이해하고 자연어 명령으로 반복 작업·코드 설명·git 작업을 처리하는 Anthropic의 에이전트형 코딩 도구",
-      "bullets": [
-        "터미널과 IDE에서 쓰거나 GitHub에서 @claude로 호출한다.",
-        "저장소에 커스텀 커맨드와 에이전트로 기능을 확장하는 플러그인이 들어 있다."
-      ],
-      "keywords": [
-        "Coding Agents"
-      ]
-    },
-    {
-      "id": "gh-jamwithai-production-agentic-rag-course",
-      "repo": "jamwithai/production-agentic-rag-course",
-      "url": "https://github.com/jamwithai/production-agentic-rag-course",
-      "language": "Python",
-      "stars": 9362,
-      "periods": {
-        "daily": {
-          "rank": 14,
-          "gained": 192
-        }
-      },
-      "created": "2025-08-07T04:52:50+09:00",
-      "oneLine": "arXiv 논문 검색 시스템을 직접 만들며 프로덕션 Agentic RAG를 배우는 7주 코스",
-      "bullets": [
-        "FastAPI·PostgreSQL·OpenSearch·Airflow·Jina 임베딩·Ollama·Redis·Langfuse 스택 사용",
-        "BM25 키워드 검색부터 하이브리드 검색, 로컬 LLM, 모니터링·캐싱, Telegram 봇 연동 Agentic RAG까지 주차별로 구성"
-      ],
-      "keywords": [
-        "RAG",
-        "AI Education"
-      ]
-    },
-    {
-      "id": "gh-meituan-longcat-longcat-video",
-      "repo": "meituan-longcat/LongCat-Video",
-      "url": "https://github.com/meituan-longcat/LongCat-Video",
-      "language": "Python",
-      "stars": 8689,
-      "periods": {
-        "daily": {
-          "rank": 15,
-          "gained": 43
-        }
-      },
-      "created": "2025-10-25T15:49:49+09:00",
-      "oneLine": "Meituan의 13.6B 파라미터 오픈 비디오 생성 모델 LongCat-Video",
-      "bullets": [
-        "하나의 모델로 Text-to-Video·Image-to-Video·Video-Continuation 지원, 분 단위 720p 30fps 영상 생성",
-        "LongCat-Video, LongCat-Video-Avatar, Avatar-1.5 가중치를 Hugging Face에 공개"
-      ],
-      "keywords": [
-        "Video Generation",
-        "Open Weights"
+        "Local LLM",
+        "AI Infra"
       ]
     },
     {
@@ -385,15 +280,15 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 96663,
+      "stars": 97086,
       "periods": {
         "weekly": {
           "rank": 1,
-          "gained": 12825
+          "gained": 10722
         },
         "monthly": {
           "rank": 7,
-          "gained": 16583
+          "gained": 17030
         }
       },
       "created": "2026-03-03T00:01:51+09:00",
@@ -413,15 +308,15 @@
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 45008,
+      "stars": 45426,
       "periods": {
         "weekly": {
           "rank": 2,
-          "gained": 16183
+          "gained": 14507
         },
         "monthly": {
           "rank": 9,
-          "gained": 22756
+          "gained": 23065
         }
       },
       "created": "2025-10-30T20:49:48+09:00",
@@ -441,11 +336,11 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "Open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages",
       "language": "Python",
-      "stars": 52456,
+      "stars": 53050,
       "periods": {
         "weekly": {
-          "rank": 3,
-          "gained": 16475
+          "rank": 4,
+          "gained": 16775
         }
       },
       "created": "2026-04-10T06:40:26+09:00",
@@ -458,43 +353,20 @@
       ]
     },
     {
-      "id": "gh-rohitg00-ai-engineering-from-scratch",
-      "repo": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "stars": 63023,
-      "periods": {
-        "weekly": {
-          "rank": 5,
-          "gained": 5600
-        }
-      },
-      "created": "2026-03-19T03:38:02+09:00",
-      "oneLine": "523개 레슨, 20단계, 약 342시간으로 AI 엔지니어링을 직접 만들며 배우는 무료 커리큘럼",
-      "bullets": [
-        "Python·TypeScript·Rust·Julia를 쓰고, 레슨마다 프롬프트·스킬·에이전트·MCP 서버 같은 재사용 가능한 산출물을 만든다.",
-        "MIT 라이선스 오픈소스다."
-      ],
-      "keywords": [
-        "AI Education"
-      ]
-    },
-    {
       "id": "gh-heygen-com-hyperframes",
       "repo": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 56241,
+      "stars": 56667,
       "periods": {
         "weekly": {
-          "rank": 6,
-          "gained": 2661
+          "rank": 5,
+          "gained": 3011
         },
         "monthly": {
           "rank": 10,
-          "gained": 12185
+          "gained": 12634
         }
       },
       "created": "2026-03-10T10:51:06+09:00",
@@ -508,16 +380,39 @@
       ]
     },
     {
+      "id": "gh-rohitg00-ai-engineering-from-scratch",
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 63789,
+      "periods": {
+        "weekly": {
+          "rank": 6,
+          "gained": 5059
+        }
+      },
+      "created": "2026-03-19T03:38:02+09:00",
+      "oneLine": "523개 레슨, 20단계, 약 342시간으로 AI 엔지니어링을 직접 만들며 배우는 무료 커리큘럼",
+      "bullets": [
+        "Python·TypeScript·Rust·Julia를 쓰고, 레슨마다 프롬프트·스킬·에이전트·MCP 서버 같은 재사용 가능한 산출물을 만든다.",
+        "MIT 라이선스 오픈소스다."
+      ],
+      "keywords": [
+        "AI Education"
+      ]
+    },
+    {
       "id": "gh-alirezarezvani-claude-skills",
       "repo": "alirezarezvani/claude-skills",
       "url": "https://github.com/alirezarezvani/claude-skills",
       "description": "380+ Claude Code skills & agent capabilities for multiple coding agents",
       "language": "Python",
-      "stars": 27452,
+      "stars": 27577,
       "periods": {
         "weekly": {
-          "rank": 7,
-          "gained": 832
+          "rank": 8,
+          "gained": 948
         }
       },
       "created": "2025-10-19T13:04:05+09:00",
@@ -537,15 +432,15 @@
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 6554,
+      "stars": 6712,
       "periods": {
         "weekly": {
-          "rank": 9,
-          "gained": 1425
+          "rank": 10,
+          "gained": 1476
         },
         "monthly": {
-          "rank": 13,
-          "gained": 5017
+          "rank": 12,
+          "gained": 5183
         }
       },
       "created": "2026-07-08T21:54:20+09:00",
@@ -565,11 +460,11 @@
       "url": "https://github.com/tile-ai/tilelang",
       "description": "Domain-specific language designed to streamline high-performance GPU/CPU/Accelerators kernel development",
       "language": "Python",
-      "stars": 8283,
+      "stars": 8341,
       "periods": {
         "weekly": {
-          "rank": 10,
-          "gained": 732
+          "rank": 11,
+          "gained": 800
         }
       },
       "created": "2024-10-03T18:25:45+09:00",
@@ -584,39 +479,16 @@
       ]
     },
     {
-      "id": "gh-pytorch-pytorch",
-      "repo": "pytorch/pytorch",
-      "url": "https://github.com/pytorch/pytorch",
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "language": "Python",
-      "stars": 103667,
-      "periods": {
-        "weekly": {
-          "rank": 11,
-          "gained": 369
-        }
-      },
-      "created": "2016-08-13T14:26:41+09:00",
-      "oneLine": "GPU 가속 텐서 연산과 autograd 기반 딥러닝을 제공하는 Python 프레임워크 PyTorch",
-      "bullets": [
-        "강력한 GPU 가속을 갖춘 NumPy 유사 텐서 연산 제공",
-        "tape 기반 autograd 시스템 위에 동적 신경망을 구성"
-      ],
-      "keywords": [
-        "ML Framework"
-      ]
-    },
-    {
       "id": "gh-harry0703-moneyprinterturbo",
       "repo": "harry0703/MoneyPrinterTurbo",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "AI-powered automation for generating HD short videos from topics or keywords",
       "language": "Python",
-      "stars": 128229,
+      "stars": 128420,
       "periods": {
         "weekly": {
           "rank": 12,
-          "gained": 2533
+          "gained": 2324
         }
       },
       "created": "2024-03-11T11:57:34+09:00",
@@ -630,16 +502,67 @@
       ]
     },
     {
+      "id": "gh-nvidia-openshell",
+      "repo": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents",
+      "language": "Rust",
+      "stars": 14815,
+      "periods": {
+        "weekly": {
+          "rank": 13,
+          "gained": 5854
+        },
+        "monthly": {
+          "rank": 15,
+          "gained": 6209
+        }
+      },
+      "created": "2026-02-25T07:52:22+09:00",
+      "oneLine": "커널 수준 sandboxing과 정책으로 자율 에이전트를 안전하게 실행하는 NVIDIA의 런타임",
+      "bullets": [
+        "보안 정책을 커널 수준 sandboxing과 formal verification으로 강제하고, Python·TypeScript·Go·Rust SDK로 앱을 OpenShell gateway에 연결한다."
+      ],
+      "keywords": [
+        "Agent Safety",
+        "Agent Harness"
+      ]
+    },
+    {
+      "id": "gh-mvschwarz-openrig",
+      "repo": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "stars": 4919,
+      "periods": {
+        "weekly": {
+          "rank": 14,
+          "gained": 4245
+        }
+      },
+      "created": "2026-04-01T15:22:40+09:00",
+      "oneLine": "Claude Code·Codex·Pi 에이전트를 역할과 공유 컨텍스트를 가진 지속형 팀으로 묶는 오픈소스 도구",
+      "bullets": [
+        "YAML로 에이전트 팀을 정의하고 명령 하나로 부팅하며, Claude Code와 Codex를 한 rig에서 관리한다.",
+        "리드 에이전트가 여러 팀의 전문 에이전트를 조율해 결과와 결정 사항을 사용자에게 가져온다."
+      ],
+      "keywords": [
+        "Multi-Agent",
+        "Coding Agents"
+      ]
+    },
+    {
       "id": "gh-alibaba-open-code-review",
       "repo": "alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool",
       "language": "Go",
-      "stars": 43490,
+      "stars": 43679,
       "periods": {
         "monthly": {
           "rank": 1,
-          "gained": 21821
+          "gained": 21959
         }
       },
       "created": "2026-05-18T11:16:36+09:00",
@@ -654,16 +577,40 @@
       ]
     },
     {
+      "id": "gh-affaan-m-ecc",
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 272791,
+      "periods": {
+        "monthly": {
+          "rank": 2,
+          "gained": 26724
+        }
+      },
+      "created": "2026-01-18T09:51:51+09:00",
+      "oneLine": "코딩 에이전트에 계획·테스트 검증·자기 리뷰·기억·스킬화를 묶은 엔지니어링 시스템을 설치해 주는 harness 최적화 도구",
+      "bullets": [
+        "Claude Code 플러그인(`ecc@ecc`)으로 설치하며, MIT 라이선스이고 7개 harness를 지원한다고 밝힌다.",
+        "GitHub 저장소, npm 패키지, 프로젝트 사이트 등 공식 채널에서만 설치하라고 안내한다."
+      ],
+      "keywords": [
+        "Agent Harness",
+        "Coding Agents"
+      ]
+    },
+    {
       "id": "gh-ayghri-i-have-adhd",
       "repo": "ayghri/i-have-adhd",
       "url": "https://github.com/ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
-      "stars": 53143,
+      "stars": 53508,
       "periods": {
         "monthly": {
           "rank": 3,
-          "gained": 26537
+          "gained": 26497
         }
       },
       "created": "2026-05-14T05:42:06+09:00",
@@ -682,11 +629,11 @@
       "url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 31875,
+      "stars": 32000,
       "periods": {
         "monthly": {
           "rank": 4,
-          "gained": 10794
+          "gained": 10856
         }
       },
       "created": "2025-07-22T17:01:23+09:00",
@@ -705,11 +652,11 @@
       "repo": "anthropics/financial-services",
       "url": "https://github.com/anthropics/financial-services",
       "language": "Python",
-      "stars": 38624,
+      "stars": 38704,
       "periods": {
         "monthly": {
-          "rank": 6,
-          "gained": 3991
+          "rank": 5,
+          "gained": 4082
         }
       },
       "created": "2026-02-24T04:24:50+09:00",
@@ -724,16 +671,39 @@
       ]
     },
     {
+      "id": "gh-mksglu-context-mode",
+      "repo": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 25373,
+      "periods": {
+        "monthly": {
+          "rank": 6,
+          "gained": 4978
+        }
+      },
+      "created": "2026-02-23T14:56:28+09:00",
+      "oneLine": "도구 출력을 sandbox로 격리해 코딩 에이전트의 컨텍스트 사용을 줄이는 MCP 서버",
+      "bullets": [
+        "도구 출력 98% 감축을 주장하고, 세션 메모리를 SQLite에 유지하며 17개 플랫폼에서 MCP·hook으로 라우팅을 강제한다."
+      ],
+      "keywords": [
+        "Context Management",
+        "Coding Agents"
+      ]
+    },
+    {
       "id": "gh-tt-a1i-archify",
       "repo": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow diagrams",
       "language": "JavaScript",
-      "stars": 76664,
+      "stars": 77239,
       "periods": {
         "monthly": {
           "rank": 8,
-          "gained": 33363
+          "gained": 31939
         }
       },
       "created": "2026-04-15T14:27:37+09:00",
@@ -748,49 +718,73 @@
       ]
     },
     {
-      "id": "gh-humanlayer-skills",
-      "repo": "humanlayer/skills",
-      "url": "https://github.com/humanlayer/skills",
+      "id": "gh-anthropics-claude-code",
+      "repo": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stars": 4873,
+      "stars": 149399,
       "periods": {
         "monthly": {
-          "rank": 14,
-          "gained": 4217
+          "rank": 11,
+          "gained": 5841
         }
       },
-      "created": "2026-03-18T12:23:23+09:00",
-      "oneLine": "HumanLayer가 공개한 Claude Code용 스킬 모음",
+      "created": "2025-02-23T02:41:21+09:00",
+      "oneLine": "터미널에서 코드베이스를 이해하고 자연어 명령으로 반복 작업·코드 설명·git 작업을 처리하는 Anthropic의 에이전트형 코딩 도구",
       "bullets": [
-        "show-me(다이어그램·코드 스케치), visual-pr(PR 개요), design-control-loop 등 6개 스킬 포함",
-        "`npx skills add humanlayer/skills --skill <이름>`으로 개별 설치"
+        "터미널과 IDE에서 쓰거나 GitHub에서 @claude로 호출한다.",
+        "저장소에 커스텀 커맨드와 에이전트로 기능을 확장하는 플러그인이 들어 있다."
       ],
       "keywords": [
-        "Agent Skills",
         "Coding Agents"
       ]
     },
     {
-      "id": "gh-nvidia-openshell",
-      "repo": "NVIDIA/OpenShell",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents",
-      "language": "Rust",
-      "stars": 14639,
+      "id": "gh-superdesigndev-treg",
+      "repo": "superdesigndev/treg",
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+      "language": "Python",
+      "stars": 4121,
       "periods": {
         "monthly": {
-          "rank": 15,
-          "gained": 5918
+          "rank": 13,
+          "gained": 2960
         }
       },
-      "created": "2026-02-25T07:52:22+09:00",
-      "oneLine": "커널 수준 sandboxing과 정책으로 자율 에이전트를 안전하게 실행하는 NVIDIA의 런타임",
+      "created": "2026-07-15T22:38:07+09:00",
+      "oneLine": "에이전트용 도구를 하나의 엔드포인트로 모은 'OpenRouter for agent tools'",
       "bullets": [
-        "보안 정책을 커널 수준 sandboxing과 formal verification으로 강제하고, Python·TypeScript·Go·Rust SDK로 앱을 OpenShell gateway에 연결한다."
+        "SEO·소셜·기업 정보·광고·스크래핑·이미지/영상 생성 등 수천 개 엔드포인트를 호출당 과금(1센트부터)으로 제공한다.",
+        "팀의 키·skill·CLI를 서버에 두고 자격 증명 노출 없이 팀원 에이전트가 호출하게 할 수 있으며 셀프 호스팅 가능하다."
       ],
       "keywords": [
-        "Agent Safety",
-        "Agent Harness"
+        "Agent Tools"
+      ]
+    },
+    {
+      "id": "gh-agent-substrate-substrate",
+      "repo": "agent-substrate/substrate",
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "stars": 4270,
+      "periods": {
+        "monthly": {
+          "rank": 14,
+          "gained": 2460
+        }
+      },
+      "created": "2026-05-14T04:02:38+09:00",
+      "oneLine": "수많은 에이전트 샌드박스를 고밀도로 돌리는 보안 기본값 에이전트 실행 런타임",
+      "bullets": [
+        "일반 컨테이너 런타임보다 10배 높은 밀도로 수백만 샌드박스를 운영하고, 500ms 미만 resume을 지원한다고 설명한다.",
+        "microVM과 gVisor 등 여러 샌드박스 기술을 지원하며, 대부분 유휴 상태인 에이전트를 소수 worker에 다중화한다."
+      ],
+      "keywords": [
+        "AI Infra",
+        "Agent Safety"
       ]
     }
   ]
