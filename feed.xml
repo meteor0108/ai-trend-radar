@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 06 Oct 2026 04:02:04 +0900</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 03:57:53 +0900</lastBuildDate>
+<item>
+<title>[논문] Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation</title>
+<link>https://arxiv.org/abs/2610.05608</link>
+<guid isPermaLink="false">p-2610.05608</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>립싱크 포함 44kHz 오디오를 영상과 동시에 생성하는 오픈소스 T2AV 모델 Kandinsky 6.0 Video(3B Lite·29B Pro)</description>
+</item>
+<item>
+<title>[논문] Memadapter: Counterfactual Adaptation Against Memory-induced Sycophancy</title>
+<link>https://arxiv.org/abs/2610.05162</link>
+<guid isPermaLink="false">p-2610.05162</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>장기 메모리가 유발하는 에이전트의 아첨(sycophancy)을 반사실 추론으로 줄이는 MemAdapter</description>
+</item>
+<item>
+<title>[논문] InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation</title>
+<link>https://arxiv.org/abs/2610.06850</link>
+<guid isPermaLink="false">p-2610.06850</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>사람-물체 상호작용 모션을 휴머노이드로 리타깃하고 추적 정책과 데이터를 서로 키우는 자기진화 모션 모방 프레임워크</description>
+</item>
+<item>
+<title>[논문] Base Models Can Reason By Taking a Cue From Training Data</title>
+<link>https://arxiv.org/abs/2610.06851</link>
+<guid isPermaLink="false">p-2610.06851</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>".\n\nOkay" 같은 응답 시작 토큰 cue만 고정해도 base model 추론 성능이 RL 모델 수준에 근접하며, 그 효과는 학습 데이터에서 온다는 분석</description>
+</item>
+<item>
+<title>[논문] I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2610.06129</link>
+<guid isPermaLink="false">p-2610.06129</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>넘어져도 다시 과제를 이어가는 휴머노이드-물체 상호작용용 최초의 behavioral foundation model</description>
+</item>
+<item>
+<title>[뉴스] Mistral Large 4</title>
+<link>https://mistral.ai/news/mistral-large-4/</link>
+<guid isPermaLink="false">hn-49977979</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>Mistral, 총 1조(활성 490억) 파라미터 네이티브 멀티모달 MoE 'Mistral Large 4' 공개 프리뷰 출시…가중치는 이달 말 공개</description>
+</item>
+<item>
+<title>[뉴스] Beam: Reflection's 501B open-weight model</title>
+<link>https://reflection.ai/blog/introducing-beam</link>
+<guid isPermaLink="false">hn-49969183</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>Reflection, 첫 오픈웨이트 모델 Beam 공개: 총 501B·활성 23B 파라미터 sparse MoE로 코딩·에이전트 작업에 초점</description>
+</item>
+<item>
+<title>[뉴스] Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates</title>
+<link>https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors</link>
+<guid isPermaLink="false">hn-49970667</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>Claude Opus 5.5 에이전트 팀이 차세대 메모리용 상온 Luttinger-compensated 자성 반도체 후보 2종을 DFT 계산으로 제시</description>
+</item>
+<item>
+<title>[뉴스] Dust: Pretraining Transformers Without Backpropagation</title>
+<link>https://qlabs.sh/research/dust</link>
+<guid isPermaLink="false">hn-49970871</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>토큰마다 activation에 다른 섭동을 주는 zeroth-order 방법 Dust로 역전파 없이 트랜스포머 LM을 사전학습</description>
+</item>
+<item>
+<title>[뉴스] Meta's Muse Is an Adorable Privacy and Security Dumpster Fire</title>
+<link>https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/</link>
+<guid isPermaLink="false">hn-49977588</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta 에이전트형 AI Muse, Mac 감시 가능 제로데이·무단 메시지 업로드 등 출시 후 개인정보·보안 문제 잇따라</description>
+</item>
+<item>
+<title>[뉴스] ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons</title>
+<link>https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/</link>
+<guid isPermaLink="false">hn-49971846</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>ChatGPT가 'New Yorker 스타일' 만화를 생성하며 실제 만화가 15명 이상의 서명을 허가·보상 없이 붙이는 문제</description>
+</item>
+<item>
+<title>[뉴스] Advancing computer use with Ironclad</title>
+<link>https://openai.com/index/advancing-computer-use-with-ironclad</link>
+<guid isPermaLink="false">openai-advancing-computer-use-with-ironclad</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI와 Ironclad, 복잡한 계약 업무 워크플로에서 AI 에이전트를 학습·평가해 전문 업무용 computer use를 발전</description>
+</item>
+<item>
+<title>[뉴스] AI is now capable of developing its own inference hardware</title>
+<link>https://github.com/FeSens/openTPU</link>
+<guid isPermaLink="false">hn-49980715</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI가 하드웨어 설계부터 컴파일러·시뮬레이터·호스트 SW까지 개발한 오픈소스 AI 가속기 openTPU</description>
+</item>
+<item>
+<title>[뉴스] Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle</title>
+<link>https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/</link>
+<guid isPermaLink="false">google-open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google Research, Contextual Integrity 관점에서 AI 에이전트 개인정보·보안의 열린 연구 과제를 정리한 워크숍 보고서 공개</description>
+</item>
+<item>
+<title>[뉴스] Erdosproblems.com Succumbs to the AI Onslaught</title>
+<link>https://www.erdosproblems.com/forum/thread/blog:9</link>
+<guid isPermaLink="false">hn-49977689</guid>
+<pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
+<description>erdosproblems.com, 설명 없는 AI 생성 증명 쇄도로 문제 댓글·증명 주장 접수를 중단하고 문제 상태 표시를 없앰</description>
+</item>
 <item>
 <title>[논문] Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite</title>
 <link>https://arxiv.org/abs/2610.02826</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-49942434</guid>
 <pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
 <description>Claude Code·Codex·AGY·Grok Build 등 여러 코딩 에이전트를 한 워크스페이스에서 관리하는 무료 Mac 앱</description>
-</item>
-<item>
-<title>[논문] Sharpening Tax in Post-Training</title>
-<link>https://arxiv.org/abs/2610.01509</link>
-<guid isPermaLink="false">p-2610.01509</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>RL post-training이 agentic task에서 pass@1은 올리지만 pass@K 기반 해법 범위를 줄이는 'Sharpening Tax'를 정량화</description>
-</item>
-<item>
-<title>[논문] World Observer: Joint Actor-Observer Generation for Persistent World Modeling</title>
-<link>https://arxiv.org/abs/2610.02162</link>
-<guid isPermaLink="false">p-2610.02162</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>액터 시점 밖 영역을 panoramic observer가 계속 생성해 화면 밖 물체 상태를 유지하는 비디오 world model</description>
-</item>
-<item>
-<title>[논문] OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</title>
-<link>https://arxiv.org/abs/2610.01762</link>
-<guid isPermaLink="false">p-2610.01762</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>streaming video LLM이 지각·기억·능동 응답을 하나의 proactive 생성 과정으로 함께 학습하는 OneStreamer</description>
-</item>
-<item>
-<title>[논문] Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</title>
-<link>https://arxiv.org/abs/2610.02204</link>
-<guid isPermaLink="false">p-2610.02204</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>가중치 업데이트 없이 시뮬레이션 연습으로 skill library와 system prompt를 개선하는 로봇 자기개선 프레임워크 RPG</description>
-</item>
-<item>
-<title>[논문] Hierarchical Continuous Diffusion Language Models</title>
-<link>https://arxiv.org/abs/2610.02193</link>
-<guid isPermaLink="false">p-2610.02193</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>이산 토큰 생성과 연속 latent 궤적을 하나의 denoising 과정으로 묶은 Hierarchical Continuous Diffusion LM</description>
-</item>
-<item>
-<title>[뉴스] Pi 1.0</title>
-<link>https://earendil.com/posts/pi-1-0/</link>
-<guid isPermaLink="false">hn-49926069</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Earendil이 미니멀 터미널 코딩 agent harness Pi 1.0을 MIT 라이선스로 정식 출시</description>
-</item>
-<item>
-<title>[뉴스] DeepSeek Harness Desktop for macOS and Windows</title>
-<link>https://www.deepseek.com/en/harness/</link>
-<guid isPermaLink="false">hn-49929489</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>DeepSeek가 플러그인 기반 오픈소스 agent harness를 macOS·Windows 데스크톱 앱으로 공개</description>
-</item>
-<item>
-<title>[뉴스] FLUX 3 Image</title>
-<link>https://bfl.ai/models/flux-3-image</link>
-<guid isPermaLink="false">hn-49925974</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Black Forest Labs가 bounding box로 레이아웃을 계획한 뒤 생성하는 FLUX 3 Image 공개</description>
-</item>
-<item>
-<title>[뉴스] How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast</title>
-<link>https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/</link>
-<guid isPermaLink="false">nvidia-gpus-openai-gpt-6-astra-ultrafast</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA Blackwell에서 돌아가는 GPT-6 Astra Ultrafast가 OpenAI API와 ChatGPT Work·Codex에 제공, Standard 모드보다 최대 8배 빠른 토큰 생성</description>
-</item>
-<item>
-<title>[뉴스] Pi Durable</title>
-<link>https://earendil.com/posts/pi-durable/</link>
-<guid isPermaLink="false">hn-49925969</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Earendil이 프로세스가 종료돼도 중단 지점부터 재개하는 장시간 실행 agent harness Pi Durable 공개</description>
-</item>
-<item>
-<title>[뉴스] Anthropic invests $100 million to train Frontier Deployed Engineers: Claude Frontier Academy</title>
-<link>https://www.anthropic.com/news/claude-frontier-academy</link>
-<guid isPermaLink="false">anthropic-claude-frontier-academy</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 1억 달러를 들여 2027년 말까지 Frontier Deployed Engineer 1만 명을 양성하는 Claude Frontier Academy 출범</description>
-</item>
-<item>
-<title>[뉴스] Toward provably private learning from federated data</title>
-<link>https://research.google/blog/toward-provably-private-learning-from-federated-data/</link>
-<guid isPermaLink="false">google-toward-provably-private-learning-from-federated-data</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google Research가 서버 측 TEE와 공개 투명성 로그로 federated learning의 데이터 처리 방식을 외부에서 검증 가능하게 만든 시스템 소개</description>
-</item>
-<item>
-<title>[뉴스] Robot Hands for Modern AI and Real Work</title>
-<link>https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/</link>
-<guid isPermaLink="false">hn-49933288</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Boston Dynamics가 Atlas용 4손가락·13자유도 직접 구동 로봇 손의 설계 배경을 공개</description>
-</item>
-<item>
-<title>[뉴스] Using Opus 5.5 to discover a new eyewitness record of the dodo</title>
-<link>https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness</link>
-<guid isPermaLink="false">hn-49926917</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>Opus 5.5로 네덜란드 동인도회사 기록을 의미 검색해 학계가 놓친 도도새 목격 기록을 찾아낸 사례</description>
-</item>
-<item>
-<title>[뉴스] A model guide for the GPT-6 family</title>
-<link>https://openai.com/index/practical-guide-building-gpt-6</link>
-<guid isPermaLink="false">openai-practical-guide-building-gpt-6</guid>
-<pubDate>Sat, 03 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 스타트업을 위한 GPT-6 계열 모델 선택·활용 가이드를 공개</description>
 </item>
 </channel>
 </rss>
