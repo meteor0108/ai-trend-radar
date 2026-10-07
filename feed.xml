@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Wed, 07 Oct 2026 03:57:53 +0900</lastBuildDate>
+<lastBuildDate>Thu, 08 Oct 2026 04:00:22 +0900</lastBuildDate>
+<item>
+<title>[논문] Rethinking Cross-Tokenizer On-Policy Distillation: From Alignment Coverage to Supervision Reliability</title>
+<link>https://arxiv.org/abs/2610.08448</link>
+<guid isPermaLink="false">p-2610.08448</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>tokenizer가 다른 teacher-student 간 On-Policy Distillation에서 정렬 범위를 넓히기보다 신뢰할 수 있는 위치에만 감독을 주는 편이 낫다는 분석</description>
+</item>
+<item>
+<title>[논문] EVISKILL: Grounding Skill Evolution in Replayable Evidence</title>
+<link>https://arxiv.org/abs/2610.05030</link>
+<guid isPermaLink="false">p-2610.05030</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>실행 근거를 Replayable Evidence Card로 보존하고 재실행으로 검증하며 LLM 에이전트 skill을 진화시키는 프레임워크</description>
+</item>
+<item>
+<title>[논문] OpenWAM: An Open Framework for Composable World-Action Models</title>
+<link>https://arxiv.org/abs/2610.07922</link>
+<guid isPermaLink="false">p-2610.07922</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Wan2.2-5B 기반 로봇 영상 사전학습과 조합 가능한 video-action 상호작용 구조로 World-Action Model 설계를 비교하는 오픈 프레임워크</description>
+</item>
+<item>
+<title>[논문] DuoMatching: Joint-Marginal Distribution Matching for Few-Step Video Generation</title>
+<link>https://arxiv.org/abs/2610.03543</link>
+<guid isPermaLink="false">p-2610.03543</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>영상 teacher의 joint matching에 이미지 생성기의 프레임 단위 marginal matching을 더한 few-step 스트리밍 영상 생성 증류</description>
+</item>
+<item>
+<title>[논문] Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing</title>
+<link>https://arxiv.org/abs/2609.37334</link>
+<guid isPermaLink="false">p-2609.37334</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>명령과 실제 로봇 동작의 오차를 온라인으로 보정하는 self-compensating VLA와 실행 오차 스트레스 벤치마크 RoboStress</description>
+</item>
+<item>
+<title>[뉴스] Introducing Claude Haiku 5.5</title>
+<link>https://www.anthropic.com/claude-haiku-5-5</link>
+<guid isPermaLink="false">anthropic-claude-haiku-5-5</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 가장 싸고 빠른 소형 모델 Claude Haiku 5.5 출시…Haiku 4.5보다 평균 약 75% 저렴</description>
+</item>
+<item>
+<title>[뉴스] GPT-6 and Intelligent UI for everyone</title>
+<link>https://openai.com/index/gpt-6-for-everyone</link>
+<guid isPermaLink="false">openai-gpt-6-for-everyone</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, GPT-6를 ChatGPT 전 세계 사용자에게 Intelligent UI와 함께 배포 시작</description>
+</item>
+<item>
+<title>[뉴스] Sharing AI progress in mathematics</title>
+<link>https://openai.com/index/sharing-ai-progress-in-mathematics</link>
+<guid isPermaLink="false">openai-sharing-ai-progress-in-mathematics</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 미공개 내부 모델이 만든 수학 연구 원고 722편과 Lean 증명 자료를 GitHub에 공개</description>
+</item>
+<item>
+<title>[뉴스] EmbeddingGemma 2: an open, lightweight multimodal embedding model</title>
+<link>https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/</link>
+<guid isPermaLink="false">deepmind-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google, 텍스트·코드·이미지·영상·오디오를 한 벡터 공간에 넣는 7.4억 파라미터 오픈 임베딩 모델 EmbeddingGemma 2 공개</description>
+</item>
+<item>
+<title>[뉴스] Wikimedia에서 OpenAI의 ‘통제를 벗어난’ 에이전트 활동 발견</title>
+<link>https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/</link>
+<guid isPermaLink="false">gn-34835</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Wikimedia 재단, OpenAI가 운영한 것으로 추정되는 AI 에이전트의 무승인 편집·침입 시도·대량 수집 활동 확인</description>
+</item>
+<item>
+<title>[뉴스] Dust - 역전파 없이 트랜스포머 사전학습하기</title>
+<link>https://qlabs.sh/research/dust</link>
+<guid isPermaLink="false">gn-34868</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>토큰마다 다른 활성값 섭동을 줘 한 번의 forward로 수천 개 후보 변화를 평가하는 역전파 없는 트랜스포머 사전학습 Dust</description>
+</item>
+<item>
+<title>[뉴스] Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth</title>
+<link>https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth</link>
+<guid isPermaLink="false">hn-49994746</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>쇼핑 에이전트 13종 32.5만 회 실험에서 8개 모델이 같은 요청에도 부유한 사용자에게 더 비싼 상품을 추천</description>
+</item>
+<item>
+<title>[뉴스] Docker Agent : AI Agent Builder and Runtime by Docker</title>
+<link>https://github.com/docker/docker-agent</link>
+<guid isPermaLink="false">hn-49996259</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Docker, YAML로 선언적으로 정의하는 멀티에이전트 빌더·런타임 Docker Agent 공개</description>
+</item>
+<item>
+<title>[뉴스] 우리가 알던 오픈소스는 죽었다</title>
+<link>https://jross.me/open-source-as-we-know-it-is-dead/</link>
+<guid isPermaLink="false">gn-34900</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI로 기여 생성 비용은 0에 가까워졌지만 리뷰 비용은 그대로라 오픈소스의 열린 기여 문화가 무너지고 있다는 글</description>
+</item>
+<item>
+<title>[뉴스] Meta의 Muse, 귀엽지만 개인정보 보호와 보안은 총체적 난국</title>
+<link>https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/</link>
+<guid isPermaLink="false">gn-34897</guid>
+<pubDate>Thu, 08 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta의 에이전트형 AI Muse, 출시 직후 Mac 제로데이·무단 메시지 접근 등 보안·개인정보 문제 잇따라</description>
+</item>
 <item>
 <title>[논문] Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation</title>
 <link>https://arxiv.org/abs/2610.05608</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-49951641</guid>
 <pubDate>Mon, 05 Oct 2026 08:00:00 +0900</pubDate>
 <description>Stephen Wolfram, 'AI가 수학 연구를 대체한다'는 주장은 수학과 AI 모두에 대한 오해라는 장문 에세이</description>
-</item>
-<item>
-<title>[논문] Scaling and Distilling Text Embeddings for Better Diffusibility</title>
-<link>https://arxiv.org/abs/2610.01016</link>
-<guid isPermaLink="false">p-2610.01016</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>연속 확산 언어모델에 가장 '확산하기 좋은' 텍스트 임베딩을 찾고, T5Gemma-2를 증류해 생성 품질을 높인 연구</description>
-</item>
-<item>
-<title>[논문] On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics</title>
-<link>https://arxiv.org/abs/2609.35259</link>
-<guid isPermaLink="false">p-2609.35259</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>증류에서 on-policy 롤아웃이 정말 중요한지 rollout policy·KL 방향·학습률을 분리해 체계적으로 검증한 연구</description>
-</item>
-<item>
-<title>[논문] UniWAM: Unified World-Action Model</title>
-<link>https://arxiv.org/abs/2610.02054</link>
-<guid isPermaLink="false">p-2610.02054</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>물리 추론기·월드 생성기·행동 예측기를 하나로 묶어 VLA와 World-Action Model의 장점을 통합한 UniWAM</description>
-</item>
-<item>
-<title>[논문] GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis</title>
-<link>https://arxiv.org/abs/2609.38923</link>
-<guid isPermaLink="false">p-2609.38923</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>실제 파일 기반 evidence graph로 업무형 에이전트 학습 과제와 검증 루브릭을 함께 합성하는 GraphForge</description>
-</item>
-<item>
-<title>[논문] World Motion Models: Flexible Sequence Modeling of SE(3) Trajectories</title>
-<link>https://arxiv.org/abs/2610.01742</link>
-<guid isPermaLink="false">p-2610.01742</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>동적 3D 세계를 희소한 SE(3) 궤적 시퀀스로 표현해 예측·보간·제어·정책 학습을 하나의 모델로 푸는 World Motion Models (NeurIPS 2026 Spotlight)</description>
-</item>
-<item>
-<title>[뉴스] Kolibri: A Sovereign Open-Weight Model</title>
-<link>https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/</link>
-<guid isPermaLink="false">hn-49942706</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>Aleph Alpha가 독일어·영어용 MoE 오픈 웨이트 모델 Kolibri를 Apache 2.0으로 공개</description>
-</item>
-<item>
-<title>[뉴스] With most information hidden, the game Stratego had stumped AI until now</title>
-<link>https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/</link>
-<guid isPermaLink="false">hn-49933740</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>불완전 정보 게임 Stratego에서 AI Ataraxos가 역대 최고 선수 Pim Niemeijer를 15승 1패 4무로 꺾음</description>
-</item>
-<item>
-<title>[뉴스] From the creator of Redis; run LLM locally with ds4</title>
-<link>https://dwarfstar.sh/</link>
-<guid isPermaLink="false">hn-49936575</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>Redis 창시자가 만든 로컬 LLM 추론 엔진 ds4(DwarfStar 4)가 DeepSeek 전용에서 Qwen·GLM까지 지원 확대</description>
-</item>
-<item>
-<title>[뉴스] Greg Kroah-Hartman – Security in the LLM Age [video]</title>
-<link>https://www.youtube.com/watch?v=NnV_cWeoo5Q</link>
-<guid isPermaLink="false">hn-49929391</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>리눅스 커널 개발자 Greg Kroah-Hartman이 LLM 시대의 보안과 AI 보안 도구의 성과·한계를 다룬 발표</description>
-</item>
-<item>
-<title>[뉴스] arXiv, AI 논문 제출 급증에 제출자당 월 2건으로 제한</title>
-<link>https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/</link>
-<guid isPermaLink="false">gn-34665</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>arXiv가 AI 생성 저품질 논문 급증에 대응해 2026년 10월 1일부터 제출자당 월 2건(동시 최대 3건) 제한을 시행</description>
-</item>
-<item>
-<title>[뉴스] DeepSeek Harness, 맥·윈도우용 데스크톱 앱 공개</title>
-<link>https://www.deepseek.com/en/harness/</link>
-<guid isPermaLink="false">gn-34656</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>DeepSeek가 오픈소스 에이전트 오케스트레이션 도구 DeepSeek Harness의 macOS·Windows 데스크톱 앱을 공개</description>
-</item>
-<item>
-<title>[뉴스] Pi 1.0 출시 - 미니멀한 터미널 코딩 에이전트</title>
-<link>https://earendil.com/posts/pi-1-0/</link>
-<guid isPermaLink="false">gn-34632</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>주간 사용자 수십만 명의 미니멀 터미널 코딩 에이전트 Pi가 1.0을 출시</description>
-</item>
-<item>
-<title>[뉴스] Muse Gadgets</title>
-<link>https://gadgets.muse.ai</link>
-<guid isPermaLink="false">hn-49937504</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta의 개인 AI 에이전트 Muse를 화면·마이크·버튼·센서에 연결해 나만의 AI 기기를 만드는 오픈소스 SDK</description>
-</item>
-<item>
-<title>[뉴스] Extra Big Ass Intelligence</title>
-<link>https://www.extrabigassintelligence.com/</link>
-<guid isPermaLink="false">hn-49941114</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI·초지능 홍보와 광고로 뒤덮인 인터넷을 영화 《이디오크러시》풍으로 풍자한 챗봇 사이트</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Offrun – manage every coding agent from one workspace</title>
-<link>https://offrun.dev/</link>
-<guid isPermaLink="false">hn-49942434</guid>
-<pubDate>Sun, 04 Oct 2026 08:00:00 +0900</pubDate>
-<description>Claude Code·Codex·AGY·Grok Build 등 여러 코딩 에이전트를 한 워크스페이스에서 관리하는 무료 Mac 앱</description>
 </item>
 </channel>
 </rss>
