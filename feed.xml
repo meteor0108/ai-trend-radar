@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 09 Oct 2026 03:57:02 +0900</lastBuildDate>
+<lastBuildDate>Sat, 10 Oct 2026 04:00:25 +0900</lastBuildDate>
+<item>
+<title>[논문] AgentGarten: Code Worlds for Evolving Agents</title>
+<link>https://arxiv.org/abs/2610.12374</link>
+<guid isPermaLink="false">p-2610.12374</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>시뮬레이터·게임 엔진에 공용 neural renderer를 붙여 에이전트가 시각 관찰로 상호작용하며 진화하는 실시간 code world 프레임워크</description>
+</item>
+<item>
+<title>[논문] SuperNav: An Agentic Navigation System for Any Task in Any Scene</title>
+<link>https://arxiv.org/abs/2610.12126</link>
+<guid isPermaLink="false">p-2610.12126</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>사전학습 MLLM을 navigation 전용 fine-tuning 없이 agent harness로 감싸 어떤 요청·어떤 장면에서도 동작하게 한 로봇 내비게이션 시스템</description>
+</item>
+<item>
+<title>[논문] TokenRouter: Efficient Serving System for Token-Level LLM Routing</title>
+<link>https://arxiv.org/abs/2610.12242</link>
+<guid isPermaLink="false">p-2610.12242</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>token 단위로 여러 LLM을 오가는 routed inference를 효율적으로 서빙하는 시스템 (NeurIPS 2026)</description>
+</item>
+<item>
+<title>[논문] MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement</title>
+<link>https://arxiv.org/abs/2610.11959</link>
+<guid isPermaLink="false">p-2610.11959</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>RL compute를 배치·환경·grader 세 축으로 확장해 self-improvement를 노린 omni-modal MiMo-V2.6 시리즈 기술 보고서</description>
+</item>
+<item>
+<title>[논문] Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement</title>
+<link>https://arxiv.org/abs/2610.12369</link>
+<guid isPermaLink="false">p-2610.12369</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>로봇 제어 루프에서 VLA·VLM을 빼고 상태 추적과 의사결정을 전부 코드로 작성하는 Code-Only-as-Policy(COAP) 패러다임</description>
+</item>
+<item>
+<title>[뉴스] OpenAI fires three safety researchers for "mishandling research information"</title>
+<link>https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/</link>
+<guid isPermaLink="false">hn-50018350</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 민감 정보 취급 위반을 이유로 안전 연구원 3명을 해고, 당사자들은 공개서한으로 혐의 부인</description>
+</item>
+<item>
+<title>[뉴스] Why isn't the industry freaking out about DeepSeek 4.1 Flash?</title>
+<link>https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/</link>
+<guid isPermaLink="false">hn-50000488</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek 4.1 Flash를 한 달간 12개 프로젝트에 써 본 결과 Opus와 체감 차이가 적고 비용은 훨씬 낮았다는 사용기</description>
+</item>
+<item>
+<title>[뉴스] Introducing the Anthropic Cyber Mission</title>
+<link>https://www.anthropic.com/news/anthropic-cyber-mission</link>
+<guid isPermaLink="false">anthropic-anthropic-cyber-mission</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 핵심 인프라와 오픈소스 소프트웨어 방어를 첫 목표로 하는 장기 사이버보안 이니셔티브를 발표</description>
+</item>
+<item>
+<title>[뉴스] OpenAI, the Partition Principle, and Mathematics</title>
+<link>https://karagila.org/2026/openai-pp/</link>
+<guid isPermaLink="false">hn-50013902</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>집합론 학자 Asaf Karagila가 OpenAI의 "Partition Principle은 Axiom of Choice를 함의하지 않는다" 결과 발표 방식을 비판</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Let your AI agents paint big arrows, boxes and text on your screen</title>
+<link>https://github.com/franzenzenhofer/big-arrow-on-the-screen</link>
+<guid isPermaLink="false">hn-50018817</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI 에이전트가 사람이 직접 눌러야 할 버튼·창을 화면 위 화살표·상자·텍스트로 가리키게 하는 macOS CLI 겸 agent skill</description>
+</item>
+<item>
+<title>[뉴스] I think I found a planet nobody knew existed. I used Claude Code to find it</title>
+<link>https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9</link>
+<guid isPermaLink="false">hn-50002665</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>Claude Code로 NASA TESS 공개 데이터를 분석해 약 116광년 떨어진 별에서 미보고 외계행성 후보 신호를 찾았다는 사례</description>
+</item>
+<item>
+<title>[뉴스] Iranian campaign planted fake articles in real U.S. publications using ChatGPT</title>
+<link>https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/</link>
+<guid isPermaLink="false">hn-50019455</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>이란 측 캠페인이 ChatGPT로 만든 기사를 실제 미국 매체에 게재했다는 Washington Post 보도</description>
+</item>
+<item>
+<title>[뉴스] MXC - a sandboxed code execution system</title>
+<link>https://github.com/microsoft/mxc</link>
+<guid isPermaLink="false">hn-50016489</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>Microsoft가 model output·plugin·tool 같은 신뢰할 수 없는 코드를 Windows·Linux·macOS에서 격리 실행하는 MXC를 공개</description>
+</item>
+<item>
+<title>[뉴스] AI-ready biological data: $1.8B global commitment</title>
+<link>https://biohub.org/news/virtual-biology-initiative-expansion/</link>
+<guid isPermaLink="false">hn-50011999</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>Biohub·DOE·NIH가 Virtual Biology Initiative를 총 18억 달러 규모로 확대해 AI-ready 오픈 생물 데이터를 구축</description>
+</item>
+<item>
+<title>[뉴스] Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core</title>
+<link>https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/</link>
+<guid isPermaLink="false">nvidia-scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
+<description>Megatron Core의 --deterministic-mode로 수천 GPU 규모 사전학습을 bitwise 결정론적으로 재현</description>
+</item>
 <item>
 <title>[논문] Long-WAM: Scaling the Context of World-Action Models</title>
 <link>https://arxiv.org/abs/2610.10528</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-49977689</guid>
 <pubDate>Wed, 07 Oct 2026 08:00:00 +0900</pubDate>
 <description>erdosproblems.com, 설명 없는 AI 생성 증명 쇄도로 문제 댓글·증명 주장 접수를 중단하고 문제 상태 표시를 없앰</description>
-</item>
-<item>
-<title>[논문] Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite</title>
-<link>https://arxiv.org/abs/2610.02826</link>
-<guid isPermaLink="false">p-2610.02826</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>다양한 하네스에서 얻은 성공 궤적을 일반 하네스용 학습 데이터로 재구성하는 Recursive Self-Rewrite(RSR)</description>
-</item>
-<item>
-<title>[논문] Native Action-Prior Learning from Videos for World Action Models</title>
-<link>https://arxiv.org/abs/2610.03391</link>
-<guid isPermaLink="false">p-2610.03391</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>행동 라벨 없는 영상으로 World Action Model의 action policy를 직접 사전학습하는 NAVA-WAM</description>
-</item>
-<item>
-<title>[논문] FrameMorrow: Future-guided Frame Selection with Prospective Tokens for Long-Horizon Video Generation</title>
-<link>https://arxiv.org/abs/2609.38839</link>
-<guid isPermaLink="false">p-2609.38839</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>미래에 필요할 정보를 예측하는 prospective token으로 긴 영상 생성의 과거 프레임을 고르는 FrameMorrow</description>
-</item>
-<item>
-<title>[논문] RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations</title>
-<link>https://arxiv.org/abs/2610.01780</link>
-<guid isPermaLink="false">p-2610.01780</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI 컴패니언과 실제 사용자 10명의 최대 120일 대화로 사람 이해 능력을 평가하는 벤치마크 RealCompanion</description>
-</item>
-<item>
-<title>[논문] MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation</title>
-<link>https://arxiv.org/abs/2609.38078</link>
-<guid isPermaLink="false">p-2609.38078</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>범용 VLM이 별도 정책 학습 없이 로봇을 직접 조작하게 하는 하네스 MotorMind</description>
-</item>
-<item>
-<title>[뉴스] OpenAI "rogue" agent activities found on Wikimedia projects</title>
-<link>https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/</link>
-<guid isPermaLink="false">hn-49968105</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Wikimedia 재단, OpenAI가 운영한 것으로 보이는 '불량' AI 에이전트의 위키 편집·Etherpad 공격 시도·대량 요청을 확인</description>
-</item>
-<item>
-<title>[뉴스] Anthropic reported diary entry to police, woman faces felony charge</title>
-<link>https://www.techspot.com/news/114091-florida-woman-used-claude-diary-a</link>
-<guid isPermaLink="false">hn-49961057</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Claude를 일기처럼 쓰던 플로리다 여성이 보안관 사무실 총격 위협을 입력했다가 Anthropic의 신고로 체포</description>
-</item>
-<item>
-<title>[뉴스] Web Search API</title>
-<link>https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/</link>
-<guid isPermaLink="false">hn-49963171</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cloudflare, AI 에이전트·앱이 실시간 웹 검색 결과를 근거로 쓰게 하는 Web Search API 베타 공개</description>
-</item>
-<item>
-<title>[뉴스] Improper redaction reveals Google Data Center water and electricity usage</title>
-<link>https://www.1011now.com/2026/09/30/more-questions-than-answers-about-l</link>
-<guid isPermaLink="false">hn-49957068</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google이 영업비밀로 가린 네브래스카 데이터센터 보고서, 복사·붙여넣기만으로 물·전력 사용량 노출</description>
-</item>
-<item>
-<title>[뉴스] Germany’s RobCo hits $1B valuation</title>
-<link>https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robc</link>
-<guid isPermaLink="false">hn-49963366</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>뮌헨의 서비스형 로봇(RaaS) 기업 RobCo, 신규 투자와 직원 구주 매각으로 기업가치 10억 달러 돌파</description>
-</item>
-<item>
-<title>[뉴스] Turn off Apple Intelligence on macOS 27 and get its disk space back</title>
-<link>https://github.com/omlahore/RemoveMacAI</link>
-<guid isPermaLink="false">hn-49957116</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>macOS 27의 Apple Intelligence 기능을 끄고 모델을 지우며 재다운로드를 막는 되돌리기 가능한 도구 RemoveMacAI</description>
-</item>
-<item>
-<title>[뉴스] Our approach to EU text provenance rules</title>
-<link>https://openai.com/index/eu-text-provenance</link>
-<guid isPermaLink="false">openai-eu-text-provenance</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, EU 규정에 따른 텍스트 워터마킹(provenance) 접근 방식 공개</description>
-</item>
-<item>
-<title>[뉴스] AI가 코드를 쓸수록 도메인 주도 설계가 더 중요해지는 이유</title>
-<link>https://threedots.tech/post/ddd-and-ai-coding/</link>
-<guid isPermaLink="false">gn-34791</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI가 구현을 빠르게 처리할수록 도메인을 이해하고 모델링하는 DDD의 가치가 커진다는 글</description>
-</item>
-<item>
-<title>[뉴스] Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers</title>
-<link>https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails</link>
-<guid isPermaLink="false">hn-49933476</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Red Hat, 가드레일용 Jev류 decision model을 LLM-as-a-judge·사전학습 분류기와 비교한 벤치마크 결과 공개</description>
-</item>
-<item>
-<title>[뉴스] Claude와 Claude Code에서 Opus 5.5를 최대한 활용하는 방법</title>
-<link>https://claude.dev/blog/getting-the-most-out-of-opus-5-5/</link>
-<guid isPermaLink="false">gn-34734</guid>
-<pubDate>Tue, 06 Oct 2026 08:00:00 +0900</pubDate>
-<description>Opus 5.5에 작업 전체·완료 조건·질문할 조건을 한 번에 전달하는 등 활용 가이드</description>
 </item>
 </channel>
 </rss>
