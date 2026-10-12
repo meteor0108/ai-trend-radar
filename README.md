@@ -4,7 +4,7 @@ alphaXiv / HF Daily Papers / GeekNews / Hacker News / Meta AI / NVIDIA / Google 
 매일 AI 논문과 뉴스를 플랫폼별로 모아 한국어로 요약하고, 로보틱스 탑티어 학회 수상 논문을 모아 보여주는 정적 사이트이다. 
 
 - 사이트: https://meteor0108.github.io/ai-trend-radar/
-- 매일 03:30 KST 무렵 Claude Code 예약 작업이 [ROUTINE.md](ROUTINE.md)를 따라 수집·요약하고 `data/`에 커밋한다. Slack에는 업데이트 알림만 보낸다.
+- 매일 03:30 KST 무렵 Claude Code 예약 작업이 [ROUTINE.md](ROUTINE.md)를 따라 수집·요약하고 `data/`에 커밋한다.
 
 ## 구조
 

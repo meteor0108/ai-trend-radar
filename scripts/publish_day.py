@@ -8,7 +8,7 @@
   python3 scripts/publish_day.py publish data/days/YYYY-MM-DD.json
       Validate and normalize the day file, drop items published on other days,
       renumber overall and per-platform ranks, then rebuild data/index.json and feed.xml.
-      Prints a JSON summary (counts, dropped ids, headlines) for the Slack notice.
+      Prints a JSON summary (counts, dropped ids, headlines) for the run's final report.
 
   python3 scripts/publish_day.py github data/github/trending.json
       Validate and normalize the GitHub Trending dashboard (a snapshot replaced every day):

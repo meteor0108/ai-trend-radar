@@ -160,24 +160,11 @@ If the trending pages cannot be fetched, leave the existing file untouched and a
 
 ## 5. Publish
 
-1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 35 papers / 80 news, makes sure a robotics paper is in the top 5, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for step 6.
+1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 35 papers / 80 news, makes sure a robotics paper is in the top 5, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for the final response.
 2. `git add data feed.xml && git commit -m "digest: $TODAY"` and push to `main`. If the push is rejected, pull with rebase and push again once.
 
-## 6. Notify on Slack
+## 6. Finish
 
-Send exactly one message with the Slack connector's `slack_send_message`, `channel_id` = the Slack member ID given in the routine prompt (the owner's own DM). This file deliberately holds only the placeholder `YOUR_SLACK_USER_ID`: if you reuse this repository, put **your own** Slack member ID in your routine prompt. Never send to the literal placeholder, and if the prompt gives no ID, skip this step and say so. Do not send to any other channel or user. Markdown:
+Do not send any notification (Slack or otherwise), even if the routine prompt mentions one.
 
-```
-📰 **AI 트렌드 레이더 업데이트** — MM.DD (요일)
-논문 N편 · 뉴스 M건
-• <headline 1 title> — <oneLine>
-• <headline 2 title> — <oneLine>
-• <headline 3 title> — <oneLine>
-👉 [오늘의 다이제스트 보기](<url from the publish output>)
-```
-
-Add a line `⚠️ 수집 실패: …` if `failed` is not empty. If the Slack tools are unavailable, skip this step and say so in the final response.
-
-## 7. Finish
-
-Final response: one line with paper/news counts, per-platform counts (`perSource`), GitHub dashboard counts (`perPeriod`), dropped duplicates, failed sources, and whether push and Slack succeeded.
+Final response: one line with paper/news counts, per-platform counts (`perSource`), GitHub dashboard counts (`perPeriod`), dropped duplicates, failed sources, and whether the push succeeded.
