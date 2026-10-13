@@ -165,9 +165,9 @@
   }
 
   // Rows
-  function brokenImage(id) { if (!S.broken.has(id)) { S.broken.add(id); renderFeed(); } }
+  function brokenImage(id) { if (!S.broken.has(id)) { S.broken.add(id); redrawInPlace(); } }
   function markRead(id) { if (!S.marks.read[id]) { S.marks.read[id] = 1; saveMarks(); } }
-  function toggleOpen(id) { if (S.open.has(id)) S.open.delete(id); else S.open.add(id); renderFeed(); }
+  function toggleOpen(id) { if (S.open.has(id)) S.open.delete(id); else S.open.add(id); redrawInPlace(); }
 
   function lightbox(src, alt) {
     const box = el("div", { class: "lightbox", role: "dialog", "aria-label": "이미지 크게 보기", tabindex: "-1" }, el("img", { src, alt }));
@@ -219,7 +219,7 @@
     const img = isPaper ? imageOf(i) : null;
 
     const title = el("h3", { class: "title" },
-      url ? el("a", { href: url, target: "_blank", rel: "noopener", text: str(i.title), onclick: () => { markRead(i.id); setTimeout(renderFeed, 0); } }) : str(i.title),
+      url ? el("a", { href: url, target: "_blank", rel: "noopener", text: str(i.title), onclick: () => { markRead(i.id); setTimeout(redrawInPlace, 0); } }) : str(i.title),
       !isPaper && !isRepo && url ? el("span", { class: "domain", text: hostOf(url) }) : null);
     const kws = arr(i.keywords).slice(0, 3).map((k) => (typeof k === "string" ? el("button", { class: "kw", onclick: () => setKw(k), text: "#" + k }) : null));
     // Things of one kind sit together in a group; the divider is drawn only between groups
@@ -242,7 +242,7 @@
       el("div", { class: "tools" },
         el("button", { class: "mini", "aria-expanded": String(open), onclick: () => toggleOpen(i.id), text: open ? "접기 ▴" : "자세히 ▾" })));
 
-    const li = el("li", { class: "row" + (read ? " read" : "") },
+    const li = el("li", { class: "row" + (read ? " read" : ""), "data-id": i.id },
       el("div", { class: "row-main" },
         el("span", { class: "rank", text: isConf ? "" : (rank ?? i.rank ?? "") }),
         el("div", { class: "row-body" }, title, i.oneLine ? el("p", { class: "oneline", text: str(i.oneLine) }) : null, meta),
@@ -329,17 +329,17 @@
     const list = (plat === "all" ? all : all.filter((i) => inPlat(i, plat)))
       .slice().sort((a, b) => b.date.localeCompare(a.date) || rankIn(a, plat) - rankIn(b, plat));
     const head = el("h2", { class: "section-head" }, el("span", { text: label }), el("span", { text: list.length ? list.length + unit : "" }));
-    if (!list.length) return el("section", { class: "section" }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${platLabel(plat)} 항목이 없어요.` })));
+    if (!list.length) return el("section", { class: "section", "data-kind": kind }, head, chips, el("div", { class: "empty" }, el("span", { text: plat === "all" ? emptyText : `이 날짜에는 ${platLabel(plat)} 항목이 없어요.` })));
 
     // Single day: show the top SHOW rows, the rest behind "더보기". Search/keyword views list every match by date.
     if (!crossDay()) {
       const cap = SHOW[kind], open = S.more[kind];
       const shown = open ? list : list.slice(0, cap);
       const more = list.length > cap
-        ? el("button", { class: "more", "aria-expanded": String(open), onclick: () => { S.more[kind] = !open; renderFeed(); } },
+        ? el("button", { class: "more", "aria-expanded": String(open), onclick: () => { S.more[kind] = !open; redrawInPlace(); } },
             open ? "접기 ▴" : `더보기 · ${list.length - cap}${unit} 더 ▾`)
         : null;
-      return el("section", { class: "section" }, head, chips, el("ol", { class: "list" }, shown.map((i, n) => row(i, n + 1))), more);
+      return el("section", { class: "section", "data-kind": kind }, head, chips, el("ol", { class: "list" }, shown.map((i, n) => row(i, n + 1))), more);
     }
     const multiDay = new Set(list.map((i) => i.date)).size > 1;
     const out = []; let ul = null, last = null, n = 0;
@@ -350,7 +350,7 @@
       }
       ul.append(row(i, ++n));
     });
-    return el("section", { class: "section" }, head, chips, out);
+    return el("section", { class: "section", "data-kind": kind }, head, chips, out);
   }
 
   // Conference tab: award winners and finalists, loaded once from data/conferences/
@@ -476,6 +476,23 @@
       el("h2", { class: "section-head" }, el("span", { text: "GitHub " + label }), el("span", { text: list.length ? list.length + "개" : "" })),
       list.length ? el("ol", { class: "list" }, list.map((r) => row(r, r.periods[G.period].rank)))
         : el("div", { class: "empty" }, el("span", { text: "조건에 맞는 저장소가 없어요." }))));
+  }
+
+  // A redraw replaces all rows, including the button that was just tapped, and phone browsers then lose
+  // their place and jump up. For redraws that change the list in place (더보기/접기, 자세히), keep the first
+  // row on screen where it was; when that row is gone (after "접기"), keep its section's button where it was.
+  function redrawInPlace() {
+    const feed = $("feed"), top = (n) => n.getBoundingClientRect().top;
+    const row = [...feed.querySelectorAll(".row[data-id]")].find((r) => r.getBoundingClientRect().bottom > 0);
+    const sec = row && row.closest("[data-kind]");
+    const more = sec && sec.querySelector(".more");
+    const was = row && { id: row.dataset.id, kind: sec && sec.dataset.kind, top: top(row), moreTop: more && top(more) };
+    renderFeed();
+    if (!was) return;
+    const same = [...feed.querySelectorAll(".row[data-id]")].find((r) => r.dataset.id === was.id);
+    const btn = !same && was.moreTop != null && feed.querySelector(`[data-kind="${was.kind}"] .more`);
+    if (same) window.scrollBy(0, top(same) - was.top);
+    else if (btn) window.scrollBy(0, top(btn) - was.moreTop);
   }
 
   function renderFeed() {
