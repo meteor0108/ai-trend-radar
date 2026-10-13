@@ -2,31 +2,31 @@
 
 Instructions for the scheduled Claude Code routine that fills this site. It runs unattended every day at about 03:30 KST (inside the owner's overnight usage window, so it must finish well before 04:00 KST): do not ask questions, make reasonable choices and proceed. Never invent details you did not read.
 
+The routine's sandbox can reach GitHub but not the paper and news sites. So a GitHub Actions workflow (`.github/workflows/collect.yml`, running `scripts/collect.py` at 02:00 KST) downloads everything first and force-pushes it to the `raw` branch. This job reads only those files: **do not use WebFetch, WebSearch or curl** for the sources below.
+
 ## 0. Setup
 
 - `TODAY=$(TZ=Asia/Seoul date +%F)`
 - `python3 scripts/publish_day.py seen --today $TODAY` → `ids` already published (skip these) and `recentKeywords` (reuse these exact spellings when a theme recurs).
+- Get the raw files: `git fetch origin raw && rm -rf /tmp/raw && mkdir -p /tmp/raw && git archive origin/raw | tar -x -C /tmp/raw`
+- Check `/tmp/raw/manifest.json`: `date` must be `$TODAY`. If it is older, the collection is late: wait 3 minutes, fetch again, and repeat up to 5 times. If it is still not today's, stop: write and publish nothing, and report "raw data missing for $TODAY".
+- `manifest.json` → `status` holds `"ok"` or an error per source key. Every key that is not `"ok"` goes into the day file's `failed`.
 
 ## 1. Collect
 
-The site shows each platform on its own tab: the top 5 papers / top 10 news per platform, with the rest behind "더보기". So collect **per platform**, walking down each list and skipping every id in `seen` until you have the target number of new items (or the list runs out).
+The site shows each platform on its own tab: the top 5 papers / top 10 news per platform, with the rest behind "더보기". So collect **per platform**, walking down each list and skipping every id in `seen` until you have the target number of new items (or the list runs out). The raw files mark items that were already published with `"seen": true`; skip those too.
 
-Use WebFetch for pages; `curl` works too for the APIs below. If a source fails, skip it and add its key to `failed`.
-
-| key | source | take (new items only) |
+| key | raw file and list | take (new items only) |
 |---|---|---|
-| `alphaxiv` | https://www.alphaxiv.org/ | top 10 trending papers |
-| `hf` | https://huggingface.co/papers | top 10 by upvotes |
-| `hftrend` | https://huggingface.co/papers/trending | top 10 in trending order (multi-day trend with GitHub stars; many overlap with `hf`/`alphaxiv`, which is fine) |
-| `arxiv` | https://arxiv.org/list/cs.RO/new | robotics fill only, see "Robotics lane" in section 2 |
-| `geeknews` | https://news.hada.io/ and https://news.hada.io/?page=2 (fallback https://news.hada.io/rss/news) | up to 15 AI/ML items, in front-page order |
-| `hn` | https://news.ycombinator.com/ and https://news.ycombinator.com/news?p=2 | up to 15 AI/ML stories, in page order |
-| `openai` | https://openai.com/news/rss.xml (the HTML pages return 403; use the RSS item text) | posts from the last 3 days (up to 15) |
-| `anthropic` | https://www.anthropic.com/news (no RSS; dates are printed on the page) | posts from the last 3 days (up to 15) |
-| `deepmind` | https://deepmind.google/blog/rss.xml | posts from the last 3 days (up to 15) |
-| `google` | https://research.google/blog/rss/ | AI/ML posts from the last 3 days (up to 15) |
-| `nvidia` | https://blogs.nvidia.com/feed/ and https://developer.nvidia.com/blog/feed/ | AI/ML research or technical posts from the last 3 days (up to 15); skip marketing, gaming, partner promos and event recaps |
-| `meta` | https://ai.meta.com/blog/ | AI/ML posts from the last 3 days (up to 15) |
+| `alphaxiv` | `papers.json` → `lists.alphaxiv` (alphaXiv front page, trending order) | top 10 |
+| `hf` | `papers.json` → `lists.hf` (HF Daily Papers, already sorted by `upvotes`) | top 10 |
+| `hftrend` | `papers.json` → `lists.hftrend` (HF Trending order, with `githubStars`; many overlap with `hf`/`alphaxiv`, which is fine) | top 10 |
+| `arxiv` | `papers.json` → `lists.arxiv` (new cs.RO submissions only) | robotics fill only, see "Robotics lane" in section 2 |
+| `geeknews` | `news.json` → `geeknews` (front pages 1–2, in page order) | up to 15 AI/ML items |
+| `hn` | `news.json` → `hn` (top 60 stories, in page order, with `points`) | up to 15 AI/ML stories |
+| `openai` `anthropic` `deepmind` `google` `nvidia` `meta` | `news.json` → the key (posts from the last 3 days, newest first) | AI/ML posts (up to 15 each); for `nvidia` only research or technical posts, skip marketing, gaming, partner promos and event recaps |
+
+A source missing from the file, or with an empty list, simply yields nothing.
 
 News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/tools, major AI industry news.
 
@@ -44,17 +44,17 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 **Robotics lane** (the site shows these under a "로보틱스" chip, whichever list they came from)
 
 - Every paper gets `"lane"`: `"robotics"` when its subject is robotics — arXiv primary category cs.RO, or robot learning, manipulation, locomotion, navigation, humanoids, VLA / embodied agents acting in the physical world, autonomous driving — otherwise `"trending"`. Decide from the abstract, not from the title alone.
-- Aim for **5 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 5, fill the gap from https://arxiv.org/list/cs.RO/new (new submissions only, not cross-lists or replacements; skip ids in `seen`).
-- The cs.RO list has no popularity signal, so pick by reading the abstracts: prefer real-robot experiments over simulation-only results, new datasets/benchmarks or open-sourced systems, and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the page.
+- Aim for **5 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 5, fill the gap from `lists.arxiv` (new cs.RO submissions; skip ids in `seen`).
+- The cs.RO list has no popularity signal, so pick by reading the abstracts: prefer real-robot experiments over simulation-only results, new datasets/benchmarks or open-sourced systems, and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the abstract.
 - A fill paper has `"source": "arxiv"`, `"sources": ["arxiv"]`, `"ranks": {"arxiv": n}` (your order of preference), `"scoreLabel": "arXiv cs.RO"` and no `score`.
 
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
 
 Every collected item gets a summary, not only the top ones.
 
-- Paper: read the abstract. `curl -s "https://export.arxiv.org/api/query?id_list=<id1>,<id2>,...&max_results=50"` returns every abstract (`<summary>`) and v1 submission time (`<published>`) in one call; if it fails, read https://arxiv.org/abs/<id>. Then WebFetch https://arxiv.org/html/<id> and ask for the `src` of the first real figure image (not an icon/logo); make it absolute, e.g. `https://arxiv.org/html/2501.12948v2/ppo_vs_grpo.png`, and store it as `image`. If there is no HTML version or no figure, omit `image` (the page falls back to the HF thumbnail, or shows no figure).
-- Paper code: when the paper's code is public, set `codeUrl` to the repository (`https://github.com/<owner>/<repo>`, GitHub or GitLab only) and `codeStars` to its star count if known. Take it from `curl -s https://huggingface.co/api/papers/<arxivId>` → `githubRepo` / `githubStars` (the HF list data carries the same fields), or from a repository URL written in the arXiv abstract or comments. Leave both out when no repository is stated; never guess a URL, and do not use project pages or "code coming soon" notes.
-- News: read the article (or the GeekNews topic page) enough to summarize accurately. If the article blocks fetching (e.g. 403), summarize from the GeekNews topic page, the HN thread or the RSS item text instead, using only facts quoted there.
+- Paper: `papers.json` → `papers.<arxivId>` holds `title`, `abstract`, `published` (v1 submission), `primaryCategory`, `subjects`, `comments` and `authors`. Summarize from the abstract. `image` is the first figure of the arXiv HTML version, already absolute: copy it as `image`, and omit `image` when it is null (the page then falls back to the HF thumbnail, or shows no figure). A paper without an entry in `papers` was not fetched in detail; pick another one.
+- Paper code: when the paper's code is public, set `codeUrl` to the repository (`https://github.com/<owner>/<repo>`, GitHub or GitLab only) and `codeStars` to its star count if known. Take them from `githubRepo` / `githubStars` in the paper's entry, or from a repository URL written in the abstract or `comments`. Leave both out when no repository is stated; never guess a URL, and do not use project pages or "code coming soon" notes.
+- News: summarize from the item's `text` (the article, the GeekNews topic page or the HN post) and `summary` (the RSS text for blogs, the front-page excerpt for GeekNews). When `text` is null the page could not be read: summarize from the title, `summary` and the GeekNews topic of the same story if there is one, using only facts stated there, or skip the item if that is too thin.
 - `keywords` per item: 1–3 short English terms, reusing `recentKeywords` spellings when they fit.
 - Day `keywords`: write `[]`. The site no longer shows a daily keyword summary; its word cloud is built from the items' own `keywords`, so make those consistent (same spelling for the same theme).
 
@@ -62,10 +62,8 @@ Every collected item gets a summary, not only the top ones.
 
 | item | where the time comes from |
 |---|---|
-| paper | arXiv v1 submission: `<published>` from the arXiv API above, or the `[v1]` line of "Submission history" on the abs page |
-| `hn` | `curl -s https://hacker-news.firebaseio.com/v0/item/<id>.json` → `time` (Unix seconds, UTC) |
-| `geeknews` | the topic's timestamp in https://news.hada.io/rss/news; if it is not in the feed, the topic page's relative time ("3시간전") counted back from when you fetched it |
-| blogs | the RSS `pubDate`, or the date printed on the post (`YYYY-MM-DD`, e.g. Anthropic) |
+| paper | `published` in the paper's entry (arXiv v1 submission) |
+| news | `published` in the item (HN post time, GeekNews topic time, RSS `pubDate`, or the date printed on the post, e.g. Anthropic's `YYYY-MM-DD`) |
 
 For a story on both GeekNews and HN, use the time of the platform in `source`.
 
@@ -131,9 +129,9 @@ Replace the file if it already exists. Shape:
 
 The site's GitHub tab is a dashboard, not part of the daily digest: one file holding the **current** trending AI/ML repositories, replaced on every run. It is not checked against `seen`, so a repository that trends again simply shows up again, and repositories never go into the day file.
 
-1. WebFetch the three lists (curl to github.com returns 403 here): https://github.com/trending?since=daily, `?since=weekly`, `?since=monthly`. From each take, in page order, up to 15 AI/ML repositories (models, agents and agent tooling, LLM tools, ML libraries, AI learning material); skip everything else. Note each one's description, language, total stars and stars gained in that period.
-2. Read the existing `data/github/trending.json` first. For a repository already in it (same `owner/repo`, case-insensitive) reuse its `oneLine`, `bullets`, `keywords` and `created`, and only refresh the numbers. Read the README (`https://github.com/<owner>/<repo>`) only for repositories that are new to the file.
-3. For a new repository write `oneLine` (Korean, what it is), 1–2 `bullets` (Korean, plain strings, only facts from the README), 1–3 `keywords` (reuse `recentKeywords` spellings and the ones already in the file), and `created` from `curl -s https://ungh.cc/repos/<owner>/<repo>` → `repo.createdAt` (api.github.com is blocked here).
+1. `github.json` → `lists.daily`, `lists.weekly`, `lists.monthly` are the three trending pages in page order, each row with `repo`, `description`, `language`, `stars` and `gained` (stars gained in that period). From each take, in order, up to 15 AI/ML repositories (models, agents and agent tooling, LLM tools, ML libraries, AI learning material); skip everything else.
+2. Read the existing `data/github/trending.json` first. For a repository already in it (same `owner/repo`, case-insensitive) reuse its `oneLine`, `bullets`, `keywords` and `created`, and only refresh the numbers.
+3. For a new repository, `github.json` → `repos.<owner/repo>` holds `readme` (the start of the README), `topics` and `created`. Write `oneLine` (Korean, what it is), 1–2 `bullets` (Korean, plain strings, only facts from the README), 1–3 `keywords` (reuse `recentKeywords` spellings and the ones already in the file), and copy `created`.
 4. Write the file with one entry per repository; `periods` holds each list it is on:
 
 ```json
@@ -156,7 +154,7 @@ The site's GitHub tab is a dashboard, not part of the daily digest: one file hol
 
 5. `python3 scripts/publish_day.py github data/github/trending.json` — it validates, renumbers the ranks 1..15 per period and stamps `updated`. Fix what it reports and run it again.
 
-If the trending pages cannot be fetched, leave the existing file untouched and add `github` to the day file's `failed`.
+If `manifest.json` → `status.github` is not `"ok"`, leave the existing file untouched (`github` is already in `failed` from step 0).
 
 ## 5. Publish
 
