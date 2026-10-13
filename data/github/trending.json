@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T11:25:31+09:00",
+  "updated": "2026-10-13T11:50:40+09:00",
   "repos": [
     {
       "id": "gh-morluto-rea",
@@ -7,14 +7,14 @@
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
-      "stars": 162021,
+      "stars": 163282,
       "periods": {
         "daily": {
           "rank": 1,
           "gained": 45327
         },
         "weekly": {
-          "rank": 7,
+          "rank": 8,
           "gained": 130471
         }
       },
@@ -35,13 +35,14 @@
       "url": "https://github.com/mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 27355,
+      "stars": 27376,
       "periods": {
         "daily": {
           "rank": 2,
           "gained": 246
         }
       },
+      "created": "2026-02-23T14:56:28+09:00",
       "oneLine": "AI 코딩 에이전트의 context window를 아껴 주는 도구로, tool 출력을 sandbox에 가두고 세션 메모리를 유지한다.",
       "bullets": [
         "Sandbox tool이 원시 tool 출력을 context 밖에 두며, README 예시에서는 315KB를 5.4KB로 줄였다.",
@@ -58,7 +59,7 @@
       "url": "https://github.com/storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
-      "stars": 22312,
+      "stars": 22386,
       "periods": {
         "daily": {
           "rank": 3,
@@ -82,13 +83,14 @@
       "url": "https://github.com/open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "language": "Python",
-      "stars": 155096,
+      "stars": 155122,
       "periods": {
         "daily": {
           "rank": 4,
           "gained": 157
         }
       },
+      "created": "2023-10-07T07:08:27+09:00",
       "oneLine": "Ollama와 OpenAI 호환 API를 지원하는 self-hosted AI 채팅 인터페이스.",
       "bullets": [
         "완전 오프라인으로도 돌릴 수 있는 self-hosted 플랫폼으로, pip·uv·Docker·Kubernetes로 설치하고 open-webui serve로 실행한다.",
@@ -105,7 +107,7 @@
       "url": "https://github.com/cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 52739,
+      "stars": 52780,
       "periods": {
         "daily": {
           "rank": 5,
@@ -126,9 +128,9 @@
       "id": "gh-lyogavin-airllm",
       "repo": "lyogavin/airllm",
       "url": "https://github.com/lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
+      "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
       "language": "Jupyter Notebook",
-      "stars": 37596,
+      "stars": 37613,
       "periods": {
         "daily": {
           "rank": 6,
@@ -152,13 +154,14 @@
       "url": "https://github.com/microsoft/BitNet",
       "description": "Official inference framework for 1-bit LLMs",
       "language": "C++",
-      "stars": 40936,
+      "stars": 40941,
       "periods": {
         "daily": {
           "rank": 7,
           "gained": 97
         }
       },
+      "created": "2024-08-05T18:07:38+09:00",
       "oneLine": "BitNet b1.58 같은 1-bit LLM을 위한 Microsoft의 공식 추론 프레임워크 bitnet.cpp.",
       "bullets": [
         "llama.cpp 기반에 T-MAC의 lookup-table 커널을 써서, full-precision 대비 ARM CPU 1.37~5.07배, x86 CPU 2.37~6.17배 속도 향상을 보고한다.",
@@ -173,15 +176,16 @@
       "id": "gh-alishahryar1-free-claude-code",
       "repo": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, …",
+      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 59216,
+      "stars": 59240,
       "periods": {
         "daily": {
           "rank": 8,
           "gained": 626
         }
       },
+      "created": "2026-01-29T04:02:30+09:00",
       "oneLine": "Claude Code·Codex 등 코딩 에이전트 harness를 무료 LLM provider에 연결해 쓰게 해 주는 프록시.",
       "bullets": [
         "61개 provider 연동과 11개 코딩 에이전트를 지원하며, 재시도가 다 실패하면 다음 모델로 자동 failover한다.",
@@ -193,15 +197,39 @@
       ]
     },
     {
+      "id": "gh-tester-army-e2e",
+      "repo": "tester-army/e2e",
+      "url": "https://github.com/tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "language": "TypeScript",
+      "stars": 9624,
+      "periods": {
+        "weekly": {
+          "rank": 1,
+          "gained": 5582
+        }
+      },
+      "created": "2026-07-22T18:29:04+09:00",
+      "oneLine": "자연어로 목표를 적으면 에이전트가 웹·모바일 앱을 조작해 확인하는 오픈소스 AI E2E 테스트 프레임워크",
+      "bullets": [
+        "테스트 안에서 에이전트에게 자연어 목표를 주고, 같은 테스트에서 locator와 assertion으로 결과를 검증",
+        "npm 패키지 `e2e`로 배포되며 Apache-2.0 라이선스"
+      ],
+      "keywords": [
+        "Agent Tools",
+        "AI Coding"
+      ]
+    },
+    {
       "id": "gh-mattpocock-skills",
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 288066,
+      "stars": 288107,
       "periods": {
         "weekly": {
-          "rank": 1,
+          "rank": 2,
           "gained": 11139
         }
       },
@@ -222,10 +250,10 @@
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "stars": 61873,
+      "stars": 61888,
       "periods": {
         "weekly": {
-          "rank": 2,
+          "rank": 3,
           "gained": 4482
         },
         "monthly": {
@@ -249,10 +277,10 @@
       "url": "https://github.com/thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 100119,
+      "stars": 100125,
       "periods": {
         "weekly": {
-          "rank": 3,
+          "rank": 4,
           "gained": 3762
         }
       },
@@ -273,10 +301,10 @@
       "url": "https://github.com/cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 11085,
+      "stars": 11086,
       "periods": {
         "weekly": {
-          "rank": 4,
+          "rank": 5,
           "gained": 1144
         }
       },
@@ -297,10 +325,10 @@
       "url": "https://github.com/earthtojake/text-to-cad",
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
-      "stars": 19664,
+      "stars": 19676,
       "periods": {
         "weekly": {
-          "rank": 5,
+          "rank": 6,
           "gained": 2441
         }
       },
@@ -322,10 +350,10 @@
       "url": "https://github.com/mvschwarz/openrig",
       "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
       "language": "TypeScript",
-      "stars": 7271,
+      "stars": 7277,
       "periods": {
         "weekly": {
-          "rank": 6,
+          "rank": 7,
           "gained": 2056
         }
       },
@@ -346,7 +374,7 @@
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 46588,
+      "stars": 46597,
       "periods": {
         "monthly": {
           "rank": 1,
@@ -370,7 +398,7 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 60532,
+      "stars": 60567,
       "periods": {
         "monthly": {
           "rank": 2,
@@ -394,7 +422,7 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 101000,
+      "stars": 101019,
       "periods": {
         "monthly": {
           "rank": 3,
@@ -417,7 +445,7 @@
       "repo": "anthropics/financial-services",
       "url": "https://github.com/anthropics/financial-services",
       "language": "Python",
-      "stars": 39568,
+      "stars": 39572,
       "periods": {
         "monthly": {
           "rank": 4,
@@ -441,7 +469,7 @@
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 48876,
+      "stars": 48887,
       "periods": {
         "monthly": {
           "rank": 5,
@@ -465,7 +493,7 @@
       "url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 277952,
+      "stars": 277963,
       "periods": {
         "monthly": {
           "rank": 6,
@@ -489,7 +517,7 @@
       "url": "https://github.com/anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "stars": 29361,
+      "stars": 29365,
       "periods": {
         "monthly": {
           "rank": 7,
@@ -514,7 +542,7 @@
       "url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
-      "stars": 150453,
+      "stars": 150458,
       "periods": {
         "monthly": {
           "rank": 8,
@@ -537,7 +565,7 @@
       "url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 33555,
+      "stars": 33563,
       "periods": {
         "monthly": {
           "rank": 9,
@@ -561,7 +589,7 @@
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 8924,
+      "stars": 8927,
       "periods": {
         "monthly": {
           "rank": 10,
@@ -585,7 +613,7 @@
       "url": "https://github.com/agent-substrate/substrate",
       "description": "Agent Substrate: the core system",
       "language": "Go",
-      "stars": 4975,
+      "stars": 4976,
       "periods": {
         "monthly": {
           "rank": 12,
@@ -609,7 +637,7 @@
       "url": "https://github.com/NVIDIA/OpenShell",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
-      "stars": 15990,
+      "stars": 15993,
       "periods": {
         "monthly": {
           "rank": 13,
@@ -630,9 +658,9 @@
       "id": "gh-justvugg-colibri",
       "repo": "JustVugg/colibri",
       "url": "https://github.com/JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk.",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
-      "stars": 41546,
+      "stars": 41548,
       "periods": {
         "monthly": {
           "rank": 14,
@@ -657,13 +685,14 @@
       "url": "https://github.com/tashfeenahmed/freellmapi",
       "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
       "language": "TypeScript",
-      "stars": 34144,
+      "stars": 34152,
       "periods": {
         "monthly": {
           "rank": 15,
           "gained": 8213
         }
       },
+      "created": "2026-04-21T22:38:59+09:00",
       "oneLine": "여러 무료 LLM provider를 하나의 OpenAI 호환 /v1 endpoint 뒤로 묶어 주는 로컬 라우터.",
       "bullets": [
         "요청마다 쓸 수 있는 모델을 고르고 rate limit에 걸리면 다음 provider로 failover하며, 키별 사용량을 추적해 무료 한도를 넘지 않게 한다.",
