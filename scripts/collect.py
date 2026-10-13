@@ -254,7 +254,7 @@ def arxiv_figure(aid):
         return None
     src = m.group(1)
     if re.match(rf"{ARXIV_ID}v\d+/", src):  # e.g. "2610.12549v1/fig.png", relative to /html/
-        return "https://arxiv.org/html/" + src
+        return urljoin("https://arxiv.org/html/", src)  # urljoin also resolves "../" segments
     return urljoin(final.rstrip("/") + "/", src).replace("http://", "https://")
 
 
