@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 13 Oct 2026 11:53:31 +0900</lastBuildDate>
+<lastBuildDate>Wed, 14 Oct 2026 11:01:53 +0900</lastBuildDate>
+<item>
+<title>[논문] Multi-Stream Attention Residuals</title>
+<link>https://arxiv.org/abs/2610.13630</link>
+<guid isPermaLink="false">p-2610.13630</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Attention Residuals를 깊이 방향 multi-head attention으로 확장해 적은 오버헤드로 사전학습 효율을 높인 잔차 구조 MSAR.</description>
+</item>
+<item>
+<title>[논문] SpatialASM: Internalizing Active Mentalization for Spatial Reasoning</title>
+<link>https://arxiv.org/abs/2610.13832</link>
+<guid isPermaLink="false">p-2610.13832</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>LVLM이 과제에 맞는 시점을 떠올려 장면을 머릿속으로 재구성하는 'Active Spatial Mentalization'을 학습시키는 프레임워크 SpatialASM.</description>
+</item>
+<item>
+<title>[논문] AgentSWE: Can Coding Agents Build the Agent You Actually Want?</title>
+<link>https://arxiv.org/abs/2610.13361</link>
+<guid isPermaLink="false">p-2610.13361</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트가 요구사항에 맞는 '에이전트'를 실제로 만들어내는지 생성·수정·최적화 3단계로 검증하는 벤치마크 AgentSWE.</description>
+</item>
+<item>
+<title>[논문] Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations</title>
+<link>https://arxiv.org/abs/2610.13119</link>
+<guid isPermaLink="false">p-2610.13119</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>사람 손목 중심 시연 하나의 코퍼스를 서로 다른 dexterous 로봇 손 학습에 재사용하는 인터페이스 Human2Dex.</description>
+</item>
+<item>
+<title>[논문] Designing Protein Structures from Natural Language</title>
+<link>https://arxiv.org/abs/2610.13917</link>
+<guid isPermaLink="false">p-2610.13917</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>자연어로 원하는 구조·기능을 지정해 전원자(all-atom) 단백질 구조를 생성하는 text-to-protein 모델 Prompteina.</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Argon: Built to solve your hardest problems</title>
+<link>https://deepmind.google/blog/introducing-gemini-4-argon/</link>
+<guid isPermaLink="false">deepmind-introducing-gemini-4-argon</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind가 차세대 프런티어 모델 Gemini 4 Argon을 API(AI Studio·Gemini platform), Antigravity, Gemini 앱에 전 세계 공개.</description>
+</item>
+<item>
+<title>[뉴스] Redesigning source control at Anthropic</title>
+<link>https://www.anthropic.com/engineering/redesigning-source-control</link>
+<guid isPermaLink="false">hn-50073633</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 에이전트 규모의 코드 병합량에 맞춰 자체 버전 관리 시스템 Scion을 만들고 5개월 만에 모노레포를 git에서 완전히 이전.</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Argon for Robotics</title>
+<link>https://deepmind.google/blog/gemini-4-argon-for-robotics/</link>
+<guid isPermaLink="false">deepmind-gemini-4-argon-for-robotics</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Gemini 4 Argon을 로봇 제어·Real2Sim·물리 이해·자기개선 등 로보틱스 전 주기에 적용한 사례 공개, ERQA 87%로 프런티어 모델 중 최고.</description>
+</item>
+<item>
+<title>[뉴스] We turned EmbeddingGemma 2 into a speech-to-text model</title>
+<link>https://eg2.haku.sh/</link>
+<guid isPermaLink="false">hn-50069971</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>임베딩 모델 EmbeddingGemma 2의 오디오 공간에서 단어를 직접 읽어내 온디바이스 음성 인식기로 바꾼 Mac 앱.</description>
+</item>
+<item>
+<title>[뉴스] Character.ai has initiated voluntary Chapter 11 bankruptcy</title>
+<link>https://blog.character.ai/an-update-on-character-ai/</link>
+<guid isPermaLink="false">hn-50068036</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Character.ai가 자발적 Chapter 11 파산 절차를 개시(회사 블로그 공지).</description>
+</item>
+<item>
+<title>[뉴스] Linus Torvalds, Claude Code로 Linux 커널의 대폭 개선 작업 진행 중</title>
+<link>https://www.phoronix.com/news/Linus-Torvalds-Claude-Code</link>
+<guid isPermaLink="false">gn-35265</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>리누스 토발즈가 Claude Code로 코드·테스트·리뷰·패치 소개문을 작성하며 Linux 커널 페이지 캐시 읽기 병목 개선 패치를 진행.</description>
+</item>
+<item>
+<title>[뉴스] Zero to Calc in Six Days: Inside XBOW's Chrome Full Chain</title>
+<link>https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain</link>
+<guid isPermaLink="false">hn-50076503</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>XBOW가 AI 에이전트(gpt-5.6-sol)로 6일 만에 Chrome full-chain 익스플로잇을 만들어 첫 $250,000 full-chain 포상금을 받은 과정 공개.</description>
+</item>
+<item>
+<title>[뉴스] Developing Gemini 4 Argon responsibly and safely</title>
+<link>https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/</link>
+<guid isPermaLink="false">deepmind-developing-gemini-4-argon-responsibly-and-safely</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind가 Gemini 4 Argon의 오용 방지·정렬 안전장치를 설명: 사이버·생물 역량 상승에 따라 차세대 frontier safeguard 적용.</description>
+</item>
+<item>
+<title>[뉴스] OpenAI engineer arrested in bugging of executive conference room</title>
+<link>https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/</link>
+<guid isPermaLink="false">hn-50078141</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI 임원 회의실에 도청 장치를 설치한 혐의로 OpenAI 엔지니어가 체포됨(SF Standard 보도).</description>
+</item>
+<item>
+<title>[뉴스] 최신 AI 모델들, 인간의 알고리듬 혁신에 필적하는 성과를 내는 데 어려움 겪어</title>
+<link>https://epoch.ai/publications/innovationeval</link>
+<guid isPermaLink="false">gn-35195</guid>
+<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
+<description>Epoch AI의 InnovationEval: Claude Fable 5와 GPT-5.6 Sol이 인간이 만든 후속 학습 기법 SDPO 수준의 새 방법을 독자 개발하는지 평가한 결과, 각각 2%·15%에 그침.</description>
+</item>
 <item>
 <title>[논문] RSI-Anything: Unlocking Recursive Self-Improvement with World Models</title>
 <link>https://arxiv.org/abs/2610.13912</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35104</guid>
 <pubDate>Sun, 11 Oct 2026 08:00:00 +0900</pubDate>
 <description>모델은 좋아졌지만 Claude Code·Codex 같은 코딩 에이전트가 작업 분할·위임·소통·보안 경계에서 여전히 병목이라는 비판</description>
-</item>
-<item>
-<title>[논문] AgentGarten: Code Worlds for Evolving Agents</title>
-<link>https://arxiv.org/abs/2610.12374</link>
-<guid isPermaLink="false">p-2610.12374</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>시뮬레이터·게임 엔진에 공용 neural renderer를 붙여 에이전트가 시각 관찰로 상호작용하며 진화하는 실시간 code world 프레임워크</description>
-</item>
-<item>
-<title>[논문] SuperNav: An Agentic Navigation System for Any Task in Any Scene</title>
-<link>https://arxiv.org/abs/2610.12126</link>
-<guid isPermaLink="false">p-2610.12126</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>사전학습 MLLM을 navigation 전용 fine-tuning 없이 agent harness로 감싸 어떤 요청·어떤 장면에서도 동작하게 한 로봇 내비게이션 시스템</description>
-</item>
-<item>
-<title>[논문] TokenRouter: Efficient Serving System for Token-Level LLM Routing</title>
-<link>https://arxiv.org/abs/2610.12242</link>
-<guid isPermaLink="false">p-2610.12242</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>token 단위로 여러 LLM을 오가는 routed inference를 효율적으로 서빙하는 시스템 (NeurIPS 2026)</description>
-</item>
-<item>
-<title>[논문] MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement</title>
-<link>https://arxiv.org/abs/2610.11959</link>
-<guid isPermaLink="false">p-2610.11959</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>RL compute를 배치·환경·grader 세 축으로 확장해 self-improvement를 노린 omni-modal MiMo-V2.6 시리즈 기술 보고서</description>
-</item>
-<item>
-<title>[논문] Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement</title>
-<link>https://arxiv.org/abs/2610.12369</link>
-<guid isPermaLink="false">p-2610.12369</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>로봇 제어 루프에서 VLA·VLM을 빼고 상태 추적과 의사결정을 전부 코드로 작성하는 Code-Only-as-Policy(COAP) 패러다임</description>
-</item>
-<item>
-<title>[뉴스] OpenAI fires three safety researchers for "mishandling research information"</title>
-<link>https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/</link>
-<guid isPermaLink="false">hn-50018350</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 민감 정보 취급 위반을 이유로 안전 연구원 3명을 해고, 당사자들은 공개서한으로 혐의 부인</description>
-</item>
-<item>
-<title>[뉴스] Why isn't the industry freaking out about DeepSeek 4.1 Flash?</title>
-<link>https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/</link>
-<guid isPermaLink="false">hn-50000488</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>DeepSeek 4.1 Flash를 한 달간 12개 프로젝트에 써 본 결과 Opus와 체감 차이가 적고 비용은 훨씬 낮았다는 사용기</description>
-</item>
-<item>
-<title>[뉴스] Introducing the Anthropic Cyber Mission</title>
-<link>https://www.anthropic.com/news/anthropic-cyber-mission</link>
-<guid isPermaLink="false">anthropic-anthropic-cyber-mission</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 핵심 인프라와 오픈소스 소프트웨어 방어를 첫 목표로 하는 장기 사이버보안 이니셔티브를 발표</description>
-</item>
-<item>
-<title>[뉴스] OpenAI, the Partition Principle, and Mathematics</title>
-<link>https://karagila.org/2026/openai-pp/</link>
-<guid isPermaLink="false">hn-50013902</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>집합론 학자 Asaf Karagila가 OpenAI의 "Partition Principle은 Axiom of Choice를 함의하지 않는다" 결과 발표 방식을 비판</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Let your AI agents paint big arrows, boxes and text on your screen</title>
-<link>https://github.com/franzenzenhofer/big-arrow-on-the-screen</link>
-<guid isPermaLink="false">hn-50018817</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI 에이전트가 사람이 직접 눌러야 할 버튼·창을 화면 위 화살표·상자·텍스트로 가리키게 하는 macOS CLI 겸 agent skill</description>
-</item>
-<item>
-<title>[뉴스] I think I found a planet nobody knew existed. I used Claude Code to find it</title>
-<link>https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9</link>
-<guid isPermaLink="false">hn-50002665</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>Claude Code로 NASA TESS 공개 데이터를 분석해 약 116광년 떨어진 별에서 미보고 외계행성 후보 신호를 찾았다는 사례</description>
-</item>
-<item>
-<title>[뉴스] Iranian campaign planted fake articles in real U.S. publications using ChatGPT</title>
-<link>https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/</link>
-<guid isPermaLink="false">hn-50019455</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>이란 측 캠페인이 ChatGPT로 만든 기사를 실제 미국 매체에 게재했다는 Washington Post 보도</description>
-</item>
-<item>
-<title>[뉴스] MXC - a sandboxed code execution system</title>
-<link>https://github.com/microsoft/mxc</link>
-<guid isPermaLink="false">hn-50016489</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>Microsoft가 model output·plugin·tool 같은 신뢰할 수 없는 코드를 Windows·Linux·macOS에서 격리 실행하는 MXC를 공개</description>
-</item>
-<item>
-<title>[뉴스] AI-ready biological data: $1.8B global commitment</title>
-<link>https://biohub.org/news/virtual-biology-initiative-expansion/</link>
-<guid isPermaLink="false">hn-50011999</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>Biohub·DOE·NIH가 Virtual Biology Initiative를 총 18억 달러 규모로 확대해 AI-ready 오픈 생물 데이터를 구축</description>
-</item>
-<item>
-<title>[뉴스] Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core</title>
-<link>https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/</link>
-<guid isPermaLink="false">nvidia-scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core</guid>
-<pubDate>Sat, 10 Oct 2026 08:00:00 +0900</pubDate>
-<description>Megatron Core의 --deterministic-mode로 수천 GPU 규모 사전학습을 bitwise 결정론적으로 재현</description>
 </item>
 </channel>
 </rss>
