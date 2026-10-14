@@ -1,16 +1,17 @@
 # Downloads the day's raw source material (scripts/collect.py) and force-pushes it to the `raw` branch,
 # a single commit with no history. The Claude Code routine at 03:30 KST reads it from there, because its
 # sandbox can reach GitHub but not the paper and news sites.
+#
+# GitHub may start scheduled runs hours late, so the routine does not rely on the schedule alone: when the
+# raw data is not today's, it pushes a commit to `claude/collect-request`, which starts this workflow at once.
 name: Collect sources
 
 on:
   schedule:
-    - cron: "0 17 * * *"   # 02:00 KST
-    - cron: "45 17 * * *"  # 02:45 KST, only if the first run did not produce today's data
+    - cron: "23 17 * * *"  # 02:23 KST; off the hour, when GitHub's scheduler is less congested
   workflow_dispatch:
   push:
-    branches: [main]
-    paths: [scripts/collect.py, .github/workflows/collect.yml]
+    branches: [claude/collect-request]
 
 permissions:
   contents: write
@@ -26,9 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Skip if today's data is already on the raw branch
+      - name: Skip a late scheduled run if today's data is already on the raw branch
         id: check
-        if: github.event_name == 'schedule' && github.event.schedule == '45 17 * * *'
+        if: github.event_name == 'schedule'
         run: |
           today=$(TZ=Asia/Seoul date +%F)
           if git fetch -q --depth=1 origin raw 2>/dev/null && git show origin/raw:manifest.json | grep -q "\"date\": \"$today\""; then
@@ -57,3 +58,7 @@ jobs:
           git add -A
           git commit -q -m "raw: $(TZ=Asia/Seoul date +%F)"
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" raw
+
+      - name: Remove the request branch
+        if: always() && github.ref == 'refs/heads/claude/collect-request'
+        run: git push -q origin --delete claude/collect-request || true

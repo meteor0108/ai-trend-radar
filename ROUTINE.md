@@ -2,14 +2,17 @@
 
 Instructions for the scheduled Claude Code routine that fills this site. It runs unattended every day at about 03:30 KST (inside the owner's overnight usage window, so it must finish well before 04:00 KST): do not ask questions, make reasonable choices and proceed. Never invent details you did not read.
 
-The routine's sandbox can reach GitHub but not the paper and news sites. So a GitHub Actions workflow (`.github/workflows/collect.yml`, running `scripts/collect.py` at 02:00 KST) downloads everything first and force-pushes it to the `raw` branch. This job reads only those files: **do not use WebFetch, WebSearch or curl** for the sources below.
+The routine's sandbox can reach GitHub but not the paper and news sites. So a GitHub Actions workflow (`.github/workflows/collect.yml`, running `scripts/collect.py`, scheduled at 02:23 KST) downloads everything first and force-pushes it to the `raw` branch. This job reads only those files: **do not use WebFetch, WebSearch or curl** for the sources below.
 
 ## 0. Setup
 
 - `TODAY=$(TZ=Asia/Seoul date +%F)`
 - `python3 scripts/publish_day.py seen --today $TODAY` → `ids` already published (skip these) and `recentKeywords` (reuse these exact spellings when a theme recurs).
 - Get the raw files: `git fetch origin raw && rm -rf /tmp/raw && mkdir -p /tmp/raw && git archive origin/raw | tar -x -C /tmp/raw`
-- Check `/tmp/raw/manifest.json`: `date` must be `$TODAY`. If it is older, the collection is late: wait 3 minutes, fetch again, and repeat up to 5 times. If it is still not today's, stop: write and publish nothing, and report "raw data missing for $TODAY".
+- Check `/tmp/raw/manifest.json`: `date` must be `$TODAY`. GitHub often starts the scheduled collection late, so if it is older, start the collection yourself and wait for it:
+  1. `git push -f origin "$(git commit-tree 'HEAD^{tree}' -p HEAD -m "collect request $TODAY"):refs/heads/claude/collect-request"` (an empty commit on that branch starts the workflow; it changes nothing in your checkout).
+  2. Every 60 seconds, for up to 20 minutes: `git fetch -q origin raw` and read `git show origin/raw:manifest.json`. As soon as `date` is `$TODAY`, extract it again with the `git archive` command above and continue. Collection itself takes about 2 minutes.
+  3. If it is still not today's after 20 minutes, stop: write and publish nothing, and report "raw data missing for $TODAY".
 - `manifest.json` → `status` holds `"ok"` or an error per source key. Every key that is not `"ok"` goes into the day file's `failed`.
 
 ## 1. Collect
