@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 15 Oct 2026 03:47:13 +0900</lastBuildDate>
+<lastBuildDate>Fri, 16 Oct 2026 03:45:41 +0900</lastBuildDate>
+<item>
+<title>[논문] Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation</title>
+<link>https://arxiv.org/abs/2610.20571</link>
+<guid isPermaLink="false">p-2610.20571</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>시나리오를 장소·카메라·사건 시간이 명시된 샷 요청으로 바꾸고 장면·사건 메모리로 샷 간 일관성을 지키는 에이전트형 장편 영상 생성 프레임워크 ATAS</description>
+</item>
+<item>
+<title>[논문] Towards Agentic Robots: Model, Data, Environment, and Harness</title>
+<link>https://arxiv.org/abs/2610.20442</link>
+<guid isPermaLink="false">p-2610.20442</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트가 지시를 해석하고 오류를 스스로 고치는 "agentic robots"를 Model·Data·Environment·Harness 4개 영역 17개 범주로 정리한 서베이</description>
+</item>
+<item>
+<title>[논문] Player-1: Learning to Play from Synthetic Experience</title>
+<link>https://arxiv.org/abs/2610.20584</link>
+<guid isPermaLink="false">p-2610.20584</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>합성 게임 환경에서의 RL로 computer-use 모델의 게임 조작 능력을 시연 데이터 이상으로 끌어올린 Player-1</description>
+</item>
+<item>
+<title>[논문] More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2610.19789</link>
+<guid isPermaLink="false">p-2610.19789</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트 RL의 self-distillation 기법 10종을 같은 조건에서 GRPO와 비교한 132회·12,124 H800 GPU시간 규모의 재검증 연구</description>
+</item>
+<item>
+<title>[논문] $λ_0$: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation</title>
+<link>https://arxiv.org/abs/2610.18950</link>
+<guid isPermaLink="false">p-2610.18950</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>500시간 1인칭 인간 loco-manipulation 데이터 HumanVerse로 휴머노이드 전신 foundation model λ0를 학습</description>
+</item>
+<item>
+<title>[뉴스] OpenCode 2.0</title>
+<link>https://anoma.ly/notes/opencode-2-0/</link>
+<guid isPermaLink="false">hn-50094994</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenCode 2.0 출시: 단일 백그라운드 서비스 구조, MCP를 함수로 바꾸는 Code Mode, 백그라운드 하위 에이전트 도입</description>
+</item>
+<item>
+<title>[뉴스] Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models</title>
+<link>https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/</link>
+<guid isPermaLink="false">nvidia-nemotron-3-5-super-vl</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 120B 오픈 멀티모달 에이전트 모델 Nemotron 3.5 Super VL과 엣지용 Bolt 74B-A9B·E4B 공개</description>
+</item>
+<item>
+<title>[뉴스] Muse Spark Open</title>
+<link>https://research.meta.ai/blog/muse-spark-open</link>
+<guid isPermaLink="false">hn-50107379</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta, 오픈 모델 Muse Spark Open 공개 — Hugging Face에 Muse-Spark-Open-816B-A42B로 게시</description>
+</item>
+<item>
+<title>[뉴스] Frontier Pre-Training at Microsoft AI</title>
+<link>https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/</link>
+<guid isPermaLink="false">hn-50105791</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Microsoft AI, 총 2.8T·활성 80B 파라미터 MoE 베이스 모델 MAI-Base-2 사전학습 완료</description>
+</item>
+<item>
+<title>[뉴스] An update on independent evaluators</title>
+<link>https://www.anthropic.com/news/an-update-on-independent-evaluators</link>
+<guid isPermaLink="false">anthropic-an-update-on-independent-evaluators</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, METR 평가팀에 "직원 수준" 내부 접근 권한을 주고 독립 위험 평가 결과를 공개하게 함</description>
+</item>
+<item>
+<title>[뉴스] LFM2.5-24B-A2B: Built for fast on-device agents</title>
+<link>https://www.liquid.ai/blog/lfm2-5-24b-a2b</link>
+<guid isPermaLink="false">hn-50097369</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Liquid AI, 활성 2B의 24B MoE 추론 모델 LFM2.5-24B-A2B를 온디바이스 에이전트용 오픈 웨이트로 공개</description>
+</item>
+<item>
+<title>[뉴스] Simons Foundation launches $15M effort to help mathematicians navigate AI era</title>
+<link>https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/</link>
+<guid isPermaLink="false">hn-50104654</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Simons Foundation·Anthropic·OpenAI, 수학계의 AI 시대 대응을 위한 1,500만 달러 프로그램 출범</description>
+</item>
+<item>
+<title>[뉴스] I Know Why the Mathematicians Weep</title>
+<link>https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep</link>
+<guid isPermaLink="false">hn-50103630</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI의 대량 수학 증명 공개 이후 수학자들이 느끼는 "기술적 상실감"을 다룬 Derek Thompson의 에세이</description>
+</item>
+<item>
+<title>[뉴스] Accelerating the search for antimicrobial peptides with Google Antigravity</title>
+<link>https://deepmind.google/blog/accelerating-antimicrobial-discovery/</link>
+<guid isPermaLink="false">deepmind-accelerating-antimicrobial-discovery</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, 에이전트 개발 플랫폼 Google Antigravity로 새 항균 펩타이드 후보를 찾은 과정 공개</description>
+</item>
+<item>
+<title>[뉴스] Krea 3 – An image model built for editing at scale</title>
+<link>https://www.krea.ai/krea-3</link>
+<guid isPermaLink="false">hn-50105648</guid>
+<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
+<description>Krea, 요청한 부분만 바꾸는 프로덕션용 이미지 편집 모델 Krea 3 공개</description>
+</item>
 <item>
 <title>[논문] VideoJev: System One Model for Video Understanding and Interaction</title>
 <link>https://arxiv.org/abs/2610.18615</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50060269</guid>
 <pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
 <description>Clojure 창시자 Rich Hickey: LLM은 사람이 직접 다루는 '도구'가 아니라 일을 넘기는 '자동화'다.</description>
-</item>
-<item>
-<title>[논문] What Did the Agent Actually Do? Evidence-Grounded Oversight for Long-Horizon Agents</title>
-<link>https://arxiv.org/abs/2610.06406</link>
-<guid isPermaLink="false">p-2610.06406</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>장기 실행 에이전트가 실제로 무엇을 했는지 근거와 함께 보여주는 감독(oversight)용 행동 그래프 EBG와 벤치마크 AgentMonBench.</description>
-</item>
-<item>
-<title>[논문] Dino Forcing Flow Models: Do not denoise what you can predict</title>
-<link>https://arxiv.org/abs/2610.11751</link>
-<guid isPermaLink="false">p-2610.11751</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>DINO 표현을 함께 denoise하지 말고 직접 예측해 조건으로 쓰자 — 더 단순하고 빠른 flow matching 학습법.</description>
-</item>
-<item>
-<title>[논문] NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime</title>
-<link>https://arxiv.org/abs/2610.10787</link>
-<guid isPermaLink="false">p-2610.10787</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>LLM 추론 스레드와 VLA 행동 정책을 OS 같은 런타임으로 묶어, 연속 환경 VLN에서 사람 수준 성공률에 도달한 NavGPT-3.</description>
-</item>
-<item>
-<title>[논문] SpaceFlow: Locally Controllable 3D Generation</title>
-<link>https://arxiv.org/abs/2610.12399</link>
-<guid isPermaLink="false">p-2610.12399</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>기하 primitive마다 제어 강도와 텍스트/이미지 단서를 따로 지정하는 training-free 국소 제어 3D 생성 SpaceFlow.</description>
-</item>
-<item>
-<title>[논문] ARC: A Reasoning Recipe for Robot Foundation Models</title>
-<link>https://arxiv.org/abs/2610.12386</link>
-<guid isPermaLink="false">p-2610.12386</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>추가 로봇 데이터 없이 '행동 근거' 추론 trace만으로 π0.5 등 로봇 파운데이션 모델의 zero-shot 성능을 크게 올리는 레시피 ARC.</description>
-</item>
-<item>
-<title>[뉴스] Terence Tao: Math 2.0 [pdf]</title>
-<link>https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf</link>
-<guid isPermaLink="false">hn-50043026</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>Terence Tao가 Caltech 강연에서 AI로 수학이 '증명 희소'에서 '증명 풍부' 시대로 넘어가고 있다며 'Math 2.0'의 방향을 제시.</description>
-</item>
-<item>
-<title>[뉴스] 구글, 업무용 Gemini 에이전트 발표 — 장시간 작업과 기억 유지, Claude 지원</title>
-<link>https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026</link>
-<guid isPermaLink="false">gn-35151</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>구글이 노트북을 닫아도 클라우드에서 계속 일하고 기억을 유지하는 업무용 Gemini 에이전트를 발표했고, Anthropic Claude 모델도 쓸 수 있다.</description>
-</item>
-<item>
-<title>[뉴스] Nvidia, 미국 오픈 모델 스타트업 Reflection AI 인수 협상 중</title>
-<link>https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a</link>
-<guid isPermaLink="false">gn-35149</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>FT 보도: 이미 8억 달러를 투자한 Nvidia가 오픈 가중치 모델 개발사 Reflection AI(기업가치 250억 달러)의 인수 또는 투자 확대를 초기 협의 중.</description>
-</item>
-<item>
-<title>[뉴스] Retrofitting language models to operate over bytes</title>
-<link>https://www.nature.com/articles/s41586-026-11111-4</link>
-<guid isPermaLink="false">hn-50001234</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>기존 subword LLM을 사전학습 예산의 1% 미만으로 byte 단위 모델로 바꾸는 'byteification' 연구가 Nature에 게재.</description>
-</item>
-<item>
-<title>[뉴스] Five months treating bugs like patients and coding agents like a medical team</title>
-<link>https://www.cockroachlabs.com/blog/experiment-running-hospital-code/</link>
-<guid isPermaLink="false">hn-50021899</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cockroach Labs가 버그를 환자, 코딩 에이전트를 의료팀처럼 다루는 '교육병원형' 파이프라인 MOLT Sinai를 5개월간 운영한 결과를 공개.</description>
-</item>
-<item>
-<title>[뉴스] Tom Brown, 공화당 인맥으로 월 약 1.9조원 규모 SpaceX 컴퓨팅 계약 중개</title>
-<link>https://wsj.com/tech/ai/tom-brown-athropic-669005ad</link>
-<guid isPermaLink="false">gn-35173</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>WSJ 보도: Anthropic 공동창업자이자 Chief Compute Officer인 Tom Brown이 공화당 인맥을 활용해 월 12.5억 달러 규모 SpaceX 컴퓨팅 계약을 중개.</description>
-</item>
-<item>
-<title>[뉴스] Build your own decision model</title>
-<link>https://nishtahir.com/build-your-own-decision-model/</link>
-<guid isPermaLink="false">hn-50037949</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>Qwen3-1.7B 출력을 고정 선택지 토큰으로 제한해 한 번의 순전파로 답을 고르는 '의사결정 모델'을 직접 만들어 본 글.</description>
-</item>
-<item>
-<title>[뉴스] I'm sorry, but you still have to think</title>
-<link>https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/</link>
-<guid isPermaLink="false">hn-50043689</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI 에이전트로 Campfire를 Rust·Elixir로 재작성해도 호환성·지연·메모리 한도 같은 설계 판단은 사람이 직접 해야 한다는 분석.</description>
-</item>
-<item>
-<title>[뉴스] 중학생이 AI(Claude)와 함께 '자기 자신을 통과하지 못하는 입체' 추측을 증명</title>
-<link>https://github.com/swiri0921-bit/rhombicosidodecahedron-not-rupert</link>
-<guid isPermaLink="false">gn-35175</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>경기도의 한 중학교 3학년 학생이 Claude와 함께 '마름모십이이십면체는 루퍼트가 아니다'라는 2021년 추측을 컴퓨터 보조 증명으로 풀었다.</description>
-</item>
-<item>
-<title>[뉴스] Eve - 디렉터리 하나로 AI 에이전트를 정의하고 배포하는 Vercel 프레임워크</title>
-<link>https://vercel.com/eve</link>
-<guid isPermaLink="false">gn-35140</guid>
-<pubDate>Mon, 12 Oct 2026 08:00:00 +0900</pubDate>
-<description>Vercel이 Markdown과 TypeScript 파일만으로 에이전트를 정의·실행·배포하는 'Next.js 같은' 에이전트 프레임워크 Eve를 공개.</description>
 </item>
 </channel>
 </rss>
