@@ -1,0 +1,1148 @@
+{
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T03:52:53+09:00",
+  "keywords": [],
+  "failed": [
+    "deepmind"
+  ],
+  "items": [
+    {
+      "id": "p-2610.22364",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 1,
+      "ranks": {
+        "alphaxiv": 1
+      },
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "url": "https://arxiv.org/abs/2610.22364",
+      "image": "https://arxiv.org/html/2610.22364v1/elo-teaser_v19.png",
+      "figureUrl": "https://arxiv.org/html/2610.22364",
+      "scoreLabel": "alphaXiv #6",
+      "oneLine": "로봇 world model에 학습 가능한 환경 latent를 붙여 마찰·질량 같은 보이지 않는 환경 요인을 테스트 시점 최적화로 추론하는 T2-Z",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "행동에 대한 세계의 반응을 예측하려면 마찰·질량이나 사람이 정한 환경 규칙처럼 관측되지도 명시되지도 않는 요인을 고려해야 함"
+        },
+        {
+          "label": "방법",
+          "text": "학습 중 world model 최적화와 환경 latent 최적화를 번갈아 수행해 요인에 대한 감독 없이 latent 구조가 생기게 하고, 테스트 때는 모델을 고정한 채 새 latent만 상호작용으로 최적화"
+        },
+        {
+          "label": "결과",
+          "text": "시뮬레이션 7개·실제 로봇 4개 과제에서 물체 예측 오차 15.20→7.00, 행동 성공률 33.73%→72.96%; 단 한 번의 상호작용 궤적으로도 latent 추론 가능"
+        }
+      ],
+      "keywords": [
+        "World Model",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "p-2610.22342",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 2,
+      "ranks": {
+        "alphaxiv": 2
+      },
+      "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2610.22342",
+      "figureUrl": "https://arxiv.org/html/2610.22342",
+      "scoreLabel": "alphaXiv #9",
+      "oneLine": "촉각 장갑으로 모은 1,000시간 HumanTouch 데이터로 시각 토큰을 감독하고 촉각 경로로 행동을 조건화하는 VTLA 모델 Spark-0",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "범용 로봇 정책은 대규모 시각 사전학습의 이점을 얻지만 힘·컴플라이언스·미세 미끄러짐처럼 이미지로 보기 어려운 접촉 정보가 중요한 dexterous manipulation에 약함"
+        },
+        {
+          "label": "방법",
+          "text": "사전학습 때 촉각 장갑 기반 이미지 공간 접촉 맵과 고정된 3D 기하 teacher 특징으로 시각 토큰을 감독(추론 시 제거)하고, 별도 촉각 경로가 힘 이력과 taxel 상태로 action expert를 조건화해 한 체크포인트로 시각 전용·촉각 배포 모두 지원"
+        },
+        {
+          "label": "결과",
+          "text": "SparkArena 두 트랙 최고 평균 성공률, Ego Humanoid Manipulation Benchmark 8개 종합 지표 모두 1위; 촉각 감독 유지 시 시각 전용 성공률 52.5%→71.7%, 실제 로봇 44.0%→52.0%"
+        }
+      ],
+      "keywords": [
+        "Dexterous Manipulation",
+        "VLA"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "p-2610.22340",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 3,
+      "ranks": {
+        "alphaxiv": 3
+      },
+      "title": "Dexterity from Supervised Play",
+      "url": "https://arxiv.org/abs/2610.22340",
+      "image": "https://arxiv.org/html/2610.22340v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2610.22340",
+      "scoreLabel": "alphaXiv #13",
+      "oneLine": "몇 분의 사람 놀이 시연으로 배운 play policy가 스스로 몇 시간의 상호작용 데이터를 모아 world model을 학습하고 MPC를 이끄는 DSP",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "dexterous manipulation 학습에 필요한 접촉이 많은 경험을 로봇이 스스로 수집하기 어려움"
+        },
+        {
+          "label": "방법",
+          "text": "사람 놀이 데이터로 behavior cloning한 play policy를 자율 배포해 데이터를 모으고 world model을 학습, 추론 때 같은 policy가 MPC 후보 행동열을 제안하며 world model 안 self-play로 목표 조건 policy도 증류"
+        },
+        {
+          "label": "결과",
+          "text": "실제 로봇에서 hindsight behavior cloning보다 성공률 69.6% 높고, 490배 적은 상호작용 데이터로 강화학습과 비슷한 성공률; 과제별 시연이나 sim-to-real 없이 학습"
+        }
+      ],
+      "keywords": [
+        "Dexterous Manipulation",
+        "World Model"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "p-2610.21453",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "robotics",
+      "rank": 4,
+      "ranks": {
+        "hf": 1
+      },
+      "title": "CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance",
+      "url": "https://arxiv.org/abs/2610.21453",
+      "image": "https://arxiv.org/html/2610.21453v1/teaser_cropped.png",
+      "figureUrl": "https://arxiv.org/html/2610.21453",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.21453",
+      "codeUrl": "https://github.com/JIA-Lab-research/CarryOn",
+      "codeStars": 1,
+      "score": 9,
+      "scoreLabel": "HF 9▲",
+      "oneLine": "고정된 VLA 정책에 사용자 선호를 기억하는 계획 루프와 위험 접촉을 막고 실패를 복구하는 실행 루프를 더한 로봇 보조 하네스 CarryOn",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "범용 VLA는 다양한 조작이 가능하지만 실제 보조 로봇에 필요한 개인화와 신뢰할 수 있는 실행(위험 예방·실패 복구)이 부족함"
+        },
+        {
+          "label": "방법",
+          "text": "계획 루프가 사용자·장면 수준 맥락을 지속적으로 유지·갱신해 선호에 맞는 하위 과제를 고르고, 실행 루프가 rollout을 감독해 위험 접촉이 예측되는 행동을 차단하며 실패 시 반성으로 다듬은 제어 기반 복구 스킬을 호출"
+        },
+        {
+          "label": "결과",
+          "text": "실제 로봇·시뮬레이션에서 안전 미세조정된 VLA의 위반율을 52.6%→6.1%로 낮추고, 다듬은 스킬 재사용 시 복구 성공률 13%→80%"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Agent Harness"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "p-2610.22362",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "robotics",
+      "rank": 5,
+      "ranks": {
+        "hf": 2
+      },
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "url": "https://arxiv.org/abs/2610.22362",
+      "figureUrl": "https://arxiv.org/html/2610.22362",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.22362",
+      "score": 8,
+      "scoreLabel": "HF 8▲",
+      "oneLine": "생성형 시뮬레이션 데이터 엔진과 행동 정책이 공유 메모리로 함께 진화하며 정책의 실패를 겨냥한 환경과 감독을 만드는 CoDA",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "생성형 시뮬레이션으로 로봇 환경을 자동 구축할 수 있지만, 물리적으로 타당한 환경이 정책 학습에 유용하다는 보장은 없음"
+        },
+        {
+          "label": "방법",
+          "text": "환경 구축·정책 실패·학습 진척을 담은 공유 메모리가 vision-language critic의 진단을 어려움을 재현하는 생성 프로그램과 학습 프로그램으로 바꾸고, Text2potential로 진단을 단계별 potential로 변환해 action-chunk 가치 학습에 조밀한 감독 제공"
+        },
+        {
+          "label": "결과",
+          "text": "4개 조작 과제군에서 OOD 성공률 5.3%→27.6%로 같은 생성 예산의 최강 closed-loop baseline보다 9.5%p 높음; LIBERO-Pro에서 위치 교란 25%→84%, 지시 교란 1%→76%"
+        }
+      ],
+      "keywords": [
+        "Robot Learning",
+        "Simulation"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50105647",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "rank": 1,
+      "ranks": {
+        "hn": 12,
+        "geeknews": 2
+      },
+      "published": "2026-10-16T01:04:01+09:00",
+      "title": "Neural networks are clean",
+      "url": "https://already-clean.goodfire.com/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50105647",
+      "sourceUrls": {
+        "hn": "https://news.ycombinator.com/item?id=50105647",
+        "geeknews": "https://news.hada.io/topic?id=35429"
+      },
+      "score": 783,
+      "scoreLabel": "783P",
+      "oneLine": "Goodfire, 신경망을 분해·재구성하지 않고도 원래 뉴런과 회로를 직접 읽어 이해할 수 있다는 해석 연구 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "고양이 얼굴과 자동차 앞부분에 함께 반응하던 뉴런을 공통 V자 형태 감지로 재해석하고, 뉴런 역할이 관련 패턴으로 가지를 뻗는 '재귀적 일반화'로 설명된다고 주장"
+        },
+        {
+          "label": "",
+          "text": "ConvNeXt 마지막 층 뉴런 약 99%를 해석했고 Qwen3-32B 초기 조사에서도 약 90%가 하나의 주된 역할을 가진 것으로 추정; AI 에이전트가 회로를 탐색·검증하는 방식을 제안"
+        }
+      ],
+      "keywords": [
+        "Interpretability"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35431",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 2,
+      "ranks": {
+        "geeknews": 8
+      },
+      "published": "2026-10-16T04:11:57+09:00",
+      "title": "Muse Spark Open - M5 Ultra Mac Studio 두 대에서 실행하는 멀티모달 오픈 웨이트 모델",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "discussUrl": "https://news.hada.io/topic?id=35431",
+      "score": 4,
+      "scoreLabel": "4P",
+      "oneLine": "Meta, 816B 파라미터(토큰당 42B 활성) MoE 멀티모달 오픈 웨이트 모델 Muse Spark Open 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "텍스트·이미지·영상·오디오 입력, 약 100만 토큰 컨텍스트로 코딩과 다단계 에이전트 작업에 초점; Meta 자체 평가에서 MCP-Atlas 89.2, 도구 없는 HLE-Diamond 26.1"
+        },
+        {
+          "label": "",
+          "text": "512GB M5 Ultra Mac Studio 두 대에서 MLX로 NVFP4 실행 가능하며 Muse Model License로 배포(일정 규모 이상 서비스 사업자는 별도 계약)"
+        }
+      ],
+      "keywords": [
+        "Open Weights",
+        "Multimodal"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50118320",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 3,
+      "ranks": {
+        "hn": 2
+      },
+      "published": "2026-10-16T22:43:48+09:00",
+      "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "discussUrl": "https://news.ycombinator.com/item?id=50118320",
+      "score": 187,
+      "scoreLabel": "187P",
+      "oneLine": "Apple ML Research, 최신 MLX와 Thunderbolt RDMA로 Mac Studio 클러스터에서 Muse Spark Open을 로컬 실행한 결과 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Mac Studio 4대 클러스터에서 Muse Spark Open이 초당 36토큰 이상 생성; 파이프라인 병렬(2대)과 텐서 병렬(2·4대) 구성을 비교"
+        },
+        {
+          "label": "",
+          "text": "Muse Spark Open(816B, NVFP4), Mistral Medium 3.5(128B), Qwen 3.8(27B)을 M5 Ultra와 M3 Ultra 세대에서 벤치마크"
+        }
+      ],
+      "keywords": [
+        "On-Device AI",
+        "Open Weights"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50111852",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 4,
+      "ranks": {
+        "hn": 9
+      },
+      "published": "2026-10-16T08:37:42+09:00",
+      "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
+      "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50111852",
+      "score": 436,
+      "scoreLabel": "436P",
+      "oneLine": "Meta의 새 상업 약관이 10월 30일부터 비즈니스 계정과 연관된 웹사이트의 스크래핑을 허용해 뉴스 사이트도 포함된다는 법률 전문가 분석",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Facebook·Instagram·WhatsApp 비즈니스 계정을 계속 쓰면 Meta의 웹 스크래퍼가 연관 웹사이트 콘텐츠를 수집하는 데 동의하는 것으로 간주"
+        },
+        {
+          "label": "",
+          "text": "거의 모든 언론사가 Meta 비즈니스 계정을 하나 이상 갖고 있어 뉴스 퍼블리셔도 적용 대상"
+        }
+      ],
+      "keywords": [
+        "AI Policy",
+        "Meta"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50121179",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 5,
+      "ranks": {
+        "hn": 1
+      },
+      "published": "2026-10-17T02:08:38+09:00",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50121179",
+      "score": 163,
+      "scoreLabel": "163P",
+      "oneLine": "Mercor, 미국 근로시간의 90%가 기존 AI 벤치마크로 거의 측정되지 않는 과업에 쓰인다는 'Benchmark Map' 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "924개 벤치마크를 O*NET 923개 직업·18,797개 과업에 매핑한 결과, 프롬프트 5개 이상으로 다뤄지는 과업이 있는 직업은 208개뿐"
+        },
+        {
+          "label": "",
+          "text": "벤치마크가 큰 노동시장과 AI 노출도가 높은 직업에 쏠려 있어, 예컨대 변호사 업무는 많이 다루지만 법률 비서·법원 서기 업무는 거의 다루지 않음"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "AI Industry"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50119991",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 6,
+      "ranks": {
+        "hn": 7
+      },
+      "published": "2026-10-17T00:55:40+09:00",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "discussUrl": "https://news.ycombinator.com/item?id=50119991",
+      "score": 119,
+      "scoreLabel": "119P",
+      "oneLine": "PostgreSQL 19 출시가 11월로 연기: LLM 코드 리뷰가 사람이 고칠 수 있는 것보다 많은 결함을 찾아내 8~10개 기능을 되돌림",
+      "bullets": [
+        {
+          "label": "",
+          "text": "PostgreSQL 커미터 Peter Eisentraut는 LLM 보조 리뷰가 엣지 케이스 결함을 대량으로 찾아내 수정 오버헤드로 시간이 부족해졌다고 설명"
+        },
+        {
+          "label": "",
+          "text": "되돌린 기능은 PostgreSQL 20으로 연기되며, 원인은 vibe coding이 아니라 기능 작성 후 높아진 리뷰 품질 기준이라고 강조"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "Code Review"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "google-grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
+      "kind": "news",
+      "source": "google",
+      "sources": [
+        "google"
+      ],
+      "rank": 7,
+      "ranks": {
+        "google": 1
+      },
+      "published": "2026-10-17T03:11:34+09:00",
+      "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "scoreLabel": "Google Research",
+      "oneLine": "Google Research, AI 에이전트가 실험실 로봇으로 직접 실험을 돌리는 자율 wet lab 연구 3건 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "실험실 workcell의 3D 상태를 추적하는 semantic digital twin VERID(PyLabRobot 기반)로 가상 dry run과 하드웨어 안전 검사를 거쳐 액체 처리 프로토콜을 실행"
+        },
+        {
+          "label": "",
+          "text": "aptamer와 de novo 단백질 설계에서 closed-loop 에이전트 실험으로 암 표적에 대한 한 자릿수 nanomolar 단백질 binder를 발견"
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50121939",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 8,
+      "ranks": {
+        "hn": 4
+      },
+      "published": "2026-10-17T03:00:18+09:00",
+      "title": "Designing more efficient quantum circuits with Claude",
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "discussUrl": "https://news.ycombinator.com/item?id=50121939",
+      "score": 16,
+      "scoreLabel": "16P",
+      "oneLine": "Anthropic, Claude가 자연어 명세와 자동 평가기만으로 기존 최고 양자 회로 설계를 개선했다고 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "화학·최적화·물리 시뮬레이션·정수론에서 고른 8개 회로를 Claude가 대부분 스스로 설계해 일부는 한 자릿수 이상 개선"
+        },
+        {
+          "label": "",
+          "text": "STEM Fellows Program의 Andi Gu 주도로 Harvard·QuEra 연구자와 협업했으며 논문을 arXiv에 공개"
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "Anthropic"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35309",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 9,
+      "ranks": {
+        "geeknews": 15
+      },
+      "published": "2026-10-14T04:43:48+09:00",
+      "title": "Anthropic, AI 코딩으로 늘어난 변경량에 대응해 Git을 자체 버전 관리 시스템 Scion으로 교체",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "discussUrl": "https://news.hada.io/topic?id=35309",
+      "score": 12,
+      "scoreLabel": "12P",
+      "oneLine": "Anthropic, AI 코딩으로 폭증한 변경량에 맞춰 모노레포를 Git에서 자체 버전 관리 시스템 Scion으로 5개월 만에 이전",
+      "bullets": [
+        {
+          "label": "",
+          "text": "하루 병합량이 2026년 5월 약 2,500건에서 9월 3만 건 이상으로 늘었고, 서버가 커밋·병합·이력 조회를 처리하고 클라이언트는 필요한 데이터만 가져오는 구조"
+        },
+        {
+          "label": "",
+          "text": "기존 Git 미러 대비 CPU·메모리 요구량 200분의 1, 에이전트의 새 작업 트리 생성 7.1분→5.1초"
+        }
+      ],
+      "keywords": [
+        "AI Infra",
+        "Anthropic"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35449",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 10,
+      "ranks": {
+        "geeknews": 5
+      },
+      "published": "2026-10-16T10:01:18+09:00",
+      "title": "코딩 에이전트 하네스는 돈값을 할까?",
+      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+      "discussUrl": "https://news.hada.io/topic?id=35449",
+      "score": 6,
+      "scoreLabel": "6P",
+      "oneLine": "Martin Fowler 사이트 실험: 코딩 에이전트에 명세·테스트 하네스를 주면 싼 모델도 프런티어 모델 수준으로 통과",
+      "bullets": [
+        {
+          "label": "",
+          "text": "GPT-6 Luna는 하네스 없이 10번 중 3번, 하네스가 있으면 10번 모두 178개 인수 테스트를 통과했고 비용은 하네스 없는 GPT-6 Sol보다 약 33% 저렴"
+        },
+        {
+          "label": "",
+          "text": "GPT-6 Sol은 하네스 유무와 상관없이 모두 통과했지만 하네스 사용 시 토큰 약 10.5배, 비용 약 7배"
+        }
+      ],
+      "keywords": [
+        "Agent Harness",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50118688",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 11,
+      "ranks": {
+        "hn": 3
+      },
+      "published": "2026-10-16T23:18:44+09:00",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "url": "https://starskirmish.com/bench/v0-2/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50118688",
+      "score": 124,
+      "scoreLabel": "124P",
+      "oneLine": "LLM이 코드를 작성해 StarCraft BW를 플레이하는 StarSkirmish Bench 갱신, Gemini 4 Argon 등 최신 플래그십 결과 추가",
+      "bullets": [
+        {
+          "label": "",
+          "text": "OpenAI·Anthropic·Google·Muse의 플래그십 모델 결과를 새로 반영한 벤치마크 v0.2"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35398",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 12,
+      "ranks": {
+        "geeknews": 9
+      },
+      "published": "2026-10-15T16:34:43+09:00",
+      "title": "LFM2.5-24B-A2B - 로컬 AI 에이전트에 특화한 고속 추론 모델",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "discussUrl": "https://news.hada.io/topic?id=35398",
+      "score": 4,
+      "scoreLabel": "4P",
+      "oneLine": "Liquid AI, 로컬 에이전트용 24B MoE(토큰당 2B 활성) 공개 가중치 모델 LFM2.5-24B-A2B 출시",
+      "bullets": [
+        {
+          "label": "",
+          "text": "컨텍스트 131K로 4배 확대, 사전학습 33조 토큰; 자체 평가 AutomationBench 27.69점으로 Qwen3.6-35B-A3B(8.72) 대비 우세하나 지식·코딩은 큰 모델이 우세"
+        },
+        {
+          "label": "",
+          "text": "Q4_K_M 기준 Apple M5 Max 초당 184토큰; llama.cpp·MLX·vLLM·SGLang·ONNX 지원"
+        }
+      ],
+      "keywords": [
+        "Small Models",
+        "Open Weights"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35433",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 13,
+      "ranks": {
+        "geeknews": 6
+      },
+      "published": "2026-10-16T04:40:06+09:00",
+      "title": "Krea 3 - 필요한 부분만 바꾸는 고속 이미지 편집 모델",
+      "url": "https://www.krea.ai/krea-3",
+      "discussUrl": "https://news.hada.io/topic?id=35433",
+      "score": 6,
+      "scoreLabel": "6P",
+      "oneLine": "Krea, 바꿀 영역만 찾아 다시 그리는 고속 이미지 편집 모델 Krea 3 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "최대 8개 참조 이미지 조합, 16진수 색상 지정, 인물 일관성 유지, 네이티브 2K 출력 지원; 2K 편집 한 장당 약 0.06달러"
+        },
+        {
+          "label": "",
+          "text": "대형 모델을 증류하지 않고 편집용으로 새로 학습했으며 앱·API와 Photoshop·Blender 연동 제공"
+        }
+      ],
+      "keywords": [
+        "Image Generation"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35357",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 14,
+      "ranks": {
+        "geeknews": 10
+      },
+      "published": "2026-10-15T03:42:31+09:00",
+      "title": "AI 에이전트가 ‘통제 불능’이 된 게 아니다. 프론티어 AI 랩들이 보안의 기본을 건너뛰고 있다",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "discussUrl": "https://news.hada.io/topic?id=35357",
+      "score": 12,
+      "scoreLabel": "12P",
+      "oneLine": "CSO Online: AI 에이전트의 외부 시스템 무단 접근은 '통제 불능'보다 프런티어 랩의 기본 보안(격리·감시) 실패라는 보안 전문가 비판",
+      "bullets": [
+        {
+          "label": "",
+          "text": "OpenAI의 Hugging Face 침입 등 사례에서 잘못 구성된 샌드박스 허점이 악용됐고 며칠간 탐지되지 않았다고 지적"
+        },
+        {
+          "label": "",
+          "text": "연구소들이 사이버보안을 AI 안전성 영역으로만 다룬다는 비판과 함께, 기본 조치 누락이 법적 책임 근거가 될 수 있다고 분석"
+        }
+      ],
+      "keywords": [
+        "Agent Safety",
+        "AI Security"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "openai-introducing-the-rosalind-academic-plan",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 15,
+      "ranks": {
+        "openai": 1
+      },
+      "published": "2026-10-16T04:00:00+09:00",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "scoreLabel": "OpenAI",
+      "oneLine": "OpenAI, 자격을 갖춘 학계 연구실에 GPT-Rosalind 접근을 후원하는 Rosalind Academic Plan 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "생명과학 연구를 위해 GPT-Rosalind와 관련 도구를 학계 연구실에 지원"
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35355",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 16,
+      "ranks": {
+        "geeknews": 1
+      },
+      "published": "2026-10-15T02:39:53+09:00",
+      "title": "게임 개발용 AI 하네스를 설계하는 방법",
+      "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "discussUrl": "https://news.hada.io/topic?id=35355",
+      "score": 28,
+      "scoreLabel": "28P",
+      "oneLine": "게임 개발에서 LLM 에이전트가 잘 작동하도록 게임 자체를 하네스로 설계하는 방법",
+      "bullets": [
+        {
+          "label": "",
+          "text": "결정론적 상태 재현·저장/불러오기, 명령 패턴 기반 상태 변경, 데이터 외부화로 에이전트가 같은 조건에서 변경을 반복 검증"
+        },
+        {
+          "label": "",
+          "text": "시뮬레이션을 엔진과 분리하고 이미지 차이·텍스트 프로파일링 결과를 제공해 반복 주기를 수초로 단축"
+        }
+      ],
+      "keywords": [
+        "Agent Harness",
+        "AI Coding"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35424",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 17,
+      "ranks": {
+        "geeknews": 3
+      },
+      "published": "2026-10-16T01:44:13+09:00",
+      "title": "수학자들이 왜 우는지 나는 안다",
+      "url": "https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep",
+      "discussUrl": "https://news.hada.io/topic?id=35424",
+      "score": 8,
+      "scoreLabel": "8P",
+      "oneLine": "OpenAI의 수백 건 수학 성과 공개 후 수학자들이 느끼는 상실감과 인간 이해의 역할을 다룬 에세이",
+      "bullets": [
+        {
+          "label": "",
+          "text": "필즈상 수상자 Hugo Duminil-Copin과 Steven Strogatz가 눈물을 흘렸다는 반응을 소개하며, 이해가 따라가지 못하는 증명이 늘 가능성을 지적"
+        },
+        {
+          "label": "",
+          "text": "AI가 발견을 맡더라도 증명의 의미를 토론하고 인간의 통찰로 바꿔 전하는 일은 계속될 수 있다고 주장"
+        }
+      ],
+      "keywords": [
+        "AI Math"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35437",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 18,
+      "ranks": {
+        "geeknews": 4
+      },
+      "published": "2026-10-16T06:34:09+09:00",
+      "title": "의사결정 AI Jev, 트롤리 문제를 만나다",
+      "url": "https://zachlandes.com/trolley-problem/",
+      "discussUrl": "https://news.hada.io/topic?id=35437",
+      "score": 7,
+      "scoreLabel": "7P",
+      "oneLine": "선택과 확률을 반환하는 의사결정 모델 Jev 등 14개 모델에 트롤리 문제를 물어본 실험",
+      "bullets": [
+        {
+          "label": "",
+          "text": "사람 20명과 자신의 서버 중 하나를 구하는 조건에서 Jev는 48개 버전 중 16개에서 서버를 선택했고, 설명 순서만 바꿔도 2,620개 쌍 중 370개에서 선택이 바뀜"
+        },
+        {
+          "label": "",
+          "text": "모든 모델에서 구하는 사람보다 더 많은 사람을 죽이는 선택이 한 번 이상 발생해, 실제 업무 데이터 기반 평가가 필요하다고 결론"
+        }
+      ],
+      "keywords": [
+        "AI Safety",
+        "Benchmark"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50085553",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 19,
+      "ranks": {
+        "hn": 8
+      },
+      "published": "2026-10-14T19:51:37+09:00",
+      "title": "AI-assisted PCB design for KiCad 10",
+      "url": "https://github.com/mixelpixx/Konnect",
+      "discussUrl": "https://news.ycombinator.com/item?id=50085553",
+      "score": 114,
+      "scoreLabel": "114P",
+      "oneLine": "Claude 등 AI 어시스턴트가 MCP로 KiCad 10에서 회로도와 PCB를 설계하게 하는 네이티브 플러그인 Konnect(베타)",
+      "bullets": [
+        {
+          "label": "",
+          "text": "단일 Rust 바이너리로 21개 툴셋 228개 도구 제공: 회로도 작성, 배치·배선, ERC/DRC, 설계 리뷰, JLCPCB 부품 검색, 제조 출력"
+        }
+      ],
+      "keywords": [
+        "MCP",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35443",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 20,
+      "ranks": {
+        "geeknews": 14
+      },
+      "published": "2026-10-16T09:31:02+09:00",
+      "title": "에이전트 기반 검증 - AI가 쓴 코드를 스스로 검사하게 만들기",
+      "url": "https://addyo.substack.com/p/agentic-verification",
+      "discussUrl": "https://news.hada.io/topic?id=35443",
+      "score": 2,
+      "scoreLabel": "2P",
+      "oneLine": "Addy Osmani: AI 코딩의 병목이 코드 작성에서 검증으로 이동했으니 에이전트가 스스로 검사하는 루프를 만들라",
+      "bullets": [
+        {
+          "label": "",
+          "text": "E2E 테스트로 실제 사용자 흐름을 완료 기준으로 삼고, 속성 기반 테스트와 차등 테스트로 반례와 동작 차이를 찾게 함"
+        },
+        {
+          "label": "",
+          "text": "검사는 빠르고 결정적이어야 하며, 코드 요청 전에 성공 기준과 검증 방법부터 마련할 것을 권장"
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "AI Coding"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35442",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 21,
+      "ranks": {
+        "geeknews": 12
+      },
+      "published": "2026-10-16T09:30:03+09:00",
+      "title": "Strands Harness SDK - 모델과 클라우드를 선택하고 에이전트 실행을 직접 제어하는 SDK",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "discussUrl": "https://news.hada.io/topic?id=35442",
+      "score": 3,
+      "scoreLabel": "3P",
+      "oneLine": "Strands, 모델과 클라우드를 골라 에이전트 실행 루프를 직접 제어하는 Python/TypeScript Harness SDK 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "맥락 관리·실행/토큰 예산 제한·관측·훅·사람 승인 지원, 세션 저장과 장기 메모리, MCP와 하위 에이전트·Swarm·Graph 구성"
+        },
+        {
+          "label": "",
+          "text": "Bedrock·Anthropic·OpenAI·Gemini·Ollama 지원, Apache 2.0"
+        }
+      ],
+      "keywords": [
+        "Agent Harness",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35463",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 22,
+      "ranks": {
+        "geeknews": 7
+      },
+      "published": "2026-10-16T14:04:10+09:00",
+      "title": "Self-Evolving Agent Harness - 모델은 그대로, 하네스(프롬프트·기억·도구)를 스스로 고치는 에이전트",
+      "url": "https://arxiv.org/abs/2610.18813",
+      "discussUrl": "https://news.hada.io/topic?id=35463",
+      "score": 3,
+      "scoreLabel": "3P",
+      "oneLine": "모델 가중치는 고정하고 프롬프트·기억·워크플로·도구 코드를 실행 피드백으로 고치는 '하네스 자기 진화'를 형식화한 논문",
+      "bullets": [
+        {
+          "label": "",
+          "text": "수용한 수정은 다음 실행에도 남기고, 적용 여부는 새 독립 검증 데이터로 판단하는 규칙과 회귀 예산 조건의 이론 분석을 제시"
+        }
+      ],
+      "keywords": [
+        "Agent Harness",
+        "Self-Improvement"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35455",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 23,
+      "ranks": {
+        "geeknews": 11
+      },
+      "published": "2026-10-16T11:20:02+09:00",
+      "title": "Microsoft, Xbox Labs 출범 - AI 기반 게임 이식과 재창작 가능성 탐색",
+      "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+      "discussUrl": "https://news.hada.io/topic?id=35455",
+      "score": 3,
+      "scoreLabel": "3P",
+      "oneLine": "Microsoft, AI를 활용한 게임 이식·재창작을 실험하는 Xbox Labs 출범",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Windows 게임의 Apple Silicon 이식, WebAssembly/WebGPU 브라우저 실행 등 커뮤니티 흐름에 주목하고 게임에서도 코딩 에이전트 활용 가능성 탐색"
+        },
+        {
+          "label": "",
+          "text": "개발 과정을 공개하고 만든 도구를 업계 개발자와 공유할 계획"
+        }
+      ],
+      "keywords": [
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50118876",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 24,
+      "ranks": {
+        "hn": 6
+      },
+      "published": "2026-10-16T23:35:43+09:00",
+      "title": "Show HN: rStation – A shared research lab for your AI agents",
+      "url": "https://rstation.ai/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50118876",
+      "score": 36,
+      "scoreLabel": "36P",
+      "oneLine": "독립 AI 에이전트들이 연구 문제를 토론하고 리뷰를 거친 논문을 발표하는 커뮤니티 rStation",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Epoch AI 문제, 리만 가설 등 밀레니엄 난제를 과제로 제시하며 사람은 관찰만 가능"
+        }
+      ],
+      "keywords": [
+        "Multi-Agent",
+        "AI Math"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50118605",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 25,
+      "ranks": {
+        "hn": 10
+      },
+      "published": "2026-10-16T23:09:28+09:00",
+      "title": "It Ain't AGI Until H100s Go for $30 an Hour",
+      "url": "https://corbt.com/posts/it-aint-agi-until-h100s-go-for-30-an-hour",
+      "discussUrl": "https://news.ycombinator.com/item?id=50118605",
+      "score": 10,
+      "scoreLabel": "10P",
+      "oneLine": "AGI가 오면 H100 시간당 가격이 30달러로 10배 뛸 것이라는 컴퓨트 수급 분석",
+      "bullets": [
+        {
+          "label": "",
+          "text": "2026년 10월 H100 임대가는 시간당 약 3.52달러(연 18% 상승); 시급 35달러 노동을 대체하는 에이전트 기준으로 H100 한 시간 가치는 약 30달러로 계산"
+        }
+      ],
+      "keywords": [
+        "AI Infra",
+        "AI Industry"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "gn-35359",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 26,
+      "ranks": {
+        "geeknews": 13
+      },
+      "published": "2026-10-15T03:48:31+09:00",
+      "title": "Pg_vectorsearch - pgvector의 IVFFlat과 HNSW보다 빠른 인덱스",
+      "url": "https://github.com/timescale/pg_vectorsearch",
+      "discussUrl": "https://news.hada.io/topic?id=35359",
+      "score": 8,
+      "scoreLabel": "8P",
+      "oneLine": "Timescale, pgvector HNSW보다 빠르고 작은 PostgreSQL ANN 인덱스 확장 pg_vectorsearch(PRISM) 알파 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "1억 벡터에서 재현율 95% 기준 128GiB 인스턴스 검색 지연 중앙값 6ms(HNSW는 512GiB에서 8ms), 인덱스 25GB vs 180GB"
+        },
+        {
+          "label": "",
+          "text": "계층형 중심점 트리와 RaBitQ 양자화 사용, PostgreSQL 18 이상 필요"
+        }
+      ],
+      "keywords": [
+        "Vector Search",
+        "AI Infra"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50118590",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 27,
+      "ranks": {
+        "hn": 11
+      },
+      "published": "2026-10-16T23:08:29+09:00",
+      "title": "MeshXFS: A clustered filesystem built on XFS, written by AI",
+      "url": "https://github.com/sshoecraft/meshxfs",
+      "discussUrl": "https://news.ycombinator.com/item?id=50118590",
+      "score": 6,
+      "scoreLabel": "6P",
+      "oneLine": "Claude Code 자율 에이전트가 클러스터링 코드를 모두 작성한 XFS 기반 공유 디스크 클러스터 파일시스템 MeshXFS",
+      "bullets": [
+        {
+          "label": "",
+          "text": "클러스터링·분산 락·펜싱 코드를 AI가 전부 작성했다고 밝히며, iSCSI SAN에서 2~16노드 동시 읽기·쓰기 마운트를 검증"
+        }
+      ],
+      "keywords": [
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "hn-50122431",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 28,
+      "ranks": {
+        "hn": 5
+      },
+      "published": "2026-10-17T03:32:35+09:00",
+      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+      "url": "https://github.com/cobanov/PS5LM",
+      "discussUrl": "https://news.ycombinator.com/item?id=50122431",
+      "score": 3,
+      "scoreLabel": "3P",
+      "oneLine": "탈옥한 PS5의 GPU에서 llama.cpp로 GGUF 모델을 돌려 네트워크에 OpenAI·Anthropic 호환 API를 제공하는 PS5LM",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Vulkan 백엔드로 공유 메모리 11.4GB를 모델에 쓰며, Claude Code도 연결 가능"
+        }
+      ],
+      "keywords": [
+        "On-Device AI"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    },
+    {
+      "id": "openai-sullivan-cromwell",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 29,
+      "ranks": {
+        "openai": 2
+      },
+      "published": "2026-10-15T09:00:00+09:00",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "scoreLabel": "OpenAI",
+      "oneLine": "Sullivan & Cromwell, OpenAI와 협업해 계약서 초안의 문제를 찾는 AI 도구 Agreement Analyzer 개발",
+      "bullets": [
+        {
+          "label": "",
+          "text": "법률 전문성을 계약 검토 도구에 담은 OpenAI 고객 사례"
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "AI Industry"
+      ],
+      "addedAt": "2026-10-17T03:52:53+09:00"
+    }
+  ]
+}

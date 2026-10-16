@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 16 Oct 2026 03:45:41 +0900</lastBuildDate>
+<lastBuildDate>Sat, 17 Oct 2026 03:52:53 +0900</lastBuildDate>
+<item>
+<title>[논문] T2-z: Test-Time Optimization of Environment Latents for Robotic World Models</title>
+<link>https://arxiv.org/abs/2610.22364</link>
+<guid isPermaLink="false">p-2610.22364</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>로봇 world model에 학습 가능한 환경 latent를 붙여 마찰·질량 같은 보이지 않는 환경 요인을 테스트 시점 최적화로 추론하는 T2-Z</description>
+</item>
+<item>
+<title>[논문] Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation</title>
+<link>https://arxiv.org/abs/2610.22342</link>
+<guid isPermaLink="false">p-2610.22342</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>촉각 장갑으로 모은 1,000시간 HumanTouch 데이터로 시각 토큰을 감독하고 촉각 경로로 행동을 조건화하는 VTLA 모델 Spark-0</description>
+</item>
+<item>
+<title>[논문] Dexterity from Supervised Play</title>
+<link>https://arxiv.org/abs/2610.22340</link>
+<guid isPermaLink="false">p-2610.22340</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>몇 분의 사람 놀이 시연으로 배운 play policy가 스스로 몇 시간의 상호작용 데이터를 모아 world model을 학습하고 MPC를 이끄는 DSP</description>
+</item>
+<item>
+<title>[논문] CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance</title>
+<link>https://arxiv.org/abs/2610.21453</link>
+<guid isPermaLink="false">p-2610.21453</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>고정된 VLA 정책에 사용자 선호를 기억하는 계획 루프와 위험 접촉을 막고 실패를 복구하는 실행 루프를 더한 로봇 보조 하네스 CarryOn</description>
+</item>
+<item>
+<title>[논문] CoDA: Co-Evolution of Data Engines and Action Policies</title>
+<link>https://arxiv.org/abs/2610.22362</link>
+<guid isPermaLink="false">p-2610.22362</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>생성형 시뮬레이션 데이터 엔진과 행동 정책이 공유 메모리로 함께 진화하며 정책의 실패를 겨냥한 환경과 감독을 만드는 CoDA</description>
+</item>
+<item>
+<title>[뉴스] Neural networks are clean</title>
+<link>https://already-clean.goodfire.com/</link>
+<guid isPermaLink="false">hn-50105647</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Goodfire, 신경망을 분해·재구성하지 않고도 원래 뉴런과 회로를 직접 읽어 이해할 수 있다는 해석 연구 발표</description>
+</item>
+<item>
+<title>[뉴스] Muse Spark Open - M5 Ultra Mac Studio 두 대에서 실행하는 멀티모달 오픈 웨이트 모델</title>
+<link>https://research.meta.ai/blog/muse-spark-open</link>
+<guid isPermaLink="false">gn-35431</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta, 816B 파라미터(토큰당 42B 활성) MoE 멀티모달 오픈 웨이트 모델 Muse Spark Open 공개</description>
+</item>
+<item>
+<title>[뉴스] Apple ML Research: Muse Spark Open with MLX on Mac Studio</title>
+<link>https://machinelearning.apple.com/research/mlx-distributed-inference</link>
+<guid isPermaLink="false">hn-50118320</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Apple ML Research, 최신 MLX와 Thunderbolt RDMA로 Mac Studio 클러스터에서 Muse Spark Open을 로컬 실행한 결과 공개</description>
+</item>
+<item>
+<title>[뉴스] Meta’s new commercial terms will allow the scraping of news sites: experts</title>
+<link>https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/</link>
+<guid isPermaLink="false">hn-50111852</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta의 새 상업 약관이 10월 30일부터 비즈니스 계정과 연관된 웹사이트의 스크래핑을 허용해 뉴스 사이트도 포함된다는 법률 전문가 분석</description>
+</item>
+<item>
+<title>[뉴스] 90% of US working hours are spent on tasks not covered well by AI benchmarks</title>
+<link>https://www.mercor.com/research/labor-index/benchmark-map/</link>
+<guid isPermaLink="false">hn-50121179</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Mercor, 미국 근로시간의 90%가 기존 AI 벤치마크로 거의 측정되지 않는 과업에 쓰인다는 'Benchmark Map' 공개</description>
+</item>
+<item>
+<title>[뉴스] Postgres 19 delayed after AI reviewers find more bugs than humans can fix</title>
+<link>https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471</link>
+<guid isPermaLink="false">hn-50119991</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>PostgreSQL 19 출시가 11월로 연기: LLM 코드 리뷰가 사람이 고칠 수 있는 것보다 많은 결함을 찾아내 8~10개 기능을 되돌림</description>
+</item>
+<item>
+<title>[뉴스] Grounding AI agents in biological reality: Building blocks for autonomous wet labs</title>
+<link>https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</link>
+<guid isPermaLink="false">google-grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google Research, AI 에이전트가 실험실 로봇으로 직접 실험을 돌리는 자율 wet lab 연구 3건 공개</description>
+</item>
+<item>
+<title>[뉴스] Designing more efficient quantum circuits with Claude</title>
+<link>https://www.anthropic.com/research/designing-efficient-quantum-circuits</link>
+<guid isPermaLink="false">hn-50121939</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude가 자연어 명세와 자동 평가기만으로 기존 최고 양자 회로 설계를 개선했다고 발표</description>
+</item>
+<item>
+<title>[뉴스] Anthropic, AI 코딩으로 늘어난 변경량에 대응해 Git을 자체 버전 관리 시스템 Scion으로 교체</title>
+<link>https://www.anthropic.com/engineering/redesigning-source-control</link>
+<guid isPermaLink="false">gn-35309</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, AI 코딩으로 폭증한 변경량에 맞춰 모노레포를 Git에서 자체 버전 관리 시스템 Scion으로 5개월 만에 이전</description>
+</item>
+<item>
+<title>[뉴스] 코딩 에이전트 하네스는 돈값을 할까?</title>
+<link>https://martinfowler.com/articles/are-harnesses-worth-the-cost.html</link>
+<guid isPermaLink="false">gn-35449</guid>
+<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
+<description>Martin Fowler 사이트 실험: 코딩 에이전트에 명세·테스트 하네스를 주면 싼 모델도 프런티어 모델 수준으로 통과</description>
+</item>
 <item>
 <title>[논문] Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation</title>
 <link>https://arxiv.org/abs/2610.20571</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35195</guid>
 <pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
 <description>Epoch AI의 InnovationEval: Claude Fable 5와 GPT-5.6 Sol이 인간이 만든 후속 학습 기법 SDPO 수준의 새 방법을 독자 개발하는지 평가한 결과, 각각 2%·15%에 그침.</description>
-</item>
-<item>
-<title>[논문] RSI-Anything: Unlocking Recursive Self-Improvement with World Models</title>
-<link>https://arxiv.org/abs/2610.13912</link>
-<guid isPermaLink="false">p-2610.13912</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>JEPA 기반 예측 world model로 행동·학습 데이터를 고르고 갱신을 검증하는 범용 재귀적 자기개선(RSI) 프레임워크 RSI-Anything.</description>
-</item>
-<item>
-<title>[논문] DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models</title>
-<link>https://arxiv.org/abs/2610.12572</link>
-<guid isPermaLink="false">p-2610.12572</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>보상을 프롬프트 단위로 집계해 reverse-process 상태에 공유 방향을 주는 diffusion 모델 온라인 RL 기법 DiffusionART.</description>
-</item>
-<item>
-<title>[논문] Reflex: Visually Grounded Reactive Humanoid Control</title>
-<link>https://arxiv.org/abs/2610.12772</link>
-<guid isPermaLink="false">p-2610.12772</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>egocentric RGB-D만으로 날아오는 상자를 전신으로 받아내는 휴머노이드 반응 제어 프레임워크 Reflex.</description>
-</item>
-<item>
-<title>[논문] S-Space: Exploring Spatial Workspace in Multimodal Language Models</title>
-<link>https://arxiv.org/abs/2610.13527</link>
-<guid isPermaLink="false">p-2610.13527</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>MLLM 내부에서 객체 토큰이 수평·수직·거리 좌표를 선형으로 인코딩하는 공간 작업공간 S-Space를 발견.</description>
-</item>
-<item>
-<title>[논문] Chronos Policy: Learning Robot Policies on Physical Time</title>
-<link>https://arxiv.org/abs/2610.13929</link>
-<guid isPermaLink="false">p-2610.13929</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>관측 시각과 행동 실행 시각을 명시적으로 조건화해 물리적 시간을 다루는 로봇 정책 Chronos Policy.</description>
-</item>
-<item>
-<title>[뉴스] Muse Wonder</title>
-<link>https://research.meta.ai/blog/muse-wonder</link>
-<guid isPermaLink="false">hn-50059115</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta가 개인·업무용 에이전트를 겨냥한 최상위 모델 Muse Wonder와 Muse Wonder Full을 공개.</description>
-</item>
-<item>
-<title>[뉴스] GLM-Legal</title>
-<link>https://z.ai/blog/glm-legal</link>
-<guid isPermaLink="false">hn-50058507</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Z.ai가 GLM-5.3-Flash 기반 법률 특화 모델 GLM-Legal을 공개(베타 API 신청 접수).</description>
-</item>
-<item>
-<title>[뉴스] The gap in shared understanding of LLM capability is widening</title>
-<link>https://twitter.com/karpathy/status/2109361546505966046</link>
-<guid isPermaLink="false">hn-50047422</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Karpathy: LLM 능력에 대한 사회적 인식 격차가 '두 집단'이 아니라 가파른 깔때기 형태로 벌어지고 있다.</description>
-</item>
-<item>
-<title>[뉴스] Codex CLI installs a persistent, self-updating background daemon by default</title>
-<link>https://github.com/openai/codex/issues/48195</link>
-<guid isPermaLink="false">hn-50060694</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Codex CLI 0.157.0부터 대화형 세션만 열어도 영구 실행되는 백그라운드 데몬이 기본으로 켜진다는 GitHub 이슈가 HN에서 논란.</description>
-</item>
-<item>
-<title>[뉴스] AI coding agents generate more code, but not more software</title>
-<link>https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/</link>
-<guid isPermaLink="false">hn-50059523</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>700여 기업 데이터를 분석한 Harvard 연구: AI 코딩 에이전트 도입 후 코드는 30% 늘었지만 완성된 소프트웨어는 늘지 않았다.</description>
-</item>
-<item>
-<title>[뉴스] OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide</title>
-<link>https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/</link>
-<guid isPermaLink="false">nvidia-ocp-global-summit-vera-rubin-scale-ai-factories</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA가 OCP Global Summit에서 Vera Rubin 랙·컴퓨트 트레이 설계를 MGX를 통해 OCP에 기여.</description>
-</item>
-<item>
-<title>[뉴스] Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X</title>
-<link>https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html</link>
-<guid isPermaLink="false">hn-50063365</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Intel이 HBM 대신 카드당 최대 480GB LPDDR5X를 단 추론 특화 데이터센터 GPU D270을 공개.</description>
-</item>
-<item>
-<title>[뉴스] 리서치 업체, Anthropic IPO가 “올해 가장 터무니없는 상장”이 될거라 경고</title>
-<link>https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html</link>
-<guid isPermaLink="false">gn-35243</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>리서치 업체 New Constructs가 2조 달러 목표로 알려진 Anthropic IPO를 '올해 가장 터무니없는 상장'이라고 경고(CNBC).</description>
-</item>
-<item>
-<title>[뉴스] Thinking will become a hobby</title>
-<link>https://www.spinellis.gr/blog/20261008/?li261008</link>
-<guid isPermaLink="false">hn-50059204</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Diomidis Spinellis: AI가 인지 노동 대부분을 맡게 되면 인간의 '생각'은 사냥·서예처럼 취미가 될 것.</description>
-</item>
-<item>
-<title>[뉴스] 'AI' Is Not a Tool by Rich Hickey</title>
-<link>https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e</link>
-<guid isPermaLink="false">hn-50060269</guid>
-<pubDate>Tue, 13 Oct 2026 08:00:00 +0900</pubDate>
-<description>Clojure 창시자 Rich Hickey: LLM은 사람이 직접 다루는 '도구'가 아니라 일을 넘기는 '자동화'다.</description>
 </item>
 </channel>
 </rss>
