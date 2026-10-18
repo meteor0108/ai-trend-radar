@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sun, 18 Oct 2026 13:59:29 +0900</lastBuildDate>
+<lastBuildDate>Mon, 19 Oct 2026 03:39:52 +0900</lastBuildDate>
+<item>
+<title>[논문] VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models</title>
+<link>https://arxiv.org/abs/2610.21306</link>
+<guid isPermaLink="false">p-2610.21306</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>현재·미래 상태 간 물리적 변화를 명시적 학습 목표로 삼는 VLA 프레임워크</description>
+</item>
+<item>
+<title>[논문] Behavioral Compositionality of Sparse Autoencoder Representations</title>
+<link>https://arxiv.org/abs/2610.21261</link>
+<guid isPermaLink="false">p-2610.21261</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>SAE feature들의 행동 효과가 얼마나 '가산적으로' 합성되는지 측정하는 지표 SAR 제안</description>
+</item>
+<item>
+<title>[논문] Speculative Forcing for Efficient Autoregressive Video Generation</title>
+<link>https://arxiv.org/abs/2610.22347</link>
+<guid isPermaLink="false">p-2610.22347</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>자기회귀 비디오 생성에서 충분히 정제된 토큰을 조기에 확정해 디노이징 계산을 줄이는 Speculative Forcing</description>
+</item>
+<item>
+<title>[논문] Can World and Action Modeling Benefit Each Other under Unified Causal Training?</title>
+<link>https://arxiv.org/abs/2610.21095</link>
+<guid isPermaLink="false">p-2610.21095</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>world modeling과 action modeling을 하나의 causal 학습으로 묶으면 서로 도움이 되는지 검증한 OneWM</description>
+</item>
+<item>
+<title>[논문] SCOPE: Semantic Bounded Credit Optimization for Prompt Engineering in Text-to-image Generation</title>
+<link>https://arxiv.org/abs/2610.22264</link>
+<guid isPermaLink="false">p-2610.22264</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>T2I 프롬프트 재작성 RL에서 의미 단위 span별로 업데이트 가중치를 공유하는 GRPO 목적함수 SCOPE</description>
+</item>
+<item>
+<title>[뉴스] DeepSeek search and fetch – $0.75 per 1000 successful requests</title>
+<link>https://api-docs.deepseek.com/guides/search/</link>
+<guid isPermaLink="false">hn-50138531</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek, 자체 검색엔진 기반 Search·Fetch API 출시 — 성공 요청 1,000건당 0.75달러</description>
+</item>
+<item>
+<title>[뉴스] Investing in the public benefit</title>
+<link>https://www.anthropic.com/news/public-benefit-fund</link>
+<guid isPermaLink="false">anthropic-public-benefit-fund</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 회사 지분 5%를 출연하는 Anthropic Public Benefit Fund 설립</description>
+</item>
+<item>
+<title>[뉴스] Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages</title>
+<link>https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model</link>
+<guid isPermaLink="false">hn-50141429</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 지지하는 AI 안전 법안, 사망·부상 50명 이상 또는 10억 달러 피해 위험일 때만 출시 차단 가능</description>
+</item>
+<item>
+<title>[뉴스] Legal experts warn Meta's new terms still grant broad scraping permissions</title>
+<link>https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/</link>
+<guid isPermaLink="false">hn-50139692</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Meta, 비즈니스 약관에서 'train' 문구를 뺐지만 여전히 광범위한 웹 스크래핑 허용 우려</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping</title>
+<link>https://sphinx-six-theta.vercel.app/</link>
+<guid isPermaLink="false">hn-50137950</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Show HN: Sphinx — 배포 전 AI가 쓴 코드를 이해했는지 퀴즈로 확인하는 훅</description>
+</item>
+<item>
+<title>[뉴스] Websites are closing their doors to AI agents</title>
+<link>https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web</link>
+<guid isPermaLink="false">hn-50141657</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>웹사이트들이 AI 에이전트 접근을 막기 시작했다 (The Verge)</description>
+</item>
+<item>
+<title>[뉴스] Ultramarine 1 Flash - 금융, 법률, 컨설팅 업무와 문서 작성에 특화한 AI 모델</title>
+<link>https://www.paperinstruments.com/ultramarine</link>
+<guid isPermaLink="false">gn-35519</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Ultramarine 1 Flash — GLM-5.3 Flash에 대규모 RL을 적용한 금융·법률·컨설팅 특화 에이전트 모델</description>
+</item>
+<item>
+<title>[뉴스] Linux 7.2 개발 통계 - 기여자 2,652명으로 역대 최다, LLM 지원 패치도 증가</title>
+<link>https://lwn.net/Articles/1088776/</link>
+<guid isPermaLink="false">gn-35551</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Linux 7.2 개발 통계 — 기여자 2,652명 역대 최다, LLM 지원 표시 패치 1,111개로 급증</description>
+</item>
+<item>
+<title>[뉴스] How Far Will AI Assistants Go for a Refund They Can't Get?</title>
+<link>https://www.vals.ai/blogs/impossible-refund</link>
+<guid isPermaLink="false">hn-50140462</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>받을 수 없는 환불을 위해 AI 비서 에이전트는 어디까지 갈까 (Vals AI 실험)</description>
+</item>
+<item>
+<title>[뉴스] Will it be a golden age or a dark age for mathematics (and science)?</title>
+<link>https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/</link>
+<guid isPermaLink="false">hn-50141681</guid>
+<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
+<description>Terence Tao 블로그 기고: 수학·과학에 황금기가 올까, 암흑기가 올까</description>
+</item>
 <item>
 <title>[논문] OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use</title>
 <link>https://arxiv.org/abs/2610.22200</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50105648</guid>
 <pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
 <description>Krea, 요청한 부분만 바꾸는 프로덕션용 이미지 편집 모델 Krea 3 공개</description>
-</item>
-<item>
-<title>[논문] VideoJev: System One Model for Video Understanding and Interaction</title>
-<link>https://arxiv.org/abs/2610.18615</link>
-<guid isPermaLink="false">p-2610.18615</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>MLLM의 자기회귀 디코딩을 구간·선택지 점수 헤드로 바꿔 영상 이해를 빠른 'System One' 결정 문제로 푼 VideoJev</description>
-</item>
-<item>
-<title>[논문] Jeva: System One Models from First Principles</title>
-<link>https://arxiv.org/abs/2610.18773</link>
-<guid isPermaLink="false">p-2610.18773</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>직렬화된 텍스트로 답을 예측하는 대신 결정 문제의 구조를 직접 반영하는 결정 전용 아키텍처 Jeva</description>
-</item>
-<item>
-<title>[논문] GreenWAM: A World Foundation Model for Robotics</title>
-<link>https://arxiv.org/abs/2610.18774</link>
-<guid isPermaLink="false">p-2610.18774</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>20개 로봇 계열을 공통 관절 좌표로 묶어 world model과 policy 역할을 함께 수행하는 로보틱스 world foundation model GreenWAM</description>
-</item>
-<item>
-<title>[논문] Agent-Reflex: Teaching Language Agents to Act Reflectively</title>
-<link>https://arxiv.org/abs/2610.17953</link>
-<guid isPermaLink="false">p-2610.17953</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>노이즈 섞인 도구 피드백과 사용자 개입 속에서 에이전트가 스스로 반성하고 복구하도록 학습시키는 Agent-Reflex</description>
-</item>
-<item>
-<title>[논문] Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes</title>
-<link>https://arxiv.org/abs/2610.18356</link>
-<guid isPermaLink="false">p-2610.18356</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>도시 규모 3D 장면 grounding을 후보 순위화 대신 VLM 에이전트의 능동적 공간 탐색으로 푼 Urbex</description>
-</item>
-<item>
-<title>[뉴스] AI agents aren't 'going rogue.' Frontier labs are skipping security basics</title>
-<link>https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html</link>
-<guid isPermaLink="false">hn-50091788</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI 에이전트의 무단 해킹 사건들은 '폭주'가 아니라 프런티어 연구소들이 보안 기본기를 건너뛴 결과라는 보안 전문가들의 비판</description>
-</item>
-<item>
-<title>[뉴스] Analyzing technical documents with Deep Review</title>
-<link>https://research.google/blog/analyzing-technical-documents-with-deep-review/</link>
-<guid isPermaLink="false">google-analyzing-technical-documents-with-deep-review</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google Research, STOC·ICML·NeurIPS·ICLR 1.6만여 편 사전 검토에 쓰인 에이전트형 문서 검증 시스템 Deep Review 공개 출시</description>
-</item>
-<item>
-<title>[뉴스] Why do LLM pelicans look like this?</title>
-<link>https://arcfu.com/post/the-emperor-pelican-has-no-clothes/</link>
-<guid isPermaLink="false">hn-50090443</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>'펠리컨 자전거 SVG' 결과가 모델마다 비슷한 이유로 LLM 다양성 붕괴를 지적하고 UI 디자인 창의성 벤치마크를 소개</description>
-</item>
-<item>
-<title>[뉴스] Muse Wonder - 대화 간 기억과 장기 작업 수행을 강화한 Meta의 AI 모델</title>
-<link>https://research.meta.ai/blog/muse-wonder</link>
-<guid isPermaLink="false">gn-35251</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta, 대화 간 기억과 장기 작업 수행을 강화한 개인·업무용 에이전트 모델 Muse Wonder와 Muse Wonder Full 공개</description>
-</item>
-<item>
-<title>[뉴스] Linus Torvalds's first LLM-assisted patch series</title>
-<link>https://lwn.net/Articles/1100449/</link>
-<guid isPermaLink="false">hn-50090842</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Linus Torvalds가 LLM을 활용해 작성한 첫 커널 패치 시리즈를 리뷰용으로 공개</description>
-</item>
-<item>
-<title>[뉴스] Anthropic opens Singapore office and signs MOU with the Government of Singapore</title>
-<link>https://www.anthropic.com/news/singapore-office-opening</link>
-<guid isPermaLink="false">anthropic-singapore-office-opening</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 아시아태평양 다섯 번째 사무소를 싱가포르에 열고 싱가포르 디지털개발정보부와 MOU 체결</description>
-</item>
-<item>
-<title>[뉴스] AI 코딩 에이전트는 더 많은 코드를 만들지만, 더 많은 소프트웨어를 만들지는 못함</title>
-<link>https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/</link>
-<guid isPermaLink="false">gn-35257</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>700여 기업 분석 결과, AI 코딩 에이전트 도입 후 코드량은 30% 늘었지만 소프트웨어 산출량 증가는 확인되지 않음</description>
-</item>
-<item>
-<title>[뉴스] Pg_vectorsearch: An index that is faster than pgvector's IVFFlat and HNSW</title>
-<link>https://github.com/timescale/pg_vectorsearch</link>
-<guid isPermaLink="false">hn-50086165</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Timescale, pgvector의 IVFFlat·HNSW보다 빠르다는 PostgreSQL ANN 검색 확장 pg_vectorsearch 공개(alpha)</description>
-</item>
-<item>
-<title>[뉴스] Putting Earth AI to work: Geospatial agents for our planet's biggest challenges</title>
-<link>https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/</link>
-<guid isPermaLink="false">google-putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google Research, 지리공간 foundation model과 도구·사전 계획을 결합한 Geospatial Reasoning 에이전트 기술 보고서와 실험적 접근 확대 발표</description>
-</item>
-<item>
-<title>[뉴스] Janas - SSD를 활용해 RAM보다 큰 MoE 언어 모델을 실행하는 추론 엔진</title>
-<link>https://github.com/prabanta-dev/janas</link>
-<guid isPermaLink="false">gn-35298</guid>
-<pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
-<description>NVMe SSD에서 필요한 expert 가중치를 읽어 RAM보다 큰 MoE 모델을 일반 PC에서 돌리는 로컬 추론 엔진 Janas</description>
 </item>
 </channel>
 </rss>
