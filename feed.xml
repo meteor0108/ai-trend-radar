@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sat, 17 Oct 2026 03:52:53 +0900</lastBuildDate>
+<lastBuildDate>Sun, 18 Oct 2026 13:59:29 +0900</lastBuildDate>
+<item>
+<title>[논문] OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use</title>
+<link>https://arxiv.org/abs/2610.22200</link>
+<guid isPermaLink="false">p-2610.22200</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>GUI와 코드 실행을 함께 쓰는 범용 computer-use 에이전트 스택을 오픈소스로 공개한 OpenGCUA 첫 릴리스</description>
+</item>
+<item>
+<title>[논문] Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation</title>
+<link>https://arxiv.org/abs/2610.21601</link>
+<guid isPermaLink="false">p-2610.21601</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>RL 전후 teacher의 정책 변화를 중간 체크포인트와 비교해 방향이 일치할 때만 전달하는 on-policy distillation 기법</description>
+</item>
+<item>
+<title>[논문] Value as Memory: Online Value-Guided Post-training for General Robot Policies</title>
+<link>https://arxiv.org/abs/2610.22368</link>
+<guid isPermaLink="false">p-2610.22368</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>value 예측을 task-progress memory로 쓰고 실세계 online RL로 범용 로봇 정책을 post-training하는 VaM</description>
+</item>
+<item>
+<title>[논문] Self-Evolving Agent Harness</title>
+<link>https://arxiv.org/abs/2610.18813</link>
+<guid isPermaLink="false">p-2610.18813</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>모델 가중치는 고정한 채 프롬프트·메모리·워크플로·도구 코드 등 에이전트 harness를 스스로 개선하는 과정을 정식화한 서베이·이론 논문</description>
+</item>
+<item>
+<title>[논문] Whole-Body Dexterity</title>
+<link>https://arxiv.org/abs/2610.22184</link>
+<guid isPermaLink="false">p-2610.22184</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>팔·몸통 등 전신을 접촉면으로 써서 큰 물체를 잡고 옮기는 휴머노이드 Whole-Body Dexterity</description>
+</item>
+<item>
+<title>[뉴스] Claude reveals ECDSA curve origins</title>
+<link>https://www.anthropic.com/research/ecdsa-curve-origins</link>
+<guid isPermaLink="false">hn-50122800</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic 내부 연구용 Claude가 25년간 미스터리였던 NIST 타원곡선(P-192~P-521) 시드의 생성 방식을 30분 안에 규명</description>
+</item>
+<item>
+<title>[뉴스] DeepSeek-v4.1-Flash-1017</title>
+<link>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</link>
+<guid isPermaLink="false">hn-50129045</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek가 V4.1-Flash-1017 모델을 Hugging Face에 공개</description>
+</item>
+<item>
+<title>[뉴스] OpenAI discloses four more rogue incidents</title>
+<link>https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/</link>
+<guid isPermaLink="false">hn-50132502</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 오정렬(misalignment) 에이전트 사고 공개 페이지에 4건을 추가해 총 19건을 공개</description>
+</item>
+<item>
+<title>[뉴스] OpenCode Hacked: User credentials leaked</title>
+<link>https://twitter.com/opencode/status/2111516673953935833</link>
+<guid isPermaLink="false">hn-50133401</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>오픈소스 코딩 에이전트 OpenCode가 보안 침해로 OpenCode Console 사용자 1.4%의 자격 증명이 유출됐다고 공지</description>
+</item>
+<item>
+<title>[뉴스] FLUX 3 Image Klein</title>
+<link>https://bfl.ai/blog/flux-3-image-klein</link>
+<guid isPermaLink="false">hn-50123580</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Black Forest Labs가 5.6B 파라미터 오픈 웨이트 이미지 생성·편집 모델 FLUX 3 Image Klein 공개</description>
+</item>
+<item>
+<title>[뉴스] Claude Code 팀의 코드 리뷰 방식</title>
+<link>https://claude.dev/blog/solving-code-review-at-anthropic/</link>
+<guid isPermaLink="false">gn-35495</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Claude가 코드의 약 90%를 작성하는 Claude Code 팀이 코드 리뷰를 자동 검증 중심으로 바꾼 방식</description>
+</item>
+<item>
+<title>[뉴스] Linus Torvalds “AI 사용을 금지하지 않겠다. 자신이 하는 일을 이해해야 한다”</title>
+<link>https://lore.kernel.org/lkml/CAHk-=whTs09_ozN+e09GU68N1wPP56MUzDjrg9rnKxQUa0A_4Q@mail.gmail.com/</link>
+<guid isPermaLink="false">gn-35504</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Linus Torvalds, 리눅스 커널 기여에서 특정 작업에 AI 사용을 금지하는 규칙은 만들지 않겠다고 밝힘</description>
+</item>
+<item>
+<title>[뉴스] Amazon uses AI to monitor union risk in UK warehouses</title>
+<link>https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/</link>
+<guid isPermaLink="false">hn-50132278</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Amazon이 사내 AI 예측 도구 Atlas로 미국·캐나다·영국 창고의 노조 결성 위험을 점수화한다는 내부 문서 공개</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</title>
+<link>https://llmspeed.dev/</link>
+<guid isPermaLink="false">hn-50127979</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>로컬 LLM이 특정 하드웨어에서 얼마나 빠르게 동작할지 미리 체감해볼 수 있는 웹 도구 Llmspeed</description>
+</item>
+<item>
+<title>[뉴스] AI로 하드웨어 역공학하기</title>
+<link>https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/</link>
+<guid isPermaLink="false">gn-35468</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
+<description>Claude Code와 실제 하드웨어 캡처로 Linux 스캐너 드라이버를 만들고 노트북 카메라 화질을 개선한 역공학 사례</description>
+</item>
 <item>
 <title>[논문] T2-z: Test-Time Optimization of Environment Latents for Robotic World Models</title>
 <link>https://arxiv.org/abs/2610.22364</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35298</guid>
 <pubDate>Thu, 15 Oct 2026 08:00:00 +0900</pubDate>
 <description>NVMe SSD에서 필요한 expert 가중치를 읽어 RAM보다 큰 MoE 모델을 일반 PC에서 돌리는 로컬 추론 엔진 Janas</description>
-</item>
-<item>
-<title>[논문] Multi-Stream Attention Residuals</title>
-<link>https://arxiv.org/abs/2610.13630</link>
-<guid isPermaLink="false">p-2610.13630</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Attention Residuals를 깊이 방향 multi-head attention으로 확장해 적은 오버헤드로 사전학습 효율을 높인 잔차 구조 MSAR.</description>
-</item>
-<item>
-<title>[논문] SpatialASM: Internalizing Active Mentalization for Spatial Reasoning</title>
-<link>https://arxiv.org/abs/2610.13832</link>
-<guid isPermaLink="false">p-2610.13832</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>LVLM이 과제에 맞는 시점을 떠올려 장면을 머릿속으로 재구성하는 'Active Spatial Mentalization'을 학습시키는 프레임워크 SpatialASM.</description>
-</item>
-<item>
-<title>[논문] AgentSWE: Can Coding Agents Build the Agent You Actually Want?</title>
-<link>https://arxiv.org/abs/2610.13361</link>
-<guid isPermaLink="false">p-2610.13361</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>코딩 에이전트가 요구사항에 맞는 '에이전트'를 실제로 만들어내는지 생성·수정·최적화 3단계로 검증하는 벤치마크 AgentSWE.</description>
-</item>
-<item>
-<title>[논문] Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations</title>
-<link>https://arxiv.org/abs/2610.13119</link>
-<guid isPermaLink="false">p-2610.13119</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>사람 손목 중심 시연 하나의 코퍼스를 서로 다른 dexterous 로봇 손 학습에 재사용하는 인터페이스 Human2Dex.</description>
-</item>
-<item>
-<title>[논문] Designing Protein Structures from Natural Language</title>
-<link>https://arxiv.org/abs/2610.13917</link>
-<guid isPermaLink="false">p-2610.13917</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>자연어로 원하는 구조·기능을 지정해 전원자(all-atom) 단백질 구조를 생성하는 text-to-protein 모델 Prompteina.</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Argon: Built to solve your hardest problems</title>
-<link>https://deepmind.google/blog/introducing-gemini-4-argon/</link>
-<guid isPermaLink="false">deepmind-introducing-gemini-4-argon</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind가 차세대 프런티어 모델 Gemini 4 Argon을 API(AI Studio·Gemini platform), Antigravity, Gemini 앱에 전 세계 공개.</description>
-</item>
-<item>
-<title>[뉴스] Redesigning source control at Anthropic</title>
-<link>https://www.anthropic.com/engineering/redesigning-source-control</link>
-<guid isPermaLink="false">hn-50073633</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 에이전트 규모의 코드 병합량에 맞춰 자체 버전 관리 시스템 Scion을 만들고 5개월 만에 모노레포를 git에서 완전히 이전.</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Argon for Robotics</title>
-<link>https://deepmind.google/blog/gemini-4-argon-for-robotics/</link>
-<guid isPermaLink="false">deepmind-gemini-4-argon-for-robotics</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Gemini 4 Argon을 로봇 제어·Real2Sim·물리 이해·자기개선 등 로보틱스 전 주기에 적용한 사례 공개, ERQA 87%로 프런티어 모델 중 최고.</description>
-</item>
-<item>
-<title>[뉴스] We turned EmbeddingGemma 2 into a speech-to-text model</title>
-<link>https://eg2.haku.sh/</link>
-<guid isPermaLink="false">hn-50069971</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>임베딩 모델 EmbeddingGemma 2의 오디오 공간에서 단어를 직접 읽어내 온디바이스 음성 인식기로 바꾼 Mac 앱.</description>
-</item>
-<item>
-<title>[뉴스] Character.ai has initiated voluntary Chapter 11 bankruptcy</title>
-<link>https://blog.character.ai/an-update-on-character-ai/</link>
-<guid isPermaLink="false">hn-50068036</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Character.ai가 자발적 Chapter 11 파산 절차를 개시(회사 블로그 공지).</description>
-</item>
-<item>
-<title>[뉴스] Linus Torvalds, Claude Code로 Linux 커널의 대폭 개선 작업 진행 중</title>
-<link>https://www.phoronix.com/news/Linus-Torvalds-Claude-Code</link>
-<guid isPermaLink="false">gn-35265</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>리누스 토발즈가 Claude Code로 코드·테스트·리뷰·패치 소개문을 작성하며 Linux 커널 페이지 캐시 읽기 병목 개선 패치를 진행.</description>
-</item>
-<item>
-<title>[뉴스] Zero to Calc in Six Days: Inside XBOW's Chrome Full Chain</title>
-<link>https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain</link>
-<guid isPermaLink="false">hn-50076503</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>XBOW가 AI 에이전트(gpt-5.6-sol)로 6일 만에 Chrome full-chain 익스플로잇을 만들어 첫 $250,000 full-chain 포상금을 받은 과정 공개.</description>
-</item>
-<item>
-<title>[뉴스] Developing Gemini 4 Argon responsibly and safely</title>
-<link>https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/</link>
-<guid isPermaLink="false">deepmind-developing-gemini-4-argon-responsibly-and-safely</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind가 Gemini 4 Argon의 오용 방지·정렬 안전장치를 설명: 사이버·생물 역량 상승에 따라 차세대 frontier safeguard 적용.</description>
-</item>
-<item>
-<title>[뉴스] OpenAI engineer arrested in bugging of executive conference room</title>
-<link>https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/</link>
-<guid isPermaLink="false">hn-50078141</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI 임원 회의실에 도청 장치를 설치한 혐의로 OpenAI 엔지니어가 체포됨(SF Standard 보도).</description>
-</item>
-<item>
-<title>[뉴스] 최신 AI 모델들, 인간의 알고리듬 혁신에 필적하는 성과를 내는 데 어려움 겪어</title>
-<link>https://epoch.ai/publications/innovationeval</link>
-<guid isPermaLink="false">gn-35195</guid>
-<pubDate>Wed, 14 Oct 2026 08:00:00 +0900</pubDate>
-<description>Epoch AI의 InnovationEval: Claude Fable 5와 GPT-5.6 Sol이 인간이 만든 후속 학습 기법 SDPO 수준의 새 방법을 독자 개발하는지 평가한 결과, 각각 2%·15%에 그침.</description>
 </item>
 </channel>
 </rss>
