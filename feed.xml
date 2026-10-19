@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Mon, 19 Oct 2026 03:39:52 +0900</lastBuildDate>
+<lastBuildDate>Tue, 20 Oct 2026 03:43:09 +0900</lastBuildDate>
+<item>
+<title>[논문] Has GPT-6-Astra Achieved Embodied Intelligence?</title>
+<link>https://arxiv.org/abs/2610.22471</link>
+<guid isPermaLink="false">p-2610.22471</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>GPT-6-Astra가 로봇 조작·내비게이션에서 어디까지 왔는지 12개 벤치마크와 실로봇 8종으로 점검한 리포트</description>
+</item>
+<item>
+<title>[논문] DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses</title>
+<link>https://arxiv.org/abs/2610.23839</link>
+<guid isPermaLink="false">p-2610.23839</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>가설 트리 탐색과 재귀적 자기개선으로 가치 있는 과학 가설을 찾는 연구 에이전트 프레임워크 DiscoveryRSI</description>
+</item>
+<item>
+<title>[논문] DLite: History-free Speculative Decoding for Agentic AI</title>
+<link>https://arxiv.org/abs/2610.23787</link>
+<guid isPermaLink="false">p-2610.23787</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트 워크로드에서 과거 문맥 없이 동작하는 speculative decoding 프레임워크 DLite</description>
+</item>
+<item>
+<title>[논문] BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business</title>
+<link>https://arxiv.org/abs/2610.20424</link>
+<guid isPermaLink="false">p-2610.20424</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>결제 기업의 실제 업무 절차로 만든 장기 에이전트 벤치마크 BizBench — 최종 성공뿐 아니라 실행 중 제약 위반까지 평가</description>
+</item>
+<item>
+<title>[논문] HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents</title>
+<link>https://arxiv.org/abs/2610.23479</link>
+<guid isPermaLink="false">p-2610.23479</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>VLM 코딩 에이전트가 CLI 하나로 양팔 로봇을 제어하며 스스로 도구 코드를 만들어 가는 얇은 harness, HexaShell</description>
+</item>
+<item>
+<title>[뉴스] Timestral: Mistral's time-series foundation models</title>
+<link>https://mistral.ai/news/timestral/</link>
+<guid isPermaLink="false">hn-50150434</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>Mistral, 첫 time-series foundation model 제품군 Timestral 공개 — 209M 파라미터로 3대 벤치마크 1위</description>
+</item>
+<item>
+<title>[뉴스] MiniMax M3.1 Flash</title>
+<link>https://www.minimax.io/blog/minimax-m31f</link>
+<guid isPermaLink="false">hn-50154540</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>MiniMax M3.1 Flash 출시 — 에이전트·코딩·Computer Use 성능을 끌어올리고 사용 비용 70% 절감</description>
+</item>
+<item>
+<title>[뉴스] Mercury 3: Diffusion at scale</title>
+<link>https://www.inceptionlabs.ai/blog/introducing-mercury-3</link>
+<guid isPermaLink="false">hn-50155245</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>Inception, 'diffusion LLM도 스케일된다'며 Mercury 3 공개 — 1,000+ tok/s로 GPT-6 Luna·Claude Haiku 5.5급</description>
+</item>
+<item>
+<title>[뉴스] Anthropic의 고용 변화 - 신규 기술직 채용의 주니어 비중, 27%에서 9%로 감소</title>
+<link>https://www.anthropic.com/research/employment-at-anthropic</link>
+<guid isPermaLink="false">gn-35600</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 내부 고용 변화 분석 공개 — 신규 기술직 채용 중 주니어 비중 27%→9%</description>
+</item>
+<item>
+<title>[뉴스] Hybrid Reasoning Agents: LLM agents that think in latent space, act through text</title>
+<link>https://arxiv.org/abs/2610.18861</link>
+<guid isPermaLink="false">hn-50145337</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>잠재 공간에서 생각하고 텍스트로 행동하는 LLM 에이전트, Hybrid Reasoning Agents 논문이 HN에서 화제</description>
+</item>
+<item>
+<title>[뉴스] CERN and Mistral sign a statement of intent to establish a strategic partnership</title>
+<link>https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/</link>
+<guid isPermaLink="false">hn-50153630</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>CERN과 Mistral, 과학용 foundation model 개발을 위한 장기 전략적 파트너십 의향서 체결</description>
+</item>
+<item>
+<title>[뉴스] A hacker broke into John Deere and SharkNinja with an army of AI agents</title>
+<link>https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins</link>
+<guid isPermaLink="false">hn-50152877</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>해커가 AI 에이전트 군단으로 John Deere·SharkNinja 등 100개 이상 웹사이트 침입</description>
+</item>
+<item>
+<title>[뉴스] Anthropic이 제안한 AI 안전 법안, 50명 사망이나 10억 달러 피해 위험이 있어야 작동</title>
+<link>https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model</link>
+<guid isPermaLink="false">gn-35588</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic 제안 AI 안전 법안, 10억 달러 피해나 50명 초과 사상 위험이 있어야 출시 차단</description>
+</item>
+<item>
+<title>[뉴스] 웹사이트들이 AI 에이전트에 문을 닫고 있음</title>
+<link>https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web</link>
+<guid isPermaLink="false">gn-35590</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>예약·쇼핑을 대신하는 AI 에이전트, 주요 웹사이트들의 접근 차단에 부딪힘</description>
+</item>
+<item>
+<title>[뉴스] AI는 수학과 과학에 황금기를 가져올까, 암흑기를 가져올까?</title>
+<link>https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/</link>
+<guid isPermaLink="false">gn-35596</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
+<description>Terence Tao 블로그 기고: LLM은 수학·과학에 황금기를 가져올까, 암흑기를 가져올까</description>
+</item>
 <item>
 <title>[논문] VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models</title>
 <link>https://arxiv.org/abs/2610.21306</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35449</guid>
 <pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
 <description>Martin Fowler 사이트 실험: 코딩 에이전트에 명세·테스트 하네스를 주면 싼 모델도 프런티어 모델 수준으로 통과</description>
-</item>
-<item>
-<title>[논문] Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation</title>
-<link>https://arxiv.org/abs/2610.20571</link>
-<guid isPermaLink="false">p-2610.20571</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>시나리오를 장소·카메라·사건 시간이 명시된 샷 요청으로 바꾸고 장면·사건 메모리로 샷 간 일관성을 지키는 에이전트형 장편 영상 생성 프레임워크 ATAS</description>
-</item>
-<item>
-<title>[논문] Towards Agentic Robots: Model, Data, Environment, and Harness</title>
-<link>https://arxiv.org/abs/2610.20442</link>
-<guid isPermaLink="false">p-2610.20442</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>에이전트가 지시를 해석하고 오류를 스스로 고치는 "agentic robots"를 Model·Data·Environment·Harness 4개 영역 17개 범주로 정리한 서베이</description>
-</item>
-<item>
-<title>[논문] Player-1: Learning to Play from Synthetic Experience</title>
-<link>https://arxiv.org/abs/2610.20584</link>
-<guid isPermaLink="false">p-2610.20584</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>합성 게임 환경에서의 RL로 computer-use 모델의 게임 조작 능력을 시연 데이터 이상으로 끌어올린 Player-1</description>
-</item>
-<item>
-<title>[논문] More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</title>
-<link>https://arxiv.org/abs/2610.19789</link>
-<guid isPermaLink="false">p-2610.19789</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>에이전트 RL의 self-distillation 기법 10종을 같은 조건에서 GRPO와 비교한 132회·12,124 H800 GPU시간 규모의 재검증 연구</description>
-</item>
-<item>
-<title>[논문] $λ_0$: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation</title>
-<link>https://arxiv.org/abs/2610.18950</link>
-<guid isPermaLink="false">p-2610.18950</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>500시간 1인칭 인간 loco-manipulation 데이터 HumanVerse로 휴머노이드 전신 foundation model λ0를 학습</description>
-</item>
-<item>
-<title>[뉴스] OpenCode 2.0</title>
-<link>https://anoma.ly/notes/opencode-2-0/</link>
-<guid isPermaLink="false">hn-50094994</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenCode 2.0 출시: 단일 백그라운드 서비스 구조, MCP를 함수로 바꾸는 Code Mode, 백그라운드 하위 에이전트 도입</description>
-</item>
-<item>
-<title>[뉴스] Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models</title>
-<link>https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/</link>
-<guid isPermaLink="false">nvidia-nemotron-3-5-super-vl</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA, 120B 오픈 멀티모달 에이전트 모델 Nemotron 3.5 Super VL과 엣지용 Bolt 74B-A9B·E4B 공개</description>
-</item>
-<item>
-<title>[뉴스] Muse Spark Open</title>
-<link>https://research.meta.ai/blog/muse-spark-open</link>
-<guid isPermaLink="false">hn-50107379</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta, 오픈 모델 Muse Spark Open 공개 — Hugging Face에 Muse-Spark-Open-816B-A42B로 게시</description>
-</item>
-<item>
-<title>[뉴스] Frontier Pre-Training at Microsoft AI</title>
-<link>https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/</link>
-<guid isPermaLink="false">hn-50105791</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Microsoft AI, 총 2.8T·활성 80B 파라미터 MoE 베이스 모델 MAI-Base-2 사전학습 완료</description>
-</item>
-<item>
-<title>[뉴스] An update on independent evaluators</title>
-<link>https://www.anthropic.com/news/an-update-on-independent-evaluators</link>
-<guid isPermaLink="false">anthropic-an-update-on-independent-evaluators</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, METR 평가팀에 "직원 수준" 내부 접근 권한을 주고 독립 위험 평가 결과를 공개하게 함</description>
-</item>
-<item>
-<title>[뉴스] LFM2.5-24B-A2B: Built for fast on-device agents</title>
-<link>https://www.liquid.ai/blog/lfm2-5-24b-a2b</link>
-<guid isPermaLink="false">hn-50097369</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Liquid AI, 활성 2B의 24B MoE 추론 모델 LFM2.5-24B-A2B를 온디바이스 에이전트용 오픈 웨이트로 공개</description>
-</item>
-<item>
-<title>[뉴스] Simons Foundation launches $15M effort to help mathematicians navigate AI era</title>
-<link>https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/</link>
-<guid isPermaLink="false">hn-50104654</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Simons Foundation·Anthropic·OpenAI, 수학계의 AI 시대 대응을 위한 1,500만 달러 프로그램 출범</description>
-</item>
-<item>
-<title>[뉴스] I Know Why the Mathematicians Weep</title>
-<link>https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep</link>
-<guid isPermaLink="false">hn-50103630</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI의 대량 수학 증명 공개 이후 수학자들이 느끼는 "기술적 상실감"을 다룬 Derek Thompson의 에세이</description>
-</item>
-<item>
-<title>[뉴스] Accelerating the search for antimicrobial peptides with Google Antigravity</title>
-<link>https://deepmind.google/blog/accelerating-antimicrobial-discovery/</link>
-<guid isPermaLink="false">deepmind-accelerating-antimicrobial-discovery</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind, 에이전트 개발 플랫폼 Google Antigravity로 새 항균 펩타이드 후보를 찾은 과정 공개</description>
-</item>
-<item>
-<title>[뉴스] Krea 3 – An image model built for editing at scale</title>
-<link>https://www.krea.ai/krea-3</link>
-<guid isPermaLink="false">hn-50105648</guid>
-<pubDate>Fri, 16 Oct 2026 08:00:00 +0900</pubDate>
-<description>Krea, 요청한 부분만 바꾸는 프로덕션용 이미지 편집 모델 Krea 3 공개</description>
 </item>
 </channel>
 </rss>
