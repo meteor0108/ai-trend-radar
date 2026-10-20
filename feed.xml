@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 20 Oct 2026 03:43:09 +0900</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 03:41:37 +0900</lastBuildDate>
+<item>
+<title>[논문] MemT-1.0: Towards Memory-Native Evolution</title>
+<link>https://arxiv.org/abs/2610.26825</link>
+<guid isPermaLink="false">p-2610.26825</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>Gated DeltaNet-2 기반으로 메모리를 모델 연산 안에 내재화한 메모리 파운데이션 모델 MemT-1.0 공개</description>
+</item>
+<item>
+<title>[논문] ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation</title>
+<link>https://arxiv.org/abs/2610.25690</link>
+<guid isPermaLink="false">p-2610.25690</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>인터넷 1인칭 영상으로 목표 지향 시각 동역학을 배워 언어 조건 로봇 내비게이션에 쓰는 ScaleNav</description>
+</item>
+<item>
+<title>[논문] Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</title>
+<link>https://arxiv.org/abs/2610.26802</link>
+<guid isPermaLink="false">p-2610.26802</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>LoRA로 최대 104B 멀티모달 백본을 뇌 반응 예측에 맞춘 BrainLoRA, Algonauts 2025 최고 성능</description>
+</item>
+<item>
+<title>[논문] EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience</title>
+<link>https://arxiv.org/abs/2610.26625</link>
+<guid isPermaLink="false">p-2610.26625</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>1인칭 영상에서 카메라·장면·손·물체를 한 번에 world 좌표로 복원하는 EgoXperience 풀스택</description>
+</item>
+<item>
+<title>[논문] Learning from Fleet Experience: A Collective Learning Paradigm for Robots</title>
+<link>https://arxiv.org/abs/2610.25736</link>
+<guid isPermaLink="false">p-2610.25736</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>로봇 군단이 실행 경험을 공유해 공통 정책을 개선하는 collective experience learning</description>
+</item>
+<item>
+<title>[뉴스] DeepInfer: High-performance inference framework for DeepSeek models</title>
+<link>https://github.com/deepseek-ai/DeepInfer</link>
+<guid isPermaLink="false">hn-50163277</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek, 자사 대규모 프로덕션 서비스를 돌리는 추론 프레임워크 DeepInfer 오픈소스 공개</description>
+</item>
+<item>
+<title>[뉴스] Voxtral 3</title>
+<link>https://mistral.ai/news/voxtral-3/</link>
+<guid isPermaLink="false">hn-50168396</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>Mistral, 50개+ 언어 음성 인식·감정 표현 TTS·voice agent SDK를 묶은 Voxtral 3 공개</description>
+</item>
+<item>
+<title>[뉴스] WhatsApp's help pages hid LLM instructions: dont recommend a regulator</title>
+<link>https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions</link>
+<guid isPermaLink="false">hn-50159341</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>WhatsApp 도움말 페이지에 화면엔 안 보이고 AI만 읽는 지시문 — '규제기관을 추천하지 말라'</description>
+</item>
+<item>
+<title>[뉴스] DeepSeek banned from U.S. federal civilian agencies under new DHS order</title>
+<link>https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/</link>
+<guid isPermaLink="false">hn-50154244</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>미 국토안보부(DHS) 명령으로 DeepSeek이 미국 연방 민간 기관에서 사용 금지</description>
+</item>
+<item>
+<title>[뉴스] OpenAI acquires Orchestra Bio</title>
+<link>https://openai.com/index/openai-to-acquire-orchestra-bio</link>
+<guid isPermaLink="false">openai-openai-to-acquire-orchestra-bio</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 생명과학 R&amp;D 운영에 AI를 적용하는 Orchestra Bio 인수</description>
+</item>
+<item>
+<title>[뉴스] Publish fake stats, get cited in LLMs</title>
+<link>https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web</link>
+<guid isPermaLink="false">hn-50165801</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>가짜 통계 5만 개를 올린 사이트가 ChatGPT에 인용되며 웹 곳곳으로 퍼진 GEO 실험</description>
+</item>
+<item>
+<title>[뉴스] How abliterated models can get you pwned</title>
+<link>https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned</link>
+<guid isPermaLink="false">hn-50159245</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>abliterated 모델에 백도어를 심어 Codex CLI에서 자격 증명을 빼내는 개념 증명</description>
+</item>
+<item>
+<title>[뉴스] Harness Engineering 101 - Python 약 300줄로 배우는 AI 에이전트 구현</title>
+<link>https://github.com/IsuruMaduranga/harness-engineering-101</link>
+<guid isPermaLink="false">gn-35651</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>프레임워크 없이 순수 Python 약 300줄로 AI 에이전트를 만들며 하네스 원리를 배우는 입문서</description>
+</item>
+<item>
+<title>[뉴스] Google open-sources TorchTPU, a native PyTorch back end for TPUs</title>
+<link>https://github.com/google-pytorch/torch_tpu</link>
+<guid isPermaLink="false">hn-50169053</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google, TPU에서 PyTorch를 네이티브로 돌리는 백엔드 TorchTPU 오픈소스 공개</description>
+</item>
+<item>
+<title>[뉴스] Advancing coding in low‑resource programming languages</title>
+<link>https://openai.com/index/low-resource-programming-languages</link>
+<guid isPermaLink="false">openai-low-resource-programming-languages</guid>
+<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 학습 데이터가 적은 프로그래밍 언어에서 ChatGPT 코딩 능력 개선 — SQLite·COBOL 마이그레이션 평가 신설</description>
+</item>
 <item>
 <title>[논문] Has GPT-6-Astra Achieved Embodied Intelligence?</title>
 <link>https://arxiv.org/abs/2610.22471</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35468</guid>
 <pubDate>Sun, 18 Oct 2026 08:00:00 +0900</pubDate>
 <description>Claude Code와 실제 하드웨어 캡처로 Linux 스캐너 드라이버를 만들고 노트북 카메라 화질을 개선한 역공학 사례</description>
-</item>
-<item>
-<title>[논문] T2-z: Test-Time Optimization of Environment Latents for Robotic World Models</title>
-<link>https://arxiv.org/abs/2610.22364</link>
-<guid isPermaLink="false">p-2610.22364</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>로봇 world model에 학습 가능한 환경 latent를 붙여 마찰·질량 같은 보이지 않는 환경 요인을 테스트 시점 최적화로 추론하는 T2-Z</description>
-</item>
-<item>
-<title>[논문] Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation</title>
-<link>https://arxiv.org/abs/2610.22342</link>
-<guid isPermaLink="false">p-2610.22342</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>촉각 장갑으로 모은 1,000시간 HumanTouch 데이터로 시각 토큰을 감독하고 촉각 경로로 행동을 조건화하는 VTLA 모델 Spark-0</description>
-</item>
-<item>
-<title>[논문] Dexterity from Supervised Play</title>
-<link>https://arxiv.org/abs/2610.22340</link>
-<guid isPermaLink="false">p-2610.22340</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>몇 분의 사람 놀이 시연으로 배운 play policy가 스스로 몇 시간의 상호작용 데이터를 모아 world model을 학습하고 MPC를 이끄는 DSP</description>
-</item>
-<item>
-<title>[논문] CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance</title>
-<link>https://arxiv.org/abs/2610.21453</link>
-<guid isPermaLink="false">p-2610.21453</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>고정된 VLA 정책에 사용자 선호를 기억하는 계획 루프와 위험 접촉을 막고 실패를 복구하는 실행 루프를 더한 로봇 보조 하네스 CarryOn</description>
-</item>
-<item>
-<title>[논문] CoDA: Co-Evolution of Data Engines and Action Policies</title>
-<link>https://arxiv.org/abs/2610.22362</link>
-<guid isPermaLink="false">p-2610.22362</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>생성형 시뮬레이션 데이터 엔진과 행동 정책이 공유 메모리로 함께 진화하며 정책의 실패를 겨냥한 환경과 감독을 만드는 CoDA</description>
-</item>
-<item>
-<title>[뉴스] Neural networks are clean</title>
-<link>https://already-clean.goodfire.com/</link>
-<guid isPermaLink="false">hn-50105647</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Goodfire, 신경망을 분해·재구성하지 않고도 원래 뉴런과 회로를 직접 읽어 이해할 수 있다는 해석 연구 발표</description>
-</item>
-<item>
-<title>[뉴스] Muse Spark Open - M5 Ultra Mac Studio 두 대에서 실행하는 멀티모달 오픈 웨이트 모델</title>
-<link>https://research.meta.ai/blog/muse-spark-open</link>
-<guid isPermaLink="false">gn-35431</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta, 816B 파라미터(토큰당 42B 활성) MoE 멀티모달 오픈 웨이트 모델 Muse Spark Open 공개</description>
-</item>
-<item>
-<title>[뉴스] Apple ML Research: Muse Spark Open with MLX on Mac Studio</title>
-<link>https://machinelearning.apple.com/research/mlx-distributed-inference</link>
-<guid isPermaLink="false">hn-50118320</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Apple ML Research, 최신 MLX와 Thunderbolt RDMA로 Mac Studio 클러스터에서 Muse Spark Open을 로컬 실행한 결과 공개</description>
-</item>
-<item>
-<title>[뉴스] Meta’s new commercial terms will allow the scraping of news sites: experts</title>
-<link>https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/</link>
-<guid isPermaLink="false">hn-50111852</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta의 새 상업 약관이 10월 30일부터 비즈니스 계정과 연관된 웹사이트의 스크래핑을 허용해 뉴스 사이트도 포함된다는 법률 전문가 분석</description>
-</item>
-<item>
-<title>[뉴스] 90% of US working hours are spent on tasks not covered well by AI benchmarks</title>
-<link>https://www.mercor.com/research/labor-index/benchmark-map/</link>
-<guid isPermaLink="false">hn-50121179</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Mercor, 미국 근로시간의 90%가 기존 AI 벤치마크로 거의 측정되지 않는 과업에 쓰인다는 'Benchmark Map' 공개</description>
-</item>
-<item>
-<title>[뉴스] Postgres 19 delayed after AI reviewers find more bugs than humans can fix</title>
-<link>https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471</link>
-<guid isPermaLink="false">hn-50119991</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>PostgreSQL 19 출시가 11월로 연기: LLM 코드 리뷰가 사람이 고칠 수 있는 것보다 많은 결함을 찾아내 8~10개 기능을 되돌림</description>
-</item>
-<item>
-<title>[뉴스] Grounding AI agents in biological reality: Building blocks for autonomous wet labs</title>
-<link>https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</link>
-<guid isPermaLink="false">google-grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google Research, AI 에이전트가 실험실 로봇으로 직접 실험을 돌리는 자율 wet lab 연구 3건 공개</description>
-</item>
-<item>
-<title>[뉴스] Designing more efficient quantum circuits with Claude</title>
-<link>https://www.anthropic.com/research/designing-efficient-quantum-circuits</link>
-<guid isPermaLink="false">hn-50121939</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Claude가 자연어 명세와 자동 평가기만으로 기존 최고 양자 회로 설계를 개선했다고 발표</description>
-</item>
-<item>
-<title>[뉴스] Anthropic, AI 코딩으로 늘어난 변경량에 대응해 Git을 자체 버전 관리 시스템 Scion으로 교체</title>
-<link>https://www.anthropic.com/engineering/redesigning-source-control</link>
-<guid isPermaLink="false">gn-35309</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, AI 코딩으로 폭증한 변경량에 맞춰 모노레포를 Git에서 자체 버전 관리 시스템 Scion으로 5개월 만에 이전</description>
-</item>
-<item>
-<title>[뉴스] 코딩 에이전트 하네스는 돈값을 할까?</title>
-<link>https://martinfowler.com/articles/are-harnesses-worth-the-cost.html</link>
-<guid isPermaLink="false">gn-35449</guid>
-<pubDate>Sat, 17 Oct 2026 08:00:00 +0900</pubDate>
-<description>Martin Fowler 사이트 실험: 코딩 에이전트에 명세·테스트 하네스를 주면 싼 모델도 프런티어 모델 수준으로 통과</description>
 </item>
 </channel>
 </rss>
