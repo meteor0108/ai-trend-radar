@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 22 Oct 2026 03:41:36 +0900</lastBuildDate>
+<lastBuildDate>Fri, 23 Oct 2026 03:39:55 +0900</lastBuildDate>
+<item>
+<title>[논문] DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations</title>
+<link>https://arxiv.org/abs/2610.29997</link>
+<guid isPermaLink="false">p-2610.29997</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>사람 시연을 로봇 레퍼런스로 바꿔 하나의 정책으로 양손 dexterous 조작을 추적하는 범용 bimanual tracker</description>
+</item>
+<item>
+<title>[논문] Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation</title>
+<link>https://arxiv.org/abs/2610.29989</link>
+<guid isPermaLink="false">p-2610.29989</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>autoregressive 비디오 확산 모델이 장면의 변화를 배우도록 미래 chunk를 예측하는 보조 목표 FCP</description>
+</item>
+<item>
+<title>[논문] Cache Engineering for Agents</title>
+<link>https://arxiv.org/abs/2610.28577</link>
+<guid isPermaLink="false">p-2610.28577</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트가 trajectory를 고치지 않고 KV cache를 직접 drop·reposition하는 'cache engineering'과 서빙 엔진 AKV</description>
+</item>
+<item>
+<title>[논문] StreamEval: Evaluating Interactive Streaming Video Generation Models</title>
+<link>https://arxiv.org/abs/2610.28402</link>
+<guid isPermaLink="false">p-2610.28402</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>아바타 대화·월드 생성·편집 등 실시간 인터랙티브 스트리밍 비디오 생성을 평가하는 벤치마크 StreamEval</description>
+</item>
+<item>
+<title>[논문] Agentic World Action Models</title>
+<link>https://arxiv.org/abs/2610.30136</link>
+<guid isPermaLink="false">p-2610.30136</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>코드 기반 계획과 비디오·행동 예측을 하나의 mixture-of-transformers로 묶은 agentic world action model AW-0</description>
+</item>
+<item>
+<title>[뉴스] Claude Duet</title>
+<link>https://claude.com/product/claude-duet</link>
+<guid isPermaLink="false">hn-50186037</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 먼저 연락하며 일을 대신 처리하는 개인 AI 에이전트 'Claude Duet' 연구 프리뷰 공개</description>
+</item>
+<item>
+<title>[뉴스] Donating Agent Skills to the Agentic AI Foundation</title>
+<link>https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation</link>
+<guid isPermaLink="false">anthropic-donating-agent-skills-to-the-agentic-ai-foundation</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Agent Skills 표준을 Linux Foundation 산하 Agentic AI Foundation에 기증</description>
+</item>
+<item>
+<title>[뉴스] WorldTUI: I trained a 360M model to pretend to be a terminal</title>
+<link>https://simedw.com/2026/10/21/world-model-terminal/</link>
+<guid isPermaLink="false">hn-50190363</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>360M 파라미터 언어 모델을 셸 없이 키 입력만으로 화면 변화를 예측하는 '터미널 world model'로 학습한 WorldTUI</description>
+</item>
+<item>
+<title>[뉴스] DeepSeek, 실서비스 추론 엔진 DeepInfer를 오픈소스로 공개</title>
+<link>https://github.com/deepseek-ai/DeepInfer</link>
+<guid isPermaLink="false">gn-35703</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>DeepSeek, 자사 대규모 서비스를 구동하는 추론 엔진 DeepInfer를 Apache 2.0으로 공개</description>
+</item>
+<item>
+<title>[뉴스] NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models</title>
+<link>https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/</link>
+<guid isPermaLink="false">nvidia-cosmos-open-train-evaluate-deploy-world-models</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, world model 플랫폼 Cosmos에 학습 도구·시뮬레이션 체크포인트·Cosmos Data Factory 블루프린트 추가</description>
+</item>
+<item>
+<title>[뉴스] OpenAI CLI</title>
+<link>https://github.com/openai/openai-cli</link>
+<guid isPermaLink="false">hn-50191507</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 터미널과 셸 스크립트에서 REST API를 직접 호출하는 공식 OpenAI CLI 공개</description>
+</item>
+<item>
+<title>[뉴스] Nvidia OpenShell</title>
+<link>https://github.com/NVIDIA/OpenShell</link>
+<guid isPermaLink="false">hn-50198675</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA OpenShell 0.1.x - 자율 AI 에이전트를 정책 기반 샌드박스에서 안전하게 실행하는 런타임</description>
+</item>
+<item>
+<title>[뉴스] 한국의 신규 AI 파생 모델 절반 가까이가 중국 Qwen 기반임</title>
+<link>https://rbnkorea.org/insight/?bmode=view&amp;idx=175120449</link>
+<guid isPermaLink="false">gn-35785</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>2026년 한국 계정의 신규 Hugging Face 파생 언어모델 49.3%가 중국 모델 기반, 대부분 Qwen</description>
+</item>
+<item>
+<title>[뉴스] Beyond tree cover: mapping the world’s forest types</title>
+<link>https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/</link>
+<guid isPermaLink="false">deepmind-beyond-tree-cover-mapping-the-worlds-forest-types</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind·Google Research, 전 세계 10m 단위로 숲 유형을 구분한 지도 ForTy 2020 공개</description>
+</item>
+<item>
+<title>[뉴스] Using LLM for confidence scoring is a bad idea</title>
+<link>https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html</link>
+<guid isPermaLink="false">hn-50176082</guid>
+<pubDate>Fri, 23 Oct 2026 08:00:00 +0900</pubDate>
+<description>LLM에게 confidence 점수를 물어 쓰는 설계가 왜 믿을 수 없는지 설명한 글</description>
+</item>
 <item>
 <title>[논문] Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds</title>
 <link>https://arxiv.org/abs/2610.27999</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35596</guid>
 <pubDate>Tue, 20 Oct 2026 08:00:00 +0900</pubDate>
 <description>Terence Tao 블로그 기고: LLM은 수학·과학에 황금기를 가져올까, 암흑기를 가져올까</description>
-</item>
-<item>
-<title>[논문] VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models</title>
-<link>https://arxiv.org/abs/2610.21306</link>
-<guid isPermaLink="false">p-2610.21306</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>현재·미래 상태 간 물리적 변화를 명시적 학습 목표로 삼는 VLA 프레임워크</description>
-</item>
-<item>
-<title>[논문] Behavioral Compositionality of Sparse Autoencoder Representations</title>
-<link>https://arxiv.org/abs/2610.21261</link>
-<guid isPermaLink="false">p-2610.21261</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>SAE feature들의 행동 효과가 얼마나 '가산적으로' 합성되는지 측정하는 지표 SAR 제안</description>
-</item>
-<item>
-<title>[논문] Speculative Forcing for Efficient Autoregressive Video Generation</title>
-<link>https://arxiv.org/abs/2610.22347</link>
-<guid isPermaLink="false">p-2610.22347</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>자기회귀 비디오 생성에서 충분히 정제된 토큰을 조기에 확정해 디노이징 계산을 줄이는 Speculative Forcing</description>
-</item>
-<item>
-<title>[논문] Can World and Action Modeling Benefit Each Other under Unified Causal Training?</title>
-<link>https://arxiv.org/abs/2610.21095</link>
-<guid isPermaLink="false">p-2610.21095</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>world modeling과 action modeling을 하나의 causal 학습으로 묶으면 서로 도움이 되는지 검증한 OneWM</description>
-</item>
-<item>
-<title>[논문] SCOPE: Semantic Bounded Credit Optimization for Prompt Engineering in Text-to-image Generation</title>
-<link>https://arxiv.org/abs/2610.22264</link>
-<guid isPermaLink="false">p-2610.22264</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>T2I 프롬프트 재작성 RL에서 의미 단위 span별로 업데이트 가중치를 공유하는 GRPO 목적함수 SCOPE</description>
-</item>
-<item>
-<title>[뉴스] DeepSeek search and fetch – $0.75 per 1000 successful requests</title>
-<link>https://api-docs.deepseek.com/guides/search/</link>
-<guid isPermaLink="false">hn-50138531</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>DeepSeek, 자체 검색엔진 기반 Search·Fetch API 출시 — 성공 요청 1,000건당 0.75달러</description>
-</item>
-<item>
-<title>[뉴스] Investing in the public benefit</title>
-<link>https://www.anthropic.com/news/public-benefit-fund</link>
-<guid isPermaLink="false">anthropic-public-benefit-fund</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 회사 지분 5%를 출연하는 Anthropic Public Benefit Fund 설립</description>
-</item>
-<item>
-<title>[뉴스] Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages</title>
-<link>https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model</link>
-<guid isPermaLink="false">hn-50141429</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 지지하는 AI 안전 법안, 사망·부상 50명 이상 또는 10억 달러 피해 위험일 때만 출시 차단 가능</description>
-</item>
-<item>
-<title>[뉴스] Legal experts warn Meta's new terms still grant broad scraping permissions</title>
-<link>https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/</link>
-<guid isPermaLink="false">hn-50139692</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Meta, 비즈니스 약관에서 'train' 문구를 뺐지만 여전히 광범위한 웹 스크래핑 허용 우려</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping</title>
-<link>https://sphinx-six-theta.vercel.app/</link>
-<guid isPermaLink="false">hn-50137950</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Show HN: Sphinx — 배포 전 AI가 쓴 코드를 이해했는지 퀴즈로 확인하는 훅</description>
-</item>
-<item>
-<title>[뉴스] Websites are closing their doors to AI agents</title>
-<link>https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web</link>
-<guid isPermaLink="false">hn-50141657</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>웹사이트들이 AI 에이전트 접근을 막기 시작했다 (The Verge)</description>
-</item>
-<item>
-<title>[뉴스] Ultramarine 1 Flash - 금융, 법률, 컨설팅 업무와 문서 작성에 특화한 AI 모델</title>
-<link>https://www.paperinstruments.com/ultramarine</link>
-<guid isPermaLink="false">gn-35519</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Ultramarine 1 Flash — GLM-5.3 Flash에 대규모 RL을 적용한 금융·법률·컨설팅 특화 에이전트 모델</description>
-</item>
-<item>
-<title>[뉴스] Linux 7.2 개발 통계 - 기여자 2,652명으로 역대 최다, LLM 지원 패치도 증가</title>
-<link>https://lwn.net/Articles/1088776/</link>
-<guid isPermaLink="false">gn-35551</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Linux 7.2 개발 통계 — 기여자 2,652명 역대 최다, LLM 지원 표시 패치 1,111개로 급증</description>
-</item>
-<item>
-<title>[뉴스] How Far Will AI Assistants Go for a Refund They Can't Get?</title>
-<link>https://www.vals.ai/blogs/impossible-refund</link>
-<guid isPermaLink="false">hn-50140462</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>받을 수 없는 환불을 위해 AI 비서 에이전트는 어디까지 갈까 (Vals AI 실험)</description>
-</item>
-<item>
-<title>[뉴스] Will it be a golden age or a dark age for mathematics (and science)?</title>
-<link>https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/</link>
-<guid isPermaLink="false">hn-50141681</guid>
-<pubDate>Mon, 19 Oct 2026 08:00:00 +0900</pubDate>
-<description>Terence Tao 블로그 기고: 수학·과학에 황금기가 올까, 암흑기가 올까</description>
 </item>
 </channel>
 </rss>
