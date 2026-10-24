@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-24T03:41:16+09:00",
+  "updated": "2026-10-25T03:42:55+09:00",
   "days": [
+    {
+      "date": "2026-10-25",
+      "counts": {
+        "paper": 20,
+        "news": 17
+      },
+      "keywords": [],
+      "failed": [
+        "deepmind"
+      ]
+    },
     {
       "date": "2026-10-24",
       "counts": {

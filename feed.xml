@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sat, 24 Oct 2026 03:41:16 +0900</lastBuildDate>
+<lastBuildDate>Sun, 25 Oct 2026 03:42:55 +0900</lastBuildDate>
+<item>
+<title>[논문] AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics</title>
+<link>https://arxiv.org/abs/2610.28589</link>
+<guid isPermaLink="false">p-2610.28589</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트처럼 로봇 planner 자체를 post-training하는 프레임워크 AgenticRoboRL</description>
+</item>
+<item>
+<title>[논문] TraceForge: Distilling with Your Own Thinking</title>
+<link>https://arxiv.org/abs/2610.29680</link>
+<guid isPermaLink="false">p-2610.29680</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>교사 모델의 답만 보고 학생 모델 계열의 스타일로 reasoning trace를 생성해 distillation에 쓰는 TraceForge</description>
+</item>
+<item>
+<title>[논문] UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry</title>
+<link>https://arxiv.org/abs/2610.30991</link>
+<guid isPermaLink="false">p-2610.30991</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>3D scene flow를 vision·action과 동등한 세 번째 모달리티로 다루는 통합 World-Action Model UniFlowWAM</description>
+</item>
+<item>
+<title>[논문] RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention</title>
+<link>https://arxiv.org/abs/2610.31372</link>
+<guid isPermaLink="false">p-2610.31372</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>자율 연구 에이전트의 연구 윤리 위반(RIV)을 탐지하고 실행 중 교정하는 프레임워크 RIDAR</description>
+</item>
+<item>
+<title>[논문] A Fix for Softmax and Cross-Entropy</title>
+<link>https://arxiv.org/abs/2610.31642</link>
+<guid isPermaLink="false">p-2610.31642</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>표준 softmax·log-softmax·cross-entropy 구현의 두 가지 수치 버그와 간단한 수정법</description>
+</item>
+<item>
+<title>[뉴스] Dessa: Conversation Model trained only on speech</title>
+<link>https://block.xyz/dessa</link>
+<guid isPermaLink="false">hn-50213925</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Block, 텍스트·사전학습 모델 없이 사람의 음성 대화만으로 처음부터 학습한 full-duplex 음성 대화 모델 Dessa 공개</description>
+</item>
+<item>
+<title>[뉴스] Bringing foundational models to the front lines of TB screening</title>
+<link>https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/</link>
+<guid isPermaLink="false">google-bringing-foundational-models-to-the-front-lines-of-tb-screening</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google Research, 흉부 X선 AI 연구에서 임상 인증·MedGemma 같은 오픈 foundation model까지 이어진 결핵 선별 여정 공유</description>
+</item>
+<item>
+<title>[뉴스] Securing our frontier model training environment</title>
+<link>https://openai.com/index/securing-our-frontier-model-training-environment</link>
+<guid isPermaLink="false">openai-securing-our-frontier-model-training-environment</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 프런티어 모델 학습·평가 환경의 containment 강화 방안 공개</description>
+</item>
+<item>
+<title>[뉴스] 구글이 AI 에이전트마다 '컴퓨터 한 대'를 제공하려는 이유</title>
+<link>https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive?hl=en</link>
+<guid isPermaLink="false">gn-35917</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google, 에이전트마다 하드웨어 격리 microVM을 주는 AI 에이전트 전용 인프라 Agent Compute Engine 설계 공개</description>
+</item>
+<item>
+<title>[뉴스] AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist</title>
+<link>https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/</link>
+<guid isPermaLink="false">hn-50220204</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Z-Library를 다룬 동료심사 논문이 존재하지 않는 TorrentFreak 기사 등 가짜 참고문헌을 인용</description>
+</item>
+<item>
+<title>[뉴스] GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards</title>
+<link>https://github.com/Zagitta/gpu-unlock</link>
+<guid isPermaLink="false">hn-50219700</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>RTX 3000 시리즈의 FP16/BF16 명령 발행 속도를 프로 카드 수준으로 푸는 Linux 커널 모듈 GPU-unlock</description>
+</item>
+<item>
+<title>[뉴스] Oai-math-revised: a community hub for revising OpenAI's math write-ups</title>
+<link>https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/</link>
+<guid isPermaLink="false">hn-50222283</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI의 수학 결과 write-up을 수학 커뮤니티가 함께 다듬는 oai-math-revised 허브 개설 (Terence Tao 블로그 게스트 포스트)</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Corgi, a helpful {agent, terminal} multiplexer</title>
+<link>https://corgi.computer/</link>
+<guid isPermaLink="false">hn-50214373</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Show HN: 여러 코딩 에이전트의 활동을 한눈에 보여주는 agent·terminal 멀티플렉서 Corgi</description>
+</item>
+<item>
+<title>[뉴스] A practical guide to AI image generation, from diffusion to agents</title>
+<link>https://danielball.com/notes/ai_image_generation.html</link>
+<guid isPermaLink="false">hn-50171379</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>diffusion부터 에이전트 연동까지 다룬 AI 이미지 생성 실전 가이드</description>
+</item>
+<item>
+<title>[뉴스] TornadoVM 7 Enables GPU-Native Workloads from Java Applications</title>
+<link>https://www.infoq.com/news/2026/10/tornadovm-7-gpu/</link>
+<guid isPermaLink="false">hn-50192975</guid>
+<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
+<description>Java 코드를 GPU에서 실행하는 TornadoVM 7 출시와 Java AI 추론 엔진 jitLLM v2.0</description>
+</item>
 <item>
 <title>[논문] IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</title>
 <link>https://arxiv.org/abs/2610.30949</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-35728</guid>
 <pubDate>Thu, 22 Oct 2026 08:00:00 +0900</pubDate>
 <description>Google, Meta PyTorch 팀과 함께 PyTorch 모델을 TPU에서 실행하는 네이티브 백엔드 TorchTPU 오픈소스 공개</description>
-</item>
-<item>
-<title>[논문] MemT-1.0: Towards Memory-Native Evolution</title>
-<link>https://arxiv.org/abs/2610.26825</link>
-<guid isPermaLink="false">p-2610.26825</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>Gated DeltaNet-2 기반으로 메모리를 모델 연산 안에 내재화한 메모리 파운데이션 모델 MemT-1.0 공개</description>
-</item>
-<item>
-<title>[논문] ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation</title>
-<link>https://arxiv.org/abs/2610.25690</link>
-<guid isPermaLink="false">p-2610.25690</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>인터넷 1인칭 영상으로 목표 지향 시각 동역학을 배워 언어 조건 로봇 내비게이션에 쓰는 ScaleNav</description>
-</item>
-<item>
-<title>[논문] Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</title>
-<link>https://arxiv.org/abs/2610.26802</link>
-<guid isPermaLink="false">p-2610.26802</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>LoRA로 최대 104B 멀티모달 백본을 뇌 반응 예측에 맞춘 BrainLoRA, Algonauts 2025 최고 성능</description>
-</item>
-<item>
-<title>[논문] EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience</title>
-<link>https://arxiv.org/abs/2610.26625</link>
-<guid isPermaLink="false">p-2610.26625</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>1인칭 영상에서 카메라·장면·손·물체를 한 번에 world 좌표로 복원하는 EgoXperience 풀스택</description>
-</item>
-<item>
-<title>[논문] Learning from Fleet Experience: A Collective Learning Paradigm for Robots</title>
-<link>https://arxiv.org/abs/2610.25736</link>
-<guid isPermaLink="false">p-2610.25736</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>로봇 군단이 실행 경험을 공유해 공통 정책을 개선하는 collective experience learning</description>
-</item>
-<item>
-<title>[뉴스] DeepInfer: High-performance inference framework for DeepSeek models</title>
-<link>https://github.com/deepseek-ai/DeepInfer</link>
-<guid isPermaLink="false">hn-50163277</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>DeepSeek, 자사 대규모 프로덕션 서비스를 돌리는 추론 프레임워크 DeepInfer 오픈소스 공개</description>
-</item>
-<item>
-<title>[뉴스] Voxtral 3</title>
-<link>https://mistral.ai/news/voxtral-3/</link>
-<guid isPermaLink="false">hn-50168396</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>Mistral, 50개+ 언어 음성 인식·감정 표현 TTS·voice agent SDK를 묶은 Voxtral 3 공개</description>
-</item>
-<item>
-<title>[뉴스] WhatsApp's help pages hid LLM instructions: dont recommend a regulator</title>
-<link>https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions</link>
-<guid isPermaLink="false">hn-50159341</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>WhatsApp 도움말 페이지에 화면엔 안 보이고 AI만 읽는 지시문 — '규제기관을 추천하지 말라'</description>
-</item>
-<item>
-<title>[뉴스] DeepSeek banned from U.S. federal civilian agencies under new DHS order</title>
-<link>https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/</link>
-<guid isPermaLink="false">hn-50154244</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>미 국토안보부(DHS) 명령으로 DeepSeek이 미국 연방 민간 기관에서 사용 금지</description>
-</item>
-<item>
-<title>[뉴스] OpenAI acquires Orchestra Bio</title>
-<link>https://openai.com/index/openai-to-acquire-orchestra-bio</link>
-<guid isPermaLink="false">openai-openai-to-acquire-orchestra-bio</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 생명과학 R&amp;D 운영에 AI를 적용하는 Orchestra Bio 인수</description>
-</item>
-<item>
-<title>[뉴스] Publish fake stats, get cited in LLMs</title>
-<link>https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web</link>
-<guid isPermaLink="false">hn-50165801</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>가짜 통계 5만 개를 올린 사이트가 ChatGPT에 인용되며 웹 곳곳으로 퍼진 GEO 실험</description>
-</item>
-<item>
-<title>[뉴스] How abliterated models can get you pwned</title>
-<link>https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned</link>
-<guid isPermaLink="false">hn-50159245</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>abliterated 모델에 백도어를 심어 Codex CLI에서 자격 증명을 빼내는 개념 증명</description>
-</item>
-<item>
-<title>[뉴스] Harness Engineering 101 - Python 약 300줄로 배우는 AI 에이전트 구현</title>
-<link>https://github.com/IsuruMaduranga/harness-engineering-101</link>
-<guid isPermaLink="false">gn-35651</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>프레임워크 없이 순수 Python 약 300줄로 AI 에이전트를 만들며 하네스 원리를 배우는 입문서</description>
-</item>
-<item>
-<title>[뉴스] Google open-sources TorchTPU, a native PyTorch back end for TPUs</title>
-<link>https://github.com/google-pytorch/torch_tpu</link>
-<guid isPermaLink="false">hn-50169053</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google, TPU에서 PyTorch를 네이티브로 돌리는 백엔드 TorchTPU 오픈소스 공개</description>
-</item>
-<item>
-<title>[뉴스] Advancing coding in low‑resource programming languages</title>
-<link>https://openai.com/index/low-resource-programming-languages</link>
-<guid isPermaLink="false">openai-low-resource-programming-languages</guid>
-<pubDate>Wed, 21 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 학습 데이터가 적은 프로그래밍 언어에서 ChatGPT 코딩 능력 개선 — SQLite·COBOL 마이그레이션 평가 신설</description>
 </item>
 </channel>
 </rss>
