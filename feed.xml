@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 27 Oct 2026 03:41:23 +0900</lastBuildDate>
+<lastBuildDate>Wed, 28 Oct 2026 03:40:46 +0900</lastBuildDate>
+<item>
+<title>[논문] Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents</title>
+<link>https://arxiv.org/abs/2610.33568</link>
+<guid isPermaLink="false">p-2610.33568</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>성공한 tool-use 궤적을 모으는 대신, 학습 가능한 상호작용을 의도적으로 합성해 에이전트 학습 데이터 품질을 높이는 Trajectory2Gym</description>
+</item>
+<item>
+<title>[논문] Learning Force-Reactive Humanoid Loco-Manipulation</title>
+<link>https://arxiv.org/abs/2610.35862</link>
+<guid isPermaLink="false">p-2610.35862</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>손에 드는 힘 센서 그리퍼로 모은 데모로 힘까지 제어하는 휴머노이드 loco-manipulation 정책을 학습하는 FLORE</description>
+</item>
+<item>
+<title>[논문] DynaFlow: Learning Free-Form Multi-Agent Orchestration</title>
+<link>https://arxiv.org/abs/2610.34467</link>
+<guid isPermaLink="false">p-2610.34467</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>메인 에이전트가 필요할 때 서브에이전트 협업 워크플로를 코드로 직접 생성하도록 학습하는 multi-agent orchestration 프레임워크 DynaFlow</description>
+</item>
+<item>
+<title>[논문] Work Agents: Systems, Capabilities, and Optimization</title>
+<link>https://arxiv.org/abs/2610.35845</link>
+<guid isPermaLink="false">p-2610.35845</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>파운데이션 모델과 런타임 하네스를 결합해 실제 디지털 업무를 수행하는 'Work Agent'를 체계화한 서베이</description>
+</item>
+<item>
+<title>[논문] How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction</title>
+<link>https://arxiv.org/abs/2610.34527</link>
+<guid isPermaLink="false">p-2610.34527</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>GPT-6 Astra의 접촉 기반 조작 능력을 sim-real 매칭 환경에서 단계별로 측정한 벤치마크 PhysLadder</description>
+</item>
+<item>
+<title>[뉴스] Working with academic communities to build scientific understanding</title>
+<link>https://openai.com/index/building-scientific-understanding-with-academic-communities</link>
+<guid isPermaLink="false">openai-building-scientific-understanding-with-academic-communities</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 내부 모델이 얻은 수학·컴퓨터과학·물리학 성과 3건을 공개하고 학계와 검증·해설하는 실험 시작</description>
+</item>
+<item>
+<title>[뉴스] Genie 4</title>
+<link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
+<guid isPermaLink="false">hn-50261319</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, 오디오까지 함께 생성하고 텍스트로 실시간 조작하는 차세대 월드 모델 Genie 4 공개</description>
+</item>
+<item>
+<title>[뉴스] The sleep framework: A new way for LLMs to retain knowledge in continual learning</title>
+<link>https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/</link>
+<guid isPermaLink="false">google-the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google Research, LLM이 'sleep' 단계에서 기억을 통합해 망각 없이 계속 학습하는 continual learning 프레임워크 발표</description>
+</item>
+<item>
+<title>[뉴스] 인기 오픈웨이트 AI 모델에서 발견된 우려스러운 행동</title>
+<link>https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model</link>
+<guid isPermaLink="false">gn-36062</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Cohere 보안 평가에서 오픈웨이트 Qwen3.8-Flash-Next가 지시를 벗어나 Alibaba Cloud 버킷으로 파일 업로드를 시도한 사례 보고</description>
+</item>
+<item>
+<title>[뉴스] Introducing LFM3: Every Modality for Specialized Intelligence</title>
+<link>https://www.liquid.ai/blog/lfm3</link>
+<guid isPermaLink="false">hn-50262229</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Liquid AI, 텍스트·비전·오디오를 하나의 백본에 담은 2B급 온디바이스 오픈웨이트 모델 LFM3 공개</description>
+</item>
+<item>
+<title>[뉴스] Anthropic trained Claude on illegally obtained Stanford professors' books</title>
+<link>https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/</link>
+<guid isPermaLink="false">hn-50260814</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Stanford 교수 10여 명의 책이 불법 입수돼 Claude 학습에 쓰였고, 일부는 Bartz 합의를 거부하고 별도 소송 제기</description>
+</item>
+<item>
+<title>[뉴스] Amazon Is Gutting Its AI Division After Sustained Failure</title>
+<link>https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova</link>
+<guid isPermaLink="false">hn-50261589</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Amazon, Nova 모델 대부분을 '유지만 하는' 상태로 돌리고 Pieter Abbeel이 이끄는 단일 프런티어 모델 개발에 집중</description>
+</item>
+<item>
+<title>[뉴스] Hy-Nomas, Tencent's new open-source world model you can steer with text</title>
+<link>https://huggingface.co/tencent/Hy-Nomas</link>
+<guid isPermaLink="false">hn-50260747</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Tencent, 텍스트 지시와 카메라 제어로 여러 차례 조작하며 세계를 이어 생성하는 오픈소스 비디오 월드 모델 Hy-Nomas 공개</description>
+</item>
+<item>
+<title>[뉴스] 컨텍스트 엔지니어링의 현주소</title>
+<link>https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html</link>
+<guid isPermaLink="false">gn-36019</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>긴 컨텍스트 창이 모든 것을 해결하지 못하며, 컨텍스트 구성이 점점 에이전트 하네스의 코드로 옮겨가고 있다는 컨텍스트 엔지니어링 현황 정리</description>
+</item>
+<item>
+<title>[뉴스] Roblox downloaded 145GB models from us (including adult content) without asking</title>
+<link>https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/</link>
+<guid isPermaLink="false">hn-50256985</guid>
+<pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
+<description>Roblox를 자칭한 크롤러가 3D 파운데이션 모델 연구 명목으로 Open3DLab 등에서 145GB의 3D 모델을 무단 다운로드</description>
+</item>
 <item>
 <title>[논문] RynnUnify: Towards Unified Embodied Brain</title>
 <link>https://arxiv.org/abs/2610.32965</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50192975</guid>
 <pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
 <description>Java 코드를 GPU에서 실행하는 TornadoVM 7 출시와 Java AI 추론 엔진 jitLLM v2.0</description>
-</item>
-<item>
-<title>[논문] IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</title>
-<link>https://arxiv.org/abs/2610.30949</link>
-<guid isPermaLink="false">p-2610.30949</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>320B MoE(활성 15B) 오픈소스 에이전트 파운데이션 모델 IQuest-Q1 기술 보고서</description>
-</item>
-<item>
-<title>[논문] Humanoid Mobility via Attention-based Contacts</title>
-<link>https://arxiv.org/abs/2610.31608</link>
-<guid isPermaLink="false">p-2610.31608</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>어텐션 기반 접촉(contact) 계획을 인터페이스로 삼아 휴머노이드가 복잡한 지형을 이동하게 하는 학습 프레임워크</description>
-</item>
-<item>
-<title>[논문] WeVisOne-VL: Unified Visual Perception from Objects to Pixels</title>
-<link>https://arxiv.org/abs/2610.31329</link>
-<guid isPermaLink="false">p-2610.31329</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>객체 단위부터 픽셀 단위 인식까지 next-token prediction 하나로 통합한 Tencent의 오픈소스 VLM</description>
-</item>
-<item>
-<title>[논문] FrontierCS 2: A Benchmark for Computer Science R&amp;D</title>
-<link>https://arxiv.org/abs/2610.29932</link>
-<guid isPermaLink="false">p-2610.29932</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>논문의 핵심 기여 코드를 지운 저장소에서 에이전트가 이를 다시 구현해 내는지 보는 CS R&amp;D 벤치마크</description>
-</item>
-<item>
-<title>[논문] Toward Recursive Self-Improvement in Physical AI</title>
-<link>https://arxiv.org/abs/2610.29677</link>
-<guid isPermaLink="false">p-2610.29677</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>재귀적 자기개선(RSI)을 로봇 학습 관점에서 정리한 93쪽 서베이</description>
-</item>
-<item>
-<title>[뉴스] LLMs are making formal software verification feasible at a much larger scale</title>
-<link>https://www.anthropic.com/research/formal-verification</link>
-<guid isPermaLink="false">hn-50202217</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Theorem과 함께 Claude로 100개 이상 실제 오픈소스 라이브러리의 RISC-V 어셈블리 수준 보안 속성을 형식 검증</description>
-</item>
-<item>
-<title>[뉴스] Kimi K3.1 Pro and K3.1 Pro Highspeed</title>
-<link>https://www.kimi.ai/blog/kimi-k3-1-pro</link>
-<guid isPermaLink="false">hn-50212065</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Kimi, K3.1 Pro와 고속 버전 K3.1 Pro Highspeed 발표</description>
-</item>
-<item>
-<title>[뉴스] Jailbreaking the Switch 2</title>
-<link>https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/</link>
-<guid isPermaLink="false">hn-50192536</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Codex를 하네스로 연결해 연구한 Switch 2 첫 소프트웨어 탈옥 ns2jb 공개</description>
-</item>
-<item>
-<title>[뉴스] An alignment assessment of the UK AISI cybertesting incident</title>
-<link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
-<guid isPermaLink="false">hn-50209939</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, UK AISI 사이버 테스트 중 Claude Mythos 5가 범위를 넘어선 행동을 한 사건의 alignment 분석 공개</description>
-</item>
-<item>
-<title>[뉴스] Every AI model has the same "controversial" take on humans</title>
-<link>https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans</link>
-<guid isPermaLink="false">hn-50197313</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>12개 AI 모델에 '인간에 대한 가장 논쟁적인 견해'를 물으니 모두 같은 답을 냄</description>
-</item>
-<item>
-<title>[뉴스] Is this the new cyber normal?</title>
-<link>https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/</link>
-<guid isPermaLink="false">hn-50207115</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>지난주 쏟아진 치명적 취약점과 frontier AI 기반 취약점 발견을 정리한 'Is this the new cyber normal?'</description>
-</item>
-<item>
-<title>[뉴스] Build more responsive apps with the Decisions API</title>
-<link>https://openai.com/index/decisions-api</link>
-<guid isPermaLink="false">openai-decisions-api</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 애플리케이션용 빠르고 저렴한 판단 API 'Decisions API' 공개</description>
-</item>
-<item>
-<title>[뉴스] Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?</title>
-<link>https://news.ycombinator.com/item?id=50200997</link>
-<guid isPermaLink="false">hn-50200997</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Ask HN: 모델이 그렇게 좋다면 OpenAI는 왜 직접 회사 100개를 차리지 않나?</description>
-</item>
-<item>
-<title>[뉴스] How does Fable 5.1 hide messages in images?</title>
-<link>https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images</link>
-<guid isPermaLink="false">hn-50201445</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Claude Fable 5.1은 SVG 이미지에 메시지를 어떻게 숨기고, 다른 세션에서 다시 읽어 낼 수 있을까</description>
-</item>
-<item>
-<title>[뉴스] Open call for guest investigators in the life sciences</title>
-<link>https://www.anthropic.com/news/open-call-guest-investigators-life-sciences</link>
-<guid isPermaLink="false">anthropic-open-call-guest-investigators-life-sciences</guid>
-<pubDate>Sat, 24 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 생명과학 분야 guest investigator 공모</description>
 </item>
 </channel>
 </rss>
