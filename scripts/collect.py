@@ -244,15 +244,32 @@ def arxiv_meta(ids):
 
 
 def arxiv_figure(aid):
-    """Absolute URL of the first figure image in the arXiv HTML version, or None."""
+    """Absolute URL of the lead figure in the arXiv HTML version, or None.
+
+    The first figure with a real image wins, and within it the first panel of near-full size, so that
+    title-block logos, inline icons, legend strips, subfigure tiles and table cells are passed over. SVG
+    figures (<object data=...>) count too: otherwise a paper drawn in SVG shows whichever stray PNG comes first.
+    """
     try:
         final, doc = retry(get, f"https://arxiv.org/html/{aid}", accept="text/html", timeout=30, limit=6_000_000, tries=2)
     except Exception:
         return None
-    m = re.search(r'<img[^>]+src="([^"]+)"[^>]*class="ltx_graphics', doc) or re.search(r'<img[^>]+class="ltx_graphics[^"]*"[^>]*src="([^"]+)"', doc)
-    if not m or m.group(1).startswith("data:"):
+    doc = re.sub(r'(?s)<figure[^>]*class="ltx_table.*?</figure>', " ", doc)  # images in tables are icons or examples
+    figures = {}
+    for tag in re.findall(r'<(?:img|object)\b[^>]*class="ltx_graphics[^>]*>', doc):
+        a = dict(re.findall(r'([\w-]+)="([^"]*)"', tag))
+        src, gid = html.unescape(a.get("src") or a.get("data") or ""), a.get("id", "")
+        w, h = (int(a[k]) if a.get(k, "").isdigit() else 0 for k in ("width", "height"))
+        # "S1.F2.sf1.g1" and "S1.F2.sf2.g1" are panels of Figure 2; an image outside any figure stands alone
+        fig = re.match(r"(.*?\.F\d+)\.", gid)
+        if not src or src.startswith("data:") or max(w, h) < (100 if fig else 300) or w > 6 * h or h > 6 * w:
+            continue
+        figures.setdefault(fig.group(1) if fig else gid or src, []).append((w * h, src))
+    if not figures:
         return None
-    src = m.group(1)
+    panels = next(iter(figures.values()))
+    largest = max(area for area, _ in panels)
+    src = next(s for area, s in panels if 2 * area >= largest)
     if re.match(rf"{ARXIV_ID}v\d+/", src):  # e.g. "2610.12549v1/fig.png", relative to /html/
         return urljoin("https://arxiv.org/html/", src)  # urljoin also resolves "../" segments
     return urljoin(final.rstrip("/") + "/", src).replace("http://", "https://")
