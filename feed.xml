@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Wed, 28 Oct 2026 03:40:46 +0900</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 03:42:14 +0900</lastBuildDate>
+<item>
+<title>[논문] ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</title>
+<link>https://arxiv.org/abs/2610.37666</link>
+<guid isPermaLink="false">p-2610.37666</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>인간 영상과 로봇 데이터를 같은 'Chain-of-Dynamics' 추론 공간에서 학습하고, 세계 상상으로 강화하는 VLA 프레임워크 ThinkWorld</description>
+</item>
+<item>
+<title>[논문] PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</title>
+<link>https://arxiv.org/abs/2610.37381</link>
+<guid isPermaLink="false">p-2610.37381</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>영상 생성 없이 물리 동역학 토큰으로 행동 생성을 조건화하는 VLA, PDRVLA</description>
+</item>
+<item>
+<title>[논문] ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence</title>
+<link>https://arxiv.org/abs/2610.34283</link>
+<guid isPermaLink="false">p-2610.34283</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>공간 VLM이 한 가지 답변 형식에만 특화되는 'interface lock-in'을, 이질적 공간 감독을 시간순 에피소드로 재생해 푸는 ChronoReplay</description>
+</item>
+<item>
+<title>[논문] The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents</title>
+<link>https://arxiv.org/abs/2610.36077</link>
+<guid isPermaLink="false">p-2610.36077</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>세계 생성과 Harness 진화를 결합해 멀티모달 에이전트가 능력 단위로 재귀적 자기개선을 하는 The Trinity</description>
+</item>
+<item>
+<title>[논문] Evolving Agent Teams</title>
+<link>https://arxiv.org/abs/2610.36848</link>
+<guid isPermaLink="false">p-2610.36848</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>감독자가 국소 최적에 빠진 에이전트 팀을 진단·재편하며 GPU 커널 등 열린 문제를 푸는 멀티에이전트 프레임워크 Evolving Agent Teams</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Carbon: Our next frontier model</title>
+<link>https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/</link>
+<guid isPermaLink="false">deepmind-gemini-4-carbon-our-next-frontier-model</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, 사이버보안·장기 과제 성능을 앞세운 차세대 프런티어 모델 Gemini 4 Carbon 발표</description>
+</item>
+<item>
+<title>[뉴스] Anthropic, 나스닥에 ‘ANT’로 상장 신청하고 S-1 증권신고서 공개</title>
+<link>https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm</link>
+<guid isPermaLink="false">gn-36045</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 나스닥에 'ANT'로 상장 신청하고 S-1 증권신고서 공개</description>
+</item>
+<item>
+<title>[뉴스] Early progress on accelerating drug development with Claude</title>
+<link>https://www.anthropic.com/research/early-progress-drug-development</link>
+<guid isPermaLink="false">hn-50265609</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 6개 신약 개발사와의 협업에서 Claude가 거둔 초기 성과 공개</description>
+</item>
+<item>
+<title>[뉴스] The Agent SDK</title>
+<link>https://cursor.com/blog/agent-sdk</link>
+<guid isPermaLink="false">hn-50273731</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Cursor, 사내 Bugbot·Security Reviewer를 만든 프레임워크 'Agent SDK' 공개</description>
+</item>
+<item>
+<title>[뉴스] Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages</title>
+<link>https://huggingface.co/blog/nvidia/nemotron-transcribe-granary</link>
+<guid isPermaLink="false">hn-50275128</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 40개 언어 전사·화자 분리·번역·오디오 QA를 하나로 묶은 오픈 ASR 모델 Nemotron 3.5 Transcribe 공개</description>
+</item>
+<item>
+<title>[뉴스] Survival LLM: AI assistant and emergency library that runs on your own computer</title>
+<link>https://www.brangus.io/survival-llm</link>
+<guid isPermaLink="false">hn-50264853</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>인터넷 없이 내 컴퓨터에서 돌아가는 비상용 AI 비서·라이브러리 'Survival LLM'</description>
+</item>
+<item>
+<title>[뉴스] Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</title>
+<link>https://surgehq.ai/blog/dayjob-tax</link>
+<guid isPermaLink="false">hn-50275626</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Surge AI, 50개 전문 세무 과제로 AI 에이전트를 평가하는 벤치마크 DAYJOB: Tax 공개</description>
+</item>
+<item>
+<title>[뉴스] Unlimited-OCR 2 - 페이지 간 문맥을 이어 수백 페이지 문서를 파싱하는 OCR 모델</title>
+<link>https://huggingface.co/baidu/Unlimited-OCR-2</link>
+<guid isPermaLink="false">gn-36137</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Baidu, 페이지 간 문맥을 이어 수백 페이지 문서를 파싱하는 OCR 모델 Unlimited-OCR 2 공개</description>
+</item>
+<item>
+<title>[뉴스] Expanding our partnership with GSA to bring Claude to all levels of government</title>
+<link>https://www.anthropic.com/news/expanding-partnership-gsa</link>
+<guid isPermaLink="false">anthropic-expanding-partnership-gsa</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 미 연방조달청(GSA)과 협력 확대해 정부 기관에 Claude 40% 할인</description>
+</item>
+<item>
+<title>[뉴스] AI는 일을 줄여준다고 약속했다. 나는 그 어느 때보다 많이 일하고 있다</title>
+<link>https://oioannou.com/blog/ai-promised-less-work/</link>
+<guid isPermaLink="false">gn-36113</guid>
+<pubDate>Thu, 29 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI는 일을 줄여준다고 약속했지만 오히려 그 어느 때보다 많이 일하게 됐다는 개발 리더의 경험담</description>
+</item>
 <item>
 <title>[논문] Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents</title>
 <link>https://arxiv.org/abs/2610.33568</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50231349</guid>
 <pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
 <description>Show HN: AI 리뷰 이후 PR 승인자에게 병합 위험도와 위험이 있는 파일을 알려주는 오픈소스 CLI·GitHub Action Farol</description>
-</item>
-<item>
-<title>[논문] AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics</title>
-<link>https://arxiv.org/abs/2610.28589</link>
-<guid isPermaLink="false">p-2610.28589</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>코딩 에이전트처럼 로봇 planner 자체를 post-training하는 프레임워크 AgenticRoboRL</description>
-</item>
-<item>
-<title>[논문] TraceForge: Distilling with Your Own Thinking</title>
-<link>https://arxiv.org/abs/2610.29680</link>
-<guid isPermaLink="false">p-2610.29680</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>교사 모델의 답만 보고 학생 모델 계열의 스타일로 reasoning trace를 생성해 distillation에 쓰는 TraceForge</description>
-</item>
-<item>
-<title>[논문] UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry</title>
-<link>https://arxiv.org/abs/2610.30991</link>
-<guid isPermaLink="false">p-2610.30991</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>3D scene flow를 vision·action과 동등한 세 번째 모달리티로 다루는 통합 World-Action Model UniFlowWAM</description>
-</item>
-<item>
-<title>[논문] RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention</title>
-<link>https://arxiv.org/abs/2610.31372</link>
-<guid isPermaLink="false">p-2610.31372</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>자율 연구 에이전트의 연구 윤리 위반(RIV)을 탐지하고 실행 중 교정하는 프레임워크 RIDAR</description>
-</item>
-<item>
-<title>[논문] A Fix for Softmax and Cross-Entropy</title>
-<link>https://arxiv.org/abs/2610.31642</link>
-<guid isPermaLink="false">p-2610.31642</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>표준 softmax·log-softmax·cross-entropy 구현의 두 가지 수치 버그와 간단한 수정법</description>
-</item>
-<item>
-<title>[뉴스] Dessa: Conversation Model trained only on speech</title>
-<link>https://block.xyz/dessa</link>
-<guid isPermaLink="false">hn-50213925</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Block, 텍스트·사전학습 모델 없이 사람의 음성 대화만으로 처음부터 학습한 full-duplex 음성 대화 모델 Dessa 공개</description>
-</item>
-<item>
-<title>[뉴스] Bringing foundational models to the front lines of TB screening</title>
-<link>https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/</link>
-<guid isPermaLink="false">google-bringing-foundational-models-to-the-front-lines-of-tb-screening</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google Research, 흉부 X선 AI 연구에서 임상 인증·MedGemma 같은 오픈 foundation model까지 이어진 결핵 선별 여정 공유</description>
-</item>
-<item>
-<title>[뉴스] Securing our frontier model training environment</title>
-<link>https://openai.com/index/securing-our-frontier-model-training-environment</link>
-<guid isPermaLink="false">openai-securing-our-frontier-model-training-environment</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 프런티어 모델 학습·평가 환경의 containment 강화 방안 공개</description>
-</item>
-<item>
-<title>[뉴스] 구글이 AI 에이전트마다 '컴퓨터 한 대'를 제공하려는 이유</title>
-<link>https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive?hl=en</link>
-<guid isPermaLink="false">gn-35917</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Google, 에이전트마다 하드웨어 격리 microVM을 주는 AI 에이전트 전용 인프라 Agent Compute Engine 설계 공개</description>
-</item>
-<item>
-<title>[뉴스] AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist</title>
-<link>https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/</link>
-<guid isPermaLink="false">hn-50220204</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Z-Library를 다룬 동료심사 논문이 존재하지 않는 TorrentFreak 기사 등 가짜 참고문헌을 인용</description>
-</item>
-<item>
-<title>[뉴스] GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards</title>
-<link>https://github.com/Zagitta/gpu-unlock</link>
-<guid isPermaLink="false">hn-50219700</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>RTX 3000 시리즈의 FP16/BF16 명령 발행 속도를 프로 카드 수준으로 푸는 Linux 커널 모듈 GPU-unlock</description>
-</item>
-<item>
-<title>[뉴스] Oai-math-revised: a community hub for revising OpenAI's math write-ups</title>
-<link>https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/</link>
-<guid isPermaLink="false">hn-50222283</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI의 수학 결과 write-up을 수학 커뮤니티가 함께 다듬는 oai-math-revised 허브 개설 (Terence Tao 블로그 게스트 포스트)</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Corgi, a helpful {agent, terminal} multiplexer</title>
-<link>https://corgi.computer/</link>
-<guid isPermaLink="false">hn-50214373</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Show HN: 여러 코딩 에이전트의 활동을 한눈에 보여주는 agent·terminal 멀티플렉서 Corgi</description>
-</item>
-<item>
-<title>[뉴스] A practical guide to AI image generation, from diffusion to agents</title>
-<link>https://danielball.com/notes/ai_image_generation.html</link>
-<guid isPermaLink="false">hn-50171379</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>diffusion부터 에이전트 연동까지 다룬 AI 이미지 생성 실전 가이드</description>
-</item>
-<item>
-<title>[뉴스] TornadoVM 7 Enables GPU-Native Workloads from Java Applications</title>
-<link>https://www.infoq.com/news/2026/10/tornadovm-7-gpu/</link>
-<guid isPermaLink="false">hn-50192975</guid>
-<pubDate>Sun, 25 Oct 2026 08:00:00 +0900</pubDate>
-<description>Java 코드를 GPU에서 실행하는 TornadoVM 7 출시와 Java AI 추론 엔진 jitLLM v2.0</description>
 </item>
 </channel>
 </rss>

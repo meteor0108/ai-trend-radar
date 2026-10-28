@@ -1,0 +1,1587 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T03:42:14+09:00",
+  "keywords": [],
+  "failed": [],
+  "items": [
+    {
+      "id": "p-2610.37666",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv",
+        "hf"
+      ],
+      "lane": "robotics",
+      "rank": 1,
+      "ranks": {
+        "alphaxiv": 2,
+        "hf": 12
+      },
+      "published": "2026-10-28T02:59:52+09:00",
+      "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "url": "https://arxiv.org/abs/2610.37666",
+      "image": "https://arxiv.org/html/2610.37666v1/thinkworld_teaser_blue_v2_final.png",
+      "figureUrl": "https://arxiv.org/html/2610.37666",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37666",
+      "score": 46,
+      "scoreLabel": "HF 46▲ · alphaXiv #4",
+      "oneLine": "인간 영상과 로봇 데이터를 같은 'Chain-of-Dynamics' 추론 공간에서 학습하고, 세계 상상으로 강화하는 VLA 프레임워크 ThinkWorld",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "VLA의 일반화는 행동 라벨이 있는 로봇 시연의 다양성에 묶여 있고, 인간 영상은 풍부하지만 명시적 행동 근거가 없음"
+        },
+        {
+          "label": "방법",
+          "text": "각 행동 사고를 현재에서 미래 상태로 이어지는 이산 motion token 시퀀스(CoD)로 표현하고, CoD가 유발할 미래를 예측해 실제 결과와 잘 맞는 것을 RL로 강화"
+        },
+        {
+          "label": "결과",
+          "text": "행동 라벨 없는 영상도 관측된 상태 전이로 직접 감독 신호가 되어, 시뮬레이션과 실제 로봇에서 human-to-robot 전이와 미지 작업·환경 일반화를 보임"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Human Video",
+        "World Model"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37381",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 2,
+      "ranks": {
+        "hf": 4,
+        "alphaxiv": 12
+      },
+      "published": "2026-10-28T00:09:10+09:00",
+      "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+      "url": "https://arxiv.org/abs/2610.37381",
+      "image": "https://arxiv.org/html/2610.37381v1/intro_overview_v3.png",
+      "figureUrl": "https://arxiv.org/html/2610.37381",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37381",
+      "score": 138,
+      "scoreLabel": "HF 138▲ · alphaXiv #20",
+      "oneLine": "영상 생성 없이 물리 동역학 토큰으로 행동 생성을 조건화하는 VLA, PDRVLA",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "VLA는 물리 동역학 이해가 제한적이고, 미래 영상을 생성하는 video world model은 제어 루프 지연이 큼"
+        },
+        {
+          "label": "방법",
+          "text": "경량 Physical Dynamics Module이 vision-language 특징에서 물리 토큰을 추출하고, 미래 RGB·depth·optical flow 특징 예측과 고정된 video world model의 보조 감독으로 학습; 공개 데이터만 human-to-robot 합성·subtask·ECoT 주석으로 확장"
+        },
+        {
+          "label": "결과",
+          "text": "LIBERO 99.3%, LIBERO-Plus 89.9%, RoboTwin 2.0 93.6%, SimplerEnv 81.5% 성공률(모두 시뮬레이션)"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "World Model"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.34283",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 3,
+      "ranks": {
+        "hf": 1
+      },
+      "published": "2026-10-25T22:31:49+09:00",
+      "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+      "url": "https://arxiv.org/abs/2610.34283",
+      "image": "https://arxiv.org/html/2610.34283v1/spatial_teaser.png",
+      "figureUrl": "https://arxiv.org/html/2610.34283",
+      "codeUrl": "https://github.com/yihaohu0118/ChronoReplay",
+      "codeStars": 7,
+      "score": 328,
+      "scoreLabel": "HF 328▲",
+      "oneLine": "공간 VLM이 한 가지 답변 형식에만 특화되는 'interface lock-in'을, 이질적 공간 감독을 시간순 에피소드로 재생해 푸는 ChronoReplay",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "방향 같은 범주형 답을 학습해도 거리 같은 계량 정보는 보존되지 않는 등, 한 판독 형식을 강조한 사후학습이 다른 형식으로 잘 전이되지 않음"
+        },
+        {
+          "label": "방법",
+          "text": "이질적 공간 감독을 시간순 에피소드로 재생하고, 출처 고유의 타깃을 유지하며 감독 계열 간 균형을 맞춤; 추론 시 adaptive frame selection 추가"
+        },
+        {
+          "label": "결과",
+          "text": "단일 체크포인트로 OVO-S-Bench·OST-Bench·UCS-Bench를 함께 개선, OST-Bench에서 13.41점 향상하고 세 벤치마크 평균 최고"
+        }
+      ],
+      "keywords": [
+        "Spatial Intelligence",
+        "Multimodal"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36077",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 4,
+      "ranks": {
+        "hf": 2
+      },
+      "published": "2026-10-27T03:03:34+09:00",
+      "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+      "url": "https://arxiv.org/abs/2610.36077",
+      "image": "https://arxiv.org/html/2610.36077v1/fig/intro.png",
+      "figureUrl": "https://arxiv.org/html/2610.36077",
+      "codeUrl": "https://github.com/InfRec-Cardinal/The-Trinity",
+      "codeStars": 14,
+      "score": 310,
+      "scoreLabel": "HF 310▲",
+      "oneLine": "세계 생성과 Harness 진화를 결합해 멀티모달 에이전트가 능력 단위로 재귀적 자기개선을 하는 The Trinity",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "검증 가능한 이질적 환경 구축은 비싸고, 수동 Harness 개선은 늘어나는 작업 다양성을 따라가지 못함"
+        },
+        {
+          "label": "방법",
+          "text": "Creator·Explorer·Evolver 세 역할로, 검증된 실행 궤적을 바탕으로 작업 트리를 능력 트리로 재구성하고 공통 요구를 단순화한 시뮬레이션 세계에서 재사용 가능한 능력 모듈을 진화; Capability-Aware Harness Router가 설정을 선택"
+        },
+        {
+          "label": "결과",
+          "text": "학습 벤치마크 28개 평균 34점, 미지 벤치마크 18개(실제 embodied 작업 2개 포함) 평균 26점 향상"
+        }
+      ],
+      "keywords": [
+        "Self-Improvement",
+        "Agent Harness",
+        "Multimodal"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36848",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 5,
+      "ranks": {
+        "alphaxiv": 1
+      },
+      "published": "2026-10-27T17:46:21+09:00",
+      "title": "Evolving Agent Teams",
+      "url": "https://arxiv.org/abs/2610.36848",
+      "image": "https://arxiv.org/html/2610.36848v1/fig_trajectory.svg",
+      "figureUrl": "https://arxiv.org/html/2610.36848",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.36848",
+      "codeUrl": "https://github.com/caoshiyi/EAT",
+      "scoreLabel": "alphaXiv #1",
+      "oneLine": "감독자가 국소 최적에 빠진 에이전트 팀을 진단·재편하며 GPU 커널 등 열린 문제를 푸는 멀티에이전트 프레임워크 Evolving Agent Teams",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "기존 코딩 에이전트는 FlashInfer 같은 전문가 작성 실제 커널 최적화에서 국소 최적에 수렴"
+        },
+        {
+          "label": "방법",
+          "text": "중앙 supervisor가 각 국소 최적을 진단해 에이전트 팀을 재구성하고, 학습 문서·진화 이력·팀별 산출물을 담은 영속 파일 시스템으로 경험을 축적"
+        },
+        {
+          "label": "결과",
+          "text": "같은 토큰 예산에서 강한 코딩 에이전트 기준선을 꾸준히 앞서고, 확장 예산에서는 FlashInfer MLA paged decode 대비 평균 1.2배 빠른 CUDA 커널을 처음부터 생성해 47개 워크로드 중 36개에서 우위"
+        }
+      ],
+      "keywords": [
+        "Multi-Agent",
+        "AI Coding",
+        "Self-Improvement"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.35013",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 6,
+      "ranks": {
+        "hf": 3
+      },
+      "published": "2026-10-26T17:22:11+09:00",
+      "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+      "url": "https://arxiv.org/abs/2610.35013",
+      "image": "https://arxiv.org/html/2610.35013v1/MPO_framework_formal.svg",
+      "figureUrl": "https://arxiv.org/html/2610.35013",
+      "score": 270,
+      "scoreLabel": "HF 270▲",
+      "oneLine": "장기 과제 LLM 에이전트의 credit assignment를 턴 단위에 맞춘 RL 기법 Multiscale Policy Optimization(MPO)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "에이전트는 턴 단위로 환경과 상호작용하지만 행동은 토큰 단위로 생성되어, 보상 배분과 정책 업데이트의 단위가 어긋남"
+        },
+        {
+          "label": "방법",
+          "text": "critic 값이 주로 턴 사이에서 변한다는 관찰에 따라 Multiscale Advantage Estimation과 턴 수준 importance sampling을 결합해 턴 중심 최적화와 토큰 간 세밀한 배분을 함께 수행"
+        },
+        {
+          "label": "결과",
+          "text": "검색·tool-use·자동화 작업에서 4B·30B-A3B 모델 모두 강한 RL 기준선 대비 일관된 향상"
+        }
+      ],
+      "keywords": [
+        "RL",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36729",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "hftrend"
+      ],
+      "lane": "trending",
+      "rank": 7,
+      "ranks": {
+        "hf": 6,
+        "hftrend": 1
+      },
+      "published": "2026-10-27T15:48:59+09:00",
+      "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+      "url": "https://arxiv.org/abs/2610.36729",
+      "image": "https://arxiv.org/html/2610.36729v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2610.36729",
+      "codeUrl": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+      "codeStars": 345,
+      "score": 104,
+      "scoreLabel": "HF 104▲ · HF Trending #7",
+      "oneLine": "여러 턴에 걸친 자유 형식 텍스트 지시와 카메라 제어를 지원하는 Tencent Hunyuan의 8B 인터랙티브 video world model Hy-Nomas",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "인터랙티브 세계 생성은 연속 명령을 따르면서 관련 이력과 행동 결과를 유지해야 함"
+        },
+        {
+          "label": "방법",
+          "text": "구조화된 영상 캡션과 action-aware causal attention을 정렬해 설명 맥락은 세그먼트 전반에, 행동 지시는 해당 시간 창에만 적용; Prompt Enhancer가 요청과 이력을 다음 세그먼트 조건으로 변환하고 다단계 커리큘럼 후 diffusion distillation"
+        },
+        {
+          "label": "결과",
+          "text": "인간 평가에서 기존 world model보다 우수했으며 모델 가중치·코드·벤치마크와 경량 적응 워크플로를 공개"
+        }
+      ],
+      "keywords": [
+        "World Model",
+        "Video Generation"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37662",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 8,
+      "ranks": {
+        "hf": 8,
+        "alphaxiv": 11
+      },
+      "published": "2026-10-28T02:59:22+09:00",
+      "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+      "url": "https://arxiv.org/abs/2610.37662",
+      "image": "https://arxiv.org/html/2610.37662v1/scaling_with_ocr.png",
+      "figureUrl": "https://arxiv.org/html/2610.37662",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37662",
+      "codeUrl": "https://github.com/hustvl/FVQ",
+      "codeStars": 8,
+      "score": 87,
+      "scoreLabel": "HF 87▲ · alphaXiv #16",
+      "oneLine": "양자화 오차가 아니라 유효 비트 예산이 핵심이라 보고, Factorized VQ로 연속 표현에 필적하는 이산 시각 토큰을 만든 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "이산 시각 토큰은 양자화 오차 때문에 의미 손실이 불가피하고 연속 표현이 상한이라는 통념이 있음"
+        },
+        {
+          "label": "방법",
+          "text": "멀티모달 이해 성능을 의미 충실도의 대리 지표로 재검토하고, 특징의 상보적 고정 차원 뷰를 대칭 병렬 codebook으로 양자화하는 Factorized Vector Quantization 제안"
+        },
+        {
+          "label": "결과",
+          "text": "이산 표현 모델 중 SOTA로 9개 지표 평균에서 UniAR·Emu3-Chat 대비 22.8%·59.2% 앞서고, OCR 등 세밀한 작업에서도 Qwen3-VL 같은 연속 표현 모델과 경쟁"
+        }
+      ],
+      "keywords": [
+        "Multimodal",
+        "Visual Tokenizer"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37341",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 9,
+      "ranks": {
+        "hf": 11,
+        "alphaxiv": 7
+      },
+      "published": "2026-10-27T23:47:31+09:00",
+      "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
+      "url": "https://arxiv.org/abs/2610.37341",
+      "image": "https://arxiv.org/html/2610.37341v1/introduction.png",
+      "figureUrl": "https://arxiv.org/html/2610.37341",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37341",
+      "score": 49,
+      "scoreLabel": "HF 49▲ · alphaXiv #10",
+      "oneLine": "실행 가능한 코드를 영상 캡션으로 쓰는 'Code as Video Caption'을 제안하고 MLLM의 코드 캡션 능력을 평가하는 CodeCap-Bench",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "자연어로 세밀한 공간 구조와 시간 동역학을 표현하면 설명이 길고 모호해짐"
+        },
+        {
+          "label": "방법",
+          "text": "그래픽 프리미티브·레이아웃 규칙·시간 함수로 영상을 표현하는 코드 캡션을 자연어 캡션과 QA·영상 재구성으로 비교하고, 구조화된 2D 콘텐츠 5개 범주 323개 영상과 다단계 평가 체계를 갖춘 벤치마크 구축"
+        },
+        {
+          "label": "결과",
+          "text": "코드 캡션이 추론 정확도와 재구성 충실도에서 앞섰지만, 상용 MLLM도 복잡한 시간 동역학 포착에 어려움을 겪고 오픈소스 모델은 크게 뒤처짐"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "Multimodal"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37585",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv",
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 10,
+      "ranks": {
+        "alphaxiv": 4,
+        "hf": 13
+      },
+      "published": "2026-10-28T02:25:43+09:00",
+      "title": "Timestral",
+      "url": "https://arxiv.org/abs/2610.37585",
+      "image": "https://arxiv.org/html/2610.37585v1/figures/header.jpeg",
+      "figureUrl": "https://arxiv.org/html/2610.37585",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37585",
+      "codeUrl": "https://github.com/mistralai/timestral",
+      "score": 5,
+      "scoreLabel": "HF 5▲ · alphaXiv #6",
+      "oneLine": "Mistral의 확률적 시계열 예측 파운데이션 모델 패밀리 Timestral(5M~209M)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "시계열 예측 모델은 긴 horizon 학습, 미래에 알려진 공변량 처리, 데이터 확보가 과제"
+        },
+        {
+          "label": "방법",
+          "text": "예측 토큰을 인과적으로 인코딩된 맥락과 분리하는 Decoupled Horizon Forecasting, 인과 구조 안에서 known-future 공변량 지원, 대규모 합성 코퍼스 사전학습 후 실제·합성 데이터 혼합 사후학습"
+        },
+        {
+          "label": "결과",
+          "text": "GIFT-Eval·TIME·fev-bench에서 SOTA로 209M·123M 모델이 모든 지표 1·2위; 4개 모델 가중치는 Hugging Face, 추론 코드는 GitHub에 공개"
+        }
+      ],
+      "keywords": [
+        "Time Series",
+        "Open Weights"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.35864",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 11,
+      "ranks": {
+        "hf": 5
+      },
+      "published": "2026-10-27T02:59:32+09:00",
+      "title": "VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation",
+      "url": "https://arxiv.org/abs/2610.35864",
+      "image": "https://arxiv.org/html/2610.35864v2/overview_art.png",
+      "figureUrl": "https://arxiv.org/html/2610.35864",
+      "score": 126,
+      "scoreLabel": "HF 126▲",
+      "oneLine": "멀티모달 에이전트가 코드로 프레임과 소리를 직접 렌더링해 영상을 만드는 능력을 평가하는 VibeVideoBench",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "diffusion 영상 모델은 정확한 수식·차트·규칙 일관 게임·내레이션 동기화를 안정적으로 만들지 못함"
+        },
+        {
+          "label": "방법",
+          "text": "영어·중국어 239개 과제(12개 범주)에서 이미지·영상 생성 모델 없이 샌드박스 안 1시간 내 소리 포함 MP4를 납품하게 하고, 프로그램 검사·약 1.3만 rubric·VLM 심사단 3개로 계층 평가"
+        },
+        {
+          "label": "결과",
+          "text": "9개 에이전트 시스템, 2,151 롤아웃에서 GPT-6 Astra와 Claude Opus 5.5가 1·2위, 최강 시스템도 핵심 요구를 모두 충족한 과제는 76.3%; 누락 영상의 3/4은 최종 렌더 시작 지연·속도 문제"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "Video Generation",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.34073",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 12,
+      "ranks": {
+        "hf": 7
+      },
+      "published": "2026-10-25T14:29:05+09:00",
+      "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+      "url": "https://arxiv.org/abs/2610.34073",
+      "image": "https://arxiv.org/html/2610.34073v1/Figures/4_lme_27b_score-token.png",
+      "figureUrl": "https://arxiv.org/html/2610.34073",
+      "codeUrl": "https://github.com/hexuan21/MemoryTax",
+      "codeStars": 8,
+      "score": 95,
+      "scoreLabel": "HF 95▲",
+      "oneLine": "에이전트 메모리 시스템이 단순 RAG보다 못한 경우가 많다는 점을 'memory tax' 개념으로 분석한 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "장기 에이전트에서 메모리를 구축하는 것이 원본 이력에서 직접 검색하는 것보다 실제로 얼마나 가치 있는지 불분명"
+        },
+        {
+          "label": "방법",
+          "text": "여러 벤치마크와 백본에서 대규모 평가 후, RAG를 기준으로 메모리의 순가치를 이득(memory benefit)과 손실(memory tax)로 분해하고 손실이 시스템·평가 측면에서 어떻게 생기는지 분석"
+        },
+        {
+          "label": "결과",
+          "text": "많은 전용 메모리 시스템이 naive RAG보다 낮은 성능을 보여 순가치가 음수인 경우가 많았으며, 사실 재구성·선호 증류 과정이 근거를 지우거나 흐릴 수 있음을 지적"
+        }
+      ],
+      "keywords": [
+        "Memory",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36539",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 13,
+      "ranks": {
+        "alphaxiv": 8
+      },
+      "published": "2026-10-27T11:51:20+09:00",
+      "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2610.36539",
+      "image": "https://arxiv.org/html/2610.36539v1/fig_source_data.png",
+      "figureUrl": "https://arxiv.org/html/2610.36539",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.36539",
+      "scoreLabel": "alphaXiv #11",
+      "oneLine": "접촉 힘 목표를 보존하며 인간 시연을 로봇 행동으로 옮기는 dexterous manipulation 리타게팅 CARD",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "기존 리타게팅은 운동학만 옮기고 과제 성공에 필수적인 실제 접촉 동역학을 무시함"
+        },
+        {
+          "label": "방법",
+          "text": "영상·모션캡처·촉각 장갑 데이터를 공통 hand-contact 표현으로 통합해 운동학과 명시적 접촉 힘 목표를 생성하고, 하드웨어 재생 시 tactile tracking controller로 유지; 영상용 video-to-contact 모델 Vid-HACO 제안"
+        },
+        {
+          "label": "결과",
+          "text": "접촉 프레임의 43~78%에서 접촉 유지(기존 방법 <10%, 22.5%), GRAB 데이터셋에서 엄격한 과제 성공률을 12%에서 32%로 향상"
+        }
+      ],
+      "keywords": [
+        "Dexterous Manipulation",
+        "Human Video"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36859",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 14,
+      "ranks": {
+        "alphaxiv": 9
+      },
+      "published": "2026-10-27T17:54:27+09:00",
+      "title": "ActiveAlign: Aligning Egocentric Manipulation via Active Perception",
+      "url": "https://arxiv.org/abs/2610.36859",
+      "image": "https://arxiv.org/html/2610.36859v1/teaser_v4.png",
+      "figureUrl": "https://arxiv.org/html/2610.36859",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.36859",
+      "scoreLabel": "alphaXiv #14",
+      "oneLine": "손 흔들기와 촉각 탐색 같은 능동 지각으로 Real2Sim2Real 간극을 정렬하는 ActiveAlign",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "Real2Sim2Real 접근은 대부분 수동 지각에 의존해 불완전한 관측으로 real2sim 간극이 생김"
+        },
+        {
+          "label": "방법",
+          "text": "능동적 손 동작과 differentiable rendering으로 hand-eye calibration을 하는 ActiveAlign-Waving, 촉각 피드백으로 물체 정렬을 밀리미터 수준까지 다듬는 ActiveAlign-Touching으로 구성"
+        },
+        {
+          "label": "결과",
+          "text": "보정되지 않은 오픈 로봇 조작 데이터셋용 시뮬레이션 환경 구성에 활용했고, 실제 Unitree G1에서 버튼 누르기·슬라이더 이동 등 밀리미터 단위 물체 조작을 시연"
+        }
+      ],
+      "keywords": [
+        "Humanoid",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37651",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 15,
+      "ranks": {
+        "alphaxiv": 5
+      },
+      "published": "2026-10-28T02:58:11+09:00",
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "url": "https://arxiv.org/abs/2610.37651",
+      "image": "https://arxiv.org/html/2610.37651v1/overview-new-4.png",
+      "figureUrl": "https://arxiv.org/html/2610.37651",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37651",
+      "scoreLabel": "alphaXiv #7",
+      "oneLine": "프롬프트 최적화기에 넣을 에이전트 경험을 선별해 자기개선 효율을 높이는 GEPA-Curator",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "GEPA 같은 반성형 프롬프트 최적화기는 실패 롤아웃에서 배우지만, 에이전트 실패는 harness 한계·확률적 실행·노이즈 심사 때문일 수도 있어 해로운 신호가 될 수 있음"
+        },
+        {
+          "label": "방법",
+          "text": "노이즈가 큰 과제를 걸러내는 task curation과, 과제별 과거 성공 궤적을 추가 맥락으로 주는 prior success retrieval을 결합"
+        },
+        {
+          "label": "결과",
+          "text": "GoBrowse·ALFWorld·AppWorld·τ-bench에서 Gemini 3.1 Pro와 Claude Opus 5를 최적화기로 써 GEPA 대비 최대 20.7%, ACE 대비 최대 21.2% 향상"
+        }
+      ],
+      "keywords": [
+        "Self-Improvement",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.37626",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 16,
+      "ranks": {
+        "alphaxiv": 6
+      },
+      "published": "2026-10-28T02:50:20+09:00",
+      "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
+      "url": "https://arxiv.org/abs/2610.37626",
+      "image": "https://arxiv.org/html/2610.37626v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2610.37626",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.37626",
+      "scoreLabel": "alphaXiv #8",
+      "oneLine": "지식은 autoregressive 사전학습으로, 고해상 렌더링은 diffusion 사후학습으로 나누는 시각 생성 학습 패러다임 'Know, then Draw'",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "시각 생성은 고수준 의미 지식과 세밀한 픽셀 디테일을 모두 필요로 함"
+        },
+        {
+          "label": "방법",
+          "text": "AR 사전학습으로 지식을 얻고 diffusion 사후학습으로 렌더링하며, 이미지 디코더 없이 언어 감독만으로 학습한 순수 의미 tokenizer와 compute-optimal scaling law를 제시"
+        },
+        {
+          "label": "결과",
+          "text": "AR 사전학습이 처음부터 학습한 pixel diffusion보다 점근적 렌더링 손실을 낮추며, 6,600 H100 GPU-시간으로 학습한 3B text-to-image 모델이 GenEval 86, DPG-Bench 87 달성"
+        }
+      ],
+      "keywords": [
+        "Image Generation",
+        "Scaling Laws"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.24520",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 17,
+      "ranks": {
+        "hf": 9
+      },
+      "published": "2026-10-17T16:30:09+09:00",
+      "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+      "url": "https://arxiv.org/abs/2610.24520",
+      "image": "https://arxiv.org/html/2610.24520v2/figures/hb_framework.png",
+      "figureUrl": "https://arxiv.org/html/2610.24520",
+      "codeUrl": "https://github.com/LUMIA-Group/habit-bench",
+      "codeStars": 3,
+      "score": 78,
+      "scoreLabel": "HF 78▲",
+      "oneLine": "약한 증거가 장기간 흩어진 상황에서 에이전트 메모리가 사용자 습관을 추론·적용하는지 평가하는 HABIT-Bench",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "사용자는 선택과 행동으로 습관을 드러내지만, 과거 상호작용을 보관하는 것만으로는 습관을 추론하고 적절히 적용한다는 보장이 없음"
+        },
+        {
+          "label": "방법",
+          "text": "과제 지향 대화 데이터와 통제된 습관 그래프로 음식·금융·소프트웨어·여행에 걸친 수백 세션의 합성 사용자 이력을 만들고, 일시적 예외·습관 변화·미수락 제안을 포함한 4지선다 과제로 평가"
+        },
+        {
+          "label": "결과",
+          "text": "Qwen3-235B-A22B·GLM-5.3-Flash로 8개 메모리 방법을 평가한 결과 최고 macro 정확도가 33.61%, 주석된 근거를 직접 줘도 성능이 제한적"
+        }
+      ],
+      "keywords": [
+        "Memory",
+        "Benchmark"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.35868",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 18,
+      "ranks": {
+        "alphaxiv": 10
+      },
+      "published": "2026-10-27T02:59:44+09:00",
+      "title": "Retriever-Free Retrieval: Navigating Documents with Decision Models",
+      "url": "https://arxiv.org/abs/2610.35868",
+      "image": "https://arxiv.org/html/2610.35868v1/figures/motivation_bottleneck3.png",
+      "figureUrl": "https://arxiv.org/html/2610.35868",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.35868",
+      "scoreLabel": "alphaXiv #15",
+      "oneLine": "별도 retriever 없이 언어 모델의 decision model이 문서 구조를 위에서 아래로 탐색하는 검색 방법 DecisionRAG",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "생성기는 크게 발전했지만 검색은 여전히 lexical 매칭이나 고정 임베딩 유사도에 의존해, retriever가 못 찾으면 생성기도 복구할 수 없음"
+        },
+        {
+          "label": "방법",
+          "text": "토큰 생성 없이 후보 분기를 한 번의 forward pass로 공동 평가하는 decision model로 코퍼스의 구조를 넓은 주제에서 개별 문단까지 탐색"
+        },
+        {
+          "label": "결과",
+          "text": "과제별 학습이나 1단계 retriever 없이 MultiDoc2Dial에서 8B reranker를 쓴 dense retrieval 대비 R@1 13.8점, Natural Questions에서 Hit@1 17.4점 향상; 268만 문단 코퍼스에서도 쿼리당 0.7~1.8초"
+        }
+      ],
+      "keywords": [
+        "RAG",
+        "LLM"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.21240",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 19,
+      "ranks": {
+        "hf": 10
+      },
+      "published": "2026-10-15T13:37:53+09:00",
+      "title": "Representation Redistribution in Sparse Autoencoders",
+      "url": "https://arxiv.org/abs/2610.21240",
+      "image": "https://arxiv.org/html/2610.21240v1/figure_1_overview.svg",
+      "figureUrl": "https://arxiv.org/html/2610.21240",
+      "codeUrl": "https://github.com/OpenSAE/Redistribution-Sensitivity-Score",
+      "codeStars": 2,
+      "score": 56,
+      "scoreLabel": "HF 56▲",
+      "oneLine": "의미를 보존하는 프롬프트 변형이 sparse autoencoder 특징을 어떻게 재분배하는지 측정하는 redistribution sensitivity score(RSS)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "요청을 보존하도록 설계한 프롬프트 변형도 SAE 특징 활성을 재분배하지만, 한 번 관측된 변화가 반복되거나 하위 계산에 영향을 준다는 보장은 없음"
+        },
+        {
+          "label": "방법",
+          "text": "일관된 방향으로 반복되는 큰 특징 반응을 찾는 RSS를 정의하고 선택에서 제외한 변형으로 검증하며, 고정 선형 판독에 대해 정확한 분해로 하위 결과를 설명"
+        },
+        {
+          "label": "결과",
+          "text": "8개 언어 모델의 SAE 27개에서 재현 가능한 재분배 프로파일을 확인했고, 두 안전 판독에서 약 20개 특징만으로 반복 실패 AUROC 0.935·0.958 달성"
+        }
+      ],
+      "keywords": [
+        "Interpretability",
+        "AI Safety"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.30006",
+      "kind": "paper",
+      "source": "hftrend",
+      "sources": [
+        "hftrend"
+      ],
+      "lane": "trending",
+      "rank": 20,
+      "ranks": {
+        "hftrend": 2
+      },
+      "published": "2026-10-22T01:41:14+09:00",
+      "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+      "url": "https://arxiv.org/abs/2610.30006",
+      "image": "https://arxiv.org/html/2610.30006v1/pg1.png",
+      "figureUrl": "https://arxiv.org/html/2610.30006",
+      "codeUrl": "https://github.com/google-deepmind/detectorscope",
+      "codeStars": 177,
+      "scoreLabel": "HF Trending #27",
+      "oneLine": "미세조정된 AI 생성 텍스트 탐지기를 sparse autoencoder로 사람이 읽을 수 있는 개념 기반 분류기로 바꾸는 Google DeepMind 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "가장 강한 AI 텍스트 탐지기는 불투명한 신경망 분류기이고, 투명한 문체 기반 대안은 성능이 크게 떨어짐"
+        },
+        {
+          "label": "방법",
+          "text": "탐지기의 residual stream에 SAE를 학습하고 각 특징에 자동 해석 라벨을 붙여 충실도 기준을 통과한 특징만 남긴 뒤 경량 분류기를 학습"
+        },
+        {
+          "label": "결과",
+          "text": "SAE가 AI 생성 텍스트의 구체적 언어적 'tell'을 복원했고, 해석 가능한 분류기가 신경망·문체 기반 대안보다 분포 밖 텍스트에서 더 강함(EMNLP 2026)"
+        }
+      ],
+      "keywords": [
+        "Interpretability",
+        "AI Detection"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2512.03975",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "trending",
+      "rank": 21,
+      "ranks": {
+        "alphaxiv": 3
+      },
+      "published": "2025-12-04T02:06:27+09:00",
+      "title": "Sponsored Questions and How to Auction Them",
+      "url": "https://arxiv.org/abs/2512.03975",
+      "figureUrl": "https://arxiv.org/html/2512.03975",
+      "altUrl": "https://www.alphaxiv.org/abs/2512.03975",
+      "scoreLabel": "alphaXiv #5",
+      "oneLine": "대화형 AI가 제시하는 후속 질문 일부를 광고로 '스폰서'할 때 어떻게 경매해야 하는지 다룬 메커니즘 설계 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "검색 질의는 의도가 모호하며, LLM은 명확화 후속 프롬프트를 제안할 수 있는데 그중 일부를 광고 슬롯으로 판다면 할당 방식이 문제"
+        },
+        {
+          "label": "방법",
+          "text": "제안 슬롯과 이후 광고 경매가 상호작용하는 플랫폼의 형식 모델을 세우고, 전체를 공동 최적화하는 방식과 분리된 모듈 방식을 비교"
+        },
+        {
+          "label": "결과",
+          "text": "VCG 메커니즘으로 공동 최적화하면 효율적이고 truthful한 결과를 얻지만, 단순한 모듈 방식은 Price of Anarchy가 무한대로 커질 수 있음을 증명"
+        }
+      ],
+      "keywords": [
+        "AI Industry",
+        "Game Theory"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "p-2610.36598",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 22,
+      "ranks": {
+        "arxiv": 1
+      },
+      "published": "2026-10-27T12:58:54+09:00",
+      "title": "OpenJaws: An Open Hardware UMI Framework with Stereo Localization for Generalist Manipulation",
+      "url": "https://arxiv.org/abs/2610.36598",
+      "image": "https://arxiv.org/html/2610.36598v1/openjaws_system_overview_c.png",
+      "figureUrl": "https://arxiv.org/html/2610.36598",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "스테레오 카메라로 메트릭 궤적을 복원하는 완전 오픈 하드웨어·소프트웨어 UMI 데이터 수집 프레임워크 OpenJaws",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "UMI 같은 휴대형 시연 수집 장치는 단안 VIO의 스케일 모호성·드리프트나 폐쇄형 추적 모듈에 의존해 행동 라벨 품질과 비용·설치 부담이 문제"
+        },
+        {
+          "label": "방법",
+          "text": "표준 ISO 어댑터를 갖춘 3D 프린팅 모듈형 그리퍼에 저가 스테레오 카메라를 결합하고, 휴대형 장치의 실제 위치 추정 정확도를 재는 UMI-Loc-Bench-v1 벤치마크를 제안"
+        },
+        {
+          "label": "결과",
+          "text": "스테레오 위치 추정이 단안 대안을 크게 앞섰고, 수집 데이터로 학습한 정책을 실제 로봇의 여러 작업에 배포; 하드웨어·소프트웨어·데이터를 상업적 사용 가능한 라이선스로 공개"
+        }
+      ],
+      "keywords": [
+        "Robot Learning",
+        "Open Hardware"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "deepmind-gemini-4-carbon-our-next-frontier-model",
+      "kind": "news",
+      "source": "deepmind",
+      "sources": [
+        "deepmind",
+        "hn"
+      ],
+      "rank": 1,
+      "ranks": {
+        "deepmind": 1,
+        "hn": 1
+      },
+      "published": "2026-10-29T02:00:58+09:00",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50276792",
+      "sourceUrls": {
+        "deepmind": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "hn": "https://news.ycombinator.com/item?id=50276792"
+      },
+      "score": 371,
+      "scoreLabel": "DeepMind · HN 371P",
+      "oneLine": "Google DeepMind, 사이버보안·장기 과제 성능을 앞세운 차세대 프런티어 모델 Gemini 4 Carbon 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Artificial Analysis Intelligence Index v5.0에서 59점으로 1위, SEC-bench Pro 88.2%·ExploitGym 54.8%·CWE-bench 71.0% 등 취약점 탐지·익스플로잇·패치에서 선두이며 며칠씩 이어지는 장기 엔지니어링 작업을 겨냥"
+        },
+        {
+          "label": "",
+          "text": "이번 주 일부 사이버 방어 조직부터 제공하고 Fairwind Program으로 신뢰 파트너에 단계적으로 확대; 가격은 Argon과 같은 입력 100만 토큰당 $2, 출력 $10"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "AI Security"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "gn-36045",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 2,
+      "ranks": {
+        "geeknews": 5
+      },
+      "published": "2026-10-26T23:00:14+09:00",
+      "title": "Anthropic, 나스닥에 ‘ANT’로 상장 신청하고 S-1 증권신고서 공개",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "discussUrl": "https://news.hada.io/topic?id=36045",
+      "score": 8,
+      "scoreLabel": "8P",
+      "oneLine": "Anthropic, 나스닥에 'ANT'로 상장 신청하고 S-1 증권신고서 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "2026년 상반기 매출 162억 8,600만 달러로 전년 동기 약 14배, 영업손실은 21억 3,500만 달러에서 6억 9,300만 달러로 축소; 순매출 유지율 약 900%"
+        },
+        {
+          "label": "",
+          "text": "공모가·주식 수는 미정이며, 6월 말 장기 구매약정 약 2,656억 달러와 실제 사용량 기반 매출 간 차이를 주요 사업 위험으로 명시"
+        }
+      ],
+      "keywords": [
+        "AI Industry",
+        "Anthropic"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50265609",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 3,
+      "ranks": {
+        "hn": 8
+      },
+      "published": "2026-10-28T05:50:42+09:00",
+      "title": "Early progress on accelerating drug development with Claude",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "discussUrl": "https://news.ycombinator.com/item?id=50265609",
+      "score": 305,
+      "scoreLabel": "305P",
+      "oneLine": "Anthropic, 6개 신약 개발사와의 협업에서 Claude가 거둔 초기 성과 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "BigHat·BMS·Divergence Labs·Enveda·Generate Biomedicines·The Column Group과 협업하고 희귀 소아 근이영양증 등 자체 신약 프로그램도 시작"
+        },
+        {
+          "label": "",
+          "text": "Generate는 Claude Code로 CAR-T 유전 지시 일부를 약 70% 짧게 설계해 실험에서 수용체 약 10배 발현, Divergence Labs는 Claude가 한 달간 약 3만 5천 개 항체 설계를 생성해 IgE 결합·분리 후보를 확보"
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "Anthropic"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50273731",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 4,
+      "ranks": {
+        "hn": 5
+      },
+      "published": "2026-10-28T23:02:20+09:00",
+      "title": "The Agent SDK",
+      "url": "https://cursor.com/blog/agent-sdk",
+      "discussUrl": "https://news.ycombinator.com/item?id=50273731",
+      "score": 55,
+      "scoreLabel": "55P",
+      "oneLine": "Cursor, 사내 Bugbot·Security Reviewer를 만든 프레임워크 'Agent SDK' 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "에이전트를 코드로 정의해 GitHub·GitLab·Bitbucket PR 등 이벤트에 반응하게 하고, 명령 한 번으로 Cursor 인프라에 배포"
+        },
+        {
+          "label": "",
+          "text": "서브에이전트 병렬 분할·전문 에이전트 위임, eval과 event replay를 기본 지원하며 PGA Tour가 소프트웨어 개발 공장 구축에 사용"
+        }
+      ],
+      "keywords": [
+        "Agent Tools",
+        "AI Coding"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50275128",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 5,
+      "ranks": {
+        "hn": 9
+      },
+      "published": "2026-10-29T00:17:53+09:00",
+      "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "discussUrl": "https://news.ycombinator.com/item?id=50275128",
+      "score": 47,
+      "scoreLabel": "47P",
+      "oneLine": "NVIDIA, 40개 언어 전사·화자 분리·번역·오디오 QA를 하나로 묶은 오픈 ASR 모델 Nemotron 3.5 Transcribe 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "40개 언어 전사, 31개 언어 영어 양방향 번역, 13개 언어 화자 분리를 한 체크포인트에서 지원하며 최대 1시간 녹음·8명 화자 처리, 자연어 프롬프트로 출력 제어"
+        },
+        {
+          "label": "",
+          "text": "Hugging Face Open ASR Leaderboard 영어 부문 오픈 가중치 1위이며, Granary v2 데이터 파이프라인과 미세조정 레시피도 함께 공개"
+        }
+      ],
+      "keywords": [
+        "Speech AI",
+        "Open Weights",
+        "NVIDIA"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50264853",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 6,
+      "ranks": {
+        "hn": 7
+      },
+      "published": "2026-10-28T04:55:06+09:00",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "url": "https://www.brangus.io/survival-llm",
+      "discussUrl": "https://news.ycombinator.com/item?id=50264853",
+      "score": 489,
+      "scoreLabel": "489P",
+      "oneLine": "인터넷 없이 내 컴퓨터에서 돌아가는 비상용 AI 비서·라이브러리 'Survival LLM'",
+      "bullets": [
+        {
+          "label": "",
+          "text": "의료 자료, FEMA·CDC 지침, 생존 매뉴얼, 수리 가이드, 위키백과 약 93만 문서를 로컬에 두고 답변마다 출처 문단을 강조해 보여 주는 무료 오픈소스 앱"
+        },
+        {
+          "label": "",
+          "text": "메모리 용량에 따라 Nemotron 3.5 Super, Qwen3.8 27B, Granite 4.2 8B 등 모델을 자동 선택하며, 22개 정전·응급처치 질문 테스트 결과도 공개"
+        }
+      ],
+      "keywords": [
+        "On-Device AI",
+        "RAG"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50275626",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 7,
+      "ranks": {
+        "hn": 2
+      },
+      "published": "2026-10-29T00:46:30+09:00",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "discussUrl": "https://news.ycombinator.com/item?id=50275626",
+      "score": 89,
+      "scoreLabel": "89P",
+      "oneLine": "Surge AI, 50개 전문 세무 과제로 AI 에이전트를 평가하는 벤치마크 DAYJOB: Tax 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "세무 8개 영역 50개 환경, 1,789개 작업 파일(PDF 1,487개 등)로 신고서·검토·자문을 수행하게 하고 95% rubric 기준 pass@1로 채점"
+        },
+        {
+          "label": "",
+          "text": "Claude Sonnet 5.5가 10.8%로 1위, Fable 5.1 9.6%, Opus 5.5 9.2%로 최상위도 통과율이 낮음"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "LLM Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "gn-36137",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 8,
+      "ranks": {
+        "geeknews": 3
+      },
+      "published": "2026-10-28T09:37:25+09:00",
+      "title": "Unlimited-OCR 2 - 페이지 간 문맥을 이어 수백 페이지 문서를 파싱하는 OCR 모델",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "discussUrl": "https://news.hada.io/topic?id=36137",
+      "score": 10,
+      "scoreLabel": "10P",
+      "oneLine": "Baidu, 페이지 간 문맥을 이어 수백 페이지 문서를 파싱하는 OCR 모델 Unlimited-OCR 2 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "SR-SWA가 텍스트·시각 어텐션을 512토큰 같은 고정 크기 참조 집합으로 압축해 문서 길이와 관계없이 디코딩 지연과 메모리를 거의 일정하게 유지"
+        },
+        {
+          "label": "",
+          "text": "자체 평가에서 MPDocBench 84.6점, MarathonDocBench 77.1점으로 비교 모델 중 최고이며 Transformers와 맞춤형 SGLang 추론 제공"
+        }
+      ],
+      "keywords": [
+        "OCR",
+        "Open Weights"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "anthropic-expanding-partnership-gsa",
+      "kind": "news",
+      "source": "anthropic",
+      "sources": [
+        "anthropic"
+      ],
+      "rank": 9,
+      "ranks": {
+        "anthropic": 1
+      },
+      "published": "2026-10-27",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "scoreLabel": "Anthropic",
+      "oneLine": "Anthropic, 미 연방조달청(GSA)과 협력 확대해 정부 기관에 Claude 40% 할인",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Claude Enterprise·Claude for Government·Claude API 전 제품에 할인이 적용되며 주·지방·부족 정부까지 확대, 기관 도입 지원 프로그램도 시작"
+        },
+        {
+          "label": "",
+          "text": "약 500개 미국 정부 기관이 Claude를 사용하며, Claude for Government 주간 활성 사용자는 2월 이후 약 8배로 증가"
+        }
+      ],
+      "keywords": [
+        "AI Policy",
+        "Anthropic"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "gn-36113",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 10,
+      "ranks": {
+        "geeknews": 2
+      },
+      "published": "2026-10-27T23:34:11+09:00",
+      "title": "AI는 일을 줄여준다고 약속했다. 나는 그 어느 때보다 많이 일하고 있다",
+      "url": "https://oioannou.com/blog/ai-promised-less-work/",
+      "discussUrl": "https://news.hada.io/topic?id=36113",
+      "score": 17,
+      "scoreLabel": "17P",
+      "oneLine": "AI는 일을 줄여준다고 약속했지만 오히려 그 어느 때보다 많이 일하게 됐다는 개발 리더의 경험담",
+      "bullets": [
+        {
+          "label": "",
+          "text": "구현 비용이 낮아지자 업무를 빨리 끝내기보다 맡는 일의 양이 늘었고, 여러 에이전트의 질문·계획 승인·코드 검토 요청으로 맥락 전환 부담이 커짐"
+        },
+        {
+          "label": "",
+          "text": "새 모델에 힘입어 일을 벌였다가 검토와 맥락 전환에 지쳐 물러나는 집중·소진 주기를 1월 이후 세 차례 겪었다고 설명"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50276998",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 11,
+      "ranks": {
+        "hn": 3
+      },
+      "published": "2026-10-29T02:13:29+09:00",
+      "title": "Why Is This Fingerprinting Script Creating Bioweapons?",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "discussUrl": "https://news.ycombinator.com/item?id=50276998",
+      "score": 30,
+      "scoreLabel": "30P",
+      "oneLine": "웹 핑거프린팅 스크립트에 LLM 안전장치를 자극하는 함수명과 숨은 jailbreak 프롬프트를 심어 AI 기반 역난독화를 막는 사례 발견",
+      "bullets": [
+        {
+          "label": "",
+          "text": "1만 개 사이트를 크롤링해 캔버스 핑거프린팅을 수집하던 중, 한 스크립트가 위험한 주제를 연상시키는 함수명과 보이지 않는 유니코드로 인코딩된 시스템 프롬프트를 담고 있음을 확인"
+        },
+        {
+          "label": "",
+          "text": "저자는 이를 anti-LLM 난독화로 보고, 한 모델은 안전 위험을 이유로 분석을 거부한 반면 GLM-5.3은 요청에 응했다고 보고"
+        }
+      ],
+      "keywords": [
+        "AI Security"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50243060",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 12,
+      "ranks": {
+        "hn": 4
+      },
+      "published": "2026-10-26T22:13:31+09:00",
+      "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
+      "url": "https://www.circuithub.com/post/unveiling-the-grid",
+      "discussUrl": "https://news.ycombinator.com/item?id=50243060",
+      "score": 287,
+      "scoreLabel": "287P",
+      "oneLine": "CircuitHub, AI 에이전트와 학습 모델이 스케줄링하는 공장 규모 PCB 조립 로봇 'The Grid' 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "고정 라인 대신 하나의 거대 로봇으로, 부상 이동체가 보드와 부품을 장비 사이로 옮기고 학습 모델·AI 에이전트·최적화기가 전 과정을 스케줄링해 설계별 셋업 없이 다품종 소량 생산"
+        },
+        {
+          "label": "",
+          "text": "예시 보드 5장 기준 4일·630달러로, 관세 포함 약 465달러·9일인 선전 quick-turn 업체보다 비싸지만 5일 빠르다고 설명"
+        }
+      ],
+      "keywords": [
+        "Robotics",
+        "AI Industry"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "gn-36135",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 13,
+      "ranks": {
+        "geeknews": 1
+      },
+      "published": "2026-10-28T09:13:02+09:00",
+      "title": "AI 시대의 개발자를 꿈꾸는 학생 개발자에게",
+      "url": "https://d2.naver.com/helloworld/1975819",
+      "discussUrl": "https://news.hada.io/topic?id=36135",
+      "score": 34,
+      "scoreLabel": "34P",
+      "oneLine": "네이버 D2, 'AI 시대의 개발자를 꿈꾸는 학생 개발자에게' — 2018년 글의 후속편",
+      "bullets": [
+        {
+          "label": "",
+          "text": "개발자의 역할이 AI에게 방향을 지시하고 결과에 책임지는 쪽으로 바뀌며, 요구사항을 명확한 지시로 바꾸는 소통 능력과 AI 결과를 비판할 수 있는 깊이가 중요하다고 조언"
+        },
+        {
+          "label": "",
+          "text": "AI 산출물을 자기 역량으로 착각하지 말고 해석·설명까지 해야 학습이 되며, 채용에서는 AI를 어떻게 쓰고 검증했는지 설명할 수 있으면 긍정적 신호라고 설명"
+        }
+      ],
+      "keywords": [
+        "AI Coding"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50276235",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 14,
+      "ranks": {
+        "hn": 10
+      },
+      "published": "2026-10-29T01:23:24+09:00",
+      "title": "Major Memory Vendor: We're Basically Sold Out Through 2029",
+      "url": "https://www.pcmag.com/news/sk-hynix-major-memory-vendor-basically-sold-out-through-2029",
+      "discussUrl": "https://news.ycombinator.com/item?id=50276235",
+      "score": 16,
+      "scoreLabel": "16P",
+      "oneLine": "SK하이닉스, DRAM·HBM 물량이 2029년까지 사실상 매진됐다고 밝혀",
+      "bullets": [
+        {
+          "label": "",
+          "text": "고객사들이 장기 계약으로 2027~2028년 생산능력의 50% 이상을 확보했고, 주요 클라우드 사업자를 포함한 14개 핵심 고객과 장기 계약 체결"
+        },
+        {
+          "label": "",
+          "text": "수요가 2030년까지 공급을 웃돌 것으로 전망하며, 증설에 수년이 걸려 단기적으로 고객 요구 물량을 모두 맞추기 어렵다고 설명"
+        }
+      ],
+      "keywords": [
+        "AI Infra"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50234183",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 15,
+      "ranks": {
+        "hn": 6
+      },
+      "published": "2026-10-26T03:00:04+09:00",
+      "title": "Fine-tuned Qwen on my 16gb GPU to respond without the letter e",
+      "url": "https://kevin-wu.ca/blog/qwn/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50234183",
+      "score": 27,
+      "scoreLabel": "27P",
+      "oneLine": "16GB GPU에서 Qwen3-1.7B를 SFT와 RL로 미세조정해 'e' 없이 답하게 만든 실험",
+      "bullets": [
+        {
+          "label": "",
+          "text": "토큰 단위로 읽는 LLM은 단어에 특정 글자가 있는지 직접 보지 못해 lipogram 생성이 어려운 과제"
+        },
+        {
+          "label": "",
+          "text": "'e' 미포함·질문에 답함·자연스러운 영어라는 세 기준을 정의하고 SFT 후 RL로 사용 가능한 답의 비율을 높인 과정을 공개"
+        }
+      ],
+      "keywords": [
+        "Small Models",
+        "RL"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "hn-50273416",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 16,
+      "ranks": {
+        "hn": 11
+      },
+      "published": "2026-10-28T22:43:32+09:00",
+      "title": "Decompiling Games with AI: Virtueel Zoetermeer",
+      "url": "https://bou.ke/blog/zoetermeer/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50273416",
+      "score": 3,
+      "scoreLabel": "3P",
+      "oneLine": "Claude로 2000년대 네덜란드 교육용 게임 'Virtueel Zoetermeer'를 디컴파일해 웹에서 실행",
+      "bullets": [
+        {
+          "label": "",
+          "text": "archive.org의 원본을 주고 디컴파일과 웹 실행을 지시한 뒤, 직접 게임을 끝까지 플레이하며 충돌을 고치게 해 안정화하고 Pascal 재구성 소스를 GitHub에 공개"
+        },
+        {
+          "label": "",
+          "text": "앞서 시도한 Age of Mythology 디컴파일은 한 달간 약 60%에서 진척이 느려졌다고 밝힘"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "openai-retell-ai",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 17,
+      "ranks": {
+        "openai": 2
+      },
+      "published": "2026-10-28T00:00:00+09:00",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "scoreLabel": "OpenAI",
+      "oneLine": "Retell, OpenAI 모델로 월 1억 건 통화를 처리하는 음성 에이전트 운영",
+      "bullets": [
+        {
+          "label": "",
+          "text": "RSS 요약에 따르면 GPT-6 Astra가 Retell의 음성 에이전트 벤치마크 1위를 차지했고, Codex 활용으로 직원 1인당 연간 매출 런레이트 160만 달러에 도달"
+        }
+      ],
+      "keywords": [
+        "Voice Agents",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "openai-check-point-daybreak",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 18,
+      "ranks": {
+        "openai": 3
+      },
+      "published": "2026-10-27T09:00:00+09:00",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "url": "https://openai.com/index/check-point-daybreak",
+      "scoreLabel": "OpenAI",
+      "oneLine": "Check Point, OpenAI Daybreak로 취약점 연구 가속",
+      "bullets": [
+        {
+          "label": "",
+          "text": "RSS 요약에 따르면 Check Point는 Daybreak로 새 보안 보호 기능의 기반 연구를 빠르게 진행해, 분석가가 취약점 정보를 고객 방어로 더 빨리 전환"
+        }
+      ],
+      "keywords": [
+        "AI Security",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "openai-legora-agentic-operating-system-for-legal-work",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 19,
+      "ranks": {
+        "openai": 1
+      },
+      "published": "2026-10-28T18:30:00+09:00",
+      "title": "Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "scoreLabel": "OpenAI",
+      "oneLine": "Legora, OpenAI 모델·ChatGPT·Codex로 법률 업무용 에이전트 운영체제 구축",
+      "bullets": [
+        {
+          "label": "",
+          "text": "RSS 요약에 따르면 Legora는 OpenAI 모델, ChatGPT, Codex로 법률 워크플로를 가속하고 계약 분석 범위를 넓혀 변호사가 고부가가치 업무에 집중하게 함"
+        }
+      ],
+      "keywords": [
+        "LLM Agents",
+        "OpenAI"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    },
+    {
+      "id": "gn-36161",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 20,
+      "ranks": {
+        "geeknews": 4
+      },
+      "published": "2026-10-28T18:58:11+09:00",
+      "title": "Show GN: iMessage 로 컴패니언 AI 와 대화하는 RenAI 를 만들고 있습니다.",
+      "url": "https://news.hada.io/topic?id=36161",
+      "discussUrl": "https://news.hada.io/topic?id=36161",
+      "score": 2,
+      "scoreLabel": "2P",
+      "oneLine": "Show GN: iMessage에서 기억과 성격을 가진 AI 페르소나와 대화하는 컴패니언 AI 'RenAI'",
+      "bullets": [
+        {
+          "label": "",
+          "text": "별도 앱 없이 웹에서 페르소나를 고르고 iMessage로 대화하며, 중요한 일은 오래 기억하고 사소한 일은 잊고 대하는 방식에 따라 관계가 깊어지거나 끝날 수 있게 설계"
+        },
+        {
+          "label": "",
+          "text": "현재 초기 베타 테스터를 모집 중"
+        }
+      ],
+      "keywords": [
+        "AI Companion"
+      ],
+      "addedAt": "2026-10-29T03:42:14+09:00"
+    }
+  ]
+}
