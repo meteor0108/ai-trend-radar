@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 29 Oct 2026 03:42:14 +0900</lastBuildDate>
+<lastBuildDate>Fri, 30 Oct 2026 03:41:01 +0900</lastBuildDate>
+<item>
+<title>[논문] Rollback: Experience Backtracking in World Models for Policy Improvement</title>
+<link>https://arxiv.org/abs/2610.36068</link>
+<guid isPermaLink="false">p-2610.36068</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>world model을 '되감기' 가능한 반사실 엔진으로 써서 결정 단위 감독을 만드는 로봇 정책 개선법 Rollback</description>
+</item>
+<item>
+<title>[논문] EmbeddingGemma 2: Unified and Efficient Multimodal Representations</title>
+<link>https://arxiv.org/abs/2610.37364</link>
+<guid isPermaLink="false">p-2610.37364</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>텍스트·이미지·오디오·비디오를 하나의 공간에 임베딩하는 Google의 오픈 멀티모달 임베딩 모델 EmbeddingGemma 2</description>
+</item>
+<item>
+<title>[논문] Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?</title>
+<link>https://arxiv.org/abs/2610.32046</link>
+<guid isPermaLink="false">p-2610.32046</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>과학적 발견에서 가중치 업데이트 없이 외부 메모리를 진화시키는 Test-Time Memory Evolution(TTME)</description>
+</item>
+<item>
+<title>[논문] BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation</title>
+<link>https://arxiv.org/abs/2605.08571</link>
+<guid isPermaLink="false">p-2605.08571</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>풍부한 source 시연과 적은 target 시연을 가중 공동학습하는 생성형 로봇 정책 프레임워크 BEACON</description>
+</item>
+<item>
+<title>[논문] Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes</title>
+<link>https://arxiv.org/abs/2610.32749</link>
+<guid isPermaLink="false">p-2610.32749</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>현실적인 벤치마크 RealSSA와 경량 스트리밍 audio-visual 화자 추출 모델 Falcon</description>
+</item>
+<item>
+<title>[뉴스] We're releasing the weights of Mistral Large 4</title>
+<link>https://mistral.ai/news/mistral-large-4-oss/</link>
+<guid isPermaLink="false">hn-50289418</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>Mistral, 1조 파라미터 멀티모달 모델 Mistral Large 4(Le Chonk)의 가중치를 공개</description>
+</item>
+<item>
+<title>[뉴스] Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5</title>
+<link>https://divagr.com/blog/qwenputer</link>
+<guid isPermaLink="false">hn-50282838</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>Qwen 3.5 4B의 Gated DeltaNet 층을 RAM으로 써서 가중치 안에 결정적 RISC-V CPU를 심은 실험 모델 Qwenputer</description>
+</item>
+<item>
+<title>[뉴스] An updated Model Spec for more capable and beneficial AI</title>
+<link>https://openai.com/index/updated-model-spec</link>
+<guid isPermaLink="false">openai-updated-model-spec</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 더 유능한 AI를 위한 다섯 가지 핵심 가치를 담은 Model Spec 개정판 공개</description>
+</item>
+<item>
+<title>[뉴스] GPT-6.1 Terra - 시각적 추론과 컴퓨터 사용을 결합한 고속 모델</title>
+<link>https://openai.com/index/introducing-gpt-6-1-terra/</link>
+<guid isPermaLink="false">gn-36059</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 시각적 추론과 컴퓨터 사용을 결합한 고속·저가 모델 GPT-6.1 Terra 출시</description>
+</item>
+<item>
+<title>[뉴스] Anthropic, Claude를 활용한 신약 개발 초기 성과 공개</title>
+<link>https://www.anthropic.com/research/early-progress-drug-development</link>
+<guid isPermaLink="false">gn-36156</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 6개 신약 개발 조직과의 협력으로 얻은 Claude 활용 초기 성과 공개</description>
+</item>
+<item>
+<title>[뉴스] How we detect frontier model misalignment</title>
+<link>https://openai.com/index/how-we-detect-frontier-model-misalignment</link>
+<guid isPermaLink="false">openai-how-we-detect-frontier-model-misalignment</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 프런티어 모델의 misalignment와 무단 에이전트 행동을 탐지하는 계층형 모니터링 방식 소개</description>
+</item>
+<item>
+<title>[뉴스] NVIDIA Nemotron 3.5 Transcribe - 한국어 포함 40개 언어를 지원하는 공개 음성 인식 모델</title>
+<link>https://huggingface.co/blog/nvidia/nemotron-transcribe-granary</link>
+<guid isPermaLink="false">gn-36196</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 한국어 포함 40개 언어 전사·화자 구분·번역·오디오 QA를 하나로 묶은 공개 음성 모델 Nemotron 3.5 Transcribe 공개</description>
+</item>
+<item>
+<title>[뉴스] LFM3 - 로컬 실행과 맞춤 학습을 위한 2B급 멀티모달 AI 모델군</title>
+<link>https://www.liquid.ai/blog/lfm3</link>
+<guid isPermaLink="false">gn-36132</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>Liquid AI, 로컬 실행·맞춤 학습용 약 2B급 멀티모달 오픈 웨이트 모델군 LFM3 6종 공개</description>
+</item>
+<item>
+<title>[뉴스] AI 에이전트가 코드를 작성해도 개발자는 무엇을 알아야 할까?</title>
+<link>https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work</link>
+<guid isPermaLink="false">gn-36162</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>에이전트가 코드를 쓰는 시대에 시스템 책임자에게 필요한 것은 이상 징후를 알아차리고 필요한 만큼 파고드는 능력이라는 글</description>
+</item>
+<item>
+<title>[뉴스] AI for Science expands to foundations and research institutions</title>
+<link>https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions</link>
+<guid isPermaLink="false">anthropic-ai-for-science-expands-foundations-research-institutions</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, AI for Science 프로그램을 20개 과학 재단·연구기관으로 확대</description>
+</item>
 <item>
 <title>[논문] ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</title>
 <link>https://arxiv.org/abs/2610.37666</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36004</guid>
 <pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
 <description>클라우드 코딩 에이전트로 실패한 Codex가 로컬 도구로 전환해 OpenAI 핵심 제품이 되기까지의 과정</description>
-</item>
-<item>
-<title>[논문] Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?</title>
-<link>https://arxiv.org/abs/2610.28763</link>
-<guid isPermaLink="false">p-2610.28763</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>프런티어 코딩 에이전트가 과학 ML 벤치마크의 공개 최고 모델을 얼마나 개선할 수 있는지 측정하는 Agent4Sci 테스트베드</description>
-</item>
-<item>
-<title>[논문] Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation</title>
-<link>https://arxiv.org/abs/2610.31166</link>
-<guid isPermaLink="false">p-2610.31166</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>휴머노이드 loco-manipulation VLA가 목표 이전에 본 객체 사건을 기억하도록 하는 객체 기반 지각 메모리 WholeBodyMem</description>
-</item>
-<item>
-<title>[논문] BrickWright: Agentic Creation of Physically Feasible Brick Builds</title>
-<link>https://arxiv.org/abs/2610.31651</link>
-<guid isPermaLink="false">p-2610.31651</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>코딩 에이전트에게 조립 API와 물리 타당성 검증기를 주어 실제로 조립 가능한 LEGO 브릭 빌드를 만들게 하는 BrickWright</description>
-</item>
-<item>
-<title>[논문] Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V</title>
-<link>https://arxiv.org/abs/2610.28416</link>
-<guid isPermaLink="false">p-2610.28416</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>MLLM이 코드로 완성된 영상을 만드는 능력을 T2V·I2V·V2V 전반에서 평가하는 벤치마크 Code2Video-Compass</description>
-</item>
-<item>
-<title>[논문] Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use</title>
-<link>https://arxiv.org/abs/2610.30108</link>
-<guid isPermaLink="false">p-2610.30108</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>computer-use에서 robot-use까지 멀티모달 embodied agent를 다섯 가지 능력(PAPAV)으로 정리한 서베이 프레임워크</description>
-</item>
-<item>
-<title>[뉴스] Cerebras Deploys Trillion-Parameter AI Models</title>
-<link>https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras</link>
-<guid isPermaLink="false">hn-50227356</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cerebras가 웨이퍼 칩 여러 장에 3T 파라미터급 모델을 나눠 올려 초당 1,000~2,000+ 토큰으로 서빙하는 방법을 공개</description>
-</item>
-<item>
-<title>[뉴스] America has lost 200k of jobs in media, film and the arts. How much is AI?</title>
-<link>https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class</link>
-<guid isPermaLink="false">hn-50226419</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>미국 미디어·영화·예술 분야 일자리가 4년간 20만 개 넘게 줄어든 가운데 AI가 얼마나 책임이 있는지 분석한 글</description>
-</item>
-<item>
-<title>[뉴스] A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis</title>
-<link>https://lynchlab.net/llm-skin-cancer</link>
-<guid isPermaLink="false">hn-50233779</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>10년 된 CNN(Inception v3)을 약 20분 미세조정한 모델이 피부암 진단에서 GPT-6 Astra와 Claude Fable 5.1을 앞섰다는 실험</description>
-</item>
-<item>
-<title>[뉴스] Cohere, Rerank 5 공개 - 검색 결과 재정렬부터 문서 속 핵심 구절 추출까지</title>
-<link>https://cohere.com/blog/rerank-5</link>
-<guid isPermaLink="false">gn-35959</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cohere가 검색 결과 재정렬 모델 Rerank 5(Pro·Fast)를 공개하고 문서 속 핵심 구절을 뽑는 Context Focus 기능을 추가</description>
-</item>
-<item>
-<title>[뉴스] Why is AI generated language so hard to understand?</title>
-<link>https://arxiv.org/abs/2610.29162</link>
-<guid isPermaLink="false">hn-50223647</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI가 생성한 글이 왜 이해하기 어려워졌는지 심리언어학 특성으로 분석한 arXiv 논문</description>
-</item>
-<item>
-<title>[뉴스] 기술업계 밖에서는 아직 AI 투자 성과가 보이지 않는다</title>
-<link>https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector</link>
-<guid isPermaLink="false">gn-35937</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>Apollo 분석: 막대한 AI 투자에도 미국 기술업계 밖에서는 매출·이익률 개선 증거가 아직 보이지 않음</description>
-</item>
-<item>
-<title>[뉴스] Nikon photography contest winner loses title after scientists spot signs of AI</title>
-<link>https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html</link>
-<guid isPermaLink="false">hn-50229827</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>Nikon Small World in Motion 우승작이 AI 생성 의혹으로 수상이 취소됨</description>
-</item>
-<item>
-<title>[뉴스] AI use leads UC Berkeley math professor to see 'no point' in grading homework</title>
-<link>https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html</link>
-<guid isPermaLink="false">hn-50233304</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>UC Berkeley의 필즈상 수상자 Richard Borcherds 교수가 학생들의 AI 사용으로 숙제 정답 채점을 그만둠</description>
-</item>
-<item>
-<title>[뉴스] A Mathematician Reads the AI Future</title>
-<link>https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/</link>
-<guid isPermaLink="false">hn-50233347</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>수학 교수가 The Atlantic 기고에서 OpenAI의 Navier-Stokes 해결 주장 이후 위기에 빠진 수학계의 심경을 전함</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Farol – A risk map of a pull request for the person who approves it</title>
-<link>https://github.com/winnin/farol</link>
-<guid isPermaLink="false">hn-50231349</guid>
-<pubDate>Mon, 26 Oct 2026 08:00:00 +0900</pubDate>
-<description>Show HN: AI 리뷰 이후 PR 승인자에게 병합 위험도와 위험이 있는 파일을 알려주는 오픈소스 CLI·GitHub Action Farol</description>
 </item>
 </channel>
 </rss>
