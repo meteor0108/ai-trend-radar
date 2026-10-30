@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 30 Oct 2026 03:41:01 +0900</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 03:40:09 +0900</lastBuildDate>
+<item>
+<title>[논문] Intrinsic Distribution Matching</title>
+<link>https://arxiv.org/abs/2610.39633</link>
+<guid isPermaLink="false">p-2610.39633</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>DMD 기반 few-step T2I distillation에 생성기 EMA 특징의 평균·표준편차 매칭을 더한 Intrinsic Distribution Matching</description>
+</item>
+<item>
+<title>[논문] L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
+<link>https://arxiv.org/abs/2610.40614</link>
+<guid isPermaLink="false">p-2610.40614</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>VAE latent를 담은 3D Gaussian 메모리로 9 FPS 실시간·장기 일관성 있는 무한 월드 생성을 하는 L3G-World</description>
+</item>
+<item>
+<title>[논문] TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation</title>
+<link>https://arxiv.org/abs/2610.40349</link>
+<guid isPermaLink="false">p-2610.40349</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>손끝 촉각을 기준으로 인간 시연을 로봇 데이터로 변환해 dexterous VLA를 학습시키는 TouchBridge</description>
+</item>
+<item>
+<title>[논문] A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement</title>
+<link>https://arxiv.org/abs/2610.38568</link>
+<guid isPermaLink="false">p-2610.38568</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>학습 신호가 줄어들 때 과제 풀을 새로 고치는 외부 데이터 없는 멀티모달 자기개선 A-RSI</description>
+</item>
+<item>
+<title>[논문] Cross-Controller Transfer via In-Context Behavior Adaptation</title>
+<link>https://arxiv.org/abs/2610.39280</link>
+<guid isPermaLink="false">p-2610.39280</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>명령 행동과 실제 로봇 움직임의 예시를 context로 받아 서로 다른 controller 간 데이터를 전이하는 정책</description>
+</item>
+<item>
+<title>[뉴스] Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</title>
+<link>https://phorion.io/blog/offical-claude-code-vsx-compromise/</link>
+<guid isPermaLink="false">hn-50300683</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>Cursor 마켓플레이스에 올라온 Claude Code for VS Code 확장에서 백도어가 발견됐다는 보안 보고</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Carbon, AAII v5 1위, 코딩 에이전트 2위</title>
+<link>https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1</link>
+<guid isPermaLink="false">gn-36229</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>Artificial Analysis: Gemini 4 Carbon, Intelligence Index v5 59점 1위·코딩 에이전트 지수 2위</description>
+</item>
+<item>
+<title>[뉴스] US tech stocks see sharp falls over AI cost fears</title>
+<link>https://www.bbc.co.uk/news/articles/cvwy72e0n72yo</link>
+<guid isPermaLink="false">hn-50306008</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI 투자 비용 우려로 미국 기술주 이틀 연속 급락</description>
+</item>
+<item>
+<title>[뉴스] Making it easier for websites to express AI training preferences</title>
+<link>https://openai.com/index/helping-websites-express-ai-training-preferences</link>
+<guid isPermaLink="false">openai-helping-websites-express-ai-training-preferences</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 웹사이트의 AI 학습 선호를 표현하는 공유 robots.txt 신호를 준수하기로</description>
+</item>
+<item>
+<title>[뉴스] A Working Nintendo in ~1GB of Qwen Weights</title>
+<link>https://github.com/dbreunig/nesformer</link>
+<guid isPermaLink="false">hn-50306442</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>NES CPU를 Qwen3.5 가중치에 컴파일해 슈퍼 마리오를 돌리는 nesformer</description>
+</item>
+<item>
+<title>[뉴스] AI isn't replacing SREs, it's deskilling them</title>
+<link>https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling</link>
+<guid isPermaLink="false">hn-50305693</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>AI는 SRE를 대체하지 않고 탈숙련화한다</description>
+</item>
+<item>
+<title>[뉴스] Claude Code는 각 에이전트의 대화 기록을 약 30초마다 해당 모델에 전송함</title>
+<link>https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce</link>
+<guid isPermaLink="false">gn-36213</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>Claude Code, 백그라운드 에이전트 상태 요약을 위해 약 30초마다 전체 대화 기록을 모델에 전송</description>
+</item>
+<item>
+<title>[뉴스] US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech</title>
+<link>https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead</link>
+<guid isPermaLink="false">hn-50302814</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>미 민주당 의원들, AI 버블 붕괴 시 빅테크 구제금융에 반대하는 결의안 발의</description>
+</item>
+<item>
+<title>[뉴스] Community safety report and new protections for teens</title>
+<link>https://openai.com/index/community-safety-report-and-new-protections-for-teens</link>
+<guid isPermaLink="false">openai-community-safety-report-and-new-protections-for-teens</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, ChatGPT 폭력 예방 안전장치 확대와 커뮤니티 안전 보고서 발표</description>
+</item>
+<item>
+<title>[뉴스] Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals</title>
+<link>https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/</link>
+<guid isPermaLink="false">nvidia-ai-joins-the-search-for-extraterrestrial-signals</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
+<description>SETI, Allen Telescope Array에 에이전트형 AI를 도입해 외계 신호 탐색</description>
+</item>
 <item>
 <title>[논문] Rollback: Experience Backtracking in World Models for Policy Improvement</title>
 <link>https://arxiv.org/abs/2610.36068</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50256985</guid>
 <pubDate>Wed, 28 Oct 2026 08:00:00 +0900</pubDate>
 <description>Roblox를 자칭한 크롤러가 3D 파운데이션 모델 연구 명목으로 Open3DLab 등에서 145GB의 3D 모델을 무단 다운로드</description>
-</item>
-<item>
-<title>[논문] RynnUnify: Towards Unified Embodied Brain</title>
-<link>https://arxiv.org/abs/2610.32965</link>
-<guid isPermaLink="false">p-2610.32965</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>공간 추론·물리 예측·장기 시각 계획을 하나로 묶은 16B 통합 embodied 모델 RynnUnify</description>
-</item>
-<item>
-<title>[논문] RSIHub: A Composable Framework for Agent-Evolution Methods</title>
-<link>https://arxiv.org/abs/2610.32253</link>
-<guid isPermaLink="false">p-2610.32253</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>프롬프트·스킬·도구를 실행 피드백으로 개선하는 agent-evolution 기법들을 같은 인프라에서 조합·비교하는 오픈소스 프레임워크</description>
-</item>
-<item>
-<title>[논문] UniAction: Unified Action Conditioning for World Models</title>
-<link>https://arxiv.org/abs/2610.32977</link>
-<guid isPermaLink="false">p-2610.32977</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>힘·카메라·손 자세·로봇 자세 등 이질적 action을 한 world model에서 조건으로 쓰게 하는 UniAction</description>
-</item>
-<item>
-<title>[논문] UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents</title>
-<link>https://arxiv.org/abs/2610.30932</link>
-<guid isPermaLink="false">p-2610.30932</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>실사용자 6.5만 세션 궤적으로 장기 쇼핑 에이전트용 사용자 시뮬레이터를 평가하는 UserArena 벤치마크</description>
-</item>
-<item>
-<title>[논문] DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection</title>
-<link>https://arxiv.org/abs/2610.32969</link>
-<guid isPermaLink="false">p-2610.32969</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>로봇 손 하드웨어 그대로 들고 다니며 스킬을 골라 고자유도 손 시연을 모으는 휴대형 데이터 수집 장치 DexPort</description>
-</item>
-<item>
-<title>[뉴스] Anthropic files S-1 with the SEC for proposed initial public offering</title>
-<link>https://www.anthropic.com/news/s1-sec</link>
-<guid isPermaLink="false">anthropic-s1-sec</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic이 미 SEC에 IPO를 위한 S-1 증권신고서를 제출, Nasdaq 티커 ‘ANT’로 상장 추진</description>
-</item>
-<item>
-<title>[뉴스] GPT-6.1 Terra</title>
-<link>https://openai.com/index/introducing-gpt-6-1-terra/</link>
-<guid isPermaLink="false">hn-50248124</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 컴퓨터 사용과 시각 추론에 강한 빠르고 저렴한 모델 GPT-6.1 Terra를 공개</description>
-</item>
-<item>
-<title>[뉴스] OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?</title>
-<link>https://minimaxir.com/2026/10/cheap-llms/</link>
-<guid isPermaLink="false">hn-50236102</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI와 Anthropic이 몇 달 새 LLM 가격을 최대 80% 내린 배경을 가격표와 함께 분석한 글</description>
-</item>
-<item>
-<title>[뉴스] Concerning behavior from a popular open-weight AI model</title>
-<link>https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model</link>
-<guid isPermaLink="false">hn-50246658</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cohere가 Qwen3.8-Flash-Next가 탐지 규칙 작성 과제 중 머신을 조사하고 베이징의 Alibaba Cloud 버킷으로 파일 업로드를 시도한 사례를 공개</description>
-</item>
-<item>
-<title>[뉴스] Sebastian Raschka's from-scratch video course on building reasoning models</title>
-<link>https://magazine.sebastianraschka.com/p/building-reasoning-models</link>
-<guid isPermaLink="false">hn-50245138</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>Sebastian Raschka가 reasoning 모델을 처음부터 구현하는 8편·11시간 분량의 무료 코딩 강의 영상을 공개</description>
-</item>
-<item>
-<title>[뉴스] IBM CEO says open weight models are now good and cheap on-prem</title>
-<link>https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640</link>
-<guid isPermaLink="false">hn-50238088</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>IBM CEO가 open-weight 모델이 이제 성능은 충분하고 온프레미스 운영 비용도 싸다고 투자자들에게 언급</description>
-</item>
-<item>
-<title>[뉴스] OpenAI, AI의 격리 탈출을 막는 모델 훈련 환경 보안 체계 공개</title>
-<link>https://openai.com/index/securing-our-frontier-model-training-environment/</link>
-<guid isPermaLink="false">gn-35985</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 모델 훈련 환경에서 AI의 샌드박스 탈출과 무단 인터넷 접속을 막는 보안 체계를 공개</description>
-</item>
-<item>
-<title>[뉴스] Fixing Tool-Call Accuracy in vLLM</title>
-<link>https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm</link>
-<guid isPermaLink="false">hn-50242870</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>vLLM으로 open-weight 모델을 서빙할 때 tool call 스키마 정확도가 떨어지는 문제와 constrained decoding으로 해결하는 방법</description>
-</item>
-<item>
-<title>[뉴스] AI가 쓴 글은 왜 이해하기 어려울까?</title>
-<link>https://arxiv.org/abs/2610.29162</link>
-<guid isPermaLink="false">gn-35947</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI가 쓴 글이 사람에게 읽기 어려운 이유를 9개 주요 모델의 텍스트로 분석한 연구 소개</description>
-</item>
-<item>
-<title>[뉴스] Codex는 어떻게 탄생했나</title>
-<link>https://every.to/p/how-codex-happened</link>
-<guid isPermaLink="false">gn-36004</guid>
-<pubDate>Tue, 27 Oct 2026 08:00:00 +0900</pubDate>
-<description>클라우드 코딩 에이전트로 실패한 Codex가 로컬 도구로 전환해 OpenAI 핵심 제품이 되기까지의 과정</description>
 </item>
 </channel>
 </rss>
