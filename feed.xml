@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Mon, 02 Nov 2026 03:40:21 +0900</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 03:39:46 +0900</lastBuildDate>
+<item>
+<title>[논문] CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</title>
+<link>https://arxiv.org/abs/2610.40799</link>
+<guid isPermaLink="false">p-2610.40799</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>작은 open VLM을 SFT+multi-turn RL로 post-training해 Code-as-Policy 로봇 에이전트로 만드는 공개 파이프라인</description>
+</item>
+<item>
+<title>[논문] FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation</title>
+<link>https://arxiv.org/abs/2610.36545</link>
+<guid isPermaLink="false">p-2610.36545</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>video foundation model의 시간 prior를 활용해 다양한 조건부 이미지 생성을 하나로 통합한 FrameForge</description>
+</item>
+<item>
+<title>[논문] REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control</title>
+<link>https://arxiv.org/abs/2610.42053</link>
+<guid isPermaLink="false">p-2610.42053</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>느린 foundation model 'brain'과 빠른 VLA 'cerebellum'을 비동기로 묶는 embodied agent runtime REA</description>
+</item>
+<item>
+<title>[논문] R$^2$Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop</title>
+<link>https://arxiv.org/abs/2610.22740</link>
+<guid isPermaLink="false">p-2610.22740</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>self-play로 스스로 과제를 고르고 skill을 회수하며 agent orchestrator를 재귀적으로 개선하는 R²Orch</description>
+</item>
+<item>
+<title>[논문] FlatCake: A Flat KVCache Storage Architecture for LLM Serving</title>
+<link>https://arxiv.org/abs/2610.38355</link>
+<guid isPermaLink="false">p-2610.38355</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>DRAM과 NVMe SSD를 계층이 아닌 동등한 매체로 다루는 LLM serving용 flat KV cache 저장 구조 FlatCake</description>
+</item>
+<item>
+<title>[뉴스] Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1</title>
+<link>https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html</link>
+<guid isPermaLink="false">hn-50337439</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic 수정 S-1 공개: 3분기 매출 약 170억 달러, compute·인프라 약정 총 8,954억 달러</description>
+</item>
+<item>
+<title>[뉴스] GPT-Rosalind-6 System Card Addendum</title>
+<link>https://deploymentsafety.openai.com/gpt-rosalind-6</link>
+<guid isPermaLink="false">hn-50337503</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, GPT-6 Astra와 같은 가중치의 생물학 특화 trusted-access 모델 GPT-Rosalind-6 system card addendum 공개</description>
+</item>
+<item>
+<title>[뉴스] Mathematics has changed. Let's act like it</title>
+<link>https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/</link>
+<guid isPermaLink="false">hn-50328251</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>Frank Calegari의 Terence Tao 블로그 기고: 'AI로 수학은 이미 달라졌으니 채용·출판·교육을 바꾸자'</description>
+</item>
+<item>
+<title>[뉴스] LifeVal</title>
+<link>https://openai.com/index/lifeval</link>
+<guid isPermaLink="false">openai-lifeval</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, AI가 일상 과제 수행을 얼마나 돕는지 측정하는 벤치마크 LifeVal 공개</description>
+</item>
+<item>
+<title>[뉴스] Anthropic's internal AI use, at retail prices, now exceeds its employee pay</title>
+<link>https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11</link>
+<guid isPermaLink="false">hn-50339494</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic의 사내 Claude 사용량을 소매가로 환산하면 직원 급여(주식 보상 제외)를 넘어섰다는 S-1 공시</description>
+</item>
+<item>
+<title>[뉴스] Last night an AI agent performed brain surgery on a mouse</title>
+<link>https://twitter.com/OcanaSantero/status/2115442964574908902</link>
+<guid isPermaLink="false">hn-50336138</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 에이전트가 직접 약물·부위·좌표를 정하고 쥐 뇌 수술(유전자 치료 벡터 주입)을 수행한 실험</description>
+</item>
+<item>
+<title>[뉴스] Anthropic, Claude의 게임 재구현 제한 시작…모딩과 역공학 작업 거절 사례도 보고</title>
+<link>https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering</link>
+<guid isPermaLink="false">gn-36377</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude Code에 특정 기존 게임 재구현을 제한하는 규칙 추가…모딩·역공학 거절 사례도 보고</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Subvocal – Talk to your computer without making noise</title>
+<link>https://subvocal.company/</link>
+<guid isPermaLink="false">hn-50340088</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>YC F26 스타트업 Subvocal, 소리 없이 입 모양만으로 컴퓨터에 말하는 RF 센싱 스마트 안경 공개</description>
+</item>
+<item>
+<title>[뉴스] ChatGPT와 Codex 사용 한도 통합</title>
+<link>https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits</link>
+<guid isPermaLink="false">gn-36379</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 12월부터 Plus·Pro·Business 요금제의 ChatGPT와 Codex 사용 한도를 토큰 기준으로 통합</description>
+</item>
+<item>
+<title>[뉴스] ChatGPT 공유 링크 하나로 계정을 탈취한 방법</title>
+<link>https://www.parameter.ai/labs/we-found-a-gap-at-openai</link>
+<guid isPermaLink="false">gn-36338</guid>
+<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
+<description>악성 ChatGPT 공유 링크 하나로 로그인 사용자의 대화를 탈취할 수 있었던 취약점 공개</description>
+</item>
 <item>
 <title>[논문] HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience</title>
 <link>https://arxiv.org/abs/2610.34186</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">nvidia-ai-joins-the-search-for-extraterrestrial-signals</guid>
 <pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
 <description>SETI, Allen Telescope Array에 에이전트형 AI를 도입해 외계 신호 탐색</description>
-</item>
-<item>
-<title>[논문] Rollback: Experience Backtracking in World Models for Policy Improvement</title>
-<link>https://arxiv.org/abs/2610.36068</link>
-<guid isPermaLink="false">p-2610.36068</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>world model을 '되감기' 가능한 반사실 엔진으로 써서 결정 단위 감독을 만드는 로봇 정책 개선법 Rollback</description>
-</item>
-<item>
-<title>[논문] EmbeddingGemma 2: Unified and Efficient Multimodal Representations</title>
-<link>https://arxiv.org/abs/2610.37364</link>
-<guid isPermaLink="false">p-2610.37364</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>텍스트·이미지·오디오·비디오를 하나의 공간에 임베딩하는 Google의 오픈 멀티모달 임베딩 모델 EmbeddingGemma 2</description>
-</item>
-<item>
-<title>[논문] Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?</title>
-<link>https://arxiv.org/abs/2610.32046</link>
-<guid isPermaLink="false">p-2610.32046</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>과학적 발견에서 가중치 업데이트 없이 외부 메모리를 진화시키는 Test-Time Memory Evolution(TTME)</description>
-</item>
-<item>
-<title>[논문] BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation</title>
-<link>https://arxiv.org/abs/2605.08571</link>
-<guid isPermaLink="false">p-2605.08571</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>풍부한 source 시연과 적은 target 시연을 가중 공동학습하는 생성형 로봇 정책 프레임워크 BEACON</description>
-</item>
-<item>
-<title>[논문] Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes</title>
-<link>https://arxiv.org/abs/2610.32749</link>
-<guid isPermaLink="false">p-2610.32749</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>현실적인 벤치마크 RealSSA와 경량 스트리밍 audio-visual 화자 추출 모델 Falcon</description>
-</item>
-<item>
-<title>[뉴스] We're releasing the weights of Mistral Large 4</title>
-<link>https://mistral.ai/news/mistral-large-4-oss/</link>
-<guid isPermaLink="false">hn-50289418</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>Mistral, 1조 파라미터 멀티모달 모델 Mistral Large 4(Le Chonk)의 가중치를 공개</description>
-</item>
-<item>
-<title>[뉴스] Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5</title>
-<link>https://divagr.com/blog/qwenputer</link>
-<guid isPermaLink="false">hn-50282838</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>Qwen 3.5 4B의 Gated DeltaNet 층을 RAM으로 써서 가중치 안에 결정적 RISC-V CPU를 심은 실험 모델 Qwenputer</description>
-</item>
-<item>
-<title>[뉴스] An updated Model Spec for more capable and beneficial AI</title>
-<link>https://openai.com/index/updated-model-spec</link>
-<guid isPermaLink="false">openai-updated-model-spec</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 더 유능한 AI를 위한 다섯 가지 핵심 가치를 담은 Model Spec 개정판 공개</description>
-</item>
-<item>
-<title>[뉴스] GPT-6.1 Terra - 시각적 추론과 컴퓨터 사용을 결합한 고속 모델</title>
-<link>https://openai.com/index/introducing-gpt-6-1-terra/</link>
-<guid isPermaLink="false">gn-36059</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 시각적 추론과 컴퓨터 사용을 결합한 고속·저가 모델 GPT-6.1 Terra 출시</description>
-</item>
-<item>
-<title>[뉴스] Anthropic, Claude를 활용한 신약 개발 초기 성과 공개</title>
-<link>https://www.anthropic.com/research/early-progress-drug-development</link>
-<guid isPermaLink="false">gn-36156</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 6개 신약 개발 조직과의 협력으로 얻은 Claude 활용 초기 성과 공개</description>
-</item>
-<item>
-<title>[뉴스] How we detect frontier model misalignment</title>
-<link>https://openai.com/index/how-we-detect-frontier-model-misalignment</link>
-<guid isPermaLink="false">openai-how-we-detect-frontier-model-misalignment</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 프런티어 모델의 misalignment와 무단 에이전트 행동을 탐지하는 계층형 모니터링 방식 소개</description>
-</item>
-<item>
-<title>[뉴스] NVIDIA Nemotron 3.5 Transcribe - 한국어 포함 40개 언어를 지원하는 공개 음성 인식 모델</title>
-<link>https://huggingface.co/blog/nvidia/nemotron-transcribe-granary</link>
-<guid isPermaLink="false">gn-36196</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA, 한국어 포함 40개 언어 전사·화자 구분·번역·오디오 QA를 하나로 묶은 공개 음성 모델 Nemotron 3.5 Transcribe 공개</description>
-</item>
-<item>
-<title>[뉴스] LFM3 - 로컬 실행과 맞춤 학습을 위한 2B급 멀티모달 AI 모델군</title>
-<link>https://www.liquid.ai/blog/lfm3</link>
-<guid isPermaLink="false">gn-36132</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>Liquid AI, 로컬 실행·맞춤 학습용 약 2B급 멀티모달 오픈 웨이트 모델군 LFM3 6종 공개</description>
-</item>
-<item>
-<title>[뉴스] AI 에이전트가 코드를 작성해도 개발자는 무엇을 알아야 할까?</title>
-<link>https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work</link>
-<guid isPermaLink="false">gn-36162</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>에이전트가 코드를 쓰는 시대에 시스템 책임자에게 필요한 것은 이상 징후를 알아차리고 필요한 만큼 파고드는 능력이라는 글</description>
-</item>
-<item>
-<title>[뉴스] AI for Science expands to foundations and research institutions</title>
-<link>https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions</link>
-<guid isPermaLink="false">anthropic-ai-for-science-expands-foundations-research-institutions</guid>
-<pubDate>Fri, 30 Oct 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, AI for Science 프로그램을 20개 과학 재단·연구기관으로 확대</description>
 </item>
 </channel>
 </rss>
