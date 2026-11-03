@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 03 Nov 2026 03:39:46 +0900</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 03:45:37 +0900</lastBuildDate>
+<item>
+<title>[논문] CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements</title>
+<link>https://arxiv.org/abs/2611.03126</link>
+<guid isPermaLink="false">p-2611.03126</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>open-world 데이터와 이중 flywheel로 computer-use agent를 재귀적으로 개선하는 CUA-Master</description>
+</item>
+<item>
+<title>[논문] CoworkOS:Scaling Agent Coworkers for Real-world Automation</title>
+<link>https://arxiv.org/abs/2611.03178</link>
+<guid isPermaLink="false">p-2611.03178</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>전략과 실행 관리를 분리한 장기 작업용 cowork agent harness CoworkOS</description>
+</item>
+<item>
+<title>[논문] Democratizing Robot-Use Agents: A Unified Harness with Open Models</title>
+<link>https://arxiv.org/abs/2611.01560</link>
+<guid isPermaLink="false">p-2611.01560</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>open-weight 모델로 robot-use agent를 돌리는 통합 harness uni-robot-agent</description>
+</item>
+<item>
+<title>[논문] Wave Forcing: Towards Speed-of-Light Streaming Video Generation</title>
+<link>https://arxiv.org/abs/2611.00859</link>
+<guid isPermaLink="false">p-2611.00859</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>생성·학습·실행을 함께 설계해 실시간 스트리밍 비디오 생성을 가속하는 Wave Forcing</description>
+</item>
+<item>
+<title>[논문] Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation</title>
+<link>https://arxiv.org/abs/2611.03648</link>
+<guid isPermaLink="false">p-2611.03648</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>저가 wheeled humanoid부터 policy 학습까지 함께 설계한 모바일 매니퓰레이션 full-stack 시스템 Pixel</description>
+</item>
+<item>
+<title>[뉴스] Astra can read and write weights to improve Qwen</title>
+<link>https://rikiyat.github.io/blog/weight-space-programming/</link>
+<guid isPermaLink="false">hn-50341174</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>MIT CSAIL 연구진, GPT-6 Astra가 신경망 가중치를 직접 읽고 고쳐 Qwen3.5-0.8B의 수학 성능을 끌어올렸다는 'Weight-Space Programming' 실험 공개</description>
+</item>
+<item>
+<title>[뉴스] The 'Astra can read and write weights to improve Qwen' post is misleading</title>
+<link>https://honnibal.dev/blog/astra-read-write-misleading</link>
+<guid isPermaLink="false">hn-50351111</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>spaCy 저자 Matthew Honnibal, 'Astra가 가중치를 읽고 써서 Qwen을 개선했다'는 글이 실험 조건을 뒤섞어 오해를 부른다고 반박</description>
+</item>
+<item>
+<title>[뉴스] Postman silently auto-installs AI plugins and attempts to share all API data</title>
+<link>https://github.com/postmanlabs/postman-app-support/issues/14370</link>
+<guid isPermaLink="false">hn-50354960</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>Postman 데스크톱이 사용자 동의 없이 Codex·Claude Code 플러그인과 startup hook을 자동 설치했다는 GitHub 이슈가 화제</description>
+</item>
+<item>
+<title>[뉴스] Agentic cheminformatics with Google Antigravity</title>
+<link>https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</link>
+<guid isPermaLink="false">deepmind-agentic-cheminformatics-with-google-antigravity</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, Google Antigravity와 새 Cheminformatics Skills로 신약 개발 workflow를 에이전트로 가속하는 사례 공개</description>
+</item>
+<item>
+<title>[뉴스] OpenAI seems to be silently re-enabling model training on Codex chats</title>
+<link>https://news.ycombinator.com/item?id=50352757</link>
+<guid isPermaLink="false">hn-50352757</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>Codex에서 꺼 둔 '모델 개선에 데이터 제공' 설정이 사용자 모르게 다시 켜졌다는 HN 제보</description>
+</item>
+<item>
+<title>[뉴스] Qwen 3.8 27B on my laptop can interpret model weights, too</title>
+<link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
+<guid isPermaLink="false">hn-50355251</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>Simon Willison, 노트북에서 돌린 Qwen 3.8 27B도 도구 없이 가중치만 보고 모델이 학습한 게임을 맞힐 수 있었다고 소개</description>
+</item>
+<item>
+<title>[뉴스] Postgres 19 출시가 늦어지는 건 AI 때문이다 - 버그 발견이 수정을 앞지르다</title>
+<link>https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html</link>
+<guid isPermaLink="false">gn-36491</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>PostgreSQL 19 출시 지연, LLM으로 찾은 버그 제보 급증으로 수정 부담이 커진 탓이라는 커미터의 분석</description>
+</item>
+<item>
+<title>[뉴스] Nvidia – open-source auto-ontology</title>
+<link>https://github.com/NVIDIA/auto-ontology</link>
+<guid isPermaLink="false">hn-50348962</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 엔터프라이즈 메타데이터로 에이전트용 온톨로지·컨텍스트 계층을 만드는 오픈소스 Auto Ontology 공개</description>
+</item>
+<item>
+<title>[뉴스] Scaling Git at OpenAI</title>
+<link>https://openai.com/index/scaling-git-at-openai</link>
+<guid isPermaLink="false">openai-scaling-git-at-openai</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, Codex가 가능하게 한 개발 규모를 감당하기 위해 만든 Git 호환 백엔드 Pando 소개</description>
+</item>
+<item>
+<title>[뉴스] 에이전트와 함께 개발하기 위한 실용 원칙</title>
+<link>https://usecaddie.app/blog/agents</link>
+<guid isPermaLink="false">gn-36502</guid>
+<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
+<description>에이전트가 코드 대부분을 쓰는 환경에서 병목은 사람의 주의력이라며, 작업 착수·검증·기준 교육·목표 설정 원칙을 정리한 글</description>
+</item>
 <item>
 <title>[논문] CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</title>
 <link>https://arxiv.org/abs/2610.40799</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50263837</guid>
 <pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
 <description>"오픈 웹을 깨뜨려도 나쁜 봇은 못 막는다" — AI 크롤러 규제 법안 비판</description>
-</item>
-<item>
-<title>[논문] Intrinsic Distribution Matching</title>
-<link>https://arxiv.org/abs/2610.39633</link>
-<guid isPermaLink="false">p-2610.39633</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>DMD 기반 few-step T2I distillation에 생성기 EMA 특징의 평균·표준편차 매칭을 더한 Intrinsic Distribution Matching</description>
-</item>
-<item>
-<title>[논문] L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
-<link>https://arxiv.org/abs/2610.40614</link>
-<guid isPermaLink="false">p-2610.40614</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>VAE latent를 담은 3D Gaussian 메모리로 9 FPS 실시간·장기 일관성 있는 무한 월드 생성을 하는 L3G-World</description>
-</item>
-<item>
-<title>[논문] TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation</title>
-<link>https://arxiv.org/abs/2610.40349</link>
-<guid isPermaLink="false">p-2610.40349</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>손끝 촉각을 기준으로 인간 시연을 로봇 데이터로 변환해 dexterous VLA를 학습시키는 TouchBridge</description>
-</item>
-<item>
-<title>[논문] A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement</title>
-<link>https://arxiv.org/abs/2610.38568</link>
-<guid isPermaLink="false">p-2610.38568</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>학습 신호가 줄어들 때 과제 풀을 새로 고치는 외부 데이터 없는 멀티모달 자기개선 A-RSI</description>
-</item>
-<item>
-<title>[논문] Cross-Controller Transfer via In-Context Behavior Adaptation</title>
-<link>https://arxiv.org/abs/2610.39280</link>
-<guid isPermaLink="false">p-2610.39280</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>명령 행동과 실제 로봇 움직임의 예시를 context로 받아 서로 다른 controller 간 데이터를 전이하는 정책</description>
-</item>
-<item>
-<title>[뉴스] Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</title>
-<link>https://phorion.io/blog/offical-claude-code-vsx-compromise/</link>
-<guid isPermaLink="false">hn-50300683</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>Cursor 마켓플레이스에 올라온 Claude Code for VS Code 확장에서 백도어가 발견됐다는 보안 보고</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Carbon, AAII v5 1위, 코딩 에이전트 2위</title>
-<link>https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1</link>
-<guid isPermaLink="false">gn-36229</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>Artificial Analysis: Gemini 4 Carbon, Intelligence Index v5 59점 1위·코딩 에이전트 지수 2위</description>
-</item>
-<item>
-<title>[뉴스] US tech stocks see sharp falls over AI cost fears</title>
-<link>https://www.bbc.co.uk/news/articles/cvwy72e0n72yo</link>
-<guid isPermaLink="false">hn-50306008</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI 투자 비용 우려로 미국 기술주 이틀 연속 급락</description>
-</item>
-<item>
-<title>[뉴스] Making it easier for websites to express AI training preferences</title>
-<link>https://openai.com/index/helping-websites-express-ai-training-preferences</link>
-<guid isPermaLink="false">openai-helping-websites-express-ai-training-preferences</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 웹사이트의 AI 학습 선호를 표현하는 공유 robots.txt 신호를 준수하기로</description>
-</item>
-<item>
-<title>[뉴스] A Working Nintendo in ~1GB of Qwen Weights</title>
-<link>https://github.com/dbreunig/nesformer</link>
-<guid isPermaLink="false">hn-50306442</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>NES CPU를 Qwen3.5 가중치에 컴파일해 슈퍼 마리오를 돌리는 nesformer</description>
-</item>
-<item>
-<title>[뉴스] AI isn't replacing SREs, it's deskilling them</title>
-<link>https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling</link>
-<guid isPermaLink="false">hn-50305693</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>AI는 SRE를 대체하지 않고 탈숙련화한다</description>
-</item>
-<item>
-<title>[뉴스] Claude Code는 각 에이전트의 대화 기록을 약 30초마다 해당 모델에 전송함</title>
-<link>https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce</link>
-<guid isPermaLink="false">gn-36213</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>Claude Code, 백그라운드 에이전트 상태 요약을 위해 약 30초마다 전체 대화 기록을 모델에 전송</description>
-</item>
-<item>
-<title>[뉴스] US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech</title>
-<link>https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead</link>
-<guid isPermaLink="false">hn-50302814</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>미 민주당 의원들, AI 버블 붕괴 시 빅테크 구제금융에 반대하는 결의안 발의</description>
-</item>
-<item>
-<title>[뉴스] Community safety report and new protections for teens</title>
-<link>https://openai.com/index/community-safety-report-and-new-protections-for-teens</link>
-<guid isPermaLink="false">openai-community-safety-report-and-new-protections-for-teens</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, ChatGPT 폭력 예방 안전장치 확대와 커뮤니티 안전 보고서 발표</description>
-</item>
-<item>
-<title>[뉴스] Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals</title>
-<link>https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/</link>
-<guid isPermaLink="false">nvidia-ai-joins-the-search-for-extraterrestrial-signals</guid>
-<pubDate>Sat, 31 Oct 2026 08:00:00 +0900</pubDate>
-<description>SETI, Allen Telescope Array에 에이전트형 AI를 도입해 외계 신호 탐색</description>
 </item>
 </channel>
 </rss>
