@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Wed, 04 Nov 2026 03:45:37 +0900</lastBuildDate>
+<lastBuildDate>Thu, 05 Nov 2026 03:42:06 +0900</lastBuildDate>
+<item>
+<title>[논문] ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents</title>
+<link>https://arxiv.org/abs/2611.05036</link>
+<guid isPermaLink="false">p-2611.05036</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>실제 MCP 서비스 실행 기록에서 도구 조합 그래프를 뽑아 장기 과제용 에이전트 환경을 대량 합성하는 ToolSpace</description>
+</item>
+<item>
+<title>[논문] Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling</title>
+<link>https://arxiv.org/abs/2611.04916</link>
+<guid isPermaLink="false">p-2611.04916</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Kling 개발 경험을 바탕으로 비디오 생성 품질을 좌우하는 멀티모달 이해 스택을 모듈별로 정리한 기술 보고서</description>
+</item>
+<item>
+<title>[논문] DreamX: Video Diffusion Model is a Universal Latent Action Learner</title>
+<link>https://arxiv.org/abs/2611.05377</link>
+<guid isPermaLink="false">p-2611.05377</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>사전학습된 비디오 diffusion 모델을 사람·로봇을 아우르는 범용 latent action 학습기로 재활용한 DreamX</description>
+</item>
+<item>
+<title>[논문] Axion 1.0: Open Agent Foundation Models, Simplified</title>
+<link>https://arxiv.org/abs/2611.03233</link>
+<guid isPermaLink="false">p-2611.03233</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>SFT 2단계와 RL만으로 학습하고 데이터·학습 코드까지 전부 공개한 오픈 에이전트 foundation model Axion 1.0</description>
+</item>
+<item>
+<title>[논문] AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data</title>
+<link>https://arxiv.org/abs/2611.03815</link>
+<guid isPermaLink="false">p-2611.03815</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>로봇 데이터 없이 16,151시간의 핸드헬드 그리퍼 시연만으로 학습한 양팔 조작 시스템 AIRoA-0</description>
+</item>
+<item>
+<title>[뉴스] AI is forcing us to pay off 40 years of technical debt</title>
+<link>https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</link>
+<guid isPermaLink="false">hn-50364336</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>PHP2Shell 취약점 사례로 본, AI가 40년간 쌓인 레거시 기술 부채를 드러내는 보안 현실 (IEEE Spectrum)</description>
+</item>
+<item>
+<title>[뉴스] Kimi K3.1 Pro model weights are out</title>
+<link>https://huggingface.co/moonshotai/Kimi-K3.1-Pro</link>
+<guid isPermaLink="false">hn-50366999</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Moonshot AI, 2.8T 파라미터 MoE 멀티모달 에이전트 모델 Kimi K3.1 Pro 가중치 공개</description>
+</item>
+<item>
+<title>[뉴스] Progress on provable inference for large language models</title>
+<link>https://www.anthropic.com/research/provable-inference</link>
+<guid isPermaLink="false">hn-50368626</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, zkSNARK로 '이 응답이 정말 그 모델에서 나왔는지' 증명하는 provable inference 시스템 FlashProve 공개</description>
+</item>
+<item>
+<title>[뉴스] OpenAI to acquire Pierre Computer Company, Inc.</title>
+<link>https://openai.com/index/openai-to-acquire-pierre</link>
+<guid isPermaLink="false">openai-openai-to-acquire-pierre</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, Pierre Computer Company 인수 발표</description>
+</item>
+<item>
+<title>[뉴스] Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)</title>
+<link>https://news.ycombinator.com/item?id=50363461</link>
+<guid isPermaLink="false">hn-50363461</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Gemini 개인 구독자도 채팅 기록이 학습에 쓰이며, 기록을 끄지 않으면 opt-out할 수 없다는 지적</description>
+</item>
+<item>
+<title>[뉴스] Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux</title>
+<link>https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop</link>
+<guid isPermaLink="false">hn-50362905</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Nvidia RTX Spark 노트북, Linux에서는 펌웨어 문제로 GPU 클럭이 묶여 로컬 추론 속도가 크게 떨어짐</description>
+</item>
+<item>
+<title>[뉴스] Geoffrey Hinton: it might turn out we were better off without AI</title>
+<link>https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai</link>
+<guid isPermaLink="false">hn-50363554</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Geoffrey Hinton, "AI가 없는 편이 나았을 수도"…1~2년 내 금융·전력망 마비 같은 대형 사고 경고</description>
+</item>
+<item>
+<title>[뉴스] Revolut, 개발자 2,000명에 자체 호스팅 GLM 제공…AI 비용을 기존의 10분의 1로 절감</title>
+<link>https://twitter.com/guilleflorvs/status/2117379073785696395</link>
+<guid isPermaLink="false">gn-36534</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Revolut, 개발자 2,000명에 자체 호스팅 GLM을 기본 제공해 AI 비용을 약 10분의 1로 절감</description>
+</item>
+<item>
+<title>[뉴스] We're training a Figma-fluent editing model</title>
+<link>https://www.figma.com/blog/training-a-figma-fluent-editing-model/</link>
+<guid isPermaLink="false">hn-50322603</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Figma, 캔버스 편집 전용 'Figma-fluent' 모델을 SFT와 RL로 학습하는 과정 공개</description>
+</item>
+<item>
+<title>[뉴스] Agile Deliberation: How AI helps humans define the gray areas</title>
+<link>https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/</link>
+<guid isPermaLink="false">google-agile-deliberation-how-ai-helps-humans-define-the-gray-areas</guid>
+<pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google Research, 주관적 범주의 이미지 분류기를 사용자와의 '숙의'로 만드는 Agile Deliberation 공개</description>
+</item>
 <item>
 <title>[논문] CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements</title>
 <link>https://arxiv.org/abs/2611.03126</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36244</guid>
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0900</pubDate>
 <description>마틴 파울러: LLM 특유의 문체가 만드는 글의 불쾌한 골짜기</description>
-</item>
-<item>
-<title>[논문] Training Foundation Models with a Single Algorithm</title>
-<link>https://arxiv.org/abs/2610.40564</link>
-<guid isPermaLink="false">p-2610.40564</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>pretraining·SFT·RL 등 foundation model 학습 단계를 하나의 likelihood 기반 알고리즘으로 통합</description>
-</item>
-<item>
-<title>[논문] TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving</title>
-<link>https://arxiv.org/abs/2610.37230</link>
-<guid isPermaLink="false">p-2610.37230</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>GPU 추론과 CPU 도구 실행을 오가는 agentic serving을 위한 tool-aware 공동 스케줄러 TAO</description>
-</item>
-<item>
-<title>[논문] Learning to Assist: Collaborative VLAs for Implicit Human-Robot Collaboration</title>
-<link>https://arxiv.org/abs/2606.12475</link>
-<guid isPermaLink="false">p-2606.12475</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>VLA로 사람의 암묵적 의도에 맞춰 돕는 협업 조작을 학습하고, 성급한 보조 행동을 inference-time steering으로 억제</description>
-</item>
-<item>
-<title>[논문] Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?</title>
-<link>https://arxiv.org/abs/2610.38342</link>
-<guid isPermaLink="false">p-2610.38342</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>미래 정보를 차단한 채 AI 에이전트의 주식 리서치·예측·투자 판단을 평가하는 벤치마크 ILE</description>
-</item>
-<item>
-<title>[논문] Robotic Data Inoculation</title>
-<link>https://arxiv.org/abs/2610.39054</link>
-<guid isPermaLink="false">p-2610.39054</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>데이터 수집 중 residual policy가 사람의 원격조작을 교란해 회복 시연을 모으는 'Data Inoculation'</description>
-</item>
-<item>
-<title>[뉴스] We Took over ChatGPT Accounts</title>
-<link>https://www.parameter.ai/labs/we-found-a-gap-at-openai</link>
-<guid isPermaLink="false">hn-50314699</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>ChatGPT 공유 링크 하나만 열어도 계정이 탈취되던 취약점 공개(10/26 수정, P1)</description>
-</item>
-<item>
-<title>[뉴스] Malware uses LLMs to rank victims by how much they're worth</title>
-<link>https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/</link>
-<guid isPermaLink="false">hn-50316531</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>탈취한 정보를 LLM에 보내 피해자의 '금전 가치'를 평가하는 인포스틸러 VOLTA</description>
-</item>
-<item>
-<title>[뉴스] Anthropic's Claude AI blocks video game cloning and reverse-engineering</title>
-<link>https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked</link>
-<guid isPermaLink="false">hn-50315987</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude Code·Opus 5.5가 특정 게임 복제와 일부 리버스 엔지니어링 요청을 거부한다는 사용자 보고</description>
-</item>
-<item>
-<title>[뉴스] Cisco gives engineer unlimited AI tokens to rewrite legacy code</title>
-<link>https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/</link>
-<guid isPermaLink="false">hn-50304122</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>Cisco 사장, 27세 엔지니어에게 '무제한 AI 토큰'을 주고 레거시 코드 재작성 맡겨</description>
-</item>
-<item>
-<title>[뉴스] Prospero: A new coding harness for a more civilized age</title>
-<link>https://nullprogram.com/blog/2026/10/31/</link>
-<guid isPermaLink="false">hn-50315226</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>nullprogram 저자가 만든 초경량 네이티브 코딩 하네스 Prospero</description>
-</item>
-<item>
-<title>[뉴스] Blackstone, “Anthropic은 IPO 이후에도 투자적격 신용등급을 받지 못할 수 있어”</title>
-<link>https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f</link>
-<guid isPermaLink="false">gn-36306</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>Blackstone, "Anthropic은 IPO 이후에도 투자적격 신용등급을 받지 못할 수 있다" (FT 보도)</description>
-</item>
-<item>
-<title>[뉴스] Fair use benefits everyone</title>
-<link>https://openai.com/index/fair-use-benefits-everyone</link>
-<guid isPermaLink="false">openai-fair-use-benefits-everyone</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 창작자·학계·접근성 옹호자 등의 법정 의견서를 인용해 AI 학습의 fair use 지지</description>
-</item>
-<item>
-<title>[뉴스] Ex-Meta Researcher Torrented Pirated Books, Deleted It 'Due to Litigation'</title>
-<link>https://torrentfreak.com/ex-meta-researcher-torrented-pirated-books-dataset-deleted-it-due-to-all-this-litigation/</link>
-<guid isPermaLink="false">hn-50316760</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>전 Meta 연구자, Books3를 토렌트로 받고 배포했다고 증언 — Llama 저작권 소송 쟁점</description>
-</item>
-<item>
-<title>[뉴스] Herdr - 터미널과 코딩 에이전트를 한곳에서 관리하는 네이티브 앱</title>
-<link>https://github.com/herdrdev/herdr-app</link>
-<guid isPermaLink="false">gn-36283</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>터미널과 코딩 에이전트를 작업 공간·탭·분할 패널로 관리하는 오픈소스 데스크톱 앱 Herdr</description>
-</item>
-<item>
-<title>[뉴스] Breaking the open web won't stop the bad bots</title>
-<link>https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/</link>
-<guid isPermaLink="false">hn-50263837</guid>
-<pubDate>Sun, 01 Nov 2026 08:00:00 +0900</pubDate>
-<description>"오픈 웹을 깨뜨려도 나쁜 봇은 못 막는다" — AI 크롤러 규제 법안 비판</description>
 </item>
 </channel>
 </rss>
