@@ -409,9 +409,19 @@ def recent(t, now):
     return t is not None and now - t <= timedelta(days=BLOG_DAYS) and t <= now + timedelta(hours=1)
 
 
-def rss_items(url):
-    _, xml = retry(get, url, accept="application/rss+xml,application/xml,text/xml")
-    root = ET.fromstring(no_decl(xml))
+def rss_items(url, tries=3):
+    # A feed sometimes answers 200 with a body that is not XML (deepmind.google on 2026-11-05: "invalid token,
+    # line 1, column 0"), which retry() does not see as an error. Fetch again; if it persists, record what came back.
+    for n in range(tries):
+        final, xml = retry(get, url, accept="application/rss+xml,application/xml,text/xml")
+        try:
+            root = ET.fromstring(no_decl(xml))
+            break
+        except ET.ParseError as e:
+            if n == tries - 1:
+                head = re.sub(r"\s+", " ", xml[:100])
+                raise ET.ParseError(f"{e}; got {len(xml)} chars{'' if final == url else ' from ' + final}: {head!r}") from None
+            time.sleep(10 * (n + 1))
     ce = "{http://purl.org/rss/1.0/modules/content/}encoded"
     for it in root.iter("item"):
         yield {"title": (it.findtext("title") or "").strip(), "url": (it.findtext("link") or "").strip(),

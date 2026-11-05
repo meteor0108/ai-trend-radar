@@ -1,0 +1,42 @@
+# GitHub Pages deploys main after each digest push, but that deploy sometimes fails on GitHub's side
+# (2026-11-05: the deploy step hit "Timeout reached, aborting!") and nothing retries it, so the site kept
+# showing the previous day. This compares the live data/index.json with main's and asks Pages to rebuild
+# when the site is behind; if it is still behind after that, the run fails so the failure gets noticed.
+name: Check the site is deployed
+
+on:
+  schedule:
+    - cron: "47 19 * * *"  # 04:47 KST, after the ~03:30 routine's push has normally been live for an hour
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild Pages if the live site is behind main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          want=$(jq -r .updated data/index.json)
+          site=$(gh api "repos/$REPO/pages" --jq .html_url)
+          live() { curl -fsS "${site%/}/data/index.json?t=$(date +%s)" | jq -r .updated || echo none; }
+          have=$(live)
+          echo "main: $want  live: $have  ($site)"
+          [ "$have" = "$want" ] && exit 0
+
+          gh api -X POST "repos/$REPO/pages/builds" --jq .status
+          for _ in $(seq 20); do
+            sleep 60
+            have=$(live)
+            if [ "$have" = "$want" ]; then echo "redeployed, live: $have"; exit 0; fi
+          done
+          echo "::error::site still shows $have after requesting a rebuild (main: $want)"
+          exit 1
