@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 06 Nov 2026 03:40:21 +0900</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 03:40:47 +0900</lastBuildDate>
+<item>
+<title>[논문] VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
+<link>https://arxiv.org/abs/2611.08449</link>
+<guid isPermaLink="false">p-2611.08449</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>고정 길이 시각 primitive를 한 번에 디코딩해 점·박스·궤적 기반 visual planning을 가속하는 VFlash</description>
+</item>
+<item>
+<title>[논문] Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training</title>
+<link>https://arxiv.org/abs/2611.04277</link>
+<guid isPermaLink="false">p-2611.04277</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>기본 harness가 실패한 경우에만 sibling harness로 구조해 그 능력을 단일 정책에 옮기는 에이전트 RL 학습법 Harness-S</description>
+</item>
+<item>
+<title>[논문] SLA: Scaling Spatial-Language-Action Model via Continual Pre-training</title>
+<link>https://arxiv.org/abs/2611.08373</link>
+<guid isPermaLink="false">p-2611.08373</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>VLA continual pre-training 단계부터 3D 공간 정렬을 학습시키는 Spatial-Language-Action 모델 SLA</description>
+</item>
+<item>
+<title>[논문] EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL</title>
+<link>https://arxiv.org/abs/2611.06518</link>
+<guid isPermaLink="false">p-2611.06518</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>감정 표현 영상 생성 RL에서 보상 신뢰도를 학습 기록으로부터 보정해 다중 보상 가중치를 정하는 EmoReward</description>
+</item>
+<item>
+<title>[논문] Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents</title>
+<link>https://arxiv.org/abs/2611.02075</link>
+<guid isPermaLink="false">p-2611.02075</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>LLM 표현과 사전학습된 조건부 예측기를 결합해 에이전트 의사결정을 경험 기반 예측 문제로 푸는 DPDM</description>
+</item>
+<item>
+<title>[뉴스] Claude Code sends your email address to websites</title>
+<link>https://github.com/anthropics/claude-code/issues/107757</link>
+<guid isPermaLink="false">hn-50385272</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Code가 웹 검색 중 User-Agent 헤더에 사용자 이메일을 넣어 제3자 사이트에 보냈다는 버그 리포트가 HN 1,509점</description>
+</item>
+<item>
+<title>[뉴스] GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents</title>
+<link>https://openai.com/index/introducing-gpt-6-cyber</link>
+<guid isPermaLink="false">openai-introducing-gpt-6-cyber</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 악용 가능한 취약점을 찾고 수정안을 만드는 사이버보안 모델 GPT-6 Cyber 공개</description>
+</item>
+<item>
+<title>[뉴스] GPT-6 Astra, 신경망 가중치를 직접 읽고 수정해 Qwen 성능 개선</title>
+<link>https://rikiyat.github.io/blog/weight-space-programming/</link>
+<guid isPermaLink="false">gn-36478</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>GPT-6 Astra가 경사하강법 없이 신경망 가중치를 직접 읽고 수정해, Qwen3.5-0.8B 가중치 0.016%만 고쳐 MATH-500을 7.9%→48.1%로 올림</description>
+</item>
+<item>
+<title>[뉴스] Anthropic IPO valuation talks drop to $1.3T</title>
+<link>https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors</link>
+<guid isPermaLink="false">hn-50395318</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic IPO 밸류에이션 논의가 1.5조 달러에서 1.2~1.3조 달러로 하향</description>
+</item>
+<item>
+<title>[뉴스] GitHub Copilot 런타임 코드베이스 전체를 Rust로 이식한 이유와 방법 [영상]</title>
+<link>https://www.youtube.com/watch?v=PLMOVlZC4eU</link>
+<guid isPermaLink="false">gn-36687</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>GitHub, Copilot 런타임 TypeScript 코드 약 40만~45만 줄을 에이전트로 14.5주 만에 Rust로 이식</description>
+</item>
+<item>
+<title>[뉴스] AI for scientific discovery: How researchers use Claude</title>
+<link>https://www.anthropic.com/research/how-researchers-use-claude</link>
+<guid isPermaLink="false">hn-50389990</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude·Claude Code 연구 세션 20만 7천 건 분석으로 과학자들의 AI 활용 방식을 보고</description>
+</item>
+<item>
+<title>[뉴스] University libraries are being swarmed by AI bots, putting public access at risk</title>
+<link>https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287</link>
+<guid isPermaLink="false">hn-50392499</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>LLM 학습 데이터를 찾는 AI 크롤러가 대학 도서관 사이트에 몰려 공공 접근이 위협받고 있음 (CBC)</description>
+</item>
+<item>
+<title>[뉴스] Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents</title>
+<link>https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/</link>
+<guid isPermaLink="false">nvidia-vera-cpu-highest-throughput-fastest-agents</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 에이전트 워크로드용 Vera CPU가 x86 대비 와트당 에이전트 수와 속도 모두 앞선다고 발표</description>
+</item>
+<item>
+<title>[뉴스] A proof of the Aaronson‑Ambainis conjecture</title>
+<link>https://psi.inc/research/aaronson-ambainis/</link>
+<guid isPermaLink="false">hn-50393770</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>Physical Superintelligence, 비공개 Anthropic 모델을 쓴 연구 시스템으로 2008년부터 열린 Aaronson-Ambainis 추측을 증명</description>
+</item>
+<item>
+<title>[뉴스] 제프리 힌턴: AI가 없었더라면 더 나았을 수도 있다</title>
+<link>https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai</link>
+<guid isPermaLink="false">gn-36593</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
+<description>제프리 힌턴, AI가 풍요와 사회 붕괴의 갈림길에 있으며 10년 안에 향방이 드러날 것이라고 경고</description>
+</item>
 <item>
 <title>[논문] Turns Matter: Advancing Streaming Video RL via Turn-Level Credit</title>
 <link>https://arxiv.org/abs/2611.06728</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36502</guid>
 <pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
 <description>에이전트가 코드 대부분을 쓰는 환경에서 병목은 사람의 주의력이라며, 작업 착수·검증·기준 교육·목표 설정 원칙을 정리한 글</description>
-</item>
-<item>
-<title>[논문] CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</title>
-<link>https://arxiv.org/abs/2610.40799</link>
-<guid isPermaLink="false">p-2610.40799</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>작은 open VLM을 SFT+multi-turn RL로 post-training해 Code-as-Policy 로봇 에이전트로 만드는 공개 파이프라인</description>
-</item>
-<item>
-<title>[논문] FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation</title>
-<link>https://arxiv.org/abs/2610.36545</link>
-<guid isPermaLink="false">p-2610.36545</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>video foundation model의 시간 prior를 활용해 다양한 조건부 이미지 생성을 하나로 통합한 FrameForge</description>
-</item>
-<item>
-<title>[논문] REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control</title>
-<link>https://arxiv.org/abs/2610.42053</link>
-<guid isPermaLink="false">p-2610.42053</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>느린 foundation model 'brain'과 빠른 VLA 'cerebellum'을 비동기로 묶는 embodied agent runtime REA</description>
-</item>
-<item>
-<title>[논문] R$^2$Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop</title>
-<link>https://arxiv.org/abs/2610.22740</link>
-<guid isPermaLink="false">p-2610.22740</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>self-play로 스스로 과제를 고르고 skill을 회수하며 agent orchestrator를 재귀적으로 개선하는 R²Orch</description>
-</item>
-<item>
-<title>[논문] FlatCake: A Flat KVCache Storage Architecture for LLM Serving</title>
-<link>https://arxiv.org/abs/2610.38355</link>
-<guid isPermaLink="false">p-2610.38355</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>DRAM과 NVMe SSD를 계층이 아닌 동등한 매체로 다루는 LLM serving용 flat KV cache 저장 구조 FlatCake</description>
-</item>
-<item>
-<title>[뉴스] Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1</title>
-<link>https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html</link>
-<guid isPermaLink="false">hn-50337439</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic 수정 S-1 공개: 3분기 매출 약 170억 달러, compute·인프라 약정 총 8,954억 달러</description>
-</item>
-<item>
-<title>[뉴스] GPT-Rosalind-6 System Card Addendum</title>
-<link>https://deploymentsafety.openai.com/gpt-rosalind-6</link>
-<guid isPermaLink="false">hn-50337503</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, GPT-6 Astra와 같은 가중치의 생물학 특화 trusted-access 모델 GPT-Rosalind-6 system card addendum 공개</description>
-</item>
-<item>
-<title>[뉴스] Mathematics has changed. Let's act like it</title>
-<link>https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/</link>
-<guid isPermaLink="false">hn-50328251</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>Frank Calegari의 Terence Tao 블로그 기고: 'AI로 수학은 이미 달라졌으니 채용·출판·교육을 바꾸자'</description>
-</item>
-<item>
-<title>[뉴스] LifeVal</title>
-<link>https://openai.com/index/lifeval</link>
-<guid isPermaLink="false">openai-lifeval</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, AI가 일상 과제 수행을 얼마나 돕는지 측정하는 벤치마크 LifeVal 공개</description>
-</item>
-<item>
-<title>[뉴스] Anthropic's internal AI use, at retail prices, now exceeds its employee pay</title>
-<link>https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11</link>
-<guid isPermaLink="false">hn-50339494</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic의 사내 Claude 사용량을 소매가로 환산하면 직원 급여(주식 보상 제외)를 넘어섰다는 S-1 공시</description>
-</item>
-<item>
-<title>[뉴스] Last night an AI agent performed brain surgery on a mouse</title>
-<link>https://twitter.com/OcanaSantero/status/2115442964574908902</link>
-<guid isPermaLink="false">hn-50336138</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI 에이전트가 직접 약물·부위·좌표를 정하고 쥐 뇌 수술(유전자 치료 벡터 주입)을 수행한 실험</description>
-</item>
-<item>
-<title>[뉴스] Anthropic, Claude의 게임 재구현 제한 시작…모딩과 역공학 작업 거절 사례도 보고</title>
-<link>https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering</link>
-<guid isPermaLink="false">gn-36377</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Claude Code에 특정 기존 게임 재구현을 제한하는 규칙 추가…모딩·역공학 거절 사례도 보고</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Subvocal – Talk to your computer without making noise</title>
-<link>https://subvocal.company/</link>
-<guid isPermaLink="false">hn-50340088</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>YC F26 스타트업 Subvocal, 소리 없이 입 모양만으로 컴퓨터에 말하는 RF 센싱 스마트 안경 공개</description>
-</item>
-<item>
-<title>[뉴스] ChatGPT와 Codex 사용 한도 통합</title>
-<link>https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits</link>
-<guid isPermaLink="false">gn-36379</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 12월부터 Plus·Pro·Business 요금제의 ChatGPT와 Codex 사용 한도를 토큰 기준으로 통합</description>
-</item>
-<item>
-<title>[뉴스] ChatGPT 공유 링크 하나로 계정을 탈취한 방법</title>
-<link>https://www.parameter.ai/labs/we-found-a-gap-at-openai</link>
-<guid isPermaLink="false">gn-36338</guid>
-<pubDate>Tue, 03 Nov 2026 08:00:00 +0900</pubDate>
-<description>악성 ChatGPT 공유 링크 하나로 로그인 사용자의 대화를 탈취할 수 있었던 취약점 공개</description>
 </item>
 </channel>
 </rss>
