@@ -1,22 +1,33 @@
 # GitHub Pages deploys main after each digest push, but that deploy sometimes fails on GitHub's side
-# (2026-11-05: the deploy step hit "Timeout reached, aborting!") and nothing retries it, so the site kept
-# showing the previous day. This compares the live data/index.json with main's and asks Pages to rebuild
-# when the site is behind; if it is still behind after that, the run fails so the failure gets noticed.
+# (2026-11-05 and 2026-11-06: the deploy step hit "Timeout reached, aborting!" during GitHub Actions/Pages
+# incidents) and nothing retries it, so the site kept showing the previous day.
+#
+# This runs right after a push that changes data/index.json (push events start promptly; scheduled runs were
+# hours late on those days), waits for the normal deploy, and when the live data/index.json still differs from
+# main's, asks Pages to rebuild, up to three times. If the site is still behind, the run fails so it gets noticed.
+# The daily schedule is a backstop for a push whose run never started.
 name: Check the site is deployed
 
 on:
+  push:
+    branches: [main]
+    paths: [data/index.json]
   schedule:
-    - cron: "47 19 * * *"  # 04:47 KST, after the ~03:30 routine's push has normally been live for an hour
+    - cron: "47 19 * * *"  # 04:47 KST
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
 
+concurrency:
+  group: pages-check
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -28,15 +39,25 @@ jobs:
           want=$(jq -r .updated data/index.json)
           site=$(gh api "repos/$REPO/pages" --jq .html_url)
           live() { curl -fsS "${site%/}/data/index.json?t=$(date +%s)" | jq -r .updated || echo none; }
-          have=$(live)
-          echo "main: $want  live: $have  ($site)"
-          [ "$have" = "$want" ] && exit 0
+          # wait up to $1 minutes for the live site to show main's index.json
+          wait_live() {
+            for _ in $(seq "$1"); do
+              have=$(live)
+              [ "$have" = "$want" ] && return 0
+              sleep 60
+            done
+            have=$(live); [ "$have" = "$want" ]
+          }
 
-          gh api -X POST "repos/$REPO/pages/builds" --jq .status
-          for _ in $(seq 20); do
-            sleep 60
-            have=$(live)
-            if [ "$have" = "$want" ]; then echo "redeployed, live: $have"; exit 0; fi
+          echo "main: $want  ($site)"
+          # a failed deploy gives up after ~11 minutes, so give the push's own deploy 15
+          if [ "${{ github.event_name }}" = push ]; then wait_live 15 && { echo "deployed: $have"; exit 0; }
+          else have=$(live); [ "$have" = "$want" ] && { echo "up to date: $have"; exit 0; }; fi
+
+          for attempt in 1 2 3; do
+            echo "live: $have, behind main; requesting a Pages build (attempt $attempt)"
+            gh api -X POST "repos/$REPO/pages/builds" --jq .status || true
+            wait_live 12 && { echo "redeployed: $have"; exit 0; }
           done
-          echo "::error::site still shows $have after requesting a rebuild (main: $want)"
+          echo "::error::site still shows $have after 3 rebuild requests (main: $want)"
           exit 1

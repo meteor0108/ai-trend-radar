@@ -6,7 +6,7 @@ alphaXiv / HF Daily Papers / GeekNews / Hacker News / Meta AI / NVIDIA / Google 
 - 사이트: https://meteor0108.github.io/ai-trend-radar/
 - 매일 02:23 KST에 GitHub Actions(`.github/workflows/collect.yml`)가 논문·뉴스·GitHub 트렌딩 원문을 내려받아 `raw` 브랜치에 올린다. GitHub 예약 실행은 몇 시간씩 늦을 때가 있어서, 예약 작업이 그날 자료가 없으면 `claude/collect-request` 브랜치에 푸시해 수집을 바로 시작시킨다.
 - 03:30 KST 무렵 Claude Code 예약 작업이 [ROUTINE.md](ROUTINE.md)를 따라 `raw` 브랜치의 자료를 읽어 한국어로 요약하고 `data/`에 커밋한다. 예약 작업의 실행 환경은 외부 사이트에 접속할 수 없어서 수집과 요약을 나눴다.
-- 04:47 KST에 `.github/workflows/pages-check.yml`이 사이트의 `data/index.json`을 main과 비교한다. GitHub Pages 배포가 GitHub 쪽에서 실패해 사이트가 전날에 멈춰 있으면 다시 빌드를 요청하고, 그래도 안 바뀌면 실패로 끝나 알림이 온다.
+- 다이제스트가 push되면 `.github/workflows/pages-check.yml`이 바로 시작해 사이트의 `data/index.json`이 main과 같아질 때까지 기다린다. GitHub Pages 배포가 GitHub 쪽에서 실패해 사이트가 전날에 멈춰 있으면 다시 빌드를 최대 3번 요청하고, 그래도 안 바뀌면 실패로 끝나 알림이 온다. 04:47 KST 예약 실행은 push 쪽 실행이 아예 안 돌았을 때를 위한 대비책이다.
 
 ## 구조
 
