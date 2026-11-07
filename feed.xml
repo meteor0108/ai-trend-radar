@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sat, 07 Nov 2026 03:40:47 +0900</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 03:41:11 +0900</lastBuildDate>
+<item>
+<title>[논문] Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs</title>
+<link>https://arxiv.org/abs/2609.21022</link>
+<guid isPermaLink="false">p-2609.21022</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>diffusion VLA의 마지막 denoising 단계를 실시간 시각 피드백 인터페이스로 남겨 움직이는 장면에 반응하게 한 VLA-Feedback</description>
+</item>
+<item>
+<title>[논문] From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence</title>
+<link>https://arxiv.org/abs/2611.05376</link>
+<guid isPermaLink="false">p-2611.05376</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>사람 곁에서 평생 맥락을 유지하며 함께 생각하는 'cognitive symbiont'를 AI-augmented human intelligence의 새 패러다임으로 제안</description>
+</item>
+<item>
+<title>[논문] EvoMemState: Evolving Memory State for Personal Agents</title>
+<link>https://arxiv.org/abs/2611.03743</link>
+<guid isPermaLink="false">p-2611.03743</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>개인 에이전트 메모리를 독립 사실이 아닌 관계·추론 상태로 관리하고 RL로 상태 진화를 학습하는 EvoMemState</description>
+</item>
+<item>
+<title>[논문] Scientist World: Grow a Research World for AI-Scientists</title>
+<link>https://arxiv.org/abs/2611.08478</link>
+<guid isPermaLink="false">p-2611.08478</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>논문마다 실행 가능한 연구 환경으로 바꿔 AI-Scientist를 평가·학습시키는 Scientist World</description>
+</item>
+<item>
+<title>[논문] RoboARCade: Benchmarking Agentic Robot Control</title>
+<link>https://arxiv.org/abs/2611.08209</link>
+<guid isPermaLink="false">p-2611.08209</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>멀티모달 에이전트가 직접 로봇 정책으로 동작하는 agentic robot control을 평가하는 장기 조작 벤치마크 RoboARCade</description>
+</item>
+<item>
+<title>[뉴스] A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</title>
+<link>https://hightouch.com/blog/llm-judges-identity-resolution</link>
+<guid isPermaLink="false">hn-50397429</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>고객 레코드 병합 검증에서 결정 모델 Jev가 애매한 사례만 Opus에 넘기는 하이브리드로 Opus급 정확도를 4배 이상 싼 비용에 달성</description>
+</item>
+<item>
+<title>[뉴스] The Components of Agent Memory</title>
+<link>https://www.anthropic.com/research/components-of-agent-memory</link>
+<guid isPermaLink="false">hn-50402212</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude의 에이전트 메모리를 메모 작성·태깅과 오프라인 'dreaming' 정리로 나눠 설명하는 연구 글 공개</description>
+</item>
+<item>
+<title>[뉴스] AI is dramatically accelerating AI research</title>
+<link>https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai</link>
+<guid isPermaLink="false">hn-50397994</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>METR의 Anthropic 내부 조사 보고서를 근거로 'AI가 이미 AI 연구를 극적으로 가속하고 있다'고 주장한 Ajeya Cotra의 글</description>
+</item>
+<item>
+<title>[뉴스] Every Mac comes with an (undocumented) family member classifier</title>
+<link>https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</link>
+<guid isPermaLink="false">hn-50403097</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>macOS 13 이후 모든 Mac이 연락처·사진·메시지 등을 교차 분석해 가족 관계까지 추론하는 개인 지식 그래프를 문서화 없이 구축한다는 분석</description>
+</item>
+<item>
+<title>[뉴스] Inkling 2 Small - 장시간 자율 코딩과 연구를 강화한 MoE 모델</title>
+<link>https://thinkingmachines.ai/news/inkling-2-small/</link>
+<guid isPermaLink="false">gn-36699</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>Thinking Machines Lab, 594B MoE(활성 17B) Inkling 2 Small 공개 — 장시간 자율 코딩·연구 강화, 다음 주 Apache 2.0 가중치 공개 예정</description>
+</item>
+<item>
+<title>[뉴스] Measuring how AI agents handle everyday wet-lab science</title>
+<link>https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</link>
+<guid isPermaLink="false">openai-measuring-how-ai-agents-handle-wet-lab-science</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, AI 에이전트가 원시 실험 데이터 해석 등 일상적 wet-lab 과학을 얼마나 잘 다루는지 재는 100개 과제 벤치마크 BioBasicsBench 공개</description>
+</item>
+<item>
+<title>[뉴스] Google - 코드 속 낡은 TODO가 코딩 에이전트의 토큰과 대기 시간을 늘린다</title>
+<link>https://developers.googleblog.com/agent-distraction/</link>
+<guid isPermaLink="false">gn-36749</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google, 코드 속 낡은 TODO가 사내 코딩 에이전트를 딴 길로 빠지게 해 토큰 77%·대기 시간 105%를 늘린다는 분석 공개</description>
+</item>
+<item>
+<title>[뉴스] The End of AI Frontiers</title>
+<link>https://hunch.net/?p=13764006</link>
+<guid isPermaLink="false">hn-50406589</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>John Langford, Microsoft AI로 편입된 AI Frontiers 그룹의 종료를 선언하고 Microsoft를 떠나며 'scaling-only' 기조를 비판</description>
+</item>
+<item>
+<title>[뉴스] DoorDash가 정확도를 유지하면서 LLM 검색 비용을 98% 줄인 방법</title>
+<link>https://careersatdoordash.com/blog/how-doordash-reduced-llm-search-costs-by-98-without-losing-accuracy/</link>
+<guid isPermaLink="false">gn-36733</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>DoorDash, LLM 내장 웹 검색을 공유 검색 게이트웨이로 분리해 정확도를 유지하면서 검색 비용을 98% 이상 절감</description>
+</item>
+<item>
+<title>[뉴스] MaxxBench – "Nice DeepSWE score. But is it true?"</title>
+<link>https://maxxbench.unlap.ai/research/why-maxxbench/</link>
+<guid isPermaLink="false">hn-50406222</guid>
+<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
+<description>DeepSWE 과제의 요구사항을 살짝 바꾼 MaxxBench, 같은 점수의 모델 간 23점 격차로 'benchmaxxing'을 드러냄</description>
+</item>
 <item>
 <title>[논문] VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
 <link>https://arxiv.org/abs/2611.08449</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">google-agile-deliberation-how-ai-helps-humans-define-the-gray-areas</guid>
 <pubDate>Thu, 05 Nov 2026 08:00:00 +0900</pubDate>
 <description>Google Research, 주관적 범주의 이미지 분류기를 사용자와의 '숙의'로 만드는 Agile Deliberation 공개</description>
-</item>
-<item>
-<title>[논문] CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements</title>
-<link>https://arxiv.org/abs/2611.03126</link>
-<guid isPermaLink="false">p-2611.03126</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>open-world 데이터와 이중 flywheel로 computer-use agent를 재귀적으로 개선하는 CUA-Master</description>
-</item>
-<item>
-<title>[논문] CoworkOS:Scaling Agent Coworkers for Real-world Automation</title>
-<link>https://arxiv.org/abs/2611.03178</link>
-<guid isPermaLink="false">p-2611.03178</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>전략과 실행 관리를 분리한 장기 작업용 cowork agent harness CoworkOS</description>
-</item>
-<item>
-<title>[논문] Democratizing Robot-Use Agents: A Unified Harness with Open Models</title>
-<link>https://arxiv.org/abs/2611.01560</link>
-<guid isPermaLink="false">p-2611.01560</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>open-weight 모델로 robot-use agent를 돌리는 통합 harness uni-robot-agent</description>
-</item>
-<item>
-<title>[논문] Wave Forcing: Towards Speed-of-Light Streaming Video Generation</title>
-<link>https://arxiv.org/abs/2611.00859</link>
-<guid isPermaLink="false">p-2611.00859</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>생성·학습·실행을 함께 설계해 실시간 스트리밍 비디오 생성을 가속하는 Wave Forcing</description>
-</item>
-<item>
-<title>[논문] Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation</title>
-<link>https://arxiv.org/abs/2611.03648</link>
-<guid isPermaLink="false">p-2611.03648</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>저가 wheeled humanoid부터 policy 학습까지 함께 설계한 모바일 매니퓰레이션 full-stack 시스템 Pixel</description>
-</item>
-<item>
-<title>[뉴스] Astra can read and write weights to improve Qwen</title>
-<link>https://rikiyat.github.io/blog/weight-space-programming/</link>
-<guid isPermaLink="false">hn-50341174</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>MIT CSAIL 연구진, GPT-6 Astra가 신경망 가중치를 직접 읽고 고쳐 Qwen3.5-0.8B의 수학 성능을 끌어올렸다는 'Weight-Space Programming' 실험 공개</description>
-</item>
-<item>
-<title>[뉴스] The 'Astra can read and write weights to improve Qwen' post is misleading</title>
-<link>https://honnibal.dev/blog/astra-read-write-misleading</link>
-<guid isPermaLink="false">hn-50351111</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>spaCy 저자 Matthew Honnibal, 'Astra가 가중치를 읽고 써서 Qwen을 개선했다'는 글이 실험 조건을 뒤섞어 오해를 부른다고 반박</description>
-</item>
-<item>
-<title>[뉴스] Postman silently auto-installs AI plugins and attempts to share all API data</title>
-<link>https://github.com/postmanlabs/postman-app-support/issues/14370</link>
-<guid isPermaLink="false">hn-50354960</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>Postman 데스크톱이 사용자 동의 없이 Codex·Claude Code 플러그인과 startup hook을 자동 설치했다는 GitHub 이슈가 화제</description>
-</item>
-<item>
-<title>[뉴스] Agentic cheminformatics with Google Antigravity</title>
-<link>https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</link>
-<guid isPermaLink="false">deepmind-agentic-cheminformatics-with-google-antigravity</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind, Google Antigravity와 새 Cheminformatics Skills로 신약 개발 workflow를 에이전트로 가속하는 사례 공개</description>
-</item>
-<item>
-<title>[뉴스] OpenAI seems to be silently re-enabling model training on Codex chats</title>
-<link>https://news.ycombinator.com/item?id=50352757</link>
-<guid isPermaLink="false">hn-50352757</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>Codex에서 꺼 둔 '모델 개선에 데이터 제공' 설정이 사용자 모르게 다시 켜졌다는 HN 제보</description>
-</item>
-<item>
-<title>[뉴스] Qwen 3.8 27B on my laptop can interpret model weights, too</title>
-<link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
-<guid isPermaLink="false">hn-50355251</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>Simon Willison, 노트북에서 돌린 Qwen 3.8 27B도 도구 없이 가중치만 보고 모델이 학습한 게임을 맞힐 수 있었다고 소개</description>
-</item>
-<item>
-<title>[뉴스] Postgres 19 출시가 늦어지는 건 AI 때문이다 - 버그 발견이 수정을 앞지르다</title>
-<link>https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html</link>
-<guid isPermaLink="false">gn-36491</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>PostgreSQL 19 출시 지연, LLM으로 찾은 버그 제보 급증으로 수정 부담이 커진 탓이라는 커미터의 분석</description>
-</item>
-<item>
-<title>[뉴스] Nvidia – open-source auto-ontology</title>
-<link>https://github.com/NVIDIA/auto-ontology</link>
-<guid isPermaLink="false">hn-50348962</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA, 엔터프라이즈 메타데이터로 에이전트용 온톨로지·컨텍스트 계층을 만드는 오픈소스 Auto Ontology 공개</description>
-</item>
-<item>
-<title>[뉴스] Scaling Git at OpenAI</title>
-<link>https://openai.com/index/scaling-git-at-openai</link>
-<guid isPermaLink="false">openai-scaling-git-at-openai</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, Codex가 가능하게 한 개발 규모를 감당하기 위해 만든 Git 호환 백엔드 Pando 소개</description>
-</item>
-<item>
-<title>[뉴스] 에이전트와 함께 개발하기 위한 실용 원칙</title>
-<link>https://usecaddie.app/blog/agents</link>
-<guid isPermaLink="false">gn-36502</guid>
-<pubDate>Wed, 04 Nov 2026 08:00:00 +0900</pubDate>
-<description>에이전트가 코드 대부분을 쓰는 환경에서 병목은 사람의 주의력이라며, 작업 착수·검증·기준 교육·목표 설정 원칙을 정리한 글</description>
 </item>
 </channel>
 </rss>
