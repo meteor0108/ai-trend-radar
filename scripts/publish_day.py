@@ -42,7 +42,8 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 CODE_RE = re.compile(r"^https://(github|gitlab)\.com/[\w.-]+/[\w.-]+/?$")
 SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
 PER_SOURCE = {"paper": 10, "news": 15}  # items to collect per platform
-MAX_TOTAL = {"paper": 35, "news": 80}
+MAX_TOTAL = {"paper": 10, "news": 80}
+ROBOTICS_TOP = 3  # robotics papers guaranteed among the headline papers, when the day has that many
 FEED_ITEMS = 60
 WHEN_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2}(?::\d{2})?)(?:\.\d+)?(Z|[+-]\d{2}:?\d{2})$")
 
@@ -277,12 +278,15 @@ def rerank(group, kind, per_source, warnings):
     """Order by overall rank (1 = headline), then number each platform's items by their rank on that platform."""
     group = sorted(group, key=lambda i: i["rank"])[:MAX_TOTAL[kind]]
     if kind == "paper":
-        # The headline papers always include a robotics paper when the day has one
+        # The headline papers include up to ROBOTICS_TOP robotics papers: cap the other papers' headline slots, keep the order
         robotics = [i for i in group if i["lane"] == "robotics"]
         per_source["robotics"] = len(robotics)
-        if robotics and robotics[0] not in group[:SHOW[kind]]:
-            group.remove(robotics[0])
-            group.insert(SHOW[kind] - 1, robotics[0])
+        other_slots = SHOW[kind] - min(len(robotics), ROBOTICS_TOP)
+        head, rest = [], []
+        for i in group:
+            fits = len(head) < SHOW[kind] and (i["lane"] == "robotics" or sum(h["lane"] != "robotics" for h in head) < other_slots)
+            (head if fits else rest).append(i)
+        group = head + rest
     for n, item in enumerate(group, 1):
         item["rank"] = n
     for s in sorted({s for i in group for s in i["sources"]}):
