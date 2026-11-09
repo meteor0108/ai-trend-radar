@@ -5,27 +5,13 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Mon, 09 Nov 2026 03:40:50 +0900</lastBuildDate>
-<item>
-<title>[논문] Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks</title>
-<link>https://arxiv.org/abs/2611.08417</link>
-<guid isPermaLink="false">p-2611.08417</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>Terminal-Bench 2.0의 약 30%에서 결함을 찾아 고친 2.1을 공개하며 agentic benchmark를 소프트웨어처럼 지속 관리해야 한다고 주장</description>
-</item>
+<lastBuildDate>Mon, 09 Nov 2026 14:48:58 +0900</lastBuildDate>
 <item>
 <title>[논문] DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors</title>
 <link>https://arxiv.org/abs/2604.25050</link>
 <guid isPermaLink="false">p-2604.25050</guid>
 <pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
 <description>discrete diffusion policy의 unmasking이 곧 inpainting이라는 점을 이용해 추가 학습 없이 비동기 real-time chunking을 구현한 DiscreteRTC</description>
-</item>
-<item>
-<title>[논문] SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding</title>
-<link>https://arxiv.org/abs/2611.02846</link>
-<guid isPermaLink="false">p-2611.02846</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>speculative decoding drafter의 on-policy distillation을 브랜치 병렬로 바꿔 학습 처리량과 acceptance length를 함께 높인 SpecOPD</description>
 </item>
 <item>
 <title>[논문] Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs</title>
@@ -40,6 +26,20 @@
 <guid isPermaLink="false">p-2611.08369</guid>
 <pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
 <description>비인두암 진료 전 과정을 따라 멀티모달 모델의 진단·치료 추론을 평가하는 임상 수련형 벤치마크 NPCBench</description>
+</item>
+<item>
+<title>[논문] PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World</title>
+<link>https://arxiv.org/abs/2611.06768</link>
+<guid isPermaLink="false">p-2611.06768</guid>
+<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트가 실제 로봇 탐색 경험을 메모리와 재사용 가능한 실행 스킬로 쌓아 스스로 개선하는 embodied RSI 프레임워크 PyRUA-REAL</description>
+</item>
+<item>
+<title>[논문] Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On</title>
+<link>https://arxiv.org/abs/2611.05163</link>
+<guid isPermaLink="false">p-2611.05163</guid>
+<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
+<description>사람 손 영상 속 사람을 로봇으로 '갈아입혀' 텔레오퍼레이션 없이 dexterous 시연 데이터를 만드는 RoboTryOn</description>
 </item>
 <item>
 <title>[뉴스] Goodbye Claude, hello Pi</title>
