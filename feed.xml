@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Mon, 09 Nov 2026 14:48:58 +0900</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 03:39:51 +0900</lastBuildDate>
+<item>
+<title>[논문] Scaling World Model for Hierarchical Manipulation Policies</title>
+<link>https://arxiv.org/abs/2602.10983</link>
+<guid isPermaLink="false">p-2602.10983</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>대규모 사전학습 world model을 high-level planner로, VLA를 low-level executor로 쓰는 계층형 조작 정책 VISTA</description>
+</item>
+<item>
+<title>[논문] ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use</title>
+<link>https://arxiv.org/abs/2611.09036</link>
+<guid isPermaLink="false">p-2611.09036</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>사람이 주변 물건을 도구로 골라 변형·재활용하는 장면을 ego-exo 다시점으로 담은 창의적 도구 사용 데이터셋 ToolDex</description>
+</item>
+<item>
+<title>[논문] On Agentic Manipulation Policies</title>
+<link>https://arxiv.org/abs/2611.09892</link>
+<guid isPermaLink="false">p-2611.09892</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>generalist AI 모델이 매니퓰레이터를 직접 지휘하는 agentic manipulation policy(AMP)가 VLA·WAM보다 안정적임을 보인 연구</description>
+</item>
+<item>
+<title>[논문] P$^2$-MOPD: Accelerating Multi-Teacher On-Policy Distillation via Parameter Priors</title>
+<link>https://arxiv.org/abs/2611.03953</link>
+<guid isPermaLink="false">p-2611.03953</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>student와 expert 파라미터의 선형 결합을 하나의 미분 가능한 모델로 보고 혼합 계수와 student를 함께 학습하는 multi-teacher on-policy distillation P²-MOPD</description>
+</item>
+<item>
+<title>[논문] Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation</title>
+<link>https://arxiv.org/abs/2611.08577</link>
+<guid isPermaLink="false">p-2611.08577</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>1.47억 vision-language 샘플과 12개 embodiment의 15,060시간 로봇 궤적으로 학습한 데스크톱 조작용 VLA foundation model MR0</description>
+</item>
+<item>
+<title>[뉴스] Goldman Sachs is pulling Claude Code from its bankers and traders</title>
+<link>https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers</link>
+<guid isPermaLink="false">hn-50415628</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>Goldman Sachs가 Claude Code와 GitHub 사용을 엔지니어로 제한해 대부분의 트레이더·은행원이 AI 코딩 도구를 못 쓰게 됨</description>
+</item>
+<item>
+<title>[뉴스] Is Opus 5.5 nerfed? Thinking patterns changed on November 3</title>
+<link>https://twitter.com/shanemelaugh/status/2119192075505893695</link>
+<guid isPermaLink="false">hn-50422069</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>1,400개 Claude Code 세션 분석으로 11월 3일 이후 Opus 5.5의 reasoning 패턴이 바뀌었다는 주장이 화제</description>
+</item>
+<item>
+<title>[뉴스] Our Smallest, Most Efficient Model: Muse Ember</title>
+<link>https://research.meta.ai/blog/muse-ember</link>
+<guid isPermaLink="false">hn-50429024</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>Meta가 tool call·coding subtask·routing·추출 등 에이전트 반복 작업용 최소형 고효율 모델 Muse Ember 공개</description>
+</item>
+<item>
+<title>[뉴스] Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation</title>
+<link>https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/</link>
+<guid isPermaLink="false">nvidia-robotics-simulation-advancements-corl</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA가 CoRL에서 Cosmos 기반 오픈 world action model GR00T 2와 시뮬레이션·데이터 도구를 공개</description>
+</item>
+<item>
+<title>[뉴스] I'm not convinced the AI bubble exists</title>
+<link>https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists</link>
+<guid isPermaLink="false">hn-50418975</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 버블론에 반대하며, 막대한 데이터센터 지출은 일회성이라 구축이 끝나면 비용이 급감할 것이라는 에세이</description>
+</item>
+<item>
+<title>[뉴스] ChatGPT Desktop forwards your SSH agent to remote machines</title>
+<link>https://news.ycombinator.com/item?id=50422628</link>
+<guid isPermaLink="false">hn-50422628</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>ChatGPT Desktop이 원격 머신의 에이전트에 로컬 SSH agent를 forwarding해 사용자 자격 증명으로 인증할 수 있다는 지적</description>
+</item>
+<item>
+<title>[뉴스] Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation</title>
+<link>https://arxiv.org/abs/2610.14162</link>
+<guid isPermaLink="false">hn-50422168</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>텍스트를 계층적 이산 코드로 인코딩하고 레벨별로 병렬 생성하는 coarse-to-fine 언어 생성 Next-Concept Modeling</description>
+</item>
+<item>
+<title>[뉴스] The same H100 costs $2.69 or $12.29 an hour depending where you rent it</title>
+<link>https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing</link>
+<guid isPermaLink="false">hn-50427085</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>같은 H100 SXM 80GB의 시간당 대여료가 RunPod $2.69부터 Azure $12.29까지 4.57배 차이</description>
+</item>
+<item>
+<title>[뉴스] Replit, microVM으로 샌드박스 엔진 재구축</title>
+<link>https://frontier.replit.com/sandbox-engine-microvms-part-1/</link>
+<guid isPermaLink="false">gn-36828</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>Replit이 자율 에이전트의 코드 실행 격리를 위해 샌드박스 엔진을 샌드박스별 커널을 가진 microVM으로 재구축</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Flide: Make Jev-like decision models up to 9.5x faster</title>
+<link>https://github.com/OmniJev/Flide</link>
+<guid isPermaLink="false">hn-50421155</guid>
+<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
+<description>Jev 계열 decision model 전용 추론 엔진 Flide 공개, vLLM·SGLang 대비 최대 9.5배 빠르다고 주장</description>
+</item>
 <item>
 <title>[논문] DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors</title>
 <link>https://arxiv.org/abs/2604.25050</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36593</guid>
 <pubDate>Sat, 07 Nov 2026 08:00:00 +0900</pubDate>
 <description>제프리 힌턴, AI가 풍요와 사회 붕괴의 갈림길에 있으며 10년 안에 향방이 드러날 것이라고 경고</description>
-</item>
-<item>
-<title>[논문] Turns Matter: Advancing Streaming Video RL via Turn-Level Credit</title>
-<link>https://arxiv.org/abs/2611.06728</link>
-<guid isPermaLink="false">p-2611.06728</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>스트리밍 비디오 이해 RL에서 궤적 단위가 아닌 턴 단위로 credit을 나누는 GRPO 프레임워크 TurnWise</description>
-</item>
-<item>
-<title>[논문] From Pixels to Actions - Towards Native Vision-Language-Action Policies</title>
-<link>https://arxiv.org/abs/2611.06918</link>
-<guid isPermaLink="false">p-2611.06918</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>비전 인코더 없이 이미지 패치를 언어와 함께 backbone 전체에서 처리하는 네이티브 VLA 정책 NEO-VLA</description>
-</item>
-<item>
-<title>[논문] FrontierPhysics: Evaluating Agents for End-to-End Physics Research</title>
-<link>https://arxiv.org/abs/2611.06910</link>
-<guid isPermaLink="false">p-2611.06910</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>물리학자 42명이 자기 연구로 만든 56개 과제로 에이전트의 '논문 수준' 물리 연구 능력을 평가하는 FrontierPhysics</description>
-</item>
-<item>
-<title>[논문] Adversarial Speculative Reasoning Improves Long Horizon Agents</title>
-<link>https://arxiv.org/abs/2611.05345</link>
-<guid isPermaLink="false">p-2611.05345</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>draft 모델이 핵심 추론 지점에서 일부러 거절되도록 학습시켜 장기 에이전트의 정확도를 높이는 adversarial speculative decoding</description>
-</item>
-<item>
-<title>[논문] Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models</title>
-<link>https://arxiv.org/abs/2611.06817</link>
-<guid isPermaLink="false">p-2611.06817</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>5만 시간 egocentric 인간 영상으로 로봇 world-action model을 사전학습하는 완전 공개 레시피 Open-HumanScale</description>
-</item>
-<item>
-<title>[뉴스] A thousand fewer paths to root</title>
-<link>https://openai.com/index/a-thousand-fewer-paths-to-root</link>
-<guid isPermaLink="false">openai-a-thousand-fewer-paths-to-root</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 자율 취약점 탐지·검증·패치 파이프라인으로 Linux 커널 권한 상승 취약점 948개에 대한 익스플로잇과 패치 생성</description>
-</item>
-<item>
-<title>[뉴스] GPT-6 Astra covertly underperforms on safety research</title>
-<link>https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/</link>
-<guid isPermaLink="false">hn-50376313</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI 정렬 보고서: GPT-6 Astra가 안전성 연구 과제에서 은밀하게 성능을 낮추는 현상 발견</description>
-</item>
-<item>
-<title>[뉴스] Introducing Images 2.6</title>
-<link>https://openai.com/index/introducing-images-2-6</link>
-<guid isPermaLink="false">openai-introducing-images-2-6</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 50% 빨라진 이미지 생성과 GIF 애니메이션을 지원하는 Images 2.6 출시</description>
-</item>
-<item>
-<title>[뉴스] GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents</title>
-<link>https://openai.com/index/introducing-gpt-6-cyber/</link>
-<guid isPermaLink="false">hn-50381590</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 취약점 발견·검증 성능과 범위 준수를 함께 끌어올린 보안 특화 모델 GPT-6 Cyber 공개</description>
-</item>
-<item>
-<title>[뉴스] Baidu released ERNIE 5.5 Flash Base</title>
-<link>https://ernie.baidu.com/release/ernie-5-5-flash-base/</link>
-<guid isPermaLink="false">hn-50377078</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>Baidu, 사전학습 직후 체크포인트인 280B MoE 기반 모델 ERNIE 5.5 Flash Base 가중치 공개</description>
-</item>
-<item>
-<title>[뉴스] Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</title>
-<link>https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/</link>
-<guid isPermaLink="false">deepmind-gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind, 15초 영상 생성과 대화형 편집을 지원하고 가격을 30% 낮춘 Gemini Omni 1.2 Flash 정식 출시</description>
-</item>
-<item>
-<title>[뉴스] Anthropic, AI 응답이 어느 모델에서 나왔는지 검증하는 FlashProve 공개</title>
-<link>https://www.anthropic.com/research/provable-inference</link>
-<guid isPermaLink="false">gn-36617</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 가중치 공개 없이 응답이 지정한 모델에서 나왔는지 검증하는 오픈소스 프로토타입 FlashProve 공개</description>
-</item>
-<item>
-<title>[뉴스] Awesome repositories are no longer awesome</title>
-<link>https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/</link>
-<guid isPermaLink="false">hn-50377821</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI 때문에 GitHub 'awesome' 목록이 더는 쓸모없어졌다는 주장</description>
-</item>
-<item>
-<title>[뉴스] MCP Explained</title>
-<link>https://mcp-explained.com/</link>
-<guid isPermaLink="false">hn-50379249</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>Model Context Protocol의 구조(host·server·model)와 JSON-RPC 위에서 정의되는 메서드·전송·인증을 그림으로 풀어낸 MCP 해설 사이트</description>
-</item>
-<item>
-<title>[뉴스] Nasdaq plummets 4% into correction territory</title>
-<link>https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html</link>
-<guid isPermaLink="false">hn-50381623</guid>
-<pubDate>Fri, 06 Nov 2026 08:00:00 +0900</pubDate>
-<description>데이터센터 투자 둔화 우려로 기술주 이탈이 가속되며 Nasdaq이 5.2% 급락, 조정 국면 진입</description>
 </item>
 </channel>
 </rss>

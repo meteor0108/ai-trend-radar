@@ -1,0 +1,1009 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T03:39:51+09:00",
+  "keywords": [],
+  "failed": [],
+  "items": [
+    {
+      "id": "p-2602.10983",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 1,
+      "ranks": {
+        "alphaxiv": 1
+      },
+      "published": "2026-02-12T01:12:33+09:00",
+      "title": "Scaling World Model for Hierarchical Manipulation Policies",
+      "url": "https://arxiv.org/abs/2602.10983",
+      "image": "https://arxiv.org/html/2602.10983v2/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2602.10983",
+      "altUrl": "https://www.alphaxiv.org/abs/2602.10983",
+      "scoreLabel": "alphaXiv #3",
+      "oneLine": "대규모 사전학습 world model을 high-level planner로, VLA를 low-level executor로 쓰는 계층형 조작 정책 VISTA",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "VLA는 real-robot 데이터가 적을 때 out-of-distribution 환경에서 쉽게 무너짐"
+        },
+        {
+          "label": "방법",
+          "text": "world model이 작업을 subtask 시퀀스와 goal image로 분해하고, VLA가 텍스트·시각 가이드를 따라 action sequence를 생성"
+        },
+        {
+          "label": "결과",
+          "text": "같은 구조의 VLA가 새로운 시나리오에서 world model 가이드로 성공률 14% → 69%로 상승, OOD에서 기존 baseline 대비 큰 차이"
+        }
+      ],
+      "keywords": [
+        "World Model",
+        "VLA"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.09036",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv",
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 2,
+      "ranks": {
+        "alphaxiv": 2,
+        "arxiv": 4
+      },
+      "published": "2026-11-06T15:12:33+09:00",
+      "title": "ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use",
+      "url": "https://arxiv.org/abs/2611.09036",
+      "image": "https://arxiv.org/html/2611.09036v1/tooldex_teaser.png",
+      "figureUrl": "https://arxiv.org/html/2611.09036",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.09036",
+      "scoreLabel": "alphaXiv #4",
+      "oneLine": "사람이 주변 물건을 도구로 골라 변형·재활용하는 장면을 ego-exo 다시점으로 담은 창의적 도구 사용 데이터셋 ToolDex",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "창의적 도구 사용 연구는 시뮬레이션 위주이거나 상호작용이 단순하고 주석이 부족한 데이터셋에 묶여 있음"
+        },
+        {
+          "label": "방법",
+          "text": "egocentric 카메라와 exocentric 카메라 8대를 동기화해 손·도구·대상 물체와 변형 상호작용까지 주석을 단 대규모 실제 시연 데이터 구축"
+        },
+        {
+          "label": "결과",
+          "text": "physical tool-use reasoning, sparse-view 3D/4D reconstruction, robot policy learning 세 가지 benchmark suite 제공"
+        }
+      ],
+      "keywords": [
+        "Dataset",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.09892",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv",
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 3,
+      "ranks": {
+        "alphaxiv": 3,
+        "arxiv": 5
+      },
+      "published": "2026-11-07T03:59:34+09:00",
+      "title": "On Agentic Manipulation Policies",
+      "url": "https://arxiv.org/abs/2611.09892",
+      "image": "https://arxiv.org/html/2611.09892v1/fig1_hero.png",
+      "figureUrl": "https://arxiv.org/html/2611.09892",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.09892",
+      "scoreLabel": "alphaXiv #9",
+      "oneLine": "generalist AI 모델이 매니퓰레이터를 직접 지휘하는 agentic manipulation policy(AMP)가 VLA·WAM보다 안정적임을 보인 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "로봇 조작은 시연 데이터로 학습한 specialist 정책(VLA, world-action model) 중심이지만 일반화와 견고성이 한계"
+        },
+        {
+          "label": "방법",
+          "text": "single-arm·bimanual·mobile manipulation에 그대로 쓰는 reference harness AMP1을 제시하고, 에피소드 간 persistent memory를 붙인 확장판도 분석"
+        },
+        {
+          "label": "결과",
+          "text": "RoboLab-120 zero-shot 85.6%(VLA 49.2%, WAM 42.9%), 실제 로봇 108회 중 104회 성공; memory 추가 시 RoboDojo bimanual 실패율 4.6배 감소"
+        }
+      ],
+      "keywords": [
+        "Embodied Agents",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.03953",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 4,
+      "ranks": {
+        "hf": 1
+      },
+      "published": "2026-11-03T05:53:15+09:00",
+      "title": "P$^2$-MOPD: Accelerating Multi-Teacher On-Policy Distillation via Parameter Priors",
+      "url": "https://arxiv.org/abs/2611.03953",
+      "image": "https://arxiv.org/html/2611.03953v2/fig_main_recovery.svg",
+      "figureUrl": "https://arxiv.org/html/2611.03953",
+      "altUrl": "https://huggingface.co/papers/2611.03953",
+      "codeUrl": "https://github.com/SinuoWang/P2-MOPD",
+      "codeStars": 0,
+      "score": 40,
+      "scoreLabel": "HF 40▲",
+      "oneLine": "student와 expert 파라미터의 선형 결합을 하나의 미분 가능한 모델로 보고 혼합 계수와 student를 함께 학습하는 multi-teacher on-policy distillation P²-MOPD",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "multi-teacher on-policy distillation은 느리고, task arithmetic은 학습 없이 빠르지만 고정된 파라미터 span에 갇힘"
+        },
+        {
+          "label": "방법",
+          "text": "같은 on-policy distillation 목적함수로 mixing coefficient와 student weight를 공동 최적화해 expert를 parameter prior로 활용"
+        },
+        {
+          "label": "결과",
+          "text": "4개 도메인·1.7B/4B 규모에서 MOPD의 최종 평균 recovery를 절반의 step으로 넘어섬; 1.7B는 94.7%(MOPD 80.9%)"
+        }
+      ],
+      "keywords": [
+        "Distillation",
+        "LLM"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.08577",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 5,
+      "ranks": {
+        "arxiv": 1
+      },
+      "published": "2026-11-06T03:55:42+09:00",
+      "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "url": "https://arxiv.org/abs/2611.08577",
+      "image": "https://arxiv.org/html/2611.08577v1/main_m42_clean_v2.png",
+      "figureUrl": "https://arxiv.org/html/2611.08577",
+      "codeUrl": "https://github.com/Meituan-Robotics/Meituan-Robotics-0",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "1.47억 vision-language 샘플과 12개 embodiment의 15,060시간 로봇 궤적으로 학습한 데스크톱 조작용 VLA foundation model MR0",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "이기종 로봇 데이터를 하나의 정책으로 묶고 실제 환경 post-training과 장기 작업 관리까지 해야 하는 데스크톱 조작"
+        },
+        {
+          "label": "방법",
+          "text": "discrete action-token pre-training → flow-matching mid-training → real-world post-training 3단계, 인간 교정과 짝지은 Rollback 데이터로 CFG-DAgger, event-driven agent로 작업 재개"
+        },
+        {
+          "label": "결과",
+          "text": "RoboTwin 2.0 성공률 93.6%, RoboDojo VLA 트랙 5위; 실제 로봇 3개 과제에서 π0.5보다 높고 Ethernet 삽입 70% 성공"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.08664",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 6,
+      "ranks": {
+        "arxiv": 2
+      },
+      "published": "2026-11-06T05:21:04+09:00",
+      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "url": "https://arxiv.org/abs/2611.08664",
+      "image": "https://arxiv.org/html/2611.08664v1/fig02_problem_setup.png",
+      "figureUrl": "https://arxiv.org/html/2611.08664",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "외부 힘 센서 없이 힘을 추정해 팔·허리·다리를 조율하는 휴머노이드 카트 밀기 whole-body control ForPC",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "양손으로 카트를 잡으면 카트를 미는 접촉 힘이 로봇 균형을 흔들고, 적재량에 따라 결합 동역학이 바뀜"
+        },
+        {
+          "label": "방법",
+          "text": "다양한 손 하중에서 locomotion prior를 학습한 뒤, onboard 관측으로 추정한 force/state latent를 받는 residual policy를 2단계 RL로 학습"
+        },
+        {
+          "label": "결과",
+          "text": "locomotion-only 대비 카트 속도 RMSE 최대 68.2% 감소; 시뮬레이션만으로 학습해 Unitree G1에서 30kg 카트를 0.5m/s로 밀기"
+        }
+      ],
+      "keywords": [
+        "Humanoid",
+        "Whole-Body Control"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "p-2611.09293",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 7,
+      "ranks": {
+        "arxiv": 3
+      },
+      "published": "2026-11-06T19:47:23+09:00",
+      "title": "MDF++: Visuo-Tactile World Action Model with End-to-end Representation Learning",
+      "url": "https://arxiv.org/abs/2611.09293",
+      "image": "https://arxiv.org/html/2611.09293v1/pull_fig.png",
+      "figureUrl": "https://arxiv.org/html/2611.09293",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "시각·촉각 표현을 diffusion backbone과 end-to-end로 함께 학습하는 visuo-tactile world-action model MDF++ (CoRL 2026)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "기존 world-action model은 재구성으로 학습된 frozen encoder에 의존해 제어에 맞는 표현을 얻기 어려움"
+        },
+        {
+          "label": "방법",
+          "text": "다감각 관측의 latent를 end-to-end로 학습하되, cross-modal 상관을 이용한 multi-task 학습으로 feature collapse를 방지"
+        },
+        {
+          "label": "결과",
+          "text": "실제 볼트 체결·너트 결합 등 contact-rich 조작에서 frozen 표현 기반 WAM보다 최대 50% 우수"
+        }
+      ],
+      "keywords": [
+        "World Action Model",
+        "Tactile"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50415628",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "rank": 1,
+      "ranks": {
+        "hn": 11,
+        "geeknews": 3
+      },
+      "published": "2026-11-09T03:16:07+09:00",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "discussUrl": "https://news.ycombinator.com/item?id=50415628",
+      "sourceUrls": {
+        "hn": "https://news.ycombinator.com/item?id=50415628",
+        "geeknews": "https://news.hada.io/topic?id=36827"
+      },
+      "score": 867,
+      "scoreLabel": "867P",
+      "oneLine": "Goldman Sachs가 Claude Code와 GitHub 사용을 엔지니어로 제한해 대부분의 트레이더·은행원이 AI 코딩 도구를 못 쓰게 됨",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Bloomberg 보도에 따르면 10월 내부 지침 개정으로, 고객 거래 흐름 추적·시장 모델링에 쓰던 비기술 직원의 접근이 막혔고 Strats는 유지"
+        },
+        {
+          "label": "",
+          "text": "사내 AI 비서는 계속 전사 이용 가능하며, Goldman은 Claude 기반 백오피스 에이전트를 운영하고 Anthropic IPO 공동 주관사도 맡고 있음"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "Anthropic"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50422069",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 2,
+      "ranks": {
+        "hn": 2
+      },
+      "published": "2026-11-09T16:04:25+09:00",
+      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+      "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "discussUrl": "https://news.ycombinator.com/item?id=50422069",
+      "score": 434,
+      "scoreLabel": "434P",
+      "oneLine": "1,400개 Claude Code 세션 분석으로 11월 3일 이후 Opus 5.5의 reasoning 패턴이 바뀌었다는 주장이 화제",
+      "bullets": [
+        {
+          "label": "",
+          "text": "작성자는 모델명은 그대로인데 'high' 설정의 reasoning 양이 크게 줄었고, 실제 버그에서 high는 3시간 헤맨 반면 xhigh는 몇 분 만에 해결했다고 주장"
+        },
+        {
+          "label": "",
+          "text": "본인도 과학적으로 엄밀한 benchmark는 아니며 개인적 불만에서 출발했다고 밝힘"
+        }
+      ],
+      "keywords": [
+        "Anthropic",
+        "AI Coding"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50429024",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 3,
+      "ranks": {
+        "hn": 1
+      },
+      "published": "2026-11-10T02:58:46+09:00",
+      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "discussUrl": "https://news.ycombinator.com/item?id=50429024",
+      "score": 11,
+      "scoreLabel": "11P",
+      "oneLine": "Meta가 tool call·coding subtask·routing·추출 등 에이전트 반복 작업용 최소형 고효율 모델 Muse Ember 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Artificial Analysis 기준 Claude Haiku 5.5의 최고 점수를 약 1/3 비용으로 맞추고 GPT-6 Luna의 모든 설정을 앞선다고 주장(비용은 제안 가격 기준 추정치)"
+        },
+        {
+          "label": "",
+          "text": "AutomationBench-AA 37.8(Haiku 5.5 13.9, Luna 20.2), Agents' Last Exam 61.6 등 에이전트 평가 결과 제시"
+        }
+      ],
+      "keywords": [
+        "Small Models",
+        "Meta"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "nvidia-robotics-simulation-advancements-corl",
+      "kind": "news",
+      "source": "nvidia",
+      "sources": [
+        "nvidia"
+      ],
+      "rank": 4,
+      "ranks": {
+        "nvidia": 1
+      },
+      "published": "2026-11-09T23:00:01+09:00",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "oneLine": "NVIDIA가 CoRL에서 Cosmos 기반 오픈 world action model GR00T 2와 시뮬레이션·데이터 도구를 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "GR00T 2는 10만 시간 규모 human egocentric 데이터 등으로 학습해 50개 과제 평균 성공률이 시연 1개로 71%, 5개로 95%; RoboCasa365·RoboLab 등에서 상위 3위권"
+        },
+        {
+          "label": "",
+          "text": "human 영상을 시뮬레이션 로봇 시연으로 바꾸는 Video to Data workflow, 3D 손 동작 복원 모델 EgoHand 공개; GRAIL·RoboTTT 두 논문이 Best Paper 최종 후보"
+        }
+      ],
+      "keywords": [
+        "World Action Model",
+        "NVIDIA"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50418975",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 5,
+      "ranks": {
+        "hn": 5
+      },
+      "published": "2026-11-09T08:44:36+09:00",
+      "title": "I'm not convinced the AI bubble exists",
+      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+      "discussUrl": "https://news.ycombinator.com/item?id=50418975",
+      "score": 520,
+      "scoreLabel": "520P",
+      "oneLine": "AI 버블론에 반대하며, 막대한 데이터센터 지출은 일회성이라 구축이 끝나면 비용이 급감할 것이라는 에세이",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI 기업의 지출 약속은 최소 3조 달러, 이미 쓴 금액 추정 1.9조 달러로 총 약 5조 달러라는 수치를 인용"
+        },
+        {
+          "label": "",
+          "text": "복잡한 금융 구조로 실제 지출을 파악하기 어렵다는 점은 버블론의 가장 설득력 있는 근거라고 인정"
+        }
+      ],
+      "keywords": [
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50422628",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 6,
+      "ranks": {
+        "hn": 6
+      },
+      "published": "2026-11-09T17:17:49+09:00",
+      "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "url": "https://news.ycombinator.com/item?id=50422628",
+      "score": 186,
+      "scoreLabel": "186P",
+      "oneLine": "ChatGPT Desktop이 원격 머신의 에이전트에 로컬 SSH agent를 forwarding해 사용자 자격 증명으로 인증할 수 있다는 지적",
+      "bullets": [
+        {
+          "label": "",
+          "text": "원격 머신에서 실행 중인 에이전트가 로컬 SSH 키로 인증해 GitHub 비공개 저장소에 push할 수 있다며 openai/codex PR 토론을 근거로 제시"
+        }
+      ],
+      "keywords": [
+        "Agent Safety",
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50422168",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 7,
+      "ranks": {
+        "hn": 4
+      },
+      "published": "2026-11-09T16:20:37+09:00",
+      "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+      "url": "https://arxiv.org/abs/2610.14162",
+      "discussUrl": "https://news.ycombinator.com/item?id=50422168",
+      "score": 166,
+      "scoreLabel": "166P",
+      "oneLine": "텍스트를 계층적 이산 코드로 인코딩하고 레벨별로 병렬 생성하는 coarse-to-fine 언어 생성 Next-Concept Modeling",
+      "bullets": [
+        {
+          "label": "",
+          "text": "multiscale residual VQ-VAE로 텍스트를 코드 계층으로 바꾸고 transformer가 한 레벨의 코드를 한 번에 예측"
+        },
+        {
+          "label": "",
+          "text": "LM1B에서 최강 diffusion LM보다 perplexity가 좋으면서 21배 빠르고, OpenWebText 10배·XSum 31배 빠르며 Sudoku에서 AR·diffusion baseline을 앞섬"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "Diffusion LM"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50427085",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 8,
+      "ranks": {
+        "hn": 3
+      },
+      "published": "2026-11-10T00:39:01+09:00",
+      "title": "The same H100 costs $2.69 or $12.29 an hour depending where you rent it",
+      "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
+      "discussUrl": "https://news.ycombinator.com/item?id=50427085",
+      "score": 121,
+      "scoreLabel": "121P",
+      "oneLine": "같은 H100 SXM 80GB의 시간당 대여료가 RunPod $2.69부터 Azure $12.29까지 4.57배 차이",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AWS·Azure·neocloud의 on-demand 가격을 GPU당 시간 단위로 정규화하고, SXM·PCIe·NVL 등 같은 칩끼리만 비교"
+        },
+        {
+          "label": "",
+          "text": "한 달(730시간) 연속 사용 시 $1,964 대 $8,972로, 대여처만으로 비용이 크게 갈림"
+        }
+      ],
+      "keywords": [
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36828",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 9,
+      "ranks": {
+        "geeknews": 6
+      },
+      "published": "2026-11-09T04:50:44+09:00",
+      "title": "Replit, microVM으로 샌드박스 엔진 재구축",
+      "url": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
+      "discussUrl": "https://news.hada.io/topic?id=36828",
+      "score": 4,
+      "scoreLabel": "4P",
+      "oneLine": "Replit이 자율 에이전트의 코드 실행 격리를 위해 샌드박스 엔진을 샌드박스별 커널을 가진 microVM으로 재구축",
+      "bullets": [
+        {
+          "label": "",
+          "text": "VM 안에서 eBPF로 활동을 관찰하고 Linux 보안 모듈로 차단하며, 자격 증명은 VM 밖에서 관리해 샌드박스에 API 키를 넘기지 않음"
+        },
+        {
+          "label": "",
+          "text": "미리 띄운 VM에 디스크를 붙여 약 500ms에 샌드박스를 제공하고, 수억 개 프로젝트를 데이터 손실 없이 이전"
+        }
+      ],
+      "keywords": [
+        "AI Infra",
+        "Agent Safety"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50421155",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 10,
+      "ranks": {
+        "hn": 7
+      },
+      "published": "2026-11-09T13:43:12+09:00",
+      "title": "Show HN: Flide: Make Jev-like decision models up to 9.5x faster",
+      "url": "https://github.com/OmniJev/Flide",
+      "discussUrl": "https://news.ycombinator.com/item?id=50421155",
+      "score": 107,
+      "scoreLabel": "107P",
+      "oneLine": "Jev 계열 decision model 전용 추론 엔진 Flide 공개, vLLM·SGLang 대비 최대 9.5배 빠르다고 주장",
+      "bullets": [
+        {
+          "label": "",
+          "text": "exact inference를 내세우며 30개 이상의 로컬 Jev 계열 decision model을 지원하고 pip로 설치 가능"
+        }
+      ],
+      "keywords": [
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "nvidia-nvidia-dynamo-korea-open-models",
+      "kind": "news",
+      "source": "nvidia",
+      "sources": [
+        "nvidia"
+      ],
+      "rank": 11,
+      "ranks": {
+        "nvidia": 2
+      },
+      "published": "2026-11-09T14:00:00+09:00",
+      "title": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+      "oneLine": "NVIDIA가 A.X K2·K-EXAONE 2.0·Solar Open 2·Motif-3 등 한국 오픈 모델용 Dynamo 배포 레시피 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "오픈소스 분산 추론 서빙 프레임워크 Dynamo로 멀티 GPU·멀티 노드 라우팅과 통신을 처리하며, B200에 최적화해 기본 설정으로 최대 2배 성능"
+        }
+      ],
+      "keywords": [
+        "Open Weights",
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36856",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 12,
+      "ranks": {
+        "geeknews": 2
+      },
+      "published": "2026-11-09T09:40:02+09:00",
+      "title": "AI에 회사 맥락을 제공하고 ‘회사 두뇌’를 구축하는 방법",
+      "url": "https://ramp.com/blog/how-to-give-ai-context",
+      "discussUrl": "https://news.hada.io/topic?id=36856",
+      "score": 19,
+      "scoreLabel": "19P",
+      "oneLine": "AI가 회사에 맞는 답을 하도록 지표 정의·정책·업무 방식을 문서화하고 업무 도구와 연결하는 '회사 두뇌' 구축법",
+      "bullets": [
+        {
+          "label": "",
+          "text": "1~2페이지 문서로 사내 기준을 정리하고, 변하는 지식은 파인튜닝보다 검색·최신 기록 조회로 제공하며 2~3개 업무 도구 연결부터 시작"
+        },
+        {
+          "label": "",
+          "text": "정답을 아는 질문 10~20개로 변경 때마다 답과 출처를 검증하고, 문서마다 담당자와 검토일을 지정"
+        }
+      ],
+      "keywords": [
+        "Context Engineering"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50424199",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 13,
+      "ranks": {
+        "hn": 12
+      },
+      "published": "2026-11-09T20:36:55+09:00",
+      "title": "6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here",
+      "url": "https://github.com/samir-sarwar/samir-vllm",
+      "discussUrl": "https://news.ycombinator.com/item?id=50424199",
+      "score": 68,
+      "scoreLabel": "68P",
+      "oneLine": "C++·CUDA로 작은 추론 엔진을 직접 만들며 LLM inference를 처음부터 설명하는 6시간 영상과 80쪽 이상 손필기 노트",
+      "bullets": [
+        {
+          "label": "",
+          "text": "weight 로딩부터 RMSNorm·RoPE·self-attention·KV cache·continuous batching·paged attention까지 단계별 시리즈로 구성"
+        }
+      ],
+      "keywords": [
+        "LLM Inference"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36842",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 14,
+      "ranks": {
+        "geeknews": 1
+      },
+      "published": "2026-11-09T06:55:36+09:00",
+      "title": "나는 AI로 인한 두뇌 과부하에 이렇게 대처한다",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "discussUrl": "https://news.hada.io/topic?id=36842",
+      "score": 18,
+      "scoreLabel": "18P",
+      "oneLine": "Claude Code·Codex를 병렬로 돌리며 생기는 맥락 과부하를 Git 기반 작업 큐로 줄이는 개인 실험",
+      "bullets": [
+        {
+          "label": "",
+          "text": "티켓을 코드 옆 Markdown 파일로 두고 보드 상태를 커밋하며, 에이전트는 조사·승인된 구현·검증을 맡고 사람의 판단이 필요한 항목은 owner inbox에 우선순위순으로 모음"
+        }
+      ],
+      "keywords": [
+        "Coding Agents"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50392256",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 15,
+      "ranks": {
+        "hn": 8
+      },
+      "published": "2026-11-06T22:48:35+09:00",
+      "title": "Nvidia was in 1 in 11 startup rounds over $100M last year",
+      "url": "https://datahyena.com/research/a-chipmaker-was-in-one-of-every-eleven-100m-rounds/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50392256",
+      "score": 73,
+      "scoreLabel": "73P",
+      "oneLine": "지난해 1억 달러 이상 스타트업 투자 라운드 11건 중 1건에 NVIDIA(NVentures 포함)가 참여",
+      "bullets": [
+        {
+          "label": "",
+          "text": "투자자가 공개된 903건 중 NVIDIA가 79건으로 Sequoia(75), a16z(73)보다 많았고, NVIDIA 단독도 65건"
+        }
+      ],
+      "keywords": [
+        "AI Industry",
+        "NVIDIA"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50428199",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 16,
+      "ranks": {
+        "hn": 9
+      },
+      "published": "2026-11-10T01:55:26+09:00",
+      "title": "AWS Nitro Sandboxes on Amazon EKS, ECS and EC2",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50428199",
+      "score": 20,
+      "scoreLabel": "20P",
+      "oneLine": "AWS가 EKS·ECS·EC2에서 AI 에이전트 등 워크로드를 하드웨어 격리 경량 VM으로 돌리는 Nitro Sandboxes 출시",
+      "bullets": [
+        {
+          "label": "",
+          "text": "각 pod·task·VM이 Nitro Hypervisor 기반 격리 VM을 갖고, 신뢰할 수 없는 multi-tenant 워크로드를 한 인스턴스에서 near-native 성능으로 실행"
+        }
+      ],
+      "keywords": [
+        "AI Infra",
+        "Agent Safety"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36694",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 17,
+      "ranks": {
+        "geeknews": 8
+      },
+      "published": "2026-11-06T14:33:17+09:00",
+      "title": "약 2만 달러로 학습한 이미지 생성 모델 P-JiT, 코드와 가중치 공개",
+      "url": "https://www.linum.ai/field-notes/pjit-21k",
+      "discussUrl": "https://news.hada.io/topic?id=36694",
+      "score": 9,
+      "scoreLabel": "9P",
+      "oneLine": "Linum이 GPU 비용 21,038달러로 학습한 약 22억 파라미터 이미지 생성 모델 P-JiT를 코드·가중치와 함께 Apache 2.0으로 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "별도 VAE 없이 압축과 생성을 함께 학습해 이미지 토큰을 기존 대비 1/4로 줄였으며, 더 저렴한 영상 생성 모델을 위한 개념 검증"
+        },
+        {
+          "label": "",
+          "text": "글자가 많은 이미지를 학습에서 빼 문자·포스터 생성은 지원하지 않음"
+        }
+      ],
+      "keywords": [
+        "Image Generation",
+        "Open Weights"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50428377",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 18,
+      "ranks": {
+        "hn": 13
+      },
+      "published": "2026-11-10T02:09:56+09:00",
+      "title": "Parents, teachers call Google's Search threat over AI blocks 'extortion'",
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+      "discussUrl": "https://news.ycombinator.com/item?id=50428377",
+      "score": 8,
+      "scoreLabel": "8P",
+      "oneLine": "Google이 AI 도구를 차단한 학교는 Google Search 접근도 잃는다고 발표해 학부모·교사가 '갈취'라고 반발",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Google은 K-12 학생 계정에서 Gemini·Gemini in Classroom·Search 등을 관리자가 명시적으로 켤 때까지 꺼 두는 방식으로 통제 정책을 바꾼다고 설명"
+        }
+      ],
+      "keywords": [
+        "AI Policy"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36837",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 19,
+      "ranks": {
+        "geeknews": 4
+      },
+      "published": "2026-11-09T06:24:58+09:00",
+      "title": "LLM 시대의 확장 가능한 소프트웨어",
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "discussUrl": "https://news.hada.io/topic?id=36837",
+      "score": 6,
+      "scoreLabel": "6P",
+      "oneLine": "LLM의 확장 코드 작성 능력과 현대 샌드박스를 결합해 코어는 안정적으로 두고 사용자별 확장을 받는 소프트웨어를 제안",
+      "bullets": [
+        {
+          "label": "",
+          "text": "안전한 확장은 넓은 API 접근을 막기보다 승인된 동작만 하는 좁은 capability 객체를 넘기는 방식이 적합하다고 주장"
+        }
+      ],
+      "keywords": [
+        "AI Coding"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36886",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 20,
+      "ranks": {
+        "geeknews": 5
+      },
+      "published": "2026-11-09T23:44:25+09:00",
+      "title": "Show GN: Optics Framework - 내 GPU의 2B 모델로 깨진 UI 테스트 로케이터를 고치는 AI self-heal",
+      "url": "https://news.hada.io/topic?id=36886",
+      "score": 1,
+      "scoreLabel": "1P",
+      "oneLine": "UI 테스트 로케이터가 깨지면 로컬 2B 모델이 화면을 보고 맞는 요소를 고르는 Optics Framework self-heal 실험",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Qwen3.5-2B에 weight 직접 편집과 LoRA를 비교했고, LoRA는 텍스트형 로케이터 95.5% → 98.6%; Pixel 4a 실기기에서 heal 113/114 성공"
+        }
+      ],
+      "keywords": [
+        "Small Models",
+        "AI Testing"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36782",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 21,
+      "ranks": {
+        "geeknews": 9
+      },
+      "published": "2026-11-08T09:30:02+09:00",
+      "title": "OpenMausBot - 봇이 사용할 가상 머신을 제공하는 오픈소스 Grok Bot 대체재",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "discussUrl": "https://news.hada.io/topic?id=36782",
+      "score": 4,
+      "scoreLabel": "4P",
+      "oneLine": "봇에게 클라우드 Linux 데스크톱이나 로컬 VM을 주고 브라우저·터미널로 일하게 하는 오픈소스 Grok Bot 대안 OpenMausBot",
+      "bullets": [
+        {
+          "label": "",
+          "text": "여러 봇이 역할과 모델을 나눠 병렬 작업하고 Claude Code·Codex·Grok CLI 연결, Composio로 Gmail·Slack·GitHub 등 연동; Apache-2.0"
+        }
+      ],
+      "keywords": [
+        "Computer Use",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "gn-36876",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 22,
+      "ranks": {
+        "geeknews": 7
+      },
+      "published": "2026-11-09T18:27:07+09:00",
+      "title": "Show GN: less - 존재 이유가 분명한 것만 남기는 에이전트 스킬",
+      "url": "https://news.hada.io/topic?id=36876",
+      "score": 1,
+      "scoreLabel": "1P",
+      "oneLine": "AI 결과물에서 존재 이유가 없는 부분만 덜어내는 에이전트 스킬 less",
+      "bullets": [
+        {
+          "label": "",
+          "text": "글·코드·UI 코드에 동작하며, 데모에서 치과 페이지의 보이는 단어가 347개 → 71개로 줄고 이름·주소·영업시간 등 핵심 정보는 유지"
+        }
+      ],
+      "keywords": [
+        "Agent Skills"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    },
+    {
+      "id": "hn-50426070",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 23,
+      "ranks": {
+        "hn": 10
+      },
+      "published": "2026-11-09T23:24:22+09:00",
+      "title": "Ask HN: How do you evaluate the skills your AI agents use?",
+      "url": "https://news.ycombinator.com/item?id=50426070",
+      "score": 15,
+      "scoreLabel": "15P",
+      "oneLine": "AI 에이전트가 쓰는 skill을 체계적으로 평가하는지, SKILL.md를 읽고 써 보는 게 전부인지 묻는 Ask HN",
+      "bullets": [
+        {
+          "label": "",
+          "text": "사용 전후 skill 평가에 쓰는 도구와 방법을 공유해 달라는 질문"
+        }
+      ],
+      "keywords": [
+        "Agent Skills"
+      ],
+      "addedAt": "2026-11-10T03:39:51+09:00"
+    }
+  ]
+}
