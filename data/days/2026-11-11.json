@@ -1,0 +1,1285 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T03:41:07+09:00",
+  "keywords": [],
+  "failed": [],
+  "items": [
+    {
+      "id": "p-2611.12806",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 1,
+      "ranks": {
+        "hf": 1,
+        "alphaxiv": 3
+      },
+      "published": "2026-11-10T03:12:00+09:00",
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2611.12806",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.12806",
+      "codeUrl": "https://github.com/Robbyant/lingbot-touch",
+      "codeStars": 66,
+      "score": 92,
+      "scoreLabel": "HF 92▲ · alphaXiv #6",
+      "oneLine": "piezoresistive·magnetic·visuotactile 센서를 하나의 표현으로 묶는 tactile foundation model LingBot-Touch",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "촉각 센서는 종류마다 장단점이 뚜렷해, 센서별 물리 특성에 묶이지 않는 촉각 이해가 필요함"
+        },
+        {
+          "label": "방법",
+          "text": "서로 다른 촉각 센서를 통합 표현으로 인코딩하고, 새 센서 타입으로 쉽게 확장되는 plug-and-play tactile token을 diffusion policy와 π0.5·LingBot-VLA 같은 VLA에 붙임"
+        },
+        {
+          "label": "결과",
+          "text": "시뮬레이션과 여러 하드웨어의 real-robot 실험에서 접촉이 많은 복잡한 manipulation 성능을 크게 높이면서 계산 효율도 유지"
+        }
+      ],
+      "keywords": [
+        "Dexterous Manipulation",
+        "Tactile"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.12177",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 2,
+      "ranks": {
+        "alphaxiv": 1
+      },
+      "published": "2026-11-09T19:29:19+09:00",
+      "title": "Embodied First Exam",
+      "url": "https://arxiv.org/abs/2611.12177",
+      "image": "https://arxiv.org/html/2611.12177v1/fig4.png",
+      "figureUrl": "https://arxiv.org/html/2611.12177",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.12177",
+      "scoreLabel": "alphaXiv #1",
+      "oneLine": "코딩 에이전트가 47종 로봇을 직접 제어할 수 있는지 평가하는 1,156개 과제 벤치마크 Embodied First Exam",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "기존 로보틱스 벤치마크는 visuomotor policy 학습 위주라, 코딩 에이전트가 물리 제약 아래에서 다양한 로봇을 제어할 수 있는지는 미지수"
+        },
+        {
+          "label": "방법",
+          "text": "에이전트가 직접 제어·코드 작성·policy 학습 중 방식을 고르게 하는 agent-native 평가 틀로, 35개 suite(신규 9개: 공간 퍼즐, dexterous manipulation, 다중 로봇, 동적 whole-body control 등)를 Standard/Realtime/Privileged 설정으로 구성"
+        },
+        {
+          "label": "결과",
+          "text": "456개 core 과제의 Standard 설정에서 8개 에이전트 중 최고인 Codex의 GPT-6 Astra도 성공률 34%에 그침"
+        }
+      ],
+      "keywords": [
+        "Benchmark",
+        "Embodied Agents"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2610.27387",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 3,
+      "ranks": {
+        "alphaxiv": 2
+      },
+      "published": "2026-10-20T08:21:18+09:00",
+      "title": "Training Controllable World Models via Action Influence Maximization",
+      "url": "https://arxiv.org/abs/2610.27387",
+      "image": "https://arxiv.org/html/2610.27387v1/20261013-corl-motivation.png",
+      "figureUrl": "https://arxiv.org/html/2610.27387",
+      "altUrl": "https://www.alphaxiv.org/abs/2610.27387",
+      "scoreLabel": "alphaXiv #5",
+      "oneLine": "전문가 시연만으로 학습한 world model이 action을 무시하는 문제를 능동적 데이터 수집(AIM)으로 해결 (CoRL 2026)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "성공 시연으로 학습한 action-conditioned video model은 명령한 action과 무관하게 그럴듯한 미래를 생성함"
+        },
+        {
+          "label": "방법",
+          "text": "데이터의 action influence가 모델이 표현할 수 있는 controllability의 상한임을 증명하고, 이를 높이는 데이터를 능동적으로 모으는 Action Influence Maximization(AIM) 제안"
+        },
+        {
+          "label": "결과",
+          "text": "pixel 기반 manipulation에서 시연 3k에 AIM 수집 500 에피소드를 더해 전문가 30만 에피소드 world model과 end-effector controllability가 같아짐(데이터 85배 절감)"
+        }
+      ],
+      "keywords": [
+        "World Model",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.09124",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "robotics",
+      "rank": 4,
+      "ranks": {
+        "hf": 4
+      },
+      "published": "2026-11-06T17:02:15+09:00",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "url": "https://arxiv.org/abs/2611.09124",
+      "image": "https://arxiv.org/html/2611.09124v1/architecture_slide8_cropped.png",
+      "figureUrl": "https://arxiv.org/html/2611.09124",
+      "altUrl": "https://huggingface.co/papers/2611.09124",
+      "codeUrl": "https://github.com/AutoLab-SAI-SJTU/A2MEAS",
+      "codeStars": 9,
+      "score": 48,
+      "scoreLabel": "HF 48▲",
+      "oneLine": "correction code로 실패 복구를 학습하는 embodied multi-agent 프레임워크 A2-MEAS와 VLA 기반 action model A2-WLA",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "foundation model 기반 로봇이 지속적으로 자율 동작하려면 효율적인 제어와 실패 복구가 필요함"
+        },
+        {
+          "label": "방법",
+          "text": "교정 언어·공간 근거·실행 이력·action 제안을 담은 correction code를 학습 시 adapter로 흡수하고 배포 시 frozen weight에 적용하며, A2-WLA는 VLA에 motion-aware history와 latent world model을 더함"
+        },
+        {
+          "label": "결과",
+          "text": "BEHAVIOR 2026 100개 과제에서 Q-score 0.6411, RoboTwin 2.0에서 95.05%, real-robot 12개 과제 평균 57.92%(π0.5는 26.67%)"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Embodied Agents"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.12885",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 5,
+      "ranks": {
+        "alphaxiv": 4
+      },
+      "published": "2026-11-10T03:59:45+09:00",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.12885",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.12885",
+      "codeUrl": "https://github.com/ArcheOne-AI/RoboScript",
+      "scoreLabel": "alphaXiv #12",
+      "oneLine": "시뮬레이터에서 리허설한 피드백을 weight 대신 context에 쌓는 World In-Context Learning(RoboScript)",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "학습된 action policy는 학습 분포에 묶이고, 다른 장면의 시연을 쓰는 in-context learning은 현재 환경의 피드백이 없어 성능이 낮았음"
+        },
+        {
+          "label": "방법",
+          "text": "frozen 모델이 시연 1개로 시작해 시뮬레이터에서 과제를 리허설하고, 얻은 지식을 Task Memory로 고정해 새 장면에 배포하는 RoboScript 인프라 구축"
+        },
+        {
+          "label": "결과",
+          "text": "RoboTwin 2.0 50개 과제에서 과제당 시연 1개·gradient update 없이 평균 83.4%로 최강 trained policy보다 20%p 이상 높고, 실제 양팔 로봇으로도 전이"
+        }
+      ],
+      "keywords": [
+        "Robot Learning",
+        "Memory"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.11509",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "robotics",
+      "rank": 6,
+      "ranks": {
+        "alphaxiv": 5
+      },
+      "published": "2026-11-09T02:33:29+09:00",
+      "title": "Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents",
+      "url": "https://arxiv.org/abs/2611.11509",
+      "image": "https://arxiv.org/html/2611.11509v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2611.11509",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.11509",
+      "scoreLabel": "alphaXiv #13",
+      "oneLine": "MLLM이 스스로 쓴 텍스트 메모리만으로 embodied 과제 성능을 높이는 단순한 방법 SimplEvo",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "MLLM 기반 embodied agent에 붙는 harness·post-trained policy·self-improvement 루프가 MLLM 본연의 능력을 넘어서는지 불분명함"
+        },
+        {
+          "label": "방법",
+          "text": "시연 1개로 좌표 없는 task memory를 쓰고, 학습 에피소드마다 절차·완료·복구 교훈으로 working memory를 다듬은 뒤 테스트에서는 고정"
+        },
+        {
+          "label": "결과",
+          "text": "EBench에서 GPT-6-Astra 직접 제어 성공률을 46.7%→81.7%로 높이고 RoboDojo 리더보드 1위(69.63%), 메모리는 약한 MLLM에도 그대로 전이"
+        }
+      ],
+      "keywords": [
+        "Embodied Agents",
+        "Memory"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.10771",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf",
+        "alphaxiv",
+        "hftrend"
+      ],
+      "lane": "trending",
+      "rank": 7,
+      "ranks": {
+        "hf": 3,
+        "alphaxiv": 6,
+        "hftrend": 2
+      },
+      "published": "2026-11-07T23:59:22+09:00",
+      "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+      "url": "https://arxiv.org/abs/2611.10771",
+      "image": "https://arxiv.org/html/2611.10771v1/WorldFoundry_framework.png",
+      "figureUrl": "https://arxiv.org/html/2611.10771",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.10771",
+      "codeUrl": "https://github.com/OpenEnvision/WorldFoundry",
+      "codeStars": 336,
+      "score": 52,
+      "scoreLabel": "HF 52▲ · alphaXiv #15 · HF Trending #39",
+      "oneLine": "비디오·3D/4D·embodied action·interactive world 모델을 한곳에서 재현 가능하게 실행·평가하는 오픈소스 인프라 WorldFoundry",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "시각적으로 그럴듯한 생성만으로는 지속 상태, 물리 동역학, 상호작용에 대한 인과적 반응을 갖춘 world model이라 할 수 없음"
+        },
+        {
+          "label": "방법",
+          "text": "generative world model을 정의하고 perceptual grounding부터 closed-loop interaction까지의 평가 틀을 세운 뒤, 모델·벤치마크·실행·아티팩트를 통합하고 modality별 adapter를 두는 인프라 구축"
+        },
+        {
+          "label": "결과",
+          "text": "모델 270개, 벤치마크 74개, metric 62개를 카탈로그로 등록하고 실행 준비도와 평가 근거를 분리해 기록"
+        }
+      ],
+      "keywords": [
+        "World Model",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.10690",
+      "kind": "paper",
+      "source": "hftrend",
+      "sources": [
+        "hftrend",
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 8,
+      "ranks": {
+        "hftrend": 1,
+        "hf": 6
+      },
+      "published": "2026-11-07T21:21:25+09:00",
+      "title": "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation",
+      "url": "https://arxiv.org/abs/2611.10690",
+      "image": "https://arxiv.org/html/2611.10690v1/pipeline.png",
+      "figureUrl": "https://arxiv.org/html/2611.10690",
+      "altUrl": "https://huggingface.co/papers/2611.10690",
+      "codeUrl": "https://github.com/yuyujunjun/JoVox",
+      "codeStars": 32,
+      "score": 3,
+      "scoreLabel": "HF 3▲ · HF Trending #16",
+      "oneLine": "voxel 계층 전체의 결합 분포를 discrete flow matching으로 학습해 가볍고 정확한 voxel을 생성하는 JoVox",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "계층적 voxel 생성은 정보가 가장 적은 coarse level을 먼저 정하고 다시 보지 않아, 그럴듯하지만 틀린 결과가 잦음"
+        },
+        {
+          "label": "방법",
+          "text": "모든 level의 joint distribution을 학습해 coarse cell을 주변 finer cell과 함께 예측하고, 두 level을 한 번에 출력하는 two-level prediction과 이전 결정을 재검토하는 unmasking 전략 도입"
+        },
+        {
+          "label": "결과",
+          "text": "TRELLIS.2 대비 학습 처리량 8배, forward FLOPs 1/15, GPU 4장(vs 32장)으로 학습하면서 Chamfer distance 11% 감소"
+        }
+      ],
+      "keywords": [
+        "3D Generation"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.06043",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 9,
+      "ranks": {
+        "hf": 2
+      },
+      "published": "2026-11-04T15:46:50+09:00",
+      "title": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription",
+      "url": "https://arxiv.org/abs/2611.06043",
+      "altUrl": "https://huggingface.co/papers/2611.06043",
+      "codeUrl": "https://github.com/netease-youdao/Confucius4-R2T2",
+      "codeStars": 878,
+      "score": 86,
+      "scoreLabel": "HF 86▲",
+      "oneLine": "이미 낸 출력을 절대 수정하지 않는 stable-prefix streaming ASR 모델 Confucius4-R2T2",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "번역기·voice agent처럼 토큰마다 바로 행동하는 소비자에게 streaming ASR의 사후 수정은 낭비나 잘못된 행동을 낳음"
+        },
+        {
+          "label": "방법",
+          "text": "Longest Stable Prefix(LSP) 개념을 정의하고 LSP 레이블로 Qwen3-ASR-1.7B를 중·영 1,500시간 음성으로 post-training(audio encoder·projector 동결), 구조 변경 없음"
+        },
+        {
+          "label": "결과",
+          "text": "full-context 품질에 가까운 정확도를 유지하면서 안정적인 텍스트와 낮은 지연을 달성하고, 가중치와 코드를 공개"
+        }
+      ],
+      "keywords": [
+        "Speech Recognition",
+        "Open Weights"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "p-2611.04720",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 10,
+      "ranks": {
+        "hf": 5
+      },
+      "published": "2026-11-03T20:42:02+09:00",
+      "title": "OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One Autoregressive Transformer",
+      "url": "https://arxiv.org/abs/2611.04720",
+      "image": "https://arxiv.org/html/2611.04720v1/fig_paradigm.png",
+      "figureUrl": "https://arxiv.org/html/2611.04720",
+      "altUrl": "https://huggingface.co/papers/2611.04720",
+      "score": 36,
+      "scoreLabel": "HF 36▲",
+      "oneLine": "추천 시스템의 reranking과 mix-ranking을 하나의 decoder-only policy로 통합한 OneTrans-GSR",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "산업용 추천의 reranking·mix-ranking 단계는 수작업 규칙과 저용량 모델에 의존해 데이터·연산 확장의 이득을 못 누림"
+        },
+        {
+          "label": "방법",
+          "text": "두 단계를 하나의 학습 문제로 재정의하고, slate 전체를 평가하는 reward model로 RL을 하며 디코딩 시 비즈니스 제약을 명시적으로 적용"
+        },
+        {
+          "label": "결과",
+          "text": "대규모 실서비스 A/B 테스트에서 GMV/u 2.63%, 광고주 가치 2.06% 상승, 두 단계의 end-to-end latency 13% 감소"
+        }
+      ],
+      "keywords": [
+        "Recommender Systems",
+        "RL"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50429068",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "rank": 1,
+      "ranks": {
+        "hn": 5,
+        "geeknews": 3
+      },
+      "published": "2026-11-10T03:01:10+09:00",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "discussUrl": "https://news.ycombinator.com/item?id=50429068",
+      "sourceUrls": {
+        "hn": "https://news.ycombinator.com/item?id=50429068",
+        "geeknews": "https://news.hada.io/topic?id=36896"
+      },
+      "score": 841,
+      "scoreLabel": "841P",
+      "oneLine": "Anthropic, 고난도 기술 작업용 Claude Fable 5.2·Mythos 5.2 출시: 코딩·추론·비전 향상, 가격은 입력/출력 100만 토큰당 $8/$40로 인하",
+      "bullets": [
+        {
+          "label": "",
+          "text": "두 제품은 같은 기반 모델로, Fable은 사이버보안·생물학 안전장치를 적용해 일반 제공하고 Mythos는 심사를 거친 보안·생의학 연구 조직에 제공. 출력 속도 5.1 대비 최대 30% 향상, 최대 2.5배 빠른 fast mode 별도"
+        },
+        {
+          "label": "",
+          "text": "사전 테스트에서 페르마의 마지막 정리 증명을 Lean으로 30시간 만에 형식화했고, 벤치마크에서 FrontierCode 2.0 49.1%, FrontierSWE v2 69.9%로 Opus 5.5보다 높음"
+        }
+      ],
+      "keywords": [
+        "Anthropic",
+        "LLM"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "deepmind-gemini-4-carbon-is-now-available",
+      "kind": "news",
+      "source": "deepmind",
+      "sources": [
+        "deepmind",
+        "hn"
+      ],
+      "rank": 2,
+      "ranks": {
+        "deepmind": 1,
+        "hn": 9
+      },
+      "published": "2026-11-11T01:03:47+09:00",
+      "title": "Gemini 4 Carbon is now available",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50442303",
+      "sourceUrls": {
+        "deepmind": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+        "hn": "https://news.ycombinator.com/item?id=50442303"
+      },
+      "score": 226,
+      "scoreLabel": "226P",
+      "oneLine": "Google, 최상위 frontier 모델 Gemini 4 Carbon을 개발자·기업·소비자에게 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "사이버보안과 장기 agentic workflow에 강한 모델로, CursorBench 4.0·Perplexity WANDR·Zapier AutomationBench 1위를 다음 외부 모델 대비 작업당 2배 이상 낮은 비용으로 기록"
+        },
+        {
+          "label": "",
+          "text": "API 가격은 Gemini 4 Argon과 같은 입력/출력 100만 토큰당 $2/$10(초기 가격)이며, Google Antigravity에서 여러 에이전트를 조율하는 /swarm 기능을 프리뷰로 공개"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "deepmind-gemini-robotics-2-5-accelerates-real-world-physical-intelligence",
+      "kind": "news",
+      "source": "deepmind",
+      "sources": [
+        "deepmind"
+      ],
+      "rank": 3,
+      "ranks": {
+        "deepmind": 3
+      },
+      "published": "2026-11-10T04:51:47+09:00",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "oneLine": "Google DeepMind, 가장 강력한 VLA 모델 Gemini Robotics 2.5 공개: dexterity·신뢰성·안전성 향상",
+      "bullets": [
+        {
+          "label": "",
+          "text": "200개 과제(집게로 음식 서빙, 선물 상자 리본 묶기, 피펫팅 등)에서 이전 대비 성공률 30~100% 상승, 작업 시간 20~30% 단축"
+        },
+        {
+          "label": "",
+          "text": "Mercedes-Benz 생산 라인 실증에서 Apptronik Apollo 2 휴머노이드가 자동차 부품 kitting을 96% 성공률로 수행했으며, 로봇 파트너에게 순차 배포 중"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Humanoid"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "deepmind-introducing-alphaproof-code",
+      "kind": "news",
+      "source": "deepmind",
+      "sources": [
+        "deepmind",
+        "hn"
+      ],
+      "rank": 4,
+      "ranks": {
+        "deepmind": 2,
+        "hn": 1
+      },
+      "published": "2026-11-10T21:02:28+09:00",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50439193",
+      "sourceUrls": {
+        "deepmind": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "hn": "https://news.ycombinator.com/item?id=50439193"
+      },
+      "score": 473,
+      "scoreLabel": "473P",
+      "oneLine": "Google DeepMind, 복잡한 소프트웨어를 깊이 검증하는 AlphaProof Code 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AlphaProof Code 에이전트가 Lean으로 300만 줄의 증명을 작성해 Signal의 핵심 암호화를 검증했다고 밝힘 (본문은 수집되지 않아 공식 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "AI Math",
+        "AI Security"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50436640",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 5,
+      "ranks": {
+        "hn": 4
+      },
+      "published": "2026-11-10T15:01:08+09:00",
+      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50436640",
+      "score": 625,
+      "scoreLabel": "625P",
+      "oneLine": "Amazon, 내부 티켓 라벨링을 Claude Sonnet 4.6에서 decision model Strands Decider로 바꿔 비용 98% 절감",
+      "bullets": [
+        {
+          "label": "",
+          "text": "텍스트 대신 선택지별 확률과 신뢰도를 내는 decision model(Gemma 4 기반 E4B)을 SageMaker 단일 A10G에서 돌려 호출당 4,215ms→897ms, 티켓당 토큰 70% 감소"
+        },
+        {
+          "label": "",
+          "text": "Sonnet과 병렬 실행하는 DUAL 모드로 비교 검증 후 전환했으며, 연간 수백만 달러의 토큰 비용을 아낄 것으로 추정"
+        }
+      ],
+      "keywords": [
+        "Small Models",
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50429734",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "rank": 6,
+      "ranks": {
+        "hn": 10,
+        "geeknews": 4
+      },
+      "published": "2026-11-10T03:45:43+09:00",
+      "title": "E-means: Outperforming k-means in one-tenth the epochs",
+      "url": "https://e-means.github.io/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50429734",
+      "sourceUrls": {
+        "hn": "https://news.ycombinator.com/item?id=50429734",
+        "geeknews": "https://news.hada.io/topic?id=36907"
+      },
+      "score": 484,
+      "scoreLabel": "484P",
+      "oneLine": "e-means: 미니배치와 EMA를 결합해 Lloyd k-means보다 약 10배 적은 epoch로 같은 테스트 오차에 도달",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Lloyd가 25 epoch에 낸 테스트 오차를 1.2~3 epoch 만에 밑돌았고, 실행 시간은 GPU에서 Flash-KMeans 대비 10~45배, CPU에서 Faiss 대비 8~15배 단축"
+        },
+        {
+          "label": "",
+          "text": "scaling law로 배치·스텝 크기를 자동 설정해 추가 하이퍼파라미터 튜닝이 필요 없고, 큰 클러스터 분할로 비활성 클러스터를 복구"
+        }
+      ],
+      "keywords": [
+        "ML Algorithms"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "anthropic-roadshow-launch",
+      "kind": "news",
+      "source": "anthropic",
+      "sources": [
+        "anthropic"
+      ],
+      "rank": 7,
+      "ranks": {
+        "anthropic": 1
+      },
+      "published": "2026-11-10",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "oneLine": "Anthropic, IPO 로드쇼 시작: 주당 $70~78, Nasdaq 티커 \"ANT\"",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Class A 보통주 8억 2,500만 주를 공모하며 이 중 8억 135만여 주는 Anthropic이, 나머지는 기존 주주가 매도. 주관사는 Goldman Sachs와 Morgan Stanley 등"
+        }
+      ],
+      "keywords": [
+        "Anthropic",
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50437106",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 8,
+      "ranks": {
+        "hn": 8
+      },
+      "published": "2026-11-10T16:19:38+09:00",
+      "title": "Fireworks AI security breach impacts Notion and their customers",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "discussUrl": "https://news.ycombinator.com/item?id=50437106",
+      "score": 147,
+      "scoreLabel": "147P",
+      "oneLine": "AI 추론 인프라 Fireworks AI 보안 사고로 Notion AI 채팅 일부가 노출",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Notion은 Insights 기능 분류 작업과 open-weight 모델 서빙에 Fireworks를 썼으며, 1% 미만 workspace의 작성자·workspace 정보 없는 채팅 기록이 노출됐을 수 있다고 공지"
+        },
+        {
+          "label": "",
+          "text": "Insights 기능을 중단하고 Fireworks를 통한 open-weight 모델 서빙도 멈춤"
+        }
+      ],
+      "keywords": [
+        "AI Security",
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50438318",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 9,
+      "ranks": {
+        "hn": 6
+      },
+      "published": "2026-11-10T19:25:58+09:00",
+      "title": "AI usage generates a fragile codebase",
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50438318",
+      "score": 160,
+      "scoreLabel": "160P",
+      "oneLine": "\"AI 사용이 깨지기 쉬운 코드베이스를 만든다\": 전 Meta 엔지니어의 AI 코딩 비판",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI는 context window 안의 문제는 잘 풀지만 장기적 문제는 보지 못한다며, 얕은 테스트 작성 등 대규모 SaaS 코드를 취약하게 만드는 네 가지 패턴을 정리"
+        }
+      ],
+      "keywords": [
+        "AI Coding"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36910",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 10,
+      "ranks": {
+        "geeknews": 5
+      },
+      "published": "2026-11-10T07:41:15+09:00",
+      "title": "Claude Fable 5.2, Artificial Analysis 지능 지수에서 역대 최고인 65점 기록",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "discussUrl": "https://news.hada.io/topic?id=36910",
+      "score": 6,
+      "scoreLabel": "6P",
+      "oneLine": "Claude Fable 5.2, Artificial Analysis Intelligence Index에서 역대 최고 65점",
+      "bullets": [
+        {
+          "label": "",
+          "text": "비슷한 가격대 모델 중앙값 40점을 크게 웃돌지만 작업당 처리 시간 44.1분(중앙값의 약 3.4배), 평가 작업당 평균 비용 26.54달러로 토큰 사용량이 많음"
+        }
+      ],
+      "keywords": [
+        "Anthropic",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50443812",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 11,
+      "ranks": {
+        "hn": 2
+      },
+      "published": "2026-11-11T03:01:15+09:00",
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "discussUrl": "https://news.ycombinator.com/item?id=50443812",
+      "score": 16,
+      "scoreLabel": "16P",
+      "oneLine": "Chrome 팀, 코딩 에이전트가 최신 웹 플랫폼 기능을 쓰도록 돕는 modern-web-guidance 1.0 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Firefox·MDN·Edge와 함께 만든 200여 개 구현 가이드를 agent skill과 agentic RAG CLI로 제공하며, 200개 과제 평가에서 에이전트 통과율이 55%→92%로 상승했다고 밝힘"
+        }
+      ],
+      "keywords": [
+        "Agent Skills",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50442964",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 12,
+      "ranks": {
+        "hn": 11
+      },
+      "published": "2026-11-11T01:53:31+09:00",
+      "title": "Git considers voting to determine its LLM policy",
+      "url": "https://lwn.net/SubscriberLink/1104195/1193ea577aaef643/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50442964",
+      "score": 8,
+      "scoreLabel": "8P",
+      "oneLine": "Git 프로젝트, LLM 작성 기여 정책을 투표로 결정하는 방안 검토",
+      "bullets": [
+        {
+          "label": "",
+          "text": "현재는 AI 생성으로 보이는 기여를 거부하는 정책이며, Contributor Summit에서 합의에 이르지 못해 Debian 방식에 영향을 받은 투표 절차 초안이 10월 21일 게시됨"
+        }
+      ],
+      "keywords": [
+        "AI Policy"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36920",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 13,
+      "ranks": {
+        "geeknews": 9
+      },
+      "published": "2026-11-10T09:44:04+09:00",
+      "title": "DeepX, 2세대 AI 칩 DX-M2 테이프아웃 완료 - 5W 미만에서 최대 1,000억 파라미터 모델 추론 목표",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "discussUrl": "https://news.hada.io/topic?id=36920",
+      "score": 2,
+      "scoreLabel": "2P",
+      "oneLine": "DeepX, 5W 미만에서 최대 1,000억 파라미터 모델 추론을 목표로 한 2세대 엣지 AI 칩 DX-M2 테이프아웃",
+      "bullets": [
+        {
+          "label": "",
+          "text": "로봇·드론용으로 초당 10~30토큰 실행을 목표로 하고 메모리 대역폭을 150GB/s로 3배 높임. 샘플은 2027년 3월, 양산은 2027년 가을 목표"
+        }
+      ],
+      "keywords": [
+        "On-Device AI",
+        "AI Chips"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36949",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 14,
+      "ranks": {
+        "geeknews": 1
+      },
+      "published": "2026-11-11T02:13:12+09:00",
+      "title": "Notesoop-STT-Ko-v2: 맥미니 1대로 학습한 초고속 한국어 온디바이스 음성인식(ASR) 모델",
+      "url": "https://huggingface.co/Phsoft-ai/Notesoop-STT-Ko-v2",
+      "discussUrl": "https://news.hada.io/topic?id=36949",
+      "score": 2,
+      "scoreLabel": "2P",
+      "oneLine": "Notesoop-STT-Ko-v2: 맥미니 1대로 학습한 한국어 온디바이스 ASR 모델 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "EmbeddingGemma-2 오디오 인코더에 Conformer Reader와 CTC 헤드를 붙인 비자기회귀 구조로, Whisper-large-v3 대비 약 11.9배 빠르고 메모리는 약 4.5배 적게 사용"
+        },
+        {
+          "label": "",
+          "text": "M2 Pro 맥미니 단일 기기에서 530GB 한국어 음성으로 학습했으며 가중치와 코드를 Apache-2.0으로 공개"
+        }
+      ],
+      "keywords": [
+        "Speech Recognition",
+        "On-Device AI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36891",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 15,
+      "ranks": {
+        "geeknews": 7
+      },
+      "published": "2026-11-10T02:45:41+09:00",
+      "title": "Apple, 엔지니어의 하루 AI 지출 한도를 300달러에서 200달러로 낮춰",
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-cuts-internal-ai-usage-194500447.html",
+      "discussUrl": "https://news.hada.io/topic?id=36891",
+      "score": 4,
+      "scoreLabel": "4P",
+      "oneLine": "Apple, 일부 엔지니어의 하루 AI 사용 한도를 300달러에서 200달러로 낮춰",
+      "bullets": [
+        {
+          "label": "",
+          "text": "토큰 사용량 기준 예산으로, 일부 팀은 100달러까지, 비엔지니어링 조직은 25달러까지 축소를 검토 중이며 Microsoft·Tesla·Uber·Meta도 AI 예산을 제한하고 있음"
+        }
+      ],
+      "keywords": [
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-ai-effect-on-freelance-work",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai",
+        "hn"
+      ],
+      "rank": 16,
+      "ranks": {
+        "openai": 3,
+        "hn": 3
+      },
+      "published": "2026-11-10T16:00:00+09:00",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "url": "https://openai.com/index/ai-effect-on-freelance-work",
+      "discussUrl": "https://news.ycombinator.com/item?id=50443838",
+      "sourceUrls": {
+        "openai": "https://openai.com/index/ai-effect-on-freelance-work",
+        "hn": "https://news.ycombinator.com/item?id=50443838"
+      },
+      "score": 9,
+      "scoreLabel": "9P",
+      "oneLine": "OpenAI·Upwork 공동 연구: AI 확산과 함께 프리랜서 수요가 이동하고 AI 관련 프로젝트 예산이 커짐",
+      "bullets": [
+        {
+          "label": "",
+          "text": "63개 업무 범주 중 43개에서 ChatGPT에서 흔한 활동은 Upwork 점유율이 줄고 덜 흔한 활동이 늘어났으며, AI 관련 프로젝트는 더 큰 예산과 더 많은 작업 시간을 동반"
+        }
+      ],
+      "keywords": [
+        "AI Industry",
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "hn-50441074",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 17,
+      "ranks": {
+        "hn": 7
+      },
+      "published": "2026-11-10T23:41:36+09:00",
+      "title": "The death knell of digital search",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-death-knell-of-digital-search",
+      "discussUrl": "https://news.ycombinator.com/item?id=50441074",
+      "score": 40,
+      "scoreLabel": "40P",
+      "oneLine": "New Yorker 칼럼: AI 요약이 검색을 대체하며 디지털 검색이 위기",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Google은 AI 검색의 수익화가 낮다고 인정했고, ChatGPT는 Google의 5분의 1 규모의 검색성 질의를 처리할 만큼 성장했다고 전함"
+        }
+      ],
+      "keywords": [
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "nvidia-open-source-openshell-infrastructure",
+      "kind": "news",
+      "source": "nvidia",
+      "sources": [
+        "nvidia"
+      ],
+      "rank": 18,
+      "ranks": {
+        "nvidia": 1
+      },
+      "published": "2026-11-11T01:00:03+09:00",
+      "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
+      "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "oneLine": "NVIDIA, 자율 에이전트 보안·거버넌스 런타임 OpenShell을 CNCF에 기증하고 Kubernetes용 AI 인프라 도구 발표",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Google 주도의 장기 실행 에이전트 운영 프레임워크 Agent Substrate에도 기여하며, NVIDIA Kubernetes Engine·Kubernetes Recipes·Snapshot을 DSX AI Factory 플랫폼에 추가"
+        }
+      ],
+      "keywords": [
+        "AI Infra",
+        "NVIDIA"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-control-room",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 19,
+      "ranks": {
+        "openai": 5
+      },
+      "published": "2026-11-09T22:00:00+09:00",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "url": "https://openai.com/index/control-room",
+      "oneLine": "OpenAI, 연구 인프라 전반의 모델 워크로드를 추적하고 즉시 중단할 수 있는 Control Room 소개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "안전·보안 우려가 생겼을 때 연구 인프라의 모델 워크로드를 신속히 멈추는 중앙 시스템 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "AI Safety",
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "google-exploring-the-worlds-languages-with-language-explorer",
+      "kind": "news",
+      "source": "google",
+      "sources": [
+        "google"
+      ],
+      "rank": 20,
+      "ranks": {
+        "google": 1
+      },
+      "published": "2026-11-10T05:29:39+09:00",
+      "title": "Exploring the world's languages with Language Explorer",
+      "url": "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/",
+      "oneLine": "Google, 전 세계 언어 다양성을 시각화하는 Language Explorer 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "1,000 Languages Initiative의 일환으로 오픈소스 LinguaMeta 데이터셋을 바탕으로 수천 개 언어 데이터를 보여주며, 베를린 통신박물관 전시에 인터랙티브 설치물로 소개됨"
+        }
+      ],
+      "keywords": [
+        "NLP"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36917",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 21,
+      "ranks": {
+        "geeknews": 2
+      },
+      "published": "2026-11-10T09:30:02+09:00",
+      "title": "raea - AI가 코드로 만든 영상/3D/게임을 GPU에서 렌더링하는 엔진",
+      "url": "https://github.com/shinyobjectz/raea",
+      "discussUrl": "https://news.hada.io/topic?id=36917",
+      "score": 11,
+      "scoreLabel": "11P",
+      "oneLine": "raea: AI 에이전트가 React/TypeScript 코드로 만든 영상·3D·게임을 자체 GPU 엔진으로 렌더링",
+      "bullets": [
+        {
+          "label": "",
+          "text": "영상은 MP4로, 3D/게임은 Bevy로 실시간 실행하며, 에이전트가 프레임을 이미지로 뽑아 확인하고 코드를 고칠 수 있음. Claude Code 플러그인과 agent skill 제공"
+        }
+      ],
+      "keywords": [
+        "Agent Tools",
+        "Video Generation"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36946",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 22,
+      "ranks": {
+        "geeknews": 8
+      },
+      "published": "2026-11-11T00:31:53+09:00",
+      "title": "Show GN: Herdr CKD - 격리된 Git Worktree와 3자 교차 검증(C·A·B) 기반 오픈소스 AI 코딩 오케스트레이터",
+      "url": "https://news.hada.io/topic?id=36946",
+      "discussUrl": "https://news.hada.io/topic?id=36946",
+      "score": 1,
+      "scoreLabel": "1P",
+      "oneLine": "Herdr CKD: Git worktree 격리와 3자 교차 검증으로 코딩 에이전트의 자기 합리화를 막는 오픈소스 오케스트레이터",
+      "bullets": [
+        {
+          "label": "",
+          "text": "수정 권한 없는 코어가 작업을 나누고, 구현 스레드는 각자 worktree에서, 검수 스레드는 실제 git diff만 보고 PASS/FAIL을 판정. 구현·검수에 로컬 LLM 연결 가능"
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "Agent Harness"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-chatgpt-enterprise-aws-marketplace",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 23,
+      "ranks": {
+        "openai": 4
+      },
+      "published": "2026-11-10T04:00:00+09:00",
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "oneLine": "ChatGPT Enterprise, AWS Marketplace에서 구매 가능",
+      "bullets": [
+        {
+          "label": "",
+          "text": "기존 AWS 구매·결제 관계를 통해 조달을 단순화할 수 있게 됨 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-coderabbit-codex-daybreak",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 24,
+      "ranks": {
+        "openai": 6
+      },
+      "published": "2026-11-09T17:00:00+09:00",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "oneLine": "CodeRabbit, OpenAI 모델과 Codex로 같은 팀 규모에서 20배 많은 소프트웨어 출시",
+      "bullets": [
+        {
+          "label": "",
+          "text": "OpenAI 모델로 AI 생성 코드를 관리·검증하고 Codex로 개발 속도를 높였다는 고객 사례 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-kuken",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 25,
+      "ranks": {
+        "openai": 7
+      },
+      "published": "2026-11-09T17:00:00+09:00",
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "url": "https://openai.com/index/kuken",
+      "oneLine": "Kuken Industries, OpenAI API로 70년치 냉각탑 도면 검색 시간을 약 1시간→4.5분으로 단축",
+      "bullets": [
+        {
+          "label": "",
+          "text": "수리에 필요한 도면을 엔지니어가 4.5분 만에 찾게 된 고객 사례 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-helping-caregivers-use-ai-in-everyday-life",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 26,
+      "ranks": {
+        "openai": 1
+      },
+      "published": "2026-11-10T21:00:00+09:00",
+      "title": "Helping caregivers use AI in everyday life",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "oneLine": "OpenAI Academy, 미국 5개 도시 돌봄 제공자 대상 무료 ChatGPT 실습 워크숍",
+      "bullets": [
+        {
+          "label": "",
+          "text": "일상에서 쓸 실용적인 AI 활용 능력을 키우도록 돕는 프로그램 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "openai-closing-ai-guidance-gap-education",
+      "kind": "news",
+      "source": "openai",
+      "sources": [
+        "openai"
+      ],
+      "rank": 27,
+      "ranks": {
+        "openai": 2
+      },
+      "published": "2026-11-10T18:00:00+09:00",
+      "title": "Closing the AI guidance gap in education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "oneLine": "OpenAI, 교육 현장의 AI 가이드 공백 관련 ThinkYoung 연구와 EMEA 교육 파트너십 교훈 공유",
+      "bullets": [
+        {
+          "label": "",
+          "text": "교사 지원, AI 리터러시, 자기주도 학습을 다룸 (RSS 요약 기준)"
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "AI Policy"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    },
+    {
+      "id": "gn-36948",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 28,
+      "ranks": {
+        "geeknews": 6
+      },
+      "published": "2026-11-11T01:08:28+09:00",
+      "title": "Show GN: [프로젝트] 중학생이 하루 만에 빌드한 AI 연동형 픽셀아트 스튜디오 (Electron, Mac, Windows)",
+      "url": "https://news.hada.io/topic?id=36948",
+      "discussUrl": "https://news.hada.io/topic?id=36948",
+      "score": 1,
+      "scoreLabel": "1P",
+      "oneLine": "Show GN: 중학생이 바이브 코딩으로 하루 만에 만든 AI 연동 픽셀아트 스튜디오",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI 에이전트가 데이터 구조 형태로 픽셀을 직접 다뤄 에셋을 생성·주입할 수 있게 설계한 Electron 기반 오픈소스 편집기"
+        }
+      ],
+      "keywords": [
+        "Agent Tools"
+      ],
+      "addedAt": "2026-11-11T03:41:07+09:00"
+    }
+  ]
+}
