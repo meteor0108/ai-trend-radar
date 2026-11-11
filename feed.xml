@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Wed, 11 Nov 2026 03:41:07 +0900</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 03:42:25 +0900</lastBuildDate>
+<item>
+<title>[논문] LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning</title>
+<link>https://arxiv.org/abs/2611.14048</link>
+<guid isPermaLink="false">p-2611.14048</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>로봇-물체 상호작용 중심의 latent 추론을 world model과 action 사이에 끼운 World Action Model LaST0.5</description>
+</item>
+<item>
+<title>[논문] Ego Guidance: Enhancing Robot Policy Learning with Action-Free Human Egocentric Videos</title>
+<link>https://arxiv.org/abs/2611.13685</link>
+<guid isPermaLink="false">p-2611.13685</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>action 라벨 없는 사람 egocentric 영상으로 로봇 정책 학습을 돕는 SPAR 아키텍처</description>
+</item>
+<item>
+<title>[논문] Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies</title>
+<link>https://arxiv.org/abs/2611.14488</link>
+<guid isPermaLink="false">p-2611.14488</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>메모리 증강 VLA가 사건이 아니라 경과 시간으로 진행도를 판단하는 "phantom progress" 실패를 진단</description>
+</item>
+<item>
+<title>[논문] ExRL: Sample-Efficient Online Adaptation of Long-Chunk Policies via Execution Length Control</title>
+<link>https://arxiv.org/abs/2611.13482</link>
+<guid isPermaLink="false">p-2611.13482</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>긴 action chunk 정책을 action 대신 "실행 길이"만 RL로 조정해 적은 샘플로 온라인 적응하는 ExRL</description>
+</item>
+<item>
+<title>[논문] LEASH: Stay Safe in Agentic Robotics</title>
+<link>https://arxiv.org/abs/2611.14115</link>
+<guid isPermaLink="false">p-2611.14115</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>foundation model로 로봇을 제어할 때의 안전성 벤치마크 RoboRisk와 안전 하네스 LEASH</description>
+</item>
+<item>
+<title>[뉴스] Anthropic says a key AI safety alarm has been triggered, days before its IPO</title>
+<link>https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html</link>
+<guid isPermaLink="false">hn-50456668</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, IPO 정정 신고서에서 "AI가 자체 연구 속도를 약 두 배로 높이는" RSP 안전 임계치에 도달했다고 판단</description>
+</item>
+<item>
+<title>[뉴스] Apple has new Mac app coming to make running local AI models easy</title>
+<link>https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/</link>
+<guid isPermaLink="false">hn-50446520</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Apple, Mac을 개인용 AI inference 서버로 만드는 앱 "Harbor" 개발 중 (유출)</description>
+</item>
+<item>
+<title>[뉴스] AlphaGenome 2: Deciphering how cells read DNA to better understand disease</title>
+<link>https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/</link>
+<guid isPermaLink="false">deepmind-alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, DNA 서열과 변이가 특정 세포 유형과 질병에 미치는 영향을 예측하는 AlphaGenome 2 발표</description>
+</item>
+<item>
+<title>[뉴스] Claude Whiteboards, Claude Sheets, and Claude Data</title>
+<link>https://claude.com/resources/articles/sheets-whiteboards-data</link>
+<guid isPermaLink="false">hn-50443716</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude Whiteboards·Claude Sheets 베타 출시, Claude Dashboards는 Claude Data로 정식 출시</description>
+</item>
+<item>
+<title>[뉴스] Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h</title>
+<link>https://pietromiotti.com/latest/maya-site/?maya</link>
+<guid isPermaLink="false">hn-50452455</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>개발자가 48개 AI 에이전트로 NASA lidar 데이터를 훑어 72시간 만에 미등록 마야 유적을 찾았다고 보고</description>
+</item>
+<item>
+<title>[뉴스] Tracking Anthropic-discovered vulnerabilities</title>
+<link>https://www.vulncheck.com/blog/anthropic-glasswing-november-update</link>
+<guid isPermaLink="false">hn-50447074</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>VulnCheck, Anthropic Project Glasswing 7개월 성과 점검: 442개 CVE 중 실제 악용은 2건</description>
+</item>
+<item>
+<title>[뉴스] Can a Linear Program Do Weight-Space Programming?</title>
+<link>https://nathan.rs/posts/weight-space-lp/</link>
+<guid isPermaLink="false">hn-50452655</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>GPT-6 Astra의 "weight-space programming" 가중치 편집은 사실상 linear program이라는 분석</description>
+</item>
+<item>
+<title>[뉴스] AI 사용은 취약한 코드베이스를 만든다</title>
+<link>https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/</link>
+<guid isPermaLink="false">gn-36955</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 코딩 의존이 피상적 테스트·과도한 추상화·이해도 저하로 코드베이스를 취약하게 만든다는 Meta 출신 개발자의 경험담</description>
+</item>
+<item>
+<title>[뉴스] Vercel agent-desktop - AI 에이전트가 데스크톱 앱을 조작하는 CLI</title>
+<link>https://github.com/vercel-labs/agent-desktop</link>
+<guid isPermaLink="false">gn-36967</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Vercel Labs, AI 에이전트가 OS 접근성 API로 데스크톱 앱을 조작하는 오픈소스 CLI agent-desktop 공개</description>
+</item>
+<item>
+<title>[뉴스] Atuin Threads: All your agent sessions on every machine</title>
+<link>https://blog.atuin.sh/threads-agent-sessions/</link>
+<guid isPermaLink="false">hn-50453637</guid>
+<pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
+<description>Atuin, Claude Code·Codex 등 여러 머신의 에이전트 세션을 하나의 검색·동기화 이력으로 묶는 Threads 공개</description>
+</item>
 <item>
 <title>[논문] Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</title>
 <link>https://arxiv.org/abs/2611.12806</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36811</guid>
 <pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
 <description>Claude Code가 Bash·PowerShell 명령을 실행하기 직전 위험 명령을 거부하거나 확인받게 하는 플러그인 Boxdawn guard</description>
-</item>
-<item>
-<title>[논문] Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs</title>
-<link>https://arxiv.org/abs/2609.21022</link>
-<guid isPermaLink="false">p-2609.21022</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>diffusion VLA의 마지막 denoising 단계를 실시간 시각 피드백 인터페이스로 남겨 움직이는 장면에 반응하게 한 VLA-Feedback</description>
-</item>
-<item>
-<title>[논문] From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence</title>
-<link>https://arxiv.org/abs/2611.05376</link>
-<guid isPermaLink="false">p-2611.05376</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>사람 곁에서 평생 맥락을 유지하며 함께 생각하는 'cognitive symbiont'를 AI-augmented human intelligence의 새 패러다임으로 제안</description>
-</item>
-<item>
-<title>[논문] EvoMemState: Evolving Memory State for Personal Agents</title>
-<link>https://arxiv.org/abs/2611.03743</link>
-<guid isPermaLink="false">p-2611.03743</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>개인 에이전트 메모리를 독립 사실이 아닌 관계·추론 상태로 관리하고 RL로 상태 진화를 학습하는 EvoMemState</description>
-</item>
-<item>
-<title>[논문] Scientist World: Grow a Research World for AI-Scientists</title>
-<link>https://arxiv.org/abs/2611.08478</link>
-<guid isPermaLink="false">p-2611.08478</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>논문마다 실행 가능한 연구 환경으로 바꿔 AI-Scientist를 평가·학습시키는 Scientist World</description>
-</item>
-<item>
-<title>[논문] RoboARCade: Benchmarking Agentic Robot Control</title>
-<link>https://arxiv.org/abs/2611.08209</link>
-<guid isPermaLink="false">p-2611.08209</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>멀티모달 에이전트가 직접 로봇 정책으로 동작하는 agentic robot control을 평가하는 장기 조작 벤치마크 RoboARCade</description>
-</item>
-<item>
-<title>[뉴스] A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</title>
-<link>https://hightouch.com/blog/llm-judges-identity-resolution</link>
-<guid isPermaLink="false">hn-50397429</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>고객 레코드 병합 검증에서 결정 모델 Jev가 애매한 사례만 Opus에 넘기는 하이브리드로 Opus급 정확도를 4배 이상 싼 비용에 달성</description>
-</item>
-<item>
-<title>[뉴스] The Components of Agent Memory</title>
-<link>https://www.anthropic.com/research/components-of-agent-memory</link>
-<guid isPermaLink="false">hn-50402212</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Claude의 에이전트 메모리를 메모 작성·태깅과 오프라인 'dreaming' 정리로 나눠 설명하는 연구 글 공개</description>
-</item>
-<item>
-<title>[뉴스] AI is dramatically accelerating AI research</title>
-<link>https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai</link>
-<guid isPermaLink="false">hn-50397994</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>METR의 Anthropic 내부 조사 보고서를 근거로 'AI가 이미 AI 연구를 극적으로 가속하고 있다'고 주장한 Ajeya Cotra의 글</description>
-</item>
-<item>
-<title>[뉴스] Every Mac comes with an (undocumented) family member classifier</title>
-<link>https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</link>
-<guid isPermaLink="false">hn-50403097</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>macOS 13 이후 모든 Mac이 연락처·사진·메시지 등을 교차 분석해 가족 관계까지 추론하는 개인 지식 그래프를 문서화 없이 구축한다는 분석</description>
-</item>
-<item>
-<title>[뉴스] Inkling 2 Small - 장시간 자율 코딩과 연구를 강화한 MoE 모델</title>
-<link>https://thinkingmachines.ai/news/inkling-2-small/</link>
-<guid isPermaLink="false">gn-36699</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>Thinking Machines Lab, 594B MoE(활성 17B) Inkling 2 Small 공개 — 장시간 자율 코딩·연구 강화, 다음 주 Apache 2.0 가중치 공개 예정</description>
-</item>
-<item>
-<title>[뉴스] Measuring how AI agents handle everyday wet-lab science</title>
-<link>https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science</link>
-<guid isPermaLink="false">openai-measuring-how-ai-agents-handle-wet-lab-science</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, AI 에이전트가 원시 실험 데이터 해석 등 일상적 wet-lab 과학을 얼마나 잘 다루는지 재는 100개 과제 벤치마크 BioBasicsBench 공개</description>
-</item>
-<item>
-<title>[뉴스] Google - 코드 속 낡은 TODO가 코딩 에이전트의 토큰과 대기 시간을 늘린다</title>
-<link>https://developers.googleblog.com/agent-distraction/</link>
-<guid isPermaLink="false">gn-36749</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google, 코드 속 낡은 TODO가 사내 코딩 에이전트를 딴 길로 빠지게 해 토큰 77%·대기 시간 105%를 늘린다는 분석 공개</description>
-</item>
-<item>
-<title>[뉴스] The End of AI Frontiers</title>
-<link>https://hunch.net/?p=13764006</link>
-<guid isPermaLink="false">hn-50406589</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>John Langford, Microsoft AI로 편입된 AI Frontiers 그룹의 종료를 선언하고 Microsoft를 떠나며 'scaling-only' 기조를 비판</description>
-</item>
-<item>
-<title>[뉴스] DoorDash가 정확도를 유지하면서 LLM 검색 비용을 98% 줄인 방법</title>
-<link>https://careersatdoordash.com/blog/how-doordash-reduced-llm-search-costs-by-98-without-losing-accuracy/</link>
-<guid isPermaLink="false">gn-36733</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>DoorDash, LLM 내장 웹 검색을 공유 검색 게이트웨이로 분리해 정확도를 유지하면서 검색 비용을 98% 이상 절감</description>
-</item>
-<item>
-<title>[뉴스] MaxxBench – "Nice DeepSWE score. But is it true?"</title>
-<link>https://maxxbench.unlap.ai/research/why-maxxbench/</link>
-<guid isPermaLink="false">hn-50406222</guid>
-<pubDate>Sun, 08 Nov 2026 08:00:00 +0900</pubDate>
-<description>DeepSWE 과제의 요구사항을 살짝 바꾼 MaxxBench, 같은 점수의 모델 간 23점 격차로 'benchmaxxing'을 드러냄</description>
 </item>
 </channel>
 </rss>
