@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 12 Nov 2026 03:42:25 +0900</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 03:39:57 +0900</lastBuildDate>
+<item>
+<title>[논문] SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
+<link>https://arxiv.org/abs/2611.12870</link>
+<guid isPermaLink="false">p-2611.12870</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>약 4.7만 시간의 일반·egocentric·UMI·로봇 영상으로 World Action Model 학습 레시피를 체계적으로 분석한 연구</description>
+</item>
+<item>
+<title>[논문] ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks</title>
+<link>https://arxiv.org/abs/2606.19088</link>
+<guid isPermaLink="false">p-2606.19088</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>VLM의 공간적으로 일관된 중간 feature를 이용해 dense language grounding을 개선하는 ReSiReg</description>
+</item>
+<item>
+<title>[논문] DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight</title>
+<link>https://arxiv.org/abs/2611.11166</link>
+<guid isPermaLink="false">p-2611.11166</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>world model의 공간 예측 지식을 policy latent에 암묵적으로 주입하는 dexterous manipulation 프레임워크</description>
+</item>
+<item>
+<title>[논문] From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models</title>
+<link>https://arxiv.org/abs/2611.14365</link>
+<guid isPermaLink="false">p-2611.14365</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>로봇 신호를 주파수 대역에 담은 하나의 meta-frame으로 video diffusion 기반 World Action Model에 주입하는 MetaWAM</description>
+</item>
+<item>
+<title>[논문] Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos</title>
+<link>https://arxiv.org/abs/2611.12087</link>
+<guid isPermaLink="false">p-2611.12087</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>약 2분 분량의 시각 기록을 기억하며 단안 RGB만으로 장기 탐색하는 embodied navigation foundation model Compass 1</description>
+</item>
+<item>
+<title>[뉴스] Jensen Huang resigns</title>
+<link>https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f</link>
+<guid isPermaLink="false">hn-50467087</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA 공동창업자 Jensen Huang이 CEO직에서 사임</description>
+</item>
+<item>
+<title>[뉴스] Introducing Gemini 4 Hydrogen</title>
+<link>https://deepmind.google/blog/introducing-gemini-4-hydrogen/</link>
+<guid isPermaLink="false">deepmind-introducing-gemini-4-hydrogen</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind가 빠른 코딩·에이전트 실행용 Gemini 4 Hydrogen을 공개하고 Gemini 4를 모든 등급에 제공</description>
+</item>
+<item>
+<title>[뉴스] Anthropic IPO</title>
+<link>https://ipo.anthropic.com/us/</link>
+<guid isPermaLink="false">hn-50465829</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 IPO 투자설명 사이트를 공개, Q3'26 매출 170억 달러</description>
+</item>
+<item>
+<title>[뉴스] Gemini Decisions API - 입력 하나에 최대 1,000개 질문을 평가하는 멀티모달 API</title>
+<link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
+<guid isPermaLink="false">gn-37011</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google이 입력 하나에 최대 1,000개의 예/아니요·객관식·채점 질문을 한 번의 순전파로 평가하는 Gemini Decisions API 공개</description>
+</item>
+<item>
+<title>[뉴스] United Airlines bans AI agents from booking flights on behalf of travelers</title>
+<link>https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/</link>
+<guid isPermaLink="false">hn-50458900</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>United Airlines가 제3자 개인 AI 에이전트의 항공권 예약을 금지</description>
+</item>
+<item>
+<title>[뉴스] Claude Fable 5.2와 Mythos 5.2 - 복잡한 코딩과 과학 연구 역량을 강화한 AI 모델</title>
+<link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
+<guid isPermaLink="false">gn-36896</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic이 고난도 코딩·과학 연구용 Claude Fable 5.2와 Mythos 5.2를 출시</description>
+</item>
+<item>
+<title>[뉴스] Socratic Tutor</title>
+<link>https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md</link>
+<guid isPermaLink="false">hn-50438261</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Jane Street가 공개한 Socratic 방식 개인 튜터 agent skill</description>
+</item>
+<item>
+<title>[뉴스] AI 시대, git push 앞뒤에서 바뀌는 것들</title>
+<link>https://news.hada.io/topic?id=37034</link>
+<guid isPermaLink="false">gn-37034</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>에이전트가 늘면서 Anthropic·OpenAI·GitHub 등이 Git 클라이언트·서버·협업 흐름 중 어디를 바꿨는지 정리한 글</description>
+</item>
+<item>
+<title>[뉴스] I'm making LLMs work on small and old devices</title>
+<link>https://github.com/hyperionaidev/smolmaxxing/</link>
+<guid isPermaLink="false">hn-50468888</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>TV 박스와 2013년 iPad Air 같은 저사양 기기에서 LLM을 최대한 돌려보는 smolmaxxing 프로젝트</description>
+</item>
+<item>
+<title>[뉴스] Amazon, Sonnet 4.6을 Strands Decider로 대체해 수백만 달러 절감</title>
+<link>https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/</link>
+<guid isPermaLink="false">gn-36935</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>Amazon이 내부 티켓 분류에 쓰던 Claude Sonnet 4.6을 의사결정 모델 Strands Decider E4B로 교체해 비용 98% 절감</description>
+</item>
 <item>
 <title>[논문] LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning</title>
 <link>https://arxiv.org/abs/2611.14048</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50421155</guid>
 <pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
 <description>Jev 계열 decision model 전용 추론 엔진 Flide 공개, vLLM·SGLang 대비 최대 9.5배 빠르다고 주장</description>
-</item>
-<item>
-<title>[논문] DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors</title>
-<link>https://arxiv.org/abs/2604.25050</link>
-<guid isPermaLink="false">p-2604.25050</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>discrete diffusion policy의 unmasking이 곧 inpainting이라는 점을 이용해 추가 학습 없이 비동기 real-time chunking을 구현한 DiscreteRTC</description>
-</item>
-<item>
-<title>[논문] Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs</title>
-<link>https://arxiv.org/abs/2611.04391</link>
-<guid isPermaLink="false">p-2611.04391</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>짝지어지지 않은 사람·로봇 시연으로 사전학습 VLA를 새 로봇에 적응시키는 human-robot co-training 프레임워크 H2RB</description>
-</item>
-<item>
-<title>[논문] NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma</title>
-<link>https://arxiv.org/abs/2611.08369</link>
-<guid isPermaLink="false">p-2611.08369</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>비인두암 진료 전 과정을 따라 멀티모달 모델의 진단·치료 추론을 평가하는 임상 수련형 벤치마크 NPCBench</description>
-</item>
-<item>
-<title>[논문] PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World</title>
-<link>https://arxiv.org/abs/2611.06768</link>
-<guid isPermaLink="false">p-2611.06768</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>코딩 에이전트가 실제 로봇 탐색 경험을 메모리와 재사용 가능한 실행 스킬로 쌓아 스스로 개선하는 embodied RSI 프레임워크 PyRUA-REAL</description>
-</item>
-<item>
-<title>[논문] Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On</title>
-<link>https://arxiv.org/abs/2611.05163</link>
-<guid isPermaLink="false">p-2611.05163</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>사람 손 영상 속 사람을 로봇으로 '갈아입혀' 텔레오퍼레이션 없이 dexterous 시연 데이터를 만드는 RoboTryOn</description>
-</item>
-<item>
-<title>[뉴스] Goodbye Claude, hello Pi</title>
-<link>https://caleb.software/posts/claude-to-pi.html</link>
-<guid isPermaLink="false">hn-50410107</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>오래 쓴 Claude Code를 접고 coding harness Pi로 옮긴 개발자의 이유를 정리한 글</description>
-</item>
-<item>
-<title>[뉴스] Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files</title>
-<link>https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</link>
-<guid isPermaLink="false">hn-50407882</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude Code의 "Don't Ask Again" 설정 때문에 비밀번호가 공개 GitHub 파일 1,122개에 노출됐다는 Apiiro 보고</description>
-</item>
-<item>
-<title>[뉴스] Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</title>
-<link>https://github.com/synchopate/llama-modchip</link>
-<guid isPermaLink="false">hn-50411961</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>284B DeepSeek-V4-Flash를 GPU 없이 64GB RAM CPU에서 256K 컨텍스트로 돌린다는 llama.cpp 기반 프로젝트 llama-modchip</description>
-</item>
-<item>
-<title>[뉴스] OpenAI raises $11B at a $1.25T valuation</title>
-<link>https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/</link>
-<guid isPermaLink="false">hn-50413822</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 1.25조 달러 pre-money 가치로 110억 달러를 조달 — 처음 거론된 1.4조 달러보다 낮은 조건</description>
-</item>
-<item>
-<title>[뉴스] Agent memory needs its OpenTelemetry moment</title>
-<link>https://www.lorekit.io/blog/open-agent-memory-format</link>
-<guid isPermaLink="false">hn-50411467</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>AGENTS.md, 메모리 도구, Copilot Memory 등 서로 못 읽는 에이전트 메모리 형식을 OpenTelemetry처럼 표준화하자는 제안</description>
-</item>
-<item>
-<title>[뉴스] GitLab, Git 호환성을 유지한 에이전트용 소스 관리 시스템 개발</title>
-<link>https://about.gitlab.com/blog/scaling-git-for-the-agentic-software-factory/</link>
-<guid isPermaLink="false">gn-36758</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>GitLab이 Git 호환성을 유지하면서 수천 개 에이전트의 동시 작업을 처리하는 차세대 SCM을 비공개 베타로 개발 중</description>
-</item>
-<item>
-<title>[뉴스] Quadrillion-parameter transformers and how to train them</title>
-<link>https://qlabs.sh/research/parameters</link>
-<guid isPermaLink="false">hn-50352518</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>데이터가 고정된 multi-epoch 환경에서는 compute-optimal 모델 크기가 계속 커진다는 새 scaling law — quadrillion 파라미터 학습 처방</description>
-</item>
-<item>
-<title>[뉴스] Pangram Image 1.0 공개 - 사진과 영상에서 AI로 만든 부분을 탐지</title>
-<link>https://www.pangram.com/blog/introducing-pangram-image-1-0</link>
-<guid isPermaLink="false">gn-36757</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>Pangram이 사진 속 AI 생성 영역을 히트맵으로 표시하는 Image 1.0과 영상 탐지용 경량 모델 Image Flash 1.0 공개</description>
-</item>
-<item>
-<title>[뉴스] Unitree는 왜 로봇을 손으로 조립할까? 제조 자동화 기회를 본 공장 탐방기</title>
-<link>https://josef.cn/blog/unitree</link>
-<guid isPermaLink="false">gn-36768</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>Unitree 공장 탐방기: 휴머노이드는 여전히 손으로 조립되며 인건비는 제조원가의 8%뿐</description>
-</item>
-<item>
-<title>[뉴스] Show GN: Boxdawn guard - Claude Code가 위험한 명령을 실행하기 전에 판정하는 플러그인</title>
-<link>https://news.hada.io/topic?id=36811</link>
-<guid isPermaLink="false">gn-36811</guid>
-<pubDate>Mon, 09 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude Code가 Bash·PowerShell 명령을 실행하기 직전 위험 명령을 거부하거나 확인받게 하는 플러그인 Boxdawn guard</description>
 </item>
 </channel>
 </rss>
