@@ -190,27 +190,61 @@ def alphaxiv():
     return ids
 
 
-@source("arxiv")
-def arxiv_ro_new():
-    """New cs.RO submissions (not cross-lists or replacements), with title, subjects and abstract from the list page."""
-    _, doc = retry(get, "https://arxiv.org/list/cs.RO/new", accept="text/html")
-    m = re.search(r"(?s)<h3>New submissions.*?</h3>(.*?)(<h3>|$)", doc)
-    if not m:
+# Spatial-AI lane: SLAM and state estimation, feed-forward 3D reconstruction, Gaussian-splatting mapping,
+# 3D scene graphs and spatial memory, navigation. cs.CV has well over a hundred new papers a day, so only
+# those whose title or abstract matches are kept as candidates; the routine still decides from the abstract.
+SPATIAL_RE = re.compile(r"""(?ix)
+    \bSLAM\b | odometry | loop[- ]closure | pose[- ]graph | factor[- ]graph | bundle[- ]adjustment
+  | structure[- ]from[- ]motion | \bSfM\b | visual[- ]inertial | \bLiDAR[- ]inertial | state[- ]estimation
+  | (visual|global|lidar|radar|camera|metric)[- ]localization | re-?locali[sz]ation | place[- ]recognition
+  | (point[- ]cloud|lidar|scan|image-to-lidar|cross-modal)[- ]registration | scan[- ](matching|alignment)
+  | (3D|functional|dynamic|open-vocabulary)[- ]scene[- ]graph | scene[- ]change[- ]detection
+  | (online|incremental|dense|semantic|lidar|instance|open-vocabulary|gaussian|3D)[- ]mapping
+  | feed-?forward[- ](3D[- ])?(reconstruction|geometry|slam) | (geometr\w+|3D)[- ]foundation[- ]model
+  | \bVGGT\b | \bDUSt3R\b | \bMASt3R\b | streaming[- ](3D[- ])?reconstruction | metric[- ]scale
+  | (spatial|spatio-?temporal)[- ]memory | navigation | \bLiDAR\b | dense[- ](correspondence|matching)
+  | surface[- ]reconstruction | visual[- ]geometry
+""")
+
+
+def arxiv_listing(cat):
+    """Today's arXiv listing for a category: {"new": [...], "cross": [...]} (replacements are left out).
+
+    Each row carries the title, subjects, comments and abstract printed on the list page.
+    """
+    _, doc = retry(get, f"https://arxiv.org/list/{cat}/new", accept="text/html", limit=12_000_000)
+    out = {}
+    for key, head in (("new", "New submissions"), ("cross", "Cross submissions")):
+        m = re.search(rf"(?s)<h3>{head}.*?</h3>(.*?)(<h3>|$)", doc)
+        rows = []
+        for dt, dd in re.findall(r"(?s)<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", m.group(1) if m else ""):
+            aid = re.search(rf"/abs/({ARXIV_ID})", dt)
+            if not aid:
+                continue
+            title = re.search(r"(?s)list-title[^>]*>.*?</span>(.*?)</div>", dd)
+            subj = re.search(r"(?s)list-subjects[^>]*>.*?</span>(.*?)</div>", dd)
+            abstract = re.search(r"(?s)<p class=.mathjax.>(.*?)</p>", dd)
+            comments = re.search(r"(?s)list-comments[^>]*>.*?</span>(.*?)</div>", dd)
+            rows.append({"id": aid.group(1), "title": strip_tags(title.group(1)) if title else "",
+                         "subjects": strip_tags(subj.group(1)) if subj else "",
+                         "comments": strip_tags(comments.group(1)) if comments else "",
+                         "abstract": strip_tags(abstract.group(1)) if abstract else ""})
+        out[key] = rows
+    if not out["new"]:
         raise ValueError("no 'New submissions' section")
-    out = []
-    for dt, dd in re.findall(r"(?s)<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", m.group(1)):
-        aid = re.search(rf"/abs/({ARXIV_ID})", dt)
-        if not aid:
-            continue
-        title = re.search(r"(?s)list-title[^>]*>.*?</span>(.*?)</div>", dd)
-        subj = re.search(r"(?s)list-subjects[^>]*>.*?</span>(.*?)</div>", dd)
-        abstract = re.search(r"(?s)<p class=.mathjax.>(.*?)</p>", dd)
-        comments = re.search(r"(?s)list-comments[^>]*>.*?</span>(.*?)</div>", dd)
-        out.append({"id": aid.group(1), "title": strip_tags(title.group(1)) if title else "",
-                    "subjects": strip_tags(subj.group(1)) if subj else "",
-                    "comments": strip_tags(comments.group(1)) if comments else "",
-                    "abstract": strip_tags(abstract.group(1)) if abstract else ""})
     return out
+
+
+@source("arxiv")
+def arxiv_ro():
+    """cs.RO: new submissions, and papers from other categories cross-listed to cs.RO."""
+    return arxiv_listing("cs.RO")
+
+
+@source("arxivcv")
+def arxiv_cv_spatial():
+    """New cs.CV submissions on spatial-AI topics (see SPATIAL_RE)."""
+    return [r for r in arxiv_listing("cs.CV")["new"] if SPATIAL_RE.search(r["title"] + " " + r["abstract"])]
 
 
 def arxiv_meta(ids):
@@ -284,19 +318,27 @@ def hf_paper(aid):
 
 
 def collect_papers(seen):
-    hf, ht, ax, ro = hf_daily() or [], hf_trending() or [], alphaxiv() or [], arxiv_ro_new() or []
+    hf, ht, ax = hf_daily() or [], hf_trending() or [], alphaxiv() or []
+    listing = arxiv_ro() or {}
+    ro, cross = listing.get("new", []), listing.get("cross", [])
+    ro_ids = {r["id"] for r in ro + cross}
+    cv = [r for r in arxiv_cv_spatial() or [] if r["id"] not in ro_ids]
     is_new = lambda aid: "p-" + aid not in seen
+    arxiv_list = lambda rows: [{"id": r["id"], "seen": not is_new(r["id"]),
+                                "spatial": bool(SPATIAL_RE.search(r["title"] + " " + r["abstract"]))} for r in rows]
     lists = {
         "hf": [{"id": r["id"], "upvotes": r["upvotes"], "seen": not is_new(r["id"])} for r in hf],
         "alphaxiv": [{"id": a, "seen": not is_new(a)} for a in ax],
         "hftrend": [{"id": r["id"], "githubStars": r["githubStars"], "seen": not is_new(r["id"])} for r in ht],
-        "arxiv": [{"id": r["id"], "seen": not is_new(r["id"])} for r in ro],
+        "arxiv": arxiv_list(ro),
+        "arxivCross": arxiv_list(cross),
+        "arxivCv": arxiv_list(cv),
     }
-    # Which papers get details: the unseen ones near the top of each list, and every new cs.RO submission
+    # Which papers get details: the unseen ones near the top of each list, and every arXiv listing candidate
     want = [r["id"] for r in hf if is_new(r["id"])][:HF_DAILY_DETAIL]
     want += [a for a in ax if is_new(a)]
     want += [r["id"] for r in ht if is_new(r["id"])][:HFTREND_DETAIL]
-    want += [r["id"] for r in ro if is_new(r["id"])]
+    want += [r["id"] for r in ro + cross + cv if is_new(r["id"])]
     want = list(dict.fromkeys(want))
     print(f"[papers] details for {len(want)} papers", file=sys.stderr)
 
@@ -305,7 +347,7 @@ def collect_papers(seen):
     hf_info = {r["id"]: r for r in hf + ht}
     need_hf = [a for a in want if a not in hf_info]
     hf_info.update({a: d for a, d in zip(need_hf, pmap(hf_paper, need_hf, workers=6)) if d})
-    ro_info = {r["id"]: r for r in ro}
+    ro_info = {r["id"]: r for r in ro + cross + cv}
 
     papers = {}
     for aid in want:

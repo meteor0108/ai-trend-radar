@@ -17,14 +17,14 @@ The routine's sandbox can reach GitHub but not the paper and news sites. So a Gi
 
 ## 1. Collect
 
-The site shows each platform on its own tab: the top 5 papers / top 10 news per platform, with the rest behind "더보기". News is collected **per platform**, walking down each list and skipping every id in `seen` until you have the target number of new items (or the list runs out). Papers are a short, robotics-first selection across all lists: walk the lists below as candidates and pick by the **paper budget** in section 2. The raw files mark items that were already published with `"seen": true`; skip those too.
+The site shows each platform on its own tab: the top 5 papers / top 10 news per platform, with the rest behind "더보기". News is collected **per platform**, walking down each list and skipping every id in `seen` until you have the target number of new items (or the list runs out). Papers are a short selection across all lists, built around the owner's two interests (spatial AI and robotics): walk the lists below as candidates and pick by the **paper budget** in section 2. The raw files mark items that were already published with `"seen": true`; skip those too.
 
 | key | raw file and list | take (new items only) |
 |---|---|---|
 | `alphaxiv` | `papers.json` → `lists.alphaxiv` (alphaXiv front page, trending order) | candidates, see "Paper budget" in section 2 |
 | `hf` | `papers.json` → `lists.hf` (HF Daily Papers, already sorted by `upvotes`) | candidates, see "Paper budget" in section 2 |
 | `hftrend` | `papers.json` → `lists.hftrend` (HF Trending order, with `githubStars`; many overlap with `hf`/`alphaxiv`, which is fine) | candidates, see "Paper budget" in section 2 |
-| `arxiv` | `papers.json` → `lists.arxiv` (new cs.RO submissions only) | robotics fill only, see "Robotics lane" in section 2 |
+| `arxiv` | `papers.json` → `lists.arxiv` (new cs.RO submissions), `lists.arxivCross` (papers of other categories cross-listed to cs.RO) and `lists.arxivCv` (new cs.CV submissions whose title or abstract matched a spatial-AI keyword). Rows with `"spatial": true` matched that keyword filter: a hint for where to look, not a decision | spatial-AI picks and robotics fill, see "Spatial AI lane" and "Robotics lane" in section 2 |
 | `geeknews` | `news.json` → `geeknews` (front pages 1–2, in page order) | up to 15 AI/ML items |
 | `hn` | `news.json` → `hn` (top 60 stories, in page order, with `points`) | up to 15 AI/ML stories |
 | `openai` `anthropic` `deepmind` `google` `nvidia` `meta` | `news.json` → the key (posts from the last 3 days, newest first) | AI/ML posts (up to 15 each); for `nvidia` only research or technical posts, skip marketing, gaming, partner promos and event recaps |
@@ -40,23 +40,39 @@ News is AI/ML only: LLMs, agents, vision, multimodal, robotics, RL, AI infra/too
 - A company-blog post that is also on GeekNews or HN is one item too: `sources` lists the blog and the site(s), `url` is the blog post, `discussUrl` the discussion page.
 - `ranks`: the item's position on each platform it came from, e.g. `{"hf": 2, "alphaxiv": 7}` (HF by upvotes, alphaXiv/HF Trending by trending order, GeekNews/HN by page order, blogs newest first). The publish script renumbers them 1..n per platform, so only the order matters.
 - `rank`: overall importance within papers and within news (1 = most important). The top 5 papers and top 10 news are the "전체" headline view:
-  - Papers: prefer papers on more than one list, then HF upvotes / alphaXiv rank / HF Trending order, for robotics and other papers alike. At least 3 of the top 5 are robotics-lane papers when the day has 3 (the publish script moves the best-ranked robotics papers up if you leave fewer there).
+  - Papers: prefer papers on more than one list, then HF upvotes / alphaXiv rank / HF Trending order, for all lanes alike; spatial-AI picks from the arXiv lists have no popularity signal, so order them among themselves by your preference and interleave them with the rest. The top 5 hold at least 2 spatial-AI papers and at least 2 robotics papers when the day has that many (the publish script moves the best-ranked ones up if you leave fewer there).
   - News: in the top 10, at most 4 company-blog posts (OpenAI, Anthropic, DeepMind, Google Research, Meta, NVIDIA; prefer model/research announcements); fill the rest from GeekNews and HN by relevance and points. Rank everything else after the top 10.
 - Award-winning robotics conference papers live in the separate, hand-curated `data/conferences/` files; the daily job never touches them.
 
-**Paper budget** (at most **10 papers a day**; the owner reads mostly robotics and is not interested in LLM agents)
+**Paper budget** (at most **14 papers a day**; the owner works on SLAM / spatial AI, also reads robotics, and is not interested in LLM agents)
 
-- **Robotics lane: up to 6.** Take every robotics paper on alphaXiv, HF and HF Trending that has an entry in `papers` (best-ranked first, up to 6). If that gives fewer than 6, fill from `lists.arxiv` as described in "Robotics lane" below.
+- **Spatial AI lane: up to 4**, chosen first and independent of the other lanes. See "Spatial AI lane" below.
+
+- **Robotics lane: up to 6** (robotics other than spatial AI). Take every robotics paper on alphaXiv, HF and HF Trending that has an entry in `papers` (best-ranked first, up to 6). If that gives fewer than 6, fill from `lists.arxiv` as described in "Robotics lane" below.
 - **Other papers (`"trending"` lane): up to 4**, and only papers that are on two or more of alphaXiv / HF / HF Trending, or have at least 30 HF upvotes. Among those, take the best-ranked by the "Papers" order above.
 - **Skip LLM-agent papers entirely** in the other-papers lane: agent frameworks and harnesses, multi-agent systems, coding / web / computer-use / tool-use agents, agent memory or skills, agent benchmarks, and RL or self-improvement methods aimed at LLM agents. Judge from the abstract. Embodied agents acting in the physical world are robotics, not this.
 - Do not pad. On a day with fewer qualifying papers, publish fewer.
 
+**Spatial AI lane** (the site shows these under a "SLAM·Spatial" chip, whichever list they came from)
+
+- A paper gets `"lane": "spatial"` when its main contribution is one of:
+  - SLAM and state estimation: LiDAR / visual / radar / inertial / legged odometry, sensor fusion, degeneracy handling, localization and place recognition, bundle adjustment, factor-graph and other back-end optimization, calibration, point-cloud or cross-modal registration.
+  - Feed-forward 3D reconstruction and visual geometry foundation models (DUSt3R / VGGT-style), especially when used for SLAM, streaming or long-sequence reconstruction, or metric scale.
+  - Gaussian-splatting or neural mapping for robots: real-time or incremental mapping, GS-SLAM, loop closure, surface reconstruction for mapping.
+  - 3D scene graphs, open-vocabulary and semantic mapping, spatial / spatio-temporal memory, change detection and long-term mapping.
+  - Navigation built on such maps or on world models: visual and vision-language navigation, off-road and legged navigation, exploration and path planning in unknown space.
+- Not this lane: object-level 3D generation, novel-view synthesis or avatars with no mapping or localization use, 2D scene-graph generation, remote-sensing change detection, driving perception that is only detection or segmentation. Manipulation, VLA and locomotion-control papers belong to the robotics lane.
+- Candidates, in this order: spatial-AI papers on alphaXiv, HF and HF Trending (rare), then `lists.arxiv`, `lists.arxivCross` and `lists.arxivCv` (skip ids in `seen`; start with the rows marked `"spatial": true`, but a row without the mark can qualify and a marked row can fail). Read the abstract of every candidate before choosing.
+- Pick up to 4 by reading the abstracts: prefer real-world or real-robot evaluation, released code or datasets, methods that hold up at scale or in hard conditions (degenerate geometry, long sequences, dynamic scenes), and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the abstract. Fewer is fine; do not pad.
+- A pick from the arXiv lists has `"source": "arxiv"`, `"sources": ["arxiv"]`, `"ranks": {"arxiv": n}`, no `score`, and `"scoreLabel"` naming its primary category: `"arXiv cs.RO"` or `"arXiv cs.CV"`.
+- Keywords: use these exact spellings when they fit, so the lane stays searchable: `SLAM`, `State Estimation`, `LiDAR`, `3D Reconstruction`, `Gaussian Splatting`, `Scene Graph`, `Spatial Memory`, `Localization`, `Navigation`.
+
 **Robotics lane** (the site shows these under a "로보틱스" chip, whichever list they came from)
 
-- Every paper gets `"lane"`: `"robotics"` when its subject is robotics — arXiv primary category cs.RO, or robot learning, manipulation, locomotion, navigation, humanoids, VLA / embodied agents acting in the physical world, autonomous driving — otherwise `"trending"`. Decide from the abstract, not from the title alone.
-- Aim for **up to 6 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 6, fill the gap from `lists.arxiv` (new cs.RO submissions; skip ids in `seen`), but only with papers that clearly meet the bar below. Fewer is fine.
-- The cs.RO list has no popularity signal, so pick by reading the abstracts: prefer real-robot experiments over simulation-only results, new datasets/benchmarks or open-sourced systems, and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the abstract.
-- A fill paper has `"source": "arxiv"`, `"sources": ["arxiv"]`, `"ranks": {"arxiv": n}` (your order of preference), `"scoreLabel": "arXiv cs.RO"` and no `score`.
+- Every paper gets `"lane"`: `"spatial"` as defined above; else `"robotics"` when its subject is robotics — arXiv primary category cs.RO, or robot learning, manipulation, locomotion, humanoids, VLA / embodied agents acting in the physical world, autonomous driving — otherwise `"trending"`. Decide from the abstract, not from the title alone.
+- Aim for **up to 6 robotics papers a day**. Count the robotics papers already collected from alphaXiv, HF and HF Trending. If there are fewer than 6, fill the gap from `lists.arxiv` and `lists.arxivCross` (skip ids in `seen` and the day's spatial-AI picks), but only with papers that clearly meet the bar below. Fewer is fine.
+- These lists have no popularity signal, so pick by reading the abstracts: prefer real-robot experiments over simulation-only results, new datasets/benchmarks or open-sourced systems, and clear, general contributions over narrow incremental ones. Do not pick on author or lab names you cannot verify from the abstract.
+- A fill paper has `"source": "arxiv"`, `"sources": ["arxiv"]`, `"ranks": {"arxiv": n}` (your order of preference among all the day's arXiv picks, spatial ones included), `"scoreLabel": "arXiv cs.RO"` and no `score`.
 
 ## 3. Read and summarize (Korean, keep technical terms in English where natural)
 
@@ -131,7 +147,7 @@ Replace the file if it already exists. Shape:
 ```
 
 - ids: papers `p-<arxivId>` (no version suffix), GeekNews `gn-<topicId>`, HN `hn-<itemId>`, blogs `openai-<slug>` / `anthropic-<slug>` / `deepmind-<slug>` / `google-<slug>` / `meta-<slug>` / `nvidia-<slug>` (lowercase URL slug).
-- Paper `source` is the main list it came from (`alphaxiv`, `hf`, `hftrend`, or `arxiv` for a robotics fill); `sources` lists every list it appeared on.
+- Paper `source` is the main list it came from (`alphaxiv`, `hf`, `hftrend`, or `arxiv` for a pick from the arXiv lists); `sources` lists every list it appeared on.
 - News `bullets`: 1–2 items with an empty `label`.
 - All URLs must be https.
 
@@ -168,7 +184,7 @@ If `manifest.json` → `status.github` is not `"ok"`, leave the existing file un
 
 ## 5. Publish
 
-1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 10 papers / 80 news, makes sure up to 3 robotics papers are in the top 5, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for the final response.
+1. `python3 scripts/publish_day.py publish data/days/$TODAY.json` — it validates, drops already-published ids, keeps at most 14 papers / 80 news, makes sure up to 2 spatial-AI and 2 robotics papers are in the top 5, renumbers `rank` and per-platform `ranks`, and rebuilds `data/index.json` and `feed.xml`. Fix anything it reports as an error and run it again; fix `missing published` warnings when the time can be read. Keep its JSON output for the final response.
 2. `git add data feed.xml && git commit -m "digest: $TODAY"` and push to `main`. If the push is rejected, pull with rebase and push again once.
 
 ## 6. Finish

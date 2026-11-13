@@ -33,7 +33,7 @@ KST = timezone(timedelta(hours=9))
 
 PAPER_SOURCES = {"alphaxiv", "hf", "hftrend", "arxiv"}
 NEWS_SOURCES = {"geeknews", "hn", "openai", "anthropic", "deepmind", "meta", "nvidia", "google"}
-ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES | {"github"}  # "github" only as a failed-source key; repos live in data/github/
+ALL_SOURCES = PAPER_SOURCES | NEWS_SOURCES | {"github", "arxivcv"}  # the last two only as failed-source keys
 REPO_RE = re.compile(r"^[\w.-]+/[\w.-]+$")
 PERIODS = ("daily", "weekly", "monthly")
 MAX_REPOS = 15
@@ -42,8 +42,10 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 CODE_RE = re.compile(r"^https://(github|gitlab)\.com/[\w.-]+/[\w.-]+/?$")
 SHOW = {"paper": 5, "news": 10}  # shown before "더보기", overall and per platform
 PER_SOURCE = {"paper": 10, "news": 15}  # items to collect per platform
-MAX_TOTAL = {"paper": 10, "news": 80}
-ROBOTICS_TOP = 3  # robotics papers guaranteed among the headline papers, when the day has that many
+MAX_TOTAL = {"paper": 14, "news": 80}
+LANES = ("spatial", "robotics", "trending")
+# papers of each lane guaranteed among the headline papers, when the day has that many
+HEAD_MIN = {"spatial": 2, "robotics": 2}
 FEED_ITEMS = 60
 WHEN_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2}(?::\d{2})?)(?:\.\d+)?(Z|[+-]\d{2}:?\d{2})$")
 
@@ -133,7 +135,7 @@ def clean_item(raw, warnings):
     sources = [s for s in raw.get("sources") or [] if s in allowed]
     item["sources"] = list(dict.fromkeys([source] + sources))
     if kind == "paper":
-        item["lane"] = "robotics" if raw.get("lane") == "robotics" else "trending"
+        item["lane"] = raw.get("lane") if raw.get("lane") in LANES else "trending"
         venue = text(raw.get("venue"), 40)
         if venue:
             item["venue"] = venue
@@ -278,14 +280,23 @@ def rerank(group, kind, per_source, warnings):
     """Order by overall rank (1 = headline), then number each platform's items by their rank on that platform."""
     group = sorted(group, key=lambda i: i["rank"])[:MAX_TOTAL[kind]]
     if kind == "paper":
-        # The headline papers include up to ROBOTICS_TOP robotics papers: cap the other papers' headline slots, keep the order
-        robotics = [i for i in group if i["lane"] == "robotics"]
-        per_source["robotics"] = len(robotics)
-        other_slots = SHOW[kind] - min(len(robotics), ROBOTICS_TOP)
+        # The headline papers include up to HEAD_MIN[lane] papers of each interest lane: those slots are
+        # reserved, the remaining ones go to whichever paper comes next. The order within the headline is kept.
+        need = {}
+        for lane, n in HEAD_MIN.items():
+            per_source[lane] = sum(i["lane"] == lane for i in group)
+            need[lane] = min(per_source[lane], n)
+        free = SHOW[kind] - sum(need.values())
         head, rest = [], []
         for i in group:
-            fits = len(head) < SHOW[kind] and (i["lane"] == "robotics" or sum(h["lane"] != "robotics" for h in head) < other_slots)
-            (head if fits else rest).append(i)
+            if len(head) < SHOW[kind] and need.get(i["lane"], 0) > 0:
+                need[i["lane"]] -= 1
+                head.append(i)
+            elif len(head) < SHOW[kind] and free > 0:
+                free -= 1
+                head.append(i)
+            else:
+                rest.append(i)
         group = head + rest
     for n, item in enumerate(group, 1):
         item["rank"] = n

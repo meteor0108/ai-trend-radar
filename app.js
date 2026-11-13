@@ -7,8 +7,9 @@
   const HEAT_DAYS = 14;
   const MAX_DAYS = 180;
   // Per section: platforms in chip order, and how many rows show before "더보기"
-  // "robotics" is not a site: it collects every paper on the robotics lane, whichever list it came from
-  const PLATS = { paper: ["robotics", "alphaxiv", "hf", "hftrend", "arxiv"], news: ["geeknews", "hn", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
+  // "spatial" and "robotics" are not sites: each collects every paper on that lane, whichever list it came from
+  const LANE_LABEL = { spatial: "SLAM·Spatial", robotics: "로보틱스" };
+  const PLATS = { paper: ["spatial", "robotics", "alphaxiv", "hf", "hftrend", "arxiv"], news: ["geeknews", "hn", "openai", "anthropic", "deepmind", "google", "meta", "nvidia"] };
   const SHOW = { paper: 5, news: 10 };
 
   const S = {
@@ -309,10 +310,10 @@
 
   const srcsOf = (i) => (arr(i.sources).length ? arr(i.sources) : [i.source]);
   // Position of an item on one platform (or overall); older days without per-platform ranks fall back to the overall rank
-  const inPlat = (i, p) => (p === "robotics" ? i.lane === "robotics" : srcsOf(i).includes(p));
-  const platLabel = (p) => (p === "robotics" ? "로보틱스" : SRC_LABEL[p] || p);
+  const inPlat = (i, p) => (LANE_LABEL[p] ? i.lane === p : srcsOf(i).includes(p));
+  const platLabel = (p) => LANE_LABEL[p] || SRC_LABEL[p] || p;
   function rankIn(i, plat) {
-    if (plat === "all" || plat === "robotics") return i.rank || 999;
+    if (plat === "all" || LANE_LABEL[plat]) return i.rank || 999;
     const r = i.ranks && i.ranks[plat];
     return Number.isInteger(r) ? r : 1000 + (i.rank || 999);
   }

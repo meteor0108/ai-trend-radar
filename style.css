@@ -179,7 +179,7 @@ a.src:hover { background: var(--hl); color: var(--fg); }
 .chip[aria-pressed="true"] { color: var(--fg); font-weight: 700; border-color: var(--accent); }
 .chip:nth-child(even)[aria-pressed="true"] { border-radius: var(--wobble-2); }
 .chip .cnt { font-size: 16px; font-weight: 400; margin-left: 4px; color: var(--faint); }
-.chip.pf:not(.robotics)::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50% 45% 55% 48%; background: var(--c, var(--faint)); margin-right: 6px; vertical-align: 1px; }
+.chip.pf:not(.robotics):not(.spatial)::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50% 45% 55% 48%; background: var(--c, var(--faint)); margin-right: 6px; vertical-align: 1px; }
 .platbar { margin-left: -9px; }
 .confbar .chips { margin-left: -9px; }
 .more { font: 700 21px var(--font-hand); color: var(--muted); border: 1.5px dashed var(--faint); border-radius: var(--wobble-2); background: none; padding: 4px 8px; margin-top: 8px; cursor: pointer; text-align: center; }
