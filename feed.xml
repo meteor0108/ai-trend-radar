@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 13 Nov 2026 10:26:14 +0900</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 03:40:33 +0900</lastBuildDate>
+<item>
+<title>[논문] SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</title>
+<link>https://arxiv.org/abs/2611.15777</link>
+<guid isPermaLink="false">p-2611.15777</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>System One(빠른 단답형 결정) 모델의 능력 스펙트럼과 결정 신뢰성을 11개 도메인에서 평가하는 벤치마크</description>
+</item>
+<item>
+<title>[논문] Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors</title>
+<link>https://arxiv.org/abs/2611.17060</link>
+<guid isPermaLink="false">p-2611.17060</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>metric-scale 3D 스캔과 egocentric 행동 기록을 함께 수집해 physical AI용 환경·행동 데이터를 확장하는 데이터셋</description>
+</item>
+<item>
+<title>[논문] QVS-LIVO RiskMap: Health- and Information-Aware View Selection for Multi-Camera LIVO and Off-Road Risk Mapping</title>
+<link>https://arxiv.org/abs/2611.16205</link>
+<guid isPermaLink="false">p-2611.16205</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>오프로드에서 카메라 품질을 따져 한 시점만 골라 LiDAR-inertial 상태 추정을 보정하고 위험 지도를 만드는 LIVO 시스템</description>
+</item>
+<item>
+<title>[논문] BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model</title>
+<link>https://arxiv.org/abs/2611.14815</link>
+<guid isPermaLink="false">p-2611.14815</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>원근 영상과 BEV 영상을 함께 생성해 주변 차량 움직임까지 예측하는 autoregressive driving world model</description>
+</item>
+<item>
+<title>[논문] Kosmo-GFM: A Production-Ready Geometry Foundation Model</title>
+<link>https://arxiv.org/abs/2611.16840</link>
+<guid isPermaLink="false">p-2611.16840</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>geometry foundation model, pose 최적화 엔진, 재구성 기반 합성 감독을 결합한 실사용 지향 장면 재구성 시스템</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Hydrogen and Orchestrator</title>
+<link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
+<guid isPermaLink="false">hn-50472260</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google Antigravity에 Gemini 4 Hydrogen과 Carbon·Hydrogen을 작업 단계별로 자동 전환하는 Orchestrator 추가</description>
+</item>
+<item>
+<title>[뉴스] Edge0-145B: Frontier AI Capabilities on Your Own Computer</title>
+<link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
+<guid isPermaLink="false">hn-50475713</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>145B 파라미터 on-device 오픈소스 모델 Edge0-145B·120B와 추론 프레임워크 공개</description>
+</item>
+<item>
+<title>[뉴스] AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems</title>
+<link>https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths</link>
+<guid isPermaLink="false">hn-50486748</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude가 Gödel의 속기 노트 1,009쪽을 해독·요약해 알려지지 않은 정리 수백 개를 드러냄</description>
+</item>
+<item>
+<title>[뉴스] OpenAI disbands its robotics team as its general models start running robots</title>
+<link>https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/</link>
+<guid isPermaLink="false">hn-50487184</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI가 독립 로보틱스 팀을 해체하고 연구원들을 본 연구 조직과 Applied 조직으로 재배치</description>
+</item>
+<item>
+<title>[뉴스] Introducing ChatGPT Wallet</title>
+<link>https://openai.com/index/introducing-chatgpt-wallet</link>
+<guid isPermaLink="false">openai-introducing-chatgpt-wallet</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>ChatGPT Work·Codex·dots의 에이전트가 사용자 승인과 기존 카드 보호 아래 결제를 완료하는 ChatGPT Wallet 공개</description>
+</item>
+<item>
+<title>[뉴스] Foundation Models framework</title>
+<link>https://developer.apple.com/foundation-models-framework/</link>
+<guid isPermaLink="false">hn-50474361</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>Apple Foundation Models framework가 온디바이스 모델뿐 아니라 Claude·Gemini 등 서버 모델까지 같은 Swift API로 지원</description>
+</item>
+<item>
+<title>[뉴스] Nvidia employees petition to bring back Jensen Huang</title>
+<link>https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/</link>
+<guid isPermaLink="false">hn-50477231</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA 직원들이 사임한 Jensen Huang의 복귀를 요구하는 내부 청원</description>
+</item>
+<item>
+<title>[뉴스] Elevated errors on claude.ai, Claude Code, and platform.claude.com</title>
+<link>https://status.claude.com/incidents/nn11wk485zfn</link>
+<guid isPermaLink="false">hn-50481187</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>claude.ai·Claude Code·Claude Console·Cowork에서 인증 관련 오류 장애 발생 후 복구</description>
+</item>
+<item>
+<title>[뉴스] After 600 experiments, here's what I discovered about JEPA world models</title>
+<link>https://haddyalchaer.com/jepa</link>
+<guid isPermaLink="false">hn-50487185</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>JEPA world model LeWM으로 600회 실험한 결과, 학습 분포 경로에서는 예측기가 실제 물리 시뮬레이터만큼 좋았다는 분석</description>
+</item>
+<item>
+<title>[뉴스] Why is Google cutting off Search from AI-free schools? Here are some theories</title>
+<link>https://text.npr.org/nx-s1-6029408</link>
+<guid isPermaLink="false">hn-50484960</guid>
+<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google이 AI Overviews를 끄려는 학교에는 Google Search 접근 자체를 차단하겠다고 해 학부모·정치권 반발</description>
+</item>
 <item>
 <title>[논문] SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
 <link>https://arxiv.org/abs/2611.12870</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-36910</guid>
 <pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
 <description>Claude Fable 5.2, Artificial Analysis Intelligence Index에서 역대 최고 65점</description>
-</item>
-<item>
-<title>[논문] Scaling World Model for Hierarchical Manipulation Policies</title>
-<link>https://arxiv.org/abs/2602.10983</link>
-<guid isPermaLink="false">p-2602.10983</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>대규모 사전학습 world model을 high-level planner로, VLA를 low-level executor로 쓰는 계층형 조작 정책 VISTA</description>
-</item>
-<item>
-<title>[논문] ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use</title>
-<link>https://arxiv.org/abs/2611.09036</link>
-<guid isPermaLink="false">p-2611.09036</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>사람이 주변 물건을 도구로 골라 변형·재활용하는 장면을 ego-exo 다시점으로 담은 창의적 도구 사용 데이터셋 ToolDex</description>
-</item>
-<item>
-<title>[논문] On Agentic Manipulation Policies</title>
-<link>https://arxiv.org/abs/2611.09892</link>
-<guid isPermaLink="false">p-2611.09892</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>generalist AI 모델이 매니퓰레이터를 직접 지휘하는 agentic manipulation policy(AMP)가 VLA·WAM보다 안정적임을 보인 연구</description>
-</item>
-<item>
-<title>[논문] P$^2$-MOPD: Accelerating Multi-Teacher On-Policy Distillation via Parameter Priors</title>
-<link>https://arxiv.org/abs/2611.03953</link>
-<guid isPermaLink="false">p-2611.03953</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>student와 expert 파라미터의 선형 결합을 하나의 미분 가능한 모델로 보고 혼합 계수와 student를 함께 학습하는 multi-teacher on-policy distillation P²-MOPD</description>
-</item>
-<item>
-<title>[논문] Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation</title>
-<link>https://arxiv.org/abs/2611.08577</link>
-<guid isPermaLink="false">p-2611.08577</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>1.47억 vision-language 샘플과 12개 embodiment의 15,060시간 로봇 궤적으로 학습한 데스크톱 조작용 VLA foundation model MR0</description>
-</item>
-<item>
-<title>[뉴스] Goldman Sachs is pulling Claude Code from its bankers and traders</title>
-<link>https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers</link>
-<guid isPermaLink="false">hn-50415628</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>Goldman Sachs가 Claude Code와 GitHub 사용을 엔지니어로 제한해 대부분의 트레이더·은행원이 AI 코딩 도구를 못 쓰게 됨</description>
-</item>
-<item>
-<title>[뉴스] Is Opus 5.5 nerfed? Thinking patterns changed on November 3</title>
-<link>https://twitter.com/shanemelaugh/status/2119192075505893695</link>
-<guid isPermaLink="false">hn-50422069</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>1,400개 Claude Code 세션 분석으로 11월 3일 이후 Opus 5.5의 reasoning 패턴이 바뀌었다는 주장이 화제</description>
-</item>
-<item>
-<title>[뉴스] Our Smallest, Most Efficient Model: Muse Ember</title>
-<link>https://research.meta.ai/blog/muse-ember</link>
-<guid isPermaLink="false">hn-50429024</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>Meta가 tool call·coding subtask·routing·추출 등 에이전트 반복 작업용 최소형 고효율 모델 Muse Ember 공개</description>
-</item>
-<item>
-<title>[뉴스] Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation</title>
-<link>https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/</link>
-<guid isPermaLink="false">nvidia-robotics-simulation-advancements-corl</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA가 CoRL에서 Cosmos 기반 오픈 world action model GR00T 2와 시뮬레이션·데이터 도구를 공개</description>
-</item>
-<item>
-<title>[뉴스] I'm not convinced the AI bubble exists</title>
-<link>https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists</link>
-<guid isPermaLink="false">hn-50418975</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI 버블론에 반대하며, 막대한 데이터센터 지출은 일회성이라 구축이 끝나면 비용이 급감할 것이라는 에세이</description>
-</item>
-<item>
-<title>[뉴스] ChatGPT Desktop forwards your SSH agent to remote machines</title>
-<link>https://news.ycombinator.com/item?id=50422628</link>
-<guid isPermaLink="false">hn-50422628</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>ChatGPT Desktop이 원격 머신의 에이전트에 로컬 SSH agent를 forwarding해 사용자 자격 증명으로 인증할 수 있다는 지적</description>
-</item>
-<item>
-<title>[뉴스] Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation</title>
-<link>https://arxiv.org/abs/2610.14162</link>
-<guid isPermaLink="false">hn-50422168</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>텍스트를 계층적 이산 코드로 인코딩하고 레벨별로 병렬 생성하는 coarse-to-fine 언어 생성 Next-Concept Modeling</description>
-</item>
-<item>
-<title>[뉴스] The same H100 costs $2.69 or $12.29 an hour depending where you rent it</title>
-<link>https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing</link>
-<guid isPermaLink="false">hn-50427085</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>같은 H100 SXM 80GB의 시간당 대여료가 RunPod $2.69부터 Azure $12.29까지 4.57배 차이</description>
-</item>
-<item>
-<title>[뉴스] Replit, microVM으로 샌드박스 엔진 재구축</title>
-<link>https://frontier.replit.com/sandbox-engine-microvms-part-1/</link>
-<guid isPermaLink="false">gn-36828</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>Replit이 자율 에이전트의 코드 실행 격리를 위해 샌드박스 엔진을 샌드박스별 커널을 가진 microVM으로 재구축</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Flide: Make Jev-like decision models up to 9.5x faster</title>
-<link>https://github.com/OmniJev/Flide</link>
-<guid isPermaLink="false">hn-50421155</guid>
-<pubDate>Tue, 10 Nov 2026 08:00:00 +0900</pubDate>
-<description>Jev 계열 decision model 전용 추론 엔진 Flide 공개, vLLM·SGLang 대비 최대 9.5배 빠르다고 주장</description>
 </item>
 </channel>
 </rss>
