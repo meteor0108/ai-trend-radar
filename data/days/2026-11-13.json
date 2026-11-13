@@ -52,6 +52,44 @@
       "addedAt": "2026-11-13T03:39:57+09:00"
     },
     {
+      "id": "p-2611.12087",
+      "kind": "paper",
+      "source": "alphaxiv",
+      "sources": [
+        "alphaxiv"
+      ],
+      "lane": "spatial",
+      "rank": 2,
+      "ranks": {
+        "alphaxiv": 5
+      },
+      "published": "2026-11-09T18:04:48+09:00",
+      "title": "Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos",
+      "url": "https://arxiv.org/abs/2611.12087",
+      "figureUrl": "https://arxiv.org/html/2611.12087",
+      "scoreLabel": "alphaXiv #20",
+      "oneLine": "약 2분 분량의 시각 기록을 기억하며 단안 RGB만으로 장기 탐색하는 embodied navigation foundation model Compass 1",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "기존 navigation 구조는 최근 몇 프레임만 활용해 open-world에서 지속적 공간 인식과 장기 실행 안정성을 함께 유지하지 못함"
+        },
+        {
+          "label": "방법",
+          "text": "sparse keyframe과 History Representation Map으로 장기 맥락을 보존하고, task-stage grounding·탐색 일관성·시공간 target 검색의 VQA supervision으로 history 활용을 학습. 실제 상호작용 500시간+웹 영상 2,000시간 데이터셋 공개"
+        },
+        {
+          "label": "결과",
+          "text": "open-world 평가 종합 성공률 79.4%(최강 baseline 17.8%), 바퀴 로봇·사족보행·휴머노이드·드론 등 다양한 embodiment로 일반화"
+        }
+      ],
+      "keywords": [
+        "Navigation",
+        "Spatial Memory"
+      ],
+      "addedAt": "2026-11-13T03:39:57+09:00"
+    },
+    {
       "id": "p-2606.19088",
       "kind": "paper",
       "source": "alphaxiv",
@@ -59,7 +97,7 @@
         "alphaxiv"
       ],
       "lane": "robotics",
-      "rank": 2,
+      "rank": 3,
       "ranks": {
         "alphaxiv": 1
       },
@@ -93,6 +131,47 @@
       "addedAt": "2026-11-13T03:39:57+09:00"
     },
     {
+      "id": "p-2611.13528",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 4,
+      "ranks": {
+        "arxiv": 1
+      },
+      "published": "2026-11-10T12:51:43+09:00",
+      "title": "GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM",
+      "url": "https://arxiv.org/abs/2611.13528",
+      "image": "https://arxiv.org/html/2611.13528v1/fig_system_overview.png",
+      "figureUrl": "https://arxiv.org/html/2611.13528",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.13528",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "LiDAR-camera extrinsic 보정, 전역 map refinement, tracking loss 후 relocalization까지 갖춘 LiDAR-inertial-visual 3DGS SLAM",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "LiDAR-inertial-visual SLAM의 3DGS map은 장시간 운용에서 기하 정확도·외관 품질이 부족하고, tracking을 잃으면 map에 다시 들어갈 방법이 마땅치 않음"
+        },
+        {
+          "label": "방법",
+          "text": "전용 calibration 구간에서 direct-method로 LiDAR-camera extrinsic을 먼저 추정하고, keyframe pose와 Gaussian을 differentiable rendering·LiDAR projection 목적함수로 번갈아 refine한 뒤 전역 재구성; tracking loss 시 XFeat bypass map, RANSAC-PnP, Gaussian RGB-D warp로 pose 복구"
+        },
+        {
+          "label": "결과",
+          "text": "자체 수집 1개·공개 5개 sequence에서 offline 재구성이 online map 대비 14.3–19.9 dB, Gaussian-LIC2 대비 PSNR 약 9 dB 향상; held-out relocalization 성공률 86–100%"
+        }
+      ],
+      "keywords": [
+        "SLAM",
+        "Gaussian Splatting",
+        "LiDAR"
+      ],
+      "addedAt": "2026-11-13T10:26:13+09:00"
+    },
+    {
       "id": "p-2611.11166",
       "kind": "paper",
       "source": "hf",
@@ -100,7 +179,7 @@
         "hf"
       ],
       "lane": "robotics",
-      "rank": 3,
+      "rank": 5,
       "ranks": {
         "hf": 3
       },
@@ -133,6 +212,47 @@
       "addedAt": "2026-11-13T03:39:57+09:00"
     },
     {
+      "id": "p-2611.14135",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 6,
+      "ranks": {
+        "arxiv": 2
+      },
+      "published": "2026-11-10T23:23:34+09:00",
+      "title": "Sim(3)-TurboReg: Robust and Efficient Scale-Aware Registration via Tri-Scale Consistency",
+      "url": "https://arxiv.org/abs/2611.14135",
+      "image": "https://arxiv.org/html/2611.14135v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2611.14135",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.14135",
+      "codeUrl": "https://github.com/ivan-zzj/Sim3-TurboReg",
+      "scoreLabel": "arXiv cs.CV",
+      "oneLine": "feed-forward 3D foundation model의 sliding-window streaming에서 생기는 scale 모호성을 빠르고 강건한 Sim(3) registration으로 해결해 km 규모 재구성을 가능케 한 Sim(3)-TurboReg",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "feed-forward 3D 모델은 메모리 한계로 긴 sequence를 chunk로 나눠 처리하는데, 이때 단안 scale 모호성이 커지고 outlier가 많은 상황에서 정확하고 빠른 Sim(3) 정합이 필요함"
+        },
+        {
+          "label": "방법",
+          "text": "TurboReg의 compatibility graph에서 절대 거리 제약 대신 Tri-Scale Consistency(TSC) 기준을 써서 mismatching과 좌표 왜곡 outlier를 함께 억제하고, 기존 streaming 시스템에 solver로 통합"
+        },
+        {
+          "label": "결과",
+          "text": "outlier 90% 정합에서 RANSAC과 같은 정확도에 median latency 92.5% 감소; KITTI의 DA3-Streaming에서 평균 ATE RMSE 22.2% 개선, 전체 시간 16.6% 단축"
+        }
+      ],
+      "keywords": [
+        "3D Reconstruction",
+        "SLAM"
+      ],
+      "addedAt": "2026-11-13T10:26:13+09:00"
+    },
+    {
       "id": "p-2611.14365",
       "kind": "paper",
       "source": "alphaxiv",
@@ -140,7 +260,7 @@
         "alphaxiv"
       ],
       "lane": "robotics",
-      "rank": 4,
+      "rank": 7,
       "ranks": {
         "alphaxiv": 4
       },
@@ -173,42 +293,44 @@
       "addedAt": "2026-11-13T03:39:57+09:00"
     },
     {
-      "id": "p-2611.12087",
+      "id": "p-2611.13453",
       "kind": "paper",
-      "source": "alphaxiv",
+      "source": "arxiv",
       "sources": [
-        "alphaxiv"
+        "arxiv"
       ],
-      "lane": "robotics",
-      "rank": 5,
+      "lane": "spatial",
+      "rank": 8,
       "ranks": {
-        "alphaxiv": 5
+        "arxiv": 3
       },
-      "published": "2026-11-09T18:04:48+09:00",
-      "title": "Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos",
-      "url": "https://arxiv.org/abs/2611.12087",
-      "figureUrl": "https://arxiv.org/html/2611.12087",
-      "scoreLabel": "alphaXiv #20",
-      "oneLine": "약 2분 분량의 시각 기록을 기억하며 단안 RGB만으로 장기 탐색하는 embodied navigation foundation model Compass 1",
+      "published": "2026-11-10T10:56:04+09:00",
+      "title": "Camera3R: Feed-Forward 3D Reconstruction from Heterogeneous Camera Models",
+      "url": "https://arxiv.org/abs/2611.13453",
+      "image": "https://arxiv.org/html/2611.13453v1/fig/teaser.jpg",
+      "figureUrl": "https://arxiv.org/html/2611.13453",
+      "altUrl": "https://www.alphaxiv.org/abs/2611.13453",
+      "codeUrl": "https://github.com/android-xr/camera3r",
+      "scoreLabel": "arXiv cs.CV",
+      "oneLine": "원근 카메라로 학습된 feed-forward 3D reconstruction 모델을 LoRA로 어안 등 임의의 카메라 모델에 확장하는 Camera3R (NeurIPS 2026)",
       "bullets": [
         {
           "label": "문제",
-          "text": "기존 navigation 구조는 최근 몇 프레임만 활용해 open-world에서 지속적 공간 인식과 장기 실행 안정성을 함께 유지하지 못함"
+          "text": "대규모 원근(perspective) 데이터로 학습된 3R foundation model은 비원근 이미지나 서로 다른 카메라 모델이 섞인 입력에 잘 일반화되지 않음"
         },
         {
           "label": "방법",
-          "text": "sparse keyframe과 History Representation Map으로 장기 맥락을 보존하고, task-stage grounding·탐색 일관성·시공간 target 검색의 VQA supervision으로 history 활용을 학습. 실제 상호작용 500시간+웹 영상 2,000시간 데이터셋 공개"
+          "text": "기존 3R 네트워크를 재학습하지 않고 low-rank adaptation으로 임의의 카메라 모델을 지원하도록 확장"
         },
         {
           "label": "결과",
-          "text": "open-world 평가 종합 성공률 79.4%(최강 baseline 17.8%), 바퀴 로봇·사족보행·휴머노이드·드론 등 다양한 embodiment로 일반화"
+          "text": "파라미터 0.5% 추가, 하루 미만 학습으로 비원근 카메라에 적응하면서 원근 입력 성능은 그대로 유지"
         }
       ],
       "keywords": [
-        "Navigation",
-        "Embodied AI"
+        "3D Reconstruction"
       ],
-      "addedAt": "2026-11-13T03:39:57+09:00"
+      "addedAt": "2026-11-13T10:26:13+09:00"
     },
     {
       "id": "p-2610.14018",
@@ -218,7 +340,7 @@
         "hftrend"
       ],
       "lane": "robotics",
-      "rank": 6,
+      "rank": 9,
       "ranks": {
         "hftrend": 5
       },
@@ -260,7 +382,7 @@
         "alphaxiv"
       ],
       "lane": "trending",
-      "rank": 7,
+      "rank": 10,
       "ranks": {
         "hf": 1,
         "alphaxiv": 2
@@ -303,7 +425,7 @@
         "hftrend"
       ],
       "lane": "trending",
-      "rank": 8,
+      "rank": 11,
       "ranks": {
         "hf": 2,
         "hftrend": 1
@@ -347,7 +469,7 @@
         "hf"
       ],
       "lane": "trending",
-      "rank": 9,
+      "rank": 12,
       "ranks": {
         "hftrend": 2,
         "hf": 6
@@ -392,7 +514,7 @@
         "hftrend"
       ],
       "lane": "trending",
-      "rank": 10,
+      "rank": 13,
       "ranks": {
         "hf": 5,
         "hftrend": 4

@@ -5,13 +5,20 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 13 Nov 2026 03:39:57 +0900</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 10:26:14 +0900</lastBuildDate>
 <item>
 <title>[논문] SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
 <link>https://arxiv.org/abs/2611.12870</link>
 <guid isPermaLink="false">p-2611.12870</guid>
 <pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
 <description>약 4.7만 시간의 일반·egocentric·UMI·로봇 영상으로 World Action Model 학습 레시피를 체계적으로 분석한 연구</description>
+</item>
+<item>
+<title>[논문] Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos</title>
+<link>https://arxiv.org/abs/2611.12087</link>
+<guid isPermaLink="false">p-2611.12087</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>약 2분 분량의 시각 기록을 기억하며 단안 RGB만으로 장기 탐색하는 embodied navigation foundation model Compass 1</description>
 </item>
 <item>
 <title>[논문] ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks</title>
@@ -21,25 +28,18 @@
 <description>VLM의 공간적으로 일관된 중간 feature를 이용해 dense language grounding을 개선하는 ReSiReg</description>
 </item>
 <item>
+<title>[논문] GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM</title>
+<link>https://arxiv.org/abs/2611.13528</link>
+<guid isPermaLink="false">p-2611.13528</guid>
+<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
+<description>LiDAR-camera extrinsic 보정, 전역 map refinement, tracking loss 후 relocalization까지 갖춘 LiDAR-inertial-visual 3DGS SLAM</description>
+</item>
+<item>
 <title>[논문] DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight</title>
 <link>https://arxiv.org/abs/2611.11166</link>
 <guid isPermaLink="false">p-2611.11166</guid>
 <pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
 <description>world model의 공간 예측 지식을 policy latent에 암묵적으로 주입하는 dexterous manipulation 프레임워크</description>
-</item>
-<item>
-<title>[논문] From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models</title>
-<link>https://arxiv.org/abs/2611.14365</link>
-<guid isPermaLink="false">p-2611.14365</guid>
-<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
-<description>로봇 신호를 주파수 대역에 담은 하나의 meta-frame으로 video diffusion 기반 World Action Model에 주입하는 MetaWAM</description>
-</item>
-<item>
-<title>[논문] Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos</title>
-<link>https://arxiv.org/abs/2611.12087</link>
-<guid isPermaLink="false">p-2611.12087</guid>
-<pubDate>Fri, 13 Nov 2026 08:00:00 +0900</pubDate>
-<description>약 2분 분량의 시각 기록을 기억하며 단안 RGB만으로 장기 탐색하는 embodied navigation foundation model Compass 1</description>
 </item>
 <item>
 <title>[뉴스] Jensen Huang resigns</title>
