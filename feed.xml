@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Sat, 14 Nov 2026 03:40:33 +0900</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 03:41:13 +0900</lastBuildDate>
+<item>
+<title>[논문] Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
+<link>https://arxiv.org/abs/2611.17336</link>
+<guid isPermaLink="false">p-2611.17336</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>VAE latent 공간에서 학습된 비디오 diffusion 모델을 픽셀 공간에서 프레임 단위로 직접 생성하도록 끌어올린 PixVid</description>
+</item>
+<item>
+<title>[논문] CT-SGAL-LIO: Causal Continuous Time Refinement of Discrete LiDAR Inertial Odometry</title>
+<link>https://arxiv.org/abs/2611.16918</link>
+<guid isPermaLink="false">p-2611.16918</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Discrete LiDAR-inertial odometry 추정기를 고치지 않고 posterior pose stream만 continuous-time으로 부드럽게 다듬는 CT-SGAL-LIO</description>
+</item>
+<item>
+<title>[논문] EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming</title>
+<link>https://arxiv.org/abs/2611.16728</link>
+<guid isPermaLink="false">p-2611.16728</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>사람·실제 로봇·시뮬레이션 데모를 egocentric 관측·행동 모달리티로 묶어 cross-embodiment 조작 정책을 사전학습하는 EgoX</description>
+</item>
+<item>
+<title>[논문] UGG: Unified Generative Geometry Model</title>
+<link>https://arxiv.org/abs/2611.14440</link>
+<guid isPermaLink="false">p-2611.14440</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>RGB 비디오와 depth·camera pose를 하나의 생성 모델에서 조건부 completion으로 함께 다루는 4D 장면 이해 모델 UGG</description>
+</item>
+<item>
+<title>[논문] DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation</title>
+<link>https://arxiv.org/abs/2611.15981</link>
+<guid isPermaLink="false">p-2611.15981</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>접착·오염·가려진 대상을 떼어내는 removal manipulation을 위한 힘 센싱 3지 로봇 손과 9개 시나리오 실로봇 과제 모음 DexRemo</description>
+</item>
+<item>
+<title>[뉴스] Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs</title>
+<link>https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</link>
+<guid isPermaLink="false">hn-50493251</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>WSJ 보도: Nvidia가 자사 GPU를 살 AI 스타트업·소형 클라우드에 투자해 수요와 품귀를 부풀렸다는 의혹</description>
+</item>
+<item>
+<title>[뉴스] Advancing science &amp; engineering with Antigravity’s /teamwork</title>
+<link>https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/</link>
+<guid isPermaLink="false">google-advancing-science-engineering-with-antigravitys-teamwork-feature</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google Research, Antigravity /teamwork 멀티에이전트로 수학·화학·시스템·ML 엔지니어링의 미해결 문제를 전문가와 함께 풀었다고 발표</description>
+</item>
+<item>
+<title>[뉴스] Ggml v1.0.0</title>
+<link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
+<guid isPermaLink="false">hn-50493062</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>ggml 1.0.0 릴리스: deprecated API 정리, FP8 지원, 백엔드 전반 성능 개선</description>
+</item>
+<item>
+<title>[뉴스] Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update</title>
+<link>https://unsloth.ai/docs/models/qwen3.8</link>
+<guid isPermaLink="false">hn-50491980</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Unsloth, Qwen3.8-27B GGUF 양자화를 Dynamic v3.1로 업데이트</description>
+</item>
+<item>
+<title>[뉴스] Lovable apps expose passport details and more than 200K private messages</title>
+<link>https://www.crissyfield.de/research/lovable-en/</link>
+<guid isPermaLink="false">hn-50499017</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Lovable로 만든 앱 다수가 로그인 없이 여권 정보·20만 건 넘는 개인 메시지 등 민감 데이터를 노출</description>
+</item>
+<item>
+<title>[뉴스] Claude Fable 5.2로 에이전트 1,000개 팀 안전하게 돌리기 - 페르마의 마지막 정리 형식화 실험</title>
+<link>https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/</link>
+<guid isPermaLink="false">gn-37159</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, 출시 전 Claude Fable 5.2로 에이전트 1,000개를 돌려 페르마의 마지막 정리 증명을 Lean으로 28.7시간 만에 형식화</description>
+</item>
+<item>
+<title>[뉴스] Perplexity Decider v1.3: Training, eval, and use cases</title>
+<link>https://www.perplexity.ai/hub/blog/perplexity-decider</link>
+<guid isPermaLink="false">hn-50488464</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>Perplexity, 분류·라우팅·순위용 decision 모델 Decider v1.3과 경량 Flash v1.3을 Apache 라이선스로 공개</description>
+</item>
+<item>
+<title>[뉴스] Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM</title>
+<link>https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/</link>
+<guid isPermaLink="false">hn-50497155</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, 753B MoE GLM-5.3 NVFP4를 DGX Station 두 대에 나눠 vLLM으로 최대 607.8 tok/s 서빙</description>
+</item>
+<item>
+<title>[뉴스] No AI Slop 선언문</title>
+<link>https://www.slopmanifesto.com/</link>
+<guid isPermaLink="false">gn-37128</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>AIE Code Summit 2026 참가자들이 AI 슬롭에 맞서 사람의 역할을 정리한 No AI Slop 선언문</description>
+</item>
+<item>
+<title>[뉴스] Generative AI uses more energy on non-English text</title>
+<link>https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/</link>
+<guid isPermaLink="false">hn-50441444</guid>
+<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
+<description>미시간대 연구: 생성형 AI는 영어가 아닌 텍스트 처리에 1.4~180배 더 많은 에너지를 씀</description>
+</item>
 <item>
 <title>[논문] SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</title>
 <link>https://arxiv.org/abs/2611.15777</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50453637</guid>
 <pubDate>Thu, 12 Nov 2026 08:00:00 +0900</pubDate>
 <description>Atuin, Claude Code·Codex 등 여러 머신의 에이전트 세션을 하나의 검색·동기화 이력으로 묶는 Threads 공개</description>
-</item>
-<item>
-<title>[논문] Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</title>
-<link>https://arxiv.org/abs/2611.12806</link>
-<guid isPermaLink="false">p-2611.12806</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>piezoresistive·magnetic·visuotactile 센서를 하나의 표현으로 묶는 tactile foundation model LingBot-Touch</description>
-</item>
-<item>
-<title>[논문] Embodied First Exam</title>
-<link>https://arxiv.org/abs/2611.12177</link>
-<guid isPermaLink="false">p-2611.12177</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>코딩 에이전트가 47종 로봇을 직접 제어할 수 있는지 평가하는 1,156개 과제 벤치마크 Embodied First Exam</description>
-</item>
-<item>
-<title>[논문] Training Controllable World Models via Action Influence Maximization</title>
-<link>https://arxiv.org/abs/2610.27387</link>
-<guid isPermaLink="false">p-2610.27387</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>전문가 시연만으로 학습한 world model이 action을 무시하는 문제를 능동적 데이터 수집(AIM)으로 해결 (CoRL 2026)</description>
-</item>
-<item>
-<title>[논문] Toward the Era of Agentic Embodied Intelligence</title>
-<link>https://arxiv.org/abs/2611.09124</link>
-<guid isPermaLink="false">p-2611.09124</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>correction code로 실패 복구를 학습하는 embodied multi-agent 프레임워크 A2-MEAS와 VLA 기반 action model A2-WLA</description>
-</item>
-<item>
-<title>[논문] World In-Context Learning for Agentic Robot Manipulation</title>
-<link>https://arxiv.org/abs/2611.12885</link>
-<guid isPermaLink="false">p-2611.12885</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>시뮬레이터에서 리허설한 피드백을 weight 대신 context에 쌓는 World In-Context Learning(RoboScript)</description>
-</item>
-<item>
-<title>[뉴스] Claude Fable 5.2 and Mythos 5.2</title>
-<link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
-<guid isPermaLink="false">hn-50429068</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 고난도 기술 작업용 Claude Fable 5.2·Mythos 5.2 출시: 코딩·추론·비전 향상, 가격은 입력/출력 100만 토큰당 $8/$40로 인하</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Carbon is now available</title>
-<link>https://deepmind.google/blog/gemini-4-carbon-is-now-available/</link>
-<guid isPermaLink="false">deepmind-gemini-4-carbon-is-now-available</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google, 최상위 frontier 모델 Gemini 4 Carbon을 개발자·기업·소비자에게 공개</description>
-</item>
-<item>
-<title>[뉴스] Gemini Robotics 2.5 accelerates real-world general dexterity</title>
-<link>https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/</link>
-<guid isPermaLink="false">deepmind-gemini-robotics-2-5-accelerates-real-world-physical-intelligence</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind, 가장 강력한 VLA 모델 Gemini Robotics 2.5 공개: dexterity·신뢰성·안전성 향상</description>
-</item>
-<item>
-<title>[뉴스] Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</title>
-<link>https://deepmind.google/blog/introducing-alphaproof-code/</link>
-<guid isPermaLink="false">deepmind-introducing-alphaproof-code</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google DeepMind, 복잡한 소프트웨어를 깊이 검증하는 AlphaProof Code 발표</description>
-</item>
-<item>
-<title>[뉴스] Amazon saves millions by replacing Sonnet 4.6 with Strands Decider</title>
-<link>https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/</link>
-<guid isPermaLink="false">hn-50436640</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Amazon, 내부 티켓 라벨링을 Claude Sonnet 4.6에서 decision model Strands Decider로 바꿔 비용 98% 절감</description>
-</item>
-<item>
-<title>[뉴스] E-means: Outperforming k-means in one-tenth the epochs</title>
-<link>https://e-means.github.io/</link>
-<guid isPermaLink="false">hn-50429734</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>e-means: 미니배치와 EMA를 결합해 Lloyd k-means보다 약 10배 적은 epoch로 같은 테스트 오차에 도달</description>
-</item>
-<item>
-<title>[뉴스] Anthropic launches roadshow for proposed initial public offering</title>
-<link>https://www.anthropic.com/news/roadshow-launch</link>
-<guid isPermaLink="false">anthropic-roadshow-launch</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, IPO 로드쇼 시작: 주당 $70~78, Nasdaq 티커 "ANT"</description>
-</item>
-<item>
-<title>[뉴스] Fireworks AI security breach impacts Notion and their customers</title>
-<link>https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor</link>
-<guid isPermaLink="false">hn-50437106</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI 추론 인프라 Fireworks AI 보안 사고로 Notion AI 채팅 일부가 노출</description>
-</item>
-<item>
-<title>[뉴스] AI usage generates a fragile codebase</title>
-<link>https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/</link>
-<guid isPermaLink="false">hn-50438318</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>"AI 사용이 깨지기 쉬운 코드베이스를 만든다": 전 Meta 엔지니어의 AI 코딩 비판</description>
-</item>
-<item>
-<title>[뉴스] Claude Fable 5.2, Artificial Analysis 지능 지수에서 역대 최고인 65점 기록</title>
-<link>https://artificialanalysis.ai/models/claude-fable-5-2</link>
-<guid isPermaLink="false">gn-36910</guid>
-<pubDate>Wed, 11 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude Fable 5.2, Artificial Analysis Intelligence Index에서 역대 최고 65점</description>
 </item>
 </channel>
 </rss>
