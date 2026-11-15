@@ -1,0 +1,1104 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T03:40:19+09:00",
+  "keywords": [],
+  "failed": [],
+  "items": [
+    {
+      "id": "p-2611.15280",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 1,
+      "ranks": {
+        "arxiv": 1
+      },
+      "published": "2026-11-11T19:10:35+09:00",
+      "title": "Autonomous Trail Racing with a Bicycle Robot",
+      "url": "https://arxiv.org/abs/2611.15280",
+      "image": "https://arxiv.org/html/2611.15280v1/main_compressed.png",
+      "figureUrl": "https://arxiv.org/html/2611.15280",
+      "codeUrl": "https://github.com/rai-opensource/sem_map",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "카메라·LiDAR로 온보드에서 재구성한 semantic elevation map 위에서 자전거 로봇이 산악 트레일을 자율 레이싱",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "산악자전거 트레일 주행은 공중 기동·코너링·미끄럼 복구 같은 다양한 locomotion과 정교한 장면 이해가 함께 필요해 2륜 자율 로봇으로 옮기기 어려움"
+        },
+        {
+          "label": "방법",
+          "text": "트레일을 지형의 semantic layer로 인코딩해 local navigation과 locomotion을 하나의 최적화로 학습하고, frozen vision foundation model+경량 dual-head decoder의 픽셀별 지형 semantics·confidence를 LiDAR와 융합해 AGX Orin에서 30Hz egocentric semantic elevation map을 생성"
+        },
+        {
+          "label": "결과",
+          "text": "UMV 자전거 로봇이 1km 길이 비정형 트레일 전 구간을 최고 5m/s 이상, 평균 3.26m/s로 자율 주행; 시뮬레이션에서 계층형 baseline 대비 실패가 최대 10배 적고 더 빠름. sem_map 코드 공개"
+        }
+      ],
+      "keywords": [
+        "Navigation",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2610.40394",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 2,
+      "ranks": {
+        "hf": 1
+      },
+      "published": "2026-10-30T01:32:59+09:00",
+      "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+      "url": "https://arxiv.org/abs/2610.40394",
+      "image": "https://arxiv.org/html/2610.40394v1/head1_1014_split_rc6.png",
+      "figureUrl": "https://arxiv.org/html/2610.40394",
+      "score": 47,
+      "scoreLabel": "HF 47▲",
+      "oneLine": "대학 수학 교과서 2,118권을 장·명제·증명 구조를 보존한 38만 건 증명 지도 데이터로 변환한 TOME-Math",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "수학 학습 데이터는 보통 고립된 문제-풀이 쌍으로 평탄화돼 원 자료의 커리큘럼 구조와 근거 관계가 사라짐"
+        },
+        {
+          "label": "방법",
+          "text": "교과서를 장 순서, 명제-증명 링크, 의존 참조, 출처를 유지한 구조화 증명 레코드로 변환하고, 이 구조 신호로 과목 간 curriculum learning과 데이터 양·출처 폭에 따른 scaling을 분석"
+        },
+        {
+          "label": "결과",
+          "text": "전체 규모로 fine-tuning 시 held-out 평가와 공개 벤치마크 평균이 base model 대비 16.7%p 상승하며 공개 instruction 데이터 baseline 3종을 모두 능가; 코퍼스 공개 예정"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.14895",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 3,
+      "ranks": {
+        "arxiv": 2
+      },
+      "published": "2026-11-11T10:33:16+09:00",
+      "title": "HeadIO: Body-Frame Heading Decomposition for Neural Inertial Odometry on Head-Mounted Devices",
+      "url": "https://arxiv.org/abs/2611.14895",
+      "image": "https://arxiv.org/html/2611.14895v1/figures/main_figure.png",
+      "figureUrl": "https://arxiv.org/html/2611.14895",
+      "scoreLabel": "arXiv cs.CV",
+      "oneLine": "머리 기울기에 불변인 body-frame heading 분해로 헤드마운트 기기용 neural inertial odometry를 가볍게 개선한 HeadIO",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "IMU만 쓰는 head tracking에서 기존 IO는 yaw-equivariant하지 않은 world frame을 쓰고, body frame 입력은 머리 기울기에 따라 중력·운동 신호가 축 사이로 재분배되는 문제가 있음"
+        },
+        {
+          "label": "방법",
+          "text": "디바이스 자세의 tilt 성분만으로 중력 정렬 성분과 수평 성분을 분리하는 body-frame heading 분해와 bidirectional Mamba backbone을 결합"
+        },
+        {
+          "label": "결과",
+          "text": "헤드마운트 데이터셋 4종에서 평가, 최대 벤치마크 Nymeria에서 equivariant layer 기반 방법 대비 RTE-5s 8.1% 개선(0.260→0.239m)하면서 FLOPs 약 1/3, 파라미터 1/8; Aria 글라스 데이터셋 전부에서 SOTA"
+        }
+      ],
+      "keywords": [
+        "State Estimation",
+        "Localization"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.17163",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 4,
+      "ranks": {
+        "arxiv": 3
+      },
+      "published": "2026-11-13T02:39:43+09:00",
+      "title": "UAV-Flow++: A Unified Suite for Benchmarking and Learning Language-Guided UAV Flight",
+      "url": "https://arxiv.org/abs/2611.17163",
+      "image": "https://arxiv.org/html/2611.17163v1/banner.png",
+      "figureUrl": "https://arxiv.org/html/2611.17163",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "짧은 언어 명령을 연속 비행 동작으로 바꾸는 UAV 과제 Flow와 실비행 3만 궤적 데이터셋, FlowVLA를 함께 제안",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "언어 기반 UAV 내비게이션 연구는 장거리 경로 계획에 치우쳐, 물체 기준의 단거리 비행 기동은 거의 다뤄지지 않음"
+        },
+        {
+          "label": "방법",
+          "text": "자연어 명령·1인칭 영상·상태를 연속 비행 action으로 변환하는 Flow 과제를 정의하고, 실비행 전문가 궤적 30,692개와 시뮬레이션 10,109개의 UAV-Flow 데이터셋을 구축; FlowVLA를 imitation 사전학습 후 Tail-Aware GRPO(TGRPO)로 online 후학습"
+        },
+        {
+          "label": "결과",
+          "text": "held-out 273 에피소드에서 사전학습 FlowVLA 성공률 75.58%(최강 baseline 대비 +6.72%p), TGRPO 후 93.16%; 실내외 실제 UAV에서도 물체 기준 명령을 안정적으로 수행"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.15491",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 5,
+      "ranks": {
+        "arxiv": 5
+      },
+      "published": "2026-11-11T22:53:09+09:00",
+      "title": "What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation",
+      "url": "https://arxiv.org/abs/2611.15491",
+      "image": "https://arxiv.org/html/2611.15491v1/figures/Teaser_1.3.jpg",
+      "figureUrl": "https://arxiv.org/html/2611.15491",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "움직이는 물체 앞에서 VLA가 반응적이려면 무엇이 중요한지 예측·실행 horizon과 실행 방식을 체계적으로 비교한 연구",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "VLA는 미래 action chunk를 예측하는데, 물체가 움직이면 실행 전에 chunk가 낡아버림"
+        },
+        {
+          "label": "방법",
+          "text": "pi0.5로 동적 시뮬레이션 벤치마크 2종과 실제 로봇 과제 3종에서 예측·실행 horizon, 동기/비동기 추론, 지연 감소·궤적 연속성 기법, motion cue와 latent-space RL 적응을 비교"
+        },
+        {
+          "label": "결과",
+          "text": "최적 예측 horizon은 약 1초, 실행 horizon은 체크포인트에 따라 다름; 궤적 연속성을 유지하는 방법이 지연만 줄이는 방법보다 우수하고, 반응성은 정책만큼 실행 파이프라인에 좌우됨"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.14210",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 6,
+      "ranks": {
+        "hf": 2
+      },
+      "published": "2026-11-11T00:32:04+09:00",
+      "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+      "url": "https://arxiv.org/abs/2611.14210",
+      "figureUrl": "https://arxiv.org/html/2611.14210",
+      "codeUrl": "https://github.com/TheQuantumGOAT/Tree-Ising",
+      "codeStars": 14,
+      "score": 45,
+      "scoreLabel": "HF 45▲",
+      "oneLine": "LLM의 BF16 가중치 비트를 Ising(QUBO) 문제로 편집해 gradient 없이 추론 루프를 고치는 Tree-Ising",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "frontier LLM 에이전트가 가중치를 읽고 수정하는 weight-space programming은 Qwen3.5-0.8B 수리에 158턴, 8,970만 토큰이 들 만큼 비쌈"
+        },
+        {
+          "label": "방법",
+          "text": "루프 방향은 약화하고 결론 방향은 강화하며 생산적 토큰 출력은 보존하는 목적함수를 출력 행별 독립 QUBO로 정확히 분해하고, 부호 반전·지수 이동만 허용해 GPU simulated annealing/simulated bifurcation으로 풂"
+        },
+        {
+          "label": "결과",
+          "text": "같은 두 층에서 MATH-500 54.6%로 에이전트 편집(51.7%)을 넘고(base 7.9%), 수정 가중치 13~17%·비트 플립 2.2배 감소, forward 4회와 약 0.9달러 GPU 비용; Qwen3.5-2B GSM8K 21.6%→69.4%"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "Interpretability"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.16472",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 7,
+      "ranks": {
+        "arxiv": 4
+      },
+      "published": "2026-11-12T17:29:56+09:00",
+      "title": "RGB-D SLAM on the Edge: Benchmarking and Profiling RTAB-Map and ORB-SLAM3 on the Raspberry Pi 5",
+      "url": "https://arxiv.org/abs/2611.16472",
+      "image": "https://arxiv.org/html/2611.16472v1/fig_seq_time.png",
+      "figureUrl": "https://arxiv.org/html/2611.16472",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "Raspberry Pi 5에서 RTAB-Map과 ORB-SLAM3 RGB-D SLAM을 해상도별로 벤치마크하고 함수 단위까지 프로파일링",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "GPS 없이 나는 소형 드론은 ARM 엣지 보드에서 SLAM을 돌리지만, 표준 RGB-D SLAM이 이런 하드웨어에서 어떻게 동작하는지에 대한 공개 데이터가 부족함"
+        },
+        {
+          "label": "방법",
+          "text": "TUM RGB-D 6개 시퀀스를 세 해상도로 돌리며 tracking coverage, 궤적 오차, 프레임당 시간, 메모리, CPU 부하, 온도를 기록하고 단계·함수 수준으로 프로파일링"
+        },
+        {
+          "label": "결과",
+          "text": "프론트엔드 RTAB-Map 38~74ms vs ORB-SLAM3 13~45ms, 전체 150~462ms vs 26~62ms; RTAB-Map은 무한히 커지는 pose graph 최적화가 주 비용. 1/4 해상도에선 두 시스템 모두 대부분 tracking을 잃어, 정확도는 coverage와 함께 읽어야 함"
+        }
+      ],
+      "keywords": [
+        "SLAM",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.15844",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 8,
+      "ranks": {
+        "hf": 4
+      },
+      "published": "2026-11-12T03:57:34+09:00",
+      "title": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+      "url": "https://arxiv.org/abs/2611.15844",
+      "image": "https://arxiv.org/html/2611.15844v1/figures/ovb_overview_fig_v9.png",
+      "figureUrl": "https://arxiv.org/html/2611.15844",
+      "codeUrl": "https://github.com/OpenVisionBanana/OpenVisionBanana",
+      "codeStars": 37,
+      "score": 36,
+      "scoreLabel": "HF 36▲",
+      "oneLine": "사전학습 이미지 생성기를 다중 작업 인식 모델로 바꾸는 Vision Banana를 데이터·가중치·코드까지 완전 공개로 재현한 OVB",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "이미지 생성기를 조건부 편집 방식으로 비전 과제에 쓰는 Vision Banana는 데이터·가중치·코드·구현 세부가 비공개"
+        },
+        {
+          "label": "방법",
+          "text": "4B·9B 오픈 가중치 생성기와 공개 데이터 210만~380만 쌍으로 색 인코딩, 프롬프트, 파라미터 적응, 과제 균형 등 설계 선택을 분석하고, 여러 class-color 범례로 분할 후 다수결하는 legend ensembling test-time scaling을 제안"
+        },
+        {
+          "label": "결과",
+          "text": "Cityscapes zero-shot 73.9 mIoU로 Vision Banana(69.9)를 넘고 affine-invariant depth SOTA와 대등; legend ensembling으로 재학습 없이 mIoU 최대 +8.7(Cityscapes)/+15.0(COCO-Object). 데이터 파이프라인·코드·체크포인트 공개"
+        }
+      ],
+      "keywords": [
+        "Multimodal",
+        "Image Generation"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.08318",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "robotics",
+      "rank": 9,
+      "ranks": {
+        "hf": 3
+      },
+      "published": "2026-11-06T02:14:37+09:00",
+      "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.08318",
+      "image": "https://arxiv.org/html/2611.08318v1/teaser_ce6.png",
+      "figureUrl": "https://arxiv.org/html/2611.08318",
+      "score": 21,
+      "scoreLabel": "HF 21▲",
+      "oneLine": "로봇 시뮬레이션 벤치마크의 성공 기준을 자기개선 embodied 에이전트에 노출하면 과제가 아닌 검증기를 학습한다는 분석",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "최근 자기개선 embodied 에이전트 연구들은 벤치마크 성공 기준을 에이전트에 노출(Criteria Exposure)하는데, 이 기준은 언어 지시보다 많은 것을 요구해 점수가 실제 과제 수행을 반영하지 못할 수 있음"
+        },
+        {
+          "label": "방법",
+          "text": "로봇 제어 코드를 생성하는 자기개선 에이전트를 CE 유무로 통제 실험하고, 지시에 충실한 instruction-faithful criteria를 제안"
+        },
+        {
+          "label": "결과",
+          "text": "CE 하에서는 주어진 기준의 성공률이 빠르게 오르지만 지시를 벗어나지 않는 범위에서 기준을 살짝 바꾸면 이점이 사라지고, 습득한 스킬의 과제 간 전이도 낮음; 제안 기준이 생성 프로그램 성능을 더 잘 반영"
+        }
+      ],
+      "keywords": [
+        "Robot Learning",
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.16583",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "spatial",
+      "rank": 10,
+      "ranks": {
+        "arxiv": 6
+      },
+      "published": "2026-11-12T19:15:00+09:00",
+      "title": "ReFineR: Single image to dense point cloud registration at pixel level with point splatting",
+      "url": "https://arxiv.org/abs/2611.16583",
+      "image": "https://arxiv.org/html/2611.16583v1/images/pipeline.svg",
+      "figureUrl": "https://arxiv.org/html/2611.16583",
+      "scoreLabel": "arXiv cs.CV",
+      "oneLine": "단일 이미지와 대략적 포즈로부터 point splatting 기반 analysis-by-synthesis로 사전 구축 점군에 픽셀 수준 정합하는 ReFineR",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "로봇 플랫폼에서는 캘리브레이션 후에도 시간 비동기·진동·점군 재구성 오차로 수 픽셀 재투영 오차가 남아, 중간 거리에서 데시미터급 불일치가 생기고 cross-modal supervision·텍스처 매핑·라벨 전이에 악영향"
+        },
+        {
+          "label": "방법",
+          "text": "미분 가능한 point splatting rasterization과 smooth Gradient Orientation Measure(GOM)로 카메라 포즈를 반복 정제하는 오프라인 image-to-point cloud 정합 프레임워크; 최적화 전에 점군 rescale factor를 자동 추정"
+        },
+        {
+          "label": "결과",
+          "text": "다양한 출처의 수동 캘리브레이션 이미지 데이터셋에서 평가했으며, 단일 scale-invariant 정식화로 폭넓은 시나리오에서 강건한 정제가 가능함을 보임"
+        }
+      ],
+      "keywords": [
+        "LiDAR",
+        "Localization"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.13001",
+      "kind": "paper",
+      "source": "hf",
+      "sources": [
+        "hf"
+      ],
+      "lane": "trending",
+      "rank": 11,
+      "ranks": {
+        "hf": 5
+      },
+      "published": "2026-11-09T01:26:20+09:00",
+      "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+      "url": "https://arxiv.org/abs/2611.13001",
+      "image": "https://arxiv.org/html/2611.13001v1/otbench_overview.svg",
+      "figureUrl": "https://arxiv.org/html/2611.13001",
+      "codeUrl": "https://github.com/limix-ldm-ai/OTBench",
+      "codeStars": 2,
+      "score": 40,
+      "scoreLabel": "HF 40▲",
+      "oneLine": "테이블 데이터의 생성·결측 대치·예측을 같은 분할과 계약으로 함께 평가하는 One Table Benchmark",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "같은 테이블 분포의 다른 측면을 묻는 생성·대치·예측이 따로 평가돼, 공유 능력과 학습 목표 간 상호작용, 단일 모델의 가능성이 불분명함"
+        },
+        {
+          "label": "방법",
+          "text": "56개 데이터셋, 46개 방법, 20개 능력 축을 정렬된 분할과 명시적 task contract로 구성하고, 5개 backbone을 7가지 목표 조합으로 학습해 비교"
+        },
+        {
+          "label": "결과",
+          "text": "자신의 목표를 포함할 때 이득이 가장 크고 생성 목표가 가장 넓은 보조 효과를 보임; 일부 generalist는 utility에서 specialist 조합을 넘지만 fidelity는 여전히 specialization이 우세"
+        }
+      ],
+      "keywords": [
+        "Benchmark"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.14969",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 12,
+      "ranks": {
+        "arxiv": 7
+      },
+      "published": "2026-11-11T12:28:58+09:00",
+      "title": "Scaling VLA Serving Under Robotic Execution Constraints",
+      "url": "https://arxiv.org/abs/2611.14969",
+      "image": "https://arxiv.org/html/2611.14969v1/production-teaser-image.png",
+      "figureUrl": "https://arxiv.org/html/2611.14969",
+      "codeUrl": "https://github.com/X-Square-Robot/xinfer",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "수백 대 VLA 로봇 운영 환경에서 물리 실행 제약을 지키며 GPU 효율을 높이는 프로덕션 VLA 서빙 시스템 XInfer",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "VLA 기반 로봇 수백 대가 실제 환경에서 운영되면서 fleet 단위의 효율적 추론 서빙이 시급해짐"
+        },
+        {
+          "label": "방법",
+          "text": "이질적인 VLA 연산과 로봇 실행의 변하는 응답 요구를 함께 조율해, 간섭을 관리하며 병렬성을 활용하고 시간 임계 피드백을 보호"
+        },
+        {
+          "label": "결과",
+          "text": "VLA 모델 3종과 프로덕션 기반 워크로드에서 물리 실행 제약 하 effective robot capacity를 기존 SOTA 대비 1.26~3.75배 달성; 구현 공개"
+        }
+      ],
+      "keywords": [
+        "VLA",
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.16422",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 13,
+      "ranks": {
+        "arxiv": 8
+      },
+      "published": "2026-11-12T16:31:42+09:00",
+      "title": "BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU",
+      "url": "https://arxiv.org/abs/2611.16422",
+      "image": "https://arxiv.org/html/2611.16422v1/teaser.png",
+      "figureUrl": "https://arxiv.org/html/2611.16422",
+      "codeUrl": "https://github.com/fuyichen0725/blinkmimic",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "world model 역전파 기반 휴머노이드 모션 트래커 학습을 RTX 4090 한 장에서 3.4분으로 줄인 BlinkMimic",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "휴머노이드 전신 모션 트래킹 정책을 모션 라이브러리 전체에 대해 학습하는 데 보통 수 시간의 GPU 시간이 듦"
+        },
+        {
+          "label": "방법",
+          "text": "SuperMimic·InstantTrack을 바탕으로 학습 시간을 반복 비용·적합 반복 수·마지막 실패 제거 반복 수로 나누고, 감소하는 step size, 배포 조건 실패 기반 reset, 반복 전체 GPU graph capture를 추가"
+        },
+        {
+          "label": "결과",
+          "text": "시뮬레이션 Unitree G1에서 LAFAN1 40개 클립 전체를 단일 정책으로 3.4분 만에 학습(3 seed 평균); 구성 요소별 leave-one-out ablation과 코드 공개"
+        }
+      ],
+      "keywords": [
+        "Humanoid",
+        "Robot Learning"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "p-2611.15928",
+      "kind": "paper",
+      "source": "arxiv",
+      "sources": [
+        "arxiv"
+      ],
+      "lane": "robotics",
+      "rank": 14,
+      "ranks": {
+        "arxiv": 9
+      },
+      "published": "2026-11-12T04:23:36+09:00",
+      "title": "Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority",
+      "url": "https://arxiv.org/abs/2611.15928",
+      "image": "https://arxiv.org/html/2611.15928v1/Figures/robotandgantry.png",
+      "figureUrl": "https://arxiv.org/html/2611.15928",
+      "scoreLabel": "arXiv cs.RO",
+      "oneLine": "실물 크기 휴머노이드 Unitree H1-2의 런타임 안전 계층과 비상정지 배포 경험, 단계적 힘 권한 부여 제안",
+      "bullets": [
+        {
+          "label": "문제",
+          "text": "전기차 배터리 해체 같은 위험 작업에 실물 크기 휴머노이드가 검토되지만, 비상정지 자체가 위험을 키울 수 있음"
+        },
+        {
+          "label": "방법",
+          "text": "제어 소프트웨어와 분리된 안전 계층이 관절 위치·속도·토크 한계를 강제하고 상태 추정 지연이나 하드와이어 e-stop 시 정지하는 오픈소스 autonomy stack을 배포하고 밀기 실험으로 검증"
+        },
+        {
+          "label": "결과",
+          "text": "MPC 하체 제어기는 균형을 잃으면 회복하지 못해 매번 e-stop이 필요했고, e-stop은 균형 제어를 끊어 로봇이 넘어짐; 조작용 한계가 보행 중 초과되기도 해, 책임 주체를 둔 단계적 force authority 부여를 주장"
+        }
+      ],
+      "keywords": [
+        "Humanoid",
+        "AI Safety"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "hn-50507303",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 1,
+      "ranks": {
+        "hn": 1
+      },
+      "published": "2026-11-15T23:46:58+09:00",
+      "title": "All AI-generated code should be Open Source",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50507303",
+      "score": 640,
+      "scoreLabel": "640P",
+      "oneLine": "AI가 생성한 코드는 모두 오픈소스로 공개해야 한다는 주장",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI 모델이 GNU 이후의 오픈소스 코드와 CC 라이선스의 Stack Overflow를 허락·출처 표기 없이 학습했으므로, AI 생성 코드를 독점하는 것은 '라이선스 세탁'이라고 비판"
+        },
+        {
+          "label": "",
+          "text": "미국에선 비인간 저작물에 저작권이 인정되지 않는 점(원숭이 셀카 사건)을 근거로, 사람 기여가 프롬프트뿐인 코드는 오픈소스 라이선스나 CC0로 공개하자고 제안"
+        }
+      ],
+      "keywords": [
+        "AI Coding",
+        "Open Source"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37068",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 2,
+      "ranks": {
+        "geeknews": 5
+      },
+      "published": "2026-11-13T04:43:36+09:00",
+      "title": "Gemini 4 Hydrogen - 일상적인 코딩과 에이전트 작업을 위한 빠른 실행 모델",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "discussUrl": "https://news.hada.io/topic?id=37068",
+      "score": 14,
+      "scoreLabel": "GN 14P",
+      "oneLine": "Google, 일상 코딩·에이전트 작업용 빠른 실행 모델 Gemini 4 Hydrogen 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Artificial Analysis Intelligence Index 51점으로 Argon(50점)을 넘고, 100만 토큰 컨텍스트 전체에 입력 1.50달러/출력 7.50달러(100만 토큰당) 단일 요금"
+        },
+        {
+          "label": "",
+          "text": "Gemini 3.8 Flash 대비 작업 완료 2.5배 빠르며, Antigravity Orchestrator가 Carbon과 Hydrogen을 자동 전환해 Terminal-Bench 4.0에서 할당량 24%, 완료 시간 19% 절감"
+        }
+      ],
+      "keywords": [
+        "LLM",
+        "Coding Agents"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37180",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 3,
+      "ranks": {
+        "geeknews": 11
+      },
+      "published": "2026-11-15T08:34:39+09:00",
+      "title": "OpenAI, 범용 모델이 로봇을 제어하기 시작하면서 로보틱스 팀 해체",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "discussUrl": "https://news.hada.io/topic?id=37180",
+      "score": 1,
+      "scoreLabel": "GN 1P",
+      "oneLine": "OpenAI, 범용 모델이 로봇을 직접 제어하기 시작하자 독립 로보틱스 팀 해체",
+      "bullets": [
+        {
+          "label": "",
+          "text": "인력을 기존 연구·응용 조직으로 재배치하며, GPT-6 Astra 등 범용 모델을 로봇에 직접 적용할 수 있다는 발견이 계기; Nvidia 연구에서 Astra 기반 에이전트는 시뮬레이션 조작 벤치마크 74.8%로 로봇 특화 모델(51.0%)을 상회"
+        },
+        {
+          "label": "",
+          "text": "전문가들은 여전히 현장 배치 데이터와 오프라인으로 로봇 내부에서 도는 소형 특화 모델이 필요하다고 지적"
+        }
+      ],
+      "keywords": [
+        "Robot Learning",
+        "OpenAI"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "hn-50506376",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 4,
+      "ranks": {
+        "hn": 2
+      },
+      "published": "2026-11-15T21:14:06+09:00",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "discussUrl": "https://news.ycombinator.com/item?id=50506376",
+      "score": 136,
+      "scoreLabel": "136P",
+      "oneLine": "Sebastian Raschka의 LLM positional embedding 해설: 고전 방식부터 RoPE, 2026년 오픈 모델의 선택까지",
+      "bullets": [
+        {
+          "label": "",
+          "text": "시각 예제, 약간의 수학, 작은 PyTorch 구현으로 토큰 위치 정보를 인코딩하는 방법과 RoPE의 동작을 설명"
+        },
+        {
+          "label": "",
+          "text": "최신 오픈 가중치 아키텍처들이 위치 인코딩을 어떻게 변형하거나 생략하는지 정리하며, 곧 나올 LLM 아키텍처 트렌드 글의 기초편"
+        }
+      ],
+      "keywords": [
+        "LLM"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37100",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 5,
+      "ranks": {
+        "geeknews": 6
+      },
+      "published": "2026-11-13T15:35:26+09:00",
+      "title": "Edge0-145B - 개인 컴퓨터에서 실행하는 1,450억 매개변수 AI 모델",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "discussUrl": "https://news.hada.io/topic?id=37100",
+      "score": 7,
+      "scoreLabel": "GN 7P",
+      "oneLine": "Edge0, 개인 PC의 GPU 한 장에서 돌아가는 145B 오픈 가중치 모델과 로컬 추론 엔진 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Qwen3.8-Flash-Next 기반 145B/120B 가중치와 추론 엔진·배포 도구를 공개했으며, 자체 측정에서 RTX 5090 D 24GB·Q3_K 빌드로 초당 약 100토큰"
+        },
+        {
+          "label": "",
+          "text": "자체 평가 DeepSWE 1.1 64.6%, Terminal-Bench 2.1 86.52%로 계획·코드 작성·실행·디버깅을 잇는 로컬 에이전트 작업을 지원"
+        }
+      ],
+      "keywords": [
+        "Open Weights",
+        "On-Device AI"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37153",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 6,
+      "ranks": {
+        "geeknews": 3
+      },
+      "published": "2026-11-14T17:33:02+09:00",
+      "title": "ggml v1.0.0 - 폐기 예정 API 제거, FP8 지원과 백엔드 성능 개선",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "discussUrl": "https://news.hada.io/topic?id=37153",
+      "score": 7,
+      "scoreLabel": "GN 7P",
+      "oneLine": "llama.cpp의 텐서 라이브러리 ggml 1.0.0 출시: 폐기 API 제거, FP8 지원, 백엔드 성능 개선",
+      "bullets": [
+        {
+          "label": "",
+          "text": "폐기 예정 공개 API와 DIAG_MASK 연산을 제거하고 RPC 프로토콜을 v9로 올려 구버전 연결을 거부하므로 클라이언트·서버 동시 업데이트 필요"
+        },
+        {
+          "label": "",
+          "text": "CUDA OCP FP8과 소배치 양자화 행렬곱, Metal MoE 라우팅 통합, 여러 백엔드의 FlashAttention·MoE 경로 확장"
+        }
+      ],
+      "keywords": [
+        "On-Device AI",
+        "AI Infra"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37183",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 7,
+      "ranks": {
+        "geeknews": 2
+      },
+      "published": "2026-11-15T09:50:01+09:00",
+      "title": "ChatGPT 내 비즈니스 기능 소개",
+      "url": "https://openai.com/ko-KR/index/introducing-businesses-chatgpt/",
+      "discussUrl": "https://news.hada.io/topic?id=37183",
+      "score": 7,
+      "scoreLabel": "GN 7P",
+      "oneLine": "OpenAI, 기업이 ChatGPT에서 비즈니스 정보를 관리하고 고객과 소통하는 비즈니스 기능 베타 공개",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Business Hub에서 소유권을 인증하고 가격·재고를 담은 제품 피드를 관리하며, 언급 횟수·클릭·인용 주제 등 집계 인사이트를 확인(개별 대화는 비공유)"
+        },
+        {
+          "label": "",
+          "text": "Business Agent로 고객 질문 응대와 제품 비교를 지원하고, 유료 홍보나 ChatGPT 광고의 연결 대상으로도 설정 가능; 주간 사용자 12억 명과 기업 연결이 목표"
+        }
+      ],
+      "keywords": [
+        "OpenAI",
+        "AI Industry"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "hn-50481321",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 8,
+      "ranks": {
+        "hn": 3
+      },
+      "published": "2026-11-13T19:26:01+09:00",
+      "title": "What thousands of conversations look like inside a language model",
+      "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+      "discussUrl": "https://news.ycombinator.com/item?id=50481321",
+      "score": 75,
+      "scoreLabel": "75P",
+      "oneLine": "Qwen3-1.7B의 residual stream으로 수천 개 대화의 내부 상태를 지도로 그린 인터랙티브 아틀라스",
+      "bullets": [
+        {
+          "label": "",
+          "text": "100개 주제의 영어·중국어·독일어·크로아티아어 질의응답과 코딩 예제를 만들어 각 토큰 위치의 2,048차원 residual stream 벡터를 기록·비교"
+        },
+        {
+          "label": "",
+          "text": "151,936개 어휘 임베딩부터 대화 진행에 따른 궤적까지 PCA로 3D 시각화해, 비슷한 주제나 다른 언어의 같은 아이디어가 어디에 모이는지 탐색"
+        }
+      ],
+      "keywords": [
+        "Interpretability"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37031",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 9,
+      "ranks": {
+        "geeknews": 8
+      },
+      "published": "2026-11-12T12:33:08+09:00",
+      "title": "더 나은, 더 효율적인 RAG를 위한 빠른 검색",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "discussUrl": "https://news.hada.io/topic?id=37031",
+      "score": 10,
+      "scoreLabel": "GN 10P",
+      "oneLine": "Apple, 실제 질의 분포에 맞춰 작은 신경망을 학습해 RAG용 최대 내적 검색(MIPS)을 가속",
+      "bullets": [
+        {
+          "label": "",
+          "text": "SupportNet은 클러스터별 최고 일치 점수를 예측해 질의를 더 적합한 클러스터로 보내고, KeyNet은 질의를 최적 키에 가까운 벡터로 변환해 기존 IVF 인덱스에 전달"
+        },
+        {
+          "label": "",
+          "text": "Natural Questions에서 질의 변환 시간을 포함해 99% 재현율 도달 시간을 최대 약 8배 단축"
+        }
+      ],
+      "keywords": [
+        "RAG"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37077",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 10,
+      "ranks": {
+        "geeknews": 9
+      },
+      "published": "2026-11-13T06:38:41+09:00",
+      "title": "Google Antigravity에 Orchestrator 추가, 코딩 중 Carbon과 Hydrogen 자동 전환",
+      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+      "discussUrl": "https://news.hada.io/topic?id=37077",
+      "score": 8,
+      "scoreLabel": "GN 8P",
+      "oneLine": "Google Antigravity에 Hydrogen과 작업 단계별로 Carbon·Hydrogen을 자동 전환하는 Orchestrator 추가",
+      "bullets": [
+        {
+          "label": "",
+          "text": "Carbon이 계획을 세우고 Hydrogen이 코드 수정·테스트를 이어받는 식으로, Terminal-Bench 4.1에서 Carbon 단독에 가까운 성공률에 할당량 24% 절감·19% 빠른 완료"
+        },
+        {
+          "label": "",
+          "text": "Hydrogen은 Google AI Pro·Ultra, Orchestrator는 Ultra 구독자에게 순차 제공"
+        }
+      ],
+      "keywords": [
+        "Coding Agents"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37098",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 11,
+      "ranks": {
+        "geeknews": 10
+      },
+      "published": "2026-11-13T14:37:19+09:00",
+      "title": "Foundation Models framework - 온디바이스와 클라우드 LLM을 통합하는 Swift API",
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "discussUrl": "https://news.hada.io/topic?id=37098",
+      "score": 4,
+      "scoreLabel": "GN 4P",
+      "oneLine": "Apple Foundation Models framework: 온디바이스·Private Cloud Compute 모델과 Claude·Gemini를 하나의 Swift API로",
+      "bullets": [
+        {
+          "label": "",
+          "text": "구조화 응답 생성과 도구 호출, 텍스트+이미지 프롬프트를 지원하고, Dynamic Profiles로 대화 기록을 유지한 채 모델·도구·지침을 전환"
+        },
+        {
+          "label": "",
+          "text": "Small Business Program 가입 등 조건을 충족한 개발자에게 Private Cloud Compute의 Apple 모델을 클라우드 API 비용 없이 제공"
+        }
+      ],
+      "keywords": [
+        "On-Device AI",
+        "LLM"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37150",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 12,
+      "ranks": {
+        "geeknews": 1
+      },
+      "published": "2026-11-14T15:37:18+09:00",
+      "title": "AI가 코딩을 해결했다면, 왜 내 소프트웨어는 여전히 그대로일까? [영상]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "discussUrl": "https://news.hada.io/topic?id=37150",
+      "score": 9,
+      "scoreLabel": "GN 9P",
+      "oneLine": "Jonathan Blow: AI가 코딩을 해결했다면 왜 소프트웨어 품질은 그대로인가",
+      "bullets": [
+        {
+          "label": "",
+          "text": "AI의 코드 생성 속도와 비용은 인정하지만 복잡한 소프트웨어의 품질·사용자 경험이 개선된 증거는 없으며, 오래된 설계 위에 더 많은 코드를 쌓으면 복잡성이 악화될 수 있다고 지적"
+        },
+        {
+          "label": "",
+          "text": "AI 생산성은 생성 코드량이 아니라 실제 제품 기능과 품질 향상으로 검증해야 한다고 주장"
+        }
+      ],
+      "keywords": [
+        "AI Coding"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "hn-50503930",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 13,
+      "ranks": {
+        "hn": 5
+      },
+      "published": "2026-11-15T13:09:11+09:00",
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "discussUrl": "https://news.ycombinator.com/item?id=50503930",
+      "score": 46,
+      "scoreLabel": "46P",
+      "oneLine": "Show HN: 브라우저 자동화의 토큰 낭비와 왕복 지연을 줄이는 Playwright 기반 MCP 서버 Turbo-Browser-MCP",
+      "bullets": [
+        {
+          "label": "",
+          "text": "25~33개 세분화된 브라우저 primitive를 delta DOM 스냅샷, 단일 턴 폼 채우기(React/Shadow DOM/iframe), 디스크 직접 업로드 등 10개 배치 도구로 통합"
+        },
+        {
+          "label": "",
+          "text": "병렬 탭 세션, 네트워크 차단 프리셋, 기본 human-in-the-loop Submit guard 제공"
+        }
+      ],
+      "keywords": [
+        "MCP",
+        "Computer Use"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "hn-50506940",
+      "kind": "news",
+      "source": "hn",
+      "sources": [
+        "hn"
+      ],
+      "rank": 14,
+      "ranks": {
+        "hn": 4
+      },
+      "published": "2026-11-15T22:50:51+09:00",
+      "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+      "url": "https://github.com/db-branch/db-branch",
+      "discussUrl": "https://news.ycombinator.com/item?id=50506940",
+      "score": 9,
+      "scoreLabel": "9P",
+      "oneLine": "Show HN: AI 에이전트와 CI를 위해 ZFS clone으로 수초 만에 DB 브랜치를 만드는 db-branch",
+      "bullets": [
+        {
+          "label": "",
+          "text": "MySQL·PostgreSQL 대용량 DB를 복사 없이 copy-on-write 브랜치로 만들어 마이그레이션 테스트, AI 에이전트 실험, PR별 DB 사본에 활용"
+        },
+        {
+          "label": "",
+          "text": "셀프호스팅, Apache-2.0, 현재 베타"
+        }
+      ],
+      "keywords": [
+        "Agent Tools"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37203",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 15,
+      "ranks": {
+        "geeknews": 4
+      },
+      "published": "2026-11-15T22:31:35+09:00",
+      "title": "Show GN: Agent Standup - 내 Claude Code·Codex 세션을 한국어 화상회의로 보여주는 도구",
+      "url": "https://news.hada.io/topic?id=37203",
+      "discussUrl": "https://news.hada.io/topic?id=37203",
+      "score": 1,
+      "scoreLabel": "GN 1P",
+      "oneLine": "Show GN: 로컬 Claude Code·Codex 세션을 실시간 화상회의 형태로 보여주는 Agent Standup",
+      "bullets": [
+        {
+          "label": "",
+          "text": "에이전트마다 캐릭터가 카메라에 나오고, 작업 중인 에이전트는 명령 출력·diff·테스트를 화면 공유하며 승인 대기 에이전트는 손을 듦; 서브에이전트 위임 관계도 표시"
+        },
+        {
+          "label": "",
+          "text": "1.47부터 에이전트 발화를 한국어로 번역해 로컬 TTS(Supertonic 3)로 읽어주는 한국어 회의 지원"
+        }
+      ],
+      "keywords": [
+        "Coding Agents",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    },
+    {
+      "id": "gn-37197",
+      "kind": "news",
+      "source": "geeknews",
+      "sources": [
+        "geeknews"
+      ],
+      "rank": 16,
+      "ranks": {
+        "geeknews": 7
+      },
+      "published": "2026-11-15T17:59:25+09:00",
+      "title": "Show GN: 외부 의존성 없이 KERNEL32.dll만 쓰는 순정 C11 윈도우 로컬 에이전트 공구함 (5KB CLI · 69.4 µs MCP)",
+      "url": "https://news.hada.io/topic?id=37197",
+      "discussUrl": "https://news.hada.io/topic?id=37197",
+      "score": 1,
+      "scoreLabel": "GN 1P",
+      "oneLine": "Show GN: 외부 의존성 없이 KERNEL32.dll만 쓰는 순정 C11 Windows 로컬 에이전트 도구 모음",
+      "bullets": [
+        {
+          "label": "",
+          "text": "무의존성 초경량 CLI 템플릿과 Named Pipe IPC·MCP stdio 어댑터(61KB)를 공개"
+        },
+        {
+          "label": "",
+          "text": "자체 측정 파이프 왕복 p50 30µs, MCP 도구 호출 p50 69.4µs, 2,000만 건 soak 테스트에서 거부 0건"
+        }
+      ],
+      "keywords": [
+        "MCP",
+        "Agent Tools"
+      ],
+      "addedAt": "2026-11-16T03:40:19+09:00"
+    }
+  ]
+}
