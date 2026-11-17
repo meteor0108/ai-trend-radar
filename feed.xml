@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 17 Nov 2026 03:39:54 +0900</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 03:40:20 +0900</lastBuildDate>
+<item>
+<title>[논문] ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
+<link>https://arxiv.org/abs/2611.21607</link>
+<guid isPermaLink="false">p-2611.21607</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>552B DeepSeek-V4.1-Flash 백본을 action DiT에 연결해 VLA 백본 크기를 2B~552B까지 체계적으로 비교한 ScaleVLA</description>
+</item>
+<item>
+<title>[논문] Polygraph: Large-Scale Multi-Session Trajectory Optimization using Pose Graphs</title>
+<link>https://arxiv.org/abs/2611.21163</link>
+<guid isPermaLink="false">p-2611.21163</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>여러 세션의 VO/VIO 궤적을 지도 없이 온라인으로 하나의 일관된 pose graph로 묶는 Polygraph</description>
+</item>
+<item>
+<title>[논문] OrthoMark: Place Recognition with Point-Anchored Orthographic Height Mark</title>
+<link>https://arxiv.org/abs/2611.20570</link>
+<guid isPermaLink="false">p-2611.20570</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>BEV 스펙트럼 검색과 point-anchored height mask 검증으로 학습 없이 LiDAR place recognition을 하는 OrthoMark</description>
+</item>
+<item>
+<title>[논문] Sage S2.1 Flash Technical Report</title>
+<link>https://arxiv.org/abs/2611.21072</link>
+<guid isPermaLink="false">p-2611.21072</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>과학 데이터 모달리티와 에이전트 환경 학습을 결합한 320B MoE 범용 모델 Sage Flash 기술 보고서</description>
+</item>
+<item>
+<title>[논문] RoboKit: Accelerating Parallel Differentiable Optimization for Robot Learning</title>
+<link>https://arxiv.org/abs/2611.20185</link>
+<guid isPermaLink="false">p-2611.20185</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>GPU 병렬 미분가능 최적화로 로봇 학습을 가속하는 범용 툴킷 RoboKit (CoRL 2026)</description>
+</item>
+<item>
+<title>[뉴스] Introducing GPT-6.2 Astra and Sol</title>
+<link>https://openai.com/index/introducing-gpt-6-2-astra-sol</link>
+<guid isPermaLink="false">openai-introducing-gpt-6-2-astra-sol</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 프런티어 모델 GPT-6.2 Astra와 효율형 GPT-6.2 Sol 공개</description>
+</item>
+<item>
+<title>[뉴스] Qwen4-Max - 네이티브 비전과 100만 토큰 컨텍스트를 갖춘 장기 작업용 AI 모델</title>
+<link>https://qwen.ai/blog?id=qwen4-max</link>
+<guid isPermaLink="false">gn-37262</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>Alibaba, 네이티브 비전과 100만 토큰 컨텍스트를 갖춘 장기 작업용 Qwen4-Max 공개</description>
+</item>
+<item>
+<title>[뉴스] How the Claude Code team thinks about verification</title>
+<link>https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/</link>
+<guid isPermaLink="false">hn-50529612</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Code 팀이 코딩 에이전트의 작업을 증거로 검증하는 방법</description>
+</item>
+<item>
+<title>[뉴스] What is the best harness for each model?</title>
+<link>https://runta.com/blog/introducing-frontierharness-eval-v1-1/</link>
+<guid isPermaLink="false">hn-50532191</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>22개 하네스×5개 모델 대규모 평가: 모델을 바꾸면 하네스도 바꿔야 한다</description>
+</item>
+<item>
+<title>[뉴스] Windows 11 is collecting data on which coding agents and developer tools you use</title>
+<link>https://xusheng.dev/posts/windows-coding-agent-telemetry/</link>
+<guid isPermaLink="false">hn-50524736</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>Windows 11이 사용 중인 코딩 에이전트와 개발 도구 정보를 수집하고 있다는 역분석</description>
+</item>
+<item>
+<title>[뉴스] Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents</title>
+<link>https://blogs.nvidia.com/blog/ian-buck-sc26/</link>
+<guid isPermaLink="false">nvidia-ian-buck-sc26</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA, SC26에서 과학용 에이전트 툴킷 Nemotron for Science와 Rubin HPC GPU 발표</description>
+</item>
+<item>
+<title>[뉴스] 젠슨 황, Nvidia CEO 복귀를 위해 실리콘밸리 측근들과 논의 중</title>
+<link>https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1</link>
+<guid isPermaLink="false">gn-37254</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>사임한 젠슨 황, 실리콘밸리 측근들과 Nvidia CEO 복귀를 논의 중</description>
+</item>
+<item>
+<title>[뉴스] Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns</title>
+<link>https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns</link>
+<guid isPermaLink="false">hn-50531751</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>Baidu·Xiaomi CEO, AI 투자와 실제 수익 사이 격차 확대를 경고</description>
+</item>
+<item>
+<title>[뉴스] OpenCode Browse</title>
+<link>https://opencode.ai/product/browse</link>
+<guid isPermaLink="false">hn-50523459</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenCode Browse: 에이전트가 사용자의 실제 브라우저를 쓰게 하는 MCP 서버·Chromium 확장</description>
+</item>
+<item>
+<title>[뉴스] Modern Web Guidance 1.0 - 코딩 에이전트에 최신 웹 개발 지침을 제공하는 스킬 모음</title>
+<link>https://developer.chrome.com/blog/modern-web-guidance-v1?hl=ko</link>
+<guid isPermaLink="false">gn-37324</guid>
+<pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
+<description>Chrome팀, 코딩 에이전트에 최신 웹 개발 지침을 제공하는 Modern Web Guidance 1.0 출시</description>
+</item>
 <item>
 <title>[논문] Envisioning Agentic Robotics: A New Era of Robotic Systems</title>
 <link>https://arxiv.org/abs/2611.18359</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50441444</guid>
 <pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
 <description>미시간대 연구: 생성형 AI는 영어가 아닌 텍스트 처리에 1.4~180배 더 많은 에너지를 씀</description>
-</item>
-<item>
-<title>[논문] SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</title>
-<link>https://arxiv.org/abs/2611.15777</link>
-<guid isPermaLink="false">p-2611.15777</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>System One(빠른 단답형 결정) 모델의 능력 스펙트럼과 결정 신뢰성을 11개 도메인에서 평가하는 벤치마크</description>
-</item>
-<item>
-<title>[논문] Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors</title>
-<link>https://arxiv.org/abs/2611.17060</link>
-<guid isPermaLink="false">p-2611.17060</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>metric-scale 3D 스캔과 egocentric 행동 기록을 함께 수집해 physical AI용 환경·행동 데이터를 확장하는 데이터셋</description>
-</item>
-<item>
-<title>[논문] QVS-LIVO RiskMap: Health- and Information-Aware View Selection for Multi-Camera LIVO and Off-Road Risk Mapping</title>
-<link>https://arxiv.org/abs/2611.16205</link>
-<guid isPermaLink="false">p-2611.16205</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>오프로드에서 카메라 품질을 따져 한 시점만 골라 LiDAR-inertial 상태 추정을 보정하고 위험 지도를 만드는 LIVO 시스템</description>
-</item>
-<item>
-<title>[논문] BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model</title>
-<link>https://arxiv.org/abs/2611.14815</link>
-<guid isPermaLink="false">p-2611.14815</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>원근 영상과 BEV 영상을 함께 생성해 주변 차량 움직임까지 예측하는 autoregressive driving world model</description>
-</item>
-<item>
-<title>[논문] Kosmo-GFM: A Production-Ready Geometry Foundation Model</title>
-<link>https://arxiv.org/abs/2611.16840</link>
-<guid isPermaLink="false">p-2611.16840</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>geometry foundation model, pose 최적화 엔진, 재구성 기반 합성 감독을 결합한 실사용 지향 장면 재구성 시스템</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Hydrogen and Orchestrator</title>
-<link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
-<guid isPermaLink="false">hn-50472260</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google Antigravity에 Gemini 4 Hydrogen과 Carbon·Hydrogen을 작업 단계별로 자동 전환하는 Orchestrator 추가</description>
-</item>
-<item>
-<title>[뉴스] Edge0-145B: Frontier AI Capabilities on Your Own Computer</title>
-<link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
-<guid isPermaLink="false">hn-50475713</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>145B 파라미터 on-device 오픈소스 모델 Edge0-145B·120B와 추론 프레임워크 공개</description>
-</item>
-<item>
-<title>[뉴스] AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems</title>
-<link>https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths</link>
-<guid isPermaLink="false">hn-50486748</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude가 Gödel의 속기 노트 1,009쪽을 해독·요약해 알려지지 않은 정리 수백 개를 드러냄</description>
-</item>
-<item>
-<title>[뉴스] OpenAI disbands its robotics team as its general models start running robots</title>
-<link>https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/</link>
-<guid isPermaLink="false">hn-50487184</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI가 독립 로보틱스 팀을 해체하고 연구원들을 본 연구 조직과 Applied 조직으로 재배치</description>
-</item>
-<item>
-<title>[뉴스] Introducing ChatGPT Wallet</title>
-<link>https://openai.com/index/introducing-chatgpt-wallet</link>
-<guid isPermaLink="false">openai-introducing-chatgpt-wallet</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>ChatGPT Work·Codex·dots의 에이전트가 사용자 승인과 기존 카드 보호 아래 결제를 완료하는 ChatGPT Wallet 공개</description>
-</item>
-<item>
-<title>[뉴스] Foundation Models framework</title>
-<link>https://developer.apple.com/foundation-models-framework/</link>
-<guid isPermaLink="false">hn-50474361</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>Apple Foundation Models framework가 온디바이스 모델뿐 아니라 Claude·Gemini 등 서버 모델까지 같은 Swift API로 지원</description>
-</item>
-<item>
-<title>[뉴스] Nvidia employees petition to bring back Jensen Huang</title>
-<link>https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/</link>
-<guid isPermaLink="false">hn-50477231</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA 직원들이 사임한 Jensen Huang의 복귀를 요구하는 내부 청원</description>
-</item>
-<item>
-<title>[뉴스] Elevated errors on claude.ai, Claude Code, and platform.claude.com</title>
-<link>https://status.claude.com/incidents/nn11wk485zfn</link>
-<guid isPermaLink="false">hn-50481187</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>claude.ai·Claude Code·Claude Console·Cowork에서 인증 관련 오류 장애 발생 후 복구</description>
-</item>
-<item>
-<title>[뉴스] After 600 experiments, here's what I discovered about JEPA world models</title>
-<link>https://haddyalchaer.com/jepa</link>
-<guid isPermaLink="false">hn-50487185</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>JEPA world model LeWM으로 600회 실험한 결과, 학습 분포 경로에서는 예측기가 실제 물리 시뮬레이터만큼 좋았다는 분석</description>
-</item>
-<item>
-<title>[뉴스] Why is Google cutting off Search from AI-free schools? Here are some theories</title>
-<link>https://text.npr.org/nx-s1-6029408</link>
-<guid isPermaLink="false">hn-50484960</guid>
-<pubDate>Sat, 14 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google이 AI Overviews를 끄려는 학교에는 Google Search 접근 자체를 차단하겠다고 해 학부모·정치권 반발</description>
 </item>
 </channel>
 </rss>
