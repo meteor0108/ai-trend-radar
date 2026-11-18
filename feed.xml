@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Wed, 18 Nov 2026 03:40:20 +0900</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 03:40:35 +0900</lastBuildDate>
+<item>
+<title>[논문] $π^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
+<link>https://arxiv.org/abs/2611.23144</link>
+<guid isPermaLink="false">p-2611.23144</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>단일 이미지·비정렬 사진·비디오에서 dense geometry, camera pose, metric scale, 3D point track, 움직이는 물체 mask까지 한 번에 복원하는 0.5B 4D 장면 foundation model π^4</description>
+</item>
+<item>
+<title>[논문] ALOHA Lightning: Learning Fast and Precise Manipulation</title>
+<link>https://arxiv.org/abs/2611.21919</link>
+<guid isPermaLink="false">p-2611.21919</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>kinesthetic teaching으로 사람 속도에 가까운 시연을 모아 빠르고 정밀한 양팔 조작을 학습하는 ALOHA Lightning</description>
+</item>
+<item>
+<title>[논문] ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models</title>
+<link>https://arxiv.org/abs/2611.21099</link>
+<guid isPermaLink="false">p-2611.21099</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>API로만 쓰는 frozen frontier 모델에 힘(force) 감각을 붙여 접촉이 중요한 조작을 zero-shot으로 수행하게 하는 ForceHarness</description>
+</item>
+<item>
+<title>[논문] SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping</title>
+<link>https://arxiv.org/abs/2611.22047</link>
+<guid isPermaLink="false">p-2611.22047</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>다중 LiDAR·카메라·IMU를 실시간 융합해 IROS 2026 COMFORT Challenge 종합 우승을 차지한 legged robot용 odometry·mapping 시스템 SE(3)-LIVOM</description>
+</item>
+<item>
+<title>[논문] FastFrames: Video Generation at Interactive Latency</title>
+<link>https://arxiv.org/abs/2611.23226</link>
+<guid isPermaLink="false">p-2611.23226</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>VAE 디코딩·KV cache 갱신 같은 숨은 병목을 걷어내 autoregressive video diffusion을 interactive latency로 끌어올린 FastFrames</description>
+</item>
+<item>
+<title>[뉴스] Genie 4 is now available</title>
+<link>https://deepmind.google/blog/genie-4-is-now-available/</link>
+<guid isPermaLink="false">deepmind-genie-4-is-now-available</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google DeepMind, Project Genie에 Genie 4 모델을 Google AI Ultra 구독자 대상으로 출시</description>
+</item>
+<item>
+<title>[뉴스] Seven new models at scalable price-performance</title>
+<link>https://microsoft.ai/news/microsoft-ignite-2026/</link>
+<guid isPermaLink="false">hn-50548021</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>Microsoft AI, Ignite 2026에서 코딩·보안·이미지·음성·전사 등 7개 MAI 모델과 Maia 200 공개</description>
+</item>
+<item>
+<title>[뉴스] GPT-6.2 Astra와 Sol 출시 - 더 적은 토큰으로 전문 업무와 코딩 성능 개선</title>
+<link>https://openai.com/index/introducing-gpt-6-2-astra-sol/</link>
+<guid isPermaLink="false">gn-37361</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 고난도 업무용 GPT-6.2 Astra와 일상 업무용 GPT-6.2 Sol 출시 — 더 적은 출력 토큰으로 품질 향상</description>
+</item>
+<item>
+<title>[뉴스] Claude Code 팀이 검증을 바라보는 방식</title>
+<link>https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/</link>
+<guid isPermaLink="false">gn-37359</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Code 팀, 코드의 약 90%를 Claude가 작성·리뷰하는 환경에서 에이전트가 실행 결과로 작업을 입증하는 검증 루프를 소개</description>
+</item>
+<item>
+<title>[뉴스] Why is Gemini 4 Carbon taking so long?</title>
+<link>https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/</link>
+<guid isPermaLink="false">hn-50541790</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>Gemini 4 Carbon이 버그 수정 과제에서 Opus·Astra보다 훨씬 느린 이유를 실행 trace로 분석한 글</description>
+</item>
+<item>
+<title>[뉴스] Claude was trained on protein sequences at scale</title>
+<link>https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/</link>
+<guid isPermaLink="false">hn-50541619</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Fable 5.2·Opus 5.5가 잘 연구되지 않은 단백질 서열의 다음 아미노산을 예측해 대규모 단백질 서열 학습 흔적을 보인다는 분석</description>
+</item>
+<item>
+<title>[뉴스] Advancing chip design with OpenAI models</title>
+<link>https://openai.com/index/advancing-chip-design-with-our-models</link>
+<guid isPermaLink="false">openai-advancing-chip-design-with-our-models</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 자사 모델로 Jalapeño 추론 칩 회로를 최적화하고 AMD GPU IP에서도 PPA를 개선한 사례 공개</description>
+</item>
+<item>
+<title>[뉴스] AI is killing All About Berlin</title>
+<link>https://nicolasbouliane.com/blog/death-by-ai</link>
+<guid isPermaLink="false">hn-50542705</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>All About Berlin 운영자, Google AI Overviews 이후 사이트 트래픽이 75% 줄었다고 호소</description>
+</item>
+<item>
+<title>[뉴스] AI agents ask better questions than KPMG accountants in audit trial</title>
+<link>https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/</link>
+<guid isPermaLink="false">hn-50547777</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>KPMG UK, 100여 개 AI 에이전트로 FTSE 250 기업 감사를 시험해 일부 영역에서 사람 감사팀보다 깊이 있는 질문을 확인</description>
+</item>
+<item>
+<title>[뉴스] Energy-Based Reasoners: 385x more efficient inference</title>
+<link>https://energy-based-reasoners.github.io/</link>
+<guid isPermaLink="false">hn-50543989</guid>
+<pubDate>Thu, 19 Nov 2026 08:00:00 +0900</pubDate>
+<description>루프형 추론 모델을 energy 함수의 gradient descent로 보는 Energy-Based Reasoners 프로젝트 페이지</description>
+</item>
 <item>
 <title>[논문] ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
 <link>https://arxiv.org/abs/2611.21607</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-37077</guid>
 <pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
 <description>Google Antigravity에 Hydrogen과 작업 단계별로 Carbon·Hydrogen을 자동 전환하는 Orchestrator 추가</description>
-</item>
-<item>
-<title>[논문] Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
-<link>https://arxiv.org/abs/2611.17336</link>
-<guid isPermaLink="false">p-2611.17336</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>VAE latent 공간에서 학습된 비디오 diffusion 모델을 픽셀 공간에서 프레임 단위로 직접 생성하도록 끌어올린 PixVid</description>
-</item>
-<item>
-<title>[논문] CT-SGAL-LIO: Causal Continuous Time Refinement of Discrete LiDAR Inertial Odometry</title>
-<link>https://arxiv.org/abs/2611.16918</link>
-<guid isPermaLink="false">p-2611.16918</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Discrete LiDAR-inertial odometry 추정기를 고치지 않고 posterior pose stream만 continuous-time으로 부드럽게 다듬는 CT-SGAL-LIO</description>
-</item>
-<item>
-<title>[논문] EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming</title>
-<link>https://arxiv.org/abs/2611.16728</link>
-<guid isPermaLink="false">p-2611.16728</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>사람·실제 로봇·시뮬레이션 데모를 egocentric 관측·행동 모달리티로 묶어 cross-embodiment 조작 정책을 사전학습하는 EgoX</description>
-</item>
-<item>
-<title>[논문] UGG: Unified Generative Geometry Model</title>
-<link>https://arxiv.org/abs/2611.14440</link>
-<guid isPermaLink="false">p-2611.14440</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>RGB 비디오와 depth·camera pose를 하나의 생성 모델에서 조건부 completion으로 함께 다루는 4D 장면 이해 모델 UGG</description>
-</item>
-<item>
-<title>[논문] DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation</title>
-<link>https://arxiv.org/abs/2611.15981</link>
-<guid isPermaLink="false">p-2611.15981</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>접착·오염·가려진 대상을 떼어내는 removal manipulation을 위한 힘 센싱 3지 로봇 손과 9개 시나리오 실로봇 과제 모음 DexRemo</description>
-</item>
-<item>
-<title>[뉴스] Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs</title>
-<link>https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</link>
-<guid isPermaLink="false">hn-50493251</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>WSJ 보도: Nvidia가 자사 GPU를 살 AI 스타트업·소형 클라우드에 투자해 수요와 품귀를 부풀렸다는 의혹</description>
-</item>
-<item>
-<title>[뉴스] Advancing science &amp; engineering with Antigravity’s /teamwork</title>
-<link>https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/</link>
-<guid isPermaLink="false">google-advancing-science-engineering-with-antigravitys-teamwork-feature</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google Research, Antigravity /teamwork 멀티에이전트로 수학·화학·시스템·ML 엔지니어링의 미해결 문제를 전문가와 함께 풀었다고 발표</description>
-</item>
-<item>
-<title>[뉴스] Ggml v1.0.0</title>
-<link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
-<guid isPermaLink="false">hn-50493062</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>ggml 1.0.0 릴리스: deprecated API 정리, FP8 지원, 백엔드 전반 성능 개선</description>
-</item>
-<item>
-<title>[뉴스] Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update</title>
-<link>https://unsloth.ai/docs/models/qwen3.8</link>
-<guid isPermaLink="false">hn-50491980</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Unsloth, Qwen3.8-27B GGUF 양자화를 Dynamic v3.1로 업데이트</description>
-</item>
-<item>
-<title>[뉴스] Lovable apps expose passport details and more than 200K private messages</title>
-<link>https://www.crissyfield.de/research/lovable-en/</link>
-<guid isPermaLink="false">hn-50499017</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Lovable로 만든 앱 다수가 로그인 없이 여권 정보·20만 건 넘는 개인 메시지 등 민감 데이터를 노출</description>
-</item>
-<item>
-<title>[뉴스] Claude Fable 5.2로 에이전트 1,000개 팀 안전하게 돌리기 - 페르마의 마지막 정리 형식화 실험</title>
-<link>https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/</link>
-<guid isPermaLink="false">gn-37159</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, 출시 전 Claude Fable 5.2로 에이전트 1,000개를 돌려 페르마의 마지막 정리 증명을 Lean으로 28.7시간 만에 형식화</description>
-</item>
-<item>
-<title>[뉴스] Perplexity Decider v1.3: Training, eval, and use cases</title>
-<link>https://www.perplexity.ai/hub/blog/perplexity-decider</link>
-<guid isPermaLink="false">hn-50488464</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>Perplexity, 분류·라우팅·순위용 decision 모델 Decider v1.3과 경량 Flash v1.3을 Apache 라이선스로 공개</description>
-</item>
-<item>
-<title>[뉴스] Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM</title>
-<link>https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/</link>
-<guid isPermaLink="false">hn-50497155</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA, 753B MoE GLM-5.3 NVFP4를 DGX Station 두 대에 나눠 vLLM으로 최대 607.8 tok/s 서빙</description>
-</item>
-<item>
-<title>[뉴스] No AI Slop 선언문</title>
-<link>https://www.slopmanifesto.com/</link>
-<guid isPermaLink="false">gn-37128</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>AIE Code Summit 2026 참가자들이 AI 슬롭에 맞서 사람의 역할을 정리한 No AI Slop 선언문</description>
-</item>
-<item>
-<title>[뉴스] Generative AI uses more energy on non-English text</title>
-<link>https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/</link>
-<guid isPermaLink="false">hn-50441444</guid>
-<pubDate>Sun, 15 Nov 2026 08:00:00 +0900</pubDate>
-<description>미시간대 연구: 생성형 AI는 영어가 아닌 텍스트 처리에 1.4~180배 더 많은 에너지를 씀</description>
 </item>
 </channel>
 </rss>
