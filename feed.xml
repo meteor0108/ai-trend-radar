@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 19 Nov 2026 03:40:35 +0900</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 03:40:31 +0900</lastBuildDate>
+<item>
+<title>[논문] Code World Model 2.0: Towards Infinite Controllable Video Generation</title>
+<link>https://arxiv.org/abs/2611.22925</link>
+<guid isPermaLink="false">p-2611.22925</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>structural proxy로 world state를 받아 사진 같은 영상을 실시간 스트리밍 렌더링하는 Code World Model 2.0(Invoker-Render)</description>
+</item>
+<item>
+<title>[논문] Facet-SLAM: Real-Time Triangle Splatting SLAM</title>
+<link>https://arxiv.org/abs/2611.23935</link>
+<guid isPermaLink="false">p-2611.23935</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>RGB-D 카메라용 최초의 실시간 triangle splatting SLAM — 약 100 FPS, Jetson AGX Orin에서 sensor rate 동작</description>
+</item>
+<item>
+<title>[논문] HINT-WAM: Hindsight-Informed Training for World Action Models</title>
+<link>https://arxiv.org/abs/2611.24789</link>
+<guid isPermaLink="false">p-2611.24789</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>World Action Model의 action expert를 hindsight(시연의 미래 영상)로 자기 증류하는 on-policy 학습 HINT-WAM</description>
+</item>
+<item>
+<title>[논문] Proprioceptive Simultaneous Base and Terrain Elevation Estimation for Legged Robot Locomotion</title>
+<link>https://arxiv.org/abs/2611.24310</link>
+<guid isPermaLink="false">p-2611.24310</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>지형 고도를 landmark처럼 써서 다리 로봇의 수직 drift를 잡는 proprioceptive 상태·고도 동시 추정 SBEE</description>
+</item>
+<item>
+<title>[논문] Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation</title>
+<link>https://arxiv.org/abs/2611.24926</link>
+<guid isPermaLink="false">p-2611.24926</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>미완료 subtask를 찾고 진행도를 open-vocabulary로 추정해 장기 조작 작업의 보상을 합성하는 VLM reward model Grana</description>
+</item>
+<item>
+<title>[뉴스] Introducing Gemini 4 Neon</title>
+<link>https://deepmind.google/blog/introducing-gemini-4-neon/</link>
+<guid isPermaLink="false">deepmind-introducing-gemini-4-neon</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google, Carbon과 Hydrogen 사이에서 추론 깊이와 효율 균형을 맡는 Gemini 4 Neon 공개 — 복잡한 코딩·분석용</description>
+</item>
+<item>
+<title>[뉴스] Anthropic prices initial public offering</title>
+<link>https://www.anthropic.com/news/anthropic-prices-initial-public-offering</link>
+<guid isPermaLink="false">anthropic-anthropic-prices-initial-public-offering</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, IPO 공모가를 주당 $83로 확정 — 11월 19일 Nasdaq Global Select Market에서 티커 ANT로 거래 시작</description>
+</item>
+<item>
+<title>[뉴스] Anthropic hits $2T in Nasdaq debut</title>
+<link>https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/</link>
+<guid isPermaLink="false">hn-50562754</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Nasdaq 상장 첫날 시가총액 2조 달러 도달(Reuters 보도)</description>
+</item>
+<item>
+<title>[뉴스] Claude Fable 5.2 solves two open problems in the physics of black holes</title>
+<link>https://www.anthropic.com/research/claude-black-hole-physics</link>
+<guid isPermaLink="false">hn-50563148</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude가 블랙홀·양자중력 관련 이론물리 미해결 문제 두 개를 풀었다고 발표(프리프린트 공개)</description>
+</item>
+<item>
+<title>[뉴스] DaisyRose-27B</title>
+<link>https://www.radixark.com/blog/daisyrose-27b</link>
+<guid isPermaLink="false">hn-50551046</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>RadixArk, Qwen3.8-27B를 장기 에이전트 작업 RL로 학습한 첫 모델 DaisyRose-27B 공개 — BF16·FP8·NVFP4 체크포인트</description>
+</item>
+<item>
+<title>[뉴스] LLM assisted reverse engineering</title>
+<link>https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering</link>
+<guid isPermaLink="false">hn-50553225</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>20년 경력 하드웨어·소프트웨어 해커가 공유한 LLM 에이전트 기반 바이너리 리버스 엔지니어링 워크플로</description>
+</item>
+<item>
+<title>[뉴스] Research acceleration: The jagged frontier</title>
+<link>https://openai.com/index/research-acceleration-jagged-frontier</link>
+<guid isPermaLink="false">openai-research-acceleration-jagged-frontier</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, 코딩 에이전트가 AI 연구를 얼마나 가속하는지 측정하고 성능이 고르지 않은 지점을 분석</description>
+</item>
+<item>
+<title>[뉴스] Harvard 연구진, AI 코딩 에이전트가 병목을 코드 리뷰로 옮겼음을 확인</title>
+<link>https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/</link>
+<guid isPermaLink="false">gn-37405</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>655개 기업·72만 명 데이터 분석 — 코딩 에이전트 도입 후 코드 작성량은 44% 늘었지만 실제 완료 작업 증가는 유의하지 않음</description>
+</item>
+<item>
+<title>[뉴스] Show HN: Mastra Factory, the open-source software factory we use to build Mastra</title>
+<link>https://news.ycombinator.com/item?id=50548660</link>
+<guid isPermaLink="false">hn-50548660</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Mastra 팀, 자사 저장소 유지에 쓰는 오픈소스 software factory 공개 — Slack에서 태그하는 agentic kanban</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Carbon은 왜 이렇게 오래 걸릴까?</title>
+<link>https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/</link>
+<guid isPermaLink="false">gn-37411</guid>
+<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
+<description>Kernel 비공개 버그 수정 평가에서 Gemini 4 Carbon은 Opus·Astra가 몇 분에 끝내는 작업에 거의 1시간 소요</description>
+</item>
 <item>
 <title>[논문] $π^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
 <link>https://arxiv.org/abs/2611.23144</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-37221</guid>
 <pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
 <description>DGX Station 2대에 GLM-5.3 NVFP4(약 464GB)를 나눠 올려 vLLM으로 로컬 서빙하는 방법</description>
-</item>
-<item>
-<title>[논문] Autonomous Trail Racing with a Bicycle Robot</title>
-<link>https://arxiv.org/abs/2611.15280</link>
-<guid isPermaLink="false">p-2611.15280</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>카메라·LiDAR로 온보드에서 재구성한 semantic elevation map 위에서 자전거 로봇이 산악 트레일을 자율 레이싱</description>
-</item>
-<item>
-<title>[논문] Scaling Mathematical Proof Supervision from Structured Textbooks</title>
-<link>https://arxiv.org/abs/2610.40394</link>
-<guid isPermaLink="false">p-2610.40394</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>대학 수학 교과서 2,118권을 장·명제·증명 구조를 보존한 38만 건 증명 지도 데이터로 변환한 TOME-Math</description>
-</item>
-<item>
-<title>[논문] HeadIO: Body-Frame Heading Decomposition for Neural Inertial Odometry on Head-Mounted Devices</title>
-<link>https://arxiv.org/abs/2611.14895</link>
-<guid isPermaLink="false">p-2611.14895</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>머리 기울기에 불변인 body-frame heading 분해로 헤드마운트 기기용 neural inertial odometry를 가볍게 개선한 HeadIO</description>
-</item>
-<item>
-<title>[논문] UAV-Flow++: A Unified Suite for Benchmarking and Learning Language-Guided UAV Flight</title>
-<link>https://arxiv.org/abs/2611.17163</link>
-<guid isPermaLink="false">p-2611.17163</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>짧은 언어 명령을 연속 비행 동작으로 바꾸는 UAV 과제 Flow와 실비행 3만 궤적 데이터셋, FlowVLA를 함께 제안</description>
-</item>
-<item>
-<title>[논문] What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation</title>
-<link>https://arxiv.org/abs/2611.15491</link>
-<guid isPermaLink="false">p-2611.15491</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>움직이는 물체 앞에서 VLA가 반응적이려면 무엇이 중요한지 예측·실행 horizon과 실행 방식을 체계적으로 비교한 연구</description>
-</item>
-<item>
-<title>[뉴스] All AI-generated code should be Open Source</title>
-<link>https://jakub.jankiewicz.org/blog/ai-code-open-source/</link>
-<guid isPermaLink="false">hn-50507303</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI가 생성한 코드는 모두 오픈소스로 공개해야 한다는 주장</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Hydrogen - 일상적인 코딩과 에이전트 작업을 위한 빠른 실행 모델</title>
-<link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/</link>
-<guid isPermaLink="false">gn-37068</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google, 일상 코딩·에이전트 작업용 빠른 실행 모델 Gemini 4 Hydrogen 공개</description>
-</item>
-<item>
-<title>[뉴스] OpenAI, 범용 모델이 로봇을 제어하기 시작하면서 로보틱스 팀 해체</title>
-<link>https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/</link>
-<guid isPermaLink="false">gn-37180</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 범용 모델이 로봇을 직접 제어하기 시작하자 독립 로보틱스 팀 해체</description>
-</item>
-<item>
-<title>[뉴스] Understanding Positional Embeddings in Modern LLMs</title>
-<link>https://magazine.sebastianraschka.com/p/understanding-positional-embeddings</link>
-<guid isPermaLink="false">hn-50506376</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Sebastian Raschka의 LLM positional embedding 해설: 고전 방식부터 RoPE, 2026년 오픈 모델의 선택까지</description>
-</item>
-<item>
-<title>[뉴스] Edge0-145B - 개인 컴퓨터에서 실행하는 1,450억 매개변수 AI 모델</title>
-<link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
-<guid isPermaLink="false">gn-37100</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Edge0, 개인 PC의 GPU 한 장에서 돌아가는 145B 오픈 가중치 모델과 로컬 추론 엔진 공개</description>
-</item>
-<item>
-<title>[뉴스] ggml v1.0.0 - 폐기 예정 API 제거, FP8 지원과 백엔드 성능 개선</title>
-<link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
-<guid isPermaLink="false">gn-37153</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>llama.cpp의 텐서 라이브러리 ggml 1.0.0 출시: 폐기 API 제거, FP8 지원, 백엔드 성능 개선</description>
-</item>
-<item>
-<title>[뉴스] ChatGPT 내 비즈니스 기능 소개</title>
-<link>https://openai.com/ko-KR/index/introducing-businesses-chatgpt/</link>
-<guid isPermaLink="false">gn-37183</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 기업이 ChatGPT에서 비즈니스 정보를 관리하고 고객과 소통하는 비즈니스 기능 베타 공개</description>
-</item>
-<item>
-<title>[뉴스] What thousands of conversations look like inside a language model</title>
-<link>https://operator0x.com/field-notes/qwen-conversation-state-space/</link>
-<guid isPermaLink="false">hn-50481321</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Qwen3-1.7B의 residual stream으로 수천 개 대화의 내부 상태를 지도로 그린 인터랙티브 아틀라스</description>
-</item>
-<item>
-<title>[뉴스] 더 나은, 더 효율적인 RAG를 위한 빠른 검색</title>
-<link>https://machinelearning.apple.com/research/faster-retrieval</link>
-<guid isPermaLink="false">gn-37031</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Apple, 실제 질의 분포에 맞춰 작은 신경망을 학습해 RAG용 최대 내적 검색(MIPS)을 가속</description>
-</item>
-<item>
-<title>[뉴스] Google Antigravity에 Orchestrator 추가, 코딩 중 Carbon과 Hydrogen 자동 전환</title>
-<link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
-<guid isPermaLink="false">gn-37077</guid>
-<pubDate>Mon, 16 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google Antigravity에 Hydrogen과 작업 단계별로 Carbon·Hydrogen을 자동 전환하는 Orchestrator 추가</description>
 </item>
 </channel>
 </rss>
