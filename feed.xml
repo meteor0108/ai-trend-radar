@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 20 Nov 2026 03:40:31 +0900</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 03:40:31 +0900</lastBuildDate>
+<item>
+<title>[논문] Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth</title>
+<link>https://arxiv.org/abs/2611.26603</link>
+<guid isPermaLink="false">p-2611.26603</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>이미지와 비디오 모두에서 선명하고 시간적으로 일관된 metric depth를 원본 해상도로 추정하는 Depth Pro 후속 모델</description>
+</item>
+<item>
+<title>[논문] Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation</title>
+<link>https://arxiv.org/abs/2611.26444</link>
+<guid isPermaLink="false">p-2611.26444</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>로봇 조작에서 추론(Mind)·실행(Act)·두 능력의 결합(Mind2Act)을 분리해 진단하는 시뮬레이션 벤치마크</description>
+</item>
+<item>
+<title>[논문] Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU</title>
+<link>https://arxiv.org/abs/2611.25279</link>
+<guid isPermaLink="false">p-2611.25279</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>카메라 1대와 IMU만으로 온라인 metric 위치추정과 dense mapping을 수행하는 오픈소스 시스템 Accord</description>
+</item>
+<item>
+<title>[논문] Bridging vision-language reasoning and learned control for legged navigation in the wild</title>
+<link>https://arxiv.org/abs/2611.25215</link>
+<guid isPermaLink="false">p-2611.25215</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>VLM의 상식 추론과 RL 보행·로컬 플래닝 정책을 결합해 사족보행 로봇이 알프스·도심에서 km 단위 자율 주행을 하는 ROAM (Science Robotics)</description>
+</item>
+<item>
+<title>[논문] RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction</title>
+<link>https://arxiv.org/abs/2611.24816</link>
+<guid isPermaLink="false">p-2611.24816</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>관절값과 링크 pose를 함께 복원하는 morphology-conditioned action tokenizer로 cross-embodiment 조작을 개선한 RoboMorpher</description>
+</item>
+<item>
+<title>[뉴스] Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</title>
+<link>https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/</link>
+<guid isPermaLink="false">hn-50578358</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>Terence Tao, AI를 활용한 Euler·Navier-Stokes 특이점 증명과 AI 모델이 생성한 일반화 리만 가설(GRH) Lean 증명을 정리</description>
+</item>
+<item>
+<title>[뉴스] Frostbite: A new CPU architecture discovered, designed and verified by AI</title>
+<link>https://architectlabs.com/blog/frostbite</link>
+<guid isPermaLink="false">hn-50572503</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 시스템이 컴파일러부터 ISA·마이크로아키텍처·RTL·검증·최종 GDS까지 자율 반복해 설계한 새 CPU 아키텍처 Frostbite</description>
+</item>
+<item>
+<title>[뉴스] Language Models Can Rewrite Their Own Weights</title>
+<link>https://arxiv.org/abs/2611.21885</link>
+<guid isPermaLink="false">hn-50577265</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>오픈 27B 언어모델이 자기 가중치와 채점 결과를 보고 gradient 없이 스스로 가중치를 고쳐 성능을 올리는 self-rewriting 연구</description>
+</item>
+<item>
+<title>[뉴스] Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement</title>
+<link>https://www.anthropic.com/news/ipo-close</link>
+<guid isPermaLink="false">anthropic-ipo-close</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, IPO 종료 발표: 주당 83달러에 약 11.27억 주, 총 약 935억 달러 조달</description>
+</item>
+<item>
+<title>[뉴스] Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off</title>
+<link>https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off</link>
+<guid isPermaLink="false">hn-50574383</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic 상장 이틀째 주가 하락과 함께 AI 매도세로 글로벌 증시 급락</description>
+</item>
+<item>
+<title>[뉴스] Claude, 블랙홀 물리학의 미해결 문제 두 가지 해결</title>
+<link>https://www.anthropic.com/research/claude-black-hole-physics</link>
+<guid isPermaLink="false">gn-37487</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Fable 5.2가 양자중력 연구의 미해결 문제 두 가지를 해결</description>
+</item>
+<item>
+<title>[뉴스] DaisyRose-27B - 장시간 에이전트 작업에 강화학습을 적용한 Qwen3.8-27B 기반 모델</title>
+<link>https://www.radixark.com/blog/daisyrose-27b</link>
+<guid isPermaLink="false">gn-37459</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>RadixArk, Qwen3.8-27B에 장시간 에이전트 작업 RL을 적용한 DaisyRose-27B를 Apache-2.0으로 공개</description>
+</item>
+<item>
+<title>[뉴스] What Comes After AGI?</title>
+<link>https://institute.deepmind.com/essays/what-comes-after-agi/</link>
+<guid isPermaLink="false">hn-50569519</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>DeepMind 측 에세이 "AGI 다음은 무엇인가": AGI에서 초지능(ASI)으로 가는 경로와 진척 추적 방법 논의</description>
+</item>
+<item>
+<title>[뉴스] LLM을 활용한 리버스 엔지니어링</title>
+<link>https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering</link>
+<guid isPermaLink="false">gn-37466</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>20년 경력 리버스 엔지니어가 AI 에이전트와 전용 스킬로 하드웨어/소프트웨어 분석 시간을 크게 줄인 실무 방법</description>
+</item>
+<item>
+<title>[뉴스] Gemini 4 Neon, Opus 5.5의 경쟁자가 될 것으로 보임</title>
+<link>https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</link>
+<guid isPermaLink="false">gn-37456</guid>
+<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
+<description>Gemini 4 Neon이 Agent Duel 코딩 에이전트 대결에서 Opus 5.5에 근접할 수 있다는 분석</description>
+</item>
 <item>
 <title>[논문] Code World Model 2.0: Towards Infinite Controllable Video Generation</title>
 <link>https://arxiv.org/abs/2611.22925</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-37324</guid>
 <pubDate>Wed, 18 Nov 2026 08:00:00 +0900</pubDate>
 <description>Chrome팀, 코딩 에이전트에 최신 웹 개발 지침을 제공하는 Modern Web Guidance 1.0 출시</description>
-</item>
-<item>
-<title>[논문] Envisioning Agentic Robotics: A New Era of Robotic Systems</title>
-<link>https://arxiv.org/abs/2611.18359</link>
-<guid isPermaLink="false">p-2611.18359</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>GPT-6 Astra 이후 등장한 "agentic robotics"의 정의·평가 프레임워크·연구 로드맵을 제시하는 비전 논문</description>
-</item>
-<item>
-<title>[논문] Training Reasoning Models in Simulation to Natively Use Real Robots</title>
-<link>https://arxiv.org/abs/2611.18562</link>
-<guid isPermaLink="false">p-2611.18562</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>오픈웨이트 27B 추론 모델을 시뮬레이션 RL만으로 학습해 실제 로봇을 직접 조작하는 robot-use agent로 만든 연구</description>
-</item>
-<item>
-<title>[논문] EcoVGGT: Pinned-Key Inference for Efficient and Streamable Feed-Forward 3D Reconstruction from Long Videos</title>
-<link>https://arxiv.org/abs/2611.18099</link>
-<guid isPermaLink="false">p-2611.18099</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>내용과 무관하게 고른 31개 "pinned key" 프레임으로 VGGT·π³를 긴 영상에서 빠르고 스트리밍 가능하게 만드는 training-free 추론</description>
-</item>
-<item>
-<title>[논문] Deep Bundle Adjustment</title>
-<link>https://arxiv.org/abs/2611.18256</link>
-<guid isPermaLink="false">p-2611.18256</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>bundle adjustment를 2.04M 파라미터 GNN으로 amortize해 cold start에서 카메라 pose·intrinsics·구조를 복원하는 DeepBA</description>
-</item>
-<item>
-<title>[논문] JVT: Just Video Transformer makes pixel-space video diffusion simple</title>
-<link>https://arxiv.org/abs/2611.18549</link>
-<guid isPermaLink="false">p-2611.18549</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>오토인코더 없이 단순한 large-patch DiT로 픽셀 공간 비디오 diffusion을 하는 JVT</description>
-</item>
-<item>
-<title>[뉴스] Qwen4-Max</title>
-<link>https://qwen.ai/blog?id=qwen4-max</link>
-<guid isPermaLink="false">hn-50513215</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>qwen.ai 블로그에 Qwen4-Max 발표 글이 올라와 HN 최다 득점(810P)</description>
-</item>
-<item>
-<title>[뉴스] What's Next for Nvidia?</title>
-<link>https://steveblank.com/2026/11/15/whats-next-for-nvidia/</link>
-<guid isPermaLink="false">hn-50512235</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>Steve Blank, Jensen Huang 사임 이후 Nvidia가 무엇을 고민해야 하는지 분석</description>
-</item>
-<item>
-<title>[뉴스] NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance</title>
-<link>https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/</link>
-<guid isPermaLink="false">nvidia-mlperf-training-endpoints-vera-rubin</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA Vera Rubin, MLPerf 데뷔에서 Training v6.1 전 종목 석권·Endpoints에서 와트당 처리량 10배 이상 향상</description>
-</item>
-<item>
-<title>[뉴스] Our first phase of embedded assessments</title>
-<link>https://openai.com/index/our-first-phase-of-embedded-assessments</link>
-<guid isPermaLink="false">openai-our-first-phase-of-embedded-assessments</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, Apollo Research·METR·Transluce·Goodfire와 모델 정렬·안전장치를 독립 평가하는 embedded assessment 1단계 시작</description>
-</item>
-<item>
-<title>[뉴스] Interpreting claims that a theorem is correct because it was checked in Lean</title>
-<link>https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/</link>
-<guid isPermaLink="false">hn-50515058</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>"Lean으로 검증된 정리"라는 주장을 어떻게 해석할지, AI 생성 Lean 코드에서 먼저 확인할 질문들</description>
-</item>
-<item>
-<title>[뉴스] Project Zero, 취약점 공개 기한을 90일에서 30일까지 단계적으로 단축</title>
-<link>https://projectzero.google/2026/11/disclosure-policy.html</link>
-<guid isPermaLink="false">gn-37190</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google Project Zero, LLM 시대에 맞춰 취약점 공개 기한을 90일→60일→30일로 단계적 단축</description>
-</item>
-<item>
-<title>[뉴스] NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics</title>
-<link>https://blogs.nvidia.com/blog/rubin-hpc/</link>
-<guid isPermaLink="false">nvidia-rubin-hpc</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA, 과학·공학 시뮬레이션용 새 GPU Rubin HPC 발표 (SC26)</description>
-</item>
-<item>
-<title>[뉴스] Nvidia was in trouble before the Jensen Huang mess</title>
-<link>https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/</link>
-<guid isPermaLink="false">hn-50518567</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>WIRED: Nvidia는 Jensen Huang 사태 이전부터 경쟁 압박에 직면해 있었다</description>
-</item>
-<item>
-<title>[뉴스] Broadening access to AI for scientists</title>
-<link>https://openai.com/index/expanding-chatgpt-for-academic-researchers</link>
-<guid isPermaLink="false">openai-expanding-chatgpt-for-academic-researchers</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, ChatGPT for Academic Researchers를 확대해 전 세계 연구자 20만 명에게 frontier 모델 무료 제공</description>
-</item>
-<item>
-<title>[뉴스] DGX Station 2대에서 vLLM으로 GLM-5.3 로컬 서빙하기</title>
-<link>https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/</link>
-<guid isPermaLink="false">gn-37221</guid>
-<pubDate>Tue, 17 Nov 2026 08:00:00 +0900</pubDate>
-<description>DGX Station 2대에 GLM-5.3 NVFP4(약 464GB)를 나눠 올려 vLLM으로 로컬 서빙하는 방법</description>
 </item>
 </channel>
 </rss>
