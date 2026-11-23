@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Mon, 23 Nov 2026 03:40:21 +0900</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 03:40:21 +0900</lastBuildDate>
+<item>
+<title>[논문] Non-penetrating World Models</title>
+<link>https://arxiv.org/abs/2611.27963</link>
+<guid isPermaLink="false">p-2611.27963</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>인터랙티브 video world model이 장애물을 뚫고 지나가는 물리 위반을 DiT hidden state로 미리 감지·차단하는 NoPeWorld</description>
+</item>
+<item>
+<title>[논문] Instant-LIVO: Efficient LiDAR-Inertial-Visual Odometry with Compact Geometry and a Bounded Single-Reference-Frame Map</title>
+<link>https://arxiv.org/abs/2611.27633</link>
+<guid isPermaLink="false">p-2611.27633</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>OctVox 공간 해시 지도와 단일 기준 프레임 visual map으로 속도·메모리를 크게 줄인 tightly-coupled LiDAR-Inertial-Visual Odometry</description>
+</item>
+<item>
+<title>[논문] RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning</title>
+<link>https://arxiv.org/abs/2611.26916</link>
+<guid isPermaLink="false">p-2611.26916</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>11개국 작업자의 실제 업무 중 수집한 10,000시간 분량, metric 3D 라벨이 달린 egocentric 조작 데이터셋</description>
+</item>
+<item>
+<title>[논문] BRINA: Bottom-Referenced Inertial Navigation with AKAZE, a Sonar SLAM for Autonomous Marine Vehicles</title>
+<link>https://arxiv.org/abs/2611.27817</link>
+<guid isPermaLink="false">p-2611.27817</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>전방 소나(FLS)만으로 DVL 없이 metric odometry를 얻는 해양 로봇용 sonar-inertial SLAM</description>
+</item>
+<item>
+<title>[논문] PACE: Policy Augmentation and Compensation With Explicit Disturbance Estimation for Robust Locomotion</title>
+<link>https://arxiv.org/abs/2611.27061</link>
+<guid isPermaLink="false">p-2611.27061</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>외란을 명시적으로 추정해 토크 보상과 policy 관측에 함께 넣는 강건한 4족 보행 RL 프레임워크 PACE</description>
+</item>
+<item>
+<title>[뉴스] Nvidia Reinstates Jensen Huang as CEO</title>
+<link>https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html</link>
+<guid isPermaLink="false">hn-50611576</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>NVIDIA 이사회가 젠슨 황을 CEO로 복귀시켰다는 CNBC 보도</description>
+</item>
+<item>
+<title>[뉴스] GLM-5.4: Toward generalized coding with our first loop transformer</title>
+<link>https://z.ai/blog/glm-5.4</link>
+<guid isPermaLink="false">hn-50609685</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>Z.ai가 첫 loop transformer 기반의 범용 코딩 모델 GLM-5.4를 공개</description>
+</item>
+<item>
+<title>[뉴스] Finding faster quantum algorithms with agents and formal verification</title>
+<link>https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/</link>
+<guid isPermaLink="false">deepmind-finding-faster-quantum-algorithms-with-agents-and-formal-verification</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>Gemini 4 에이전트 팀과 Lean 형식 검증으로 양자 알고리즘 비용을 크게 줄인 DeepMind 연구</description>
+</item>
+<item>
+<title>[뉴스] Supercharging transformer residual connections</title>
+<link>https://research.google/blog/supercharging-transformer-residual-connections/</link>
+<guid isPermaLink="false">google-supercharging-transformer-residual-connections</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>residual connection을 layer 간 동적 routing·depth-wise cross-attention으로 일반화한 DeepCrossAttention(DCA)</description>
+</item>
+<item>
+<title>[뉴스] A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth</title>
+<link>https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</link>
+<guid isPermaLink="false">hn-50603845</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>Unsloth Desktop과 Qwen·Inkling 양자화 모델로 집에서 개인용 ChatGPT를 띄우는 입문 가이드</description>
+</item>
+<item>
+<title>[뉴스] AI는 모두에게 같은 조언을 하고 있다</title>
+<link>https://a90.com/experiments/same-advice/</link>
+<guid isPermaLink="false">gn-37639</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>30개 기업 AI 65개에 127,918회 질문해 보니 일상 조언이 특정 답으로 수렴</description>
+</item>
+<item>
+<title>[뉴스] Yes, 17M lines of Lean is a lot</title>
+<link>https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/</link>
+<guid isPermaLink="false">hn-50607668</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI가 만든 리만 가설 Lean 증명 1,700만 줄이 얼마나 큰지 공개 Lean 프로젝트와 비교</description>
+</item>
+<item>
+<title>[뉴스] 추론 칩을 바이브 코딩하기</title>
+<link>https://ankitg.me/blog/vibecoding-inference-chip/</link>
+<guid isPermaLink="false">gn-37581</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>FPGA 경험 없이 코딩 에이전트로 AWS FPGA에 LLM 추론을 구현해 초당 213토큰 달성</description>
+</item>
+<item>
+<title>[뉴스] Agent swarm trying to solve P vs. NP</title>
+<link>https://pequalnp.com/</link>
+<guid isPermaLink="false">hn-50604314</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>조율된 AI 에이전트 군단이 P vs NP 문제에 실시간으로 도전하는 공개 프로젝트</description>
+</item>
+<item>
+<title>[뉴스] How should an LLM see a computer?</title>
+<link>https://www.greptile.com/blog/trex-computer-use</link>
+<guid isPermaLink="false">hn-50615520</guid>
+<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
+<description>QA 에이전트 TREX 개발 과정에서 screenshot과 accessibility tree 중 LLM이 화면을 어떻게 보는 게 나은지 7개 모델로 실험</description>
+</item>
 <item>
 <title>[논문] RL Post-Training in Diffusion Transformers Is Activation Steering</title>
 <link>https://arxiv.org/abs/2611.26627</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-37456</guid>
 <pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
 <description>Gemini 4 Neon이 Agent Duel 코딩 에이전트 대결에서 Opus 5.5에 근접할 수 있다는 분석</description>
-</item>
-<item>
-<title>[논문] Code World Model 2.0: Towards Infinite Controllable Video Generation</title>
-<link>https://arxiv.org/abs/2611.22925</link>
-<guid isPermaLink="false">p-2611.22925</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>structural proxy로 world state를 받아 사진 같은 영상을 실시간 스트리밍 렌더링하는 Code World Model 2.0(Invoker-Render)</description>
-</item>
-<item>
-<title>[논문] Facet-SLAM: Real-Time Triangle Splatting SLAM</title>
-<link>https://arxiv.org/abs/2611.23935</link>
-<guid isPermaLink="false">p-2611.23935</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>RGB-D 카메라용 최초의 실시간 triangle splatting SLAM — 약 100 FPS, Jetson AGX Orin에서 sensor rate 동작</description>
-</item>
-<item>
-<title>[논문] HINT-WAM: Hindsight-Informed Training for World Action Models</title>
-<link>https://arxiv.org/abs/2611.24789</link>
-<guid isPermaLink="false">p-2611.24789</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>World Action Model의 action expert를 hindsight(시연의 미래 영상)로 자기 증류하는 on-policy 학습 HINT-WAM</description>
-</item>
-<item>
-<title>[논문] Proprioceptive Simultaneous Base and Terrain Elevation Estimation for Legged Robot Locomotion</title>
-<link>https://arxiv.org/abs/2611.24310</link>
-<guid isPermaLink="false">p-2611.24310</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>지형 고도를 landmark처럼 써서 다리 로봇의 수직 drift를 잡는 proprioceptive 상태·고도 동시 추정 SBEE</description>
-</item>
-<item>
-<title>[논문] Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation</title>
-<link>https://arxiv.org/abs/2611.24926</link>
-<guid isPermaLink="false">p-2611.24926</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>미완료 subtask를 찾고 진행도를 open-vocabulary로 추정해 장기 조작 작업의 보상을 합성하는 VLM reward model Grana</description>
-</item>
-<item>
-<title>[뉴스] Introducing Gemini 4 Neon</title>
-<link>https://deepmind.google/blog/introducing-gemini-4-neon/</link>
-<guid isPermaLink="false">deepmind-introducing-gemini-4-neon</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Google, Carbon과 Hydrogen 사이에서 추론 깊이와 효율 균형을 맡는 Gemini 4 Neon 공개 — 복잡한 코딩·분석용</description>
-</item>
-<item>
-<title>[뉴스] Anthropic prices initial public offering</title>
-<link>https://www.anthropic.com/news/anthropic-prices-initial-public-offering</link>
-<guid isPermaLink="false">anthropic-anthropic-prices-initial-public-offering</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, IPO 공모가를 주당 $83로 확정 — 11월 19일 Nasdaq Global Select Market에서 티커 ANT로 거래 시작</description>
-</item>
-<item>
-<title>[뉴스] Anthropic hits $2T in Nasdaq debut</title>
-<link>https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/</link>
-<guid isPermaLink="false">hn-50562754</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Nasdaq 상장 첫날 시가총액 2조 달러 도달(Reuters 보도)</description>
-</item>
-<item>
-<title>[뉴스] Claude Fable 5.2 solves two open problems in the physics of black holes</title>
-<link>https://www.anthropic.com/research/claude-black-hole-physics</link>
-<guid isPermaLink="false">hn-50563148</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, Claude가 블랙홀·양자중력 관련 이론물리 미해결 문제 두 개를 풀었다고 발표(프리프린트 공개)</description>
-</item>
-<item>
-<title>[뉴스] DaisyRose-27B</title>
-<link>https://www.radixark.com/blog/daisyrose-27b</link>
-<guid isPermaLink="false">hn-50551046</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>RadixArk, Qwen3.8-27B를 장기 에이전트 작업 RL로 학습한 첫 모델 DaisyRose-27B 공개 — BF16·FP8·NVFP4 체크포인트</description>
-</item>
-<item>
-<title>[뉴스] LLM assisted reverse engineering</title>
-<link>https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering</link>
-<guid isPermaLink="false">hn-50553225</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>20년 경력 하드웨어·소프트웨어 해커가 공유한 LLM 에이전트 기반 바이너리 리버스 엔지니어링 워크플로</description>
-</item>
-<item>
-<title>[뉴스] Research acceleration: The jagged frontier</title>
-<link>https://openai.com/index/research-acceleration-jagged-frontier</link>
-<guid isPermaLink="false">openai-research-acceleration-jagged-frontier</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI, 코딩 에이전트가 AI 연구를 얼마나 가속하는지 측정하고 성능이 고르지 않은 지점을 분석</description>
-</item>
-<item>
-<title>[뉴스] Harvard 연구진, AI 코딩 에이전트가 병목을 코드 리뷰로 옮겼음을 확인</title>
-<link>https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/</link>
-<guid isPermaLink="false">gn-37405</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>655개 기업·72만 명 데이터 분석 — 코딩 에이전트 도입 후 코드 작성량은 44% 늘었지만 실제 완료 작업 증가는 유의하지 않음</description>
-</item>
-<item>
-<title>[뉴스] Show HN: Mastra Factory, the open-source software factory we use to build Mastra</title>
-<link>https://news.ycombinator.com/item?id=50548660</link>
-<guid isPermaLink="false">hn-50548660</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Mastra 팀, 자사 저장소 유지에 쓰는 오픈소스 software factory 공개 — Slack에서 태그하는 agentic kanban</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Carbon은 왜 이렇게 오래 걸릴까?</title>
-<link>https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/</link>
-<guid isPermaLink="false">gn-37411</guid>
-<pubDate>Fri, 20 Nov 2026 08:00:00 +0900</pubDate>
-<description>Kernel 비공개 버그 수정 평가에서 Gemini 4 Carbon은 Opus·Astra가 몇 분에 끝내는 작업에 거의 1시간 소요</description>
 </item>
 </channel>
 </rss>
