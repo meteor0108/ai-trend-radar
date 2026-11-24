@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Tue, 24 Nov 2026 03:40:21 +0900</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 03:40:14 +0900</lastBuildDate>
+<item>
+<title>[논문] Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control</title>
+<link>https://arxiv.org/abs/2611.29897</link>
+<guid isPermaLink="false">p-2611.29897</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>local attention·재개 가능한 recurrent state·persistent content memory를 결합한 Mamba 기반 autoregressive diffusion으로 장시간 실시간 휴머노이드 모션 제어</description>
+</item>
+<item>
+<title>[논문] Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness</title>
+<link>https://arxiv.org/abs/2611.31201</link>
+<guid isPermaLink="false">p-2611.31201</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>frontier multimodal model을 그대로 로봇 policy로 쓰는 harness의 설계 원칙을 체계적으로 분석한 Embo-Harness</description>
+</item>
+<item>
+<title>[논문] Confidently Lost: Silent Failure and Edge Deployment of Dense Visual SLAM under Photon Starvation</title>
+<link>https://arxiv.org/abs/2611.30173</link>
+<guid isPermaLink="false">p-2611.30173</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>저조도에서 MASt3R-SLAM 같은 learned dense visual SLAM이 '자신 있게' 조용히 실패하는 메커니즘을 해부하고 Jetson 탑재 legged robot에서 재현</description>
+</item>
+<item>
+<title>[논문] ViDiHand2: Unifying Video Diffusion Priors and Hand Geometry for 3D Hand Motion Reconstruction in the Wild</title>
+<link>https://arxiv.org/abs/2611.30597</link>
+<guid isPermaLink="false">p-2611.30597</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>video diffusion prior와 MANO 손 기하 제약을 결합해 in-the-wild 영상에서 metric 3D 손 모션을 복원하는 ViDiHand2</description>
+</item>
+<item>
+<title>[논문] GeLiFiSH: Recursive LiDAR Keypoint Estimation with Ground and Moving Object Segmentation</title>
+<link>https://arxiv.org/abs/2611.30402</link>
+<guid isPermaLink="false">p-2611.30402</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>sequential hypothesis test로 scan 단위에서 지속적인 LiDAR keypoint를 재귀 추정하는 학습 없는 필터 GeLiFiSH</description>
+</item>
+<item>
+<title>[뉴스] LLM agents work for their parent companies, not for you</title>
+<link>https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/</link>
+<guid isPermaLink="false">hn-50627340</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude Code로 만든 음악 구매 skill 경험을 통해 'LLM 에이전트는 사용자가 아니라 모회사를 위해 일한다'고 주장한 글</description>
+</item>
+<item>
+<title>[뉴스] Tidal bans AI-generated music</title>
+<link>https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/</link>
+<guid isPermaLink="false">hn-50630309</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Tidal이 12월 9일부터 완전히 AI로 생성된 음악을 삭제 — 음악 스트리밍 최초의 AI 음악 전면 금지</description>
+</item>
+<item>
+<title>[뉴스] OpenAI and Cisco introduce Shirudo</title>
+<link>https://openai.com/index/introducing-shirudo</link>
+<guid isPermaLink="false">openai-introducing-shirudo</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI와 Cisco가 패치 배포 전까지 실행 중인 Linux 서비스를 eBPF '실드'로 임시 보호하는 오픈소스 런타임 Shirudo 공개</description>
+</item>
+<item>
+<title>[뉴스] NariQ: BF16-level Qwen3.8-27B in a 10 GB file</title>
+<link>https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF</link>
+<guid isPermaLink="false">hn-50611402</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Qwen3.8-27B를 3비트 이하로 양자화해 10GB 파일에 BF16급 품질을 유지했다는 NariQ</description>
+</item>
+<item>
+<title>[뉴스] Top MIT Physicist: Anthropic Staff Openly Talk About 'Taking over the World'</title>
+<link>https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/</link>
+<guid isPermaLink="false">hn-50631210</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>MIT 물리학자 Max Tegmark, 'Anthropic 직원들이 술자리에서 세계 장악을 거론한다'고 Novara Media 인터뷰에서 주장</description>
+</item>
+<item>
+<title>[뉴스] Unreleased AI models are too powerful to release fear many employees</title>
+<link>https://tech.yahoo.com/ai/claude/articles/scoop-anthropic-openai-employees-fear-104505580.html</link>
+<guid isPermaLink="false">hn-50631691</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Axios: Anthropic·OpenAI 직원 다수가 내부 미공개 모델이 너무 강력해 안전하게 공개하기 어렵다고 우려</description>
+</item>
+<item>
+<title>[뉴스] Lowering Perplexity Without Scaling</title>
+<link>https://micjm.com/blog/lowering-perplexity-without-scaling/</link>
+<guid isPermaLink="false">hn-50607512</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI의 'perplexity 하락' 차트는 코드 corpus 기준 — 학습 데이터의 코드 비중만 바꿔도 같은 곡선이 나온다는 반론</description>
+</item>
+<item>
+<title>[뉴스] 평가는 AI 엔지니어링에서 가장 과소평가된 역량이다</title>
+<link>https://x.com/divaagurlxw/status/2115418017891020888</link>
+<guid isPermaLink="false">gn-37745</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 엔지니어링에서 가장 과소평가된 역량은 평가 — 실패 사례 분석에서 출발하는 eval 구축 방법</description>
+</item>
+<item>
+<title>[뉴스] A training engine for your local model, using your idle compute</title>
+<link>https://github.com/sous-labs/songe</link>
+<guid isPermaLink="false">hn-50629231</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Songe: 로컬 모델 사용 중 생긴 수정·선호·도구 오류를 학습해, 유휴 시간에 내 모델을 직접 훈련하는 엔진</description>
+</item>
+<item>
+<title>[뉴스] Inkling, Qwen, Unsloth로 시작하는 로컬 AI 입문 가이드</title>
+<link>https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</link>
+<guid isPermaLink="false">gn-37670</guid>
+<pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
+<description>Unsloth Desktop과 Qwen·Inkling 양자화 모델로 Windows PC에 구독 없는 개인 AI 채팅을 구축하는 입문 가이드</description>
+</item>
 <item>
 <title>[논문] Non-penetrating World Models</title>
 <link>https://arxiv.org/abs/2611.27963</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">openai-introducing-medchembench</guid>
 <pubDate>Sun, 22 Nov 2026 08:00:00 +0900</pubDate>
 <description>OpenAI, 초기 신약 개발에서 AI의 분자 해석·후보 선택 능력을 평가하는 MedChemBench 공개</description>
-</item>
-<item>
-<title>[논문] Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth</title>
-<link>https://arxiv.org/abs/2611.26603</link>
-<guid isPermaLink="false">p-2611.26603</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>이미지와 비디오 모두에서 선명하고 시간적으로 일관된 metric depth를 원본 해상도로 추정하는 Depth Pro 후속 모델</description>
-</item>
-<item>
-<title>[논문] Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation</title>
-<link>https://arxiv.org/abs/2611.26444</link>
-<guid isPermaLink="false">p-2611.26444</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>로봇 조작에서 추론(Mind)·실행(Act)·두 능력의 결합(Mind2Act)을 분리해 진단하는 시뮬레이션 벤치마크</description>
-</item>
-<item>
-<title>[논문] Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU</title>
-<link>https://arxiv.org/abs/2611.25279</link>
-<guid isPermaLink="false">p-2611.25279</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>카메라 1대와 IMU만으로 온라인 metric 위치추정과 dense mapping을 수행하는 오픈소스 시스템 Accord</description>
-</item>
-<item>
-<title>[논문] Bridging vision-language reasoning and learned control for legged navigation in the wild</title>
-<link>https://arxiv.org/abs/2611.25215</link>
-<guid isPermaLink="false">p-2611.25215</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>VLM의 상식 추론과 RL 보행·로컬 플래닝 정책을 결합해 사족보행 로봇이 알프스·도심에서 km 단위 자율 주행을 하는 ROAM (Science Robotics)</description>
-</item>
-<item>
-<title>[논문] RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction</title>
-<link>https://arxiv.org/abs/2611.24816</link>
-<guid isPermaLink="false">p-2611.24816</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>관절값과 링크 pose를 함께 복원하는 morphology-conditioned action tokenizer로 cross-embodiment 조작을 개선한 RoboMorpher</description>
-</item>
-<item>
-<title>[뉴스] Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</title>
-<link>https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/</link>
-<guid isPermaLink="false">hn-50578358</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>Terence Tao, AI를 활용한 Euler·Navier-Stokes 특이점 증명과 AI 모델이 생성한 일반화 리만 가설(GRH) Lean 증명을 정리</description>
-</item>
-<item>
-<title>[뉴스] Frostbite: A new CPU architecture discovered, designed and verified by AI</title>
-<link>https://architectlabs.com/blog/frostbite</link>
-<guid isPermaLink="false">hn-50572503</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI 시스템이 컴파일러부터 ISA·마이크로아키텍처·RTL·검증·최종 GDS까지 자율 반복해 설계한 새 CPU 아키텍처 Frostbite</description>
-</item>
-<item>
-<title>[뉴스] Language Models Can Rewrite Their Own Weights</title>
-<link>https://arxiv.org/abs/2611.21885</link>
-<guid isPermaLink="false">hn-50577265</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>오픈 27B 언어모델이 자기 가중치와 채점 결과를 보고 gradient 없이 스스로 가중치를 고쳐 성능을 올리는 self-rewriting 연구</description>
-</item>
-<item>
-<title>[뉴스] Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement</title>
-<link>https://www.anthropic.com/news/ipo-close</link>
-<guid isPermaLink="false">anthropic-ipo-close</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic, IPO 종료 발표: 주당 83달러에 약 11.27억 주, 총 약 935억 달러 조달</description>
-</item>
-<item>
-<title>[뉴스] Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off</title>
-<link>https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off</link>
-<guid isPermaLink="false">hn-50574383</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>Anthropic 상장 이틀째 주가 하락과 함께 AI 매도세로 글로벌 증시 급락</description>
-</item>
-<item>
-<title>[뉴스] Claude, 블랙홀 물리학의 미해결 문제 두 가지 해결</title>
-<link>https://www.anthropic.com/research/claude-black-hole-physics</link>
-<guid isPermaLink="false">gn-37487</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>Claude Fable 5.2가 양자중력 연구의 미해결 문제 두 가지를 해결</description>
-</item>
-<item>
-<title>[뉴스] DaisyRose-27B - 장시간 에이전트 작업에 강화학습을 적용한 Qwen3.8-27B 기반 모델</title>
-<link>https://www.radixark.com/blog/daisyrose-27b</link>
-<guid isPermaLink="false">gn-37459</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>RadixArk, Qwen3.8-27B에 장시간 에이전트 작업 RL을 적용한 DaisyRose-27B를 Apache-2.0으로 공개</description>
-</item>
-<item>
-<title>[뉴스] What Comes After AGI?</title>
-<link>https://institute.deepmind.com/essays/what-comes-after-agi/</link>
-<guid isPermaLink="false">hn-50569519</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>DeepMind 측 에세이 "AGI 다음은 무엇인가": AGI에서 초지능(ASI)으로 가는 경로와 진척 추적 방법 논의</description>
-</item>
-<item>
-<title>[뉴스] LLM을 활용한 리버스 엔지니어링</title>
-<link>https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering</link>
-<guid isPermaLink="false">gn-37466</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>20년 경력 리버스 엔지니어가 AI 에이전트와 전용 스킬로 하드웨어/소프트웨어 분석 시간을 크게 줄인 실무 방법</description>
-</item>
-<item>
-<title>[뉴스] Gemini 4 Neon, Opus 5.5의 경쟁자가 될 것으로 보임</title>
-<link>https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</link>
-<guid isPermaLink="false">gn-37456</guid>
-<pubDate>Sat, 21 Nov 2026 08:00:00 +0900</pubDate>
-<description>Gemini 4 Neon이 Agent Duel 코딩 에이전트 대결에서 Opus 5.5에 근접할 수 있다는 분석</description>
 </item>
 </channel>
 </rss>
