@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Thu, 26 Nov 2026 03:40:45 +0900</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 03:40:00 +0900</lastBuildDate>
+<item>
+<title>[논문] Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</title>
+<link>https://arxiv.org/abs/2611.34849</link>
+<guid isPermaLink="false">p-2611.34849</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>Real2Sim 방법들을 여러 벤치마크에서 한 번에 평가하고 학습 데이터까지 만드는 통합 오픈소스 플랫폼</description>
+</item>
+<item>
+<title>[논문] Sage-Med: Scaling Medical Multimodal Intelligence</title>
+<link>https://arxiv.org/abs/2611.34575</link>
+<guid isPermaLink="false">p-2611.34575</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>35B(활성 3B) 의료 멀티모달 모델 Sage-Med-Preview로 의료 MLLM의 스케일링 방식을 탐구</description>
+</item>
+<item>
+<title>[논문] PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents</title>
+<link>https://arxiv.org/abs/2611.33144</link>
+<guid isPermaLink="false">p-2611.33144</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트가 시연 데이터 없이 양손 덱스터러스 조작용 프로그램 정책을 개발하는 프레임워크</description>
+</item>
+<item>
+<title>[논문] FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images</title>
+<link>https://arxiv.org/abs/2611.34128</link>
+<guid isPermaLink="false">p-2611.34128</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>포즈 없는 이미지에서 pointmap과 ray 표현을 결합해 연속적인 3D 장면 표면을 feed-forward로 복원</description>
+</item>
+<item>
+<title>[논문] Linear-Time Online Visual Geometry Transformer with Hybrid Architecture</title>
+<link>https://arxiv.org/abs/2611.33650</link>
+<guid isPermaLink="false">p-2611.33650</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>StreamVGGT를 Mamba2 하이브리드로 증류해 프레임당 일정한 지연으로 동작하는 온라인 visual geometry transformer LinearVGGT</description>
+</item>
+<item>
+<title>[뉴스] Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</title>
+<link>https://scottaaronson.blog/?p=10379</link>
+<guid isPermaLink="false">hn-50646108</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>Scott Aaronson, AI가 수학 난제를 잇달아 푸는 상황의 규모를 회고</description>
+</item>
+<item>
+<title>[뉴스] Much shorter version of GRH Lean verification from Anthropic</title>
+<link>https://github.com/lsernau/grh-lean</link>
+<guid isPermaLink="false">hn-50648050</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>Anthropic, Claude와 협업해 일반화 리만 가설(GRH) Lean 증명을 7만 6,000줄 압축판으로 공개</description>
+</item>
+<item>
+<title>[뉴스] Google releases Cogentic papers on integer factorization, discrete logs and more</title>
+<link>https://github.com/google-research/google-research/tree/master/cogentic_research_papers</link>
+<guid isPermaLink="false">hn-50642086</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google Research, AI 시스템 Cogentic이 만든 정수 인수분해·이산 로그 등 이론 논문 묶음 공개</description>
+</item>
+<item>
+<title>[뉴스] OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster</title>
+<link>https://twitter.com/thsottiaux/status/2125784147889393806</link>
+<guid isPermaLink="false">hn-50651117</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>OpenAI, GPT-6.2 출시 때의 과금 오류를 바로잡아 Astra·Sol 사용 한도가 더 빨리 소진되도록 변경</description>
+</item>
+<item>
+<title>[뉴스] The New York Times warns photographers not to update Photoshop over AI features</title>
+<link>https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features</link>
+<guid isPermaLink="false">hn-50647673</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>뉴욕타임스, 프리랜서 사진가들에게 생성형 AI 기능 우려로 최신 Photoshop 사용 금지</description>
+</item>
+<item>
+<title>[뉴스] Tracking Diseases Cured by AI</title>
+<link>https://diseasescuredbyai.com/</link>
+<guid isPermaLink="false">hn-50657307</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI가 발견·설계한 약물들이 실제 '완치'까지 얼마나 왔는지 추적하는 사이트</description>
+</item>
+<item>
+<title>[뉴스] GPT-6.2 Astra is the first model to beat Googlers' code golf records</title>
+<link>https://bjin.github.io/go-codegolf-benchmark/#leaderboard</link>
+<guid isPermaLink="false">hn-50601280</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>GPT-6.2 Astra, 구글러들의 Go code golf 기록을 처음으로 넘은 모델로 기록</description>
+</item>
+<item>
+<title>[뉴스] Ternary Bonsai 2.5 27B - 5.9GB 크기를 유지하며 에이전트 코딩을 강화한 로컬 AI 모델</title>
+<link>https://prismml.com/news/bonsai-2-5-27b</link>
+<guid isPermaLink="false">gn-37796</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>PrismML, 5.9GB 크기를 유지하며 에이전트 코딩을 강화한 3진(ternary) 로컬 모델 Bonsai 2.5 27B 공개</description>
+</item>
+<item>
+<title>[뉴스] Bare Metal Qwen</title>
+<link>https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os</link>
+<guid isPermaLink="false">hn-50648365</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>24KB 순수 어셈블리로 만든 부팅 가능한 OS에서 Qwen3-0.6B를 직접 실행하는 프로젝트</description>
+</item>
+<item>
+<title>[뉴스] AMD Specific Patches for Llama.cpp</title>
+<link>https://devnull.land/amd-specific-llama-cpp</link>
+<guid isPermaLink="false">hn-50657265</guid>
+<pubDate>Fri, 27 Nov 2026 08:00:00 +0900</pubDate>
+<description>AMD GPU용 llama.cpp 포크로 토큰 생성·프리필 속도를 크게 높인 경험기</description>
+</item>
 <item>
 <title>[논문] Foresight Forcing: Learning Spatial Foresight for Robotic Manipulation</title>
 <link>https://arxiv.org/abs/2611.30963</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">hn-50615520</guid>
 <pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
 <description>QA 에이전트 TREX 개발 과정에서 screenshot과 accessibility tree 중 LLM이 화면을 어떻게 보는 게 나은지 7개 모델로 실험</description>
-</item>
-<item>
-<title>[논문] RL Post-Training in Diffusion Transformers Is Activation Steering</title>
-<link>https://arxiv.org/abs/2611.26627</link>
-<guid isPermaLink="false">p-2611.26627</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>Diffusion Transformer의 RL post-training 효과 대부분이 입력과 무관한 고정 steering vector 하나로 재현된다는 분석</description>
-</item>
-<item>
-<title>[논문] Collision-Free Is Not Enough: Passage-Conditioned Navigation for Wheeled-Legged Robots</title>
-<link>https://arxiv.org/abs/2611.25788</link>
-<guid isPermaLink="false">p-2611.25788</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>계단·턱을 어떻게 진입했는지까지 경로에 기억시키는 wheeled-legged 로봇용 passage-conditioned navigation</description>
-</item>
-<item>
-<title>[논문] HumanCOIN: A 12,500-Hour Dataset for Human Intent in Egocentric Manipulation</title>
-<link>https://arxiv.org/abs/2611.26434</link>
-<guid isPermaLink="false">p-2611.26434</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>시선·근전도(EMG)·뇌파(EEG)로 행동 뒤의 의도를 기록한 12,500시간 1인칭 조작 데이터셋 HumanCOIN</description>
-</item>
-<item>
-<title>[논문] AGE-Capture: Autonomous, General, and Efficient UAV Capture for High-Fidelity Scene Reconstruction</title>
-<link>https://arxiv.org/abs/2611.26048</link>
-<guid isPermaLink="false">p-2611.26048</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>renderability 기반 온라인 상태로 시점 가치·진행도를 판단해 실제 UAV로 고품질 장면 재구성을 자율 촬영하는 AGE-Capture</description>
-</item>
-<item>
-<title>[논문] ECHO: In-Context Behavior foundation model for Humanoid Whole-Body Control</title>
-<link>https://arxiv.org/abs/2611.25778</link>
-<guid isPermaLink="false">p-2611.25778</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>상호작용 이력으로 환경 dynamics를 파악해 frozen behavior prior를 residual로 보정하는 in-context 휴머노이드 BFM ECHO</description>
-</item>
-<item>
-<title>[뉴스] Perplexity and Intelligence</title>
-<link>https://openai.com/index/perplexity-and-intelligence/</link>
-<guid isPermaLink="false">openai-perplexity-and-intelligence</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenAI 수석과학자 Jakub Pachocki, 내부 사전학습 perplexity 추이를 공개하며 perplexity를 업계 공통 진척·안전 지표로 쓰자고 제안</description>
-</item>
-<item>
-<title>[뉴스] 87% of the Anthropic power will come from gas and 11% from coal in 2028</title>
-<link>https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/</link>
-<guid isPermaLink="false">hn-50597612</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>분석 보고서: Anthropic 계약 데이터센터 전력은 2028년 약 87%가 가스, 11%가 석탄에서 나올 전망</description>
-</item>
-<item>
-<title>[뉴스] Data Processing Incidents on Inference Providers</title>
-<link>https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/</link>
-<guid isPermaLink="false">hn-50595554</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>OpenRouter, 일부 추론 제공사의 데이터 정책 위반·유출 정황 보고 후 제공사 3곳 퇴출과 ZDR 엔드포인트 125개 제외</description>
-</item>
-<item>
-<title>[뉴스] Slopstrap – Make your site look hastily vibecoded</title>
-<link>https://slopstrap.mikelacher.com/</link>
-<guid isPermaLink="false">hn-50576012</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>사이트를 '급하게 바이브 코딩한 것처럼' 보이게 만드는 풍자 CSS 프레임워크 Slopstrap</description>
-</item>
-<item>
-<title>[뉴스] Show HN: I built a game where you are an LLM's subagent</title>
-<link>https://github.com/gulivan/worker755</link>
-<guid isPermaLink="false">hn-50599762</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>실제 LLM 오케스트레이터가 플레이어를 서브에이전트로 믿고 일을 시키는 브라우저 게임 Worker 755</description>
-</item>
-<item>
-<title>[뉴스] Together.ai: Prompt Leakage for Requests</title>
-<link>https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026</link>
-<guid isPermaLink="false">hn-50595816</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>Together AI, AI 코딩 에이전트가 커밋한 자격 증명 노출로 2026년 6–7월 serverless 추론 프롬프트 샘플 유출 공지</description>
-</item>
-<item>
-<title>[뉴스] The Mythology of Conscious AI</title>
-<link>https://www.noemamag.com/the-mythology-of-conscious-ai/</link>
-<guid isPermaLink="false">hn-50595537</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>신경과학자 Anil Seth 에세이: 의식은 계산보다 생명의 속성일 가능성이 높으며, 의식이 있거나 있어 보이는 AI를 만드는 것은 나쁜 생각</description>
-</item>
-<item>
-<title>[뉴스] Pandex – Official European Law for AI Agents, over MCP</title>
-<link>https://www.pandex.io</link>
-<guid isPermaLink="false">hn-50593481</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>EU와 유럽 7개국 법령·최고법원 판결을 REST API와 MCP 서버로 제공하는 Pandex</description>
-</item>
-<item>
-<title>[뉴스] 그럼에도 지구는 돈다</title>
-<link>https://signoregalilei.com/2026/11/20/and-yet-it-moves/</link>
-<guid isPermaLink="false">gn-37591</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI가 찾은 리만 가설 증명 소식에 대한 소회: 경이로움과 함께 인간이 직접 발견할 기회를 잃은 상실감</description>
-</item>
-<item>
-<title>[뉴스] Show HN: The Riemann Proof Handbook</title>
-<link>https://github.com/tamnd/riemann-handbook</link>
-<guid isPermaLink="false">hn-50596664</guid>
-<pubDate>Mon, 23 Nov 2026 08:00:00 +0900</pubDate>
-<description>Lean으로 작성된 리만 가설 증명을 사람이 읽을 수 있는 수학 서술로 옮긴 PDF/EPUB 책 The Riemann Handbook</description>
 </item>
 </channel>
 </rss>
