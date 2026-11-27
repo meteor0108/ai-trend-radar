@@ -1,0 +1,21 @@
+{
+ "date": "2026-11-28",
+ "startedAt": "2026-11-28T03:34:55+09:00",
+ "finishedAt": "2026-11-28T03:36:06+09:00",
+ "status": {
+  "hf": "ok",
+  "hftrend": "ok",
+  "alphaxiv": "ok",
+  "arxiv": "ok",
+  "arxivcv": "ok",
+  "geeknews": "ok",
+  "hn": "ok",
+  "openai": "ok",
+  "anthropic": "ok",
+  "deepmind": "ok",
+  "google": "ok",
+  "nvidia": "ok",
+  "meta": "ok",
+  "github": "error: HTTPError: HTTP Error 504: Gateway Time-out"
+ }
+}
