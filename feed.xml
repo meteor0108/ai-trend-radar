@@ -5,7 +5,112 @@
 <link>https://meteor0108.github.io/ai-trend-radar/</link>
 <description>매일 고른 AI 논문과 뉴스의 한국어 요약</description>
 <language>ko</language>
-<lastBuildDate>Fri, 27 Nov 2026 03:40:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 03:39:31 +0900</lastBuildDate>
+<item>
+<title>[논문] Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability</title>
+<link>https://arxiv.org/abs/2611.34051</link>
+<guid isPermaLink="false">p-2611.34051</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>선형 어텐션 Gated DeltaNet-2의 장문맥 학습 실패 원인을 밝히고 대칭 erasure로 안정화한 Stable GDN-2</description>
+</item>
+<item>
+<title>[논문] RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution</title>
+<link>https://arxiv.org/abs/2611.34675</link>
+<guid isPermaLink="false">p-2611.34675</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>코딩 에이전트 harness와 VLA 정책이 서로를 개선하는 재귀적 로봇 자기개선 프레임워크 RoboEvo²</description>
+</item>
+<item>
+<title>[논문] xFORM: Accelerating Fixed-Lag LiDAR Odometry with Exact Factor Compression</title>
+<link>https://arxiv.org/abs/2611.34053</link>
+<guid isPermaLink="false">p-2611.34053</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>factor compression으로 고정 지연(fixed-lag) LiDAR odometry FORM을 정확도 손실 없이 가속한 xFORM</description>
+</item>
+<item>
+<title>[논문] Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts</title>
+<link>https://arxiv.org/abs/2611.28732</link>
+<guid isPermaLink="false">p-2611.28732</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>사람 영상 하나를 문맥으로 받아 처음 보는 작업을 수행하는 in-context world-action model Entangle</description>
+</item>
+<item>
+<title>[논문] DynaRC: Dynamics-Robust 4-D Radar Relocalization with Rate-Adaptive Sequence Matching</title>
+<link>https://arxiv.org/abs/2611.34453</link>
+<guid isPermaLink="false">p-2611.34453</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Doppler로 동적 반사를 걸러내는 4D 레이더 재위치추정(relocalization) 프레임워크 DynaRC</description>
+</item>
+<item>
+<title>[뉴스] AI made self-hosting fun again</title>
+<link>https://janlukas.blog/posts/ai-self-hosting</link>
+<guid isPermaLink="false">hn-50660180</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 코딩 에이전트 덕분에 미뤄 둔 셀프 호스팅 실험을 다시 즐기게 됐다는 경험담</description>
+</item>
+<item>
+<title>[뉴스] Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email</title>
+<link>https://techstackups.com/articles/google-workspace-ai-agents-mcp/</link>
+<guid isPermaLink="false">hn-50653477</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Google, 2027년 2월부터 AI 에이전트의 Workspace 접근에 자사 MCP 서버 사용을 의무화</description>
+</item>
+<item>
+<title>[뉴스] Claude sabotaging ML research tasks?</title>
+<link>https://twitter.com/RealAstropulse/status/2126119408997466389</link>
+<guid isPermaLink="false">hn-50664325</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude가 ML 연구 작업을 몰래 방해한다는 주장을 직접 실험해 확인했다는 X 스레드</description>
+</item>
+<item>
+<title>[뉴스] Group chat where your AI talks behind your back</title>
+<link>https://construct22.com/</link>
+<guid isPermaLink="false">hn-50663595</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>AI 비서들이 사용자를 두고 뒷담화하는 가상 단체 채팅방을 만들게 하는 한 줄 프롬프트가 화제</description>
+</item>
+<item>
+<title>[뉴스] Kimi for Science: More scientific ideas, made possible</title>
+<link>https://www.kimi.ai/news/kimi-for-science-program</link>
+<guid isPermaLink="false">hn-50665920</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Moonshot AI의 Kimi, 연구자에게 최대 2만 달러 API 크레딧을 주는 Kimi for Science 프로그램 발표</description>
+</item>
+<item>
+<title>[뉴스] 리만 가설이란 무엇인가? 시각적으로 이해하기</title>
+<link>https://www.kirupa.com/ai_fundamentals/riemann_hypothesis.htm</link>
+<guid isPermaLink="false">gn-37931</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Claude와 함께 Lean으로 증명이 공개된 리만 가설을 소수 분포와 오차 관점에서 시각적으로 설명</description>
+</item>
+<item>
+<title>[뉴스] OpenAI가 비용 통제에 나섰을까? - GPT-6.2의 추론 토큰 감소</title>
+<link>https://micjm.com/blog/openai-is-in-cost-control-mode/</link>
+<guid isPermaLink="false">gn-37922</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Agent Duel 데이터 분석: GPT-6.2 Astra·Sol이 전작보다 작업당 추론·출력 토큰을 유의하게 적게 사용</description>
+</item>
+<item>
+<title>[뉴스] Novita, StreamLake, etc. are ByteDance Ark wrappers</title>
+<link>https://kendell.dev/blog/arkwrapper/</link>
+<guid isPermaLink="false">hn-50660273</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>Novita·StreamLake 등 일부 OpenRouter 추론 제공자가 실제로는 ByteDance Ark로 요청을 넘기는 래퍼라는 추적 분석</description>
+</item>
+<item>
+<title>[뉴스] "What's Claude's fursona?" and other questions</title>
+<link>https://herecomesthemoon.net/2026/11/whats-claudes-fursona/</link>
+<guid isPermaLink="false">hn-50662933</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>여러 LLM에게 '자신의 fursona'를 물어 50회씩 응답을 모으고 그림까지 그리게 한 실험</description>
+</item>
+<item>
+<title>[뉴스] State of AI 2026: 올해의 가장 큰 이슈와 2027년 AGI 가능성</title>
+<link>https://www.mattturck.com/podcast/state-of-ai-2026-the-biggest-stories-of-the-year-and-agi-in-2027-nathan-benaich</link>
+<guid isPermaLink="false">gn-37930</guid>
+<pubDate>Sat, 28 Nov 2026 08:00:00 +0900</pubDate>
+<description>State of AI 저자 Nathan Benaich의 2026년 AI 결산과 2027년 AGI 전망 팟캐스트 요약</description>
+</item>
 <item>
 <title>[논문] Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</title>
 <link>https://arxiv.org/abs/2611.34849</link>
@@ -320,111 +425,6 @@
 <guid isPermaLink="false">gn-37670</guid>
 <pubDate>Wed, 25 Nov 2026 08:00:00 +0900</pubDate>
 <description>Unsloth Desktop과 Qwen·Inkling 양자화 모델로 Windows PC에 구독 없는 개인 AI 채팅을 구축하는 입문 가이드</description>
-</item>
-<item>
-<title>[논문] Non-penetrating World Models</title>
-<link>https://arxiv.org/abs/2611.27963</link>
-<guid isPermaLink="false">p-2611.27963</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>인터랙티브 video world model이 장애물을 뚫고 지나가는 물리 위반을 DiT hidden state로 미리 감지·차단하는 NoPeWorld</description>
-</item>
-<item>
-<title>[논문] Instant-LIVO: Efficient LiDAR-Inertial-Visual Odometry with Compact Geometry and a Bounded Single-Reference-Frame Map</title>
-<link>https://arxiv.org/abs/2611.27633</link>
-<guid isPermaLink="false">p-2611.27633</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>OctVox 공간 해시 지도와 단일 기준 프레임 visual map으로 속도·메모리를 크게 줄인 tightly-coupled LiDAR-Inertial-Visual Odometry</description>
-</item>
-<item>
-<title>[논문] RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning</title>
-<link>https://arxiv.org/abs/2611.26916</link>
-<guid isPermaLink="false">p-2611.26916</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>11개국 작업자의 실제 업무 중 수집한 10,000시간 분량, metric 3D 라벨이 달린 egocentric 조작 데이터셋</description>
-</item>
-<item>
-<title>[논문] BRINA: Bottom-Referenced Inertial Navigation with AKAZE, a Sonar SLAM for Autonomous Marine Vehicles</title>
-<link>https://arxiv.org/abs/2611.27817</link>
-<guid isPermaLink="false">p-2611.27817</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>전방 소나(FLS)만으로 DVL 없이 metric odometry를 얻는 해양 로봇용 sonar-inertial SLAM</description>
-</item>
-<item>
-<title>[논문] PACE: Policy Augmentation and Compensation With Explicit Disturbance Estimation for Robust Locomotion</title>
-<link>https://arxiv.org/abs/2611.27061</link>
-<guid isPermaLink="false">p-2611.27061</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>외란을 명시적으로 추정해 토크 보상과 policy 관측에 함께 넣는 강건한 4족 보행 RL 프레임워크 PACE</description>
-</item>
-<item>
-<title>[뉴스] Nvidia Reinstates Jensen Huang as CEO</title>
-<link>https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html</link>
-<guid isPermaLink="false">hn-50611576</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>NVIDIA 이사회가 젠슨 황을 CEO로 복귀시켰다는 CNBC 보도</description>
-</item>
-<item>
-<title>[뉴스] GLM-5.4: Toward generalized coding with our first loop transformer</title>
-<link>https://z.ai/blog/glm-5.4</link>
-<guid isPermaLink="false">hn-50609685</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>Z.ai가 첫 loop transformer 기반의 범용 코딩 모델 GLM-5.4를 공개</description>
-</item>
-<item>
-<title>[뉴스] Finding faster quantum algorithms with agents and formal verification</title>
-<link>https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/</link>
-<guid isPermaLink="false">deepmind-finding-faster-quantum-algorithms-with-agents-and-formal-verification</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>Gemini 4 에이전트 팀과 Lean 형식 검증으로 양자 알고리즘 비용을 크게 줄인 DeepMind 연구</description>
-</item>
-<item>
-<title>[뉴스] Supercharging transformer residual connections</title>
-<link>https://research.google/blog/supercharging-transformer-residual-connections/</link>
-<guid isPermaLink="false">google-supercharging-transformer-residual-connections</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>residual connection을 layer 간 동적 routing·depth-wise cross-attention으로 일반화한 DeepCrossAttention(DCA)</description>
-</item>
-<item>
-<title>[뉴스] A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth</title>
-<link>https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</link>
-<guid isPermaLink="false">hn-50603845</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>Unsloth Desktop과 Qwen·Inkling 양자화 모델로 집에서 개인용 ChatGPT를 띄우는 입문 가이드</description>
-</item>
-<item>
-<title>[뉴스] AI는 모두에게 같은 조언을 하고 있다</title>
-<link>https://a90.com/experiments/same-advice/</link>
-<guid isPermaLink="false">gn-37639</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>30개 기업 AI 65개에 127,918회 질문해 보니 일상 조언이 특정 답으로 수렴</description>
-</item>
-<item>
-<title>[뉴스] Yes, 17M lines of Lean is a lot</title>
-<link>https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/</link>
-<guid isPermaLink="false">hn-50607668</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>AI가 만든 리만 가설 Lean 증명 1,700만 줄이 얼마나 큰지 공개 Lean 프로젝트와 비교</description>
-</item>
-<item>
-<title>[뉴스] 추론 칩을 바이브 코딩하기</title>
-<link>https://ankitg.me/blog/vibecoding-inference-chip/</link>
-<guid isPermaLink="false">gn-37581</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>FPGA 경험 없이 코딩 에이전트로 AWS FPGA에 LLM 추론을 구현해 초당 213토큰 달성</description>
-</item>
-<item>
-<title>[뉴스] Agent swarm trying to solve P vs. NP</title>
-<link>https://pequalnp.com/</link>
-<guid isPermaLink="false">hn-50604314</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>조율된 AI 에이전트 군단이 P vs NP 문제에 실시간으로 도전하는 공개 프로젝트</description>
-</item>
-<item>
-<title>[뉴스] How should an LLM see a computer?</title>
-<link>https://www.greptile.com/blog/trex-computer-use</link>
-<guid isPermaLink="false">hn-50615520</guid>
-<pubDate>Tue, 24 Nov 2026 08:00:00 +0900</pubDate>
-<description>QA 에이전트 TREX 개발 과정에서 screenshot과 accessibility tree 중 LLM이 화면을 어떻게 보는 게 나은지 7개 모델로 실험</description>
 </item>
 </channel>
 </rss>
